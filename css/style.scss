@@ -1,0 +1,72 @@
+@import "partials/extends";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.pre-icon {
+  background: url("../img/loader.gif") no-repeat center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+//=== header start ===//
+header {
+  nav {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    z-index: 7;
+    img {
+      width: 115px;
+    }
+
+    .left {
+      margin-left: 400px;
+
+      li {
+        margin-right: 30px;
+        a{
+          @extend %nav-link;
+        }
+      }
+    }
+
+    .account {
+      a{
+        @extend %nav-link;
+      }
+    }
+  }
+}
+//=== header end ===//
+
+//=== intro section start ===//
+#intro {
+  position: absolute;
+  top: -70px;
+  .carousel-item {
+    height: 850px;
+    img {
+      height: 100% !important;
+    }
+  }
+
+  .carousel-control {
+    i{
+      font-size: 20px;
+    }
+  }
+}
+//=== intro section end ===//

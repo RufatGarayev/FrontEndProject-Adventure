@@ -1,0 +1,11 @@
+%nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 16px;
+
+    &:hover {
+      color: #EF3F3E !important;
+      transition: 0.5s;
+      text-decoration: none;
+    }
+}

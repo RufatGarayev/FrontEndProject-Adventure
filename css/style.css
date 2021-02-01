@@ -1,0 +1,71 @@
+header nav .left li a, header nav .account a {
+  color: white !important;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+header nav .left li a:hover, header nav .account a:hover {
+  color: #EF3F3E !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.pre-icon {
+  background: url("../img/loader.gif") no-repeat center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+header nav {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  z-index: 7;
+}
+
+header nav img {
+  width: 115px;
+}
+
+header nav .left {
+  margin-left: 400px;
+}
+
+header nav .left li {
+  margin-right: 30px;
+}
+
+#intro {
+  position: absolute;
+  top: -70px;
+}
+
+#intro .carousel-item {
+  height: 850px;
+}
+
+#intro .carousel-item img {
+  height: 100% !important;
+}
+
+#intro .carousel-control i {
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
