@@ -5,7 +5,7 @@ header nav .left li a, header nav .account a {
 }
 
 header nav .left li a:hover, header nav .account a:hover {
-  color: #FF815A !important;
+  color: #EFBA6C !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none;
@@ -13,7 +13,7 @@ header nav .left li a:hover, header nav .account a:hover {
 
 #intro .carousel-control-prev::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(239, 186, 108, 0.6);
   height: 50px;
   width: 52px;
   border-radius: 0 100px 100px 0;
@@ -25,7 +25,7 @@ header nav .left li a:hover, header nav .account a:hover {
 
 #intro .carousel-control-next::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(239, 186, 108, 0.6);
   height: 50px;
   width: 52px;
   border-radius: 100px 0 0 100px;
@@ -60,7 +60,7 @@ html {
 }
 
 header nav {
-  background-color: rgba(0, 0, 0, 0.4) !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
   z-index: 7;
 }
 
@@ -82,18 +82,21 @@ header nav .left li {
 }
 
 #intro .carousel-item {
-  height: 850px;
+  height: 830px;
 }
 
 #intro .carousel-item img {
-  background-color: rgba(0, 0, 0, 0.4) !important;
   height: 100% !important;
   -webkit-animation: zoom 20s;
           animation: zoom 20s;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
 }
 
 #intro .carousel-control-prev .carousel-control {
-  margin: 110px 180px 0 0;
+  margin: 130px 180px 0 0;
 }
 
 #intro .carousel-control-prev .carousel-control i {
@@ -101,7 +104,7 @@ header nav .left li {
 }
 
 #intro .carousel-control-next .carousel-control {
-  margin: 110px 0 0 180px;
+  margin: 130px 0 0 180px;
 }
 
 #intro .carousel-control-next .carousel-control i {
@@ -109,11 +112,11 @@ header nav .left li {
 }
 
 #intro .caption {
+  width: 400px;
   position: absolute;
-  top: 420px;
-  left: 150px;
+  top: 380px;
+  left: 530px;
   text-align: left;
-  font-family: "Inter", sans-serif;
   color: white;
 }
 
@@ -126,6 +129,23 @@ header nav .left li {
   font-weight: bold;
   font-size: 38px;
   display: inline-block;
+  margin-bottom: 0;
+}
+
+#intro .caption .btn {
+  width: 180px;
+  height: 45px;
+  line-height: 32px;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  color: black;
+  background-color: white;
+}
+
+#intro .caption .btn:hover {
+  background-color: #efba6c;
+  color: white;
 }
 
 @-webkit-keyframes zoom {

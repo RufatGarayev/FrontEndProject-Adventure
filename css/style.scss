@@ -26,7 +26,7 @@ html {
 //=== header start ===//
 header {
   nav {
-    background-color: rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
     z-index: 7;
     img {
       width: 115px;
@@ -57,18 +57,19 @@ header {
   position: absolute;
   top: -70px;
   .carousel-item {
-    height: 850px;
+    height: 830px;
     img {
-      background-color: rgba(0, 0, 0, 0.4) !important;
       height: 100% !important;
       animation: zoom 20s;
+      filter: brightness(70%);
+      object-fit: cover !important;
     }
   }
 
   .carousel-control-prev {
     @extend %left-arrow;
     .carousel-control {
-      margin: 110px 180px 0 0;
+      margin: 130px 180px 0 0;
       i {
         font-size: 20px;
       }
@@ -78,7 +79,7 @@ header {
   .carousel-control-next {
     @extend %right-arrow;
     .carousel-control {
-      margin: 110px 0 0 180px;
+      margin: 130px 0 0 180px;
       i {
         font-size: 20px;
       }
@@ -86,11 +87,11 @@ header {
   }
 
   .caption {
+    width: 400px;
     position: absolute;
-    top: 420px;
-    left: 150px;
+    top: 380px;
+    left: 530px;
     text-align: left;
-    font-family: "Inter", sans-serif;
     color: white;
     h3 {
       font-weight: normal;
@@ -101,6 +102,21 @@ header {
       font-weight: bold;
       font-size: 38px;
       display: inline-block;
+      margin-bottom: 0;
+    }
+    .btn {
+      width: 180px;
+      height: 45px;
+      line-height: 32px;
+      font-weight: bold;
+      border: none;
+      border-radius: 3px;
+      color: black;
+      background-color: white;
+      &:hover {
+        background-color: #efba6c;
+        color: white;
+      }
     }
   }
 
@@ -113,6 +129,4 @@ header {
     }
   }
 }
-
-
 //=== intro section end ===//
