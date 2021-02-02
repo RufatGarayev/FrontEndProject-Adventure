@@ -37,14 +37,14 @@ header {
 
       li {
         margin-right: 30px;
-        a{
+        a {
           @extend %nav-link;
         }
       }
     }
 
     .account {
-      a{
+      a {
         @extend %nav-link;
       }
     }
@@ -59,14 +59,60 @@ header {
   .carousel-item {
     height: 850px;
     img {
+      background-color: rgba(0, 0, 0, 0.4) !important;
       height: 100% !important;
+      animation: zoom 20s;
     }
   }
 
-  .carousel-control {
-    i{
-      font-size: 20px;
+  .carousel-control-prev {
+    @extend %left-arrow;
+    .carousel-control {
+      margin: 110px 180px 0 0;
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .carousel-control-next {
+    @extend %right-arrow;
+    .carousel-control {
+      margin: 110px 0 0 180px;
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .caption {
+    position: absolute;
+    top: 420px;
+    left: 150px;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    color: white;
+    h3 {
+      font-weight: normal;
+      font-size: 40px;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 38px;
+      display: inline-block;
+    }
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.2, 1.2);
     }
   }
 }
+
+
 //=== intro section end ===//

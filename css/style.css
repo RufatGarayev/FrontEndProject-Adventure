@@ -5,10 +5,34 @@ header nav .left li a, header nav .account a {
 }
 
 header nav .left li a:hover, header nav .account a:hover {
-  color: #EF3F3E !important;
+  color: #FF815A !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none;
+}
+
+#intro .carousel-control-prev::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 50px;
+  width: 52px;
+  border-radius: 0 100px 100px 0;
+  position: absolute;
+  top: 452px;
+  left: 0;
+  z-index: -1;
+}
+
+#intro .carousel-control-next::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 50px;
+  width: 52px;
+  border-radius: 100px 0 0 100px;
+  position: absolute;
+  top: 452px;
+  right: 0;
+  z-index: -1;
 }
 
 * {
@@ -62,10 +86,67 @@ header nav .left li {
 }
 
 #intro .carousel-item img {
+  background-color: rgba(0, 0, 0, 0.4) !important;
   height: 100% !important;
+  -webkit-animation: zoom 20s;
+          animation: zoom 20s;
 }
 
-#intro .carousel-control i {
+#intro .carousel-control-prev .carousel-control {
+  margin: 110px 180px 0 0;
+}
+
+#intro .carousel-control-prev .carousel-control i {
   font-size: 20px;
+}
+
+#intro .carousel-control-next .carousel-control {
+  margin: 110px 0 0 180px;
+}
+
+#intro .carousel-control-next .carousel-control i {
+  font-size: 20px;
+}
+
+#intro .caption {
+  position: absolute;
+  top: 420px;
+  left: 150px;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+#intro .caption h3 {
+  font-weight: normal;
+  font-size: 40px;
+}
+
+#intro .caption h1 {
+  font-weight: bold;
+  font-size: 38px;
+  display: inline-block;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
 }
 /*# sourceMappingURL=style.css.map */

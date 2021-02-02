@@ -25,7 +25,21 @@
 
   #intro {
     position: absolute;
-    top: 0 !important;
+    top: -70px !important;
+    .carousel-item {
+      height: 720px !important;
+    }
+
+    .carousel-control-next{
+      .carousel-control{
+        margin: 238px 0 0 70px !important;
+      }
+    }
+    .carousel-control-prev{
+      .carousel-control{
+        margin: 238px 70px 0 0 !important;
+      }
+    }
   }
 }
 
@@ -53,12 +67,19 @@
 
   #intro {
     position: absolute;
-    top: 0 !important;
+    top: -70px !important;
     .carousel-item {
-      height: 480px !important;
+      height: 420px !important;
       img {
         height: 100% !important;
       }
+    }
+
+    .carousel-control-prev{
+      display: none !important;
+    }
+    .carousel-control-next{
+      display: none !important;
     }
   }
 }
@@ -94,11 +115,30 @@
 
   #intro {
     position: absolute;
-    top: 0 !important;
+    top: -55px !important;
     .carousel-item {
-      height: 480px !important;
+      height: 420px !important;
       img {
         height: 100% !important;
+      }
+    }
+
+    .carousel-control-prev{
+      display: none !important;
+    }
+    .carousel-control-next{
+      display: none !important;
+    }
+
+    .caption{
+      top: 230px !important;
+      left: 20px !important;
+      h3{
+        font-size: 14px!important;
+      }
+
+      h1{
+        font-size: 14px !important;
       }
     }
   }
@@ -107,7 +147,7 @@
 @media (min-width: 250px) and (max-width: 299.98px) {
   header {
     img {
-      width: 85px !important;
+      width: 70px !important;
       position: absolute;
       left: 20px;
       top: 8px;
@@ -115,31 +155,60 @@
 
     .navbar-toggler {
       border: none;
-      font-size: 12px;
-      margin: 3px 15px 3px 0;
+      font-size: 10px;
+      margin: 2px 12px 3px 0;
       &:focus {
         outline: none;
       }
     }
 
     .left {
-      margin: 15px 0 13px 0 !important;
+      margin: 10px 0 10px 0 !important;
+      li{
+        a{
+          font-size: 12px !important;
+        }
+      }
     }
 
     .account {
       position: absolute;
       right: 20px;
-      top: 13px;
+      top: 9px;
+      li{
+        a{
+          font-size: 14px !important;
+        }
+      }
     }
   }
 
   #intro {
     position: absolute;
-    top: 0 !important;
+    top: -50px !important;
     .carousel-item {
-      height: 350px !important;
+      height: 320px !important;
       img {
         height: 100% !important;
+      }
+    }
+
+    .carousel-control-prev{
+      display: none !important;
+    }
+    .carousel-control-next{
+      display: none !important;
+    }
+
+    .caption{
+      top: 170px !important;
+      left: 10px !important;
+      h3{
+        font-size: 12px!important;
+      }
+
+      h1{
+        font-size: 12px !important;
       }
     }
   }

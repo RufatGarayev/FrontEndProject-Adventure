@@ -20,7 +20,16 @@
   }
   #intro {
     position: absolute;
-    top: 0 !important;
+    top: -70px !important;
+  }
+  #intro .carousel-item {
+    height: 720px !important;
+  }
+  #intro .carousel-control-next .carousel-control {
+    margin: 238px 0 0 70px !important;
+  }
+  #intro .carousel-control-prev .carousel-control {
+    margin: 238px 70px 0 0 !important;
   }
 }
 
@@ -43,13 +52,19 @@
   }
   #intro {
     position: absolute;
-    top: 0 !important;
+    top: -70px !important;
   }
   #intro .carousel-item {
-    height: 480px !important;
+    height: 420px !important;
   }
   #intro .carousel-item img {
     height: 100% !important;
+  }
+  #intro .carousel-control-prev {
+    display: none !important;
+  }
+  #intro .carousel-control-next {
+    display: none !important;
   }
 }
 
@@ -78,48 +93,86 @@
   }
   #intro {
     position: absolute;
-    top: 0 !important;
+    top: -55px !important;
   }
   #intro .carousel-item {
-    height: 480px !important;
+    height: 420px !important;
   }
   #intro .carousel-item img {
     height: 100% !important;
+  }
+  #intro .carousel-control-prev {
+    display: none !important;
+  }
+  #intro .carousel-control-next {
+    display: none !important;
+  }
+  #intro .caption {
+    top: 230px !important;
+    left: 20px !important;
+  }
+  #intro .caption h3 {
+    font-size: 14px !important;
+  }
+  #intro .caption h1 {
+    font-size: 14px !important;
   }
 }
 
 @media (min-width: 250px) and (max-width: 299.98px) {
   header img {
-    width: 85px !important;
+    width: 70px !important;
     position: absolute;
     left: 20px;
     top: 8px;
   }
   header .navbar-toggler {
     border: none;
-    font-size: 12px;
-    margin: 3px 15px 3px 0;
+    font-size: 10px;
+    margin: 2px 12px 3px 0;
   }
   header .navbar-toggler:focus {
     outline: none;
   }
   header .left {
-    margin: 15px 0 13px 0 !important;
+    margin: 10px 0 10px 0 !important;
+  }
+  header .left li a {
+    font-size: 12px !important;
   }
   header .account {
     position: absolute;
     right: 20px;
-    top: 13px;
+    top: 9px;
+  }
+  header .account li a {
+    font-size: 14px !important;
   }
   #intro {
     position: absolute;
-    top: 0 !important;
+    top: -50px !important;
   }
   #intro .carousel-item {
-    height: 350px !important;
+    height: 320px !important;
   }
   #intro .carousel-item img {
     height: 100% !important;
+  }
+  #intro .carousel-control-prev {
+    display: none !important;
+  }
+  #intro .carousel-control-next {
+    display: none !important;
+  }
+  #intro .caption {
+    top: 170px !important;
+    left: 10px !important;
+  }
+  #intro .caption h3 {
+    font-size: 12px !important;
+  }
+  #intro .caption h1 {
+    font-size: 12px !important;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
