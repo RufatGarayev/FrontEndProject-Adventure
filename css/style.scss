@@ -26,17 +26,18 @@ html {
 //=== header start ===//
 header {
   nav {
+    padding: 10px 40px 10px 40px !important;
     background-color: rgba(0, 0, 0, 0.3) !important;
     z-index: 7;
     img {
-      width: 115px;
+      width: 80px;
     }
 
     .left {
-      margin-left: 400px;
+      padding-left: 435px;
 
       li {
-        margin-right: 30px;
+        margin-right: 36px;
         a {
           @extend %nav-link;
         }
@@ -44,6 +45,10 @@ header {
     }
 
     .account {
+      width: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       a {
         @extend %nav-link;
       }
@@ -61,7 +66,7 @@ header {
     img {
       height: 100% !important;
       animation: zoom 20s;
-      filter: brightness(70%);
+      filter: brightness(60%);
       object-fit: cover !important;
     }
   }
@@ -89,9 +94,8 @@ header {
   .caption {
     width: 400px;
     position: absolute;
-    top: 380px;
-    left: 530px;
-    text-align: left;
+    top: 410px;
+    left: 565px;
     color: white;
     h3 {
       font-weight: normal;
@@ -100,22 +104,26 @@ header {
 
     h1 {
       font-weight: bold;
-      font-size: 38px;
+      font-size: 22px;
       display: inline-block;
       margin-bottom: 0;
     }
-    .btn {
+    .button {
       width: 180px;
       height: 45px;
-      line-height: 32px;
+      line-height: 40px;
       font-weight: bold;
       border: none;
       border-radius: 3px;
-      color: black;
-      background-color: white;
+      color: white;
+      border: 2px solid white;
+      text-align: center;
+      background-color: transparent;
       &:hover {
-        background-color: #efba6c;
-        color: white;
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        transition: 0.2s linear;
       }
     }
   }

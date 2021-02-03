@@ -60,20 +60,35 @@ html {
 }
 
 header nav {
+  padding: 10px 40px 10px 40px !important;
   background-color: rgba(0, 0, 0, 0.3) !important;
   z-index: 7;
 }
 
 header nav img {
-  width: 115px;
+  width: 80px;
 }
 
 header nav .left {
-  margin-left: 400px;
+  padding-left: 435px;
 }
 
 header nav .left li {
-  margin-right: 30px;
+  margin-right: 36px;
+}
+
+header nav .account {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #intro {
@@ -89,8 +104,8 @@ header nav .left li {
   height: 100% !important;
   -webkit-animation: zoom 20s;
           animation: zoom 20s;
-  -webkit-filter: brightness(70%);
-          filter: brightness(70%);
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
   -o-object-fit: cover !important;
      object-fit: cover !important;
 }
@@ -114,9 +129,8 @@ header nav .left li {
 #intro .caption {
   width: 400px;
   position: absolute;
-  top: 380px;
-  left: 530px;
-  text-align: left;
+  top: 410px;
+  left: 565px;
   color: white;
 }
 
@@ -127,25 +141,30 @@ header nav .left li {
 
 #intro .caption h1 {
   font-weight: bold;
-  font-size: 38px;
+  font-size: 22px;
   display: inline-block;
   margin-bottom: 0;
 }
 
-#intro .caption .btn {
+#intro .caption .button {
   width: 180px;
   height: 45px;
-  line-height: 32px;
+  line-height: 40px;
   font-weight: bold;
   border: none;
   border-radius: 3px;
-  color: black;
-  background-color: white;
+  color: white;
+  border: 2px solid white;
+  text-align: center;
+  background-color: transparent;
 }
 
-#intro .caption .btn:hover {
-  background-color: #efba6c;
-  color: white;
+#intro .caption .button:hover {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 @-webkit-keyframes zoom {
