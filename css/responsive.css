@@ -12,14 +12,25 @@
   header nav .left {
     padding-left: 275px !important;
   }
+  header nav .left li hr {
+    display: none;
+  }
   header nav .account {
     width: 90px !important;
     position: absolute;
     right: 35px;
-    top: 25px;
+    top: 22px;
+  }
+  header nav .account li hr {
+    display: none;
   }
   header nav .account a {
     font-size: 17px !important;
+  }
+  header nav .account a span {
+    position: absolute;
+    top: 0px;
+    right: -12px;
   }
   #intro {
     position: absolute;
@@ -55,7 +66,7 @@
   }
 }
 
-@media (min-width: 767.98px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   header img {
     width: 90px !important;
   }
@@ -70,13 +81,26 @@
   header .left {
     padding: 15px 0 13px 20px !important;
   }
+  header .left li hr {
+    display: none;
+  }
   header .account {
     position: absolute;
     right: 110px;
-    top: 20px;
+    top: 19px;
+  }
+  header .account li hr {
+    display: none;
   }
   header .account a {
-    font-size: 22px !important;
+    font-size: 18px !important;
+    position: relative;
+  }
+  header .account a span sup {
+    position: absolute !important;
+    font-size: 12px;
+    top: 5px !important;
+    right: -8px !important;
   }
   #intro {
     position: absolute;
@@ -105,7 +129,7 @@
   }
   #intro .caption .button {
     width: 120px !important;
-    height: 26px !important;
+    height: 29px !important;
     line-height: 26px !important;
     font-size: 11px !important;
     border-radius: 2px !important;
@@ -124,10 +148,16 @@
   header .left {
     padding: 15px 0 13px 0 !important;
   }
+  header .left li hr {
+    display: none;
+  }
   header .account {
     position: absolute;
     right: 40px;
     top: 26px;
+  }
+  header .account li hr {
+    display: none;
   }
   #intro {
     position: absolute;
@@ -193,14 +223,33 @@
   header nav .left li a {
     font-size: 9px !important;
   }
+  header nav .left li hr {
+    display: none;
+  }
   header nav .account {
     width: 60px !important;
     position: absolute;
-    right: 65px;
+    right: 70px;
     top: 6px;
+  }
+  header nav .account li hr {
+    display: none;
+  }
+  header nav .account li:first-of-type {
+    padding-top: 0px !important;
   }
   header nav .account li a {
     font-size: 11px !important;
+    position: relative;
+  }
+  header nav .account li a span sup {
+    font-size: 8px;
+    position: absolute;
+    top: 2px;
+    right: -6px;
+  }
+  header nav .account li a span:before {
+    font-size: 13px;
   }
   #intro {
     position: absolute;
@@ -232,7 +281,7 @@
   }
   #intro .caption .button {
     width: 70px !important;
-    height: 18px !important;
+    height: 20px !important;
     line-height: 16px !important;
     font-size: 7px !important;
     border-radius: 1px !important;
@@ -263,6 +312,9 @@
   header nav .left {
     padding: 23px 0 0 0 !important;
   }
+  header nav .left li hr {
+    display: none;
+  }
   header nav .left li a {
     font-size: 9px !important;
   }
@@ -272,8 +324,24 @@
     right: 65px;
     top: 6px;
   }
+  header nav .account li hr {
+    display: none;
+  }
+  header nav .account li:first-of-type {
+    padding-top: 0px !important;
+  }
   header nav .account li a {
     font-size: 11px !important;
+    position: relative;
+  }
+  header nav .account li a span sup {
+    font-size: 8px;
+    position: absolute;
+    top: 2px;
+    right: -6px;
+  }
+  header nav .account li a span:before {
+    font-size: 13px;
   }
   #intro {
     position: absolute;
@@ -336,6 +404,9 @@
   header nav .left {
     padding: 23px 0 0 0 !important;
   }
+  header nav .left li hr {
+    display: none;
+  }
   header nav .left li a {
     font-size: 9px !important;
   }
@@ -345,8 +416,24 @@
     right: 65px;
     top: 6px;
   }
+  header nav .account li hr {
+    display: none;
+  }
+  header nav .account li:first-of-type {
+    padding-top: 0px !important;
+  }
   header nav .account li a {
     font-size: 11px !important;
+    position: relative;
+  }
+  header nav .account li a span sup {
+    font-size: 8px;
+    position: absolute;
+    top: 2px;
+    right: -6px;
+  }
+  header nav .account li a span:before {
+    font-size: 13px;
   }
   #intro {
     position: absolute;
@@ -409,17 +496,37 @@
   header nav .left {
     padding: 15px 0 0 0 !important;
   }
+  header nav .left li hr {
+    display: none;
+  }
   header nav .left li a {
     font-size: 7px !important;
   }
   header nav .account {
-    width: 46px !important;
+    width: 45px !important;
     position: absolute;
-    right: 50px;
+    right: 48px;
     top: 3px;
+  }
+  header nav .account li hr {
+    display: none;
+  }
+  header nav .account li:first-of-type {
+    padding-top: 0px !important;
   }
   header nav .account li a {
     font-size: 9px !important;
+    position: relative;
+  }
+  header nav .account li a span sup {
+    font-size: 6px;
+    position: absolute;
+    top: 4px;
+    right: -6px;
+  }
+  header nav .account li a span:before {
+    font-size: 10px;
+    margin: 0;
   }
   #intro {
     position: absolute;

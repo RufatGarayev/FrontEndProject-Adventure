@@ -38,8 +38,18 @@ header {
 
       li {
         margin-right: 36px;
+        transition: transform .2s;
+        position: relative;
+        hr{
+          @extend %nav-li-line;
+        }
+        @extend %nav-li-hover;
+        &:hover .contact-line{
+          width: 83% !important;
+          transition: 0.2s linear;
+        }
         a {
-          @extend %nav-link;
+          @extend %nav-a;
         }
       }
     }
@@ -49,9 +59,31 @@ header {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      li:first-of-type{
+        padding-top: 4px;
+        position: relative;
+        hr{
+          @extend %nav-li-line;
+          position: absolute !important;
+          bottom: 0px;
+          left: 0px;
+        }
+        &:hover hr{
+          width: 42px !important;
+          height: 2% !important;
+          transition: 0.2s linear;
+        }
+      }  
       a {
-        @extend %nav-link;
-      }
+        @extend %nav-a;
+        span{
+          sup{
+            font-style: normal;
+            top: -10px;
+            right: 3px;
+          }
+        }
+      }  
     }
   }
 }

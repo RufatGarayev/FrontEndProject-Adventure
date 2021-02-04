@@ -12,15 +12,30 @@
 
       .left {
         padding-left: 275px !important;
+        li{
+          hr{
+            display: none;
+          }
+        }
       }
 
       .account {
         width: 90px !important;
         position: absolute;
         right: 35px;
-        top: 25px;
+        top: 22px;
+        li{
+          hr{
+            display: none;
+          }
+        }
         a {
           font-size: 17px !important;
+          span{
+            position: absolute;
+            top: 0px;
+            right: -12px;
+          }
         }
       }
     }
@@ -68,7 +83,7 @@
   }
 }
 
-@media (min-width: 767.98px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   header {
     img {
       width: 90px !important;
@@ -85,14 +100,33 @@
 
     .left {
       padding: 15px 0 13px 20px !important;
+      li{
+        hr{
+          display: none;
+        }
+      }
     }
 
     .account {
       position: absolute;
       right: 110px;
-      top: 20px;
+      top: 19px;
+      li{
+        hr{
+          display: none;
+        }
+      }
       a {
-        font-size: 22px !important;
+        font-size: 18px !important;
+        position: relative;
+        span{
+          sup{
+            position: absolute !important;
+            font-size: 12px;
+            top: 5px !important;
+            right: -8px !important;
+          }
+        }
       }
     }
   }
@@ -130,7 +164,7 @@
 
       .button {
         width: 120px !important;
-        height: 26px !important;
+        height: 29px !important;
         line-height: 26px !important;
         font-size: 11px !important;
         border-radius: 2px !important;
@@ -152,12 +186,22 @@
 
     .left {
       padding: 15px 0 13px 0 !important;
+      li{
+        hr{
+          display: none;
+        }
+      }
     }
 
     .account {
       position: absolute;
       right: 40px;
       top: 26px;
+      li{
+        hr{
+          display: none;
+        }
+      }
     }
   }
 
@@ -231,17 +275,38 @@
           a {
             font-size: 9px !important;
           }
+          hr{
+            display: none;
+          }
         }
       }
 
       .account {
         width: 60px !important;
         position: absolute;
-        right: 65px;
+        right: 70px;
         top: 6px;
         li {
+          hr{
+            display: none;
+          }
+          &:first-of-type{
+            padding-top: 0px !important;
+          }
           a {
             font-size: 11px !important;
+            position: relative;
+            span{
+             sup{
+              font-size: 8px;
+              position: absolute;
+              top: 2px;
+              right: -6px;
+             }
+            }
+            span:before{
+              font-size: 13px;
+            }
           }
         }
       }
@@ -280,7 +345,7 @@
 
       .button {
         width: 70px !important;
-        height: 18px !important;
+        height: 20px !important;
         line-height: 16px !important;
         font-size: 7px !important;
         border-radius: 1px !important;
@@ -315,6 +380,9 @@
       .left {
         padding: 23px 0 0 0 !important;
         li {
+          hr{
+            display: none;
+          }
           a {
             font-size: 9px !important;
           }
@@ -327,8 +395,26 @@
         right: 65px;
         top: 6px;
         li {
+          hr{
+            display: none;
+          }
+          &:first-of-type{
+            padding-top: 0px !important;
+          }
           a {
             font-size: 11px !important;
+            position: relative;
+            span{
+             sup{
+              font-size: 8px;
+              position: absolute;
+              top: 2px;
+              right: -6px;
+             }
+            }
+            span:before{
+              font-size: 13px;
+            }
           }
         }
       }
@@ -402,6 +488,9 @@
       .left {
         padding: 23px 0 0 0 !important;
         li {
+          hr{
+            display: none;
+          }
           a {
             font-size: 9px !important;
           }
@@ -414,8 +503,26 @@
         right: 65px;
         top: 6px;
         li {
+          hr{
+            display: none;
+          }
+          &:first-of-type{
+            padding-top: 0px !important;
+          }
           a {
             font-size: 11px !important;
+            position: relative;
+            span{
+             sup{
+              font-size: 8px;
+              position: absolute;
+              top: 2px;
+              right: -6px;
+             }
+            }
+            span:before{
+              font-size: 13px;
+            }
           }
         }
       }
@@ -489,6 +596,9 @@
       .left {
         padding: 15px 0 0 0 !important;
         li {
+          hr{
+            display: none;
+          }
           a {
             font-size: 7px !important;
           }
@@ -496,13 +606,32 @@
       }
 
       .account {
-        width: 46px !important;
+        width: 45px !important;
         position: absolute;
-        right: 50px;
+        right: 48px;
         top: 3px;
         li {
+          hr{
+            display: none;
+          }
+          &:first-of-type{
+            padding-top: 0px !important;
+          }
           a {
             font-size: 9px !important;
+            position: relative;
+            span{
+             sup{
+              font-size: 6px;
+              position: absolute;
+              top: 4px;
+              right: -6px;
+             }
+            }
+            span:before{
+              font-size: 10px;
+              margin: 0;
+            }
           }
         }
       }
