@@ -23,8 +23,12 @@ html {
   z-index: 999;
 }
 
+
 //=== header start ===//
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
   nav {
     padding: 10px 40px 10px 40px !important;
     background-color: rgba(0, 0, 0, 0.3) !important;
@@ -55,7 +59,7 @@ header {
     }
 
     .account {
-      width: 100px;
+      width: 110px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -91,8 +95,6 @@ header {
 
 //=== intro section start ===//
 #intro {
-  position: absolute;
-  top: -70px;
   .carousel-item {
     height: 830px;
     img {
@@ -124,21 +126,26 @@ header {
   }
 
   .caption {
-    width: 400px;
+    width: 600px;
     position: absolute;
-    top: 410px;
-    left: 565px;
+    top: 310px;
+    left: 460px;
     color: white;
     h3 {
       font-weight: normal;
-      font-size: 40px;
+      font-size: 50px;
+      font-weight: bold;
+      letter-spacing: 8px;
     }
 
     h1 {
       font-weight: bold;
-      font-size: 22px;
+      font-size: 30px;
+      letter-spacing: 4px;
+      font-weight: bold;
       display: inline-block;
       margin-bottom: 0;
+      padding: 15px 0;
     }
     .button {
       width: 180px;
@@ -170,3 +177,73 @@ header {
   }
 }
 //=== intro section end ===//
+
+//=== we-are-best section start ===//
+#we-are-best{
+  padding: 70px 0 20px 0;
+  background-color: white;
+  .caption{
+    h1{
+      padding: 30px 0 80px 0;
+      font-weight: 700;
+      font-size: 36px;
+      position: relative;
+      &::after{
+        content: "";
+        height: 3px;
+        width: 45px;
+        border-radius: 2px;
+        background-color: #32325D;;
+        position: absolute;
+        top: 98px;
+        right: 146px;
+      }
+    }
+  }
+
+  .holder{
+    padding-top: 40px;
+    height: 280px;
+    transition: 0.4s ease-in-out;
+    &:hover{
+      padding-top: 15px !important;
+      transition: 0.4s ease-in-out;
+    }
+    i{
+      position: relative;
+      font-size: 42px;
+      color: #32325D;
+      &::after{
+        content: "";
+        width: 95px;
+        height: 95px;
+        border: 2px solid #32325D;
+        border-radius: 50%;
+        position: absolute;
+        top: -26px;
+        right: -23px;
+      }
+    }
+
+    h4{
+      padding-top: 47px;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    p{
+      position: relative;
+      padding-top: 22px;
+      &::before{
+        content: "";
+        height: 2px;
+        width: 30px;
+        background-color: #32325D;
+        position: absolute;
+        bottom: 61px;
+        left: 113px;
+      }
+    }
+  }
+}
+//=== we-are-best section end ===//

@@ -1,6 +1,6 @@
 header nav .left li a, header nav .account a {
   color: white !important;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
 }
 
@@ -26,7 +26,7 @@ header nav .left li:hover hr {
 
 #intro .carousel-control-prev::before {
   content: "";
-  background-color: rgba(239, 186, 108, 0.6);
+  background-color: rgba(64, 84, 101, 0.6);
   height: 50px;
   width: 52px;
   border-radius: 0 100px 100px 0;
@@ -38,7 +38,7 @@ header nav .left li:hover hr {
 
 #intro .carousel-control-next::before {
   content: "";
-  background-color: rgba(239, 186, 108, 0.6);
+  background-color: rgba(64, 84, 101, 0.6);
   height: 50px;
   width: 52px;
   border-radius: 100px 0 0 100px;
@@ -72,6 +72,12 @@ html {
   z-index: 999;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
 header nav {
   padding: 10px 40px 10px 40px !important;
   background-color: rgba(0, 0, 0, 0.3) !important;
@@ -102,7 +108,7 @@ header nav .left li:hover .contact-line {
 }
 
 header nav .account {
-  width: 100px;
+  width: 110px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,11 +145,6 @@ header nav .account a span sup {
   right: 3px;
 }
 
-#intro {
-  position: absolute;
-  top: -70px;
-}
-
 #intro .carousel-item {
   height: 830px;
 }
@@ -175,23 +176,28 @@ header nav .account a span sup {
 }
 
 #intro .caption {
-  width: 400px;
+  width: 600px;
   position: absolute;
-  top: 410px;
-  left: 565px;
+  top: 310px;
+  left: 460px;
   color: white;
 }
 
 #intro .caption h3 {
   font-weight: normal;
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 8px;
 }
 
 #intro .caption h1 {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-weight: bold;
   display: inline-block;
   margin-bottom: 0;
+  padding: 15px 0;
 }
 
 #intro .caption .button {
@@ -235,5 +241,79 @@ header nav .account a span sup {
     -webkit-transform: scale(1.2, 1.2);
             transform: scale(1.2, 1.2);
   }
+}
+
+#we-are-best {
+  padding: 70px 0 20px 0;
+  background-color: white;
+}
+
+#we-are-best .caption h1 {
+  padding: 30px 0 80px 0;
+  font-weight: 700;
+  font-size: 36px;
+  position: relative;
+}
+
+#we-are-best .caption h1::after {
+  content: "";
+  height: 3px;
+  width: 45px;
+  border-radius: 2px;
+  background-color: #32325D;
+  position: absolute;
+  top: 98px;
+  right: 146px;
+}
+
+#we-are-best .holder {
+  padding-top: 40px;
+  height: 280px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+#we-are-best .holder:hover {
+  padding-top: 15px !important;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+#we-are-best .holder i {
+  position: relative;
+  font-size: 42px;
+  color: #32325D;
+}
+
+#we-are-best .holder i::after {
+  content: "";
+  width: 95px;
+  height: 95px;
+  border: 2px solid #32325D;
+  border-radius: 50%;
+  position: absolute;
+  top: -26px;
+  right: -23px;
+}
+
+#we-are-best .holder h4 {
+  padding-top: 47px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#we-are-best .holder p {
+  position: relative;
+  padding-top: 22px;
+}
+
+#we-are-best .holder p::before {
+  content: "";
+  height: 2px;
+  width: 30px;
+  background-color: #32325D;
+  position: absolute;
+  bottom: 61px;
+  left: 113px;
 }
 /*# sourceMappingURL=style.css.map */

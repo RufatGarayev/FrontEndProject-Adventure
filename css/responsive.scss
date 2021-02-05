@@ -12,8 +12,8 @@
 
       .left {
         padding-left: 275px !important;
-        li{
-          hr{
+        li {
+          hr {
             display: none;
           }
         }
@@ -24,14 +24,14 @@
         position: absolute;
         right: 35px;
         top: 22px;
-        li{
-          hr{
+        li {
+          hr {
             display: none;
           }
         }
         a {
           font-size: 17px !important;
-          span{
+          span {
             position: absolute;
             top: 0px;
             right: -12px;
@@ -42,8 +42,6 @@
   }
 
   #intro {
-    position: absolute;
-    top: -70px !important;
     .carousel-item {
       height: 720px !important;
     }
@@ -81,6 +79,19 @@
       }
     }
   }
+
+  #we-are-best {
+    padding: 70px 0 50px 0 !important;
+    .holder {
+      font-size: 17px;
+      p {
+        &::before {
+          bottom: 89px !important;
+          left: 91px !important;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -100,8 +111,8 @@
 
     .left {
       padding: 15px 0 13px 20px !important;
-      li{
-        hr{
+      li {
+        hr {
           display: none;
         }
       }
@@ -111,16 +122,16 @@
       position: absolute;
       right: 110px;
       top: 19px;
-      li{
-        hr{
+      li {
+        hr {
           display: none;
         }
       }
       a {
         font-size: 18px !important;
         position: relative;
-        span{
-          sup{
+        span {
+          sup {
             position: absolute !important;
             font-size: 12px;
             top: 5px !important;
@@ -132,8 +143,6 @@
   }
 
   #intro {
-    position: absolute;
-    top: -70px !important;
     .carousel-item {
       height: 720px !important;
     }
@@ -164,10 +173,34 @@
 
       .button {
         width: 120px !important;
-        height: 29px !important;
-        line-height: 26px !important;
+        height: 30px !important;
+        line-height: 28px !important;
         font-size: 11px !important;
         border-radius: 2px !important;
+      }
+    }
+  }
+
+  #we-are-best {
+    padding: 70px 0 50px 0 !important;
+    .caption {
+      h1 {
+        font-size: 30px !important;
+        &::after {
+          right: 118px !important;
+        }
+      }
+    }
+
+    .holder {
+      padding-right: 40px;
+      padding-left: 40px;
+      font-size: 17px;
+      p {
+        &::before {
+          bottom: 64px !important;
+          left: 112px !important;
+        }
       }
     }
   }
@@ -186,8 +219,8 @@
 
     .left {
       padding: 15px 0 13px 0 !important;
-      li{
-        hr{
+      li {
+        hr {
           display: none;
         }
       }
@@ -197,8 +230,8 @@
       position: absolute;
       right: 40px;
       top: 26px;
-      li{
-        hr{
+      li {
+        hr {
           display: none;
         }
       }
@@ -206,8 +239,6 @@
   }
 
   #intro {
-    position: absolute;
-    top: -70px !important;
     .carousel-item {
       height: 420px !important;
       img {
@@ -244,6 +275,30 @@
       }
     }
   }
+
+  #we-are-best {
+    padding: 70px 0 50px 0 !important;
+    .caption {
+      h1 {
+        font-size: 30px !important;
+        &::after {
+          right: 118px !important;
+        }
+      }
+    }
+
+    .holder {
+      padding-right: 40px;
+      padding-left: 40px;
+      font-size: 17px;
+      p {
+        &::before {
+          bottom: 64px !important;
+          left: 112px !important;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 500px) and (max-width: 575.98px) {
@@ -275,7 +330,7 @@
           a {
             font-size: 9px !important;
           }
-          hr{
+          hr {
             display: none;
           }
         }
@@ -287,24 +342,24 @@
         right: 70px;
         top: 6px;
         li {
-          hr{
+          hr {
             display: none;
           }
-          &:first-of-type{
+          &:first-of-type {
             padding-top: 0px !important;
           }
           a {
             font-size: 11px !important;
             position: relative;
-            span{
-             sup{
-              font-size: 8px;
-              position: absolute;
-              top: 2px;
-              right: -6px;
-             }
+            span {
+              sup {
+                font-size: 8px;
+                position: absolute;
+                top: 2px;
+                right: -6px;
+              }
             }
-            span:before{
+            span:before {
               font-size: 13px;
             }
           }
@@ -314,8 +369,6 @@
   }
 
   #intro {
-    position: absolute;
-    top: -55px !important;
     .carousel-item {
       height: 420px !important;
       img {
@@ -352,6 +405,50 @@
       }
     }
   }
+
+  #we-are-best {
+    padding: 70px 0 50px 0 !important;
+    .caption {
+      h1 {
+        padding: 50px 0 100px 0 !important;
+        font-size: 22px !important;
+        &::after {
+          height: 2px !important;
+          top: 104px !important;
+          right: 83px !important;
+        }
+      }
+    }
+
+    .holder {
+      padding-right: 40px;
+      padding-left: 40px;
+      font-size: 17px;
+      i {
+        font-size: 35px !important;
+        &::after{
+          width: 85px !important;
+          height: 85px !important;
+          top: -25px !important;
+          right: -22px !important;
+        }
+      }
+
+      h4{
+        font-size: 19px !important;
+      }
+
+      p {
+        width: 250px;
+        font-size: 15px !important;
+        &::before {
+          height: 1px !important;
+          bottom: 60px !important;
+          left: 111px !important;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 400px) and (max-width: 499.98px) {
@@ -380,7 +477,7 @@
       .left {
         padding: 23px 0 0 0 !important;
         li {
-          hr{
+          hr {
             display: none;
           }
           a {
@@ -395,24 +492,24 @@
         right: 65px;
         top: 6px;
         li {
-          hr{
+          hr {
             display: none;
           }
-          &:first-of-type{
+          &:first-of-type {
             padding-top: 0px !important;
           }
           a {
             font-size: 11px !important;
             position: relative;
-            span{
-             sup{
-              font-size: 8px;
-              position: absolute;
-              top: 2px;
-              right: -6px;
-             }
+            span {
+              sup {
+                font-size: 8px;
+                position: absolute;
+                top: 2px;
+                right: -6px;
+              }
             }
-            span:before{
+            span:before {
               font-size: 13px;
             }
           }
@@ -422,8 +519,6 @@
   }
 
   #intro {
-    position: absolute;
-    top: -55px !important;
     .carousel-item {
       height: 420px !important;
       img {
@@ -460,6 +555,50 @@
       }
     }
   }
+
+  #we-are-best {
+    padding: 70px 0 50px 0 !important;
+    .caption {
+      h1 {
+        padding: 40px 0 80px 0 !important;
+        font-size: 22px !important;
+        &::after {
+          height: 1px !important;
+          top: 94px !important;
+          right: 83px !important;
+        }
+      }
+    }
+
+    .holder {
+      padding-right: 40px;
+      padding-left: 40px;
+      font-size: 17px;
+      i {
+        font-size: 35px !important;
+        &::after{
+          width: 85px !important;
+          height: 85px !important;
+          top: -25px !important;
+          right: -22px !important;
+        }
+      }
+
+      h4{
+        font-size: 17px !important;
+      }
+
+      p {
+        font-size: 13px !important;
+        width: 250px;
+        &::before {
+          height: 1px !important;
+          bottom: 53px !important;
+          left: 110px !important;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 300px) and (max-width: 399.98px) {
@@ -488,7 +627,7 @@
       .left {
         padding: 23px 0 0 0 !important;
         li {
-          hr{
+          hr {
             display: none;
           }
           a {
@@ -503,24 +642,24 @@
         right: 65px;
         top: 6px;
         li {
-          hr{
+          hr {
             display: none;
           }
-          &:first-of-type{
+          &:first-of-type {
             padding-top: 0px !important;
           }
           a {
             font-size: 11px !important;
             position: relative;
-            span{
-             sup{
-              font-size: 8px;
-              position: absolute;
-              top: 2px;
-              right: -6px;
-             }
+            span {
+              sup {
+                font-size: 8px;
+                position: absolute;
+                top: 2px;
+                right: -6px;
+              }
             }
-            span:before{
+            span:before {
               font-size: 13px;
             }
           }
@@ -530,8 +669,6 @@
   }
 
   #intro {
-    position: absolute;
-    top: -55px !important;
     .carousel-item {
       height: 420px !important;
       img {
@@ -550,7 +687,7 @@
       width: 180px !important;
       height: 90px !important;
       top: 210px !important;
-      left: 102px !important;
+      left: 95px !important;
       h3 {
         font-size: 15px !important;
       }
@@ -565,6 +702,50 @@
         line-height: 18px !important;
         font-size: 7px !important;
         border-radius: 1px !important;
+      }
+    }
+  }
+
+  #we-are-best {
+    padding: 70px 0 50px 0 !important;
+    .caption {
+      h1 {
+        padding: 40px 0 80px 0 !important;
+        font-size: 22px !important;
+        &::after {
+          height: 1px !important;
+          top: 94px !important;
+          right: 83px !important;
+        }
+      }
+    }
+
+    .holder {
+      padding-right: 40px;
+      padding-left: 40px;
+      font-size: 17px;
+      i {
+        font-size: 35px !important;
+        &::after{
+          width: 85px !important;
+          height: 85px !important;
+          top: -25px !important;
+          right: -22px !important;
+        }
+      }
+
+      h4{
+        font-size: 17px !important;
+      }
+
+      p {
+        font-size: 13px !important;
+        width: 250px;
+        &::before {
+          height: 1px !important;
+          bottom: 53px !important;
+          left: 110px !important;
+        }
       }
     }
   }
@@ -596,7 +777,7 @@
       .left {
         padding: 15px 0 0 0 !important;
         li {
-          hr{
+          hr {
             display: none;
           }
           a {
@@ -611,24 +792,24 @@
         right: 48px;
         top: 3px;
         li {
-          hr{
+          hr {
             display: none;
           }
-          &:first-of-type{
+          &:first-of-type {
             padding-top: 0px !important;
           }
           a {
             font-size: 9px !important;
             position: relative;
-            span{
-             sup{
-              font-size: 6px;
-              position: absolute;
-              top: 4px;
-              right: -6px;
-             }
+            span {
+              sup {
+                font-size: 6px;
+                position: absolute;
+                top: 4px;
+                right: -6px;
+              }
             }
-            span:before{
+            span:before {
               font-size: 10px;
               margin: 0;
             }
@@ -639,8 +820,6 @@
   }
 
   #intro {
-    position: absolute;
-    top: -50px !important;
     .carousel-item {
       height: 280px !important;
       img {
@@ -674,6 +853,50 @@
         line-height: 14px !important;
         font-size: 6px !important;
         border-radius: 1px !important;
+      }
+    }
+  }
+
+  #we-are-best {
+    padding: 70px 0 50px 0 !important;
+    .caption {
+      h1 {
+        padding: 40px 0 80px 0 !important;
+        font-size: 22px !important;
+        &::after {
+          height: 1px !important;
+          top: 90px !important;
+          right: 83px !important;
+        }
+      }
+    }
+
+    .holder {
+      padding-right: 40px;
+      padding-left: 40px;
+      font-size: 17px;
+      i {
+        font-size: 35px !important;
+        &::after{
+          width: 85px !important;
+          height: 85px !important;
+          top: -25px !important;
+          right: -22px !important;
+        }
+      }
+
+      h4{
+        font-size: 17px !important;
+      }
+
+      p {
+        font-size: 13px !important;
+        width: 250px;
+        &::before {
+          height: 1px !important;
+          bottom: 53px !important;
+          left: 110px !important;
+        }
       }
     }
   }
