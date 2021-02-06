@@ -1,10 +1,30 @@
-//=== reload-img start ===//
+$(document).ready(function(){
+// ======= Reload-Img Start ======= //
 // $(window).on("load", function() {
 //     $(".pre-icon").fadeOut("slow");
 // });
-//=== reload-img end ===//
+// ======= Reload-Img End ======= //
 
-//=== Type Writer Effect start ===//
+
+// ======= Navbar Hamburger Effect Start ======= //
+let menuIcon = document.querySelector(".hamburger");
+let navbar = document.querySelector(".navbar-items");
+
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("change");
+  navbar.classList.toggle("active");
+});
+// ======= Navbar Hamburger Effect End ======= //
+
+
+// ======= Navbar Links Hover Effect Start ======= //
+// $(".nav-item").click(function(){
+//   $(this).addClass("active-link").siblings().removeClass("active-link");
+// });
+// ======= Navbar Links Hover Effect End ======= //
+
+
+// ======= Type Writer Effect Start ======= //
 // ES6 Class
 class TypeWriter {
   constructor(txtElement, words, wait = 1000) {
@@ -71,4 +91,5 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
-//=== Type Writer Effect end ===//
+// ======= Type Writer Effect End ======= //
+});

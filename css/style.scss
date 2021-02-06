@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
   font-family: "Nunito", sans-serif;
 }
 
@@ -23,75 +25,40 @@ html {
   z-index: 999;
 }
 
-
-//=== header start ===//
+// ======= Header Start ======= //
 header {
   position: fixed;
   width: 100%;
   z-index: 99;
   nav {
-    padding: 10px 40px 10px 40px !important;
     background-color: rgba(0, 0, 0, 0.3) !important;
+    padding: 11px 40px !important;
     z-index: 7;
     img {
-      width: 80px;
+      width: 90px;
     }
+    .navbar-items {
+      width: 60% !important;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+     .hamburger{
+       display: none;
+     }
 
-    .left {
-      padding-left: 435px;
-
-      li {
-        margin-right: 36px;
-        transition: transform .2s;
-        position: relative;
-        hr{
-          @extend %nav-li-line;
-        }
-        @extend %nav-li-hover;
-        &:hover .contact-line{
-          width: 83% !important;
-          transition: 0.2s linear;
-        }
-        a {
-          @extend %nav-a;
-        }
+      .links {
+       @extend %nav-link-properties;
       }
     }
 
     .account {
-      width: 110px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      li:first-of-type{
-        padding-top: 4px;
-        position: relative;
-        hr{
-          @extend %nav-li-line;
-          position: absolute !important;
-          bottom: 0px;
-          left: 0px;
-        }
-        &:hover hr{
-          width: 42px !important;
-          height: 2% !important;
-          transition: 0.2s linear;
-        }
-      }  
-      a {
-        @extend %nav-a;
-        span{
-          sup{
-            font-style: normal;
-            top: -10px;
-            right: 3px;
-          }
-        }
-      }  
+      width: 120px;
+      @extend %nav-link-properties;
     }
   }
 }
-//=== header end ===//
+// ======= Header End ======= //
 
 //=== intro section start ===//
 #intro {
@@ -105,30 +72,15 @@ header {
     }
   }
 
-  .carousel-control-prev {
-    @extend %left-arrow;
-    .carousel-control {
-      margin: 130px 180px 0 0;
-      i {
-        font-size: 20px;
-      }
-    }
-  }
-
-  .carousel-control-next {
-    @extend %right-arrow;
-    .carousel-control {
-      margin: 130px 0 0 180px;
-      i {
-        font-size: 20px;
-      }
-    }
+  .carousel-button {
+    width: 100px;
+    @extend %carousel-control;
   }
 
   .caption {
     width: 600px;
     position: absolute;
-    top: 310px;
+    top: 280px;
     left: 460px;
     color: white;
     h3 {
@@ -145,7 +97,7 @@ header {
       font-weight: bold;
       display: inline-block;
       margin-bottom: 0;
-      padding: 15px 0;
+      padding: 20px 0 40px 0;
     }
     .button {
       width: 180px;
@@ -179,21 +131,21 @@ header {
 //=== intro section end ===//
 
 //=== we-are-best section start ===//
-#we-are-best{
+#we-are-best {
   padding: 70px 0 20px 0;
   background-color: white;
-  .caption{
-    h1{
+  .caption {
+    h1 {
       padding: 30px 0 80px 0;
       font-weight: 700;
       font-size: 36px;
       position: relative;
-      &::after{
+      &::after {
         content: "";
         height: 3px;
         width: 45px;
         border-radius: 2px;
-        background-color: #32325D;;
+        background-color: #32325d;
         position: absolute;
         top: 98px;
         right: 146px;
@@ -201,23 +153,23 @@ header {
     }
   }
 
-  .holder{
+  .holder {
     padding-top: 40px;
     height: 280px;
     transition: 0.4s ease-in-out;
-    &:hover{
+    &:hover {
       padding-top: 15px !important;
       transition: 0.4s ease-in-out;
     }
-    i{
+    i {
       position: relative;
       font-size: 42px;
-      color: #32325D;
-      &::after{
+      color: #32325d;
+      &::after {
         content: "";
         width: 95px;
         height: 95px;
-        border: 2px solid #32325D;
+        border: 2px solid #32325d;
         border-radius: 50%;
         position: absolute;
         top: -26px;
@@ -225,20 +177,20 @@ header {
       }
     }
 
-    h4{
+    h4 {
       padding-top: 47px;
       font-weight: 700;
       font-size: 20px;
     }
 
-    p{
+    p {
       position: relative;
       padding-top: 22px;
-      &::before{
+      &::before {
         content: "";
         height: 2px;
         width: 30px;
-        background-color: #32325D;
+        background-color: #32325d;
         position: absolute;
         bottom: 61px;
         left: 113px;

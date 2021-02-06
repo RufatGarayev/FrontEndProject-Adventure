@@ -1,51 +1,66 @@
-header nav .left li a, header nav .account a {
+header nav .navbar-items .links li a, header nav .account li a {
   color: white !important;
   font-weight: 600;
   font-size: 16px;
 }
 
-header nav .left li a:hover, header nav .account a:hover {
+header nav .navbar-items .links li a:hover, header nav .account li a:hover {
   text-decoration: none;
 }
 
-header nav .left li hr, header nav .account li:first-of-type hr {
+header nav .navbar-items .links li hr, header nav .account li hr {
   position: absolute;
   bottom: 7px;
-  left: 7px;
+  left: 0;
   margin: 0;
   height: 1%;
   width: 0px;
   background-color: white !important;
 }
 
-header nav .left li:hover hr {
-  width: 78% !important;
+header nav .navbar-items .links li:hover hr, header nav .account li:hover hr {
+  width: 100% !important;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
-#intro .carousel-control-prev::before {
-  content: "";
-  background-color: rgba(64, 84, 101, 0.6);
+header nav .navbar-items .links, header nav .account {
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .navbar-items .links li, header nav .account li {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  position: relative;
+}
+
+#intro .carousel-button .carousel-control {
+  width: 50px;
   height: 50px;
-  width: 52px;
-  border-radius: 0 100px 100px 0;
-  position: absolute;
-  top: 452px;
-  left: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  text-align: center;
   z-index: -1;
 }
 
-#intro .carousel-control-next::before {
-  content: "";
-  background-color: rgba(64, 84, 101, 0.6);
-  height: 50px;
-  width: 52px;
-  border-radius: 100px 0 0 100px;
-  position: absolute;
-  top: 452px;
-  right: 0;
-  z-index: -1;
+#intro .carousel-button .carousel-control i::before {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  line-height: 48px;
+  margin-left: 0;
+  color: black;
 }
 
 * {
@@ -53,6 +68,8 @@ header nav .left li:hover hr {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
   font-family: "Nunito", sans-serif;
 }
 
@@ -79,36 +96,17 @@ header {
 }
 
 header nav {
-  padding: 10px 40px 10px 40px !important;
   background-color: rgba(0, 0, 0, 0.3) !important;
+  padding: 11px 40px !important;
   z-index: 7;
 }
 
 header nav img {
-  width: 80px;
+  width: 90px;
 }
 
-header nav .left {
-  padding-left: 435px;
-}
-
-header nav .left li {
-  margin-right: 36px;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-  position: relative;
-}
-
-header nav .left li:hover .contact-line {
-  width: 83% !important;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
-}
-
-header nav .account {
-  width: 110px;
+header nav .navbar-items {
+  width: 60% !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,33 +114,20 @@ header nav .account {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header nav .account li:first-of-type {
-  padding-top: 4px;
-  position: relative;
+header nav .navbar-items .hamburger {
+  display: none;
 }
 
-header nav .account li:first-of-type hr {
-  position: absolute !important;
-  bottom: 0px;
-  left: 0px;
-}
-
-header nav .account li:first-of-type:hover hr {
-  width: 42px !important;
-  height: 2% !important;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
-}
-
-header nav .account a span sup {
-  font-style: normal;
-  top: -10px;
-  right: 3px;
+header nav .account {
+  width: 120px;
 }
 
 #intro .carousel-item {
@@ -159,26 +144,14 @@ header nav .account a span sup {
      object-fit: cover !important;
 }
 
-#intro .carousel-control-prev .carousel-control {
-  margin: 130px 180px 0 0;
-}
-
-#intro .carousel-control-prev .carousel-control i {
-  font-size: 20px;
-}
-
-#intro .carousel-control-next .carousel-control {
-  margin: 130px 0 0 180px;
-}
-
-#intro .carousel-control-next .carousel-control i {
-  font-size: 20px;
+#intro .carousel-button {
+  width: 100px;
 }
 
 #intro .caption {
   width: 600px;
   position: absolute;
-  top: 310px;
+  top: 280px;
   left: 460px;
   color: white;
 }
@@ -197,7 +170,7 @@ header nav .account a span sup {
   font-weight: bold;
   display: inline-block;
   margin-bottom: 0;
-  padding: 15px 0;
+  padding: 20px 0 40px 0;
 }
 
 #intro .caption .button {
@@ -260,7 +233,7 @@ header nav .account a span sup {
   height: 3px;
   width: 45px;
   border-radius: 2px;
-  background-color: #32325D;
+  background-color: #32325d;
   position: absolute;
   top: 98px;
   right: 146px;
@@ -282,14 +255,14 @@ header nav .account a span sup {
 #we-are-best .holder i {
   position: relative;
   font-size: 42px;
-  color: #32325D;
+  color: #32325d;
 }
 
 #we-are-best .holder i::after {
   content: "";
   width: 95px;
   height: 95px;
-  border: 2px solid #32325D;
+  border: 2px solid #32325d;
   border-radius: 50%;
   position: absolute;
   top: -26px;
@@ -311,7 +284,7 @@ header nav .account a span sup {
   content: "";
   height: 2px;
   width: 30px;
-  background-color: #32325D;
+  background-color: #32325d;
   position: absolute;
   bottom: 61px;
   left: 113px;

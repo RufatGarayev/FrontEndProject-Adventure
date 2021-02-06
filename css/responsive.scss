@@ -1,80 +1,28 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  header {
-    nav {
-      height: 76px;
-      padding: 10px 0 10px 0 !important;
-      img {
-        width: 90px !important;
-        position: absolute;
-        top: 12px;
-        left: 22px;
-      }
-
-      .left {
-        padding-left: 275px !important;
-        li {
-          hr {
-            display: none;
-          }
-        }
-      }
-
-      .account {
-        width: 90px !important;
-        position: absolute;
-        right: 35px;
-        top: 22px;
-        li {
-          hr {
-            display: none;
-          }
-        }
-        a {
-          font-size: 17px !important;
-          span {
-            position: absolute;
-            top: 0px;
-            right: -12px;
-          }
-        }
-      }
-    }
-  }
-
   #intro {
     .carousel-item {
-      height: 720px !important;
-    }
-
-    .carousel-control-next {
-      .carousel-control {
-        margin: 238px 0 0 107px !important;
-      }
-    }
-    .carousel-control-prev {
-      .carousel-control {
-        margin: 238px 107px 0 0 !important;
-      }
+      height: 100vh !important;
     }
 
     .caption {
-      width: 280px !important;
-      height: 120px !important;
-      top: 350px !important;
-      left: 370px !important;
+      width: 800px !important;
+      height: auto;
+      top: 500px !important;
+      left: 120px !important;
       h3 {
-        font-size: 24px !important;
+        font-size: 70px !important;
       }
 
       h1 {
-        font-size: 24px !important;
+        font-size: 50px !important;
+        padding: 40px 0 80px 0 !important;
       }
 
       .button {
-        width: 120px !important;
-        height: 30px !important;
-        line-height: 30px !important;
-        font-size: 11px !important;
+        width: 300px !important;
+        height: 62px !important;
+        line-height: 60px !important;
+        font-size: 28px !important;
         border-radius: 2px !important;
       }
     }
@@ -96,46 +44,85 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   header {
-    img {
-      width: 90px !important;
-    }
-
-    .navbar-toggler {
-      border: none;
-      font-size: 18px;
-      padding: 0 0 5px 0;
-      &:focus {
-        outline: none;
+    .navbar {
+      height: 92px;
+      img {
+        width: 110px !important;
+        position: absolute;
+        top: 15px !important;
+        left: 40px;
+        z-index: 99;
       }
-    }
 
-    .left {
-      padding: 15px 0 13px 20px !important;
-      li {
-        hr {
-          display: none;
+      .navbar-items {
+        width: 100% !important;
+        height: 100%;
+        background-color: #3A3B74 !important;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+        .hamburger {
+          display: inline-block !important;
+          width: 35px;
+          height: 30px;
+          position: fixed;
+          top: 27px;
+          right: 44px;
+          cursor: pointer;
+          display: flex !important;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+
+        .line {
+          width: 100%;
+          height: 3px;
+          background-color: white;
+          transition: all 0.7s;
+        }
+
+        .change .line-1 {
+          transform: rotateZ(-45deg) translate(-8px, 6px);
+        }
+        .change .line-2 {
+          opacity: 0;
+        }
+        .change .line-3 {
+          transform: rotateZ(45deg) translate(-8px, -6px);
+        }
+
+        .links {
+          height: 507px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          li{
+            a{
+              font-size: 36px;
+            }
+          }
         }
       }
-    }
 
-    .account {
-      position: absolute;
-      right: 110px;
-      top: 19px;
-      li {
-        hr {
-          display: none;
-        }
+      .active {
+        right: 0 !important;
       }
-      a {
-        font-size: 18px !important;
-        position: relative;
-        span {
-          sup {
-            position: absolute !important;
-            font-size: 12px;
-            top: 5px !important;
-            right: -8px !important;
+
+      .account {
+        width: 140px !important;
+        flex-direction: row;
+        position: absolute;
+        top: 19px;
+        right: 120px;
+        li{
+          a{
+            font-size: 22px;
           }
         }
       }
@@ -144,39 +131,33 @@
 
   #intro {
     .carousel-item {
-      height: 720px !important;
+      height: 100vh !important;
     }
 
-    .carousel-control-next {
-      .carousel-control {
-        margin: 238px 0 0 70px !important;
-      }
-    }
-    .carousel-control-prev {
-      .carousel-control {
-        margin: 238px 70px 0 0 !important;
-      }
+    .carousel-button {
+      display: none;
     }
 
     .caption {
-      width: 280px !important;
-      height: 120px !important;
-      top: 350px !important;
-      left: 242px !important;
+      width: 700px !important;
+      height: auto;
+      top: 380px !important;
+      left: 32px !important;
       h3 {
-        font-size: 24px !important;
+        font-size: 60px !important;
       }
 
       h1 {
-        font-size: 24px !important;
+        font-size: 40px !important;
+        padding: 20px 0 50px 0 !important;
       }
 
       .button {
-        width: 120px !important;
-        height: 30px !important;
-        line-height: 28px !important;
-        font-size: 11px !important;
-        border-radius: 2px !important;
+        width: 220px !important;
+        height: 52px !important;
+        line-height: 50px !important;
+        font-size: 22px !important;
+        border-radius: 3px !important;
       }
     }
   }
@@ -208,31 +189,87 @@
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   header {
-    .navbar-toggler {
-      border: none;
-      font-size: 14px;
-      padding: 3px 20px 3px 0;
-      &:focus {
-        outline: none;
+    .navbar {
+      height: 75px;
+      img {
+        width: 90px !important;
+        position: absolute;
+        top: 12px !important;
+        left: 40px;
+        z-index: 99;
       }
-    }
 
-    .left {
-      padding: 15px 0 13px 0 !important;
-      li {
-        hr {
-          display: none;
+      .navbar-items {
+        width: 100% !important;
+        height: 100%;
+        background-color: #3A3B74 !important;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+        .hamburger {
+          display: inline-block !important;
+          width: 35px;
+          height: 30px;
+          position: fixed;
+          top: 22px;
+          right: 44px;
+          cursor: pointer;
+          display: flex !important;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+
+        .line {
+          width: 100%;
+          height: 3px;
+          background-color: white;
+          transition: all 0.7s;
+        }
+
+        .change .line-1 {
+          transform: rotateZ(-45deg) translate(-8px, 6px);
+        }
+        .change .line-2 {
+          opacity: 0;
+        }
+        .change .line-3 {
+          transform: rotateZ(45deg) translate(-8px, -6px);
+        }
+
+        .links {
+          height: 507px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          li{
+            a{
+              font-size: 30px;
+            }
+          }
         }
       }
-    }
 
-    .account {
-      position: absolute;
-      right: 40px;
-      top: 26px;
-      li {
-        hr {
-          display: none;
+      .active {
+        right: 0 !important;
+      }
+
+      .account {
+        width: 112px !important;
+        flex-direction: row;
+        position: absolute;
+        top: 18px;
+        right: 120px;
+        li{
+          a{
+            font-size: 16px;
+          }
         }
       }
     }
@@ -240,38 +277,32 @@
 
   #intro {
     .carousel-item {
-      height: 420px !important;
-      img {
-        height: 100% !important;
-      }
+      height: 100vh !important;
     }
 
-    .carousel-control-prev {
-      display: none !important;
-    }
-    .carousel-control-next {
-      display: none !important;
+    .carousel-button {
+      display: none;
     }
 
     .caption {
-      width: 180px !important;
-      height: 90px !important;
-      top: 210px !important;
-      left: 102px !important;
+      width: 700px !important;
+      height: auto;
+      top: 400px !important;
+      left: 32px !important;
       h3 {
-        font-size: 15px !important;
+        font-size: 60px !important;
       }
 
       h1 {
-        font-size: 15px !important;
+        font-size: 40px !important;
       }
 
       .button {
-        width: 60px !important;
-        height: 16px !important;
-        line-height: 9px !important;
-        font-size: 7px !important;
-        border-radius: 1px !important;
+        width: 220px !important;
+        height: 52px !important;
+        line-height: 50px !important;
+        font-size: 22px !important;
+        border-radius: 3px !important;
       }
     }
   }
@@ -303,65 +334,86 @@
 
 @media (min-width: 500px) and (max-width: 575.98px) {
   header {
-    nav {
-      min-height: 40px !important;
-      padding: 10px 0 10px 0 !important;
+    .navbar {
+      height: 75px;
       img {
-        width: 50px !important;
+        width: 90px !important;
         position: absolute;
-        left: 15px;
-        top: 6px;
+        top: 12px !important;
+        left: 40px;
+        z-index: 99;
       }
 
-      .navbar-toggler {
-        border: none;
-        font-size: 11px;
-        position: absolute;
-        right: 8px;
-        top: 6px;
-        &:focus {
-          outline: none;
+      .navbar-items {
+        width: 100% !important;
+        height: 100%;
+        background-color: #3A3B74 !important;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+        .hamburger {
+          display: inline-block !important;
+          width: 35px;
+          height: 30px;
+          position: fixed;
+          top: 22px;
+          right: 44px;
+          cursor: pointer;
+          display: flex !important;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+
+        .line {
+          width: 100%;
+          height: 3px;
+          background-color: white;
+          transition: all 0.7s;
+        }
+
+        .change .line-1 {
+          transform: rotateZ(-45deg) translate(-8px, 6px);
+        }
+        .change .line-2 {
+          opacity: 0;
+        }
+        .change .line-3 {
+          transform: rotateZ(45deg) translate(-8px, -6px);
+        }
+
+        .links {
+          height: 507px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          li{
+            a{
+              font-size: 30px;
+            }
+          }
         }
       }
 
-      .left {
-        padding: 23px 0 0 0 !important;
-        li {
-          a {
-            font-size: 9px !important;
-          }
-          hr {
-            display: none;
-          }
-        }
+      .active {
+        right: 0 !important;
       }
 
       .account {
-        width: 60px !important;
+        width: 112px !important;
+        flex-direction: row;
         position: absolute;
-        right: 70px;
-        top: 6px;
-        li {
-          hr {
-            display: none;
-          }
-          &:first-of-type {
-            padding-top: 0px !important;
-          }
-          a {
-            font-size: 11px !important;
-            position: relative;
-            span {
-              sup {
-                font-size: 8px;
-                position: absolute;
-                top: 2px;
-                right: -6px;
-              }
-            }
-            span:before {
-              font-size: 13px;
-            }
+        top: 18px;
+        right: 120px;
+        li{
+          a{
+            font-size: 16px;
           }
         }
       }
@@ -370,38 +422,35 @@
 
   #intro {
     .carousel-item {
-      height: 420px !important;
-      img {
-        height: 100% !important;
-      }
+      height: 100vh !important;
     }
 
-    .carousel-control-prev {
-      display: none !important;
-    }
-    .carousel-control-next {
-      display: none !important;
+    .carousel-button {
+      display: none;
     }
 
     .caption {
-      width: 180px !important;
-      height: 90px !important;
-      top: 210px !important;
-      left: 180px !important;
+      width: 480px !important;
+      height: auto;
+      top: 220px !important;
+      left: 32px !important;
+      text-align: center;
       h3 {
-        font-size: 15px !important;
+        font-size: 62px !important;
+        letter-spacing: 6px !important;
       }
 
       h1 {
-        font-size: 15px !important;
+        padding: 20px 0 40px 0 !important;
+        font-size: 30px !important;
       }
 
       .button {
-        width: 70px !important;
-        height: 20px !important;
-        line-height: 16px !important;
-        font-size: 7px !important;
-        border-radius: 1px !important;
+        width: 176px !important;
+        height: 45px !important;
+        line-height: 42px !important;
+        font-size: 17px !important;
+        border-radius: 3px !important;
       }
     }
   }
@@ -426,7 +475,7 @@
       font-size: 17px;
       i {
         font-size: 35px !important;
-        &::after{
+        &::after {
           width: 85px !important;
           height: 85px !important;
           top: -25px !important;
@@ -434,7 +483,7 @@
         }
       }
 
-      h4{
+      h4 {
         font-size: 19px !important;
       }
 
@@ -453,65 +502,86 @@
 
 @media (min-width: 400px) and (max-width: 499.98px) {
   header {
-    nav {
-      min-height: 40px !important;
-      padding: 10px 0 10px 0 !important;
+    .navbar {
+      height: 70px;
       img {
-        width: 50px !important;
+        width: 90px !important;
         position: absolute;
-        left: 15px;
-        top: 6px;
+        top: 10px !important;
+        left: 20px;
+        z-index: 99;
       }
 
-      .navbar-toggler {
-        border: none;
-        font-size: 11px;
-        position: absolute;
-        right: 8px;
-        top: 6px;
-        &:focus {
-          outline: none;
+      .navbar-items {
+        width: 100% !important;
+        height: 100%;
+        background-color: #3A3B74 !important;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+        .hamburger {
+          display: inline-block !important;
+          width: 30px;
+          height: 30px;
+          position: fixed;
+          top: 19px;
+          right: 22px;
+          cursor: pointer;
+          display: flex !important;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+
+        .line {
+          width: 100%;
+          height: 3px;
+          background-color: white;
+          transition: all 0.7s;
+        }
+
+        .change .line-1 {
+          transform: rotateZ(-45deg) translate(-8px, 6px);
+        }
+        .change .line-2 {
+          opacity: 0;
+        }
+        .change .line-3 {
+          transform: rotateZ(45deg) translate(-8px, -6px);
+        }
+
+        .links {
+          height: 500px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          li{
+            a{
+              font-size: 30px;
+            }
+          }
         }
       }
 
-      .left {
-        padding: 23px 0 0 0 !important;
-        li {
-          hr {
-            display: none;
-          }
-          a {
-            font-size: 9px !important;
-          }
-        }
+      .active {
+        right: 0 !important;
       }
 
       .account {
-        width: 60px !important;
+        width: 102px !important;
+        flex-direction: row;
         position: absolute;
-        right: 65px;
-        top: 6px;
-        li {
-          hr {
-            display: none;
-          }
-          &:first-of-type {
-            padding-top: 0px !important;
-          }
-          a {
-            font-size: 11px !important;
-            position: relative;
-            span {
-              sup {
-                font-size: 8px;
-                position: absolute;
-                top: 2px;
-                right: -6px;
-              }
-            }
-            span:before {
-              font-size: 13px;
-            }
+        top: 16px;
+        right: 76px;
+        li{
+          a{
+            font-size: 16px;
           }
         }
       }
@@ -520,38 +590,36 @@
 
   #intro {
     .carousel-item {
-      height: 420px !important;
-      img {
-        height: 100% !important;
-      }
+      height: 100vh !important;
     }
 
-    .carousel-control-prev {
-      display: none !important;
-    }
-    .carousel-control-next {
-      display: none !important;
+    .carousel-button {
+      display: none;
     }
 
     .caption {
-      width: 180px !important;
-      height: 90px !important;
-      top: 210px !important;
-      left: 116px !important;
+      width: 380px !important;
+      height: auto;
+      top: 250px !important;
+      left: 18px !important;
+      text-align: center;
       h3 {
-        font-size: 15px !important;
+        font-size: 48px !important;
+        line-height: 60px;
+        letter-spacing: 5px !important;
       }
 
       h1 {
-        font-size: 15px !important;
+        font-size: 24px !important;
+        padding: 20px 0 30px 0 !important;
       }
 
       .button {
-        width: 70px !important;
-        height: 20px !important;
-        line-height: 17px !important;
-        font-size: 7px !important;
-        border-radius: 1px !important;
+        width: 160px !important;
+        height: 38px !important;
+        line-height: 36px !important;
+        font-size: 14px !important;
+        border-radius: 3px !important;
       }
     }
   }
@@ -576,7 +644,7 @@
       font-size: 17px;
       i {
         font-size: 35px !important;
-        &::after{
+        &::after {
           width: 85px !important;
           height: 85px !important;
           top: -25px !important;
@@ -584,7 +652,7 @@
         }
       }
 
-      h4{
+      h4 {
         font-size: 17px !important;
       }
 
@@ -603,65 +671,87 @@
 
 @media (min-width: 300px) and (max-width: 399.98px) {
   header {
-    nav {
-      min-height: 40px !important;
-      padding: 10px 0 10px 0 !important;
+    .navbar {
+      height: 65px;
       img {
-        width: 50px !important;
+        width: 75px !important;
         position: absolute;
-        left: 15px;
-        top: 6px;
+        top: 10px !important;
+        left: 12px;
+        z-index: 99;
       }
 
-      .navbar-toggler {
-        border: none;
-        font-size: 11px;
-        position: absolute;
-        right: 8px;
-        top: 6px;
-        &:focus {
-          outline: none;
+      .navbar-items {
+        width: 100% !important;
+        height: 100%;
+        background-color: #3A3B74 !important;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+        .hamburger {
+          display: inline-block !important;
+          width: 26px;
+          height: 30px;
+          position: fixed;
+          top: 16px;
+          right: 18px;
+          cursor: pointer;
+          display: flex !important;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+
+        .line {
+          width: 100%;
+          height: 3px;
+          background-color: white;
+          transition: all 0.7s;
+        }
+
+        .change .line-1 {
+          transform: rotateZ(-45deg) translate(-8px, 6px);
+        }
+        .change .line-2 {
+          opacity: 0;
+        }
+        .change .line-3 {
+          transform: rotateZ(45deg) translate(-8px, -6px);
+        }
+
+        .links {
+          padding-top: 20px;
+          height: 500px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          li{
+            a{
+              font-size: 26px;
+            }
+          }
         }
       }
 
-      .left {
-        padding: 23px 0 0 0 !important;
-        li {
-          hr {
-            display: none;
-          }
-          a {
-            font-size: 9px !important;
-          }
-        }
+      .active {
+        right: 0 !important;
       }
 
       .account {
-        width: 60px !important;
+        width: 110px !important;
+        flex-direction: row;
         position: absolute;
-        right: 65px;
-        top: 6px;
-        li {
-          hr {
-            display: none;
-          }
-          &:first-of-type {
-            padding-top: 0px !important;
-          }
-          a {
-            font-size: 11px !important;
-            position: relative;
-            span {
-              sup {
-                font-size: 8px;
-                position: absolute;
-                top: 2px;
-                right: -6px;
-              }
-            }
-            span:before {
-              font-size: 13px;
-            }
+        top: 13px;
+        right: 82px;
+        li{
+          a{
+            font-size: 16px;
           }
         }
       }
@@ -670,38 +760,35 @@
 
   #intro {
     .carousel-item {
-      height: 420px !important;
-      img {
-        height: 100% !important;
-      }
+      height: 100vh !important;
     }
 
-    .carousel-control-prev {
-      display: none !important;
-    }
-    .carousel-control-next {
-      display: none !important;
+    .carousel-button {
+      display: none;
     }
 
     .caption {
-      width: 180px !important;
-      height: 90px !important;
-      top: 210px !important;
-      left: 95px !important;
+      width: 275px !important;
+      height: auto;
+      top: 280px !important;
+      left: 37px !important;
+      text-align: center;
       h3 {
-        font-size: 15px !important;
+        font-size: 46px !important;
+        line-height: 62px;
+        letter-spacing: 4px !important;
       }
 
       h1 {
-        font-size: 15px !important;
+        font-size: 22px !important;
       }
 
       .button {
-        width: 70px !important;
-        height: 20px !important;
-        line-height: 18px !important;
-        font-size: 7px !important;
-        border-radius: 1px !important;
+        width: 140px !important;
+        height: 38px !important;
+        line-height: 36px !important;
+        font-size: 14px !important;
+        border-radius: 3px !important;
       }
     }
   }
@@ -726,7 +813,7 @@
       font-size: 17px;
       i {
         font-size: 35px !important;
-        &::after{
+        &::after {
           width: 85px !important;
           height: 85px !important;
           top: -25px !important;
@@ -734,7 +821,7 @@
         }
       }
 
-      h4{
+      h4 {
         font-size: 17px !important;
       }
 
@@ -753,66 +840,86 @@
 
 @media (min-width: 250px) and (max-width: 299.98px) {
   header {
-    nav {
-      min-height: 35px !important;
-      padding: 10px 0 10px 0 !important;
+    .navbar {
+      height: 60px;
       img {
-        width: 40px !important;
+        width: 70px !important;
         position: absolute;
-        left: 15px;
-        top: 6px;
+        top: 10px !important;
+        left: 12px;
+        z-index: 99;
       }
 
-      .navbar-toggler {
-        border: none;
-        font-size: 9px;
-        position: absolute;
-        right: 4px;
-        top: 6px;
-        &:focus {
-          outline: none;
+      .navbar-items {
+        width: 100% !important;
+        height: 100%;
+        background-color: #3A3B74 !important;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+        .hamburger {
+          display: inline-block !important;
+          width: 25px;
+          height: 30px;
+          position: fixed;
+          top: 15px;
+          right: 18px;
+          cursor: pointer;
+          display: flex !important;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+
+        .line {
+          width: 100%;
+          height: 3px;
+          background-color: white;
+          transition: all 0.7s;
+        }
+
+        .change .line-1 {
+          transform: rotateZ(-45deg) translate(-8px, 6px);
+        }
+        .change .line-2 {
+          opacity: 0;
+        }
+        .change .line-3 {
+          transform: rotateZ(45deg) translate(-8px, -6px);
+        }
+
+        .links {
+          height: 500px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          li{
+            a{
+              font-size: 20px;
+            }
+          }
         }
       }
 
-      .left {
-        padding: 15px 0 0 0 !important;
-        li {
-          hr {
-            display: none;
-          }
-          a {
-            font-size: 7px !important;
-          }
-        }
+      .active {
+        right: 0 !important;
       }
 
       .account {
-        width: 45px !important;
+        width: 90px !important;
+        flex-direction: row;
         position: absolute;
-        right: 48px;
-        top: 3px;
-        li {
-          hr {
-            display: none;
-          }
-          &:first-of-type {
-            padding-top: 0px !important;
-          }
-          a {
-            font-size: 9px !important;
-            position: relative;
-            span {
-              sup {
-                font-size: 6px;
-                position: absolute;
-                top: 4px;
-                right: -6px;
-              }
-            }
-            span:before {
-              font-size: 10px;
-              margin: 0;
-            }
+        top: 13px;
+        right: 74px;
+        li{
+          a{
+            font-size: 14px;
           }
         }
       }
@@ -821,38 +928,35 @@
 
   #intro {
     .carousel-item {
-      height: 280px !important;
-      img {
-        height: 100% !important;
-      }
+      height: 100vh !important;
     }
 
-    .carousel-control-prev {
-      display: none !important;
-    }
-    .carousel-control-next {
-      display: none !important;
+    .carousel-button {
+      display: none;
     }
 
     .caption {
-      width: 140px !important;
-      height: 90px !important;
-      top: 140px !important;
-      left: 72px !important;
+      width: 260px !important;
+      height: auto;
+      top: 218px !important;
+      left: 10px !important;
+      text-align: center;
       h3 {
-        font-size: 12px !important;
+        font-size: 40px !important;
+        line-height: 60px;
+        letter-spacing: 4px !important;
       }
 
       h1 {
-        font-size: 12px !important;
+        font-size: 20px !important;
       }
 
       .button {
-        width: 60px !important;
-        height: 16px !important;
-        line-height: 14px !important;
-        font-size: 6px !important;
-        border-radius: 1px !important;
+        width: 120px !important;
+        height: 30px !important;
+        line-height: 27px !important;
+        font-size: 10px !important;
+        border-radius: 3px !important;
       }
     }
   }
@@ -877,7 +981,7 @@
       font-size: 17px;
       i {
         font-size: 35px !important;
-        &::after{
+        &::after {
           width: 85px !important;
           height: 85px !important;
           top: -25px !important;
@@ -885,7 +989,7 @@
         }
       }
 
-      h4{
+      h4 {
         font-size: 17px !important;
       }
 

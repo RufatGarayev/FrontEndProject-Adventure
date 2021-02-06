@@ -18,19 +18,19 @@
   <!-- <div class="pre-icon"></div> -->
   <!-- reload-img end -->
 
-  <!-- header start -->
+   <!-- ======= Header Start ======= -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="img/travel-logo.png" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav left mr-auto">
-            <li class="nav-item active">
+        <div class="navbar-items d-flex">
+          <div class="hamburger">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+          <ul class="navbar-nav links">
+            <li class="nav-item active-link">
               <a class="nav-link" href="index.html">Home</a>
               <hr>
             </li>
@@ -48,27 +48,27 @@
             </li>
           </ul>
         </div>
-        <ul class="navbar-nav account">
-          <li>
-            <a href="#">Login</a>
+        <ul class="navbar-nav links account">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
             <hr>
           </li>
-          <li>
-            <a href="#">
-              <span class="flaticon-shopping-bag">
-                <sup>0</sup>
-              </span>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Cart <span>0</span>
             </a>
+            <hr>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <!-- header end -->
+  <!-- ======= Header End ======= -->
 
-  <!-- main part start -->
+
+  <!-- ======= Main Part Start ======= -->
   <main>
-    <!-- intro section start -->
+    <!-- ======= Intro Section Start ======= -->
     <section id="intro">
       <div class="container-fluid">
         <div class="row">
@@ -81,12 +81,12 @@
                 <img src="img/slider2.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-              <span class="carousel-control" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+            <a class="carousel-control-prev carousel-button" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span class="carousel-control" aria-hidden="true"><i class="flaticon-left-arrow"></i></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-              <span class="carousel-control" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+            <a class="carousel-control-next carousel-button" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class="carousel-control" aria-hidden="true"><i class="flaticon-next"></i></span>
               <span class="sr-only">Next</span>
             </a>
           </div>
@@ -98,9 +98,10 @@
         <a class="button" href="#">GO EXPLORING</a>
       </div>
     </section>
-    <!-- intro section end -->
+    <!-- ======= Intro Section End ======= -->
 
-    <!-- we-are-best section start -->
+
+    <!-- ======= We Are Best Section Start ======= -->
     <section id="we-are-best">
       <div class="container">
         <div class="row">
@@ -143,10 +144,9 @@
         </div>
       </div>
     </section>
-    <!-- we-are-best section end -->
-    
+    <!-- ======= We Are Best Section End ======= -->
   </main>
-  <!-- main part end -->
+  <!-- ======= Main Part End ======= -->
 
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
