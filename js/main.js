@@ -1,9 +1,10 @@
 $(document).ready(function(){
 // ======= Reload-Img Start ======= //
-// $(window).on("load", function() {
-//     $(".pre-icon").fadeOut("slow");
-// });
+$(window).on("load", function() {
+    $(".loading").fadeOut("slow");
+});
 // ======= Reload-Img End ======= //
+});
 
 
 // ======= Navbar Hamburger Effect Start ======= //
@@ -15,13 +16,6 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
 // ======= Navbar Hamburger Effect End ======= //
-
-
-// ======= Navbar Links Hover Effect Start ======= //
-// $(".nav-item").click(function(){
-//   $(this).addClass("active-link").siblings().removeClass("active-link");
-// });
-// ======= Navbar Links Hover Effect End ======= //
 
 
 // ======= Type Writer Effect Start ======= //
@@ -92,4 +86,3 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 // ======= Type Writer Effect End ======= //
-});

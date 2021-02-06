@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
 header nav .navbar-items .links li a, header nav .account li a {
   color: white !important;
   font-weight: 600;
@@ -49,7 +50,7 @@ header nav .navbar-items .links li, header nav .account li {
 #intro .carousel-button .carousel-control {
   width: 50px;
   height: 50px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(105, 110, 123, 0.5);
   border-radius: 50%;
   text-align: center;
   z-index: -1;
@@ -60,7 +61,7 @@ header nav .navbar-items .links li, header nav .account li {
   font-weight: bold !important;
   line-height: 48px;
   margin-left: 0;
-  color: black;
+  color: white;
 }
 
 * {
@@ -77,19 +78,110 @@ html {
   scroll-behavior: smooth;
 }
 
-.pre-icon {
-  background: url("../img/loader.gif") no-repeat center;
-  background-color: white;
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: fixed;
-  text-align: center;
-  left: 0;
+  background: #000;
+  z-index: 9999;
+}
+
+.loading-text {
+  position: absolute;
   top: 0;
-  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  font-size: 33px;
+}
+
+.loading-text span {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+.loading-text span:nth-child(1) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
+  animation: blur-text 1.5s 0s infinite linear alternate;
+}
+
+.loading-text span:nth-child(2) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
+  animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+
+.loading-text span:nth-child(3) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
+  animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+
+.loading-text span:nth-child(4) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
+  animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+
+.loading-text span:nth-child(5) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
+  animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+
+.loading-text span:nth-child(6) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1s infinite linear alternate;
+  animation: blur-text 1.5s 1s infinite linear alternate;
+}
+
+.loading-text span:nth-child(7) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
+  animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+@-webkit-keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
 }
 
 header {
+  overflow: hidden;
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -130,8 +222,12 @@ header nav .account {
   width: 120px;
 }
 
+#intro {
+  overflow: hidden;
+}
+
 #intro .carousel-item {
-  height: 830px;
+  height: 100vh;
 }
 
 #intro .carousel-item img {
@@ -154,6 +250,13 @@ header nav .account {
   top: 280px;
   left: 460px;
   color: white;
+}
+
+@media (min-width: 300px) and (max-width: 320px) {
+  #intro .caption {
+    top: 172px !important;
+    left: 24px !important;
+  }
 }
 
 #intro .caption h3 {
@@ -217,6 +320,7 @@ header nav .account {
 }
 
 #we-are-best {
+  overflow: hidden;
   padding: 70px 0 20px 0;
   background-color: white;
 }

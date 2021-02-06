@@ -1,4 +1,4 @@
-@import "partials/extends";
+@import "../sass/partials/extends";
 
 * {
   margin: 0;
@@ -13,23 +13,110 @@ html {
   scroll-behavior: smooth;
 }
 
-.pre-icon {
-  background: url("../img/loader.gif") no-repeat center;
-  background-color: white;
+// ======= Loader Start ======= //
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: fixed;
-  text-align: center;
-  left: 0;
-  top: 0;
-  z-index: 999;
+  background: #000;
+  z-index: 9999;
 }
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  font-size: 33px;
+}
+.loading-text span {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+.loading-text span:nth-child(1) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
+  animation: blur-text 1.5s 0s infinite linear alternate;
+}
+.loading-text span:nth-child(2) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
+  animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+.loading-text span:nth-child(3) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
+  animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+.loading-text span:nth-child(4) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
+  animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+.loading-text span:nth-child(5) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
+  animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+.loading-text span:nth-child(6) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1s infinite linear alternate;
+  animation: blur-text 1.5s 1s infinite linear alternate;
+}
+.loading-text span:nth-child(7) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
+  animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+@-webkit-keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+}
+// ======= Loader End ======= //
 
 // ======= Header Start ======= //
 header {
+  overflow: hidden;
   position: fixed;
   width: 100%;
   z-index: 99;
+
   nav {
     background-color: rgba(0, 0, 0, 0.3) !important;
     padding: 11px 40px !important;
@@ -43,12 +130,12 @@ header {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-     .hamburger{
-       display: none;
-     }
+      .hamburger {
+        display: none;
+      }
 
       .links {
-       @extend %nav-link-properties;
+        @extend %nav-link-properties;
       }
     }
 
@@ -60,10 +147,12 @@ header {
 }
 // ======= Header End ======= //
 
-//=== intro section start ===//
+// ======= Intro Section Start ======= //
 #intro {
+  overflow: hidden;
+
   .carousel-item {
-    height: 830px;
+    height: 100vh;
     img {
       height: 100% !important;
       animation: zoom 20s;
@@ -83,6 +172,11 @@ header {
     top: 280px;
     left: 460px;
     color: white;
+    @media (min-width: 300px) and (max-width: 320px) {
+      top: 172px !important;
+      left: 24px !important;
+    }
+
     h3 {
       font-weight: normal;
       font-size: 50px;
@@ -128,10 +222,11 @@ header {
     }
   }
 }
-//=== intro section end ===//
+// ======= Intro Section End ======= //
 
-//=== we-are-best section start ===//
+// ======= We Are Best Section Start ======= //
 #we-are-best {
+  overflow: hidden;
   padding: 70px 0 20px 0;
   background-color: white;
   .caption {
@@ -198,4 +293,4 @@ header {
     }
   }
 }
-//=== we-are-best section end ===//
+// ======= We Are Best Section End ======= //
