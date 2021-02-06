@@ -50,7 +50,7 @@ header nav .navbar-items .links li, header nav .account li {
 #intro .carousel-button .carousel-control {
   width: 50px;
   height: 50px;
-  background-color: rgba(105, 110, 123, 0.5);
+  background-color: rgba(7, 8, 10, 0.5);
   border-radius: 50%;
   text-align: center;
   z-index: -1;
@@ -234,8 +234,8 @@ header nav .account {
   height: 100% !important;
   -webkit-animation: zoom 20s;
           animation: zoom 20s;
-  -webkit-filter: brightness(60%);
-          filter: brightness(60%);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
   -o-object-fit: cover !important;
      object-fit: cover !important;
 }
@@ -244,39 +244,51 @@ header nav .account {
   width: 100px;
 }
 
-#intro .caption {
-  width: 600px;
+#intro .banner-area {
   position: absolute;
-  top: 280px;
-  left: 460px;
+  top: 36%;
+  z-index: 9;
+  width: 80%;
+  left: 10%;
+}
+
+#intro .banner-area .caption {
+  width: 90%;
+  margin: 0 auto;
   color: white;
+  text-align: center;
 }
 
-@media (min-width: 300px) and (max-width: 320px) {
-  #intro .caption {
-    top: 172px !important;
-    left: 24px !important;
-  }
-}
-
-#intro .caption h3 {
+#intro .banner-area .caption h3 {
   font-weight: normal;
   font-size: 50px;
   font-weight: bold;
   letter-spacing: 8px;
 }
 
-#intro .caption h1 {
+@media (min-width: 500px) and (max-width: 575.98px) {
+  #intro .banner-area .caption h3 {
+    font-size: 58px !important;
+  }
+}
+
+#intro .banner-area .caption h1 {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 32px;
   letter-spacing: 4px;
   font-weight: bold;
   display: inline-block;
   margin-bottom: 0;
-  padding: 20px 0 40px 0;
+  padding: 30px 0 50px 0;
 }
 
-#intro .caption .button {
+@media (min-width: 540px) and (max-width: 575.98px) {
+  #intro .banner-area .caption h1 {
+    font-size: 34px !important;
+  }
+}
+
+#intro .banner-area .caption .button {
   width: 180px;
   height: 45px;
   line-height: 40px;
@@ -289,7 +301,7 @@ header nav .account {
   background-color: transparent;
 }
 
-#intro .caption .button:hover {
+#intro .banner-area .caption .button:hover {
   text-decoration: none;
   background-color: white;
   color: black;
@@ -319,10 +331,60 @@ header nav .account {
   }
 }
 
-#we-are-best {
+#special-offers {
   overflow: hidden;
-  padding: 70px 0 20px 0;
-  background-color: white;
+  padding: 120px 0;
+}
+
+#special-offers .specials h4 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#special-offers .specials p {
+  padding: 20px 0 50px 0;
+  font-size: 17px;
+}
+
+#special-offers .item {
+  margin: 6px;
+  -webkit-box-shadow: 0px 0px 2px 1px #f5f0f0;
+          box-shadow: 0px 0px 2px 1px #f5f0f0;
+  background: #ffffff;
+}
+
+#special-offers .item .img-box {
+  height: 238px;
+  padding: 10px;
+}
+
+#special-offers .item .img-box img {
+  height: 100%;
+}
+
+#special-offers .item .info {
+  padding: 20px;
+}
+
+#we-are-best {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0 92px 0;
+  background: url(../img/img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#we-are-best::before {
+  background-color: rgba(58, 59, 116, 0.9);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 #we-are-best .caption h1 {
@@ -337,7 +399,7 @@ header nav .account {
   height: 3px;
   width: 45px;
   border-radius: 2px;
-  background-color: #32325d;
+  background-color: #D7613F;
   position: absolute;
   top: 98px;
   right: 146px;
@@ -356,21 +418,17 @@ header nav .account {
   transition: 0.4s ease-in-out;
 }
 
-#we-are-best .holder i {
-  position: relative;
-  font-size: 42px;
-  color: #32325d;
-}
-
-#we-are-best .holder i::after {
-  content: "";
+#we-are-best .holder .icon-holder {
   width: 95px;
   height: 95px;
-  border: 2px solid #32325d;
+  border: 2px solid white;
   border-radius: 50%;
-  position: absolute;
-  top: -26px;
-  right: -23px;
+  line-height: 110px;
+}
+
+#we-are-best .holder .icon-holder i {
+  font-size: 42px;
+  color: white;
 }
 
 #we-are-best .holder h4 {
@@ -388,7 +446,7 @@ header nav .account {
   content: "";
   height: 2px;
   width: 30px;
-  background-color: #32325d;
+  background-color: #D7613F;
   position: absolute;
   bottom: 61px;
   left: 113px;

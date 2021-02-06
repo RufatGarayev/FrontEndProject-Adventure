@@ -1,4 +1,4 @@
-@import "../sass/partials/extends";
+@import "../scss/partials/extends";
 
 * {
   margin: 0;
@@ -156,7 +156,7 @@ header {
     img {
       height: 100% !important;
       animation: zoom 20s;
-      filter: brightness(60%);
+      filter: brightness(70%);
       object-fit: cover !important;
     }
   }
@@ -166,49 +166,56 @@ header {
     @extend %carousel-control;
   }
 
-  .caption {
-    width: 600px;
+  .banner-area {
     position: absolute;
-    top: 280px;
-    left: 460px;
-    color: white;
-    @media (min-width: 300px) and (max-width: 320px) {
-      top: 172px !important;
-      left: 24px !important;
-    }
-
-    h3 {
-      font-weight: normal;
-      font-size: 50px;
-      font-weight: bold;
-      letter-spacing: 8px;
-    }
-
-    h1 {
-      font-weight: bold;
-      font-size: 30px;
-      letter-spacing: 4px;
-      font-weight: bold;
-      display: inline-block;
-      margin-bottom: 0;
-      padding: 20px 0 40px 0;
-    }
-    .button {
-      width: 180px;
-      height: 45px;
-      line-height: 40px;
-      font-weight: bold;
-      border: none;
-      border-radius: 3px;
+    top: 36%;
+    z-index: 9;
+    width: 80%;
+    left: 10%;
+    .caption {
+      width: 90%;
+      margin: 0 auto;
       color: white;
-      border: 2px solid white;
       text-align: center;
-      background-color: transparent;
-      &:hover {
-        text-decoration: none;
-        background-color: white;
-        color: black;
-        transition: 0.2s linear;
+      h3 {
+        font-weight: normal;
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 8px;
+        @media (min-width: 500px) and (max-width: 575.98px) {
+          font-size: 58px !important;
+        }
+      }
+
+      h1 {
+        font-weight: bold;
+        font-size: 32px;
+        letter-spacing: 4px;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 0;
+        padding: 30px 0 50px 0;
+        @media (min-width: 540px) and (max-width: 575.98px) {
+          font-size: 34px !important;
+        }
+      }
+      .button {
+        width: 180px;
+        height: 45px;
+        line-height: 40px;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        border: 2px solid white;
+        text-align: center;
+        background-color: transparent;
+        &:hover {
+          text-decoration: none;
+          background-color: white;
+          color: black;
+          transition: 0.2s linear;
+        }
       }
     }
   }
@@ -224,11 +231,60 @@ header {
 }
 // ======= Intro Section End ======= //
 
+
+// ======= Special Offers Section Start ======= //
+#special-offers{
+  overflow: hidden;
+  padding: 120px 0;
+  .specials{
+    h4{
+      font-size: 36px;
+      font-weight: 700;
+    }
+    p{
+      padding: 20px 0 50px 0;
+      font-size: 17px;
+    }
+  }
+  .item{
+    margin: 6px;
+    box-shadow: 0px 0px 2px 1px rgb(245, 240, 240);
+    background: #ffffff;
+    .img-box{
+      height: 238px;
+      padding: 10px;
+      img{
+        height: 100%;
+      }
+    }
+
+    .info{
+      padding: 20px;
+    }
+  }
+}
+// ======= Special Offers Section End ======= //
+
+
 // ======= We Are Best Section Start ======= //
 #we-are-best {
+  position: relative;
   overflow: hidden;
-  padding: 70px 0 20px 0;
-  background-color: white;
+  padding: 80px 0 92px 0;
+  background: url(../img/img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  &::before{
+    background-color: rgba(58, 59, 116, 0.9);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
   .caption {
     h1 {
       padding: 30px 0 80px 0;
@@ -240,7 +296,7 @@ header {
         height: 3px;
         width: 45px;
         border-radius: 2px;
-        background-color: #32325d;
+        background-color: #D7613F;
         position: absolute;
         top: 98px;
         right: 146px;
@@ -256,19 +312,16 @@ header {
       padding-top: 15px !important;
       transition: 0.4s ease-in-out;
     }
-    i {
-      position: relative;
-      font-size: 42px;
-      color: #32325d;
-      &::after {
-        content: "";
-        width: 95px;
-        height: 95px;
-        border: 2px solid #32325d;
-        border-radius: 50%;
-        position: absolute;
-        top: -26px;
-        right: -23px;
+    .icon-holder {
+      width: 95px;
+      height: 95px;
+      border: 2px solid white;
+      border-radius: 50%;
+      line-height: 110px;
+      i {
+        font-size: 42px;
+        // color: #32325d;
+        color: white;
       }
     }
 
@@ -285,7 +338,7 @@ header {
         content: "";
         height: 2px;
         width: 30px;
-        background-color: #32325d;
+        background-color: #D7613F;
         position: absolute;
         bottom: 61px;
         left: 113px;

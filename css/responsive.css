@@ -2,28 +2,26 @@
   #intro .carousel-item {
     height: 100vh !important;
   }
-  #intro .caption {
-    width: 800px !important;
-    height: auto;
-    top: 500px !important;
-    left: 120px !important;
+  #intro .banner-area {
+    width: 90% !important;
+    left: 5% !important;
   }
-  #intro .caption h3 {
-    font-size: 70px !important;
+  #intro .banner-area .caption h3 {
+    font-size: 76px !important;
   }
-  #intro .caption h1 {
-    font-size: 50px !important;
-    padding: 40px 0 80px 0 !important;
+  #intro .banner-area .caption h1 {
+    font-size: 44px !important;
+    padding: 50px 0 80px 0 !important;
   }
-  #intro .caption .button {
-    width: 300px !important;
+  #intro .banner-area .caption .button {
+    width: 280px !important;
     height: 62px !important;
     line-height: 60px !important;
-    font-size: 28px !important;
+    font-size: 24px !important;
     border-radius: 2px !important;
   }
   #we-are-best {
-    padding: 70px 0 50px 0 !important;
+    padding: 90px 0 70px 0 !important;
   }
   #we-are-best .holder {
     font-size: 17px;
@@ -135,31 +133,30 @@
   #intro .carousel-item {
     height: 100vh !important;
   }
-  #intro .carousel-button {
-    display: none;
+  #intro .carousel-control {
+    opacity: 0;
   }
-  #intro .caption {
-    width: 700px !important;
-    height: auto;
-    top: 380px !important;
-    left: 32px !important;
+  #intro .banner-area {
+    top: 28% !important;
   }
-  #intro .caption h3 {
-    font-size: 60px !important;
+  #intro .banner-area .caption {
+    width: 80% !important;
   }
-  #intro .caption h1 {
-    font-size: 40px !important;
-    padding: 20px 0 50px 0 !important;
+  #intro .banner-area .caption h3 {
+    font-size: 70px !important;
   }
-  #intro .caption .button {
-    width: 220px !important;
+  #intro .banner-area .caption h1 {
+    font-size: 36px !important;
+    padding: 40px 0 60px 0 !important;
+  }
+  #intro .banner-area .caption .button {
+    width: 210px !important;
     height: 52px !important;
     line-height: 50px !important;
-    font-size: 22px !important;
-    border-radius: 3px !important;
+    font-size: 20px !important;
   }
   #we-are-best {
-    padding: 70px 0 50px 0 !important;
+    padding: 100px 0 70px 0 !important;
   }
   #we-are-best .caption h1 {
     font-size: 30px !important;
@@ -282,30 +279,30 @@
   #intro .carousel-item {
     height: 100vh !important;
   }
-  #intro .carousel-button {
-    display: none;
+  #intro .carousel-control {
+    opacity: 0;
   }
-  #intro .caption {
-    width: 700px !important;
-    height: auto;
-    top: 400px !important;
-    left: 32px !important;
+  #intro .banner-area {
+    top: 28% !important;
   }
-  #intro .caption h3 {
-    font-size: 60px !important;
+  #intro .banner-area .caption {
+    width: 90% !important;
   }
-  #intro .caption h1 {
-    font-size: 40px !important;
+  #intro .banner-area .caption h3 {
+    font-size: 66px !important;
   }
-  #intro .caption .button {
-    width: 220px !important;
+  #intro .banner-area .caption h1 {
+    font-size: 34px !important;
+    padding: 40px 0 60px 0 !important;
+  }
+  #intro .banner-area .caption .button {
+    width: 210px !important;
     height: 52px !important;
     line-height: 50px !important;
-    font-size: 22px !important;
-    border-radius: 3px !important;
+    font-size: 20px !important;
   }
   #we-are-best {
-    padding: 70px 0 50px 0 !important;
+    padding: 100px 0 70px 0 !important;
   }
   #we-are-best .caption h1 {
     font-size: 30px !important;
@@ -324,176 +321,7 @@
   }
 }
 
-@media (min-width: 500px) and (max-width: 575.98px) {
-  header .navbar {
-    height: 75px;
-  }
-  header .navbar img {
-    width: 90px !important;
-    position: absolute;
-    top: 12px !important;
-    left: 40px;
-    z-index: 99;
-  }
-  header .navbar .navbar-items {
-    width: 100% !important;
-    height: 100%;
-    background-color: #0a0d13 !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
-    transition: right 0.7s cubic-bezier(1, 0, 0, 1);
-  }
-  header .navbar .navbar-items .hamburger {
-    display: inline-block !important;
-    width: 35px;
-    height: 30px;
-    position: fixed;
-    top: 22px;
-    right: 44px;
-    cursor: pointer;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  header .navbar .navbar-items .line {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
-  }
-  header .navbar .navbar-items .change .line-1 {
-    -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
-            transform: rotateZ(-45deg) translate(-8px, 6px);
-  }
-  header .navbar .navbar-items .change .line-2 {
-    opacity: 0;
-  }
-  header .navbar .navbar-items .change .line-3 {
-    -webkit-transform: rotateZ(45deg) translate(-8px, -6px);
-            transform: rotateZ(45deg) translate(-8px, -6px);
-  }
-  header .navbar .navbar-items .links {
-    height: 507px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  header .navbar .navbar-items .links li a {
-    font-size: 30px;
-  }
-  header .navbar .active {
-    right: 0 !important;
-  }
-  header .navbar .account {
-    width: 112px !important;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    position: absolute;
-    top: 18px;
-    right: 120px;
-  }
-  header .navbar .account li a {
-    font-size: 16px;
-  }
-  #intro .carousel-item {
-    height: 100vh !important;
-  }
-  #intro .carousel-button {
-    display: none;
-  }
-  #intro .caption {
-    width: 480px !important;
-    height: auto;
-    top: 220px !important;
-    left: 32px !important;
-    text-align: center;
-  }
-  #intro .caption h3 {
-    font-size: 62px !important;
-    letter-spacing: 6px !important;
-  }
-  #intro .caption h1 {
-    padding: 20px 0 40px 0 !important;
-    font-size: 30px !important;
-  }
-  #intro .caption .button {
-    width: 176px !important;
-    height: 45px !important;
-    line-height: 42px !important;
-    font-size: 17px !important;
-    border-radius: 3px !important;
-  }
-  #we-are-best {
-    padding: 70px 0 50px 0 !important;
-  }
-  #we-are-best .caption h1 {
-    padding: 50px 0 100px 0 !important;
-    font-size: 22px !important;
-  }
-  #we-are-best .caption h1::after {
-    height: 2px !important;
-    top: 104px !important;
-    right: 83px !important;
-  }
-  #we-are-best .holder {
-    padding-right: 40px;
-    padding-left: 40px;
-    font-size: 17px;
-  }
-  #we-are-best .holder i {
-    font-size: 35px !important;
-  }
-  #we-are-best .holder i::after {
-    width: 85px !important;
-    height: 85px !important;
-    top: -25px !important;
-    right: -22px !important;
-  }
-  #we-are-best .holder h4 {
-    font-size: 19px !important;
-  }
-  #we-are-best .holder p {
-    width: 250px;
-    font-size: 15px !important;
-  }
-  #we-are-best .holder p::before {
-    height: 1px !important;
-    bottom: 60px !important;
-    left: 111px !important;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 499.98px) {
+@media (min-width: 375px) and (max-width: 575.98px) {
   header .navbar {
     height: 70px;
   }
@@ -597,204 +425,32 @@
   #intro .carousel-item {
     height: 100vh !important;
   }
-  #intro .carousel-button {
-    display: none;
-  }
-  #intro .caption {
-    width: 380px !important;
-    height: auto;
-    top: 250px !important;
-    left: 18px !important;
-    text-align: center;
-  }
-  #intro .caption h3 {
-    font-size: 48px !important;
-    line-height: 60px;
-    letter-spacing: 5px !important;
-  }
-  #intro .caption h1 {
-    font-size: 24px !important;
-    padding: 20px 0 30px 0 !important;
-  }
-  #intro .caption .button {
-    width: 160px !important;
-    height: 38px !important;
-    line-height: 36px !important;
-    font-size: 14px !important;
-    border-radius: 3px !important;
-  }
-  #we-are-best {
-    padding: 70px 0 50px 0 !important;
-  }
-  #we-are-best .caption h1 {
-    padding: 40px 0 80px 0 !important;
-    font-size: 22px !important;
-  }
-  #we-are-best .caption h1::after {
-    height: 1px !important;
-    top: 94px !important;
-    right: 83px !important;
-  }
-  #we-are-best .holder {
-    padding-right: 40px;
-    padding-left: 40px;
-    font-size: 17px;
-  }
-  #we-are-best .holder i {
-    font-size: 35px !important;
-  }
-  #we-are-best .holder i::after {
-    width: 85px !important;
-    height: 85px !important;
-    top: -25px !important;
-    right: -22px !important;
-  }
-  #we-are-best .holder h4 {
-    font-size: 17px !important;
-  }
-  #we-are-best .holder p {
-    font-size: 13px !important;
-    width: 250px;
-  }
-  #we-are-best .holder p::before {
-    height: 1px !important;
-    bottom: 53px !important;
-    left: 110px !important;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 399.98px) {
-  header .navbar {
-    height: 65px;
-  }
-  header .navbar img {
-    width: 75px !important;
-    position: absolute;
-    top: 10px !important;
-    left: 12px;
-    z-index: 99;
-  }
-  header .navbar .navbar-items {
-    width: 100% !important;
-    height: 100%;
-    background-color: #0a0d13 !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
-    transition: right 0.7s cubic-bezier(1, 0, 0, 1);
-  }
-  header .navbar .navbar-items .hamburger {
-    display: inline-block !important;
-    width: 26px;
-    height: 30px;
-    position: fixed;
-    top: 16px;
-    right: 18px;
-    cursor: pointer;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  header .navbar .navbar-items .line {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
-  }
-  header .navbar .navbar-items .change .line-1 {
-    -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
-            transform: rotateZ(-45deg) translate(-8px, 6px);
-  }
-  header .navbar .navbar-items .change .line-2 {
+  #intro .carousel-control {
     opacity: 0;
   }
-  header .navbar .navbar-items .change .line-3 {
-    -webkit-transform: rotateZ(45deg) translate(-8px, -6px);
-            transform: rotateZ(45deg) translate(-8px, -6px);
+  #intro .banner-area {
+    width: 90% !important;
+    top: 30% !important;
+    left: 5% !important;
   }
-  header .navbar .navbar-items .links {
-    padding-top: 20px;
-    height: 500px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+  #intro .banner-area .caption {
+    width: 100% !important;
   }
-  header .navbar .navbar-items .links li a {
-    font-size: 26px;
+  #intro .banner-area .caption h3 {
+    font-size: 48px !important;
   }
-  header .navbar .active {
-    right: 0 !important;
+  #intro .banner-area .caption h1 {
+    font-size: 25px !important;
+    padding: 40px 0 60px 0 !important;
   }
-  header .navbar .account {
-    width: 110px !important;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    position: absolute;
-    top: 13px;
-    right: 82px;
-  }
-  header .navbar .account li a {
-    font-size: 16px;
-  }
-  #intro .carousel-item {
-    height: 100vh !important;
-  }
-  #intro .carousel-button {
-    display: none;
-  }
-  #intro .caption {
-    width: 275px !important;
-    height: auto;
-    top: 280px !important;
-    left: 37px !important;
-    text-align: center;
-  }
-  #intro .caption h3 {
-    font-size: 46px !important;
-    line-height: 62px;
-    letter-spacing: 4px !important;
-  }
-  #intro .caption h1 {
-    font-size: 22px !important;
-  }
-  #intro .caption .button {
-    width: 140px !important;
-    height: 38px !important;
-    line-height: 36px !important;
+  #intro .banner-area .caption .button {
+    width: 160px !important;
+    height: 40px !important;
+    line-height: 38px !important;
     font-size: 14px !important;
-    border-radius: 3px !important;
   }
   #we-are-best {
-    padding: 70px 0 50px 0 !important;
+    padding: 100px 0 60px 0 !important;
   }
   #we-are-best .caption h1 {
     padding: 40px 0 80px 0 !important;
@@ -833,7 +489,7 @@
   }
 }
 
-@media (min-width: 250px) and (max-width: 299.98px) {
+@media (min-width: 250px) and (max-width: 374.98px) {
   header .navbar {
     height: 60px;
   }
@@ -937,33 +593,33 @@
   #intro .carousel-item {
     height: 100vh !important;
   }
-  #intro .carousel-button {
-    display: none;
+  #intro .carousel-control {
+    opacity: 0;
   }
-  #intro .caption {
-    width: 260px !important;
-    height: auto;
-    top: 218px !important;
-    left: 10px !important;
-    text-align: center;
+  #intro .banner-area {
+    width: 96% !important;
+    top: 30% !important;
+    left: 3% !important;
   }
-  #intro .caption h3 {
-    font-size: 40px !important;
-    line-height: 60px;
-    letter-spacing: 4px !important;
+  #intro .banner-area .caption {
+    width: 100% !important;
   }
-  #intro .caption h1 {
+  #intro .banner-area .caption h3 {
+    font-size: 38px !important;
+  }
+  #intro .banner-area .caption h1 {
     font-size: 20px !important;
+    letter-spacing: 2px !important;
+    padding: 30px 0 50px 0 !important;
   }
-  #intro .caption .button {
-    width: 120px !important;
-    height: 30px !important;
-    line-height: 27px !important;
-    font-size: 10px !important;
-    border-radius: 3px !important;
+  #intro .banner-area .caption .button {
+    width: 140px !important;
+    height: 40px !important;
+    line-height: 38px !important;
+    font-size: 12px !important;
   }
   #we-are-best {
-    padding: 70px 0 50px 0 !important;
+    padding: 100px 0 60px 0 !important;
   }
   #we-are-best .caption h1 {
     padding: 40px 0 80px 0 !important;
