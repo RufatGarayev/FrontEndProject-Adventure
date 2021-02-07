@@ -3,6 +3,7 @@
     height: 100vh !important;
   }
   #intro .banner-area {
+    top: 38% !important;
     width: 90% !important;
     left: 5% !important;
   }
@@ -14,21 +15,14 @@
     padding: 50px 0 80px 0 !important;
   }
   #intro .banner-area .caption .button {
-    width: 280px !important;
-    height: 62px !important;
-    line-height: 60px !important;
     font-size: 24px !important;
     border-radius: 2px !important;
   }
   #we-are-best {
-    padding: 90px 0 70px 0 !important;
+    padding: 80px 0 145px 0 !important;
   }
-  #we-are-best .holder {
-    font-size: 17px;
-  }
-  #we-are-best .holder p::before {
-    bottom: 89px !important;
-    left: 91px !important;
+  #we-are-best .holder h4 {
+    font-size: 22px !important;
   }
 }
 
@@ -137,7 +131,7 @@
     opacity: 0;
   }
   #intro .banner-area {
-    top: 28% !important;
+    top: 30% !important;
   }
   #intro .banner-area .caption {
     width: 80% !important;
@@ -150,28 +144,68 @@
     padding: 40px 0 60px 0 !important;
   }
   #intro .banner-area .caption .button {
-    width: 210px !important;
-    height: 52px !important;
-    line-height: 50px !important;
+    font-size: 20px !important;
+  }
+  #special-offers .specials {
+    padding: 0 45px;
+  }
+  #special-offers .specials img {
+    width: 120px;
+  }
+  #special-offers .specials h1 {
+    font-size: 44px !important;
+  }
+  #special-offers .specials p {
+    font-size: 20px !important;
+  }
+  #special-offers .owl-carousel {
+    padding: 0 100px !important;
+  }
+  #special-offers .owl-carousel .item .price-info {
+    top: 30px;
+    right: 40px;
+    padding: 12px 17px 23px 17px !important;
+  }
+  #special-offers .owl-carousel .item .price-info h5 {
+    font-size: 30px;
+  }
+  #special-offers .owl-carousel .item .price-info span {
+    font-size: 16px;
+  }
+  #special-offers .owl-carousel .item .img-box {
+    height: 400px !important;
+  }
+  #special-offers .owl-carousel .item .info {
+    padding-bottom: 50px !important;
+  }
+  #special-offers .owl-carousel .item .info .slide-header h4 {
+    font-size: 36px !important;
+  }
+  #special-offers .owl-carousel .item .info .slide-header span {
+    font-size: 26px !important;
+  }
+  #special-offers .owl-carousel .item .info .slide-body p {
+    font-size: 22px !important;
+  }
+  #special-offers .owl-carousel .item .info .slide-footer a {
     font-size: 20px !important;
   }
   #we-are-best {
-    padding: 100px 0 70px 0 !important;
+    padding: 100px 0 140px 0 !important;
   }
   #we-are-best .caption h1 {
-    font-size: 30px !important;
-  }
-  #we-are-best .caption h1::after {
-    right: 118px !important;
+    font-size: 44px !important;
   }
   #we-are-best .holder {
-    padding-right: 40px;
-    padding-left: 40px;
+    margin: 20px 0;
+    padding: 0 10px;
     font-size: 17px;
   }
-  #we-are-best .holder p::before {
-    bottom: 64px !important;
-    left: 112px !important;
+  #we-are-best .holder h4 {
+    font-size: 32px !important;
+  }
+  #we-are-best .holder p {
+    font-size: 20px !important;
   }
 }
 
@@ -283,7 +317,7 @@
     opacity: 0;
   }
   #intro .banner-area {
-    top: 28% !important;
+    top: 29% !important;
   }
   #intro .banner-area .caption {
     width: 90% !important;
@@ -293,31 +327,74 @@
   }
   #intro .banner-area .caption h1 {
     font-size: 34px !important;
-    padding: 40px 0 60px 0 !important;
+    padding: 40px 0 70px 0 !important;
   }
   #intro .banner-area .caption .button {
-    width: 210px !important;
-    height: 52px !important;
-    line-height: 50px !important;
+    font-size: 21px !important;
+  }
+  #special-offers .specials img {
+    width: 120px;
+  }
+  #special-offers .specials h1 {
+    font-size: 44px !important;
+  }
+  #special-offers .specials p {
+    font-size: 20px !important;
+  }
+  #special-offers .owl-carousel .item .price-info {
+    top: 30px;
+    right: 40px;
+    padding: 12px 17px 23px 17px !important;
+  }
+  #special-offers .owl-carousel .item .price-info h5 {
+    font-size: 30px;
+  }
+  #special-offers .owl-carousel .item .price-info span {
+    font-size: 16px;
+  }
+  #special-offers .owl-carousel .item .img-box {
+    height: 400px !important;
+  }
+  #special-offers .owl-carousel .item .info {
+    padding-bottom: 50px !important;
+  }
+  #special-offers .owl-carousel .item .info .slide-header h4 {
+    font-size: 36px !important;
+  }
+  #special-offers .owl-carousel .item .info .slide-header span {
+    font-size: 26px !important;
+  }
+  #special-offers .owl-carousel .item .info .slide-body p {
+    font-size: 22px !important;
+  }
+  #special-offers .owl-carousel .item .info .slide-footer a {
     font-size: 20px !important;
   }
   #we-are-best {
-    padding: 100px 0 70px 0 !important;
+    padding: 120px 0 140px 0 !important;
   }
-  #we-are-best .caption h1 {
-    font-size: 30px !important;
+  #we-are-best .caption {
+    padding-bottom: 40px;
   }
-  #we-are-best .caption h1::after {
-    right: 118px !important;
+  #we-are-best .caption hr {
+    height: 2px !important;
+    width: 80px !important;
   }
   #we-are-best .holder {
-    padding-right: 40px;
-    padding-left: 40px;
-    font-size: 17px;
+    height: 400px !important;
+    padding: 0 90px;
   }
-  #we-are-best .holder p::before {
-    bottom: 64px !important;
-    left: 112px !important;
+  #we-are-best .holder .icon-holder {
+    width: 150px !important;
+    height: 150px !important;
+    line-height: 182px !important;
+  }
+  #we-are-best .holder .icon-holder i {
+    font-size: 70px !important;
+  }
+  #we-are-best .holder hr {
+    height: 1px !important;
+    width: 40px !important;
   }
 }
 
@@ -444,24 +521,17 @@
     padding: 40px 0 60px 0 !important;
   }
   #intro .banner-area .caption .button {
-    width: 160px !important;
-    height: 40px !important;
-    line-height: 38px !important;
-    font-size: 14px !important;
+    font-size: 15px !important;
   }
   #we-are-best {
-    padding: 100px 0 60px 0 !important;
+    padding: 90px 0 120px 0 !important;
   }
   #we-are-best .caption h1 {
     padding: 40px 0 80px 0 !important;
-    font-size: 22px !important;
-  }
-  #we-are-best .caption h1::after {
-    height: 1px !important;
-    top: 94px !important;
-    right: 83px !important;
+    font-size: 32px !important;
   }
   #we-are-best .holder {
+    height: 320px !important;
     padding-right: 40px;
     padding-left: 40px;
     font-size: 17px;
@@ -469,23 +539,12 @@
   #we-are-best .holder i {
     font-size: 35px !important;
   }
-  #we-are-best .holder i::after {
-    width: 85px !important;
-    height: 85px !important;
-    top: -25px !important;
-    right: -22px !important;
-  }
-  #we-are-best .holder h4 {
-    font-size: 17px !important;
+  #we-are-best .holder hr {
+    width: 40px !important;
   }
   #we-are-best .holder p {
-    font-size: 13px !important;
+    font-size: 16px !important;
     width: 250px;
-  }
-  #we-are-best .holder p::before {
-    height: 1px !important;
-    bottom: 53px !important;
-    left: 110px !important;
   }
 }
 
@@ -613,27 +672,52 @@
     padding: 30px 0 50px 0 !important;
   }
   #intro .banner-area .caption .button {
-    width: 140px !important;
-    height: 40px !important;
-    line-height: 38px !important;
+    font-size: 13px !important;
+    padding: 7px 20px !important;
+  }
+  #special-offers .specials h1 {
+    font-size: 26px !important;
+  }
+  #special-offers .specials p {
+    font-size: 14px !important;
+  }
+  #special-offers .owl-carousel .item .price-info {
+    top: 30px;
+    right: 40px;
+    padding: 10px 15px 20px 15px !important;
+  }
+  #special-offers .owl-carousel .item .price-info h5 {
+    font-size: 25px;
+  }
+  #special-offers .owl-carousel .item .price-info span {
+    font-size: 15px;
+  }
+  #special-offers .owl-carousel .item .info {
+    padding: 20px 15px 30px 15px !important;
+  }
+  #special-offers .owl-carousel .item .info .slide-header h4 {
+    font-size: 20px !important;
+  }
+  #special-offers .owl-carousel .item .info .slide-header span {
+    font-size: 15px !important;
+  }
+  #special-offers .owl-carousel .item .info .slide-body p {
+    font-size: 14px !important;
+  }
+  #special-offers .owl-carousel .item .info .slide-footer a {
+    padding: 5px 10px !important;
     font-size: 12px !important;
   }
   #we-are-best {
-    padding: 100px 0 60px 0 !important;
+    padding: 100px 0 100px 0 !important;
   }
   #we-are-best .caption h1 {
-    padding: 40px 0 80px 0 !important;
-    font-size: 22px !important;
-  }
-  #we-are-best .caption h1::after {
-    height: 1px !important;
-    top: 90px !important;
-    right: 83px !important;
+    padding: 20px 0 80px 0 !important;
+    font-size: 25px !important;
   }
   #we-are-best .holder {
-    padding-right: 40px;
-    padding-left: 40px;
-    font-size: 17px;
+    height: 300px !important;
+    padding: 0 30px;
   }
   #we-are-best .holder i {
     font-size: 35px !important;
@@ -645,16 +729,10 @@
     right: -22px !important;
   }
   #we-are-best .holder h4 {
-    font-size: 17px !important;
+    font-size: 20px !important;
   }
   #we-are-best .holder p {
-    font-size: 13px !important;
-    width: 250px;
-  }
-  #we-are-best .holder p::before {
-    height: 1px !important;
-    bottom: 53px !important;
-    left: 110px !important;
+    font-size: 14px !important;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

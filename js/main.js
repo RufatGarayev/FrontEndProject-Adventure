@@ -1,10 +1,11 @@
-$(document).ready(function(){
-// ======= Reload-Img Start ======= //
-$(window).on("load", function() {
+$(document).ready(function () {
+  // ======= Reload-Img Start ======= //
+  $(window).on("load", function () {
     $(".loading").fadeOut("slow");
+  });
+  // ======= Reload-Img End ======= //
 });
-// ======= Reload-Img End ======= //
-});
+
 
 
 // ======= Navbar Hamburger Effect Start ======= //
@@ -16,6 +17,7 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
 // ======= Navbar Hamburger Effect End ======= //
+
 
 
 // ======= Type Writer Effect Start ======= //

@@ -1,6 +1,6 @@
-$(".owl-carousel.discounts").owlCarousel({
+$(".owl-carousel.specials-section-items").owlCarousel({
   loop: true,
-  margin: 30,
+  margin: 10,
   nav: false,
   dot: true,
   responsive: {
@@ -11,6 +11,9 @@ $(".owl-carousel.discounts").owlCarousel({
       items: 1,
     },
     1000: {
+      items: 2,
+    },
+    1198: {
       items: 3,
     },
   },

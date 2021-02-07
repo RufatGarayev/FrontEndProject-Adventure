@@ -63,3 +63,20 @@
     }
   }
 }
+
+%website-button{
+  padding: 10px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  border: 2px solid white;
+  text-align: center;
+  background-color: transparent;
+  &:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    transition: 0.2s linear;
+  }
+}

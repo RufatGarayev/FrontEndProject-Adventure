@@ -5,6 +5,7 @@
     }
 
     .banner-area {
+      top: 38% !important;
       width: 90% !important;
       left: 5% !important;
       .caption {
@@ -18,9 +19,6 @@
         }
 
         .button {
-          width: 280px !important;
-          height: 62px !important;
-          line-height: 60px !important;
           font-size: 24px !important;
           border-radius: 2px !important;
         }
@@ -29,14 +27,10 @@
   }
 
   #we-are-best {
-    padding: 90px 0 70px 0 !important;
-    .holder {
-      font-size: 17px;
-      p {
-        &::before {
-          bottom: 89px !important;
-          left: 91px !important;
-        }
+    padding: 80px 0 145px 0 !important;
+    .holder{
+      h4{
+        font-size: 22px !important;
       }
     }
   }
@@ -139,7 +133,7 @@
     }
 
     .banner-area {
-      top: 28% !important;
+      top: 30% !important;
       .caption {
         width: 80% !important;
         h3 {
@@ -152,35 +146,84 @@
         }
 
         .button {
-          width: 210px !important;
-          height: 52px !important;
-          line-height: 50px !important;
           font-size: 20px !important;
         }
       }
     }
   }
 
+  #special-offers{
+    .specials{
+      padding: 0 45px;
+      img{
+        width: 120px;
+      }
+      h1{
+        font-size: 44px !important;
+      }
+      p{
+        font-size: 20px !important;
+      }
+    }
+    .owl-carousel{
+      padding: 0 100px !important;
+      .item{
+        .price-info{
+          top: 30px;
+          right: 40px;
+          padding: 12px 17px 23px 17px !important;
+          h5{
+            font-size: 30px;
+          }
+          span{
+            font-size: 16px;
+          }
+        }
+        .img-box{
+          height: 400px !important;
+        }
+        .info{
+          padding-bottom: 50px !important;
+          .slide-header{
+            h4{
+              font-size: 36px !important;
+            }
+            span{
+              font-size: 26px !important;
+            }
+          }
+          .slide-body{
+            p{
+              font-size: 22px !important;
+            }
+          }
+          .slide-footer{
+            a{
+              font-size: 20px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
   #we-are-best {
-    padding: 100px 0 70px 0 !important;
+    padding: 100px 0 140px 0 !important;
     .caption {
       h1 {
-        font-size: 30px !important;
-        &::after {
-          right: 118px !important;
-        }
+        font-size: 44px !important;
       }
     }
 
     .holder {
-      padding-right: 40px;
-      padding-left: 40px;
+      margin: 20px 0;
+      padding: 0 10px;
       font-size: 17px;
+      h4{
+        font-size: 32px !important;
+      }
       p {
-        &::before {
-          bottom: 64px !important;
-          left: 112px !important;
-        }
+        font-size: 20px !important;
       }
     }
   }
@@ -284,7 +327,7 @@
     }
 
     .banner-area {
-      top: 28% !important;
+      top: 29% !important;
       .caption {
         width: 90% !important;
         h3 {
@@ -293,39 +336,93 @@
 
         h1 {
           font-size: 34px !important;
-          padding: 40px 0 60px 0 !important;
+          padding: 40px 0 70px 0 !important;
         }
 
         .button {
-          width: 210px !important;
-          height: 52px !important;
-          line-height: 50px !important;
-          font-size: 20px !important;
+          font-size: 21px !important;
+        }
+      }
+    }
+  }
+
+  #special-offers{
+    .specials{
+      img{
+        width: 120px;
+      }
+      h1{
+        font-size: 44px !important;
+      }
+      p{
+        font-size: 20px !important;
+      }
+    }
+    .owl-carousel{
+      .item{
+        .price-info{
+          top: 30px;
+          right: 40px;
+          padding: 12px 17px 23px 17px !important;
+          h5{
+            font-size: 30px;
+          }
+          span{
+            font-size: 16px;
+          }
+        }
+        .img-box{
+          height: 400px !important;
+        }
+        .info{
+          padding-bottom: 50px !important;
+          .slide-header{
+            h4{
+              font-size: 36px !important;
+            }
+            span{
+              font-size: 26px !important;
+            }
+          }
+          .slide-body{
+            p{
+              font-size: 22px !important;
+            }
+          }
+          .slide-footer{
+            a{
+              font-size: 20px !important;
+            }
+          }
         }
       }
     }
   }
 
   #we-are-best {
-    padding: 100px 0 70px 0 !important;
+    padding: 120px 0 140px 0 !important;
     .caption {
-      h1 {
-        font-size: 30px !important;
-        &::after {
-          right: 118px !important;
-        }
+      padding-bottom: 40px;
+      hr{
+        height: 2px !important;
+        width: 80px !important;
       }
     }
 
     .holder {
-      padding-right: 40px;
-      padding-left: 40px;
-      font-size: 17px;
-      p {
-        &::before {
-          bottom: 64px !important;
-          left: 112px !important;
+      height: 400px !important;
+      padding: 0 90px;
+      .icon-holder{
+        width: 150px !important;
+        height: 150px !important;
+        line-height: 182px !important;
+        i{
+          font-size: 70px !important;
         }
+      }
+      hr{
+        height: 1px !important;
+        width: 40px !important;
       }
     }
   }
@@ -444,55 +541,36 @@
         }
 
         .button {
-          width: 160px !important;
-          height: 40px !important;
-          line-height: 38px !important;
-          font-size: 14px !important;
+          font-size: 15px !important;
         }
       }
     }
   }
 
   #we-are-best {
-    padding: 100px 0 60px 0 !important;
+    padding: 90px 0 120px 0 !important;
     .caption {
       h1 {
         padding: 40px 0 80px 0 !important;
-        font-size: 22px !important;
-        &::after {
-          height: 1px !important;
-          top: 94px !important;
-          right: 83px !important;
-        }
+        font-size: 32px !important;
       }
     }
 
     .holder {
+      height: 320px !important;
       padding-right: 40px;
       padding-left: 40px;
       font-size: 17px;
       i {
         font-size: 35px !important;
-        &::after {
-          width: 85px !important;
-          height: 85px !important;
-          top: -25px !important;
-          right: -22px !important;
-        }
       }
 
-      h4 {
-        font-size: 17px !important;
+      hr{
+        width: 40px !important;
       }
-
       p {
-        font-size: 13px !important;
+        font-size: 16px !important;
         width: 250px;
-        &::before {
-          height: 1px !important;
-          bottom: 53px !important;
-          left: 110px !important;
-        }
       }
     }
   }
@@ -612,33 +690,73 @@
         }
 
         .button {
-          width: 140px !important;
-          height: 40px !important;
-          line-height: 38px !important;
-          font-size: 12px !important;
+          font-size: 13px !important;
+          padding: 7px 20px !important;
+        }
+      }
+    }
+  }
+
+  #special-offers{
+    .specials{
+      h1{
+        font-size: 26px !important;
+      }
+      p{
+        font-size: 14px !important;
+      }
+    }
+    .owl-carousel{
+      .item{
+        .price-info{
+          top: 30px;
+          right: 40px;
+          padding: 10px 15px 20px 15px !important;
+          h5{
+            font-size: 25px;
+          }
+          span{
+            font-size: 15px;
+          }
+        }
+        .info{
+          padding: 20px 15px 30px 15px !important;
+          .slide-header{
+            h4{
+              font-size: 20px !important;
+            }
+            span{
+              font-size: 15px !important;
+            }
+          }
+          .slide-body{
+            p{
+              font-size: 14px !important;
+            }
+          }
+          .slide-footer{
+            a{
+              padding: 5px 10px !important;
+              font-size: 12px !important;
+            }
+          }
         }
       }
     }
   }
 
   #we-are-best {
-    padding: 100px 0 60px 0 !important;
+    padding: 100px 0 100px 0 !important;
     .caption {
       h1 {
-        padding: 40px 0 80px 0 !important;
-        font-size: 22px !important;
-        &::after {
-          height: 1px !important;
-          top: 90px !important;
-          right: 83px !important;
-        }
+        padding: 20px 0 80px 0 !important;
+        font-size: 25px !important;
       }
     }
 
     .holder {
-      padding-right: 40px;
-      padding-left: 40px;
-      font-size: 17px;
+      height: 300px !important;
+      padding: 0 30px;
       i {
         font-size: 35px !important;
         &::after {
@@ -650,17 +768,11 @@
       }
 
       h4 {
-        font-size: 17px !important;
+        font-size: 20px !important;
       }
 
       p {
-        font-size: 13px !important;
-        width: 250px;
-        &::before {
-          height: 1px !important;
-          bottom: 53px !important;
-          left: 110px !important;
-        }
+        font-size: 14px !important;
       }
     }
   }
