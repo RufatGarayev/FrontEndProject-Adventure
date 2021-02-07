@@ -1,9 +1,39 @@
 $(document).ready(function () {
-  // ======= Reload-Img Start ======= //
+// ======= Reload-Img Start ======= //
   $(window).on("load", function () {
     $(".loading").fadeOut("slow");
   });
-  // ======= Reload-Img End ======= //
+// ======= Reload-Img End ======= //
+
+
+// ======= Nav Bg-Color On Scroll Start ======= //
+var color = '#000000';
+var rgbaCol = 'rgba(' + parseInt(color.slice(-6,-4),16)
+    + ',' + parseInt(color.slice(-4,-2),16)
+    + ',' + parseInt(color.slice(-2),16)
+    +',0.5)';
+
+  window.onscroll = function() {
+    if ($(window).scrollTop() >= 750) {
+      $("nav").css("background-color", "#1D1E21");
+    } else {
+      $("nav").css("background-color", rgbaCol);
+    }
+  };
+// ======= Nav Bg-Color On Scroll End ======= //
+
+
+// ======= Changing Link To Active OnClick Start ======= //
+  $(document).on("click", ".navbar-items .nav-item", function(){
+    $(this).addClass("active-link").siblings().removeClass("active-link");
+    $(".account .nav-item").removeClass("active-link");
+  });
+
+  $(document).on("click", ".account .nav-item", function(){
+    $(this).addClass("active-link").siblings().removeClass("active-link");
+    $(".navbar-items .nav-item").removeClass("active-link");
+  });
+// ======= Changing Link To Active OnClick End ======= //
 });
 
 

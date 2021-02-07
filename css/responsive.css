@@ -637,17 +637,17 @@
     right: 0 !important;
   }
   header .navbar .account {
-    width: 90px !important;
+    width: 85px !important;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     position: absolute;
-    top: 13px;
-    right: 74px;
+    top: 14px;
+    right: 64px;
   }
   header .navbar .account li a {
-    font-size: 14px;
+    font-size: 13px;
   }
   #intro .carousel-item {
     height: 100vh !important;
@@ -721,12 +721,6 @@
   }
   #we-are-best .holder i {
     font-size: 35px !important;
-  }
-  #we-are-best .holder i::after {
-    width: 85px !important;
-    height: 85px !important;
-    top: -25px !important;
-    right: -22px !important;
   }
   #we-are-best .holder h4 {
     font-size: 20px !important;

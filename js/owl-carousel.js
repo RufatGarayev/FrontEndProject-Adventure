@@ -2,7 +2,7 @@ $(".owl-carousel.specials-section-items").owlCarousel({
   loop: true,
   margin: 10,
   nav: false,
-  dot: true,
+  dot: false,
   responsive: {
     0: {
       items: 1,

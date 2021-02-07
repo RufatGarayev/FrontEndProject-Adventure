@@ -138,8 +138,9 @@ header {
   z-index: 99;
 
   nav {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    padding: 11px 40px !important;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.3s linear;
+    padding: 11px 70px !important;
     z-index: 7;
     img {
       width: 90px;
@@ -162,6 +163,13 @@ header {
     .account {
       width: 120px;
       @extend %nav-link-properties;
+    }
+
+    .active-link{
+      hr {
+        width: 100% !important;
+        transition: 0.2s linear;
+      }
     }
   }
 }
@@ -240,7 +248,7 @@ header {
 #special-offers {
   background-color: white;
   overflow: hidden;
-  padding: 100px 0;
+  padding: 100px 0 130px 0;
   .specials {
     img {
       margin-bottom: 30px;
@@ -258,6 +266,25 @@ header {
   }
   .owl-carousel {
     padding: 0 6%;
+
+    .owl-dots{
+      display: none;
+    //   padding-top: 15px;
+    //   .owl-dot{
+
+    //     span{
+    //       border-radius: 0;
+    //       width: 35px;
+    //       height: 3px;
+    //       background-color: rgb(151, 151, 155);
+    //     }
+    //   }
+    //   .active{
+    //     span{
+    //     background-color: rgb(72,74,127);
+    //     }
+    //   }
+    }
 
     .item {
       margin: 6px;
@@ -299,10 +326,13 @@ header {
           height: 100%;
           object-fit: cover;
           transition: transform .3s;
-          &:hover{
-            transform: scale(1.3); 
-          }
+          // &:hover{
+          //   transform: scale(1.3); 
+          // }
         }
+      }
+      &:hover img{
+        transform: scale(1.3); 
       }
 
       .info {
@@ -337,9 +367,7 @@ header {
           justify-content: space-between;
           a{
             @extend %website-button;
-            // color: rgb(58,59,116);
-            background-color: rgb(58,59,116);
-            color: white;
+            color: rgb(58,59,116);
             padding: 7px 15px;
             font-size: 15px;
             margin-top: 10px;
@@ -347,8 +375,8 @@ header {
             letter-spacing: 1px;
             border: 2px solid rgb(58,59,116);
             &:hover{
-              color: rgba(58,59,116,1);
-              background-color: white;
+              color: white;
+              background-color: rgb(58,59,116);
             }
             @media (min-width: 250px) and (max-width: 315px) {
               font-size: 12px !important;

@@ -650,14 +650,14 @@
       }
 
       .account {
-        width: 90px !important;
+        width: 85px !important;
         flex-direction: row;
         position: absolute;
-        top: 13px;
-        right: 74px;
+        top: 14px;
+        right: 64px;
         li {
           a {
-            font-size: 14px;
+            font-size: 13px;
           }
         }
       }
@@ -759,12 +759,6 @@
       padding: 0 30px;
       i {
         font-size: 35px !important;
-        &::after {
-          width: 85px !important;
-          height: 85px !important;
-          top: -25px !important;
-          right: -22px !important;
-        }
       }
 
       h4 {
