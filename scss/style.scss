@@ -14,7 +14,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 // ======= Loader Start ======= //
 .loading {
   position: fixed;
@@ -129,7 +128,6 @@ html {
 // ======= Loader End ======= //
 
 
-
 // ======= Header Start ======= //
 header {
   overflow: hidden;
@@ -165,7 +163,7 @@ header {
       @extend %nav-link-properties;
     }
 
-    .active-link{
+    .active-link {
       hr {
         width: 100% !important;
         transition: 0.2s linear;
@@ -184,7 +182,7 @@ header {
     img {
       height: 100% !important;
       animation: zoom 20s;
-      filter: brightness(70%);
+      filter: brightness(80%);
       object-fit: cover !important;
     }
   }
@@ -257,7 +255,7 @@ header {
       font-size: $section-caption-size;
       font-weight: 900;
       letter-spacing: 1px;
-      color: rgb(58,59,116);
+      color: rgb(58, 59, 116);
     }
     p {
       padding: 20px 0 50px 0;
@@ -267,23 +265,23 @@ header {
   .owl-carousel {
     padding: 0 6%;
 
-    .owl-dots{
+    .owl-dots {
       display: none;
-    //   padding-top: 15px;
-    //   .owl-dot{
+      //   padding-top: 15px;
+      //   .owl-dot{
 
-    //     span{
-    //       border-radius: 0;
-    //       width: 35px;
-    //       height: 3px;
-    //       background-color: rgb(151, 151, 155);
-    //     }
-    //   }
-    //   .active{
-    //     span{
-    //     background-color: rgb(72,74,127);
-    //     }
-    //   }
+      //     span{
+      //       border-radius: 0;
+      //       width: 35px;
+      //       height: 3px;
+      //       background-color: rgb(151, 151, 155);
+      //     }
+      //   }
+      //   .active{
+      //     span{
+      //     background-color: rgb(72,74,127);
+      //     }
+      //   }
     }
 
     .item {
@@ -293,8 +291,8 @@ header {
       background-color: white;
       position: relative;
       cursor: pointer;
-      .price-info{
-        background-color: rgba(0,0,0,0.32);
+      .price-info {
+        background-color: rgba(0, 0, 0, 0.32);
         color: white;
         position: absolute;
         top: 20px;
@@ -302,15 +300,15 @@ header {
         padding: 7px 12px 15px 12px;
         line-height: 3px;
         text-align: center;
-        background: rgba(0,0,0,0.2);
+        background: rgba(0, 0, 0, 0.2);
         border-radius: 4px;
         z-index: 11;
-        @media (min-width: 250px) and (max-width: 315px){
+        @media (min-width: 250px) and (max-width: 315px) {
           padding: 7px 7px 12px 7px !important;
-          h5{
+          h5 {
             font-size: 17px;
           }
-          span{
+          span {
             font-size: 12px;
           }
         }
@@ -319,20 +317,20 @@ header {
         height: 300px;
         margin: 5px;
         overflow: hidden;
-        @media (min-width: 250px) and (max-width: 315px){
+        @media (min-width: 250px) and (max-width: 315px) {
           height: 280px;
         }
         img {
           height: 100%;
           object-fit: cover;
-          transition: transform .3s;
+          transition: transform 0.3s;
           // &:hover{
-          //   transform: scale(1.3); 
+          //   transform: scale(1.3);
           // }
         }
       }
-      &:hover img{
-        transform: scale(1.3); 
+      &:hover img {
+        transform: scale(1.3);
       }
 
       .info {
@@ -340,43 +338,43 @@ header {
         @media (min-width: 250px) and (max-width: 315px) {
           padding: 20px 9px 30px 9px !important;
         }
-        .slide-header{
-          h4{
+        .slide-header {
+          h4 {
             font-size: $item-caption-size;
-            color: rgb(58,59,116);
+            color: rgb(58, 59, 116);
             font-weight: 700;
           }
-          span{
+          span {
             font-size: 18px;
           }
           @media (min-width: 250px) and (max-width: 315px) {
-            h4{
+            h4 {
               font-size: 18px !important;
             }
-            span{
+            span {
               font-size: 14px !important;
             }
           }
         }
-        .slide-body{
-          p{
+        .slide-body {
+          p {
             font-size: $paragraph-size;
           }
         }
-        .slide-footer{
+        .slide-footer {
           justify-content: space-between;
-          a{
+          a {
             @extend %website-button;
-            color: rgb(58,59,116);
+            color: rgb(58, 59, 116);
             padding: 7px 15px;
             font-size: 15px;
             margin-top: 10px;
             border-radius: 4px;
             letter-spacing: 1px;
-            border: 2px solid rgb(58,59,116);
-            &:hover{
+            border: 2px solid rgb(58, 59, 116);
+            &:hover {
               color: white;
-              background-color: rgb(58,59,116);
+              background-color: rgb(58, 59, 116);
             }
             @media (min-width: 250px) and (max-width: 315px) {
               font-size: 12px !important;
@@ -417,7 +415,7 @@ header {
       font-size: $section-caption-size;
       letter-spacing: 1px;
     }
-    hr{
+    hr {
       margin-bottom: 40px;
       height: 1px;
       width: 70px;
@@ -425,7 +423,7 @@ header {
       background-color: white;
     }
 
-    @media (min-width: 250px) and (max-width: 315px){
+    @media (min-width: 250px) and (max-width: 315px) {
       h1 {
         font-size: 20px !important;
       }
@@ -459,7 +457,7 @@ header {
       font-weight: 700;
     }
 
-    hr{
+    hr {
       height: 1px !important;
       display: inline-block;
       width: 30px;
@@ -473,11 +471,128 @@ header {
       font-size: $paragraph-size;
     }
 
-    @media (min-width: 250px) and (max-width: 315px){
-      h4{
+    @media (min-width: 250px) and (max-width: 315px) {
+      h4 {
         font-size: 18px !important;
       }
     }
   }
 }
 // ======= We Are Best Section End ======= //
+
+// ======= Discount Section Start ======= //
+#discount {
+  // background-image: url(../img/bg-img.png);
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: rgb(55, 48, 100);
+  padding: 120px 0 120px 0;
+  position: relative;
+  background-attachment: fixed;
+  margin: 150px 0;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(13, 47, 93, 0.8);
+  }
+
+  .discount_title {
+    padding-top: 27px;
+    h2 {
+      color: #fff !important;
+      text-transform: uppercase;
+      font-size: 27px;
+      letter-spacing: 2px;
+      span {
+        color: #ff6363;
+      }
+    }
+    h1 {
+      color: #fff;
+      font-size: 65px;
+      text-transform: uppercase;
+      padding-bottom: 44px;
+      font-weight: 600;
+    }
+  }
+
+  .counterdowns {
+    text-align: left;
+    .cdowns {
+      width: 125px;
+      height: 125px;
+      background: rgba(255, 99, 99, 0.7);
+      display: inline-block;
+      margin: 0;
+      position: relative;
+      border-radius: 0;
+      text-align: center;
+      margin-left: 0;
+      margin-right: 34px;
+      border-radius: 25px;
+      .time-counts {
+        line-height: 87px;
+        font-size: 60px;
+        color: #fff;
+
+        p {
+          color: #fff;
+          font-size: 21px;
+          line-height: 0px;
+          margin-top: 9px;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        background: #fff;
+        top: 33px;
+        right: -24px;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        background: #fff;
+        top: 79px;
+        right: -24px;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+      }
+
+      &:last-child::before,
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+
+  .discount_btn {
+    padding-top: 97px;
+    text-align: right;
+    a {
+      @extend %website-button;
+      color: #fff;
+      padding: 12px 47px;
+      background: #ff6363;
+      border: 0;
+      font-size: 18px;
+      font-weight: 500;
+      &:hover {
+        color: #ff6363;
+        background-color: #fff;
+      }
+    }
+  }
+}
+// ======= Discount Section End ======= //

@@ -15,7 +15,7 @@ var rgbaCol = 'rgba(' + parseInt(color.slice(-6,-4),16)
 
   window.onscroll = function() {
     if ($(window).scrollTop() >= 750) {
-      $("nav").css("background-color", "#1D1E21");
+      $("nav").css("background-color", "#3a3b74");
     } else {
       $("nav").css("background-color", rgbaCol);
     }

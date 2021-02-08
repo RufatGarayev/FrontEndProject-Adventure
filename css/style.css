@@ -63,7 +63,7 @@ header nav .navbar-items .links li, header nav .account li {
   color: white;
 }
 
-#intro .banner-area .caption .button, #special-offers .owl-carousel .item .info .slide-footer a {
+#intro .banner-area .caption .button, #special-offers .owl-carousel .item .info .slide-footer a, #discount .discount_btn a {
   padding: 10px 24px;
   font-weight: bold;
   border: none;
@@ -74,7 +74,7 @@ header nav .navbar-items .links li, header nav .account li {
   background-color: transparent;
 }
 
-#intro .banner-area .caption .button:hover, #special-offers .owl-carousel .item .info .slide-footer a:hover {
+#intro .banner-area .caption .button:hover, #special-offers .owl-carousel .item .info .slide-footer a:hover, #discount .discount_btn a:hover {
   text-decoration: none;
   background-color: white;
   color: black;
@@ -290,8 +290,8 @@ header nav .active-link hr {
   height: 100% !important;
   -webkit-animation: zoom 20s;
           animation: zoom 20s;
-  -webkit-filter: brightness(70%);
-          filter: brightness(70%);
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
   -o-object-fit: cover !important;
      object-fit: cover !important;
 }
@@ -448,10 +448,10 @@ header nav .active-link hr {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 #special-offers .owl-carousel .item:hover img {
@@ -613,5 +613,122 @@ header nav .active-link hr {
   #we-are-best .holder h4 {
     font-size: 18px !important;
   }
+}
+
+#discount {
+  background-color: #373064;
+  padding: 120px 0 120px 0;
+  position: relative;
+  background-attachment: fixed;
+  margin: 150px 0;
+}
+
+#discount::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(13, 47, 93, 0.8);
+}
+
+#discount .discount_title {
+  padding-top: 27px;
+}
+
+#discount .discount_title h2 {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+
+#discount .discount_title h2 span {
+  color: #ff6363;
+}
+
+#discount .discount_title h1 {
+  color: #fff;
+  font-size: 65px;
+  text-transform: uppercase;
+  padding-bottom: 44px;
+  font-weight: 600;
+}
+
+#discount .counterdowns {
+  text-align: left;
+}
+
+#discount .counterdowns .cdowns {
+  width: 125px;
+  height: 125px;
+  background: rgba(255, 99, 99, 0.7);
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  border-radius: 0;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 34px;
+  border-radius: 25px;
+}
+
+#discount .counterdowns .cdowns .time-counts {
+  line-height: 87px;
+  font-size: 60px;
+  color: #fff;
+}
+
+#discount .counterdowns .cdowns .time-counts p {
+  color: #fff;
+  font-size: 21px;
+  line-height: 0px;
+  margin-top: 9px;
+}
+
+#discount .counterdowns .cdowns::before {
+  position: absolute;
+  content: "";
+  background: #fff;
+  top: 33px;
+  right: -24px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+#discount .counterdowns .cdowns::after {
+  position: absolute;
+  content: "";
+  background: #fff;
+  top: 79px;
+  right: -24px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+#discount .counterdowns .cdowns:last-child::before, #discount .counterdowns .cdowns:last-child::after {
+  display: none;
+}
+
+#discount .discount_btn {
+  padding-top: 97px;
+  text-align: right;
+}
+
+#discount .discount_btn a {
+  color: #fff;
+  padding: 12px 47px;
+  background: #ff6363;
+  border: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#discount .discount_btn a:hover {
+  color: #ff6363;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
