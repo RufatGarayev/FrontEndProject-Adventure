@@ -1,7 +1,7 @@
 %nav-links {
   color: white !important;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 200;
+  font-size: 15px;
   &:hover {
     text-decoration: none;
   }
@@ -25,7 +25,7 @@
 }
 
 %nav-link-properties {
-  width: 340px;
+  width: 360px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -47,36 +47,66 @@
   .carousel-control {
     width: 50px;
     height: 50px;
-    // background-color: rgba(239,186,108, 0.4);
-    background-color: rgba(7, 8, 10, 0.5);
     border-radius: 50%;
+    border: 2px solid white;
     text-align: center;
+    position: relative;
     z-index: -1;
     i {
       &::before {
         font-size: 20px !important;
-        font-weight: bold !important;
-        line-height: 48px;
+        line-height: 47px;
         margin-left: 0;
-        color: white;
       }
+    }
+
+    &:hover{
+      border: 2px solid #d7613f;
     }
   }
 }
 
-%website-button{
+
+%website-button {
   padding: 10px 24px;
   font-weight: bold;
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   color: white;
   border: 2px solid white;
   text-align: center;
   background-color: transparent;
-  &:hover {
-    text-decoration: none;
-    background-color: white;
-    color: black;
-    transition: 0.2s linear;
+  position: relative;
+  &::before {
+    content: "";
+    border-radius: 3px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    // background-color: #d7613f;
+    // border: 2px solid #d7613f;
+
+    // background-color: #DB7355;
+    // border: 2px solid #DB7355;
+
+    background-color: #3A3B74;
+    border: 2px solid #3A3B74;
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
   }
+  &:hover {
+    color: white;
+    text-decoration: none;
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+
+  transition: color 300ms ease-in-out;
+  z-index: 1;
 }

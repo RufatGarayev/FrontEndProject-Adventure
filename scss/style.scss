@@ -7,8 +7,16 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  transition: 0.2s linear;
   font-family: "Nunito", sans-serif;
 }
+
+@font-face {
+  font-family: "ludicrous";
+  src: url(../WOFF-web-fonts/Ludicrous.woff);
+  font-weight: 100;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -242,53 +250,146 @@ header {
 }
 // ======= Intro Section End ======= //
 
+
+// ======= We Are Best Section Start ======= //
+#we-are-best {
+  position: relative;
+  overflow: hidden;
+  padding: 66px 0 99px 0;
+  .caption {
+    height: 130px;
+    h1 {
+      text-align: center;
+      padding: 30px 0 10px 0 !important;
+      font-weight: 700;
+      font-size: $section-caption-size;
+      font-family: $section-caption-font-family;
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: rgb(58, 59, 116);
+    }
+    hr {
+      margin: 0;
+      height: 1px;
+      width: 70px;
+      border-radius: 2px;
+      background-color: rgb(58, 59, 116);
+    }
+
+    @media (min-width: 250px) and (max-width: 315px) {
+      h1 {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  .holder {
+    padding: 40px 5px 0 5px !important;
+    height: 257px;
+    transition: 0.4s ease-in-out;
+    &:hover {
+      padding-top: 15px !important;
+      transition: 0.4s ease-in-out;
+    }
+    .icon-holder {
+      i {
+        color: #DB7355;
+        &::before{
+          font-size: 50px;
+          margin-left: 0;
+        }
+      }
+    }
+
+    h4 {
+      font-size: $item-caption-size;
+      padding-top: 20px;
+      font-weight: 700;
+      color: rgb(58, 59, 116);
+    }
+
+    hr {
+      height: 0.5px !important;
+      display: inline-block;
+      width: 26px;
+      margin: 10px 0 0 0;
+      background-color: rgb(58, 59, 116);
+    }
+
+    p {
+      position: relative;
+      padding-top: 22px;
+      font-size: $paragraph-size;
+      font-weight: $paragraph-weight;
+      color: black;
+    }
+
+    @media (min-width: 250px) and (max-width: 315px) {
+      h4 {
+        font-size: 18px !important;
+      }
+    }
+  }
+}
+// ======= We Are Best Section End ======= //
+
+
 // ======= Special Offers Section Start ======= //
 #special-offers {
-  background-color: white;
+  position: relative;
+  background: url(../img/bg-img3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden;
   padding: 100px 0 130px 0;
+  .background-overlay{
+    opacity: 0.7;
+    background-color: #313b36;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
   .specials {
+    color: white;
     img {
       margin-bottom: 30px;
     }
     h1 {
       font-size: $section-caption-size;
-      font-weight: 900;
+      font-weight: 700;
       letter-spacing: 1px;
-      color: rgb(58, 59, 116);
+      font-family: $section-caption-font-family;
+      text-transform: uppercase;
+    }
+    hr{
+      width: 70px;
+      height: 0.7px;
+      border-radius: 2px;
+      margin: 8px 0;
+      background-color: white;
     }
     p {
       padding: 20px 0 50px 0;
       font-size: $paragraph-size;
+      font-weight: $paragraph-weight !important;
     }
   }
   .owl-carousel {
-    padding: 0 6%;
+    // padding: 0 6%;
 
     .owl-dots {
       display: none;
-      //   padding-top: 15px;
-      //   .owl-dot{
-
-      //     span{
-      //       border-radius: 0;
-      //       width: 35px;
-      //       height: 3px;
-      //       background-color: rgb(151, 151, 155);
-      //     }
-      //   }
-      //   .active{
-      //     span{
-      //     background-color: rgb(72,74,127);
-      //     }
-      //   }
     }
 
     .item {
       margin: 6px;
       padding: 1px;
-      box-shadow: 0px 0px 5px 2px rgb(228, 225, 225);
-      background-color: white;
+      // box-shadow: 0px 0px 5px 1px rgb(94, 92, 92);
+      background-color: #EFEFEF;
       position: relative;
       cursor: pointer;
       .price-info {
@@ -306,16 +407,16 @@ header {
         @media (min-width: 250px) and (max-width: 315px) {
           padding: 7px 7px 12px 7px !important;
           h5 {
-            font-size: 17px;
+            font-size: 22px !important;
           }
           span {
-            font-size: 12px;
+            font-size: 11px;
           }
         }
       }
       .img-box {
-        height: 300px;
-        margin: 5px;
+        height: 250px;
+        margin: 2px;
         overflow: hidden;
         @media (min-width: 250px) and (max-width: 315px) {
           height: 280px;
@@ -324,9 +425,6 @@ header {
           height: 100%;
           object-fit: cover;
           transition: transform 0.3s;
-          // &:hover{
-          //   transform: scale(1.3);
-          // }
         }
       }
       &:hover img {
@@ -342,10 +440,11 @@ header {
           h4 {
             font-size: $item-caption-size;
             color: rgb(58, 59, 116);
-            font-weight: 700;
+            font-weight: 600;
           }
           span {
-            font-size: 18px;
+            font-size: 14px;
+            font-weight: 300;
           }
           @media (min-width: 250px) and (max-width: 315px) {
             h4 {
@@ -358,23 +457,43 @@ header {
         }
         .slide-body {
           p {
+            padding: 10px 0;
             font-size: $paragraph-size;
+            font-weight: $paragraph-weight;
+            text-align: justify;
           }
         }
         .slide-footer {
           justify-content: space-between;
-          a {
+          align-items: center;
+          a{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500 !important;
+            text-transform: uppercase;
+            font-size: 11px;
+            color: #DB7355;
+            &:hover{
+              color: #303B36;
+              text-decoration: none;
+            }
+          &:first-child {
             @extend %website-button;
             color: rgb(58, 59, 116);
             padding: 7px 15px;
-            font-size: 15px;
+            font-size: 11px;
             margin-top: 10px;
-            border-radius: 4px;
-            letter-spacing: 1px;
+            border-radius: 2px;
             border: 2px solid rgb(58, 59, 116);
+            letter-spacing: 1px;
+            &::before{
+              content: "";
+              top: -1px;
+              bottom: -1px;
+              background-color: rgb(58, 59, 116);
+              border: 2px solid rgb(58, 59, 116);
+            }
             &:hover {
               color: white;
-              background-color: rgb(58, 59, 116);
             }
             @media (min-width: 250px) and (max-width: 315px) {
               font-size: 12px !important;
@@ -382,103 +501,13 @@ header {
             }
           }
         }
+        }
       }
     }
   }
 }
 // ======= Special Offers Section End ======= //
 
-// ======= We Are Best Section Start ======= //
-#we-are-best {
-  position: relative;
-  overflow: hidden;
-  padding: 80px 0 92px 0;
-  background: url(../img/img.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  &::before {
-    background-color: rgba(58, 59, 116, 0.9);
-    content: "";
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-  .caption {
-    h1 {
-      text-align: center;
-      padding: 30px 0 10px 0 !important;
-      font-weight: 900;
-      font-size: $section-caption-size;
-      letter-spacing: 1px;
-    }
-    hr {
-      margin-bottom: 40px;
-      height: 1px;
-      width: 70px;
-      border-radius: 2px;
-      background-color: white;
-    }
-
-    @media (min-width: 250px) and (max-width: 315px) {
-      h1 {
-        font-size: 20px !important;
-      }
-    }
-  }
-
-  .holder {
-    padding: 40px 5px 0 5px !important;
-    height: 307px;
-    transition: 0.4s ease-in-out;
-    &:hover {
-      padding-top: 15px !important;
-      transition: 0.4s ease-in-out;
-    }
-    .icon-holder {
-      width: 95px;
-      height: 95px;
-      border: 2px solid white;
-      border-radius: 50%;
-      line-height: 110px;
-      i {
-        font-size: 42px;
-        // color: #32325d;
-        color: white;
-      }
-    }
-
-    h4 {
-      font-size: $item-caption-size;
-      padding-top: 47px;
-      font-weight: 700;
-    }
-
-    hr {
-      height: 1px !important;
-      display: inline-block;
-      width: 30px;
-      margin: 10px 0 0 0;
-      background-color: white;
-    }
-
-    p {
-      position: relative;
-      padding-top: 22px;
-      font-size: $paragraph-size;
-    }
-
-    @media (min-width: 250px) and (max-width: 315px) {
-      h4 {
-        font-size: 18px !important;
-      }
-    }
-  }
-}
-// ======= We Are Best Section End ======= //
 
 // ======= Discount Section Start ======= //
 #discount {

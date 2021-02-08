@@ -40,7 +40,7 @@
   header .navbar .navbar-items {
     width: 100% !important;
     height: 100%;
-    background-color: #0a0d13 !important;
+    background-color: #27302c !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -146,6 +146,23 @@
   #intro .banner-area .caption .button {
     font-size: 20px !important;
   }
+  #we-are-best {
+    padding: 100px 0 140px 0 !important;
+  }
+  #we-are-best .caption h1 {
+    font-size: 44px !important;
+  }
+  #we-are-best .holder {
+    margin: 20px 0;
+    padding: 0 10px;
+    font-size: 17px;
+  }
+  #we-are-best .holder h4 {
+    font-size: 32px !important;
+  }
+  #we-are-best .holder p {
+    font-size: 20px !important;
+  }
   #special-offers .specials {
     padding: 0 45px;
   }
@@ -190,23 +207,6 @@
   #special-offers .owl-carousel .item .info .slide-footer a {
     font-size: 20px !important;
   }
-  #we-are-best {
-    padding: 100px 0 140px 0 !important;
-  }
-  #we-are-best .caption h1 {
-    font-size: 44px !important;
-  }
-  #we-are-best .holder {
-    margin: 20px 0;
-    padding: 0 10px;
-    font-size: 17px;
-  }
-  #we-are-best .holder h4 {
-    font-size: 32px !important;
-  }
-  #we-are-best .holder p {
-    font-size: 20px !important;
-  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -223,7 +223,7 @@
   header .navbar .navbar-items {
     width: 100% !important;
     height: 100%;
-    background-color: #0a0d13 !important;
+    background-color: #27302c !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -332,6 +332,27 @@
   #intro .banner-area .caption .button {
     font-size: 21px !important;
   }
+  #we-are-best {
+    padding: 120px 0 140px 0 !important;
+  }
+  #we-are-best .caption {
+    padding-bottom: 40px;
+  }
+  #we-are-best .caption hr {
+    height: 2px !important;
+    width: 80px !important;
+  }
+  #we-are-best .holder {
+    height: 400px !important;
+    padding: 0 90px;
+  }
+  #we-are-best .holder .icon-holder i {
+    font-size: 70px !important;
+  }
+  #we-are-best .holder hr {
+    height: 1px !important;
+    width: 40px !important;
+  }
   #special-offers .specials img {
     width: 120px;
   }
@@ -370,32 +391,6 @@
   #special-offers .owl-carousel .item .info .slide-footer a {
     font-size: 20px !important;
   }
-  #we-are-best {
-    padding: 120px 0 140px 0 !important;
-  }
-  #we-are-best .caption {
-    padding-bottom: 40px;
-  }
-  #we-are-best .caption hr {
-    height: 2px !important;
-    width: 80px !important;
-  }
-  #we-are-best .holder {
-    height: 400px !important;
-    padding: 0 90px;
-  }
-  #we-are-best .holder .icon-holder {
-    width: 150px !important;
-    height: 150px !important;
-    line-height: 182px !important;
-  }
-  #we-are-best .holder .icon-holder i {
-    font-size: 70px !important;
-  }
-  #we-are-best .holder hr {
-    height: 1px !important;
-    width: 40px !important;
-  }
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
@@ -412,7 +407,7 @@
   header .navbar .navbar-items {
     width: 100% !important;
     height: 100%;
-    background-color: #0a0d13 !important;
+    background-color: #27302c !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -499,6 +494,29 @@
   header .navbar .account li a {
     font-size: 16px;
   }
+  #we-are-best {
+    padding: 90px 0 120px 0 !important;
+  }
+  #we-are-best .caption h1 {
+    padding: 40px 0 80px 0 !important;
+    font-size: 32px !important;
+  }
+  #we-are-best .holder {
+    height: 320px !important;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 17px;
+  }
+  #we-are-best .holder i {
+    font-size: 35px !important;
+  }
+  #we-are-best .holder hr {
+    width: 40px !important;
+  }
+  #we-are-best .holder p {
+    font-size: 16px !important;
+    width: 250px;
+  }
   #intro .carousel-item {
     height: 100vh !important;
   }
@@ -523,29 +541,6 @@
   #intro .banner-area .caption .button {
     font-size: 15px !important;
   }
-  #we-are-best {
-    padding: 90px 0 120px 0 !important;
-  }
-  #we-are-best .caption h1 {
-    padding: 40px 0 80px 0 !important;
-    font-size: 32px !important;
-  }
-  #we-are-best .holder {
-    height: 320px !important;
-    padding-right: 40px;
-    padding-left: 40px;
-    font-size: 17px;
-  }
-  #we-are-best .holder i {
-    font-size: 35px !important;
-  }
-  #we-are-best .holder hr {
-    width: 40px !important;
-  }
-  #we-are-best .holder p {
-    font-size: 16px !important;
-    width: 250px;
-  }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
@@ -562,7 +557,7 @@
   header .navbar .navbar-items {
     width: 100% !important;
     height: 100%;
-    background-color: #0a0d13 !important;
+    background-color: #27302c !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -675,6 +670,26 @@
     font-size: 13px !important;
     padding: 7px 20px !important;
   }
+  #we-are-best {
+    padding: 100px 0 100px 0 !important;
+  }
+  #we-are-best .caption h1 {
+    padding: 20px 0 80px 0 !important;
+    font-size: 25px !important;
+  }
+  #we-are-best .holder {
+    height: 300px !important;
+    padding: 0 30px;
+  }
+  #we-are-best .holder i {
+    font-size: 35px !important;
+  }
+  #we-are-best .holder h4 {
+    font-size: 20px !important;
+  }
+  #we-are-best .holder p {
+    font-size: 14px !important;
+  }
   #special-offers .specials h1 {
     font-size: 26px !important;
   }
@@ -707,26 +722,6 @@
   #special-offers .owl-carousel .item .info .slide-footer a {
     padding: 5px 10px !important;
     font-size: 12px !important;
-  }
-  #we-are-best {
-    padding: 100px 0 100px 0 !important;
-  }
-  #we-are-best .caption h1 {
-    padding: 20px 0 80px 0 !important;
-    font-size: 25px !important;
-  }
-  #we-are-best .holder {
-    height: 300px !important;
-    padding: 0 30px;
-  }
-  #we-are-best .holder i {
-    font-size: 35px !important;
-  }
-  #we-are-best .holder h4 {
-    font-size: 20px !important;
-  }
-  #we-are-best .holder p {
-    font-size: 14px !important;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

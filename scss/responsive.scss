@@ -51,7 +51,7 @@
       .navbar-items {
         width: 100% !important;
         height: 100%;
-        background-color: #0a0d13 !important;
+        background-color: rgb(39, 48, 44) !important;
 
         flex-direction: column;
         justify-content: space-around;
@@ -152,6 +152,27 @@
     }
   }
 
+  #we-are-best {
+    padding: 100px 0 140px 0 !important;
+    .caption {
+      h1 {
+        font-size: 44px !important;
+      }
+    }
+
+    .holder {
+      margin: 20px 0;
+      padding: 0 10px;
+      font-size: 17px;
+      h4{
+        font-size: 32px !important;
+      }
+      p {
+        font-size: 20px !important;
+      }
+    }
+  }
+
   #special-offers{
     .specials{
       padding: 0 45px;
@@ -206,27 +227,6 @@
       }
     }
   }
-
-  #we-are-best {
-    padding: 100px 0 140px 0 !important;
-    .caption {
-      h1 {
-        font-size: 44px !important;
-      }
-    }
-
-    .holder {
-      margin: 20px 0;
-      padding: 0 10px;
-      font-size: 17px;
-      h4{
-        font-size: 32px !important;
-      }
-      p {
-        font-size: 20px !important;
-      }
-    }
-  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -244,7 +244,7 @@
       .navbar-items {
         width: 100% !important;
         height: 100%;
-        background-color: #0a0d13 !important;
+        background-color: rgb(39, 48, 44) !important;
 
         flex-direction: column;
         justify-content: space-around;
@@ -346,6 +346,34 @@
     }
   }
 
+  #we-are-best {
+    padding: 120px 0 140px 0 !important;
+    .caption {
+      padding-bottom: 40px;
+      hr{
+        height: 2px !important;
+        width: 80px !important;
+      }
+    }
+
+    .holder {
+      height: 400px !important;
+      padding: 0 90px;
+      .icon-holder{
+        // width: 150px !important;
+        // height: 150px !important;
+        // line-height: 182px !important;
+        i{
+          font-size: 70px !important;
+        }
+      }
+      hr{
+        height: 1px !important;
+        width: 40px !important;
+      }
+    }
+  }
+
   #special-offers{
     .specials{
       img{
@@ -398,34 +426,7 @@
       }
     }
   }
-
-  #we-are-best {
-    padding: 120px 0 140px 0 !important;
-    .caption {
-      padding-bottom: 40px;
-      hr{
-        height: 2px !important;
-        width: 80px !important;
-      }
-    }
-
-    .holder {
-      height: 400px !important;
-      padding: 0 90px;
-      .icon-holder{
-        width: 150px !important;
-        height: 150px !important;
-        line-height: 182px !important;
-        i{
-          font-size: 70px !important;
-        }
-      }
-      hr{
-        height: 1px !important;
-        width: 40px !important;
-      }
-    }
-  }
+  
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
@@ -443,7 +444,7 @@
       .navbar-items {
         width: 100% !important;
         height: 100%;
-        background-color: #0a0d13 !important;
+        background-color: rgb(39, 48, 44) !important;
 
         flex-direction: column;
         justify-content: space-around;
@@ -516,6 +517,34 @@
     }
   }
 
+  #we-are-best {
+    padding: 90px 0 120px 0 !important;
+    .caption {
+      h1 {
+        padding: 40px 0 80px 0 !important;
+        font-size: 32px !important;
+      }
+    }
+
+    .holder {
+      height: 320px !important;
+      padding-right: 40px;
+      padding-left: 40px;
+      font-size: 17px;
+      i {
+        font-size: 35px !important;
+      }
+
+      hr{
+        width: 40px !important;
+      }
+      p {
+        font-size: 16px !important;
+        width: 250px;
+      }
+    }
+  }
+
   #intro {
     .carousel-item {
       height: 100vh !important;
@@ -546,34 +575,6 @@
       }
     }
   }
-
-  #we-are-best {
-    padding: 90px 0 120px 0 !important;
-    .caption {
-      h1 {
-        padding: 40px 0 80px 0 !important;
-        font-size: 32px !important;
-      }
-    }
-
-    .holder {
-      height: 320px !important;
-      padding-right: 40px;
-      padding-left: 40px;
-      font-size: 17px;
-      i {
-        font-size: 35px !important;
-      }
-
-      hr{
-        width: 40px !important;
-      }
-      p {
-        font-size: 16px !important;
-        width: 250px;
-      }
-    }
-  }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
@@ -591,7 +592,7 @@
       .navbar-items {
         width: 100% !important;
         height: 100%;
-        background-color: #0a0d13 !important;
+        background-color: rgb(39, 48, 44) !important;
 
         flex-direction: column;
         justify-content: space-around;
@@ -697,6 +698,32 @@
     }
   }
 
+  #we-are-best {
+    padding: 100px 0 100px 0 !important;
+    .caption {
+      h1 {
+        padding: 20px 0 80px 0 !important;
+        font-size: 25px !important;
+      }
+    }
+
+    .holder {
+      height: 300px !important;
+      padding: 0 30px;
+      i {
+        font-size: 35px !important;
+      }
+
+      h4 {
+        font-size: 20px !important;
+      }
+
+      p {
+        font-size: 14px !important;
+      }
+    }
+  }
+
   #special-offers{
     .specials{
       h1{
@@ -741,32 +768,6 @@
             }
           }
         }
-      }
-    }
-  }
-
-  #we-are-best {
-    padding: 100px 0 100px 0 !important;
-    .caption {
-      h1 {
-        padding: 20px 0 80px 0 !important;
-        font-size: 25px !important;
-      }
-    }
-
-    .holder {
-      height: 300px !important;
-      padding: 0 30px;
-      i {
-        font-size: 35px !important;
-      }
-
-      h4 {
-        font-size: 20px !important;
-      }
-
-      p {
-        font-size: 14px !important;
       }
     }
   }
