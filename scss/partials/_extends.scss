@@ -69,7 +69,7 @@
 
 %website-button {
   padding: 10px 24px;
-  font-weight: bold;
+  font-weight: 600;
   border: none;
   border-radius: 4px;
   color: white;
@@ -77,6 +77,7 @@
   text-align: center;
   background-color: transparent;
   position: relative;
+  text-transform: uppercase;
   &::before {
     content: "";
     border-radius: 3px;

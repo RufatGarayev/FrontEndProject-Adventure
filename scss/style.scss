@@ -17,7 +17,6 @@
   font-weight: 100;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -181,6 +180,7 @@ header {
 }
 // ======= Header End ======= //
 
+
 // ======= Intro Section Start ======= //
 #intro {
   overflow: hidden;
@@ -272,7 +272,7 @@ header {
     hr {
       margin: 0;
       height: 1px;
-      width: 70px;
+      width: 60px;
       border-radius: 2px;
       background-color: rgb(58, 59, 116);
     }
@@ -294,8 +294,8 @@ header {
     }
     .icon-holder {
       i {
-        color: #DB7355;
-        &::before{
+        color: #db7355;
+        &::before {
           font-size: 50px;
           margin-left: 0;
         }
@@ -344,7 +344,7 @@ header {
   background-size: cover;
   overflow: hidden;
   padding: 100px 0 130px 0;
-  .background-overlay{
+  .background-overlay {
     opacity: 0.7;
     background-color: #313b36;
     position: absolute;
@@ -365,8 +365,8 @@ header {
       font-family: $section-caption-font-family;
       text-transform: uppercase;
     }
-    hr{
-      width: 70px;
+    hr {
+      width: 60px;
       height: 0.7px;
       border-radius: 2px;
       margin: 8px 0;
@@ -389,7 +389,7 @@ header {
       margin: 6px;
       padding: 1px;
       // box-shadow: 0px 0px 5px 1px rgb(94, 92, 92);
-      background-color: #EFEFEF;
+      background-color: #efefef;
       position: relative;
       cursor: pointer;
       .price-info {
@@ -466,41 +466,40 @@ header {
         .slide-footer {
           justify-content: space-between;
           align-items: center;
-          a{
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500 !important;
+          a {
+            font-family: "Montserrat", sans-serif;
             text-transform: uppercase;
             font-size: 11px;
-            color: #DB7355;
-            &:hover{
-              color: #303B36;
+            color: #db7355;
+            &:hover {
+              color: #303b36;
               text-decoration: none;
             }
-          &:first-child {
-            @extend %website-button;
-            color: rgb(58, 59, 116);
-            padding: 7px 15px;
-            font-size: 11px;
-            margin-top: 10px;
-            border-radius: 2px;
-            border: 2px solid rgb(58, 59, 116);
-            letter-spacing: 1px;
-            &::before{
-              content: "";
-              top: -1px;
-              bottom: -1px;
-              background-color: rgb(58, 59, 116);
+            &:first-child {
+              @extend %website-button;
+              color: rgb(58, 59, 116);
+              padding: 7px 10px;
+              font-size: 11px;
+              margin-top: 10px;
+              border-radius: 2px;
               border: 2px solid rgb(58, 59, 116);
-            }
-            &:hover {
-              color: white;
-            }
-            @media (min-width: 250px) and (max-width: 315px) {
-              font-size: 12px !important;
-              letter-spacing: 0;
+              letter-spacing: 1px;
+              &::before {
+                content: "";
+                top: -1px;
+                bottom: -1px;
+                background-color: rgb(58, 59, 116);
+                border: 2px solid rgb(58, 59, 116);
+              }
+              &:hover {
+                color: white;
+              }
+              @media (min-width: 250px) and (max-width: 315px) {
+                font-size: 12px !important;
+                letter-spacing: 0;
+              }
             }
           }
-        }
         }
       }
     }
@@ -509,17 +508,37 @@ header {
 // ======= Special Offers Section End ======= //
 
 
+// ======= View Tours Section Start ======= //
+#view-tours{
+  padding: 80px 0;
+  .content{
+    justify-content: space-evenly;
+    align-items: center;
+    h4{
+      color: rgb(37, 43, 45);
+      margin: 0;
+    }
+    a{
+      @extend %website-button;
+      color: #3A3B74;
+      border: 2px solid #3A3B74;
+      font-size: 16px;
+      padding: 10px 30px;
+    }
+  }
+}
+// ======= View Tours Section End ======= //
+
+
 // ======= Discount Section Start ======= //
 #discount {
-  // background-image: url(../img/bg-img.png);
-  // background-position: center center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  background-color: rgb(55, 48, 100);
+  background-image: url(../img/bg-img.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 120px 0 120px 0;
   position: relative;
-  background-attachment: fixed;
-  margin: 150px 0;
   &::before {
     position: absolute;
     content: "";
@@ -527,7 +546,7 @@ header {
     right: 0;
     bottom: 0;
     top: 0;
-    background: rgba(13, 47, 93, 0.8);
+    background: rgba(48, 59, 54, 0.8);
   }
 
   .discount_title {
@@ -538,7 +557,7 @@ header {
       font-size: 27px;
       letter-spacing: 2px;
       span {
-        color: #ff6363;
+        color: #db7355;
       }
     }
     h1 {
@@ -552,56 +571,91 @@ header {
 
   .counterdowns {
     text-align: left;
-    .cdowns {
-      width: 125px;
-      height: 125px;
-      background: rgba(255, 99, 99, 0.7);
-      display: inline-block;
-      margin: 0;
-      position: relative;
-      border-radius: 0;
-      text-align: center;
-      margin-left: 0;
-      margin-right: 34px;
-      border-radius: 25px;
-      .time-counts {
-        line-height: 87px;
-        font-size: 60px;
-        color: #fff;
+    .timer {
+      width: 79%;
+      .cdowns {
+        width: 125px;
+        height: 125px;
+        background: #db7355;
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        border-radius: 0;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 34px;
+        border-radius: 25px;
+        font-size: 52px;
+        color: white;
+        font-weight: 600;
 
-        p {
-          color: #fff;
-          font-size: 21px;
-          line-height: 0px;
-          margin-top: 9px;
+        // &::before {
+        //   position: absolute;
+        //   content: "";
+        //   background: #fff;
+        //   top: 33px;
+        //   right: -24px;
+        //   height: 12px;
+        //   width: 12px;
+        //   border-radius: 50%;
+        // }
+
+        // &::after {
+        //   position: absolute;
+        //   content: "";
+        //   background: #fff;
+        //   top: 79px;
+        //   right: -24px;
+        //   height: 12px;
+        //   width: 12px;
+        //   border-radius: 50%;
+        // }
+
+        // &:last-child::before,
+        // &:last-child::after {
+        //   display: none !important;
+        // }
+      }
+
+      .days{
+        position: relative;
+        &::before{
+          content: "Days";
+          position: absolute;
+          top: 76px;
+          left: 37px;
+          font-size: 22px;
         }
       }
-
-      &::before {
-        position: absolute;
-        content: "";
-        background: #fff;
-        top: 33px;
-        right: -24px;
-        height: 12px;
-        width: 12px;
-        border-radius: 50%;
+      .hours{
+        position: relative;
+        &::before{
+          content: "Hours";
+          position: absolute;
+          top: 76px;
+          left: 32px;
+          font-size: 22px;
+        }
       }
-
-      &::after {
-        position: absolute;
-        content: "";
-        background: #fff;
-        top: 79px;
-        right: -24px;
-        height: 12px;
-        width: 12px;
-        border-radius: 50%;
+      .minutes{
+        position: relative;
+        &::before{
+          content: "Min";
+          position: absolute;
+          top: 76px;
+          left: 45px;
+          font-size: 22px;
+        }
       }
-
-      &:last-child::before,
-      &:last-child::after {
-        display: none;
+      .seconds{
+        position: relative;
+        &::before{
+          content: "Sec";
+          position: absolute;
+          top: 76px;
+          left: 44px;
+          font-size: 22px;
+        }
       }
     }
   }
@@ -611,15 +665,20 @@ header {
     text-align: right;
     a {
       @extend %website-button;
-      color: #fff;
-      padding: 12px 47px;
-      background: #ff6363;
-      border: 0;
-      font-size: 18px;
-      font-weight: 500;
+      font-size: 16px;
+      padding: 10px 30px;
+      &::before {
+        background: white;
+      }
       &:hover {
-        color: #ff6363;
-        background-color: #fff;
+        color: rgb(37, 43, 45);
+        &::before {
+          background: white;
+        }
+      }
+      @media (min-width: 250px) and (max-width: 315px) {
+        font-size: 12px !important;
+        letter-spacing: 0;
       }
     }
   }
