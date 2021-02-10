@@ -8,12 +8,9 @@ $(".owl-carousel.specials-section-items").owlCarousel({
       items: 1,
     },
     600: {
-      items: 1,
-    },
-    1000: {
       items: 2,
     },
-    1198: {
+    1000: {
       items: 3,
     },
   },

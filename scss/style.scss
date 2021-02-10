@@ -134,7 +134,6 @@ html {
 }
 // ======= Loader End ======= //
 
-
 // ======= Header Start ======= //
 header {
   overflow: hidden;
@@ -179,7 +178,6 @@ header {
   }
 }
 // ======= Header End ======= //
-
 
 // ======= Intro Section Start ======= //
 #intro {
@@ -250,9 +248,8 @@ header {
 }
 // ======= Intro Section End ======= //
 
-
 // ======= We Are Best Section Start ======= //
-#we-are-best {
+#our-advantages {
   position: relative;
   overflow: hidden;
   padding: 66px 0 99px 0;
@@ -276,16 +273,10 @@ header {
       border-radius: 2px;
       background-color: rgb(58, 59, 116);
     }
-
-    @media (min-width: 250px) and (max-width: 315px) {
-      h1 {
-        font-size: 20px !important;
-      }
-    }
   }
 
   .holder {
-    padding: 40px 5px 0 5px !important;
+    padding: 40px 5px 0 5px;
     height: 257px;
     transition: 0.4s ease-in-out;
     &:hover {
@@ -334,7 +325,6 @@ header {
 }
 // ======= We Are Best Section End ======= //
 
-
 // ======= Special Offers Section Start ======= //
 #special-offers {
   position: relative;
@@ -344,8 +334,38 @@ header {
   background-size: cover;
   overflow: hidden;
   padding: 100px 0 130px 0;
+  @media (min-width: 375px) and (max-width: 430px) {
+    padding: 100px 30px 130px 30px !important;
+  }
+
+  @media (min-width: 576px) and (max-width: 599.98px) {
+    padding: 100px 50px 130px 50px !important;
+    .img-box {
+      height: 320px !important;
+    }
+    .info {
+      .tour-name {
+        padding: 17px 0 !important;
+        h4 {
+          font-size: 24px !important;
+        }
+      }
+      .slide-links {
+        a {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 250px) and (max-width: 315px) {
+    .img-box {
+      height: 230px !important;
+    }
+  }
+
   .background-overlay {
-    opacity: 0.7;
+    opacity: 0.5;
     background-color: #313b36;
     position: absolute;
     height: 100%;
@@ -353,6 +373,7 @@ header {
     top: 0;
     left: 0;
   }
+
   .specials {
     color: white;
     img {
@@ -379,8 +400,6 @@ header {
     }
   }
   .owl-carousel {
-    // padding: 0 6%;
-
     .owl-dots {
       display: none;
     }
@@ -388,7 +407,6 @@ header {
     .item {
       margin: 6px;
       padding: 1px;
-      // box-shadow: 0px 0px 5px 1px rgb(94, 92, 92);
       background-color: #efefef;
       position: relative;
       cursor: pointer;
@@ -432,44 +450,32 @@ header {
       }
 
       .info {
-        padding: 30px;
+        padding: 20px 20px 30px 20px;
         @media (min-width: 250px) and (max-width: 315px) {
           padding: 20px 9px 30px 9px !important;
         }
-        .slide-header {
+        .tour-date {
+          span {
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+        .tour-name {
+          padding: 12px 0 20px 0;
           h4 {
             font-size: $item-caption-size;
             color: rgb(58, 59, 116);
             font-weight: 600;
           }
-          span {
-            font-size: 14px;
-            font-weight: 300;
-          }
-          @media (min-width: 250px) and (max-width: 315px) {
-            h4 {
-              font-size: 18px !important;
-            }
-            span {
-              font-size: 14px !important;
-            }
-          }
         }
-        .slide-body {
-          p {
-            padding: 10px 0;
-            font-size: $paragraph-size;
-            font-weight: $paragraph-weight;
-            text-align: justify;
-          }
-        }
-        .slide-footer {
+        .slide-links {
           justify-content: space-between;
           align-items: center;
           a {
             font-family: "Montserrat", sans-serif;
             text-transform: uppercase;
             font-size: 11px;
+            font-weight: 500;
             color: #db7355;
             &:hover {
               color: #303b36;
@@ -477,28 +483,55 @@ header {
             }
             &:first-child {
               @extend %website-button;
+              background-color: transparent !important;
               color: rgb(58, 59, 116);
-              padding: 7px 10px;
-              font-size: 11px;
-              margin-top: 10px;
-              border-radius: 2px;
-              border: 2px solid rgb(58, 59, 116);
+              padding: 7px 14px !important;
+              font-size: 13px;
+              border-radius: 3px;
               letter-spacing: 1px;
+              border: 2px solid rgb(58, 59, 116);
               &::before {
                 content: "";
-                top: -1px;
-                bottom: -1px;
-                background-color: rgb(58, 59, 116);
-                border: 2px solid rgb(58, 59, 116);
+                bottom: -3px !important;
               }
               &:hover {
                 color: white;
               }
               @media (min-width: 250px) and (max-width: 315px) {
-                font-size: 12px !important;
+                font-size: 11px !important;
                 letter-spacing: 0;
               }
             }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 470px) and (max-width: 575.98px) {
+      .item {
+        .img-box {
+          height: 300px !important;
+        }
+        .info {
+          .tour-name {
+            h4 {
+              font-size: 24px !important;
+            }
+          }
+          .slide-links {
+            a {
+              font-size: 13px !important;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 250px) and (max-width: 299.98px) {
+      .info{
+        .slide-links{
+          a{
+            font-size: 10px !important;
           }
         }
       }
@@ -507,28 +540,32 @@ header {
 }
 // ======= Special Offers Section End ======= //
 
-
 // ======= View Tours Section Start ======= //
-#view-tours{
+#view-tours {
   padding: 80px 0;
-  .content{
-    justify-content: space-evenly;
-    align-items: center;
-    h4{
+  .view-tours-text {
+    text-align: right;
+    padding-right: 7px;
+    h4 {
       color: rgb(37, 43, 45);
       margin: 0;
+      font-size: 25px;
     }
-    a{
+  }
+
+  .view-tours-btn {
+    padding-top: 5px;
+    text-align: left;
+    a {
       @extend %website-button;
-      color: #3A3B74;
-      border: 2px solid #3A3B74;
+      color: #3a3b74;
+      border: 2px solid #3a3b74;
       font-size: 16px;
       padding: 10px 30px;
     }
   }
 }
 // ======= View Tours Section End ======= //
-
 
 // ======= Discount Section Start ======= //
 #discount {
@@ -546,16 +583,23 @@ header {
     right: 0;
     bottom: 0;
     top: 0;
-    background: rgba(48, 59, 54, 0.8);
+    background: rgba(48, 59, 54, 0.7);
   }
 
   .discount_title {
-    padding-top: 27px;
     h2 {
       color: #fff !important;
       text-transform: uppercase;
       font-size: 27px;
       letter-spacing: 2px;
+      &:first-of-type {
+        font-size: 34px;
+        padding-bottom: 10px;
+
+        span {
+          font-weight: 700;
+        }
+      }
       span {
         color: #db7355;
       }
@@ -567,6 +611,19 @@ header {
       padding-bottom: 44px;
       font-weight: 600;
     }
+
+    @media (min-width: 250px) and (max-width: 299.98px) {
+      h2{
+        font-size: 10px !important;
+        &:first-of-type {
+          font-size: 18px !important;
+          padding-bottom: 10px;
+        }
+      }
+      h1{
+        font-size: 21px !important;
+      }
+    }
   }
 
   .counterdowns {
@@ -576,7 +633,8 @@ header {
       .cdowns {
         width: 125px;
         height: 125px;
-        background: #db7355;
+        // background: #db7355;
+        background: rgb(58,59,116);
         display: inline-block;
         margin: 0;
         position: relative;
@@ -584,10 +642,13 @@ header {
         text-align: center;
         margin-left: 0;
         margin-right: 34px;
-        border-radius: 25px;
+        border-radius: 15px;
         font-size: 52px;
         color: white;
         font-weight: 600;
+        &:last-of-type {
+          margin-right: 0 !important;
+        }
 
         // &::before {
         //   position: absolute;
@@ -617,9 +678,9 @@ header {
         // }
       }
 
-      .days{
+      .days {
         position: relative;
-        &::before{
+        &::before {
           content: "Days";
           position: absolute;
           top: 76px;
@@ -627,9 +688,9 @@ header {
           font-size: 22px;
         }
       }
-      .hours{
+      .hours {
         position: relative;
-        &::before{
+        &::before {
           content: "Hours";
           position: absolute;
           top: 76px;
@@ -637,9 +698,9 @@ header {
           font-size: 22px;
         }
       }
-      .minutes{
+      .minutes {
         position: relative;
-        &::before{
+        &::before {
           content: "Min";
           position: absolute;
           top: 76px;
@@ -647,9 +708,9 @@ header {
           font-size: 22px;
         }
       }
-      .seconds{
+      .seconds {
         position: relative;
-        &::before{
+        &::before {
           content: "Sec";
           position: absolute;
           top: 76px;
@@ -658,10 +719,48 @@ header {
         }
       }
     }
+
+    @media (min-width: 250px) and (max-width: 299.98px) {
+      .cdowns{
+      width: 46px !important;
+      height: 50px !important;
+      margin-right: 10px !important;
+      border-radius: 5px !important;
+      font-size: 22px !important;
+      }
+      .days {
+        &::before {
+          top: 30px !important;
+          left: 10px !important;
+          font-size: 11px !important;
+        }
+      }
+      .hours {
+        &::before {
+          top: 30px !important;
+          left: 8px !important;
+          font-size: 11px !important;
+        }
+      }
+      .minutes {
+        &::before {
+          top: 30px !important;
+          left: 14px !important;
+          font-size: 11px !important;
+        }
+      }
+      .seconds {
+        &::before {
+          top: 30px !important;
+          left: 14px !important;
+          font-size: 11px !important;
+        }
+      }
+    }
   }
 
   .discount_btn {
-    padding-top: 97px;
+    padding-top: 122px;
     text-align: right;
     a {
       @extend %website-button;

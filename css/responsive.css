@@ -18,11 +18,23 @@
     font-size: 24px !important;
     border-radius: 2px !important;
   }
-  #we-are-best {
+  #our-advantages {
     padding: 80px 0 145px 0 !important;
   }
-  #we-are-best .holder h4 {
+  #our-advantages .holder h4 {
     font-size: 22px !important;
+  }
+  #special-offers .img-box {
+    height: 200px !important;
+  }
+  #discount .discount_title h1 {
+    font-size: 58px !important;
+  }
+  #discount .counterdowns .counter .timer {
+    width: 96%;
+  }
+  #discount .discount_btn {
+    padding-top: 118px !important;
   }
 }
 
@@ -146,66 +158,76 @@
   #intro .banner-area .caption .button {
     font-size: 20px !important;
   }
-  #we-are-best {
-    padding: 100px 0 140px 0 !important;
+  #our-advantages {
+    padding: 80px 0 100px 0 !important;
   }
-  #we-are-best .caption h1 {
-    font-size: 44px !important;
-  }
-  #we-are-best .holder {
+  #our-advantages .holder {
     margin: 20px 0;
     padding: 0 10px;
     font-size: 17px;
   }
-  #we-are-best .holder h4 {
-    font-size: 32px !important;
+  #view-tours {
+    padding: 70px 0 88px 0 !important;
   }
-  #we-are-best .holder p {
-    font-size: 20px !important;
+  #view-tours .view-tours-text {
+    text-align: center !important;
+    padding-bottom: 40px;
   }
-  #special-offers .specials {
-    padding: 0 45px;
+  #view-tours .view-tours-text h4 {
+    font-size: 35px !important;
   }
-  #special-offers .specials img {
-    width: 120px;
+  #view-tours .view-tours-btn {
+    text-align: center !important;
   }
-  #special-offers .specials h1 {
-    font-size: 44px !important;
-  }
-  #special-offers .specials p {
-    font-size: 20px !important;
-  }
-  #special-offers .owl-carousel {
-    padding: 0 100px !important;
-  }
-  #special-offers .owl-carousel .item .price-info {
-    top: 30px;
-    right: 40px;
-    padding: 12px 17px 23px 17px !important;
-  }
-  #special-offers .owl-carousel .item .price-info h5 {
-    font-size: 30px;
-  }
-  #special-offers .owl-carousel .item .price-info span {
-    font-size: 16px;
-  }
-  #special-offers .owl-carousel .item .img-box {
-    height: 400px !important;
-  }
-  #special-offers .owl-carousel .item .info {
-    padding-bottom: 50px !important;
-  }
-  #special-offers .owl-carousel .item .info .slide-header h4 {
-    font-size: 36px !important;
-  }
-  #special-offers .owl-carousel .item .info .slide-header span {
-    font-size: 26px !important;
-  }
-  #special-offers .owl-carousel .item .info .slide-body p {
+  #view-tours .view-tours-btn a {
     font-size: 22px !important;
+    padding: 12px 34px !important;
   }
-  #special-offers .owl-carousel .item .info .slide-footer a {
-    font-size: 20px !important;
+  #discount {
+    padding: 120px 0 140px 0 !important;
+  }
+  #discount .discount_title h1 {
+    font-size: 54px !important;
+  }
+  #discount .counterdowns .counter .timer {
+    width: 96%;
+  }
+  #discount .counterdowns .counter .timer .cdowns {
+    font-size: 44px !important;
+    width: 100px !important;
+    height: 100px !important;
+    margin-right: 15px !important;
+    border-radius: 16px;
+  }
+  #discount .counterdowns .counter .timer .cdowns:last-of-type {
+    margin-right: 0 !important;
+  }
+  #discount .counterdowns .counter .timer .days::before {
+    top: 60px;
+    left: 28px;
+    font-size: 19px;
+  }
+  #discount .counterdowns .counter .timer .hours::before {
+    top: 60px;
+    left: 24px;
+    font-size: 19px;
+  }
+  #discount .counterdowns .counter .timer .minutes::before {
+    top: 60px;
+    left: 35px;
+    font-size: 19px;
+  }
+  #discount .counterdowns .counter .timer .seconds::before {
+    top: 60px;
+    left: 34px;
+    font-size: 19px;
+  }
+  #discount .discount_btn {
+    text-align: left !important;
+    padding-top: 86px !important;
+  }
+  #discount .discount_btn a {
+    padding: 10px 30px !important;
   }
 }
 
@@ -332,64 +354,109 @@
   #intro .banner-area .caption .button {
     font-size: 21px !important;
   }
-  #we-are-best {
+  #our-advantages {
     padding: 120px 0 140px 0 !important;
   }
-  #we-are-best .caption {
+  #our-advantages .caption {
     padding-bottom: 40px;
   }
-  #we-are-best .caption hr {
-    height: 2px !important;
-    width: 80px !important;
+  #our-advantages .holder {
+    padding: 40px 90px 0 90px !important;
+    height: 280px !important;
   }
-  #we-are-best .holder {
-    height: 400px !important;
-    padding: 0 90px;
-  }
-  #we-are-best .holder .icon-holder i {
+  #our-advantages .holder .icon-holder i {
     font-size: 70px !important;
   }
-  #we-are-best .holder hr {
+  #our-advantages .holder hr {
     height: 1px !important;
     width: 40px !important;
   }
-  #special-offers .specials img {
-    width: 120px;
+  #special-offers .slide-links a {
+    font-size: 10px !important;
   }
-  #special-offers .specials h1 {
-    font-size: 44px !important;
+  #view-tours {
+    padding: 70px 0 88px 0 !important;
   }
-  #special-offers .specials p {
-    font-size: 20px !important;
+  #view-tours .view-tours-text {
+    text-align: center !important;
+    padding-bottom: 40px;
   }
-  #special-offers .owl-carousel .item .price-info {
-    top: 30px;
-    right: 40px;
-    padding: 12px 17px 23px 17px !important;
+  #view-tours .view-tours-text h4 {
+    font-size: 30px !important;
   }
-  #special-offers .owl-carousel .item .price-info h5 {
-    font-size: 30px;
+  #view-tours .view-tours-btn {
+    text-align: center !important;
   }
-  #special-offers .owl-carousel .item .price-info span {
-    font-size: 16px;
+  #view-tours .view-tours-btn a {
+    font-size: 18px !important;
+    padding: 12px 34px !important;
   }
-  #special-offers .owl-carousel .item .img-box {
-    height: 400px !important;
+  #discount {
+    padding: 120px 0 140px 0 !important;
   }
-  #special-offers .owl-carousel .item .info {
-    padding-bottom: 50px !important;
+  #discount .discount_title {
+    text-align: center;
   }
-  #special-offers .owl-carousel .item .info .slide-header h4 {
-    font-size: 36px !important;
+  #discount .discount_title h2 {
+    font-size: 18px !important;
   }
-  #special-offers .owl-carousel .item .info .slide-header span {
-    font-size: 26px !important;
+  #discount .discount_title h2:first-of-type {
+    font-size: 28px !important;
   }
-  #special-offers .owl-carousel .item .info .slide-body p {
-    font-size: 22px !important;
+  #discount .discount_title h1 {
+    font-size: 40px !important;
+    margin-bottom: 15px;
   }
-  #special-offers .owl-carousel .item .info .slide-footer a {
-    font-size: 20px !important;
+  #discount .counterdowns .counter .timer {
+    width: 100%;
+  }
+  #discount .counterdowns .counter .timer .autob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #discount .counterdowns .counter .timer .autob .cdowns {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 15px !important;
+    font-size: 44px;
+    margin-right: 15px;
+    margin-bottom: 34px;
+  }
+  #discount .counterdowns .counter .timer .autob .cdowns:last-of-type {
+    margin-right: 0 !important;
+  }
+  #discount .counterdowns .counter .timer .autob .days::before {
+    top: 62px;
+    left: 30px;
+    font-size: 18px;
+  }
+  #discount .counterdowns .counter .timer .autob .hours::before {
+    top: 62px;
+    left: 24px;
+    font-size: 19px;
+  }
+  #discount .counterdowns .counter .timer .autob .minutes::before {
+    top: 62px;
+    left: 35px;
+    font-size: 19px;
+  }
+  #discount .counterdowns .counter .timer .autob .seconds::before {
+    top: 62px;
+    left: 34px;
+    font-size: 19px;
+  }
+  #discount .discount_btn {
+    text-align: center !important;
+    padding-top: 72px !important;
+  }
+  #discount .discount_btn a {
+    padding: 10px 30px !important;
   }
 }
 
@@ -494,29 +561,6 @@
   header .navbar .account li a {
     font-size: 16px;
   }
-  #we-are-best {
-    padding: 90px 0 120px 0 !important;
-  }
-  #we-are-best .caption h1 {
-    padding: 40px 0 80px 0 !important;
-    font-size: 32px !important;
-  }
-  #we-are-best .holder {
-    height: 320px !important;
-    padding-right: 40px;
-    padding-left: 40px;
-    font-size: 17px;
-  }
-  #we-are-best .holder i {
-    font-size: 35px !important;
-  }
-  #we-are-best .holder hr {
-    width: 40px !important;
-  }
-  #we-are-best .holder p {
-    font-size: 16px !important;
-    width: 250px;
-  }
   #intro .carousel-item {
     height: 100vh !important;
   }
@@ -540,6 +584,121 @@
   }
   #intro .banner-area .caption .button {
     font-size: 15px !important;
+  }
+  #our-advantages {
+    padding: 80px 0 100px 0 !important;
+  }
+  #our-advantages .caption h1 {
+    padding: 40px 0 80px 0 !important;
+    font-size: 32px !important;
+  }
+  #our-advantages .caption hr {
+    width: 45px !important;
+  }
+  #our-advantages .holder {
+    padding: 40px 70px 0 70px !important;
+    height: 280px !important;
+    font-size: 17px;
+  }
+  #our-advantages .holder i {
+    font-size: 35px !important;
+  }
+  #our-advantages .holder hr {
+    width: 25px !important;
+  }
+  #our-advantages .holder p {
+    font-size: 16px !important;
+    width: 250px;
+  }
+  #special-offers {
+    padding: 100px 50px 130px 50px !important;
+  }
+  #special-offers .specials hr {
+    width: 45px !important;
+  }
+  #view-tours {
+    padding: 60px 0 75px 0 !important;
+  }
+  #view-tours .view-tours-text {
+    text-align: center !important;
+    padding-bottom: 40px;
+  }
+  #view-tours .view-tours-text h4 {
+    font-size: 26px !important;
+  }
+  #view-tours .view-tours-btn {
+    text-align: center !important;
+  }
+  #view-tours .view-tours-btn a {
+    font-size: 16px !important;
+    padding: 10px 30px !important;
+  }
+  #discount {
+    padding: 130px 0 160px 0 !important;
+  }
+  #discount .discount_title {
+    text-align: center;
+  }
+  #discount .discount_title h2 {
+    font-size: 15px !important;
+  }
+  #discount .discount_title h2:first-of-type {
+    font-size: 28px !important;
+  }
+  #discount .discount_title h1 {
+    font-size: 35px !important;
+    margin-bottom: 15px;
+  }
+  #discount .counterdowns .counter .timer {
+    width: 100%;
+  }
+  #discount .counterdowns .counter .timer .autob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #discount .counterdowns .counter .timer .autob .cdowns {
+    width: 70px !important;
+    height: 72px !important;
+    margin-bottom: 34px;
+    margin-right: 13px !important;
+    border-radius: 13px !important;
+    font-size: 32px !important;
+  }
+  #discount .counterdowns .counter .timer .autob .cdowns:last-of-type {
+    margin-right: 0 !important;
+  }
+  #discount .counterdowns .counter .timer .autob .days::before {
+    top: 43px;
+    left: 19px;
+    font-size: 14px;
+  }
+  #discount .counterdowns .counter .timer .autob .hours::before {
+    top: 43px;
+    left: 16px;
+    font-size: 14px;
+  }
+  #discount .counterdowns .counter .timer .autob .minutes::before {
+    top: 43px;
+    left: 24px;
+    font-size: 14px;
+  }
+  #discount .counterdowns .counter .timer .autob .seconds::before {
+    top: 43px;
+    left: 24px;
+    font-size: 14px;
+  }
+  #discount .discount_btn {
+    text-align: center !important;
+    padding-top: 60px !important;
+  }
+  #discount .discount_btn a {
+    padding: 10px 34px !important;
   }
 }
 
@@ -670,58 +829,128 @@
     font-size: 13px !important;
     padding: 7px 20px !important;
   }
-  #we-are-best {
-    padding: 100px 0 100px 0 !important;
+  #our-advantages {
+    padding: 70px 0 80px 0 !important;
   }
-  #we-are-best .caption h1 {
+  #our-advantages .caption h1 {
+    font-size: 28px !important;
     padding: 20px 0 80px 0 !important;
-    font-size: 25px !important;
   }
-  #we-are-best .holder {
-    height: 300px !important;
-    padding: 0 30px;
+  #our-advantages .caption hr {
+    width: 42px !important;
   }
-  #we-are-best .holder i {
-    font-size: 35px !important;
+  #our-advantages .holder {
+    height: 240px !important;
+    padding: 32px 35px 0 35px !important;
   }
-  #we-are-best .holder h4 {
+  #our-advantages .holder i::before {
+    font-size: 36px !important;
+  }
+  #our-advantages .holder h4 {
     font-size: 20px !important;
   }
-  #we-are-best .holder p {
-    font-size: 14px !important;
+  #our-advantages .holder hr {
+    width: 24px !important;
+  }
+  #our-advantages .holder p {
+    font-size: 12px !important;
+  }
+  #special-offers {
+    padding: 100px 10px 130px 10px !important;
   }
   #special-offers .specials h1 {
-    font-size: 26px !important;
+    font-size: 28px !important;
+  }
+  #special-offers .specials hr {
+    width: 42px !important;
   }
   #special-offers .specials p {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
-  #special-offers .owl-carousel .item .price-info {
-    top: 30px;
-    right: 40px;
-    padding: 10px 15px 20px 15px !important;
+  #view-tours {
+    padding: 60px 0 75px 0 !important;
   }
-  #special-offers .owl-carousel .item .price-info h5 {
-    font-size: 25px;
+  #view-tours .view-tours-text {
+    text-align: center !important;
+    padding-bottom: 40px;
   }
-  #special-offers .owl-carousel .item .price-info span {
-    font-size: 15px;
-  }
-  #special-offers .owl-carousel .item .info {
-    padding: 20px 15px 30px 15px !important;
-  }
-  #special-offers .owl-carousel .item .info .slide-header h4 {
+  #view-tours .view-tours-text h4 {
     font-size: 20px !important;
   }
-  #special-offers .owl-carousel .item .info .slide-header span {
-    font-size: 15px !important;
+  #view-tours .view-tours-btn {
+    text-align: center !important;
   }
-  #special-offers .owl-carousel .item .info .slide-body p {
-    font-size: 14px !important;
-  }
-  #special-offers .owl-carousel .item .info .slide-footer a {
-    padding: 5px 10px !important;
+  #view-tours .view-tours-btn a {
     font-size: 12px !important;
+    padding: 10px 20px !important;
+  }
+  #discount {
+    padding: 110px 0 135px 0 !important;
+  }
+  #discount .discount_title {
+    text-align: center;
+  }
+  #discount .discount_title h2 {
+    font-size: 14px !important;
+    padding-bottom: 10px;
+  }
+  #discount .discount_title h2:first-of-type {
+    font-size: 22px !important;
+    padding-bottom: 15px !important;
+  }
+  #discount .discount_title h1 {
+    font-size: 27px !important;
+    margin-bottom: 15px;
+  }
+  #discount .counterdowns .counter .timer {
+    width: 100%;
+  }
+  #discount .counterdowns .counter .timer .autob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #discount .counterdowns .counter .timer .autob .cdowns {
+    width: 59px;
+    height: 61px;
+    margin-right: 10px;
+    border-radius: 7px;
+    font-size: 25px;
+  }
+  #discount .counterdowns .counter .timer .autob .cdowns:last-of-type {
+    margin-right: 0 !important;
+  }
+  #discount .counterdowns .counter .timer .autob .days::before {
+    top: 35px;
+    left: 15px;
+    font-size: 12px;
+  }
+  #discount .counterdowns .counter .timer .autob .hours::before {
+    top: 35px;
+    left: 13px;
+    font-size: 12px;
+  }
+  #discount .counterdowns .counter .timer .autob .minutes::before {
+    top: 35px;
+    left: 19px;
+    font-size: 12px;
+  }
+  #discount .counterdowns .counter .timer .autob .seconds::before {
+    top: 35px;
+    left: 19px;
+    font-size: 12px;
+  }
+  #discount .discount_btn {
+    text-align: center !important;
+    padding-top: 60px !important;
+  }
+  #discount .discount_btn a {
+    padding: 10px 30px !important;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

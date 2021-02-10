@@ -26,12 +26,38 @@
     }
   }
 
-  #we-are-best {
+  #our-advantages {
     padding: 80px 0 145px 0 !important;
-    .holder{
-      h4{
+    .holder {
+      h4 {
         font-size: 22px !important;
       }
+    }
+  }
+
+  #special-offers {
+    .img-box {
+      height: 200px !important;
+    }
+  }
+
+  #discount {
+    .discount_title {
+      h1 {
+        font-size: 58px !important;
+      }
+    }
+
+    .counterdowns {
+      .counter {
+        .timer {
+          width: 96%;
+        }
+      }
+    }
+
+    .discount_btn {
+      padding-top: 118px !important;
     }
   }
 }
@@ -152,78 +178,94 @@
     }
   }
 
-  #we-are-best {
-    padding: 100px 0 140px 0 !important;
-    .caption {
-      h1 {
-        font-size: 44px !important;
-      }
-    }
+  #our-advantages {
+    padding: 80px 0 100px 0 !important;
 
     .holder {
       margin: 20px 0;
       padding: 0 10px;
       font-size: 17px;
-      h4{
-        font-size: 32px !important;
+    }
+  }
+
+  #view-tours {
+    padding: 70px 0 88px 0 !important;
+    .view-tours-text {
+      text-align: center !important;
+      padding-bottom: 40px;
+      h4 {
+        font-size: 35px !important;
       }
-      p {
-        font-size: 20px !important;
+    }
+
+    .view-tours-btn {
+      text-align: center !important;
+      a {
+        font-size: 22px !important;
+        padding: 12px 34px !important;
       }
     }
   }
 
-  #special-offers{
-    .specials{
-      padding: 0 45px;
-      img{
-        width: 120px;
-      }
-      h1{
-        font-size: 44px !important;
-      }
-      p{
-        font-size: 20px !important;
+  #discount {
+    padding: 120px 0 140px 0 !important;
+    .discount_title {
+      h1 {
+        font-size: 54px !important;
       }
     }
-    .owl-carousel{
-      padding: 0 100px !important;
-      .item{
-        .price-info{
-          top: 30px;
-          right: 40px;
-          padding: 12px 17px 23px 17px !important;
-          h5{
-            font-size: 30px;
+
+    .counterdowns {
+      .counter {
+        .timer {
+          width: 96%;
+          .cdowns {
+            font-size: 44px !important;
+            width: 100px !important;
+            height: 100px !important;
+            margin-right: 15px !important;
+            border-radius: 16px;
+            &:last-of-type{
+              margin-right: 0 !important;
+            }
           }
-          span{
-            font-size: 16px;
+          .days {
+            &::before {
+              top: 60px;
+              left: 28px;
+              font-size: 19px;
+            }
+          }
+          .hours {
+            &::before {
+              top: 60px;
+              left: 24px;
+              font-size: 19px;
+            }
+          }
+          .minutes {
+            &::before {
+              top: 60px;
+              left: 35px;
+              font-size: 19px;
+            }
+          }
+          .seconds {
+            &::before {
+              top: 60px;
+              left: 34px;
+              font-size: 19px;
+            }
           }
         }
-        .img-box{
-          height: 400px !important;
-        }
-        .info{
-          padding-bottom: 50px !important;
-          .slide-header{
-            h4{
-              font-size: 36px !important;
-            }
-            span{
-              font-size: 26px !important;
-            }
-          }
-          .slide-body{
-            p{
-              font-size: 22px !important;
-            }
-          }
-          .slide-footer{
-            a{
-              font-size: 20px !important;
-            }
-          }
-        }
+      }
+    }
+
+    .discount_btn {
+      text-align: left !important;
+      padding-top: 86px !important;
+      a {
+        padding: 10px 30px !important;
       }
     }
   }
@@ -346,87 +388,130 @@
     }
   }
 
-  #we-are-best {
+  #our-advantages {
     padding: 120px 0 140px 0 !important;
     .caption {
       padding-bottom: 40px;
-      hr{
-        height: 2px !important;
-        width: 80px !important;
-      }
     }
 
     .holder {
-      height: 400px !important;
-      padding: 0 90px;
-      .icon-holder{
-        // width: 150px !important;
-        // height: 150px !important;
-        // line-height: 182px !important;
-        i{
+      padding: 40px 90px 0 90px !important;
+      height: 280px !important;
+      .icon-holder {
+        i {
           font-size: 70px !important;
         }
       }
-      hr{
+      hr {
         height: 1px !important;
         width: 40px !important;
       }
     }
   }
 
-  #special-offers{
-    .specials{
-      img{
-        width: 120px;
-      }
-      h1{
-        font-size: 44px !important;
-      }
-      p{
-        font-size: 20px !important;
-      }
-    }
-    .owl-carousel{
-      .item{
-        .price-info{
-          top: 30px;
-          right: 40px;
-          padding: 12px 17px 23px 17px !important;
-          h5{
-            font-size: 30px;
-          }
-          span{
-            font-size: 16px;
-          }
-        }
-        .img-box{
-          height: 400px !important;
-        }
-        .info{
-          padding-bottom: 50px !important;
-          .slide-header{
-            h4{
-              font-size: 36px !important;
-            }
-            span{
-              font-size: 26px !important;
-            }
-          }
-          .slide-body{
-            p{
-              font-size: 22px !important;
-            }
-          }
-          .slide-footer{
-            a{
-              font-size: 20px !important;
-            }
-          }
-        }
+  #special-offers {
+    .slide-links {
+      a {
+        font-size: 10px !important;
       }
     }
   }
-  
+
+  #view-tours {
+    padding: 70px 0 88px 0 !important;
+    .view-tours-text {
+      text-align: center !important;
+      padding-bottom: 40px;
+      h4 {
+        font-size: 30px !important;
+      }
+    }
+
+    .view-tours-btn {
+      text-align: center !important;
+      a {
+        font-size: 18px !important;
+        padding: 12px 34px !important;
+      }
+    }
+  }
+
+  #discount {
+    padding: 120px 0 140px 0 !important;
+    .discount_title {
+      text-align: center;
+      h2 {
+        font-size: 18px !important;
+        &:first-of-type {
+          font-size: 28px !important;
+        }
+      }
+      h1 {
+        font-size: 40px !important;
+        margin-bottom: 15px;
+      }
+    }
+
+    .counterdowns {
+      .counter {
+        .timer {
+          width: 100%;
+          .autob {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .cdowns {
+              width: 100px !important;
+              height: 100px !important;
+              border-radius: 15px !important;
+              font-size: 44px;
+              margin-right: 15px;
+              margin-bottom: 34px;
+              &:last-of-type{
+                margin-right: 0 !important;
+              }
+            }
+            .days {
+              &::before {
+                top: 62px;
+                left: 30px;
+                font-size: 18px;
+              }
+            }
+            .hours {
+              &::before {
+                top: 62px;
+                left: 24px;
+                font-size: 19px;
+              }
+            }
+            .minutes {
+              &::before {
+                top: 62px;
+                left: 35px;
+                font-size: 19px;
+              }
+            }
+            .seconds {
+              &::before {
+                top: 62px;
+                left: 34px;
+                font-size: 19px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .discount_btn {
+      text-align: center !important;
+      padding-top: 72px !important;
+      a {
+        padding: 10px 30px !important;
+      }
+    }
+  }
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
@@ -517,34 +602,6 @@
     }
   }
 
-  #we-are-best {
-    padding: 90px 0 120px 0 !important;
-    .caption {
-      h1 {
-        padding: 40px 0 80px 0 !important;
-        font-size: 32px !important;
-      }
-    }
-
-    .holder {
-      height: 320px !important;
-      padding-right: 40px;
-      padding-left: 40px;
-      font-size: 17px;
-      i {
-        font-size: 35px !important;
-      }
-
-      hr{
-        width: 40px !important;
-      }
-      p {
-        font-size: 16px !important;
-        width: 250px;
-      }
-    }
-  }
-
   #intro {
     .carousel-item {
       height: 100vh !important;
@@ -572,6 +629,143 @@
         .button {
           font-size: 15px !important;
         }
+      }
+    }
+  }
+
+  #our-advantages {
+    padding: 80px 0 100px 0 !important;
+    .caption {
+      h1 {
+        padding: 40px 0 80px 0 !important;
+        font-size: 32px !important;
+      }
+
+      hr {
+        width: 45px !important;
+      }
+    }
+
+    .holder {
+      padding: 40px 70px 0 70px !important;
+      height: 280px !important;
+      font-size: 17px;
+      i {
+        font-size: 35px !important;
+      }
+
+      hr {
+        width: 25px !important;
+      }
+      p {
+        font-size: 16px !important;
+        width: 250px;
+      }
+    }
+  }
+
+  #special-offers {
+    padding: 100px 50px 130px 50px !important;
+    .specials {
+      hr {
+        width: 45px !important;
+      }
+    }
+  }
+
+  #view-tours {
+    padding: 60px 0 75px 0 !important;
+    .view-tours-text {
+      text-align: center !important;
+      padding-bottom: 40px;
+      h4 {
+        font-size: 26px !important;
+      }
+    }
+
+    .view-tours-btn {
+      text-align: center !important;
+      a {
+        font-size: 16px !important;
+        padding: 10px 30px !important;
+      }
+    }
+  }
+
+  #discount {
+    padding: 130px 0 160px 0 !important;
+    .discount_title {
+      text-align: center;
+      h2 {
+        font-size: 15px !important;
+        &:first-of-type {
+          font-size: 28px !important;
+        }
+      }
+      h1 {
+        font-size: 35px !important;
+        margin-bottom: 15px;
+      }
+    }
+
+    .counterdowns {
+      .counter {
+        .timer {
+          width: 100%;
+          .autob {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .cdowns {
+              width: 70px !important;
+              height: 72px !important;
+              margin-bottom: 34px;
+              margin-right: 13px !important;
+              border-radius: 13px !important;
+              font-size: 32px !important;
+              &:last-of-type{
+                margin-right: 0 !important;
+              }
+            }
+
+            .days {
+              &::before {
+                top: 43px;
+                left: 19px;
+                font-size: 14px;
+              }
+            }
+            .hours {
+              &::before {
+                top: 43px;
+                left: 16px;
+                font-size: 14px;
+              }
+            }
+            .minutes {
+              &::before {
+                top: 43px;
+                left: 24px;
+                font-size: 14px;
+              }
+            }
+            .seconds {
+              &::before {
+                top: 43px;
+                left: 24px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .discount_btn {
+      text-align: center !important;
+      padding-top: 60px !important;
+      a {
+        padding: 10px 34px !important;
       }
     }
   }
@@ -698,76 +892,150 @@
     }
   }
 
-  #we-are-best {
-    padding: 100px 0 100px 0 !important;
+  #our-advantages {
+    padding: 70px 0 80px 0 !important;
     .caption {
       h1 {
+        font-size: 28px !important;
         padding: 20px 0 80px 0 !important;
-        font-size: 25px !important;
+      }
+      hr{
+        width: 42px !important;
       }
     }
 
     .holder {
-      height: 300px !important;
-      padding: 0 30px;
+      height: 240px !important;
+      padding: 32px 35px 0 35px !important;
       i {
-        font-size: 35px !important;
+        &::before{
+          font-size: 36px !important;
+        }
       }
 
       h4 {
         font-size: 20px !important;
       }
 
+      hr{
+        width: 24px !important;
+      }
+
       p {
-        font-size: 14px !important;
+        font-size: 12px !important;
       }
     }
   }
 
-  #special-offers{
-    .specials{
-      h1{
-        font-size: 26px !important;
+  #special-offers {
+    padding: 100px 10px 130px 10px !important;
+    .specials {
+      h1 {
+        font-size: 28px !important;
       }
-      p{
-        font-size: 14px !important;
+      hr{
+        width: 42px !important;
+      }
+      p {
+        font-size: 12px !important;
       }
     }
-    .owl-carousel{
-      .item{
-        .price-info{
-          top: 30px;
-          right: 40px;
-          padding: 10px 15px 20px 15px !important;
-          h5{
-            font-size: 25px;
-          }
-          span{
-            font-size: 15px;
+  }
+
+  #view-tours {
+    padding: 60px 0 75px 0 !important;
+    .view-tours-text {
+      text-align: center !important;
+      padding-bottom: 40px;
+      h4 {
+        font-size: 20px !important;
+      }
+    }
+
+    .view-tours-btn {
+      text-align: center !important;
+      a {
+        font-size: 12px !important;
+        padding: 10px 20px !important;
+      }
+    }
+  }
+
+  #discount {
+    padding: 110px 0 135px 0 !important;
+    .discount_title {
+      text-align: center;
+      h2 {
+        font-size: 14px !important;
+        padding-bottom: 10px;
+        &:first-of-type {
+          font-size: 22px !important;
+          padding-bottom: 15px !important;
+        }
+      }
+      h1 {
+        font-size: 27px !important;
+        margin-bottom: 15px;
+      }
+    }
+
+    .counterdowns {
+      .counter {
+        .timer {
+          width: 100%;
+          .autob {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .cdowns {
+              width: 59px;
+              height: 61px;
+              margin-right: 10px;
+              border-radius: 7px;
+              font-size: 25px;
+              &:last-of-type{
+                margin-right: 0 !important;
+              }
+            }
+
+            .days {
+              &::before {
+                top: 35px;
+                left: 15px;
+                font-size: 12px;
+              }
+            }
+            .hours {
+              &::before {
+                top: 35px;
+                left: 13px;
+                font-size: 12px;
+              }
+            }
+            .minutes {
+              &::before {
+                top: 35px;
+                left: 19px;
+                font-size: 12px;
+              }
+            }
+            .seconds {
+              &::before {
+                top: 35px;
+                left: 19px;
+                font-size: 12px;
+              }
+            }
           }
         }
-        .info{
-          padding: 20px 15px 30px 15px !important;
-          .slide-header{
-            h4{
-              font-size: 20px !important;
-            }
-            span{
-              font-size: 15px !important;
-            }
-          }
-          .slide-body{
-            p{
-              font-size: 14px !important;
-            }
-          }
-          .slide-footer{
-            a{
-              padding: 5px 10px !important;
-              font-size: 12px !important;
-            }
-          }
-        }
+      }
+    }
+
+    .discount_btn {
+      text-align: center !important;
+      padding-top: 60px !important;
+      a {
+        padding: 10px 30px !important;
       }
     }
   }
