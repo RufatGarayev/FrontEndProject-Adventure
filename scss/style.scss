@@ -328,14 +328,15 @@ header {
 // ======= Special Offers Section Start ======= //
 #special-offers {
   position: relative;
-  background: url(../img/bg-img3.jpg);
+  background: url(../img/bg-images/bg-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   overflow: hidden;
-  padding: 100px 0 130px 0;
+  padding: 100px 0 120px 0;
   @media (min-width: 375px) and (max-width: 430px) {
-    padding: 100px 30px 130px 30px !important;
+    padding: 115px 30px 130px 30px !important;
   }
 
   @media (min-width: 576px) and (max-width: 599.98px) {
@@ -365,8 +366,7 @@ header {
   }
 
   .background-overlay {
-    opacity: 0.5;
-    background-color: #313b36;
+    background: rgba(48, 59, 54, 0.7);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -401,10 +401,18 @@ header {
   }
   .owl-carousel {
     .owl-dots {
-      display: none;
+      margin-top: 30px;
+      button{
+       span{
+        border-radius: 1px !important;
+        height: 2px;
+        width: 25px;
+       }
+      }
     }
 
     .item {
+      border-radius: 5px;
       margin: 6px;
       padding: 1px;
       background-color: #efefef;
@@ -436,6 +444,7 @@ header {
         height: 250px;
         margin: 2px;
         overflow: hidden;
+        filter: brightness(70%);
         @media (min-width: 250px) and (max-width: 315px) {
           height: 280px;
         }
@@ -454,9 +463,10 @@ header {
         @media (min-width: 250px) and (max-width: 315px) {
           padding: 20px 9px 30px 9px !important;
         }
-        .tour-date {
-          span {
-            font-size: 12px;
+        .tour-date{
+          span, i {
+            color: rgb(98,107,114);
+            font-size: 13px;
             font-weight: 400;
           }
         }
@@ -569,7 +579,7 @@ header {
 
 // ======= Discount Section Start ======= //
 #discount {
-  background-image: url(../img/bg-img.jpg);
+  background-image: url(../img/bg-images/landscape.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

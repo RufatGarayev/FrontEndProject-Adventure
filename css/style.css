@@ -488,17 +488,18 @@ header nav .active-link hr {
 
 #special-offers {
   position: relative;
-  background: url(../img/bg-img3.jpg);
+  background: url(../img/bg-images/bg-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   overflow: hidden;
-  padding: 100px 0 130px 0;
+  padding: 100px 0 120px 0;
 }
 
 @media (min-width: 375px) and (max-width: 430px) {
   #special-offers {
-    padding: 100px 30px 130px 30px !important;
+    padding: 115px 30px 130px 30px !important;
   }
 }
 
@@ -527,8 +528,7 @@ header nav .active-link hr {
 }
 
 #special-offers .background-overlay {
-  opacity: 0.5;
-  background-color: #313b36;
+  background: rgba(48, 59, 54, 0.7);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -567,10 +567,17 @@ header nav .active-link hr {
 }
 
 #special-offers .owl-carousel .owl-dots {
-  display: none;
+  margin-top: 30px;
+}
+
+#special-offers .owl-carousel .owl-dots button span {
+  border-radius: 1px !important;
+  height: 2px;
+  width: 25px;
 }
 
 #special-offers .owl-carousel .item {
+  border-radius: 5px;
   margin: 6px;
   padding: 1px;
   background-color: #efefef;
@@ -608,6 +615,8 @@ header nav .active-link hr {
   height: 250px;
   margin: 2px;
   overflow: hidden;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
 @media (min-width: 250px) and (max-width: 315px) {
@@ -641,8 +650,9 @@ header nav .active-link hr {
   }
 }
 
-#special-offers .owl-carousel .item .info .tour-date span {
-  font-size: 12px;
+#special-offers .owl-carousel .item .info .tour-date span, #special-offers .owl-carousel .item .info .tour-date i {
+  color: #626b72;
+  font-size: 13px;
   font-weight: 400;
 }
 
@@ -750,7 +760,7 @@ header nav .active-link hr {
 }
 
 #discount {
-  background-image: url(../img/bg-img.jpg);
+  background-image: url(../img/bg-images/landscape.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

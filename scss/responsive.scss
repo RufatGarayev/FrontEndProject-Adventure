@@ -638,7 +638,7 @@
     .caption {
       h1 {
         padding: 40px 0 80px 0 !important;
-        font-size: 32px !important;
+        font-size: 40px !important;
       }
 
       hr {
@@ -665,8 +665,11 @@
   }
 
   #special-offers {
-    padding: 100px 50px 130px 50px !important;
+    padding: 120px 50px 130px 50px !important;
     .specials {
+      h1{
+        font-size: 40px !important;
+      }
       hr {
         width: 45px !important;
       }
