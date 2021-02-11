@@ -266,6 +266,15 @@
   #popular-tours .item {
     height: 600px !important;
   }
+  #popular-tours .item .price-info {
+    padding: 7px 15px 24px 15px !important;
+  }
+  #popular-tours .item .price-info h5 {
+    font-size: 46px !important;
+  }
+  #popular-tours .item .price-info span {
+    font-size: 20px !important;
+  }
   #popular-tours .item .img-box {
     height: 540px !important;
   }
@@ -292,6 +301,18 @@
   }
   #popular-tours .popular-tours-caption {
     padding-bottom: 20px !important;
+  }
+  #our-achievements .content {
+    height: 320px !important;
+  }
+  #our-achievements .content i::before {
+    font-size: 55px !important;
+  }
+  #our-achievements .content span {
+    font-size: 50px !important;
+  }
+  #our-achievements .content h3 {
+    font-size: 30px !important;
   }
 }
 
@@ -528,6 +549,15 @@
   #popular-tours .item {
     height: 500px !important;
   }
+  #popular-tours .item .price-info {
+    padding: 7px 15px 24px 15px !important;
+  }
+  #popular-tours .item .price-info h5 {
+    font-size: 42px !important;
+  }
+  #popular-tours .item .price-info span {
+    font-size: 18px !important;
+  }
   #popular-tours .item .img-box {
     height: 435px !important;
   }
@@ -555,6 +585,15 @@
   }
   #popular-tours .popular-tours-caption {
     padding: 0 20px 20px !important;
+  }
+  #our-achievements .content {
+    height: 370px !important;
+    padding-top: 60px !important;
+  }
+  #our-achievements .content:hover {
+    padding-top: 20px !important;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
 }
 
@@ -698,8 +737,8 @@
     height: 280px !important;
     font-size: 17px;
   }
-  #our-advantages .holder i {
-    font-size: 35px !important;
+  #our-advantages .holder i::before {
+    font-size: 50px !important;
   }
   #our-advantages .holder hr {
     width: 25px !important;
@@ -839,6 +878,30 @@
   }
   #popular-tours .popular-tours-caption p {
     font-size: 16px !important;
+  }
+  #our-achievements .achievements-caption h1 {
+    font-size: 40px !important;
+  }
+  #our-achievements .achievements-caption hr {
+    width: 45px !important;
+  }
+  #our-achievements .content {
+    height: 340px !important;
+    padding-top: 60px !important;
+  }
+  #our-achievements .content:hover {
+    padding-top: 20px !important;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  #our-achievements .content i::before {
+    font-size: 50px !important;
+  }
+  #our-achievements .content span {
+    font-size: 53px !important;
+  }
+  #our-achievements .content h3 {
+    font-size: 30px !important;
   }
 }
 
@@ -988,6 +1051,7 @@
   }
   #our-advantages .holder h4 {
     font-size: 20px !important;
+    padding-top: 10px !important;
   }
   #our-advantages .holder hr {
     width: 24px !important;
@@ -1134,6 +1198,34 @@
   }
   #popular-tours .popular-tours-caption p {
     font-size: 12px !important;
+  }
+  #our-achievements .achievements-caption {
+    padding-bottom: 18px !important;
+  }
+  #our-achievements .achievements-caption h1 {
+    font-size: 28px !important;
+  }
+  #our-achievements .achievements-caption hr {
+    width: 42px !important;
+  }
+  #our-achievements .content {
+    height: 260px !important;
+    padding-top: 50px !important;
+  }
+  #our-achievements .content:hover {
+    padding-top: 20px !important;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  #our-achievements .content i::before {
+    font-size: 40px !important;
+  }
+  #our-achievements .content span {
+    font-size: 40px !important;
+    padding: 12px 0 !important;
+  }
+  #our-achievements .content h3 {
+    font-size: 20px !important;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

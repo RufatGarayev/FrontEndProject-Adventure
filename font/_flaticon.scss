@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 08/02/2021 13:08
+    Creation date: 11/02/2021 18:41
     */
 
     @font-face {
@@ -39,14 +39,20 @@
 
     .flaticon-hotel:before { content: "\f100"; }
 .flaticon-public-transport:before { content: "\f101"; }
-.flaticon-next:before { content: "\f102"; }
-.flaticon-left-arrow:before { content: "\f103"; }
-.flaticon-map:before { content: "\f104"; }
-.flaticon-binoculars:before { content: "\f105"; }
+.flaticon-medal:before { content: "\f102"; }
+.flaticon-traveller:before { content: "\f103"; }
+.flaticon-community:before { content: "\f104"; }
+.flaticon-map:before { content: "\f105"; }
+.flaticon-binoculars:before { content: "\f106"; }
+.flaticon-left-arrow:before { content: "\f107"; }
+.flaticon-right-arrow-angle:before { content: "\f108"; }
     
     $font-Flaticon-hotel: "\f100";
     $font-Flaticon-public-transport: "\f101";
-    $font-Flaticon-next: "\f102";
-    $font-Flaticon-left-arrow: "\f103";
-    $font-Flaticon-map: "\f104";
-    $font-Flaticon-binoculars: "\f105";
+    $font-Flaticon-medal: "\f102";
+    $font-Flaticon-traveller: "\f103";
+    $font-Flaticon-community: "\f104";
+    $font-Flaticon-map: "\f105";
+    $font-Flaticon-binoculars: "\f106";
+    $font-Flaticon-left-arrow: "\f107";
+    $font-Flaticon-right-arrow-angle: "\f108";
