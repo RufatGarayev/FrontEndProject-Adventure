@@ -489,7 +489,7 @@ header nav .active-link hr {
 
 #special-offers {
   position: relative;
-  background: url(../img/bg-images/bg-img.jpg);
+  background: url(../img/bg-images/forest.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -746,6 +746,7 @@ header nav .active-link hr {
 }
 
 #view-tours {
+  overflow-x: hidden;
   padding: 80px 0;
 }
 
@@ -780,6 +781,7 @@ header nav .active-link hr {
   background-attachment: fixed;
   padding: 120px 0 120px 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 #discount::before {
@@ -971,12 +973,14 @@ header nav .active-link hr {
 }
 
 #popular-tours {
+  overflow-x: hidden;
   background-color: #f8f8f8;
   padding: 100px 50px 120px 50px;
 }
 
 #popular-tours .popular-tours-caption {
   padding-bottom: 50px;
+  text-align: center;
 }
 
 #popular-tours .popular-tours-caption h1 {
@@ -1002,6 +1006,7 @@ header nav .active-link hr {
   height: 467px;
   overflow: hidden;
   position: relative;
+  margin-top: 30px;
 }
 
 #popular-tours .item:hover .content {
@@ -1032,7 +1037,7 @@ header nav .active-link hr {
   background-color: white;
   height: 150px;
   position: absolute;
-  bottom: -82px;
+  bottom: -83px;
   left: 0;
   right: 0;
   -webkit-transition: all 0.3s cubic-bezier(0.29, 0.22, 0.07, 0.88);
@@ -1047,18 +1052,20 @@ header nav .active-link hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
 }
 
 #popular-tours .item .content .content-header h4 {
   font-size: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
 }
 
 #popular-tours .item .content .content-header span {
   font-size: 13px;
+  color: #626b72;
 }
 
 #popular-tours .item .content .content-links {
@@ -1075,7 +1082,16 @@ header nav .active-link hr {
 }
 
 #popular-tours .item .content .content-links a {
-  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+  color: #626b72;
+}
+
+#popular-tours .item .content .content-links a:hover {
+  color: #303b36;
+  text-decoration: none;
 }
 
 #popular-tours .item .content .content-links a:first-of-type {
@@ -1083,5 +1099,12 @@ header nav .active-link hr {
   color: #3a3b74;
   border: 2px solid #3a3b74;
   padding: 7px 17px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+#popular-tours .item .content .content-links a:first-of-type::before {
+  content: "";
+  bottom: -1px !important;
 }
 /*# sourceMappingURL=style.css.map */

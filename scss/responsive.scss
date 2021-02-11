@@ -60,6 +60,36 @@
       padding-top: 118px !important;
     }
   }
+
+  #popular-tours {
+    padding: 100px 30px 120px 30px !important;
+    .img-box{
+      height: 404px !important;
+    }
+    .item {
+      height: 459px !important;
+      .content {
+        height: 138px !important;
+        .content-header {
+          padding: 14px 15px 0 15px !important;
+          h4 {
+            font-size: 17px !important;
+            letter-spacing: 0.3px;
+          }
+          span {
+            font-size: 10.5px !important;
+          }
+        }
+        .content-links {
+          padding: 16px 20px 25px 20px !important;
+        }
+      }
+    }
+
+    // .popular-tours-caption{
+    //   padding-bottom: 30px !important;
+    // }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -225,7 +255,7 @@
             height: 100px !important;
             margin-right: 15px !important;
             border-radius: 16px;
-            &:last-of-type{
+            &:last-of-type {
               margin-right: 0 !important;
             }
           }
@@ -467,7 +497,7 @@
               font-size: 44px;
               margin-right: 15px;
               margin-bottom: 34px;
-              &:last-of-type{
+              &:last-of-type {
                 margin-right: 0 !important;
               }
             }
@@ -667,7 +697,7 @@
   #special-offers {
     padding: 120px 50px 130px 50px !important;
     .specials {
-      h1{
+      h1 {
         font-size: 40px !important;
       }
       hr {
@@ -726,7 +756,7 @@
               margin-right: 13px !important;
               border-radius: 13px !important;
               font-size: 32px !important;
-              &:last-of-type{
+              &:last-of-type {
                 margin-right: 0 !important;
               }
             }
@@ -902,7 +932,7 @@
         font-size: 28px !important;
         padding: 20px 0 80px 0 !important;
       }
-      hr{
+      hr {
         width: 42px !important;
       }
     }
@@ -911,7 +941,7 @@
       height: 240px !important;
       padding: 32px 35px 0 35px !important;
       i {
-        &::before{
+        &::before {
           font-size: 36px !important;
         }
       }
@@ -920,7 +950,7 @@
         font-size: 20px !important;
       }
 
-      hr{
+      hr {
         width: 24px !important;
       }
 
@@ -936,7 +966,7 @@
       h1 {
         font-size: 28px !important;
       }
-      hr{
+      hr {
         width: 42px !important;
       }
       p {
@@ -996,7 +1026,7 @@
               margin-right: 10px;
               border-radius: 7px;
               font-size: 25px;
-              &:last-of-type{
+              &:last-of-type {
                 margin-right: 0 !important;
               }
             }

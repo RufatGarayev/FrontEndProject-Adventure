@@ -36,6 +36,31 @@
   #discount .discount_btn {
     padding-top: 118px !important;
   }
+  #popular-tours {
+    padding: 100px 30px 120px 30px !important;
+  }
+  #popular-tours .img-box {
+    height: 404px !important;
+  }
+  #popular-tours .item {
+    height: 459px !important;
+  }
+  #popular-tours .item .content {
+    height: 138px !important;
+  }
+  #popular-tours .item .content .content-header {
+    padding: 14px 15px 0 15px !important;
+  }
+  #popular-tours .item .content .content-header h4 {
+    font-size: 17px !important;
+    letter-spacing: 0.3px;
+  }
+  #popular-tours .item .content .content-header span {
+    font-size: 10.5px !important;
+  }
+  #popular-tours .item .content .content-links {
+    padding: 16px 20px 25px 20px !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
