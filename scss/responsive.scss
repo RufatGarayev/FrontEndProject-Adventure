@@ -64,7 +64,7 @@
   #popular-tours {
     padding: 100px 30px 120px 30px !important;
     .img-box{
-      height: 404px !important;
+      height: 406px !important;
     }
     .item {
       height: 459px !important;
@@ -77,18 +77,21 @@
             letter-spacing: 0.3px;
           }
           span {
-            font-size: 10.5px !important;
+            font-size: 11px !important;
           }
         }
         .content-links {
-          padding: 16px 20px 25px 20px !important;
+          padding: 16px 15px 25px 15px !important;
+          a{
+            font-size: 12px !important;
+          }
         }
       }
     }
 
-    // .popular-tours-caption{
-    //   padding-bottom: 30px !important;
-    // }
+    .popular-tours-caption{
+      padding-bottom: 20px !important;
+    }
   }
 }
 
@@ -297,6 +300,41 @@
       a {
         padding: 10px 30px !important;
       }
+    }
+  }
+
+  #popular-tours {
+    padding: 100px 100px 120px 100px !important;
+    .item {
+      height: 600px !important;
+      .img-box{
+        height: 540px !important;
+      }
+      .content {
+        padding: 0 15px;
+        .content-header {
+          padding: 17px 15px 0 15px !important;
+          h4 {
+            font-size: 22px !important;
+          }
+          span {
+            font-size: 14px !important;
+          }
+        }
+        .content-links {
+          padding: 16px 15px 25px 15px !important;
+          a{
+            font-size: 13px !important;
+            &:first-child{
+              font-size: 15px !important;
+            }
+          }
+        }
+      }
+    }
+
+    .popular-tours-caption{
+      padding-bottom: 20px !important;
     }
   }
 }
@@ -540,6 +578,42 @@
       a {
         padding: 10px 30px !important;
       }
+    }
+  }
+
+  #popular-tours {
+    padding: 100px 80px 120px 80px !important;
+    .item {
+      height: 500px !important;
+      .img-box{
+        height: 435px !important;
+      }
+      .content {
+        height: 148px !important;
+        padding: 0 5px;
+        .content-header {
+          padding: 17px 15px 0 15px !important;
+          h4 {
+            font-size: 22px !important;
+          }
+          span {
+            font-size: 14px !important;
+          }
+        }
+        .content-links {
+          padding: 16px 15px 25px 15px !important;
+          a{
+            font-size: 13px !important;
+            &:first-child{
+              font-size: 14px !important;
+            }
+          }
+        }
+      }
+    }
+
+    .popular-tours-caption{
+      padding: 0 20px 20px !important;
     }
   }
 }
@@ -799,6 +873,49 @@
       padding-top: 60px !important;
       a {
         padding: 10px 34px !important;
+      }
+    }
+  }
+
+  #popular-tours {
+    padding: 100px 20px 120px 20px !important;
+    .item {
+      height: 440px !important;
+      .img-box{
+        height: 405px !important;
+      }
+      .content {
+        .content-header {
+          padding: 17px 15px 0 15px !important;
+          h4 {
+            font-size: 22px !important;
+          }
+          span {
+            font-size: 14px !important;
+          }
+        }
+        .content-links {
+          padding: 16px 15px 25px 15px !important;
+          a{
+            font-size: 12px !important;
+            &:first-child{
+              font-size: 13px !important;
+            }
+          }
+        }
+      }
+    }
+
+    .popular-tours-caption{
+      padding: 0 20px 20px !important;
+      h1{
+        font-size: 40px !important;
+      }
+      hr{
+        width: 45px !important;
+      }
+      p{
+        font-size: 16px !important;
       }
     }
   }
@@ -1069,6 +1186,51 @@
       padding-top: 60px !important;
       a {
         padding: 10px 30px !important;
+      }
+    }
+  }
+
+  #popular-tours {
+    padding: 100px 5px 120px 5px !important;
+    .item {
+      height: 405px !important;
+      .img-box{
+        height: 370px !important;
+      }
+      .content {
+        height: 131px !important;
+        .content-header {
+          padding: 13px 15px 0 15px !important;
+          h4 {
+            font-size: 16px !important;
+            letter-spacing: 0 !important;
+          }
+          span {
+            font-size: 10px !important;
+          }
+        }
+        .content-links {
+          padding: 16px 15px 25px 15px !important;
+          a{
+            font-size: 8px !important;
+            &:first-child{
+              font-size: 9px !important;
+            }
+          }
+        }
+      }
+    }
+
+    .popular-tours-caption{
+      padding: 0 20px 7px !important;
+      h1{
+        font-size: 28px !important;
+      }
+      hr{
+        width: 42px !important;
+      }
+      p{
+        font-size: 12px !important;
       }
     }
   }

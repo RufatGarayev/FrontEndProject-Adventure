@@ -66,7 +66,6 @@
   }
 }
 
-
 %website-button {
   padding: 10px 24px;
   font-weight: 600;
@@ -105,4 +104,36 @@
 
   transition: color 300ms ease-in-out;
   z-index: 1;
+}
+
+
+%price-box{
+  background-color: rgba(0, 0, 0, 0.32);
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 7px 12px 15px 12px;
+  line-height: 3px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  z-index: 11;
+  h5 {
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  span {
+    font-size: 12px;
+  }
+
+  @media (min-width: 250px) and (max-width: 315px) {
+    padding: 7px 7px 12px 7px !important;
+    h5 {
+      font-size: 22px !important;
+    }
+    span {
+      font-size: 11px;
+    }
+  }
 }
