@@ -295,8 +295,9 @@ header {
 
     h4 {
       font-size: $item-caption-size;
+      font-family: $item-caption-font-family;
       padding-top: 20px;
-      font-weight: 700;
+      font-weight: 500;
       color: rgb(58, 59, 116);
     }
 
@@ -402,12 +403,12 @@ header {
   .owl-carousel {
     .owl-dots {
       margin-top: 30px;
-      button{
-       span{
-        border-radius: 1px !important;
-        height: 2px;
-        width: 25px;
-       }
+      button {
+        span {
+          border-radius: 1px !important;
+          height: 2px;
+          width: 25px;
+        }
       }
     }
 
@@ -427,9 +428,17 @@ header {
         padding: 7px 12px 15px 12px;
         line-height: 3px;
         text-align: center;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.4);
         border-radius: 4px;
         z-index: 11;
+        h5 {
+          font-size: 25px;
+          font-family: "Times New Roman", Times, serif;
+        }
+        span {
+          font-size: 12px;
+        }
+
         @media (min-width: 250px) and (max-width: 315px) {
           padding: 7px 7px 12px 7px !important;
           h5 {
@@ -463,9 +472,10 @@ header {
         @media (min-width: 250px) and (max-width: 315px) {
           padding: 20px 9px 30px 9px !important;
         }
-        .tour-date{
-          span, i {
-            color: rgb(98,107,114);
+        .tour-date {
+          span,
+          i {
+            color: rgb(98, 107, 114);
             font-size: 13px;
             font-weight: 400;
           }
@@ -473,9 +483,12 @@ header {
         .tour-name {
           padding: 12px 0 20px 0;
           h4 {
-            font-size: $item-caption-size;
-            color: rgb(58, 59, 116);
-            font-weight: 600;
+            // font-size: $item-caption-size;
+            font-size: 18px;
+            font-family: $item-caption-font-family;
+            letter-spacing: 1px;
+            color: rgb(37, 43, 45);
+            font-weight: 500;
           }
         }
         .slide-links {
@@ -486,7 +499,7 @@ header {
             text-transform: uppercase;
             font-size: 11px;
             font-weight: 500;
-            color: #db7355;
+            color: rgb(98, 107, 114);
             &:hover {
               color: #303b36;
               text-decoration: none;
@@ -538,9 +551,9 @@ header {
     }
 
     @media (min-width: 250px) and (max-width: 299.98px) {
-      .info{
-        .slide-links{
-          a{
+      .info {
+        .slide-links {
+          a {
             font-size: 10px !important;
           }
         }
@@ -608,6 +621,7 @@ header {
 
         span {
           font-weight: 700;
+          color: white;
         }
       }
       span {
@@ -623,14 +637,14 @@ header {
     }
 
     @media (min-width: 250px) and (max-width: 299.98px) {
-      h2{
+      h2 {
         font-size: 10px !important;
         &:first-of-type {
           font-size: 18px !important;
           padding-bottom: 10px;
         }
       }
-      h1{
+      h1 {
         font-size: 21px !important;
       }
     }
@@ -644,7 +658,7 @@ header {
         width: 125px;
         height: 125px;
         // background: #db7355;
-        background: rgb(58,59,116);
+        background: rgb(58, 59, 116);
         display: inline-block;
         margin: 0;
         position: relative;
@@ -731,12 +745,12 @@ header {
     }
 
     @media (min-width: 250px) and (max-width: 299.98px) {
-      .cdowns{
-      width: 46px !important;
-      height: 50px !important;
-      margin-right: 10px !important;
-      border-radius: 5px !important;
-      font-size: 22px !important;
+      .cdowns {
+        width: 46px !important;
+        height: 50px !important;
+        margin-right: 10px !important;
+        border-radius: 5px !important;
+        font-size: 22px !important;
       }
       .days {
         &::before {
@@ -793,3 +807,93 @@ header {
   }
 }
 // ======= Discount Section End ======= //
+
+
+// ======= Popular Tours Section Start ======= //
+#popular-tours {
+  background-color: rgb(248, 248, 248);
+  padding: 100px 50px 120px 50px;
+  .popular-tours-caption {
+    padding-bottom: 50px;
+    h1 {
+      font-size: $section-caption-size;
+      font-family: $section-caption-font-family;
+      letter-spacing: 1px;
+      color: rgb(58, 59, 116);
+      text-transform: uppercase;
+    }
+    hr {
+      width: 60px;
+      height: 1px;
+      margin: 8px 0;
+      background-color: rgb(58, 59, 116);
+    }
+    p{
+      padding-top: 22px;
+    }
+  }
+
+  .item {
+    height: 467px;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+      .content{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: translate3d(0px, 13px, 0px);
+      transition: all .3s cubic-bezier(.29,.22,.07,.88);
+      }
+    }
+    .img-box {
+      height: 400px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(80%);
+      }
+    }
+    .content {
+      background-color: white;
+      height: 150px;
+      position: absolute;
+      bottom: -82px;
+      left: 0;
+      right: 0;
+      transition: all .3s cubic-bezier(.29,.22,.07,.88);
+      .content-header {
+        padding: 20px 20px 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h4 {
+          font-size: $item-caption-size;
+          font-family: $item-caption-font-family;
+        }
+        span{
+          font-size: 13px;
+        }
+      }
+      .content-links {
+        padding: 16px 20px 35px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+          font-size: 13px;
+          &:first-of-type {
+            @extend %website-button;
+            background-color: transparent;
+            color: rgb(58, 59, 116);
+            border: 2px solid rgb(58, 59, 116);
+            padding: 7px 17px;
+          }
+        }
+      }
+    }
+  }
+}
+// ======= Popular Tours Section End ======= //

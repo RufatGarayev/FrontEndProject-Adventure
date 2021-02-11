@@ -66,7 +66,7 @@ header nav .navbar-items .links li, header nav .account li {
   border: 2px solid #d7613f;
 }
 
-#intro .banner-area .caption .button, #special-offers .owl-carousel .item .info .slide-links a:first-child, #view-tours .view-tours-btn a, #discount .discount_btn a {
+#intro .banner-area .caption .button, #special-offers .owl-carousel .item .info .slide-links a:first-child, #view-tours .view-tours-btn a, #discount .discount_btn a, #popular-tours .item .content .content-links a:first-of-type {
   padding: 10px 24px;
   font-weight: 600;
   border: none;
@@ -82,7 +82,7 @@ header nav .navbar-items .links li, header nav .account li {
   z-index: 1;
 }
 
-#intro .banner-area .caption .button::before, #special-offers .owl-carousel .item .info .slide-links a:first-child::before, #view-tours .view-tours-btn a::before, #discount .discount_btn a::before {
+#intro .banner-area .caption .button::before, #special-offers .owl-carousel .item .info .slide-links a:first-child::before, #view-tours .view-tours-btn a::before, #discount .discount_btn a::before, #popular-tours .item .content .content-links a:first-of-type::before {
   content: "";
   border-radius: 3px;
   position: absolute;
@@ -103,12 +103,12 @@ header nav .navbar-items .links li, header nav .account li {
           transform-origin: left;
 }
 
-#intro .banner-area .caption .button:hover, #special-offers .owl-carousel .item .info .slide-links a:hover:first-child, #view-tours .view-tours-btn a:hover, #discount .discount_btn a:hover {
+#intro .banner-area .caption .button:hover, #special-offers .owl-carousel .item .info .slide-links a:hover:first-child, #view-tours .view-tours-btn a:hover, #discount .discount_btn a:hover, #popular-tours .item .content .content-links a:hover:first-of-type {
   color: white;
   text-decoration: none;
 }
 
-#intro .banner-area .caption .button:hover::before, #special-offers .owl-carousel .item .info .slide-links a:first-child:hover::before, #view-tours .view-tours-btn a:hover::before, #discount .discount_btn a:hover::before {
+#intro .banner-area .caption .button:hover::before, #special-offers .owl-carousel .item .info .slide-links a:first-child:hover::before, #view-tours .view-tours-btn a:hover::before, #discount .discount_btn a:hover::before, #popular-tours .item .content .content-links a:first-of-type:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -459,8 +459,9 @@ header nav .active-link hr {
 
 #our-advantages .holder h4 {
   font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 20px;
-  font-weight: 700;
+  font-weight: 500;
   color: #3a3b74;
 }
 
@@ -594,9 +595,18 @@ header nav .active-link hr {
   padding: 7px 12px 15px 12px;
   line-height: 3px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   z-index: 11;
+}
+
+#special-offers .owl-carousel .item .price-info h5 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#special-offers .owl-carousel .item .price-info span {
+  font-size: 12px;
 }
 
 @media (min-width: 250px) and (max-width: 315px) {
@@ -650,7 +660,8 @@ header nav .active-link hr {
   }
 }
 
-#special-offers .owl-carousel .item .info .tour-date span, #special-offers .owl-carousel .item .info .tour-date i {
+#special-offers .owl-carousel .item .info .tour-date span,
+#special-offers .owl-carousel .item .info .tour-date i {
   color: #626b72;
   font-size: 13px;
   font-weight: 400;
@@ -661,9 +672,11 @@ header nav .active-link hr {
 }
 
 #special-offers .owl-carousel .item .info .tour-name h4 {
-  font-size: 20px;
-  color: #3a3b74;
-  font-weight: 600;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  color: #252b2d;
+  font-weight: 500;
 }
 
 #special-offers .owl-carousel .item .info .slide-links {
@@ -680,7 +693,7 @@ header nav .active-link hr {
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 500;
-  color: #db7355;
+  color: #626b72;
 }
 
 #special-offers .owl-carousel .item .info .slide-links a:hover {
@@ -793,6 +806,7 @@ header nav .active-link hr {
 
 #discount .discount_title h2:first-of-type span {
   font-weight: 700;
+  color: white;
 }
 
 #discount .discount_title h2 span {
@@ -954,5 +968,120 @@ header nav .active-link hr {
     font-size: 12px !important;
     letter-spacing: 0;
   }
+}
+
+#popular-tours {
+  background-color: #f8f8f8;
+  padding: 100px 50px 120px 50px;
+}
+
+#popular-tours .popular-tours-caption {
+  padding-bottom: 50px;
+}
+
+#popular-tours .popular-tours-caption h1 {
+  font-size: 46px;
+  font-family: ludicrous;
+  letter-spacing: 1px;
+  color: #3a3b74;
+  text-transform: uppercase;
+}
+
+#popular-tours .popular-tours-caption hr {
+  width: 60px;
+  height: 1px;
+  margin: 8px 0;
+  background-color: #3a3b74;
+}
+
+#popular-tours .popular-tours-caption p {
+  padding-top: 22px;
+}
+
+#popular-tours .item {
+  height: 467px;
+  overflow: hidden;
+  position: relative;
+}
+
+#popular-tours .item:hover .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translate3d(0px, 13px, 0px);
+          transform: translate3d(0px, 13px, 0px);
+  -webkit-transition: all 0.3s cubic-bezier(0.29, 0.22, 0.07, 0.88);
+  transition: all 0.3s cubic-bezier(0.29, 0.22, 0.07, 0.88);
+}
+
+#popular-tours .item .img-box {
+  height: 400px;
+}
+
+#popular-tours .item .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+#popular-tours .item .content {
+  background-color: white;
+  height: 150px;
+  position: absolute;
+  bottom: -82px;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.29, 0.22, 0.07, 0.88);
+  transition: all 0.3s cubic-bezier(0.29, 0.22, 0.07, 0.88);
+}
+
+#popular-tours .item .content .content-header {
+  padding: 20px 20px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#popular-tours .item .content .content-header h4 {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#popular-tours .item .content .content-header span {
+  font-size: 13px;
+}
+
+#popular-tours .item .content .content-links {
+  padding: 16px 20px 35px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#popular-tours .item .content .content-links a {
+  font-size: 13px;
+}
+
+#popular-tours .item .content .content-links a:first-of-type {
+  background-color: transparent;
+  color: #3a3b74;
+  border: 2px solid #3a3b74;
+  padding: 7px 17px;
 }
 /*# sourceMappingURL=style.css.map */
