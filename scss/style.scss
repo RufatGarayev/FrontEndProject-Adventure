@@ -134,6 +134,7 @@ html {
 }
 // ======= Loader End ======= //
 
+
 // ======= Header Start ======= //
 header {
   overflow: hidden;
@@ -254,7 +255,7 @@ header {
   overflow: hidden;
   padding: 66px 0 99px 0;
   .caption {
-    height: 130px;
+    height: 115px;
     h1 {
       text-align: center;
       padding: 30px 0 10px 0 !important;
@@ -376,10 +377,8 @@ header {
   }
 
   .specials {
+    padding-bottom: 30px;
     color: white;
-    img {
-      margin-bottom: 30px;
-    }
     h1 {
       font-size: $section-caption-size;
       font-weight: 700;
@@ -395,7 +394,7 @@ header {
       background-color: white;
     }
     p {
-      padding: 20px 0 50px 0;
+      padding-top: 20px;
       font-size: $paragraph-size;
       font-weight: $paragraph-weight !important;
     }
@@ -458,7 +457,7 @@ header {
         }
         .tour-name {
           padding: 12px 0 20px 0;
-          i{
+          i {
             font-size: 15px;
             margin: 3px 5px 0 0;
             color: rgb(98, 107, 114);
@@ -548,8 +547,15 @@ header {
   overflow-x: hidden;
   padding: 80px 0;
   .view-tours-text {
-    text-align: right;
+    justify-content: flex-end;
     padding-right: 7px;
+    i {
+      &::before {
+        font-size: 45px;
+        color: #db7355;
+        margin: 0 10px 0 0;
+      }
+    }
     h4 {
       color: rgb(37, 43, 45);
       margin: 0;
@@ -558,7 +564,7 @@ header {
   }
 
   .view-tours-btn {
-    padding-top: 5px;
+    padding-top: 19px;
     text-align: left;
     a {
       @extend %website-button;
@@ -566,6 +572,34 @@ header {
       border: 2px solid #3a3b74;
       font-size: 16px;
       padding: 10px 30px;
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 430px){
+    .view-tours-text {
+      padding-right: 0 !important;
+      i {
+        &::before {
+          font-size: 44px !important;
+        }
+      }
+      h4 {
+        font-size: 21px !important;
+      }
+    }
+  }
+
+  @media (min-width: 250px) and (max-width: 299.98px){
+    .view-tours-text {
+      padding-right: 0 !important;
+      i {
+        &::before {
+          font-size: 45px !important;
+        }
+      }
+      h4 {
+        font-size: 20px !important;
+      }
     }
   }
 }
@@ -768,7 +802,7 @@ header {
   background-color: rgb(248, 248, 248);
   padding: 100px 60px 120px 60px;
   .popular-tours-caption {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     text-align: center;
     h1 {
       font-size: $section-caption-size;
@@ -844,19 +878,19 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center !important;
-        i{
+        i {
           font-size: 15px;
           margin-right: 7px;
           color: rgb(98, 107, 114);
         }
-        .tour-name{
+        .tour-name {
           h4 {
             font-size: $item-caption-size;
             font-family: $item-caption-font-family;
             letter-spacing: 1px;
           }
         }
-        .tour-date{
+        .tour-date {
           span {
             font-size: 13px;
             color: rgb(98, 107, 114);
@@ -901,18 +935,17 @@ header {
         height: 146px !important;
         .content-header {
           padding: 17px 15px 8px 15px !important;
-          .tour-name{
+          .tour-name {
             h4 {
               font-size: 19px !important;
               letter-spacing: 0.5px !important;
             }
           }
-          .tour-date{
+          .tour-date {
             span {
               font-size: 12px !important;
             }
           }
-          
         }
         .content-links {
           a {
@@ -930,7 +963,7 @@ header {
       .price-info {
         top: 14px !important;
         right: 14px !important;
-        span{
+        span {
           font-size: 11px !important;
         }
       }
@@ -938,8 +971,8 @@ header {
         height: 132px !important;
         .content-header {
           padding: 11px 12px 8px 12px !important;
-          .tour-name{
-            i{
+          .tour-name {
+            i {
               font-size: 12px !important;
               margin-right: 3px !important;
             }
@@ -948,8 +981,8 @@ header {
               letter-spacing: 0 !important;
             }
           }
-          .tour-date{
-            i{
+          .tour-date {
+            i {
               font-size: 9px !important;
               margin-right: 1px !important;
             }
@@ -974,32 +1007,106 @@ header {
 }
 // ======= Popular Tours Section End ======= //
 
-// ======= Achievements Section Start ======= //
-#our-achievements {
-  background-color: rgb(58, 59, 116);
-  padding: 90px 0 120px 0;
+// ======= Cooming Soon Section Start ======= //
+#coming-soon {
+  padding-top: 100px;
 
-  .achievements-caption {
-    width: 100%;
-    padding-bottom: 30px;
+  .coming-soon-caption {
+    padding-bottom: 50px;
     text-align: center;
     h1 {
       font-size: $section-caption-size;
       font-family: $section-caption-font-family;
       letter-spacing: 1px;
-      color: white;
+      color: rgb(58, 59, 116);
       text-transform: uppercase;
     }
     hr {
       width: 60px;
       height: 0.7px;
       margin: 8px 0;
-      background-color: white;
+      background-color: rgb(58, 59, 116);
+    }
+    p {
+      padding-top: 22px;
     }
   }
 
   .content {
+    height: 450px;
+    background-color: rgb(58, 59, 116);
+    display: flex;
+    padding: 0 90px;
+    align-items: center;
+    text-align: left;
     color: white;
+
+    .content-name {
+      i {
+        &::before {
+          font-size: 40px;
+          color: rgb(245, 192, 94);
+          margin: 0 15px 0 0;
+        }
+      }
+
+      h3{
+        padding-top: 12px;
+        font-size: 32px;
+        font-family: $item-caption-font-family;
+      }
+    }
+
+    .content-text{
+      p{
+        padding-left: 55px;
+        font-size: $paragraph-size;
+        font-weight: $paragraph-weight;
+      }
+    }
+  }
+
+  .img-box {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+  }
+
+  .first-pic {
+    background-image: url(../img/special-offers/special-offer3.jpg);
+  }
+
+  .second-pic {
+    background-image: url(../img/special-offers/special-offer4.jpg);
+  }
+}
+// ======= Cooming Soon Section End ======= //
+
+// ======= Achievements Section Start ======= //
+#our-achievements {
+  background-color: rgb(248, 248, 248);
+  padding: 90px 0 120px 0;
+
+  .achievements-caption {
+    width: 100%;
+    text-align: center;
+    h1 {
+      font-size: $section-caption-size;
+      font-family: $section-caption-font-family;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgb(58, 59, 116);
+    }
+    hr {
+      width: 60px;
+      height: 0.7px;
+      margin: 8px 0;
+      background-color: rgb(58, 59, 116);
+    }
+  }
+
+  .content {
     height: 280px;
     padding-top: 50px;
     transition: 0.4s ease-in-out;
@@ -1011,14 +1118,15 @@ header {
       &::before {
         margin: 0;
         font-size: 55px;
-        color: rgb(219, 115, 85);
+        color: #db7355;
       }
     }
 
     h2 {
-      padding: 15px 0;
+      padding: 25px 0 10px 0;
       font-size: 50px;
       font-weight: 700;
+      color: rgb(58, 59, 116);
     }
 
     h3 {

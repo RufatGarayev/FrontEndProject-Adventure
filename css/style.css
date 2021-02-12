@@ -450,7 +450,7 @@ header nav .active-link hr {
 }
 
 #our-advantages .caption {
-  height: 130px;
+  height: 115px;
 }
 
 #our-advantages .caption h1 {
@@ -576,11 +576,8 @@ header nav .active-link hr {
 }
 
 #special-offers .specials {
+  padding-bottom: 30px;
   color: white;
-}
-
-#special-offers .specials img {
-  margin-bottom: 30px;
 }
 
 #special-offers .specials h1 {
@@ -600,7 +597,7 @@ header nav .active-link hr {
 }
 
 #special-offers .specials p {
-  padding: 20px 0 50px 0;
+  padding-top: 20px;
   font-size: 16px;
   font-weight: 300 !important;
 }
@@ -760,8 +757,16 @@ header nav .active-link hr {
 }
 
 #view-tours .view-tours-text {
-  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding-right: 7px;
+}
+
+#view-tours .view-tours-text i::before {
+  font-size: 45px;
+  color: #db7355;
+  margin: 0 10px 0 0;
 }
 
 #view-tours .view-tours-text h4 {
@@ -771,7 +776,7 @@ header nav .active-link hr {
 }
 
 #view-tours .view-tours-btn {
-  padding-top: 5px;
+  padding-top: 19px;
   text-align: left;
 }
 
@@ -780,6 +785,30 @@ header nav .active-link hr {
   border: 2px solid #3a3b74;
   font-size: 16px;
   padding: 10px 30px;
+}
+
+@media (min-width: 375px) and (max-width: 430px) {
+  #view-tours .view-tours-text {
+    padding-right: 0 !important;
+  }
+  #view-tours .view-tours-text i::before {
+    font-size: 44px !important;
+  }
+  #view-tours .view-tours-text h4 {
+    font-size: 21px !important;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 299.98px) {
+  #view-tours .view-tours-text {
+    padding-right: 0 !important;
+  }
+  #view-tours .view-tours-text i::before {
+    font-size: 45px !important;
+  }
+  #view-tours .view-tours-text h4 {
+    font-size: 20px !important;
+  }
 }
 
 #discount {
@@ -988,7 +1017,7 @@ header nav .active-link hr {
 }
 
 #popular-tours .popular-tours-caption {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -1213,14 +1242,88 @@ header nav .active-link hr {
   }
 }
 
-#our-achievements {
+#coming-soon {
+  padding-top: 100px;
+}
+
+#coming-soon .coming-soon-caption {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#coming-soon .coming-soon-caption h1 {
+  font-size: 46px;
+  font-family: ludicrous;
+  letter-spacing: 1px;
+  color: #3a3b74;
+  text-transform: uppercase;
+}
+
+#coming-soon .coming-soon-caption hr {
+  width: 60px;
+  height: 0.7px;
+  margin: 8px 0;
   background-color: #3a3b74;
+}
+
+#coming-soon .coming-soon-caption p {
+  padding-top: 22px;
+}
+
+#coming-soon .content {
+  height: 450px;
+  background-color: #3a3b74;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  color: white;
+}
+
+#coming-soon .content .content-name i::before {
+  font-size: 40px;
+  color: #f5c05e;
+  margin: 0 15px 0 0;
+}
+
+#coming-soon .content .content-name h3 {
+  padding-top: 12px;
+  font-size: 32px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#coming-soon .content .content-text p {
+  padding-left: 55px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#coming-soon .img-box {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+}
+
+#coming-soon .first-pic {
+  background-image: url(../img/special-offers/special-offer3.jpg);
+}
+
+#coming-soon .second-pic {
+  background-image: url(../img/special-offers/special-offer4.jpg);
+}
+
+#our-achievements {
+  background-color: #f8f8f8;
   padding: 90px 0 120px 0;
 }
 
 #our-achievements .achievements-caption {
   width: 100%;
-  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -1228,19 +1331,18 @@ header nav .active-link hr {
   font-size: 46px;
   font-family: ludicrous;
   letter-spacing: 1px;
-  color: white;
   text-transform: uppercase;
+  color: #3a3b74;
 }
 
 #our-achievements .achievements-caption hr {
   width: 60px;
   height: 0.7px;
   margin: 8px 0;
-  background-color: white;
+  background-color: #3a3b74;
 }
 
 #our-achievements .content {
-  color: white;
   height: 280px;
   padding-top: 50px;
   -webkit-transition: 0.4s ease-in-out;
@@ -1260,9 +1362,10 @@ header nav .active-link hr {
 }
 
 #our-achievements .content h2 {
-  padding: 15px 0;
+  padding: 25px 0 10px 0;
   font-size: 50px;
   font-weight: 700;
+  color: #3a3b74;
 }
 
 #our-achievements .content h3 {

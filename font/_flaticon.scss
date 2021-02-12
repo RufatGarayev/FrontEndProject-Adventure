@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 11/02/2021 18:41
+    Creation date: 12/02/2021 21:26
     */
 
     @font-face {
@@ -46,6 +46,8 @@
 .flaticon-binoculars:before { content: "\f106"; }
 .flaticon-left-arrow:before { content: "\f107"; }
 .flaticon-right-arrow-angle:before { content: "\f108"; }
+.flaticon-compass:before { content: "\f109"; }
+.flaticon-national-park:before { content: "\f10a"; }
     
     $font-Flaticon-hotel: "\f100";
     $font-Flaticon-public-transport: "\f101";
@@ -56,3 +58,5 @@
     $font-Flaticon-binoculars: "\f106";
     $font-Flaticon-left-arrow: "\f107";
     $font-Flaticon-right-arrow-angle: "\f108";
+    $font-Flaticon-compass: "\f109";
+    $font-Flaticon-national-park: "\f10a";
