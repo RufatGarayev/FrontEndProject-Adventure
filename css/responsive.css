@@ -49,14 +49,21 @@
     height: 138px !important;
   }
   #popular-tours .item .content .content-header {
-    padding: 14px 15px 0 15px !important;
+    padding: 14px 15px 8px 15px !important;
   }
-  #popular-tours .item .content .content-header h4 {
+  #popular-tours .item .content .content-header .tour-name i {
+    font-size: 14px !important;
+  }
+  #popular-tours .item .content .content-header .tour-name h4 {
     font-size: 17px !important;
     letter-spacing: 0.3px;
   }
-  #popular-tours .item .content .content-header span {
-    font-size: 11px !important;
+  #popular-tours .item .content .content-header .tour-date i {
+    font-size: 12px !important;
+    margin-right: 3px !important;
+  }
+  #popular-tours .item .content .content-header .tour-date span {
+    font-size: 10px !important;
   }
   #popular-tours .item .content .content-links {
     padding: 16px 15px 25px 15px !important;
@@ -282,13 +289,21 @@
     padding: 0 15px;
   }
   #popular-tours .item .content .content-header {
-    padding: 17px 15px 0 15px !important;
+    padding: 17px 15px 8px 15px !important;
   }
-  #popular-tours .item .content .content-header h4 {
-    font-size: 22px !important;
+  #popular-tours .item .content .content-header .tour-name i {
+    font-size: 20px !important;
+    margin-right: 7px !important;
   }
-  #popular-tours .item .content .content-header span {
-    font-size: 14px !important;
+  #popular-tours .item .content .content-header .tour-name h4 {
+    font-size: 25px !important;
+  }
+  #popular-tours .item .content .content-header .tour-date i {
+    font-size: 16px !important;
+    margin-right: 7px !important;
+  }
+  #popular-tours .item .content .content-header .tour-date span {
+    font-size: 15px !important;
   }
   #popular-tours .item .content .content-links {
     padding: 16px 15px 25px 15px !important;
@@ -302,13 +317,16 @@
   #popular-tours .popular-tours-caption {
     padding-bottom: 20px !important;
   }
+  #our-achievements {
+    padding: 100px 0 100px 0 !important;
+  }
   #our-achievements .content {
     height: 320px !important;
   }
   #our-achievements .content i::before {
     font-size: 55px !important;
   }
-  #our-achievements .content span {
+  #our-achievements .content h2 {
     font-size: 50px !important;
   }
   #our-achievements .content h3 {
@@ -566,12 +584,23 @@
     padding: 0 5px;
   }
   #popular-tours .item .content .content-header {
-    padding: 17px 15px 0 15px !important;
+    padding: 17px 15px 8px 15px !important;
   }
-  #popular-tours .item .content .content-header h4 {
+  #popular-tours .item .content .content-header .tour-name i {
+    font-size: 19px !important;
+    margin-right: 7px !important;
+  }
+  #popular-tours .item .content .content-header .tour-name h4 {
     font-size: 22px !important;
   }
-  #popular-tours .item .content .content-header span {
+  #popular-tours .item .content .content-header .tour-date {
+    padding-top: 2px;
+  }
+  #popular-tours .item .content .content-header .tour-date i {
+    font-size: 16px !important;
+    margin-right: 7px !important;
+  }
+  #popular-tours .item .content .content-header .tour-date span {
     font-size: 14px !important;
   }
   #popular-tours .item .content .content-links {
@@ -585,6 +614,9 @@
   }
   #popular-tours .popular-tours-caption {
     padding: 0 20px 20px !important;
+  }
+  #our-achievements {
+    padding: 125px 0 100px 0 !important;
   }
   #our-achievements .content {
     height: 370px !important;
@@ -850,12 +882,20 @@
     height: 405px !important;
   }
   #popular-tours .item .content .content-header {
-    padding: 17px 15px 0 15px !important;
+    padding: 20px 15px 8px 15px !important;
   }
-  #popular-tours .item .content .content-header h4 {
+  #popular-tours .item .content .content-header .tour-name i {
+    font-size: 17px !important;
+    margin-right: 5px !important;
+  }
+  #popular-tours .item .content .content-header .tour-name h4 {
     font-size: 22px !important;
   }
-  #popular-tours .item .content .content-header span {
+  #popular-tours .item .content .content-header .tour-date i {
+    font-size: 13px !important;
+    margin-right: 3px !important;
+  }
+  #popular-tours .item .content .content-header .tour-date span {
     font-size: 14px !important;
   }
   #popular-tours .item .content .content-links {
@@ -879,6 +919,9 @@
   #popular-tours .popular-tours-caption p {
     font-size: 16px !important;
   }
+  #our-achievements {
+    padding: 125px 0 100px 0 !important;
+  }
   #our-achievements .achievements-caption h1 {
     font-size: 40px !important;
   }
@@ -897,7 +940,7 @@
   #our-achievements .content i::before {
     font-size: 50px !important;
   }
-  #our-achievements .content span {
+  #our-achievements .content h2 {
     font-size: 53px !important;
   }
   #our-achievements .content h3 {
@@ -1169,14 +1212,21 @@
     height: 131px !important;
   }
   #popular-tours .item .content .content-header {
-    padding: 13px 15px 0 15px !important;
+    padding: 11px 15px 8px 15px !important;
   }
-  #popular-tours .item .content .content-header h4 {
+  #popular-tours .item .content .content-header .tour-name i {
+    font-size: 14px !important;
+    margin-right: 3px !important;
+  }
+  #popular-tours .item .content .content-header .tour-name h4 {
     font-size: 16px !important;
-    letter-spacing: 0 !important;
   }
-  #popular-tours .item .content .content-header span {
-    font-size: 10px !important;
+  #popular-tours .item .content .content-header .tour-date i {
+    font-size: 11px !important;
+    margin-right: 3px !important;
+  }
+  #popular-tours .item .content .content-header .tour-date span {
+    font-size: 9px !important;
   }
   #popular-tours .item .content .content-links {
     padding: 16px 15px 25px 15px !important;
@@ -1199,6 +1249,9 @@
   #popular-tours .popular-tours-caption p {
     font-size: 12px !important;
   }
+  #our-achievements {
+    padding: 110px 0 100px 0 !important;
+  }
   #our-achievements .achievements-caption {
     padding-bottom: 18px !important;
   }
@@ -1220,7 +1273,7 @@
   #our-achievements .content i::before {
     font-size: 40px !important;
   }
-  #our-achievements .content span {
+  #our-achievements .content h2 {
     font-size: 40px !important;
     padding: 12px 0 !important;
   }

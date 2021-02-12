@@ -71,13 +71,25 @@
       .content {
         height: 138px !important;
         .content-header {
-          padding: 14px 15px 0 15px !important;
-          h4 {
-            font-size: 17px !important;
-            letter-spacing: 0.3px;
+          padding: 14px 15px 8px 15px !important;
+          
+          .tour-name{
+            i{
+              font-size: 14px !important;
+            }
+            h4 {
+              font-size: 17px !important;
+              letter-spacing: 0.3px;
+            }
           }
-          span {
-            font-size: 11px !important;
+          .tour-date{
+            i{
+              font-size: 12px !important;
+              margin-right: 3px !important;
+            }
+            span {
+              font-size: 10px !important;
+            }
           }
         }
         .content-links {
@@ -323,12 +335,24 @@
       .content {
         padding: 0 15px;
         .content-header {
-          padding: 17px 15px 0 15px !important;
-          h4 {
-            font-size: 22px !important;
+          padding: 17px 15px 8px 15px !important;
+          .tour-name{
+            i{
+              font-size: 20px !important;
+              margin-right: 7px !important;
+            }
+            h4 {
+              font-size: 25px !important;
+            }
           }
-          span {
-            font-size: 14px !important;
+          .tour-date{
+            i{
+              font-size: 16px !important;
+              margin-right: 7px !important;
+            }
+            span {
+              font-size: 15px !important;
+            }
           }
         }
         .content-links {
@@ -349,6 +373,7 @@
   }
 
   #our-achievements{
+    padding: 100px 0 100px 0 !important;
     .content{
       height: 320px !important;
       i{
@@ -357,7 +382,7 @@
         }
       }
   
-      span{
+      h2{
         font-size: 50px !important;
       }
   
@@ -630,12 +655,25 @@
         height: 148px !important;
         padding: 0 5px;
         .content-header {
-          padding: 17px 15px 0 15px !important;
-          h4 {
-            font-size: 22px !important;
+          padding: 17px 15px 8px 15px !important;
+          .tour-name{
+            i{
+              font-size: 19px !important;
+              margin-right: 7px !important;
+            }
+            h4 {
+              font-size: 22px !important;
+            }
           }
-          span {
-            font-size: 14px !important;
+          .tour-date{
+            padding-top: 2px;
+            i{
+              font-size: 16px !important;
+              margin-right: 7px !important;
+            }
+            span {
+              font-size: 14px !important;
+            }
           }
         }
         .content-links {
@@ -656,6 +694,7 @@
   }
 
   #our-achievements{
+    padding: 125px 0 100px 0 !important;
     .content{
       height: 370px !important;
       padding-top: 60px !important;
@@ -937,12 +976,24 @@
       }
       .content {
         .content-header {
-          padding: 17px 15px 0 15px !important;
-          h4 {
-            font-size: 22px !important;
+          padding: 20px 15px 8px 15px !important;
+          .tour-name{
+            i{
+              font-size: 17px !important;
+              margin-right: 5px !important;
+            }
+            h4 {
+              font-size: 22px !important;
+            }
           }
-          span {
-            font-size: 14px !important;
+          .tour-date{
+            i{
+              font-size: 13px !important;
+              margin-right: 3px !important;
+            }
+            span {
+              font-size: 14px !important;
+            }
           }
         }
         .content-links {
@@ -972,6 +1023,7 @@
   }
 
   #our-achievements{
+    padding: 125px 0 100px 0 !important;
     .achievements-caption{
       h1{
         font-size: 40px !important;
@@ -996,7 +1048,7 @@
         }
       }
 
-      span{
+      h2{
         font-size: 53px !important;
       }
 
@@ -1287,13 +1339,24 @@
       .content {
         height: 131px !important;
         .content-header {
-          padding: 13px 15px 0 15px !important;
-          h4 {
-            font-size: 16px !important;
-            letter-spacing: 0 !important;
+          padding: 11px 15px 8px 15px !important;
+          .tour-name{
+            i{
+              font-size: 14px !important;
+              margin-right: 3px !important;
+            }
+            h4 {
+              font-size: 16px !important;
+            }
           }
-          span {
-            font-size: 10px !important;
+          .tour-date{
+            i{
+              font-size: 11px !important;
+              margin-right: 3px !important;
+            }
+            span {
+              font-size: 9px !important;
+            }
           }
         }
         .content-links {
@@ -1323,6 +1386,7 @@
   }
 
   #our-achievements{
+    padding: 110px 0 100px 0 !important;
     .achievements-caption{
       padding-bottom: 18px !important;
       h1{
@@ -1348,7 +1412,7 @@
         }
       }
 
-      span{
+      h2{
         font-size: 40px !important;
         padding: 12px 0 !important;
       }

@@ -62,6 +62,11 @@
 
     &:hover{
       border: 2px solid #d7613f;
+      i {
+        &::before {
+          color: #d7613f;
+        }
+      }
     }
   }
 }
@@ -105,7 +110,6 @@
   transition: color 300ms ease-in-out;
   z-index: 1;
 }
-
 
 %price-box{
   background-color: rgba(0, 0, 0, 0.3);

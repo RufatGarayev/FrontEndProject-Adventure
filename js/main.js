@@ -1,39 +1,51 @@
 $(document).ready(function () {
-// ======= Reload-Img Start ======= //
+  // ======= Reload-Img Start ======= //
   $(window).on("load", function () {
     $(".loading").fadeOut("slow");
   });
-// ======= Reload-Img End ======= //
+  // ======= Reload-Img End ======= //
 
 
-// ======= Nav Bg-Color On Scroll Start ======= //
-var color = '#000000';
-var rgbaCol = 'rgba(' + parseInt(color.slice(-6,-4),16)
-    + ',' + parseInt(color.slice(-4,-2),16)
-    + ',' + parseInt(color.slice(-2),16)
-    +',0.5)';
+  // ======= Nav Bg-Color On Scroll Start ======= //
+  var color = "#000000";
+  var rgbaCol =
+    "rgba(" +
+    parseInt(color.slice(-6, -4), 16) +
+    "," +
+    parseInt(color.slice(-4, -2), 16) +
+    "," +
+    parseInt(color.slice(-2), 16) +
+    ",0.5)";
 
-  window.onscroll = function() {
+  window.onscroll = function () {
     if ($(window).scrollTop() >= 750) {
       $("nav").css("background-color", "#252B2D");
     } else {
       $("nav").css("background-color", rgbaCol);
     }
   };
-// ======= Nav Bg-Color On Scroll End ======= //
+  // ======= Nav Bg-Color On Scroll End ======= //
 
 
-// ======= Changing Link To Active OnClick Start ======= //
-  $(document).on("click", ".navbar-items .nav-item", function(){
+  // ======= Changing Link To Active OnClick Start ======= //
+  $(document).on("click", ".navbar-items .nav-item", function () {
     $(this).addClass("active-link").siblings().removeClass("active-link");
     $(".account .nav-item").removeClass("active-link");
   });
 
-  $(document).on("click", ".account .nav-item", function(){
+  $(document).on("click", ".account .nav-item", function () {
     $(this).addClass("active-link").siblings().removeClass("active-link");
     $(".navbar-items .nav-item").removeClass("active-link");
   });
-// ======= Changing Link To Active OnClick End ======= //
+  // ======= Changing Link To Active OnClick End ======= //
+
+
+  // ======= Counter-Up Start ======= //
+  $(".counter-up").counterUp({
+    delay: 10,
+    time: 1000,
+  });
+ // ======= Counter-Up End ======= //
 });
 
 
@@ -47,7 +59,6 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
 // ======= Navbar Hamburger Effect End ======= //
-
 
 
 // ======= Type Writer Effect Start ======= //
@@ -119,9 +130,8 @@ function init() {
 }
 // ======= Type Writer Effect End ======= //
 
-
 // ======= Countdown Start ======= //
-function countdown(){
+function countdown() {
   var now = new Date();
   var eventDate = new Date(2021, 03, 13);
 
@@ -129,9 +139,9 @@ function countdown(){
   var eventTime = eventDate.getTime();
 
   var remTime = eventTime - currentTiime;
-  
-  if(remTime <= 0) {
-    document.getElementById('discount').style.display = 'none';
+
+  if (remTime <= 0) {
+    document.getElementById("discount").style.display = "none";
     return;
   }
 
@@ -144,9 +154,9 @@ function countdown(){
   m %= 60;
   s %= 60;
 
-  h = (h < 10) ? "0" + h : h;
-  m = (m < 10) ? "0" + m : m;
-  s = (s < 10) ? "0" + s : s;
+  h = h < 10 ? "0" + h : h;
+  m = m < 10 ? "0" + m : m;
+  s = s < 10 ? "0" + s : s;
 
   document.querySelector(".days").textContent = d;
   document.querySelector(".days").innerText = d;
