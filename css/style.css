@@ -1357,6 +1357,7 @@ header nav .active-link hr {
 }
 
 #subscribe .subscribe-title {
+  text-align: center;
   padding-bottom: 50px;
 }
 

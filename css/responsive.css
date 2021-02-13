@@ -345,6 +345,9 @@
   #our-achievements .content h3 {
     font-size: 30px !important;
   }
+  #subscribe .form-holder .form-field input {
+    width: 75% !important;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -680,6 +683,9 @@
     padding-top: 20px !important;
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
+  }
+  #subscribe .subscribe-title {
+    padding: 0 50px 50px !important;
   }
 }
 
@@ -1041,6 +1047,23 @@
   }
   #our-achievements .content h3 {
     font-size: 30px !important;
+  }
+  #subscribe .subscribe-title {
+    padding: 0 20px 50px !important;
+  }
+  #subscribe .subscribe-title h1 {
+    font-size: 40px !important;
+  }
+  #subscribe .subscribe-title hr {
+    width: 45px !important;
+  }
+  #subscribe .form-holder .form-field input {
+    padding-left: 20px !important;
+    width: 65% !important;
+  }
+  #subscribe .form-holder .form-field .subs-btn {
+    font-weight: 300 !important;
+    padding: 10px 14px !important;
   }
 }
 
@@ -1424,6 +1447,30 @@
   }
   #our-achievements .content h3 {
     font-size: 20px !important;
+  }
+  #subscribe .subscribe-title {
+    padding: 0 0 30px !important;
+  }
+  #subscribe .subscribe-title h1 {
+    font-size: 28px !important;
+  }
+  #subscribe .subscribe-title hr {
+    width: 42px !important;
+    margin-bottom: 25px !important;
+  }
+  #subscribe .subscribe-title p {
+    font-size: 12px !important;
+  }
+  #subscribe .form-holder .form-field input {
+    padding-left: 15px !important;
+    font-size: 13px;
+    height: 40px !important;
+    width: 65% !important;
+  }
+  #subscribe .form-holder .form-field .subs-btn {
+    font-size: 13px;
+    font-weight: 300 !important;
+    padding: 8px 10px !important;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
