@@ -134,7 +134,6 @@ html {
 }
 // ======= Loader End ======= //
 
-
 // ======= Header Start ======= //
 header {
   overflow: hidden;
@@ -485,20 +484,10 @@ header {
             }
             &:first-child {
               @extend %website-button;
-              background-color: transparent !important;
-              color: rgb(58, 59, 116);
-              padding: 7px 14px !important;
-              font-size: 13px;
-              border-radius: 3px;
+              padding: 9px 16px !important;
+              font-size: 12px;
+              font-weight: 400;
               letter-spacing: 1px;
-              border: 2px solid rgb(58, 59, 116);
-              &::before {
-                content: "";
-                bottom: -3px !important;
-              }
-              &:hover {
-                color: white;
-              }
               @media (min-width: 250px) and (max-width: 315px) {
                 font-size: 11px !important;
                 letter-spacing: 0;
@@ -548,34 +537,31 @@ header {
   padding: 80px 0;
   .view-tours-text {
     justify-content: flex-end;
-    padding-right: 7px;
     i {
       &::before {
-        font-size: 45px;
+        font-size: 48px;
         color: #db7355;
-        margin: 0 10px 0 0;
+        margin: 0 15px 0 0;
       }
     }
     h4 {
       color: rgb(37, 43, 45);
       margin: 0;
-      font-size: 25px;
+      font-size: 27px;
     }
   }
 
   .view-tours-btn {
-    padding-top: 19px;
+    padding-top: 24px;
     text-align: left;
     a {
       @extend %website-button;
-      color: #3a3b74;
-      border: 2px solid #3a3b74;
       font-size: 16px;
       padding: 10px 30px;
     }
   }
 
-  @media (min-width: 375px) and (max-width: 430px){
+  @media (min-width: 375px) and (max-width: 430px) {
     .view-tours-text {
       padding-right: 0 !important;
       i {
@@ -589,7 +575,7 @@ header {
     }
   }
 
-  @media (min-width: 250px) and (max-width: 299.98px){
+  @media (min-width: 250px) and (max-width: 299.98px) {
     .view-tours-text {
       padding-right: 0 !important;
       i {
@@ -778,15 +764,8 @@ header {
       @extend %website-button;
       font-size: 16px;
       padding: 10px 30px;
-      &::before {
-        background: white;
-      }
-      &:hover {
-        color: rgb(37, 43, 45);
-        &::before {
-          background: white;
-        }
-      }
+      // color: #3A3B74;
+      // background-color: white;
       @media (min-width: 250px) and (max-width: 315px) {
         font-size: 12px !important;
         letter-spacing: 0;
@@ -914,16 +893,9 @@ header {
           }
           &:first-of-type {
             @extend %website-button;
-            background-color: transparent;
-            color: rgb(58, 59, 116);
+            padding: 9px 18px !important;
             font-size: 13px;
-            border: 2px solid rgb(58, 59, 116);
-            padding: 7px 17px;
-            transition: 0.5s all;
-            &::before {
-              content: "";
-              bottom: -2px !important;
-            }
+            font-weight: 500;
           }
         }
       }
@@ -1050,15 +1022,15 @@ header {
         }
       }
 
-      h3{
+      h3 {
         padding-top: 12px;
         font-size: 32px;
         font-family: $item-caption-font-family;
       }
     }
 
-    .content-text{
-      p{
+    .content-text {
+      p {
         padding-left: 55px;
         font-size: $paragraph-size;
         font-weight: $paragraph-weight;
@@ -1138,3 +1110,76 @@ header {
   }
 }
 // ======= Achievements Section End ======= //
+
+// ======= Subscribe Section Start ======= //
+#subscribe {
+  padding: 100px 0 120px;
+  background: url(../img/bg-images/forest.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(13, 47, 93, 0.6);
+  }
+
+  .subscribe-title {
+    padding-bottom: 50px;
+    h1 {
+      font-size: $section-caption-size;
+      font-family: $section-caption-font-family;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: white;
+    }
+    hr {
+      width: 60px;
+      height: 0.7px;
+      margin: 8px 0 30px;
+      background-color: white;
+    }
+
+    p {
+      color: white;
+    }
+  }
+
+  .form-holder {
+    .form-field {
+      display: flex;
+      justify-content: center;
+      input {
+        width: 60%;
+        height: 50px;
+        border: 0;
+        padding-left: 33px;
+        border-radius: 5px 0 0 5px;
+        &:focus {
+          border-color: #ff6363;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+            0 0 8px rgba(3, 169, 244, 0.5);
+          outline: 0 none;
+        }
+      }
+
+      .subs-btn {
+        @extend %website-button;
+        text-transform: none;
+        border: 0;
+        outline: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        &::before {
+          border-radius: 0 5px 5px 0 !important;
+        }
+      }
+    }
+  }
+}
+// ======= Subscribe Section End ======= //
