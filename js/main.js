@@ -19,7 +19,7 @@ $(document).ready(function () {
 
   window.onscroll = function () {
     if ($(window).scrollTop() >= 750) {
-      $("nav").css("background-color", "#252B2D");
+      $("nav").css("background-color", "#1B1B1B");
     } else {
       $("nav").css("background-color", rgbaCol);
     }

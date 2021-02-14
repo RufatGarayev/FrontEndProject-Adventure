@@ -1,7 +1,8 @@
 %nav-links {
   color: white !important;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 15px;
+  letter-spacing: 1px;
   &:hover {
     text-decoration: none;
   }
@@ -138,5 +139,26 @@
     span {
       font-size: 11px;
     }
+  }
+}
+
+
+%footer-captions{
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 10px;
+}
+
+%footer-links{
+  color: white;
+  font-weight: 200;
+  font-size: 15px;
+  transition: 0.3s linear;
+  &:hover {
+    text-decoration: none;
+    color: rgb(144, 187, 157);
   }
 }
