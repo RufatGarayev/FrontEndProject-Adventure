@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 12/02/2021 21:26
+  	Creation date: 15/02/2021 10:40
   	*/
 
 @font-face {
@@ -41,3 +41,8 @@ margin-left: 20px;
 .flaticon-right-arrow-angle:before { content: "\f108"; }
 .flaticon-compass:before { content: "\f109"; }
 .flaticon-national-park:before { content: "\f10a"; }
+.flaticon-add-to-basket:before { content: "\f10b"; }
+.flaticon-shopping-bag:before { content: "\f10c"; }
+.flaticon-loupe:before { content: "\f10d"; }
+.flaticon-user:before { content: "\f10e"; }
+.flaticon-user-1:before { content: "\f10f"; }

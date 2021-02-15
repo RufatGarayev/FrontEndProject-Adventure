@@ -229,6 +229,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.stop-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .loading {
   position: fixed;
   top: 0;
@@ -362,8 +367,8 @@ html {
 }
 
 #top-header {
-  background-color: black;
-  padding: 0 70px;
+  background-color: #1b1b1b;
+  padding: 0 93px;
   height: 34px;
 }
 
@@ -414,7 +419,7 @@ header nav {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
-  padding: 11px 70px !important;
+  padding: 9px 70px !important;
   z-index: 7;
 }
 
@@ -440,7 +445,59 @@ header nav .navbar-items {
 }
 
 header nav .account {
-  width: 130px;
+  width: 165px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .account li {
+  height: 20px;
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav .account li a {
+  padding: 0;
+}
+
+header nav .account li a i {
+  position: relative;
+}
+
+header nav .account li a i sup {
+  font-style: normal;
+  position: absolute;
+  top: 3px;
+  right: -9px;
+}
+
+header nav .account li a i::before {
+  font-size: 17px;
+  margin-left: 0;
+}
+
+header nav .account li a:hover {
+  color: #f5c05f !important;
+}
+
+header nav .account .user {
+  border-left: 1px solid #b8b6b6;
+  border-right: 1px solid #b8b6b6;
+}
+
+@media (min-width: 280px) and (max-width: 374.98px) {
+  header nav .account {
+    right: 60px !important;
+  }
 }
 
 header nav .hamburger {
@@ -449,8 +506,6 @@ header nav .hamburger {
 
 header nav .active-link hr {
   width: 100% !important;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
 }
 
 #intro {

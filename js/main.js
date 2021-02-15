@@ -66,6 +66,7 @@ let navbar = document.querySelector(".navbar-items");
 menuIcon.addEventListener("click", () => {
   menuIcon.classList.toggle("change");
   navbar.classList.toggle("active");
+  document.body.classList.toggle("stop-scroll");
 });
 // ======= Navbar Hamburger Effect End ======= //
 

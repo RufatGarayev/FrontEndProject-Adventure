@@ -21,6 +21,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.stop-scroll{
+  height: 100vh;
+  overflow: hidden;
+}
+
+
 // ======= Loader Start ======= //
 .loading {
   position: fixed;
@@ -134,16 +140,15 @@ html {
 }
 // ======= Loader End ======= //
 
-
 // ======= Top Header Start ======= //
 #top-header {
-  background-color: black;
-  padding: 0 70px;
+  background-color: rgb(27, 27, 27);
+  padding: 0 93px;
   height: 34px;
   .phone {
     padding-top: 5px;
     span {
-      i{
+      i {
         margin-right: 7px;
       }
       font-size: 13px;
@@ -153,16 +158,16 @@ html {
     ul {
       justify-content: flex-end;
       padding-top: 7px;
-      li{
+      li {
         font-size: 14px;
-        a{
+        a {
           color: white;
-          &:hover{
-            color: rgb(245,192,95);
+          &:hover {
+            color: rgb(245, 192, 95);
             text-decoration: none;
           }
         }
-        &:first-of-type{
+        &:first-of-type {
           margin-right: 11px;
         }
       }
@@ -181,7 +186,7 @@ header {
   nav {
     background-color: rgba(0, 0, 0, 0.3);
     transition: 0.3s linear;
-    padding: 11px 70px !important;
+    padding: 9px 70px !important;
     z-index: 7;
     img {
       width: 90px;
@@ -192,7 +197,6 @@ header {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-     
 
       .links {
         @extend %nav-link-properties;
@@ -200,8 +204,43 @@ header {
     }
 
     .account {
-      width: 130px;
+      width: 165px;
       @extend %nav-link-properties;
+      align-items: center;
+      li {
+        height: 20px;
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          padding: 0;
+          i {
+            position: relative;
+            sup {
+              font-style: normal;
+              position: absolute;
+              top: 3px;
+              right: -9px;
+            }
+            &::before {
+              font-size: 17px;
+              margin-left: 0;
+            }
+          }
+          &:hover {
+            color: rgb(245, 192, 95) !important;
+          }
+        }
+      }
+      .user {
+        border-left: 1px solid rgb(184, 182, 182);
+        border-right: 1px solid rgb(184, 182, 182);
+      }
+
+      @media (min-width: 280px) and (max-width: 374.98px) {
+        right: 60px !important;
+      }
     }
 
     .hamburger {
@@ -211,7 +250,6 @@ header {
     .active-link {
       hr {
         width: 100% !important;
-        transition: 0.2s linear;
       }
     }
   }

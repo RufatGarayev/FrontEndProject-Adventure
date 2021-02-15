@@ -93,15 +93,15 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   #top-header {
-    padding: 0 28px !important;
+    padding: 0 43px !important;
   }
   header .navbar {
-    height: 92px;
+    height: 88px;
   }
   header .navbar img {
-    width: 110px !important;
+    width: 100px !important;
     position: absolute;
-    top: 15px !important;
+    top: 16px !important;
     left: 40px;
     z-index: 99;
   }
@@ -144,24 +144,32 @@
     right: 0 !important;
   }
   header .navbar .account {
-    width: 150px !important;
+    width: 180px !important;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     position: absolute;
-    top: 24px;
+    top: 30px;
     right: 120px;
   }
-  header .navbar .account li a {
-    font-size: 22px;
+  header .navbar .account li {
+    height: 24px;
+  }
+  header .navbar .account li a i::before {
+    font-size: 20px !important;
+  }
+  header .navbar .account li a i sup {
+    top: 0px;
+    right: -12px;
+    font-size: 14px;
   }
   header .navbar .hamburger {
     display: inline-block !important;
     width: 35px;
     height: 30px;
     position: absolute;
-    top: 32px;
+    top: 28px;
     right: 44px;
     cursor: pointer;
     display: -webkit-box !important;
@@ -385,7 +393,7 @@
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #top-header {
-    padding: 0 28px !important;
+    padding: 0 43px !important;
   }
   header .navbar {
     height: 75px;
@@ -439,17 +447,25 @@
     right: 0 !important;
   }
   header .navbar .account {
-    width: 120px !important;
+    width: 180px !important;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     position: absolute;
-    top: 18px;
+    top: 24px;
     right: 120px;
   }
-  header .navbar .account li a {
-    font-size: 16px;
+  header .navbar .account li {
+    height: 24px;
+  }
+  header .navbar .account li a i::before {
+    font-size: 20px !important;
+  }
+  header .navbar .account li a i sup {
+    top: 0px;
+    right: -12px;
+    font-size: 14px;
   }
   header .navbar .hamburger {
     display: inline-block !important;
@@ -765,7 +781,16 @@
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #top-header {
-    padding: 0 7px !important;
+    padding: 0 20px !important;
+  }
+  #top-header .phone {
+    padding-top: 5px;
+  }
+  #top-header .phone span {
+    font-size: 12px !important;
+  }
+  #top-header .langs ul li {
+    font-size: 13px !important;
   }
   header .navbar {
     height: 65px;
@@ -819,18 +844,25 @@
     right: 0 !important;
   }
   header .navbar .account {
-    width: 102px !important;
+    width: 180px !important;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     position: absolute;
-    top: 16px;
+    top: 20px;
     right: 76px;
   }
-  header .navbar .account li a {
-    font-size: 16px;
-    letter-spacing: 0 !important;
+  header .navbar .account li {
+    height: 24px;
+  }
+  header .navbar .account li a i::before {
+    font-size: 18px !important;
+  }
+  header .navbar .account li a i sup {
+    top: 0px;
+    right: -12px;
+    font-size: 14px;
   }
   header .navbar .hamburger {
     display: inline-block !important;
@@ -1186,7 +1218,21 @@
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #top-header {
-    padding: 0 2px !important;
+    height: 34px !important;
+    padding: 0 11px !important;
+  }
+  #top-header .phone {
+    padding-top: 5px;
+  }
+  #top-header .phone span {
+    font-size: 9px !important;
+  }
+  #top-header .langs ul {
+    padding-top: 10px !important;
+  }
+  #top-header .langs ul li {
+    font-size: 10px !important;
+    margin-right: 7px !important;
   }
   header .navbar {
     height: 53px;
@@ -1240,18 +1286,25 @@
     right: 0 !important;
   }
   header .navbar .account {
-    width: 85px !important;
+    width: 124px !important;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     position: absolute;
-    top: 14px;
-    right: 64px;
+    top: 18px;
+    right: 50px;
   }
-  header .navbar .account li a {
-    font-size: 13px;
-    letter-spacing: 0 !important;
+  header .navbar .account li {
+    height: 18px;
+  }
+  header .navbar .account li a i::before {
+    font-size: 13px !important;
+  }
+  header .navbar .account li a i sup {
+    top: 4px;
+    right: -7px;
+    font-size: 9px;
   }
   header .navbar .hamburger {
     display: inline-block !important;
@@ -1297,17 +1350,17 @@
   }
   #intro .banner-area {
     width: 96% !important;
-    top: 30% !important;
+    top: 32% !important;
     left: 3% !important;
   }
   #intro .banner-area .caption {
     width: 100% !important;
   }
   #intro .banner-area .caption h3 {
-    font-size: 38px !important;
+    font-size: 35px !important;
   }
   #intro .banner-area .caption h1 {
-    font-size: 20px !important;
+    font-size: 18px !important;
     letter-spacing: 2px !important;
     padding: 30px 0 50px 0 !important;
   }

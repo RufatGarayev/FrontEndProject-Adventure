@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 12/02/2021 21:26
+    Creation date: 15/02/2021 10:40
     */
 
     @font-face {
@@ -48,6 +48,11 @@
 .flaticon-right-arrow-angle:before { content: "\f108"; }
 .flaticon-compass:before { content: "\f109"; }
 .flaticon-national-park:before { content: "\f10a"; }
+.flaticon-add-to-basket:before { content: "\f10b"; }
+.flaticon-shopping-bag:before { content: "\f10c"; }
+.flaticon-loupe:before { content: "\f10d"; }
+.flaticon-user:before { content: "\f10e"; }
+.flaticon-user-1:before { content: "\f10f"; }
     
     $font-Flaticon-hotel: "\f100";
     $font-Flaticon-public-transport: "\f101";
@@ -60,3 +65,8 @@
     $font-Flaticon-right-arrow-angle: "\f108";
     $font-Flaticon-compass: "\f109";
     $font-Flaticon-national-park: "\f10a";
+    $font-Flaticon-add-to-basket: "\f10b";
+    $font-Flaticon-shopping-bag: "\f10c";
+    $font-Flaticon-loupe: "\f10d";
+    $font-Flaticon-user: "\f10e";
+    $font-Flaticon-user-1: "\f10f";
