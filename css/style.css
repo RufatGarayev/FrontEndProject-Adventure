@@ -78,7 +78,7 @@ header nav .navbar-items .links li, header nav .account li {
   border-radius: 3px;
   color: white;
   text-align: center;
-  background-color: #769484;
+  background-color: #3a3b74;
   position: relative;
   text-transform: uppercase;
   -webkit-transition: color 300ms ease-in-out;
@@ -95,7 +95,7 @@ header nav .navbar-items .links li, header nav .account li {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background-color: #3A3B74;
+  background-color: #769484;
   -webkit-transition: -webkit-transform 300ms ease-in-out;
   transition: -webkit-transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out;
@@ -114,6 +114,41 @@ header nav .navbar-items .links li, header nav .account li {
 #intro .banner-area .caption .button:hover::before, #special-offers .owl-carousel .item .info .slide-links a:first-child:hover::before, #view-tours .view-tours-btn a:hover::before, #discount .discount_btn a:hover::before, #popular-tours .owl-carousel .item .content .content-links a:first-of-type:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+#our-advantages .caption h1, #special-offers .special-offers-caption h1, #popular-tours .popular-tours-caption h1, #coming-soon .coming-soon-caption h1, #our-achievements .achievements-caption h1, #subscribe .subscribe-title h1 {
+  font-size: 46px;
+  font-family: ludicrous;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #3a3b74;
+}
+
+#our-advantages .caption hr, #special-offers .special-offers-caption hr, #popular-tours .popular-tours-caption hr, #coming-soon .coming-soon-caption hr, #our-achievements .achievements-caption hr, #subscribe .subscribe-title hr {
+  margin: 8px 0;
+  height: 0.7px;
+  width: 60px;
+  background-color: #3a3b74;
+}
+
+#special-offers .special-offers-caption p, #popular-tours .popular-tours-caption p, #coming-soon .coming-soon-caption p, #subscribe .subscribe-title p {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#special-offers .owl-carousel .owl-dots, #popular-tours .owl-carousel .owl-dots {
+  margin-top: 30px;
+}
+
+#special-offers .owl-carousel .owl-dots .owl-dot, #popular-tours .owl-carousel .owl-dots .owl-dot {
+  outline: none !important;
+}
+
+#special-offers .owl-carousel .owl-dots .owl-dot span, #popular-tours .owl-carousel .owl-dots .owl-dot span {
+  border-radius: 2px !important;
+  height: 2px;
+  width: 30px;
 }
 
 #special-offers .owl-carousel .item .price-info, #popular-tours .owl-carousel .item .price-info {
@@ -169,7 +204,7 @@ footer .footer-top a {
 
 footer .footer-top a:hover {
   text-decoration: none;
-  color: #90bb9d;
+  color: #f5c05f;
 }
 
 * {
@@ -326,6 +361,48 @@ html {
   }
 }
 
+#top-header {
+  background-color: black;
+  padding: 0 70px;
+  height: 34px;
+}
+
+#top-header .phone {
+  padding-top: 5px;
+}
+
+#top-header .phone span {
+  font-size: 13px;
+}
+
+#top-header .phone span i {
+  margin-right: 7px;
+}
+
+#top-header .langs ul {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 7px;
+}
+
+#top-header .langs ul li {
+  font-size: 14px;
+}
+
+#top-header .langs ul li a {
+  color: white;
+}
+
+#top-header .langs ul li a:hover {
+  color: #f5c05f;
+  text-decoration: none;
+}
+
+#top-header .langs ul li:first-of-type {
+  margin-right: 11px;
+}
+
 header {
   overflow: hidden;
   position: fixed;
@@ -362,12 +439,12 @@ header nav .navbar-items {
           align-items: center;
 }
 
-header nav .navbar-items .hamburger {
-  display: none;
+header nav .account {
+  width: 130px;
 }
 
-header nav .account {
-  width: 120px;
+header nav .hamburger {
+  display: none;
 }
 
 header nav .active-link hr {
@@ -476,22 +553,7 @@ header nav .active-link hr {
 
 #our-advantages .caption h1 {
   text-align: center;
-  padding: 30px 0 10px 0 !important;
-  font-weight: 700;
-  font-size: 46px;
-  font-family: ludicrous;
-  font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #3a3b74;
-}
-
-#our-advantages .caption hr {
-  margin: 0;
-  height: 1px;
-  width: 60px;
-  border-radius: 2px;
-  background-color: #3a3b74;
+  padding: 30px 0 0 !important;
 }
 
 #our-advantages .holder {
@@ -566,41 +628,20 @@ header nav .active-link hr {
   left: 0;
 }
 
-#special-offers .specials {
+#special-offers .special-offers-caption {
   padding-bottom: 30px;
+}
+
+#special-offers .special-offers-caption h1 {
   color: white;
 }
 
-#special-offers .specials h1 {
-  font-size: 46px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-family: ludicrous;
-  text-transform: uppercase;
-}
-
-#special-offers .specials hr {
-  width: 60px;
-  height: 0.7px;
-  border-radius: 2px;
-  margin: 8px 0;
+#special-offers .special-offers-caption hr {
   background-color: white;
 }
 
-#special-offers .specials p {
-  padding-top: 20px;
-  font-size: 16px;
-  font-weight: 300 !important;
-}
-
-#special-offers .owl-carousel .owl-dots {
-  margin-top: 30px;
-}
-
-#special-offers .owl-carousel .owl-dots button span {
-  border-radius: 1px !important;
-  height: 2px;
-  width: 25px;
+#special-offers .special-offers-caption p {
+  color: white;
 }
 
 #special-offers .owl-carousel .item {
@@ -789,13 +830,14 @@ header nav .active-link hr {
 }
 
 #view-tours .view-tours-btn {
-  padding-top: 24px;
+  padding-top: 15px;
   text-align: left;
 }
 
 #view-tours .view-tours-btn a {
   font-size: 16px;
   padding: 10px 30px;
+  display: inline-block;
 }
 
 @media (min-width: 375px) and (max-width: 430px) {
@@ -840,7 +882,7 @@ header nav .active-link hr {
   right: 0;
   bottom: 0;
   top: 0;
-  background: rgba(48, 59, 54, 0.7);
+  background: rgba(48, 59, 54, 0.5);
 }
 
 #discount .discount_title h2 {
@@ -993,12 +1035,13 @@ header nav .active-link hr {
 }
 
 #discount .discount_btn {
-  padding-top: 122px;
+  padding-top: 112px;
   text-align: right;
 }
 
 #discount .discount_btn a {
   font-size: 16px;
+  display: inline-block;
   padding: 10px 30px;
 }
 
@@ -1011,42 +1054,13 @@ header nav .active-link hr {
 
 #popular-tours {
   overflow-x: hidden;
-  background-color: #f8f8f8;
+  background-color: #f7eeee;
   padding: 100px 60px 120px 60px;
 }
 
 #popular-tours .popular-tours-caption {
   padding-bottom: 10px;
   text-align: center;
-}
-
-#popular-tours .popular-tours-caption h1 {
-  font-size: 46px;
-  font-family: ludicrous;
-  letter-spacing: 1px;
-  color: #3a3b74;
-  text-transform: uppercase;
-}
-
-#popular-tours .popular-tours-caption hr {
-  width: 60px;
-  height: 0.7px;
-  margin: 8px 0;
-  background-color: #3a3b74;
-}
-
-#popular-tours .popular-tours-caption p {
-  padding-top: 22px;
-}
-
-#popular-tours .owl-carousel .owl-dots {
-  margin-top: 30px;
-}
-
-#popular-tours .owl-carousel .owl-dots button span {
-  border-radius: 1px !important;
-  height: 2px;
-  width: 25px;
 }
 
 #popular-tours .owl-carousel .item {
@@ -1284,25 +1298,6 @@ header nav .active-link hr {
   text-align: center;
 }
 
-#coming-soon .coming-soon-caption h1 {
-  font-size: 46px;
-  font-family: ludicrous;
-  letter-spacing: 1px;
-  color: #3a3b74;
-  text-transform: uppercase;
-}
-
-#coming-soon .coming-soon-caption hr {
-  width: 60px;
-  height: 0.7px;
-  margin: 8px 0;
-  background-color: #3a3b74;
-}
-
-#coming-soon .coming-soon-caption p {
-  padding-top: 22px;
-}
-
 #coming-soon .content {
   height: 450px;
   background-color: #3a3b74;
@@ -1335,6 +1330,18 @@ header nav .active-link hr {
   font-weight: 300;
 }
 
+#coming-soon .third .content {
+  background-color: white;
+}
+
+#coming-soon .third .content .content-name h3 {
+  color: #3a3b74;
+}
+
+#coming-soon .third .content .content-text p {
+  color: black;
+}
+
 #coming-soon .img-box {
   background-position: center center;
   background-repeat: no-repeat;
@@ -1358,21 +1365,6 @@ header nav .active-link hr {
 #our-achievements .achievements-caption {
   width: 100%;
   text-align: center;
-}
-
-#our-achievements .achievements-caption h1 {
-  font-size: 46px;
-  font-family: ludicrous;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #3a3b74;
-}
-
-#our-achievements .achievements-caption hr {
-  width: 60px;
-  height: 0.7px;
-  margin: 8px 0;
-  background-color: #3a3b74;
 }
 
 #our-achievements .content {
@@ -1424,7 +1416,7 @@ header nav .active-link hr {
   right: 0;
   bottom: 0;
   top: 0;
-  background: rgba(13, 47, 93, 0.6);
+  background: rgba(48, 59, 54, 0.7);
 }
 
 #subscribe .subscribe-title {
@@ -1433,17 +1425,10 @@ header nav .active-link hr {
 }
 
 #subscribe .subscribe-title h1 {
-  font-size: 46px;
-  font-family: ludicrous;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   color: white;
 }
 
 #subscribe .subscribe-title hr {
-  width: 60px;
-  height: 0.7px;
-  margin: 8px 0 30px;
   background-color: white;
 }
 

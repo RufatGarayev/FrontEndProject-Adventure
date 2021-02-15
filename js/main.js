@@ -6,7 +6,8 @@ $(document).ready(function () {
   // ======= Reload-Img End ======= //
 
 
-  // ======= Nav Bg-Color On Scroll Start ======= //
+  // ======= Events On Scroll Start ======= //
+  // === Nav Bg-Color Start === //
   var color = "#000000";
   var rgbaCol =
     "rgba(" +
@@ -23,6 +24,15 @@ $(document).ready(function () {
     } else {
       $("nav").css("background-color", rgbaCol);
     }
+    // === Nav Bg-Color End === //
+
+    // === Header Position Start === //
+    if ($(window).scrollTop() >= 34) {
+      $("header").css("top", "0px");
+    } else {
+      $("header").css("top", "33px");
+    }
+    // === Header Position End === //
   };
   // ======= Nav Bg-Color On Scroll End ======= //
 
@@ -45,9 +55,8 @@ $(document).ready(function () {
     delay: 10,
     time: 1000,
   });
- // ======= Counter-Up End ======= //
+  // ======= Counter-Up End ======= //
 });
-
 
 
 // ======= Navbar Hamburger Effect Start ======= //
@@ -129,6 +138,7 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 // ======= Type Writer Effect End ======= //
+
 
 // ======= Countdown Start ======= //
 function countdown() {

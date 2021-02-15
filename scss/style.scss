@@ -134,6 +134,43 @@ html {
 }
 // ======= Loader End ======= //
 
+
+// ======= Top Header Start ======= //
+#top-header {
+  background-color: black;
+  padding: 0 70px;
+  height: 34px;
+  .phone {
+    padding-top: 5px;
+    span {
+      i{
+        margin-right: 7px;
+      }
+      font-size: 13px;
+    }
+  }
+  .langs {
+    ul {
+      justify-content: flex-end;
+      padding-top: 7px;
+      li{
+        font-size: 14px;
+        a{
+          color: white;
+          &:hover{
+            color: rgb(245,192,95);
+            text-decoration: none;
+          }
+        }
+        &:first-of-type{
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+}
+// ======= Top Header End ======= //
+
 // ======= Header Start ======= //
 header {
   overflow: hidden;
@@ -155,9 +192,7 @@ header {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      .hamburger {
-        display: none;
-      }
+     
 
       .links {
         @extend %nav-link-properties;
@@ -165,8 +200,12 @@ header {
     }
 
     .account {
-      width: 120px;
+      width: 130px;
       @extend %nav-link-properties;
+    }
+
+    .hamburger {
+      display: none;
     }
 
     .active-link {
@@ -256,22 +295,12 @@ header {
   .caption {
     height: 115px;
     h1 {
+      @extend %section-caption;
       text-align: center;
-      padding: 30px 0 10px 0 !important;
-      font-weight: 700;
-      font-size: $section-caption-size;
-      font-family: $section-caption-font-family;
-      font-weight: 100;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: rgb(58, 59, 116);
+      padding: 30px 0 0 !important;
     }
     hr {
-      margin: 0;
-      height: 1px;
-      width: 60px;
-      border-radius: 2px;
-      background-color: rgb(58, 59, 116);
+      @extend %section-caption-bottom-line;
     }
   }
 
@@ -285,9 +314,9 @@ header {
     }
     .icon-holder {
       i {
-        color: #db7355;
+        color: $icon-color;
         &::before {
-          font-size: 60px;
+          font-size: $big-icon-size;
           margin-left: 0;
         }
       }
@@ -345,39 +374,24 @@ header {
     left: 0;
   }
 
-  .specials {
+  .special-offers-caption {
     padding-bottom: 30px;
-    color: white;
     h1 {
-      font-size: $section-caption-size;
-      font-weight: 700;
-      letter-spacing: 1px;
-      font-family: $section-caption-font-family;
-      text-transform: uppercase;
+      @extend %section-caption;
+      color: white;
     }
     hr {
-      width: 60px;
-      height: 0.7px;
-      border-radius: 2px;
-      margin: 8px 0;
+      @extend %section-caption-bottom-line;
       background-color: white;
     }
     p {
-      padding-top: 20px;
-      font-size: $paragraph-size;
-      font-weight: $paragraph-weight !important;
+      @extend %paragraph;
+      color: white;
     }
   }
   .owl-carousel {
     .owl-dots {
-      margin-top: 30px;
-      button {
-        span {
-          border-radius: 1px !important;
-          height: 2px;
-          width: 25px;
-        }
-      }
+      @extend %owl-dots;
     }
 
     .item {
@@ -543,7 +557,7 @@ header {
     i {
       &::before {
         font-size: 48px;
-        color: #db7355;
+        color: $icon-color;
         margin: 0 15px 0 0;
       }
     }
@@ -555,12 +569,13 @@ header {
   }
 
   .view-tours-btn {
-    padding-top: 24px;
+    padding-top: 15px;
     text-align: left;
     a {
       @extend %website-button;
       font-size: 16px;
       padding: 10px 30px;
+      display: inline-block;
     }
   }
 
@@ -611,7 +626,7 @@ header {
     right: 0;
     bottom: 0;
     top: 0;
-    background: rgba(48, 59, 54, 0.7);
+    background: rgba(48, 59, 54, 0.5);
   }
 
   .discount_title {
@@ -761,14 +776,13 @@ header {
   }
 
   .discount_btn {
-    padding-top: 122px;
+    padding-top: 112px;
     text-align: right;
     a {
       @extend %website-button;
       font-size: 16px;
+      display: inline-block;
       padding: 10px 30px;
-      // color: #3A3B74;
-      // background-color: white;
       @media (min-width: 250px) and (max-width: 315px) {
         font-size: 12px !important;
         letter-spacing: 0;
@@ -781,39 +795,25 @@ header {
 // ======= Popular Tours Section Start ======= //
 #popular-tours {
   overflow-x: hidden;
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(247, 238, 238);
   padding: 100px 60px 120px 60px;
   .popular-tours-caption {
     padding-bottom: 10px;
     text-align: center;
     h1 {
-      font-size: $section-caption-size;
-      font-family: $section-caption-font-family;
-      letter-spacing: 1px;
-      color: rgb(58, 59, 116);
-      text-transform: uppercase;
+      @extend %section-caption;
     }
     hr {
-      width: 60px;
-      height: 0.7px;
-      margin: 8px 0;
-      background-color: rgb(58, 59, 116);
+      @extend %section-caption-bottom-line;
     }
     p {
-      padding-top: 22px;
+      @extend %paragraph;
     }
   }
 
   .owl-carousel {
     .owl-dots {
-      margin-top: 30px;
-      button {
-        span {
-          border-radius: 1px !important;
-          height: 2px;
-          width: 25px;
-        }
-      }
+      @extend %owl-dots;
     }
 
     .item {
@@ -821,7 +821,6 @@ header {
       overflow: hidden;
       position: relative;
       margin-top: 50px;
-      // box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
       &:hover {
         img {
           transform: scale(1.1);
@@ -923,13 +922,13 @@ header {
     .owl-carousel {
       .item {
         height: 500px !important;
-        .img-box{
+        .img-box {
           height: 437px !important;
         }
         .content {
           .content-header {
-            .tour-name{
-              i{
+            .tour-name {
+              i {
                 font-size: 19px !important;
                 margin-right: 7px !important;
               }
@@ -937,8 +936,8 @@ header {
                 font-size: 24px !important;
               }
             }
-            .tour-date{
-              i{
+            .tour-date {
+              i {
                 font-size: 15px !important;
                 margin-right: 7px !important;
               }
@@ -961,7 +960,7 @@ header {
     padding: 115px 30px 130px 30px !important;
     .item {
       height: 470px !important;
-      .img-box{
+      .img-box {
         height: 410px !important;
       }
       .content {
@@ -1050,20 +1049,13 @@ header {
     padding-bottom: 50px;
     text-align: center;
     h1 {
-      font-size: $section-caption-size;
-      font-family: $section-caption-font-family;
-      letter-spacing: 1px;
-      color: rgb(58, 59, 116);
-      text-transform: uppercase;
+      @extend %section-caption;
     }
     hr {
-      width: 60px;
-      height: 0.7px;
-      margin: 8px 0;
-      background-color: rgb(58, 59, 116);
+      @extend %section-caption-bottom-line;
     }
     p {
-      padding-top: 22px;
+      @extend %paragraph;
     }
   }
 
@@ -1101,6 +1093,20 @@ header {
     }
   }
 
+  .third .content {
+    background-color: white;
+    .content-name {
+      h3 {
+        color: rgb(58, 59, 116);
+      }
+    }
+    .content-text {
+      p {
+        color: black;
+      }
+    }
+  }
+
   .img-box {
     background-position: center center;
     background-repeat: no-repeat;
@@ -1127,17 +1133,10 @@ header {
     width: 100%;
     text-align: center;
     h1 {
-      font-size: $section-caption-size;
-      font-family: $section-caption-font-family;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: rgb(58, 59, 116);
+      @extend %section-caption;
     }
     hr {
-      width: 60px;
-      height: 0.7px;
-      margin: 8px 0;
-      background-color: rgb(58, 59, 116);
+      @extend %section-caption-bottom-line;
     }
   }
 
@@ -1152,8 +1151,8 @@ header {
     i {
       &::before {
         margin: 0;
-        font-size: 60px;
-        color: #db7355;
+        font-size: $big-icon-size;
+        color: $icon-color;
       }
     }
 
@@ -1189,27 +1188,24 @@ header {
     right: 0;
     bottom: 0;
     top: 0;
-    background: rgba(13, 47, 93, 0.6);
+    // background: rgba(13, 47, 93, 0.6);
+    background: rgba(48, 59, 54, 0.7);
   }
 
   .subscribe-title {
     text-align: center;
     padding-bottom: 50px;
     h1 {
-      font-size: $section-caption-size;
-      font-family: $section-caption-font-family;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+      @extend %section-caption;
       color: white;
     }
     hr {
-      width: 60px;
-      height: 0.7px;
-      margin: 8px 0 30px;
+      @extend %section-caption-bottom-line;
       background-color: white;
     }
 
     p {
+      @extend %paragraph;
       color: white;
     }
   }
@@ -1247,7 +1243,6 @@ header {
   }
 }
 // ======= Subscribe Section End ======= //
-
 
 // ======= Footer Start ======= //
 footer {
