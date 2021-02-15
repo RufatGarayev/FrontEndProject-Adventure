@@ -339,9 +339,6 @@
   #popular-tours .item .content .content-links {
     padding: 16px 15px 25px 15px !important;
   }
-  #popular-tours .item .content .content-links a {
-    font-size: 13px !important;
-  }
   #popular-tours .item .content .content-links a:first-child {
     font-size: 15px !important;
   }
@@ -543,13 +540,19 @@
     width: 40px !important;
   }
   #special-offers {
-    padding: 100px 20px 120px !important;
+    padding: 100px 20px 110px !important;
   }
-  #special-offers .tour-name i {
+  #special-offers .owl-carousel .owl-dots {
+    margin-top: 15px !important;
+  }
+  #special-offers .owl-carousel .owl-dots .owl-dot span {
+    width: 23px !important;
+  }
+  #special-offers .owl-carousel .item .info .tour-name i {
     font-size: 14px !important;
     margin: 4px 7px 0 0 !important;
   }
-  #special-offers .slide-links a {
+  #special-offers .owl-carousel .item .info .slide-links a {
     font-size: 10px !important;
   }
   #view-tours {
@@ -590,6 +593,12 @@
   #discount .discount_title h1 {
     font-size: 40px !important;
     margin-bottom: 15px;
+  }
+  #discount .discount_title .price .norm-price {
+    font-size: 30px !important;
+  }
+  #discount .discount_title .price .discount-price {
+    font-size: 40px !important;
   }
   #discount .counterdowns .counter .timer {
     width: 100%;
@@ -648,51 +657,54 @@
   #popular-tours .popular-tours-caption {
     padding: 0 20px 0 !important;
   }
-  #popular-tours .item {
+  #popular-tours .owl-carousel .owl-dots {
+    margin-top: 15px !important;
+  }
+  #popular-tours .owl-carousel .owl-dots .owl-dot span {
+    width: 23px !important;
+  }
+  #popular-tours .owl-carousel .item {
     height: 464px !important;
   }
-  #popular-tours .item .price-info {
+  #popular-tours .owl-carousel .item .price-info {
     padding: 7px 12px 15px 12px;
   }
-  #popular-tours .item .price-info h5 {
+  #popular-tours .owl-carousel .item .price-info h5 {
     font-size: 25px !important;
   }
-  #popular-tours .item .price-info span {
+  #popular-tours .owl-carousel .item .price-info span {
     font-size: 12px !important;
   }
-  #popular-tours .item .img-box {
+  #popular-tours .owl-carousel .item .img-box {
     height: 400px !important;
   }
-  #popular-tours .item .content {
+  #popular-tours .owl-carousel .item .content {
     height: 148px !important;
   }
-  #popular-tours .item .content .content-header {
+  #popular-tours .owl-carousel .item .content .content-header {
     padding: 17px 14px 8px 14px !important;
   }
-  #popular-tours .item .content .content-header .tour-name i {
+  #popular-tours .owl-carousel .item .content .content-header .tour-name i {
     font-size: 14px !important;
     margin-right: 3px !important;
   }
-  #popular-tours .item .content .content-header .tour-name h4 {
+  #popular-tours .owl-carousel .item .content .content-header .tour-name h4 {
     font-size: 18px !important;
   }
-  #popular-tours .item .content .content-header .tour-date {
+  #popular-tours .owl-carousel .item .content .content-header .tour-date {
     padding-top: 2px;
   }
-  #popular-tours .item .content .content-header .tour-date i {
+  #popular-tours .owl-carousel .item .content .content-header .tour-date i {
     font-size: 12px !important;
     margin-right: 3px !important;
   }
-  #popular-tours .item .content .content-header .tour-date span {
+  #popular-tours .owl-carousel .item .content .content-header .tour-date span {
     font-size: 12px !important;
   }
-  #popular-tours .item .content .content-links {
+  #popular-tours .owl-carousel .item .content .content-links {
     padding: 16px 14px 25px 14px !important;
   }
-  #popular-tours .item .content .content-links a {
-    font-size: 11px !important;
-  }
-  #popular-tours .item .content .content-links a:first-child {
+  #popular-tours .owl-carousel .item .content .content-links a:first-child {
     font-size: 12px !important;
   }
   #coming-soon .coming-soon-caption {
@@ -950,13 +962,19 @@
     width: 250px;
   }
   #special-offers {
-    padding: 120px 50px 130px 50px !important;
+    padding: 100px 50px 110px 50px !important;
   }
   #special-offers .special-offers-caption h1 {
     font-size: 40px !important;
   }
   #special-offers .special-offers-caption hr {
     width: 45px !important;
+  }
+  #special-offers .owl-carousel .owl-dots {
+    margin-top: 15px !important;
+  }
+  #special-offers .owl-carousel .owl-dots .owl-dot span {
+    width: 20px !important;
   }
   #view-tours {
     padding: 45px 0 75px 0 !important;
@@ -982,7 +1000,7 @@
     padding: 10px 30px !important;
   }
   #discount {
-    padding: 130px 0 160px 0 !important;
+    padding: 100px 0 120px 0 !important;
   }
   #discount .discount_title {
     text-align: center;
@@ -996,6 +1014,12 @@
   #discount .discount_title h1 {
     font-size: 35px !important;
     margin-bottom: 15px;
+  }
+  #discount .discount_title .price .norm-price {
+    font-size: 26px !important;
+  }
+  #discount .discount_title .price .discount-price {
+    font-size: 36px !important;
   }
   #discount .counterdowns .counter .timer {
     width: 100%;
@@ -1063,36 +1087,39 @@
   #popular-tours .popular-tours-caption p {
     font-size: 16px !important;
   }
-  #popular-tours .item {
+  #popular-tours .owl-carousel .owl-dots {
+    margin-top: 15px !important;
+  }
+  #popular-tours .owl-carousel .owl-dots .owl-dot span {
+    width: 20px !important;
+  }
+  #popular-tours .owl-carousel .item {
     height: 500px !important;
   }
-  #popular-tours .item .img-box {
+  #popular-tours .owl-carousel .item .img-box {
     height: 438px !important;
   }
-  #popular-tours .item .content .content-header {
+  #popular-tours .owl-carousel .item .content .content-header {
     padding: 18px 15px 8px 15px !important;
   }
-  #popular-tours .item .content .content-header .tour-name i {
+  #popular-tours .owl-carousel .item .content .content-header .tour-name i {
     font-size: 17px !important;
     margin-right: 5px !important;
   }
-  #popular-tours .item .content .content-header .tour-name h4 {
+  #popular-tours .owl-carousel .item .content .content-header .tour-name h4 {
     font-size: 22px !important;
   }
-  #popular-tours .item .content .content-header .tour-date i {
+  #popular-tours .owl-carousel .item .content .content-header .tour-date i {
     font-size: 13px !important;
     margin-right: 3px !important;
   }
-  #popular-tours .item .content .content-header .tour-date span {
+  #popular-tours .owl-carousel .item .content .content-header .tour-date span {
     font-size: 14px !important;
   }
-  #popular-tours .item .content .content-links {
+  #popular-tours .owl-carousel .item .content .content-links {
     padding: 16px 15px 25px 15px !important;
   }
-  #popular-tours .item .content .content-links a {
-    font-size: 12px !important;
-  }
-  #popular-tours .item .content .content-links a:first-child {
+  #popular-tours .owl-carousel .item .content .content-links a:first-child {
     font-size: 13px !important;
   }
   #coming-soon .coming-soon-caption {
@@ -1410,6 +1437,12 @@
   #special-offers .special-offers-caption p {
     font-size: 12px !important;
   }
+  #special-offers .owl-carousel .owl-dots {
+    margin-top: 15px !important;
+  }
+  #special-offers .owl-carousel .owl-dots .owl-dot span {
+    width: 20px !important;
+  }
   #view-tours {
     padding: 50px 0 75px 0 !important;
   }
@@ -1434,7 +1467,7 @@
     padding: 10px 18px !important;
   }
   #discount {
-    padding: 110px 0 135px 0 !important;
+    padding: 90px 0 110px 0 !important;
   }
   #discount .discount_title {
     text-align: center;
@@ -1450,6 +1483,13 @@
   #discount .discount_title h1 {
     font-size: 27px !important;
     margin-bottom: 15px;
+  }
+  #discount .discount_title .price .norm-price {
+    font-size: 18px !important;
+    margin-right: 9px !important;
+  }
+  #discount .discount_title .price .discount-price {
+    font-size: 27px !important;
   }
   #discount .counterdowns .counter .timer {
     width: 100%;
@@ -1516,48 +1556,51 @@
   #popular-tours .popular-tours-caption p {
     font-size: 12px !important;
   }
-  #popular-tours .item {
+  #popular-tours .owl-carousel .owl-dots {
+    margin-top: 15px !important;
+  }
+  #popular-tours .owl-carousel .owl-dots .owl-dot span {
+    width: 20px !important;
+  }
+  #popular-tours .owl-carousel .item {
     height: 405px !important;
   }
-  #popular-tours .item .price-info {
+  #popular-tours .owl-carousel .item .price-info {
     padding: 7px 12px 15px 12px;
   }
-  #popular-tours .item .price-info h5 {
+  #popular-tours .owl-carousel .item .price-info h5 {
     font-size: 25px !important;
   }
-  #popular-tours .item .price-info span {
+  #popular-tours .owl-carousel .item .price-info span {
     font-size: 12px !important;
   }
-  #popular-tours .item .img-box {
+  #popular-tours .owl-carousel .item .img-box {
     height: 370px !important;
   }
-  #popular-tours .item .content {
+  #popular-tours .owl-carousel .item .content {
     height: 131px !important;
   }
-  #popular-tours .item .content .content-header {
+  #popular-tours .owl-carousel .item .content .content-header {
     padding: 11px 15px 8px 15px !important;
   }
-  #popular-tours .item .content .content-header .tour-name i {
+  #popular-tours .owl-carousel .item .content .content-header .tour-name i {
     font-size: 14px !important;
     margin-right: 3px !important;
   }
-  #popular-tours .item .content .content-header .tour-name h4 {
+  #popular-tours .owl-carousel .item .content .content-header .tour-name h4 {
     font-size: 16px !important;
   }
-  #popular-tours .item .content .content-header .tour-date i {
+  #popular-tours .owl-carousel .item .content .content-header .tour-date i {
     font-size: 13px !important;
     margin-right: 3px !important;
   }
-  #popular-tours .item .content .content-header .tour-date span {
+  #popular-tours .owl-carousel .item .content .content-header .tour-date span {
     font-size: 11px !important;
   }
-  #popular-tours .item .content .content-links {
+  #popular-tours .owl-carousel .item .content .content-links {
     padding: 16px 15px 25px 15px !important;
   }
-  #popular-tours .item .content .content-links a {
-    font-size: 10px !important;
-  }
-  #popular-tours .item .content .content-links a:first-child {
+  #popular-tours .owl-carousel .item .content .content-links a:first-child {
     font-size: 10px !important;
   }
   #coming-soon .coming-soon-caption {

@@ -64,11 +64,11 @@
 
   #popular-tours {
     padding: 100px 30px 120px 30px !important;
-    .popular-tours-caption{
+    .popular-tours-caption {
       padding-bottom: 0 !important;
     }
 
-    .img-box{
+    .img-box {
       height: 406px !important;
     }
     .item {
@@ -77,9 +77,9 @@
         height: 138px !important;
         .content-header {
           padding: 14px 15px 8px 15px !important;
-          
-          .tour-name{
-            i{
+
+          .tour-name {
+            i {
               font-size: 14px !important;
             }
             h4 {
@@ -87,8 +87,8 @@
               letter-spacing: 0.3px;
             }
           }
-          .tour-date{
-            i{
+          .tour-date {
+            i {
               font-size: 12px !important;
               margin-right: 3px !important;
             }
@@ -99,7 +99,7 @@
         }
         .content-links {
           padding: 16px 15px 25px 15px !important;
-          a{
+          a {
             font-size: 12px !important;
           }
         }
@@ -107,18 +107,18 @@
     }
   }
 
-  footer{
-    .footer-top{
-      .about-us{
+  footer {
+    .footer-top {
+      .about-us {
         padding-right: 20% !important;
       }
       .quick-links {
         padding-left: 8% !important;
       }
-      .legal{
+      .legal {
         padding-left: 33% !important;
       }
-      .contact{
+      .contact {
         padding-left: 25% !important;
       }
     }
@@ -126,7 +126,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  #top-header{
+  #top-header {
     padding: 0 43px !important;
   }
 
@@ -144,7 +144,7 @@
       .navbar-items {
         width: 100% !important;
         height: 100%;
-        background-color: rgb(27,27,27) !important;
+        background-color: rgb(27, 27, 27) !important;
 
         flex-direction: column;
         justify-content: space-around;
@@ -154,7 +154,7 @@
         top: 0;
         right: -100%;
         transition: right 0.7s cubic-bezier(1, 0, 0, 1);
-        
+
         .middle-links {
           height: 507px;
           display: flex;
@@ -181,11 +181,11 @@
         li {
           height: 24px;
           a {
-            i{
-              &::before{
+            i {
+              &::before {
                 font-size: 20px !important;
               }
-              sup{
+              sup {
                 top: 0px;
                 right: -12px;
                 font-size: 14px;
@@ -266,7 +266,7 @@
     }
   }
 
-  #special-offers{
+  #special-offers {
     padding: 100px 30px 120px !important;
   }
 
@@ -353,29 +353,29 @@
 
   #popular-tours {
     padding: 100px 20px 120px !important;
-    .popular-tours-caption{
+    .popular-tours-caption {
       padding-bottom: 0 !important;
     }
     .item {
       height: 488px !important;
       .price-info {
         padding: 7px 12px 15px 12px !important;
-        h5{
+        h5 {
           font-size: 25px !important;
         }
-        span{
+        span {
           font-size: 12px !important;
         }
       }
-      .img-box{
+      .img-box {
         height: 425px !important;
       }
       .content {
         height: 147px !important;
         .content-header {
           padding: 17px 15px 8px 15px !important;
-          .tour-name{
-            i{
+          .tour-name {
+            i {
               font-size: 15px !important;
               margin-right: 7px !important;
             }
@@ -383,8 +383,8 @@
               font-size: 18px !important;
             }
           }
-          .tour-date{
-            i{
+          .tour-date {
+            i {
               font-size: 14px !important;
               margin-right: 7px !important;
             }
@@ -395,9 +395,8 @@
         }
         .content-links {
           padding: 16px 15px 25px 15px !important;
-          a{
-            font-size: 13px !important;
-            &:first-child{
+          a {
+            &:first-child {
               font-size: 15px !important;
             }
           }
@@ -406,7 +405,7 @@
     }
   }
 
-  #coming-soon{
+  #coming-soon {
     .content {
       padding: 0 30px !important;
       .content-name {
@@ -416,63 +415,63 @@
             margin: 0 15px 0 0;
           }
         }
-  
-        h3{
+
+        h3 {
           font-size: 26px !important;
           padding-top: 10px !important;
         }
       }
 
-      .content-text{
-        p{
+      .content-text {
+        p {
           padding-left: 46px !important;
         }
       }
     }
   }
 
-  #our-achievements{
+  #our-achievements {
     padding: 100px 0 100px 0 !important;
-    .content{
+    .content {
       height: 320px !important;
-      i{
-        &::before{
+      i {
+        &::before {
           font-size: 55px !important;
         }
       }
-  
-      h2{
+
+      h2 {
         font-size: 50px !important;
       }
-  
-      h3{
+
+      h3 {
         font-size: 30px !important;
       }
     }
   }
 
-  #subscribe{
-    .form-holder{
+  #subscribe {
+    .form-holder {
       .form-field {
-        input{
+        input {
           width: 75% !important;
         }
       }
     }
   }
 
-  footer{
-    .footer-top{
-      .about-us{
+  footer {
+    .footer-top {
+      .about-us {
         padding-right: 20% !important;
       }
       .quick-links {
         padding-left: 0 !important;
       }
-      .legal{
+      .legal {
         padding-left: 28% !important;
       }
-      .contact{
+      .contact {
         padding-left: 18% !important;
       }
     }
@@ -480,7 +479,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  #top-header{
+  #top-header {
     padding: 0 43px !important;
   }
 
@@ -498,7 +497,7 @@
       .navbar-items {
         width: 100% !important;
         height: 100%;
-        background-color: rgb(27,27,27) !important;
+        background-color: rgb(27, 27, 27) !important;
 
         flex-direction: column;
         justify-content: space-around;
@@ -536,11 +535,11 @@
         li {
           height: 24px;
           a {
-            i{
-              &::before{
+            i {
+              &::before {
                 font-size: 20px !important;
               }
-              sup{
+              sup {
                 top: 0px;
                 right: -12px;
                 font-size: 14px;
@@ -622,7 +621,7 @@
       height: 280px !important;
       .icon-holder {
         i {
-          &::before{
+          &::before {
             font-size: 70px !important;
           }
         }
@@ -635,16 +634,30 @@
   }
 
   #special-offers {
-    padding: 100px 20px 120px !important;
-    .tour-name{
-      i{
-        font-size: 14px !important;
-        margin: 4px 7px 0 0 !important;
+    padding: 100px 20px 110px !important;
+    .owl-carousel {
+      .owl-dots {
+        margin-top: 15px !important;
+        .owl-dot{
+          span{
+            width: 23px !important;
+          }
+        }
       }
-    }
-    .slide-links {
-      a {
-        font-size: 10px !important;
+      .item{
+        .info{
+          .tour-name {
+            i {
+              font-size: 14px !important;
+              margin: 4px 7px 0 0 !important;
+            }
+          }
+          .slide-links {
+            a {
+              font-size: 10px !important;
+            }
+          }
+        }
       }
     }
   }
@@ -654,8 +667,8 @@
     .view-tours-text {
       justify-content: center !important;
       padding-bottom: 40px;
-      i{
-        &::before{
+      i {
+        &::before {
           font-size: 48px !important;
           margin: 0 15px 0 0 !important;
         }
@@ -687,6 +700,14 @@
       h1 {
         font-size: 40px !important;
         margin-bottom: 15px;
+      }
+      .price{
+        .norm-price{
+          font-size: 30px !important;
+        }
+        .discount-price{
+          font-size: 40px !important;
+        }
       }
     }
 
@@ -753,53 +774,62 @@
 
   #popular-tours {
     padding: 100px 20px 120px !important;
-    .popular-tours-caption{
+    .popular-tours-caption {
       padding: 0 20px 0 !important;
     }
-    .item {
-      height: 464px !important;
-      .price-info {
-        padding: 7px 12px 15px 12px;
-        h5{
-          font-size: 25px !important;
-        }
-        span{
-          font-size: 12px !important;
-        }
-      }
-      .img-box{
-        height: 400px !important;
-      }
-      .content {
-        height: 148px !important;
-        .content-header {
-          padding: 17px 14px 8px 14px !important;
-          .tour-name{
-            i{
-              font-size: 14px !important;
-              margin-right: 3px !important;
-            }
-            h4 {
-              font-size: 18px !important;
-            }
-          }
-          .tour-date{
-            padding-top: 2px;
-            i{
-              font-size: 12px !important;
-              margin-right: 3px !important;
-            }
-            span {
-              font-size: 12px !important;
-            }
+    .owl-carousel {
+      .owl-dots {
+        margin-top: 15px !important;
+        .owl-dot{
+          span{
+            width: 23px !important;
           }
         }
-        .content-links {
-          padding: 16px 14px 25px 14px !important;
-          a{
-            font-size: 11px !important;
-            &:first-child{
-              font-size: 12px !important;
+      }
+      .item {
+        height: 464px !important;
+        .price-info {
+          padding: 7px 12px 15px 12px;
+          h5 {
+            font-size: 25px !important;
+          }
+          span {
+            font-size: 12px !important;
+          }
+        }
+        .img-box {
+          height: 400px !important;
+        }
+        .content {
+          height: 148px !important;
+          .content-header {
+            padding: 17px 14px 8px 14px !important;
+            .tour-name {
+              i {
+                font-size: 14px !important;
+                margin-right: 3px !important;
+              }
+              h4 {
+                font-size: 18px !important;
+              }
+            }
+            .tour-date {
+              padding-top: 2px;
+              i {
+                font-size: 12px !important;
+                margin-right: 3px !important;
+              }
+              span {
+                font-size: 12px !important;
+              }
+            }
+          }
+          .content-links {
+            padding: 16px 14px 25px 14px !important;
+            a {
+              &:first-child {
+                font-size: 12px !important;
+              }
             }
           }
         }
@@ -807,8 +837,8 @@
     }
   }
 
-  #coming-soon{
-    .coming-soon-caption{
+  #coming-soon {
+    .coming-soon-caption {
       padding-bottom: 60px !important;
     }
     .content {
@@ -821,36 +851,36 @@
             margin: 0 15px 0 0;
           }
         }
-  
-        h3{
+
+        h3 {
           font-size: 28px !important;
           padding-top: 10px !important;
         }
       }
 
-      .content-text{
-        p{
+      .content-text {
+        p {
           padding-left: 51px !important;
         }
       }
     }
 
-    .img-box{
+    .img-box {
       height: 320px !important;
     }
-    
-    .third{
+
+    .third {
       order: 1;
     }
 
-    .fourth{
+    .fourth {
       order: 2;
     }
   }
 
-  #our-achievements{
+  #our-achievements {
     padding: 125px 0 100px 0 !important;
-    .content{
+    .content {
       height: 370px !important;
       padding-top: 60px !important;
       &:hover {
@@ -865,38 +895,38 @@
     }
   }
 
-  #subscribe{
+  #subscribe {
     .subscribe-title {
       padding: 0 50px 50px !important;
     }
   }
 
-  footer{
-    .footer-top{
-      .about-us{
+  footer {
+    .footer-top {
+      .about-us {
         padding-right: 27% !important;
       }
       .quick-links {
         padding: 20px 0 20px 14px !important;
       }
-      .legal{
+      .legal {
         padding: 0 0 20px 14px !important;
       }
-      .contact{
+      .contact {
         padding-left: 0 !important;
       }
     }
-    .footer-bottom{
+    .footer-bottom {
       padding-bottom: 8px;
-      .social-media-top{
+      .social-media-top {
         order: 1;
-        .social-media{
+        .social-media {
           justify-content: center;
         }
       }
-      .copyright-bottom{
+      .copyright-bottom {
         order: 2;
-        .copyright-holder{
+        .copyright-holder {
           text-align: center;
         }
       }
@@ -905,7 +935,7 @@
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #top-header{
+  #top-header {
     padding: 0 20px !important;
     .phone {
       padding-top: 5px;
@@ -936,7 +966,7 @@
       .navbar-items {
         width: 100% !important;
         height: 100%;
-        background-color: rgb(27,27,27) !important;
+        background-color: rgb(27, 27, 27) !important;
 
         flex-direction: column;
         justify-content: space-around;
@@ -974,11 +1004,11 @@
         li {
           height: 24px;
           a {
-            i{
-              &::before{
+            i {
+              &::before {
                 font-size: 18px !important;
               }
-              sup{
+              sup {
                 top: 0px;
                 right: -12px;
                 font-size: 14px;
@@ -1069,7 +1099,7 @@
       height: 280px !important;
       font-size: 17px;
       i {
-        &::before{
+        &::before {
           font-size: 60px !important;
         }
       }
@@ -1085,13 +1115,23 @@
   }
 
   #special-offers {
-    padding: 120px 50px 130px 50px !important;
+    padding: 100px 50px 110px 50px !important;
     .special-offers-caption {
       h1 {
         font-size: 40px !important;
       }
       hr {
         width: 45px !important;
+      }
+    }
+    .owl-carousel {
+      .owl-dots {
+        margin-top: 15px !important;
+        .owl-dot{
+          span{
+            width: 20px !important;
+          }
+        }
       }
     }
   }
@@ -1101,8 +1141,8 @@
     .view-tours-text {
       justify-content: center !important;
       padding-bottom: 20px;
-      i{
-        &::before{
+      i {
+        &::before {
           font-size: 48px !important;
           margin: 0 15px 0 0 !important;
         }
@@ -1122,7 +1162,7 @@
   }
 
   #discount {
-    padding: 130px 0 160px 0 !important;
+    padding: 100px 0 120px 0 !important;
     .discount_title {
       text-align: center;
       h2 {
@@ -1134,6 +1174,14 @@
       h1 {
         font-size: 35px !important;
         margin-bottom: 15px;
+      }
+      .price{
+        .norm-price{
+          font-size: 26px !important;
+        }
+        .discount-price{
+          font-size: 36px !important;
+        }
       }
     }
 
@@ -1201,52 +1249,61 @@
 
   #popular-tours {
     padding: 120px 50px 130px 50px !important;
-    .popular-tours-caption{
-      padding: 0 15px 0!important;
-      h1{
+    .popular-tours-caption {
+      padding: 0 15px 0 !important;
+      h1 {
         font-size: 40px !important;
       }
-      hr{
+      hr {
         width: 45px !important;
       }
-      p{
+      p {
         font-size: 16px !important;
       }
     }
 
-    .item {
-      height: 500px !important;
-      .img-box{
-        height: 438px !important;
-      }
-      .content {
-        .content-header {
-          padding: 18px 15px 8px 15px !important;
-          .tour-name{
-            i{
-              font-size: 17px !important;
-              margin-right: 5px !important;
-            }
-            h4 {
-              font-size: 22px !important;
-            }
-          }
-          .tour-date{
-            i{
-              font-size: 13px !important;
-              margin-right: 3px !important;
-            }
-            span {
-              font-size: 14px !important;
-            }
+    .owl-carousel {
+      .owl-dots {
+        margin-top: 15px !important;
+        .owl-dot{
+          span{
+            width: 20px !important;
           }
         }
-        .content-links {
-          padding: 16px 15px 25px 15px !important;
-          a{
-            font-size: 12px !important;
-            &:first-child{
-              font-size: 13px !important;
+      }
+      .item {
+        height: 500px !important;
+        .img-box {
+          height: 438px !important;
+        }
+        .content {
+          .content-header {
+            padding: 18px 15px 8px 15px !important;
+            .tour-name {
+              i {
+                font-size: 17px !important;
+                margin-right: 5px !important;
+              }
+              h4 {
+                font-size: 22px !important;
+              }
+            }
+            .tour-date {
+              i {
+                font-size: 13px !important;
+                margin-right: 3px !important;
+              }
+              span {
+                font-size: 14px !important;
+              }
+            }
+          }
+          .content-links {
+            padding: 16px 15px 25px 15px !important;
+            a {
+              &:first-child {
+                font-size: 13px !important;
+              }
             }
           }
         }
@@ -1254,13 +1311,13 @@
     }
   }
 
-  #coming-soon{
-    .coming-soon-caption{
+  #coming-soon {
+    .coming-soon-caption {
       padding: 0 20px 60px !important;
-      h1{
+      h1 {
         font-size: 40px !important;
       }
-      hr{
+      hr {
         width: 45px !important;
       }
     }
@@ -1273,46 +1330,46 @@
             font-size: 35px !important;
           }
         }
-  
-        h3{
+
+        h3 {
           font-size: 28px !important;
           padding-top: 10px !important;
         }
       }
 
-      .content-text{
-        p{
+      .content-text {
+        p {
           padding-left: 51px !important;
         }
       }
     }
 
-    .img-box{
+    .img-box {
       height: 320px !important;
     }
-    
-    .third{
+
+    .third {
       order: 1;
     }
 
-    .fourth{
+    .fourth {
       order: 2;
     }
   }
 
-  #our-achievements{
+  #our-achievements {
     padding: 125px 0 100px 0 !important;
-    .achievements-caption{
-      h1{
+    .achievements-caption {
+      h1 {
         font-size: 40px !important;
       }
 
-      hr{
+      hr {
         width: 45px !important;
       }
     }
 
-    .content{
+    .content {
       height: 330px !important;
       padding-top: 50px !important;
       &:hover {
@@ -1320,40 +1377,40 @@
         transition: 0.4s ease-in-out;
       }
 
-      i{
-        &::before{
+      i {
+        &::before {
           font-size: 60px !important;
         }
       }
 
-      h2{
+      h2 {
         font-size: 53px !important;
       }
 
-      h3{
+      h3 {
         font-size: 30px !important;
       }
     }
   }
 
-  #subscribe{
+  #subscribe {
     .subscribe-title {
       padding: 0 20px 50px !important;
 
-      h1{
+      h1 {
         font-size: 40px !important;
       }
-      hr{
+      hr {
         width: 45px !important;
       }
     }
-    .form-holder{
+    .form-holder {
       .form-field {
-        input{
+        input {
           padding-left: 20px !important;
           width: 65% !important;
         }
-        .subs-btn{
+        .subs-btn {
           font-weight: 300 !important;
           padding: 10px 14px !important;
         }
@@ -1361,36 +1418,36 @@
     }
   }
 
-  footer{
+  footer {
     padding: 100px 10px 30px !important;
-    .footer-top{
-      .about-us{
+    .footer-top {
+      .about-us {
         padding-right: 24% !important;
       }
       .quick-links {
         padding: 20px 0 20px 14px !important;
       }
-      .legal{
+      .legal {
         padding: 0 0 20px 14px !important;
       }
-      .contact{
+      .contact {
         padding-left: 0 !important;
       }
     }
-    .footer-bottom{
+    .footer-bottom {
       padding-bottom: 10px;
-      .social-media-top{
+      .social-media-top {
         order: 1;
-        .social-media{
+        .social-media {
           justify-content: center;
-          ul{
+          ul {
             width: 180px !important;
           }
         }
       }
-      .copyright-bottom{
+      .copyright-bottom {
         order: 2;
-        .copyright-holder{
+        .copyright-holder {
           text-align: center;
         }
       }
@@ -1399,7 +1456,7 @@
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #top-header{
+  #top-header {
     height: 34px !important;
     padding: 0 11px !important;
     .phone {
@@ -1433,7 +1490,7 @@
       .navbar-items {
         width: 100% !important;
         height: 100%;
-        background-color: rgb(27,27,27) !important;
+        background-color: rgb(27, 27, 27) !important;
 
         flex-direction: column;
         justify-content: space-around;
@@ -1471,11 +1528,11 @@
         li {
           height: 18px;
           a {
-            i{
-              &::before{
+            i {
+              &::before {
                 font-size: 13px !important;
               }
-              sup{
+              sup {
                 top: 4px;
                 right: -7px;
                 font-size: 9px;
@@ -1553,7 +1610,7 @@
   #our-advantages {
     padding: 70px 0 80px 0 !important;
     .caption {
-      height: 110px!important;
+      height: 110px !important;
       h1 {
         font-size: 28px !important;
         padding: 20px 0 80px 0 !important;
@@ -1600,6 +1657,16 @@
         font-size: 12px !important;
       }
     }
+    .owl-carousel {
+      .owl-dots {
+        margin-top: 15px !important;
+        .owl-dot{
+          span{
+            width: 20px !important;
+          }
+        }
+      }
+    }
   }
 
   #view-tours {
@@ -1607,8 +1674,8 @@
     .view-tours-text {
       justify-content: center !important;
       padding-bottom: 10px;
-      i{
-        &::before{
+      i {
+        &::before {
           font-size: 35px !important;
           margin: 0 15px 0 0 !important;
         }
@@ -1628,7 +1695,7 @@
   }
 
   #discount {
-    padding: 110px 0 135px 0 !important;
+    padding: 90px 0 110px 0 !important;
     .discount_title {
       text-align: center;
       h2 {
@@ -1642,6 +1709,15 @@
       h1 {
         font-size: 27px !important;
         margin-bottom: 15px;
+      }
+      .price{
+        .norm-price{
+          font-size: 18px !important;
+          margin-right: 9px !important;
+        }
+        .discount-price{
+          font-size: 27px !important;
+        }
       }
     }
 
@@ -1708,61 +1784,71 @@
 
   #popular-tours {
     padding: 80px 5px 100px 5px !important;
-    .popular-tours-caption{
+    .popular-tours-caption {
       padding: 0 15px 0 !important;
-      h1{
+      h1 {
         font-size: 28px !important;
       }
-      hr{
+      hr {
         width: 42px !important;
       }
-      p{
+      p {
         font-size: 12px !important;
       }
     }
-    .item {
-      height: 405px !important;
-      .price-info {
-        padding: 7px 12px 15px 12px;
-        h5{
-          font-size: 25px !important;
-        }
-        span{
-          font-size: 12px !important;
-        }
-      }
-      .img-box{
-        height: 370px !important;
-      }
-      .content {
-        height: 131px !important;
-        .content-header {
-          padding: 11px 15px 8px 15px !important;
-          .tour-name{
-            i{
-              font-size: 14px !important;
-              margin-right: 3px !important;
-            }
-            h4 {
-              font-size: 16px !important;
-            }
-          }
-          .tour-date{
-            i{
-              font-size: 13px !important;
-              margin-right: 3px !important;
-            }
-            span {
-              font-size: 11px !important;
-            }
+
+    .owl-carousel{
+      .owl-dots {
+        margin-top: 15px !important;
+        .owl-dot{
+          span{
+            width: 20px !important;
           }
         }
-        .content-links {
-          padding: 16px 15px 25px 15px !important;
-          a{
-            font-size: 10px !important;
-            &:first-child{
-              font-size: 10px !important;
+      }
+      .item {
+        height: 405px !important;
+        .price-info {
+          padding: 7px 12px 15px 12px;
+          h5 {
+            font-size: 25px !important;
+          }
+          span {
+            font-size: 12px !important;
+          }
+        }
+        .img-box {
+          height: 370px !important;
+        }
+        .content {
+          height: 131px !important;
+          .content-header {
+            padding: 11px 15px 8px 15px !important;
+            .tour-name {
+              i {
+                font-size: 14px !important;
+                margin-right: 3px !important;
+              }
+              h4 {
+                font-size: 16px !important;
+              }
+            }
+            .tour-date {
+              i {
+                font-size: 13px !important;
+                margin-right: 3px !important;
+              }
+              span {
+                font-size: 11px !important;
+              }
+            }
+          }
+          .content-links {
+            padding: 16px 15px 25px 15px !important;
+            a {
+              &:first-child {
+                font-size: 10px !important;
+              }
             }
           }
         }
@@ -1770,16 +1856,16 @@
     }
   }
 
-  #coming-soon{
-    .coming-soon-caption{
+  #coming-soon {
+    .coming-soon-caption {
       padding: 0 7px 50px !important;
-      h1{
+      h1 {
         font-size: 28px !important;
       }
-      hr{
+      hr {
         width: 42px !important;
       }
-      p{
+      p {
         font-size: 12px !important;
       }
     }
@@ -1792,48 +1878,48 @@
             font-size: 28px !important;
           }
         }
-  
-        h3{
+
+        h3 {
           font-size: 21px !important;
           padding-top: 10px !important;
         }
       }
 
-      .content-text{
-        p{
+      .content-text {
+        p {
           font-size: 12px !important;
           padding-left: 46px !important;
         }
       }
     }
 
-    .img-box{
+    .img-box {
       height: 260px !important;
     }
-    
-    .third{
+
+    .third {
       order: 1;
     }
 
-    .fourth{
+    .fourth {
       order: 2;
     }
   }
 
-  #our-achievements{
+  #our-achievements {
     padding: 110px 0 100px 0 !important;
-    .achievements-caption{
+    .achievements-caption {
       padding-bottom: 18px !important;
-      h1{
+      h1 {
         font-size: 28px !important;
       }
 
-      hr{
+      hr {
         width: 42px !important;
       }
     }
 
-    .content{
+    .content {
       height: 250px !important;
       padding-top: 40px !important;
       &:hover {
@@ -1841,104 +1927,104 @@
         transition: 0.4s ease-in-out;
       }
 
-      i{
-        &::before{
+      i {
+        &::before {
           font-size: 50px !important;
         }
       }
 
-      h2{
+      h2 {
         font-size: 40px !important;
         padding: 12px 0 !important;
       }
 
-      h3{
+      h3 {
         font-size: 20px !important;
       }
     }
   }
 
-  #subscribe{
+  #subscribe {
     .subscribe-title {
       padding: 0 0 30px !important;
 
-      h1{
+      h1 {
         font-size: 28px !important;
       }
-      hr{
+      hr {
         width: 42px !important;
         margin-bottom: 25px !important;
       }
-      p{
+      p {
         font-size: 12px !important;
       }
     }
-    .form-holder{
+    .form-holder {
       .form-field {
-        input{
+        input {
           padding-left: 15px !important;
           font-size: 13px;
           height: 40px !important;
           width: 65% !important;
         }
-        .subs-btn{
+        .subs-btn {
           font-size: 13px;
           font-weight: 300 !important;
-          padding: 8px 10px !important
+          padding: 8px 10px !important;
         }
       }
     }
   }
 
-  footer{
+  footer {
     padding: 100px 5px 30px !important;
-    .footer-top{
-      h4{
+    .footer-top {
+      h4 {
         font-size: 15px !important;
       }
-      a{
+      a {
         font-size: 13px !important;
       }
-      .about-us{
+      .about-us {
         padding-right: 5% !important;
-        p{
+        p {
           font-size: 13px !important;
         }
       }
       .quick-links {
         padding: 20px 0 20px 14px !important;
       }
-      .legal{
+      .legal {
         padding: 0 0 20px 14px !important;
       }
-      .contact{
+      .contact {
         padding-left: 0 !important;
-        li{
+        li {
           font-size: 13px !important;
         }
       }
     }
-    .footer-bottom{
+    .footer-bottom {
       padding-bottom: 10px;
-      .social-media-top{
+      .social-media-top {
         order: 1;
-        .social-media{
+        .social-media {
           justify-content: center;
-          ul{
+          ul {
             width: 160px !important;
-            li{
-              a{
+            li {
+              a {
                 font-size: 15px !important;
               }
             }
           }
         }
       }
-      .copyright-bottom{
+      .copyright-bottom {
         order: 2;
-        .copyright-holder{
+        .copyright-holder {
           text-align: center;
-          p{
+          p {
             font-size: 13px !important;
           }
         }

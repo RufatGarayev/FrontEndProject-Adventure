@@ -13,7 +13,7 @@
   bottom: 7px;
   left: 0;
   margin: 0;
-  height: 1%;
+  height: 0.3px;
   width: 0px;
   background-color: white !important;
 }
@@ -79,7 +79,6 @@
   border-radius: 3px;
   color: white;
   text-align: center;
-  // background-color: #769484;
   background-color: #3a3b74;
   position: relative;
   text-transform: uppercase;
@@ -133,13 +132,31 @@
 }
 
 %owl-dots {
-  margin-top: 30px;
+  margin-top: 20px;
   .owl-dot {
     outline: none !important;
     span {
       border-radius: 2px !important;
       height: 2px;
-      width: 30px;
+      width: 25px;
+    }
+  }
+}
+
+%add-to-cart-icon{
+  i{
+    &::before{
+      color: rgb(27,27,27);
+      font-size: 25px;
+      transition:  0.2s linear;
+    }
+  }
+  &:hover {
+    text-decoration: none;
+    i{
+      &::before{
+        color: #769484;
+      }
     }
   }
 }

@@ -21,11 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.stop-scroll{
+.stop-scroll {
   height: 100vh;
   overflow: hidden;
 }
-
 
 // ======= Loader Start ======= //
 .loading {
@@ -464,9 +463,6 @@ header {
 
       .info {
         padding: 20px 20px 30px 20px;
-        @media (min-width: 250px) and (max-width: 315px) {
-          padding: 20px 9px 30px 9px !important;
-        }
         .tour-date {
           span,
           i {
@@ -494,25 +490,13 @@ header {
           justify-content: space-between;
           align-items: center;
           a {
-            font-family: "Montserrat", sans-serif;
-            text-transform: uppercase;
-            font-size: 11px;
-            font-weight: 500;
-            color: rgb(98, 107, 114);
-            &:hover {
-              color: #303b36;
-              text-decoration: none;
-            }
+            @extend %add-to-cart-icon;
             &:first-child {
               @extend %website-button;
-              padding: 9px 16px !important;
+              padding: 9px 16px;
               font-size: 12px;
               font-weight: 400;
               letter-spacing: 1px;
-              @media (min-width: 250px) and (max-width: 315px) {
-                font-size: 11px !important;
-                letter-spacing: 0;
-              }
             }
           }
         }
@@ -555,11 +539,11 @@ header {
   }
 
   @media (min-width: 375px) and (max-width: 430px) {
-    padding: 115px 30px 130px 30px !important;
+    padding: 100px 30px 110px 30px !important;
   }
 
   @media (min-width: 576px) and (max-width: 599.98px) {
-    padding: 100px 60px 130px 60px !important;
+    padding: 100px 60px 110px 60px !important;
     .img-box {
       height: 320px !important;
     }
@@ -579,8 +563,40 @@ header {
   }
 
   @media (min-width: 250px) and (max-width: 315px) {
-    .img-box {
-      height: 230px !important;
+    .item {
+      .img-box {
+        height: 230px !important;
+      }
+      .info {
+        padding: 20px 10px 30px 10px !important;
+        .tour-date {
+          span,
+          i {
+            font-size: 11px !important;
+          }
+        }
+        .tour-name {
+          i {
+            font-size: 14px !important;
+          }
+          h4 {
+            font-size: 17px !important;
+          }
+        }
+        .slide-links {
+          a {
+            i {
+              &::before {
+                font-size: 22px !important;
+              }
+            }
+            &:first-child {
+              padding: 8px 14px !important;
+              font-size: 11px !important;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -654,7 +670,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 120px 0 120px 0;
+  padding: 100px 0 120px 0;
   position: relative;
   overflow-x: hidden;
   &::before {
@@ -683,15 +699,30 @@ header {
         }
       }
       span {
-        color: #db7355;
+        color: rgb(221, 121, 92);
       }
     }
     h1 {
       color: #fff;
       font-size: 65px;
       text-transform: uppercase;
-      padding-bottom: 44px;
       font-weight: 600;
+    }
+
+    .price {
+      padding-bottom: 44px;
+      .norm-price {
+        font-family: "Times New Roman", Times, serif;
+        text-decoration: line-through;
+        margin-right: 20px;
+        font-size: 35px;
+        color: rgb(221, 121, 92);
+      }
+      .discount-price {
+        font-family: "Times New Roman", Times, serif;
+        color: #fff;
+        font-size: 50px;
+      }
     }
 
     @media (min-width: 250px) and (max-width: 299.98px) {
@@ -704,6 +735,15 @@ header {
       }
       h1 {
         font-size: 21px !important;
+      }
+      .price {
+        .norm-price {
+          font-size: 16px !important;
+          margin-right: 9px !important;
+        }
+        .discount-price {
+          font-size: 24px !important;
+        }
       }
     }
   }
@@ -833,7 +873,7 @@ header {
 // ======= Popular Tours Section Start ======= //
 #popular-tours {
   overflow-x: hidden;
-  background-color: rgb(247, 238, 238);
+  background-color: rgb(250, 244, 244);
   padding: 100px 60px 120px 60px;
   .popular-tours-caption {
     padding-bottom: 10px;
@@ -861,14 +901,14 @@ header {
       margin-top: 50px;
       &:hover {
         img {
-          transform: scale(1.1);
+          filter: brightness(70%) !important;
+          transition: linear 0.2s;
         }
-
         .content {
           position: absolute;
           bottom: 0;
-          left: 0;
-          right: 0;
+          left: -1px !important;
+          right: -1px !important;
           transform: translate3d(0px, 13px, 0px);
           transition: all 0.4s cubic-bezier(0.29, 0.22, 0.07, 0.88);
         }
@@ -891,7 +931,7 @@ header {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: transform 0.3s;
+          transition: linear 0.2s;
           filter: brightness(80%);
         }
       }
@@ -934,15 +974,7 @@ header {
           align-items: center;
           justify-content: space-between;
           a {
-            font-family: "Montserrat", sans-serif;
-            text-transform: uppercase;
-            font-size: 12px;
-            font-weight: 500;
-            color: rgb(98, 107, 114);
-            &:hover {
-              color: #303b36;
-              text-decoration: none;
-            }
+            @extend %add-to-cart-icon;
             &:first-of-type {
               @extend %website-button;
               padding: 9px 18px !important;
@@ -1030,46 +1062,52 @@ header {
   }
 
   @media (min-width: 250px) and (max-width: 299.98px) {
-    .item {
-      height: 370px !important;
-      .price-info {
-        top: 14px !important;
-        right: 14px !important;
-        span {
-          font-size: 11px !important;
-        }
-      }
-      .content {
-        height: 132px !important;
-        .content-header {
-          padding: 11px 12px 8px 12px !important;
-          .tour-name {
-            i {
-              font-size: 12px !important;
-              margin-right: 3px !important;
-            }
-            h4 {
-              font-size: 13px !important;
-              letter-spacing: 0 !important;
-            }
-          }
-          .tour-date {
-            i {
-              font-size: 9px !important;
-              margin-right: 1px !important;
-            }
-            span {
-              font-size: 8px !important;
-              margin-bottom: 1px;
-            }
+    .owl-carousel {
+      .item {
+        height: 370px !important;
+        .price-info {
+          top: 14px !important;
+          right: 14px !important;
+          span {
+            font-size: 11px !important;
           }
         }
-        .content-links {
-          padding: 16px 12px 25px 12px !important;
-          a {
-            font-size: 7px !important;
-            &:first-child {
-              font-size: 8px !important;
+        .content {
+          height: 132px !important;
+          .content-header {
+            padding: 11px 12px 8px 12px !important;
+            .tour-name {
+              i {
+                font-size: 12px !important;
+                margin-right: 3px !important;
+              }
+              h4 {
+                font-size: 14px !important;
+                letter-spacing: 0 !important;
+              }
+            }
+            .tour-date {
+              i {
+                font-size: 9px !important;
+                margin-right: 1px !important;
+              }
+              span {
+                font-size: 9px !important;
+                margin-bottom: 1px;
+              }
+            }
+          }
+          .content-links {
+            padding: 16px 12px 25px 12px !important;
+            a {
+              i{
+                &::before{
+                  font-size: 18px !important;
+                }
+              }
+              &:first-child {
+                font-size: 9px !important;
+              }
             }
           }
         }
@@ -1082,6 +1120,7 @@ header {
 // ======= Cooming Soon Section Start ======= //
 #coming-soon {
   padding-top: 100px;
+  overflow-x: hidden;
 
   .coming-soon-caption {
     padding-bottom: 50px;
@@ -1118,7 +1157,6 @@ header {
       h3 {
         padding-top: 12px;
         font-size: 32px;
-        font-family: $item-caption-font-family;
       }
     }
 
