@@ -177,7 +177,7 @@ html {
 
 // ======= Header Start ======= //
 header {
-  overflow: hidden;
+  // overflow-x: hidden;
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -207,30 +207,53 @@ header {
       @extend %nav-link-properties;
       align-items: center;
 
-      .search-area {
+      .search-area-holder{
         @extend %search-hidden;
       }
-
+      
       .search-box-visible {
         @extend %search-visible;
+      }
+      
+      @media (min-width: 576px) and (max-width: 670px) {
+        .search-box-visible {
+          top: 53px !important;
+          right: -177.7% !important;
+        }
+      }
 
-        @media (min-width: 700px) and (max-width: 767.98px) {
-          input {
-            transform: translate(-225px, 29px) !important;
-          }
+      @media (min-width: 490px) and (max-width: 575.98px) {
+        .search-box-visible {
+          width: 280px !important;
+          height: 45px !important;
+          right: -140% !important;
+        }
+      }
+
+      @media (min-width: 250px) and (max-width: 299.98px) {
+        .search-area-holder {
           a {
-            i {
-              &::before {
-                transform: translate(22px, 38px) !important;
+            top: 7px !important;
+            i{
+              &::before{
+                font-size: 14px !important;
               }
             }
           }
         }
+        .search-box-visible {
+          width: 220px !important;
+          height: 36px !important;
+          top: 38px;
+          right: -290%;
+        }
       }
+
 
       li {
         height: 20px;
         width: 33%;
+        position: relative !important;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -275,7 +298,7 @@ header {
     }
   }
 }
-// ======= Header End ======= //
+
 
 // ======= Intro Section Start ======= //
 #intro {

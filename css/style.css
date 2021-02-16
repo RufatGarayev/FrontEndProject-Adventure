@@ -47,65 +47,79 @@ header nav .navbar-items .links li, header nav .account li {
   position: relative;
 }
 
-header nav .account .search-area {
-  position: relative;
-  top: 12px;
-  left: 29px;
-}
-
-header nav .account .search-area input {
-  width: 0;
-  height: 0;
-  opacity: 0;
-  -webkit-transform: translate(3px, 0px);
-          transform: translate(3px, 0px);
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  height: 0;
-  width: 0;
+header nav .account .search-area-holder {
   position: absolute;
-}
-
-header nav .account .search-area a i::before {
-  font-size: 0px;
-  position: fixed;
-  -webkit-transform: translate(-17px, 0px);
-          transform: translate(-17px, 0px);
+  top: 8px;
+  right: 5.7%;
+  width: 0;
+  height: 0;
   -webkit-transform-origin: top;
           transform-origin: top;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  opacity: 0;
 }
 
-header nav .account .search-box-visible input {
-  opacity: 1;
-  width: 270px !important;
-  height: 45px !important;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  -webkit-transform: translate(-238px, 27px);
-          transform: translate(-238px, 27px);
-  position: fixed;
+header nav .account .search-area-holder input[type="text"] {
+  width: 0;
+  height: 0;
+}
+
+header nav .account .search-area-holder a {
+  position: absolute;
+  top: -6px;
+  right: 70px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  opacity: 0;
+}
+
+header nav .account .search-area-holder a i::before {
+  font-size: 0px;
+}
+
+header nav .account .search-box-visible {
+  width: 300px !important;
+  height: 50px !important;
+  top: 52px;
+  right: -11.3%;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  opacity: 1 !important;
+}
+
+header nav .account .search-box-visible input[type="text"] {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+  width: 100% !important;
+  height: 100% !important;
   border: 1px solid white;
   padding-left: 15px;
   border-radius: 5px;
 }
 
-header nav .account .search-box-visible input:focus {
+header nav .account .search-box-visible input[type="text"]:focus {
   outline: none;
+}
+
+header nav .account .search-box-visible a {
+  opacity: 1 !important;
+  position: absolute;
+  top: 12px !important;
+  right: 15px !important;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 header nav .account .search-box-visible a i::before {
   color: white;
   font-size: 16px !important;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform: translate(-18px, 37px);
-          transform: translate(-18px, 37px);
 }
 
 #intro .carousel-button .carousel-control {
@@ -485,7 +499,6 @@ html {
 }
 
 header {
-  overflow: hidden;
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -527,20 +540,40 @@ header nav .account {
           align-items: center;
 }
 
-@media (min-width: 700px) and (max-width: 767.98px) {
-  header nav .account .search-box-visible input {
-    -webkit-transform: translate(-225px, 29px) !important;
-            transform: translate(-225px, 29px) !important;
+@media (min-width: 576px) and (max-width: 670px) {
+  header nav .account .search-box-visible {
+    top: 53px !important;
+    right: -177.7% !important;
   }
-  header nav .account .search-box-visible a i::before {
-    -webkit-transform: translate(22px, 38px) !important;
-            transform: translate(22px, 38px) !important;
+}
+
+@media (min-width: 490px) and (max-width: 575.98px) {
+  header nav .account .search-box-visible {
+    width: 280px !important;
+    height: 45px !important;
+    right: -140% !important;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 299.98px) {
+  header nav .account .search-area-holder a {
+    top: 7px !important;
+  }
+  header nav .account .search-area-holder a i::before {
+    font-size: 14px !important;
+  }
+  header nav .account .search-box-visible {
+    width: 220px !important;
+    height: 36px !important;
+    top: 38px;
+    right: -290%;
   }
 }
 
 header nav .account li {
   height: 20px;
   width: 33%;
+  position: relative !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

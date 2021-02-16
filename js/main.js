@@ -61,7 +61,7 @@ $(document).ready(function () {
     }else{
       $(this).children().addClass("flaticon-loupe").removeClass("flaticon-close");
     }
-    $(".search-area").toggleClass("search-box-visible");
+    $(".search-area-holder").toggleClass("search-box-visible");
   });
   // ======= Making visible or invisible the search-box on click and replacing search icon End ======= //
 });

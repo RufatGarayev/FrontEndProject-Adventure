@@ -45,42 +45,46 @@
 }
 
 %search-hidden {
-  position: relative;
-  top: 12px;
-  left: 29px;
-  input {
+  position: absolute;
+  top: 8px;
+  right: 5.7%;
+  width: 0;
+  height: 0;
+  transform-origin: top;
+  transition: 0.6s;
+  opacity: 0;
+  input[type="text"] {
     width: 0;
     height: 0;
-    opacity: 0;
-    transform: translate(3px, 0px);
-    transform-origin: top;
-    transition: 0.5s;
-    height: 0;
-    width: 0;
-    position: absolute;
   }
   a {
+    position: absolute;
+    top: -6px;
+    right: 70px;
+    transform-origin: top;
+    transition: 0.6s;
+    opacity: 0;
     i {
       &::before {
         font-size: 0px;
-        position: fixed;
-        transform: translate(-17px, 0px);
-        transform-origin: top;
-        transition: 0.5s;
       }
     }
   }
 }
 
 %search-visible {
-  input {
-    opacity: 1;
-    width: 270px !important;
-    height: 45px !important;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    transform: translate(-238px, 27px);
-    position: fixed;
+  width: 300px !important;
+  height: 50px !important;
+  top: 52px;
+  right: -11.3%;
+  transform-origin: top;
+  transition: 0.6s;
+  opacity: 1 !important;
+  input[type="text"] {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: white !important;
+    width: 100% !important;
+    height: 100% !important;
     border: 1px solid white;
     padding-left: 15px;
     border-radius: 5px;
@@ -89,13 +93,16 @@
     }
   }
   a {
+    opacity: 1 !important;
+    position: absolute;
+    top: 12px !important;
+    right: 15px !important;
+    transform-origin: top;
+    transition: 0.6s;
     i {
       &::before {
         color: white;
         font-size: 16px !important;
-        transform-origin: top;
-        transition: 0.5s;
-        transform: translate(-18px, 37px);
       }
     }
   }
