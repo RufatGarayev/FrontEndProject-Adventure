@@ -206,6 +206,28 @@ header {
       width: 165px;
       @extend %nav-link-properties;
       align-items: center;
+
+      .search-area {
+        @extend %search-hidden;
+      }
+
+      .search-box-visible {
+        @extend %search-visible;
+
+        @media (min-width: 700px) and (max-width: 767.98px) {
+          input {
+            transform: translate(-225px, 29px) !important;
+          }
+          a {
+            i {
+              &::before {
+                transform: translate(22px, 38px) !important;
+              }
+            }
+          }
+        }
+      }
+
       li {
         height: 20px;
         width: 33%;
@@ -1100,8 +1122,8 @@ header {
           .content-links {
             padding: 16px 12px 25px 12px !important;
             a {
-              i{
-                &::before{
+              i {
+                &::before {
                   font-size: 18px !important;
                 }
               }

@@ -42,11 +42,6 @@ $(document).ready(function () {
     $(this).addClass("active-link").siblings().removeClass("active-link");
     $(".account .nav-item").removeClass("active-link");
   });
-
-  $(document).on("click", ".account .nav-item", function () {
-    $(this).addClass("active-link").siblings().removeClass("active-link");
-    $(".navbar-items .nav-item").removeClass("active-link");
-  });
   // ======= Changing Link To Active OnClick End ======= //
 
 
@@ -56,6 +51,19 @@ $(document).ready(function () {
     time: 1000,
   });
   // ======= Counter-Up End ======= //
+
+
+  // ======= Making visible or invisible the search-box on click and replacing search icon Start ======= //
+  $(document).on("click", ".search-btn-first", function (e) {
+    e.preventDefault();
+    if ($(this).children().hasClass("flaticon-loupe")) {
+      $(this).children().removeClass("flaticon-loupe").addClass("flaticon-close");
+    }else{
+      $(this).children().addClass("flaticon-loupe").removeClass("flaticon-close");
+    }
+    $(".search-area").toggleClass("search-box-visible");
+  });
+  // ======= Making visible or invisible the search-box on click and replacing search icon End ======= //
 });
 
 
@@ -69,6 +77,7 @@ menuIcon.addEventListener("click", () => {
   document.body.classList.toggle("stop-scroll");
 });
 // ======= Navbar Hamburger Effect End ======= //
+
 
 
 // ======= Type Writer Effect Start ======= //

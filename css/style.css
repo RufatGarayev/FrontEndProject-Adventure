@@ -47,6 +47,67 @@ header nav .navbar-items .links li, header nav .account li {
   position: relative;
 }
 
+header nav .account .search-area {
+  position: relative;
+  top: 12px;
+  left: 29px;
+}
+
+header nav .account .search-area input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transform: translate(3px, 0px);
+          transform: translate(3px, 0px);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+header nav .account .search-area a i::before {
+  font-size: 0px;
+  position: fixed;
+  -webkit-transform: translate(-17px, 0px);
+          transform: translate(-17px, 0px);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header nav .account .search-box-visible input {
+  opacity: 1;
+  width: 270px !important;
+  height: 45px !important;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  -webkit-transform: translate(-238px, 27px);
+          transform: translate(-238px, 27px);
+  position: fixed;
+  border: 1px solid white;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
+header nav .account .search-box-visible input:focus {
+  outline: none;
+}
+
+header nav .account .search-box-visible a i::before {
+  color: white;
+  font-size: 16px !important;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(-18px, 37px);
+          transform: translate(-18px, 37px);
+}
+
 #intro .carousel-button .carousel-control {
   width: 50px;
   height: 50px;
@@ -464,6 +525,17 @@ header nav .account {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 700px) and (max-width: 767.98px) {
+  header nav .account .search-box-visible input {
+    -webkit-transform: translate(-225px, 29px) !important;
+            transform: translate(-225px, 29px) !important;
+  }
+  header nav .account .search-box-visible a i::before {
+    -webkit-transform: translate(22px, 38px) !important;
+            transform: translate(22px, 38px) !important;
+  }
 }
 
 header nav .account li {

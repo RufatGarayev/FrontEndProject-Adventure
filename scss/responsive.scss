@@ -193,6 +193,22 @@
             }
           }
         }
+
+        .search-box-visible {
+          input {
+            width: 300px !important;
+            height: 48px !important;
+            transform: translate(-265px, 35px);
+          }
+          a {
+            i {
+              &::before {
+                font-size: 18px !important;
+                transform: translate(-22px, 45px);
+              }
+            }
+          }
+        }
       }
 
       .hamburger {
@@ -543,6 +559,22 @@
                 top: 0px;
                 right: -12px;
                 font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .search-box-visible {
+          input {
+            width: 300px !important;
+            height: 48px !important;
+            transform: translate(-156px, 29px);
+          }
+          a {
+            i {
+              &::before {
+                font-size: 18px !important;
+                transform: translate(89px, 38px);
               }
             }
           }
@@ -1012,6 +1044,22 @@
                 top: 0px;
                 right: -12px;
                 font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .search-box-visible {
+          input {
+            width: 290px !important;
+            height: 45px !important;
+            transform: translate(-154px, 23px);
+          }
+          a {
+            i {
+              &::before {
+                font-size: 17px !important;
+                transform: translate(84px, 33px);
               }
             }
           }

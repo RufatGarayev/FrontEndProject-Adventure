@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 15/02/2021 10:40
+    Creation date: 16/02/2021 00:18
     */
 
     @font-face {
@@ -53,6 +53,7 @@
 .flaticon-loupe:before { content: "\f10d"; }
 .flaticon-user:before { content: "\f10e"; }
 .flaticon-user-1:before { content: "\f10f"; }
+.flaticon-close:before { content: "\f110"; }
     
     $font-Flaticon-hotel: "\f100";
     $font-Flaticon-public-transport: "\f101";
@@ -70,3 +71,4 @@
     $font-Flaticon-loupe: "\f10d";
     $font-Flaticon-user: "\f10e";
     $font-Flaticon-user-1: "\f10f";
+    $font-Flaticon-close: "\f110";

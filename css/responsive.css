@@ -164,6 +164,17 @@
     right: -12px;
     font-size: 14px;
   }
+  header .navbar .account .search-box-visible input {
+    width: 300px !important;
+    height: 48px !important;
+    -webkit-transform: translate(-265px, 35px);
+            transform: translate(-265px, 35px);
+  }
+  header .navbar .account .search-box-visible a i::before {
+    font-size: 18px !important;
+    -webkit-transform: translate(-22px, 45px);
+            transform: translate(-22px, 45px);
+  }
   header .navbar .hamburger {
     display: inline-block !important;
     width: 35px;
@@ -463,6 +474,17 @@
     top: 0px;
     right: -12px;
     font-size: 14px;
+  }
+  header .navbar .account .search-box-visible input {
+    width: 300px !important;
+    height: 48px !important;
+    -webkit-transform: translate(-156px, 29px);
+            transform: translate(-156px, 29px);
+  }
+  header .navbar .account .search-box-visible a i::before {
+    font-size: 18px !important;
+    -webkit-transform: translate(89px, 38px);
+            transform: translate(89px, 38px);
   }
   header .navbar .hamburger {
     display: inline-block !important;
@@ -875,6 +897,17 @@
     top: 0px;
     right: -12px;
     font-size: 14px;
+  }
+  header .navbar .account .search-box-visible input {
+    width: 290px !important;
+    height: 45px !important;
+    -webkit-transform: translate(-154px, 23px);
+            transform: translate(-154px, 23px);
+  }
+  header .navbar .account .search-box-visible a i::before {
+    font-size: 17px !important;
+    -webkit-transform: translate(84px, 33px);
+            transform: translate(84px, 33px);
   }
   header .navbar .hamburger {
     display: inline-block !important;
