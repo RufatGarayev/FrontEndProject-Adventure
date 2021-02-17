@@ -101,7 +101,7 @@
   header .navbar img {
     width: 90px !important;
     position: absolute;
-    top: 16px !important;
+    top: 14px !important;
     left: 40px;
     z-index: 99;
   }
@@ -125,7 +125,7 @@
     transition: right 0.7s cubic-bezier(1, 0, 0, 1);
   }
   header .navbar .navbar-items .middle-links {
-    height: 507px;
+    height: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -150,7 +150,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     position: absolute;
-    top: 30px;
+    top: 26px;
     right: 120px;
   }
   header .navbar .account li {
@@ -161,8 +161,8 @@
   }
   header .navbar .account li a i sup {
     top: 0px;
-    right: -12px;
-    font-size: 14px;
+    right: -9px;
+    font-size: 13px;
   }
   header .navbar .account li .search-area-holder {
     right: 236px;
@@ -172,7 +172,7 @@
     width: 35px;
     height: 30px;
     position: absolute;
-    top: 28px;
+    top: 22px;
     right: 44px;
     cursor: pointer;
     display: -webkit-box !important;
@@ -401,7 +401,7 @@
   header .navbar img {
     width: 90px !important;
     position: absolute;
-    top: 12px !important;
+    top: 13px !important;
     left: 40px;
     z-index: 99;
   }
@@ -425,7 +425,8 @@
     transition: right 0.7s cubic-bezier(1, 0, 0, 1);
   }
   header .navbar .navbar-items .links {
-    height: 507px;
+    padding-top: 90px;
+    height: 470px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -453,7 +454,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     position: absolute;
-    top: 24px;
+    top: 26px;
     right: 120px;
   }
   header .navbar .account li {
@@ -464,8 +465,8 @@
   }
   header .navbar .account li a i sup {
     top: 0px;
-    right: -12px;
-    font-size: 14px;
+    right: -9px;
+    font-size: 13px;
   }
   header .navbar .account li .search-area-holder {
     width: calc(100% - 82px) !important;
@@ -516,7 +517,7 @@
     opacity: 0;
   }
   #intro .banner-area {
-    top: 29% !important;
+    top: 31% !important;
   }
   #intro .banner-area .caption {
     width: 90% !important;
@@ -819,7 +820,7 @@
   header .navbar img {
     width: 75px !important;
     position: absolute;
-    top: 11px !important;
+    top: 16px !important;
     left: 20px;
     z-index: 99;
   }
@@ -843,7 +844,7 @@
     transition: right 0.7s cubic-bezier(1, 0, 0, 1);
   }
   header .navbar .navbar-items .links {
-    height: 500px;
+    height: 450px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -859,7 +860,7 @@
             justify-content: space-evenly;
   }
   header .navbar .navbar-items .links li a {
-    font-size: 30px;
+    font-size: 24px;
   }
   header .navbar .active {
     right: 0 !important;
@@ -871,7 +872,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 76px;
   }
   header .navbar .account li {
@@ -882,8 +883,8 @@
   }
   header .navbar .account li a i sup {
     top: 0px;
-    right: -12px;
-    font-size: 14px;
+    right: -8px;
+    font-size: 12px;
   }
   header .navbar .account li .search-area-holder {
     width: calc(100% - 37px) !important;
@@ -896,7 +897,7 @@
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 16px;
+    top: 22px;
     right: 22px;
     cursor: pointer;
     display: -webkit-box !important;
@@ -1306,7 +1307,8 @@
     transition: right 0.7s cubic-bezier(1, 0, 0, 1);
   }
   header .navbar .navbar-items .links {
-    height: 500px;
+    padding-top: 50px;
+    height: 400px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1341,11 +1343,11 @@
     height: 18px;
   }
   header .navbar .account li a i::before {
-    font-size: 13px !important;
+    font-size: 15px !important;
   }
   header .navbar .account li a i sup {
-    top: 4px;
-    right: -7px;
+    top: 3px;
+    right: -6px;
     font-size: 9px;
   }
   header .navbar .account li .search-area-holder {

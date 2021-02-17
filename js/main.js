@@ -31,9 +31,11 @@ $(document).ready(function () {
     if ($(window).scrollTop() >= 33) {
       $("header").css("top", "0px");
       $(".search-area-holder").css("top", "80px");
+      $(".navbar-items").css({"height": "100%", "top": "0px"});
     } else {
       $("header").css("top", "33px");
       $(".search-area-holder").css("top", "112px");
+      $(".navbar-items").css({"height": "98%", "top": "33px"});
     }
     // === Header Position End === //
 

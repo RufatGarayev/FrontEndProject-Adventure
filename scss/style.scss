@@ -187,7 +187,7 @@ header {
   nav {
     background-color: rgba(0, 0, 0, 0.3);
     transition: 0.3s linear;
-    padding: 9px 70px !important;
+    padding: 0 70px 2px 70px !important;
     height: 75px;
     z-index: 7;
     img {
@@ -231,10 +231,11 @@ header {
           i {
             position: relative;
             sup {
+              font-size: 10px;
               font-style: normal;
               position: absolute;
               top: 3px;
-              right: -9px;
+              right: -7px;
             }
             &::before {
               font-size: 17px;
@@ -242,7 +243,7 @@ header {
             }
           }
           &:hover {
-            color: rgb(245, 192, 95) !important;
+            color: rgb(204, 176, 123) !important;
           }
         }
       }
@@ -888,7 +889,7 @@ header {
 // ======= Popular Tours Section Start ======= //
 #popular-tours {
   overflow-x: hidden;
-  background-color: rgb(250, 244, 244);
+  background-color: rgb(234, 241, 241);
   padding: 100px 60px 120px 60px;
   .popular-tours-caption {
     padding-bottom: 10px;
@@ -1217,7 +1218,7 @@ header {
 
 // ======= Achievements Section Start ======= //
 #our-achievements {
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(234, 241, 241);
   padding: 90px 0 120px 0;
 
   .achievements-caption {

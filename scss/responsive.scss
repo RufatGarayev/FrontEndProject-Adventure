@@ -136,7 +136,7 @@
       img {
         width: 90px !important;
         position: absolute;
-        top: 16px !important;
+        top: 14px !important;
         left: 40px;
         z-index: 99;
       }
@@ -156,7 +156,7 @@
         transition: right 0.7s cubic-bezier(1, 0, 0, 1);
 
         .middle-links {
-          height: 507px;
+          height: 500px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -176,7 +176,7 @@
         width: 180px !important;
         flex-direction: row;
         position: absolute;
-        top: 30px;
+        top: 26px;
         right: 120px;
         li {
           height: 24px;
@@ -187,14 +187,13 @@
               }
               sup {
                 top: 0px;
-                right: -12px;
-                font-size: 14px;
+                right: -9px;
+                font-size: 13px;
               }
             }
           }
 
           .search-area-holder {
-            // top: 122px !important;
             right: 236px;
           }
         }
@@ -205,7 +204,7 @@
         width: 35px;
         height: 30px;
         position: absolute;
-        top: 28px;
+        top: 22px;
         right: 44px;
         cursor: pointer;
         display: flex !important;
@@ -494,7 +493,7 @@
       img {
         width: 90px !important;
         position: absolute;
-        top: 12px !important;
+        top: 13px !important;
         left: 40px;
         z-index: 99;
       }
@@ -514,7 +513,8 @@
         transition: right 0.7s cubic-bezier(1, 0, 0, 1);
 
         .links {
-          height: 507px;
+          padding-top: 90px;
+          height: 470px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -535,7 +535,7 @@
         width: 180px !important;
         flex-direction: row;
         position: absolute;
-        top: 24px;
+        top: 26px;
         right: 120px;
         li {
           height: 24px;
@@ -546,8 +546,8 @@
               }
               sup {
                 top: 0px;
-                right: -12px;
-                font-size: 14px;
+                right: -9px;
+                font-size: 13px;
               }
             }
           }
@@ -603,7 +603,7 @@
     }
 
     .banner-area {
-      top: 29% !important;
+      top: 31% !important;
       .caption {
         width: 90% !important;
         h3 {
@@ -970,7 +970,7 @@
       img {
         width: 75px !important;
         position: absolute;
-        top: 11px !important;
+        top: 16px !important;
         left: 20px;
         z-index: 99;
       }
@@ -990,14 +990,14 @@
         transition: right 0.7s cubic-bezier(1, 0, 0, 1);
 
         .links {
-          height: 500px;
+          height: 450px;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: space-evenly;
           li {
             a {
-              font-size: 30px;
+              font-size: 24px;
             }
           }
         }
@@ -1011,7 +1011,7 @@
         width: 180px !important;
         flex-direction: row;
         position: absolute;
-        top: 20px;
+        top: 25px;
         right: 76px;
         li {
           height: 24px;
@@ -1022,8 +1022,8 @@
               }
               sup {
                 top: 0px;
-                right: -12px;
-                font-size: 14px;
+                right: -8px;
+                font-size: 12px;
               }
             }
           }
@@ -1042,7 +1042,7 @@
         width: 30px;
         height: 30px;
         position: absolute;
-        top: 16px;
+        top: 22px;
         right: 22px;
         cursor: pointer;
         display: flex !important;
@@ -1521,7 +1521,8 @@
         transition: right 0.7s cubic-bezier(1, 0, 0, 1);
 
         .links {
-          height: 500px;
+          padding-top: 50px;
+          height: 400px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -1549,11 +1550,11 @@
           a {
             i {
               &::before {
-                font-size: 13px !important;
+                font-size: 15px !important;
               }
               sup {
-                top: 4px;
-                right: -7px;
+                top: 3px;
+                right: -6px;
                 font-size: 9px;
               }
             }

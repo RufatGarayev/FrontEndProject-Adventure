@@ -1,19 +1,19 @@
-%nav-links {
-  color: white !important;
-  font-weight: 300;
-  font-size: 15px;
-  letter-spacing: 1px;
-  &:hover {
-    text-decoration: none;
-  }
-}
+// %nav-links {
+//   color: white !important;
+//   font-weight: 300;
+//   font-size: 15px;
+//   letter-spacing: 1px;
+//   &:hover {
+//     text-decoration: none;
+//   }
+// }
 
 %nav-li-line {
   position: absolute;
   bottom: 7px;
   left: 0;
   margin: 0;
-  height: 0.3px;
+  height: 0.5px;
   width: 0px;
   background-color: white !important;
 }
@@ -39,7 +39,13 @@
       @extend %nav-li-line;
     }
     a {
-      @extend %nav-links;
+      color: white !important;
+      font-weight: 300;
+      font-size: 15px;
+      letter-spacing: 1px;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
@@ -64,6 +70,7 @@
       outline: none;
     }
   }
+
   a {
     position: absolute;
     top: 12px;

@@ -1,20 +1,9 @@
-header nav .navbar-items .links li a, header nav .account li a {
-  color: white !important;
-  font-weight: 300;
-  font-size: 15px;
-  letter-spacing: 1px;
-}
-
-header nav .navbar-items .links li a:hover, header nav .account li a:hover {
-  text-decoration: none;
-}
-
 header nav .navbar-items .links li hr, header nav .account li hr {
   position: absolute;
   bottom: 7px;
   left: 0;
   margin: 0;
-  height: 0.3px;
+  height: 0.5px;
   width: 0px;
   background-color: white !important;
 }
@@ -45,6 +34,17 @@ header nav .navbar-items .links li, header nav .account li {
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
   position: relative;
+}
+
+header nav .navbar-items .links li a, header nav .account li a {
+  color: white !important;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+header nav .navbar-items .links li a:hover, header nav .account li a:hover {
+  text-decoration: none;
 }
 
 header nav .account .search-area-holder {
@@ -471,7 +471,7 @@ header nav {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
-  padding: 9px 70px !important;
+  padding: 0 70px 2px 70px !important;
   height: 75px;
   z-index: 7;
 }
@@ -532,10 +532,11 @@ header nav .account li a i {
 }
 
 header nav .account li a i sup {
+  font-size: 10px;
   font-style: normal;
   position: absolute;
   top: 3px;
-  right: -9px;
+  right: -7px;
 }
 
 header nav .account li a i::before {
@@ -544,7 +545,7 @@ header nav .account li a i::before {
 }
 
 header nav .account li a:hover {
-  color: #f5c05f !important;
+  color: #ccb07b !important;
 }
 
 header nav .account .user {
@@ -1185,7 +1186,7 @@ header nav .active-link hr {
 
 #popular-tours {
   overflow-x: hidden;
-  background-color: #faf4f4;
+  background-color: #eaf1f1;
   padding: 100px 60px 120px 60px;
 }
 
@@ -1476,7 +1477,7 @@ header nav .active-link hr {
 }
 
 #our-achievements {
-  background-color: #f8f8f8;
+  background-color: #eaf1f1;
   padding: 90px 0 120px 0;
 }
 
