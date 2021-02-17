@@ -96,10 +96,10 @@
     padding: 0 43px !important;
   }
   header .navbar {
-    height: 88px;
+    height: 75px;
   }
   header .navbar img {
-    width: 100px !important;
+    width: 90px !important;
     position: absolute;
     top: 16px !important;
     left: 40px;
@@ -107,7 +107,7 @@
   }
   header .navbar .navbar-items {
     width: 100% !important;
-    height: 100%;
+    height: 97%;
     background-color: #1b1b1b !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -119,7 +119,7 @@
         -ms-flex-align: center;
             align-items: center;
     position: fixed;
-    top: 0;
+    top: 33px;
     right: -100%;
     -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
     transition: right 0.7s cubic-bezier(1, 0, 0, 1);
@@ -164,12 +164,8 @@
     right: -12px;
     font-size: 14px;
   }
-  header .navbar .account li .search-area-holder a {
-    -webkit-transition: 0.1s !important;
-    transition: 0.1s !important;
-  }
-  header .navbar .account li .search-box-visible {
-    top: 61px !important;
+  header .navbar .account li .search-area-holder {
+    right: 236px;
   }
   header .navbar .hamburger {
     display: inline-block !important;
@@ -411,7 +407,7 @@
   }
   header .navbar .navbar-items {
     width: 100% !important;
-    height: 100%;
+    height: 98%;
     background-color: #1b1b1b !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -423,7 +419,7 @@
         -ms-flex-align: center;
             align-items: center;
     position: fixed;
-    top: 0;
+    top: 33px;
     right: -100%;
     -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
     transition: right 0.7s cubic-bezier(1, 0, 0, 1);
@@ -471,13 +467,11 @@
     right: -12px;
     font-size: 14px;
   }
-  header .navbar .account li .search-area-holder a {
-    -webkit-transition: 0.1s !important;
-    transition: 0.1s !important;
-  }
-  header .navbar .account li .search-box-visible {
-    top: 53px;
-    right: -6.7%;
+  header .navbar .account li .search-area-holder {
+    width: calc(100% - 82px) !important;
+    height: 60px !important;
+    position: fixed !important;
+    left: 41px !important;
   }
   header .navbar .hamburger {
     display: inline-block !important;
@@ -820,7 +814,7 @@
     font-size: 13px !important;
   }
   header .navbar {
-    height: 65px;
+    height: 75px;
   }
   header .navbar img {
     width: 75px !important;
@@ -831,7 +825,7 @@
   }
   header .navbar .navbar-items {
     width: 100% !important;
-    height: 100%;
+    height: 98%;
     background-color: #1b1b1b !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -843,7 +837,7 @@
         -ms-flex-align: center;
             align-items: center;
     position: fixed;
-    top: 0;
+    top: 33px;
     right: -100%;
     -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
     transition: right 0.7s cubic-bezier(1, 0, 0, 1);
@@ -891,16 +885,11 @@
     right: -12px;
     font-size: 14px;
   }
-  header .navbar .account li .search-area-holder a {
-    top: 8px !important;
-    -webkit-transition: 0.1s !important;
-    transition: 0.1s !important;
-  }
-  header .navbar .account li .search-box-visible {
-    width: 280px !important;
-    height: 40px !important;
-    top: 48px;
-    right: -272.7%;
+  header .navbar .account li .search-area-holder {
+    width: calc(100% - 37px) !important;
+    height: 55px !important;
+    position: fixed !important;
+    left: 18px !important;
   }
   header .navbar .hamburger {
     display: inline-block !important;
@@ -1288,18 +1277,18 @@
     margin-right: 7px !important;
   }
   header .navbar {
-    height: 53px;
+    height: 75px;
   }
   header .navbar img {
-    width: 60px !important;
+    width: 63px !important;
     position: absolute;
-    top: 10px !important;
+    top: 20px !important;
     left: 12px;
     z-index: 99;
   }
   header .navbar .navbar-items {
     width: 100% !important;
-    height: 100%;
+    height: 98%;
     background-color: #1b1b1b !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1311,7 +1300,7 @@
         -ms-flex-align: center;
             align-items: center;
     position: fixed;
-    top: 0;
+    top: 33px;
     right: -100%;
     -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
     transition: right 0.7s cubic-bezier(1, 0, 0, 1);
@@ -1345,7 +1334,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     position: absolute;
-    top: 18px;
+    top: 30px;
     right: 50px;
   }
   header .navbar .account li {
@@ -1359,23 +1348,18 @@
     right: -7px;
     font-size: 9px;
   }
-  header .navbar .account li .search-area-holder a {
-    top: 8px !important;
-    -webkit-transition: 0.1s !important;
-    transition: 0.1s !important;
-  }
-  header .navbar .account li .search-box-visible {
-    width: 240px !important;
-    height: 40px !important;
-    top: 37px;
-    right: -290%;
+  header .navbar .account li .search-area-holder {
+    width: calc(100% - 27px) !important;
+    height: 45px !important;
+    position: fixed !important;
+    left: 12px !important;
   }
   header .navbar .hamburger {
     display: inline-block !important;
     width: 25px;
     height: 30px;
     position: absolute;
-    top: 11px;
+    top: 22px;
     right: 18px;
     cursor: pointer;
     display: -webkit-box !important;

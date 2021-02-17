@@ -26,13 +26,18 @@ $(document).ready(function () {
     }
     // === Nav Bg-Color End === //
 
+
     // === Header Position Start === //
-    if ($(window).scrollTop() >= 34) {
+    if ($(window).scrollTop() >= 33) {
       $("header").css("top", "0px");
+      $(".search-area-holder").css("top", "80px");
     } else {
       $("header").css("top", "33px");
+      $(".search-area-holder").css("top", "112px");
     }
     // === Header Position End === //
+
+
   };
   // ======= Nav Bg-Color On Scroll End ======= //
 

@@ -26,6 +26,7 @@ html {
   overflow: hidden;
 }
 
+
 // ======= Loader Start ======= //
 .loading {
   position: fixed;
@@ -175,6 +176,7 @@ html {
 }
 // ======= Top Header End ======= //
 
+
 // ======= Header Start ======= //
 header {
   // overflow-x: hidden;
@@ -186,6 +188,7 @@ header {
     background-color: rgba(0, 0, 0, 0.3);
     transition: 0.3s linear;
     padding: 9px 70px !important;
+    height: 75px;
     z-index: 7;
     img {
       width: 90px;
@@ -208,45 +211,11 @@ header {
       align-items: center;
 
       .search-area-holder{
-        @extend %search-hidden;
+        @extend %search-box;
       }
       
       .search-box-visible {
-        @extend %search-visible;
-      }
-      
-      @media (min-width: 576px) and (max-width: 670px) {
-        .search-box-visible {
-          top: 53px !important;
-          right: -177.7% !important;
-        }
-      }
-
-      @media (min-width: 490px) and (max-width: 575.98px) {
-        .search-box-visible {
-          width: 280px !important;
-          height: 45px !important;
-          right: -140% !important;
-        }
-      }
-
-      @media (min-width: 250px) and (max-width: 299.98px) {
-        .search-area-holder {
-          a {
-            top: 7px !important;
-            i{
-              &::before{
-                font-size: 14px !important;
-              }
-            }
-          }
-        }
-        .search-box-visible {
-          width: 220px !important;
-          height: 36px !important;
-          top: 38px;
-          right: -290%;
-        }
+        opacity: 1 !important;
       }
 
 
@@ -298,6 +267,7 @@ header {
     }
   }
 }
+// ======= Header End ======= //
 
 
 // ======= Intro Section Start ======= //
