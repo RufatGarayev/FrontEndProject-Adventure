@@ -1,13 +1,3 @@
-// %nav-links {
-//   color: white !important;
-//   font-weight: 300;
-//   font-size: 15px;
-//   letter-spacing: 1px;
-//   &:hover {
-//     text-decoration: none;
-//   }
-// }
-
 %nav-li-line {
   position: absolute;
   bottom: 7px;
@@ -54,32 +44,102 @@
   width: 300px;
   height: 50px;
   position: fixed;
-  top: 122px;
+  top: 112px;
   right: 192px;
-  transition: 0.5s;
+  border-radius: 4px;
+  visibility: hidden;
   opacity: 0;
+  transition: 0.5s linear;
+  box-shadow: 0 2px 12px 0 rgba(105, 96, 96, 10%);
+
   input[type="text"] {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: white;
+    color: black;
     width: 100%;
     height: 100%;
-    border: 1px solid white;
+    border: 0;
     padding-left: 15px;
     border-radius: 5px;
     &:focus {
-      outline: none;
+      outline: 0;
+      border: 1px solid black;
     }
   }
 
   a {
     position: absolute;
-    top: 12px;
+    top: 11px;
     right: 15px;
-    transition: 0.5s;
     i {
       &::before {
-        color: white;
-        font-size: 16px;
+        color: black;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+%login-area {
+  width: 420px;
+  background: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(105, 96, 96, 10%);
+  border-radius: 5px;
+  position: fixed;
+  top: 114px;
+  right: 139px;
+  padding: 50px 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s linear;
+  .login-box {
+    width: 100%;
+    .input-area {
+      width: 100%;
+      height: 55px;
+      margin-bottom: 15px;
+      background: #ffffff;
+      font-size: 16px;
+      color: #3c3c3c;
+      input {
+        border-radius: 4px;
+        padding: 0 25px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        outline: none;
+        &:focus{
+          border: 1px solid black;
+        }
+      }
+    }
+
+    .forgot-area {
+      text-align: right;
+      margin: 2px 0 20px 0;
+      a {
+        font-size: 14px;
+        color: #3c3c3c !important;
+        &:hover {
+          color: #222121 !important;
+        }
+      }
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .sign-up {
+        color: #3c3c3c !important;
+        font-weight: 600;
+        font-size: 15px;
+      }
+
+      .sign-in {
+        @extend %website-button;
+        &:hover {
+          color: white !important;
+        }
       }
     }
   }
@@ -120,7 +180,7 @@
   border-radius: 3px;
   color: white;
   text-align: center;
-  background-color: #3a3b74;
+  background-color: rgb(58,59,116); 
   position: relative;
   text-transform: uppercase;
   &::before {

@@ -31,15 +31,15 @@ $(document).ready(function () {
     if ($(window).scrollTop() >= 33) {
       $("header").css("top", "0px");
       $(".search-area-holder").css("top", "80px");
-      $(".navbar-items").css({"height": "100%", "top": "0px"});
+      $(".login-box-holder").css("top", "80px");
+      $(".navbar-items").css({ height: "100%", top: "0px" });
     } else {
       $("header").css("top", "33px");
       $(".search-area-holder").css("top", "112px");
-      $(".navbar-items").css({"height": "98%", "top": "33px"});
+      $(".login-box-holder").css("top", "112px");
+      $(".navbar-items").css({ height: "98%", top: "33px" });
     }
     // === Header Position End === //
-
-
   };
   // ======= Nav Bg-Color On Scroll End ======= //
 
@@ -47,7 +47,7 @@ $(document).ready(function () {
   // ======= Changing Link To Active OnClick Start ======= //
   $(document).on("click", ".navbar-items .nav-item", function () {
     $(this).addClass("active-link").siblings().removeClass("active-link");
-    $(".account .nav-item").removeClass("active-link");
+    // $(".account .nav-item").removeClass("active-link");
   });
   // ======= Changing Link To Active OnClick End ======= //
 
@@ -60,18 +60,20 @@ $(document).ready(function () {
   // ======= Counter-Up End ======= //
 
 
-  // ======= Making visible or invisible the search-box on click and replacing search icon Start ======= //
-  $(document).on("click", ".search-btn-first", function (e) {
-    e.preventDefault();
-    if ($(this).children().hasClass("flaticon-loupe")) {
-      $(this).children().removeClass("flaticon-loupe").addClass("flaticon-close");
+  // ======= Making visible or invisible the Search-Box and Login-Area on click and replacing icon - Start ======= //
+  $(document).on("click", ".icon-btn", function () {
+    if(!$(this).siblings().hasClass("visible") && !$(this).children().hasClass("flaticon-close")){
+      $(this).siblings().addClass("visible").parent().siblings().children(".holder-div").removeClass("visible");
+      $(this).children().addClass("flaticon-close");
+      $(this).parent().siblings().find("i").removeClass("flaticon-close");
     }else{
-      $(this).children().addClass("flaticon-loupe").removeClass("flaticon-close");
+      $(this).siblings().removeClass("visible");
+      $(this).children().removeClass("flaticon-close");
     }
-    $(".search-area-holder").toggleClass("search-box-visible");
   });
-  // ======= Making visible or invisible the search-box on click and replacing search icon End ======= //
+  // ======= Making visible or invisible the Search-Box and Login-Area on click and replacing icon - End ======= //
 });
+
 
 
 // ======= Navbar Hamburger Effect Start ======= //
@@ -84,7 +86,6 @@ menuIcon.addEventListener("click", () => {
   document.body.classList.toggle("stop-scroll");
 });
 // ======= Navbar Hamburger Effect End ======= //
-
 
 
 // ======= Type Writer Effect Start ======= //
@@ -155,7 +156,6 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 // ======= Type Writer Effect End ======= //
-
 
 // ======= Countdown Start ======= //
 function countdown() {

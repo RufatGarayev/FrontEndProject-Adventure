@@ -26,7 +26,6 @@ html {
   overflow: hidden;
 }
 
-
 // ======= Loader Start ======= //
 .loading {
   position: fixed;
@@ -176,7 +175,6 @@ html {
 }
 // ======= Top Header End ======= //
 
-
 // ======= Header Start ======= //
 header {
   // overflow-x: hidden;
@@ -210,15 +208,6 @@ header {
       @extend %nav-link-properties;
       align-items: center;
 
-      .search-area-holder{
-        @extend %search-box;
-      }
-      
-      .search-box-visible {
-        opacity: 1 !important;
-      }
-
-
       li {
         height: 20px;
         width: 33%;
@@ -246,6 +235,19 @@ header {
             color: rgb(204, 176, 123) !important;
           }
         }
+
+        .search-area-holder {
+          @extend %search-box;
+        }
+
+        .login-box-holder {
+          @extend %login-area;
+        }
+
+        .visible {
+          visibility: visible;
+          opacity: 1;
+        }
       }
       .user {
         border-left: 1px solid rgb(184, 182, 182);
@@ -269,7 +271,6 @@ header {
   }
 }
 // ======= Header End ======= //
-
 
 // ======= Intro Section Start ======= //
 #intro {
