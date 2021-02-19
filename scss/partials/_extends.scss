@@ -105,6 +105,35 @@
   z-index: 1;
 }
 
+%back-to-top{
+  position: fixed;
+  right: 30px;
+  bottom: 70px;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  width: 45px;
+  height: 50px;
+  border-radius: 4px;
+  line-height: 45px;
+  background-color: rgb(58,59,116);
+  transform: translateY(200px);
+  visibility: hidden;
+  transition: 0.6s all;
+  z-index: 999;
+  &:focus{
+    outline: none;
+  }
+  i{
+    &::before{
+      color: white;
+      font-size: 18px;
+      margin-left: 0;
+    }
+  }
+}
+
 %section-caption {
   font-size: 46px;
   font-family: ludicrous;

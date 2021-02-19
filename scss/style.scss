@@ -139,6 +139,14 @@ html {
 }
 // ======= Loader End ======= //
 
+
+// ======= Back To Top Start ======= //
+#topBtn{
+  @extend %back-to-top;
+}
+// ======= Back To Top End ======= //
+
+
 // ======= Top Header Start ======= //
 #top-header {
   background-color: rgb(27, 27, 27);
@@ -233,7 +241,6 @@ header {
           }
           &:hover {
             color: #aac5b7 !important;
-            // color: rgb(245, 192, 95) !important;
           }
         }
 
@@ -478,7 +485,7 @@ header {
 }
 // ======= Intro Section End ======= //
 
-// ======= We Are Best Section Start ======= //
+// ======= Our Advantages Section Start ======= //
 #our-advantages {
   position: relative;
   overflow: hidden;
@@ -545,7 +552,7 @@ header {
     }
   }
 }
-// ======= We Are Best Section End ======= //
+// ======= Our Advantages Section End ======= //
 
 // ======= Special Offers Section Start ======= //
 #special-offers {

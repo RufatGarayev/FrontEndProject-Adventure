@@ -40,7 +40,7 @@ $(document).ready(function () {
     }
     // === Header Position End === //
   };
-  // ======= Nav Bg-Color On Scroll End ======= //
+  // ======= Events On Scroll End ======= //
 
 
   // ======= Changing Link To Active OnClick Start ======= //
@@ -84,17 +84,35 @@ $(document).ready(function () {
 
 
   // ======= Go to Reset Password Area and back - Start ======= //
-  $(document).on("click", ".forgotten-password-link", function () {
+  $(document).on("click", ".forgotten-password-link", function (e) {
+    e.preventDefault();
     $(".reset-password").removeClass("d-none");
     $(".login-box").addClass("d-none");
   });
 
-  $(document).on("click", ".go-back", function () {
+  $(document).on("click", ".go-back", function (e) {
+    e.preventDefault();
     $(".reset-password").addClass("d-none");
     $(".login-box").removeClass("d-none");
   });
   // ======= Go to Reset Password Area and back - End ======= //
+
+
+  // ======= Back To Top Btn - Start ======= //
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 300) {
+      $("#topBtn").css({"transform": "translateY(0)", "visibility": "visible"});
+    }else{
+      $("#topBtn").css({"transform": "translateY(200px)", "visibility": "hidden"});
+    }
+  });
+
+  $("#topBtn").click(function(){
+    $("html, body").animate({scrollTop: 0}, 500);
+  });
+  // ======= Back To Top Btn - End ======= //
 });
+
 
 
 

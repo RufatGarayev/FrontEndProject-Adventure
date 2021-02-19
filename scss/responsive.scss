@@ -956,6 +956,10 @@
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
+  #topBtn{
+    right: 20px !important;
+  }
+
   #top-header {
     padding: 0 20px !important;
     .phone {
@@ -1498,6 +1502,10 @@
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
+  #topBtn{
+    right: 15px !important;
+  }
+
   #top-header {
     height: 34px !important;
     padding: 0 11px !important;

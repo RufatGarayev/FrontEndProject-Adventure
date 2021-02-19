@@ -116,6 +116,37 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
           transform: scaleX(1);
 }
 
+#topBtn {
+  position: fixed;
+  right: 30px;
+  bottom: 70px;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  width: 45px;
+  height: 50px;
+  border-radius: 4px;
+  line-height: 45px;
+  background-color: #3a3b74;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  visibility: hidden;
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
+  z-index: 999;
+}
+
+#topBtn:focus {
+  outline: none;
+}
+
+#topBtn i::before {
+  color: white;
+  font-size: 18px;
+  margin-left: 0;
+}
+
 #our-advantages .caption h1, #special-offers .special-offers-caption h1, #popular-tours .popular-tours-caption h1, #coming-soon .coming-soon-caption h1, #our-achievements .achievements-caption h1, #subscribe .subscribe-title h1 {
   font-size: 46px;
   font-family: ludicrous;
