@@ -141,11 +141,10 @@ html {
 
 
 // ======= Back To Top Start ======= //
-#topBtn{
+#topBtn {
   @extend %back-to-top;
 }
 // ======= Back To Top End ======= //
-
 
 // ======= Top Header Start ======= //
 #top-header {
@@ -156,17 +155,26 @@ html {
     padding-top: 5px;
     span {
       i {
-        margin-right: 7px;
+        margin-right: 4px;
       }
       font-size: 13px;
     }
   }
   .langs {
+    height: 100%;
+    padding-top: 3px;
     ul {
       justify-content: flex-end;
-      padding-top: 7px;
+      align-items: center;
+      margin-bottom: 0;
+      height: 100%;
       li {
         font-size: 14px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 13px;
         a {
           color: white;
           &:hover {
@@ -175,7 +183,7 @@ html {
           }
         }
         &:first-of-type {
-          margin-right: 11px;
+          border-right: 1px solid rgb(184, 182, 182);
         }
       }
     }
@@ -217,6 +225,26 @@ header {
       align-items: center;
 
       li {
+        .top-info-box {
+          display: inline-block;
+          white-space: nowrap;
+          position: absolute;
+          height: 30px;
+          padding: 0 10px;
+          font-size: 14px;
+          line-height: 30px;
+          text-decoration: none;
+          color: #000;
+          bottom: calc(100% + 8px);
+          background-color: #fff;
+          left: 50%;
+          transform: translate(calc(2px - 50%), 0);
+          opacity: 0;
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+          border-radius: 4px;
+          transition: all 0.2s ease-out;
+        }
+        
         height: 20px;
         width: 33%;
         position: relative !important;
@@ -345,7 +373,7 @@ header {
                 &:hover {
                   color: white !important;
                 }
-                &:focus{
+                &:focus {
                   outline: none;
                 }
               }
@@ -364,7 +392,7 @@ header {
               &:hover {
                 color: white !important;
               }
-              &:focus{
+              &:focus {
                 outline: none;
               }
             }
@@ -374,15 +402,16 @@ header {
             display: none !important;
           }
 
-          .success{
+          .success {
             flex-direction: column;
             height: 165px;
             justify-content: space-between;
-            i{
+            i {
               font-size: 60px;
-              color: rgb(118,148,132);
+              color: rgb(118, 148, 132);
             }
-            h4, p{
+            h4,
+            p {
               margin-bottom: 0;
             }
           }
@@ -415,6 +444,7 @@ header {
   }
 }
 // ======= Header End ======= //
+
 
 // ======= Intro Section Start ======= //
 #intro {
@@ -490,7 +520,7 @@ header {
   position: relative;
   overflow: hidden;
   padding: 66px 0 99px 0;
-  background-color: rgba(118, 148, 132, 0.2);
+  background-color: rgba(143, 143, 143, 0.2);
   .caption {
     height: 115px;
     h1 {
@@ -503,51 +533,53 @@ header {
     }
   }
 
-  .holder {
-    padding: 40px 5px 0 5px;
-    height: 257px;
-    transition: 0.4s ease-in-out;
-    &:hover {
-      padding-top: 15px !important;
+  .main-holder {
+    .holder {
+      padding: 40px 5px 0 5px;
+      height: 257px;
       transition: 0.4s ease-in-out;
-    }
-    .icon-holder {
-      i {
-        color: $icon-color;
-        &::before {
-          font-size: $big-icon-size;
-          margin-left: 0;
+      &:hover {
+        padding-top: 15px !important;
+        transition: 0.4s ease-in-out !important;
+      }
+      .icon-holder {
+        i {
+          color: $icon-color;
+          &::before {
+            font-size: $big-icon-size;
+            margin-left: 0;
+          }
         }
       }
-    }
 
-    h4 {
-      font-size: $item-caption-size;
-      font-family: $item-caption-font-family;
-      padding-top: 20px;
-      font-weight: 500;
-      color: rgb(58, 59, 116);
-    }
-
-    hr {
-      height: 0.5px !important;
-      display: inline-block;
-      width: 26px;
-      margin: 10px 0 0 0;
-      background-color: rgb(58, 59, 116);
-    }
-
-    p {
-      position: relative;
-      padding-top: 22px;
-      font-size: $paragraph-size;
-      font-weight: $paragraph-weight;
-      color: black;
-    }
-
-    @media (min-width: 250px) and (max-width: 315px) {
       h4 {
-        font-size: 18px !important;
+        font-size: $item-caption-size;
+        font-family: $item-caption-font-family;
+        padding-top: 20px;
+        font-weight: 500;
+        color: rgb(58, 59, 116);
+      }
+
+      hr {
+        height: 0.5px !important;
+        display: inline-block;
+        width: 26px;
+        margin: 10px 0 0 0;
+        background-color: rgb(58, 59, 116);
+      }
+
+      p {
+        position: relative;
+        padding-top: 22px;
+        font-size: $paragraph-size;
+        font-weight: $paragraph-weight;
+        color: black;
+      }
+
+      @media (min-width: 250px) and (max-width: 315px) {
+        h4 {
+          font-size: 18px !important;
+        }
       }
     }
   }
@@ -1035,8 +1067,7 @@ header {
 // ======= Popular Tours Section Start ======= //
 #popular-tours {
   overflow-x: hidden;
-  // background-color: rgb(147, 216, 216);
-  background-color: rgba(118, 148, 132, 0.2);
+  background-color: rgba(143, 143, 143, 0.2);
 
   padding: 100px 60px 120px 60px;
   .popular-tours-caption {
@@ -1368,8 +1399,7 @@ header {
 
 // ======= Achievements Section Start ======= //
 #our-achievements {
-  // background-color: rgb(234, 241, 241);
-  background-color: rgba(118, 148, 132, 0.2);
+  background-color: rgba(143, 143, 143, 0.2);
   padding: 90px 0 120px 0;
 
   .achievements-caption {

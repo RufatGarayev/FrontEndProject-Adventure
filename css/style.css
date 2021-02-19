@@ -427,18 +427,38 @@ html {
 }
 
 #top-header .phone span i {
-  margin-right: 7px;
+  margin-right: 4px;
+}
+
+#top-header .langs {
+  height: 100%;
+  padding-top: 3px;
 }
 
 #top-header .langs ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-top: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  height: 100%;
 }
 
 #top-header .langs ul li {
   font-size: 14px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 13px;
 }
 
 #top-header .langs ul li a {
@@ -451,7 +471,7 @@ html {
 }
 
 #top-header .langs ul li:first-of-type {
-  margin-right: 11px;
+  border-right: 1px solid #b8b6b6;
 }
 
 header {
@@ -510,6 +530,29 @@ header nav .account li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+header nav .account li .top-info-box {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #000;
+  bottom: calc(100% + 8px);
+  background-color: #fff;
+  left: 50%;
+  -webkit-transform: translate(calc(2px - 50%), 0);
+          transform: translate(calc(2px - 50%), 0);
+  opacity: 0;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 header nav .account li a {
@@ -702,7 +745,8 @@ header nav .account li .login-box-holder .success i {
   color: #769484;
 }
 
-header nav .account li .login-box-holder .success h4, header nav .account li .login-box-holder .success p {
+header nav .account li .login-box-holder .success h4,
+header nav .account li .login-box-holder .success p {
   margin-bottom: 0;
 }
 
@@ -822,7 +866,7 @@ header nav .active-link hr {
   position: relative;
   overflow: hidden;
   padding: 66px 0 99px 0;
-  background-color: rgba(118, 148, 132, 0.2);
+  background-color: rgba(143, 143, 143, 0.2);
 }
 
 #our-advantages .caption {
@@ -834,29 +878,29 @@ header nav .active-link hr {
   padding: 30px 0 0 !important;
 }
 
-#our-advantages .holder {
+#our-advantages .main-holder .holder {
   padding: 40px 5px 0 5px;
   height: 257px;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
-#our-advantages .holder:hover {
+#our-advantages .main-holder .holder:hover {
   padding-top: 15px !important;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out !important;
+  transition: 0.4s ease-in-out !important;
 }
 
-#our-advantages .holder .icon-holder i {
+#our-advantages .main-holder .holder .icon-holder i {
   color: #db7355;
 }
 
-#our-advantages .holder .icon-holder i::before {
+#our-advantages .main-holder .holder .icon-holder i::before {
   font-size: 60px;
   margin-left: 0;
 }
 
-#our-advantages .holder h4 {
+#our-advantages .main-holder .holder h4 {
   font-size: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 20px;
@@ -864,7 +908,7 @@ header nav .active-link hr {
   color: #3a3b74;
 }
 
-#our-advantages .holder hr {
+#our-advantages .main-holder .holder hr {
   height: 0.5px !important;
   display: inline-block;
   width: 26px;
@@ -872,7 +916,7 @@ header nav .active-link hr {
   background-color: #3a3b74;
 }
 
-#our-advantages .holder p {
+#our-advantages .main-holder .holder p {
   position: relative;
   padding-top: 22px;
   font-size: 16px;
@@ -881,7 +925,7 @@ header nav .active-link hr {
 }
 
 @media (min-width: 250px) and (max-width: 315px) {
-  #our-advantages .holder h4 {
+  #our-advantages .main-holder .holder h4 {
     font-size: 18px !important;
   }
 }
@@ -1350,7 +1394,7 @@ header nav .active-link hr {
 
 #popular-tours {
   overflow-x: hidden;
-  background-color: rgba(118, 148, 132, 0.2);
+  background-color: rgba(143, 143, 143, 0.2);
   padding: 100px 60px 120px 60px;
 }
 
@@ -1645,7 +1689,7 @@ header nav .active-link hr {
 }
 
 #our-achievements {
-  background-color: rgba(118, 148, 132, 0.2);
+  background-color: rgba(143, 143, 143, 0.2);
   padding: 90px 0 120px 0;
 }
 

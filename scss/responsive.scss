@@ -127,7 +127,10 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   #top-header {
-    padding: 0 43px !important;
+    padding: 0 36px 0 42px !important;
+    .langs{
+      padding-top: 3px;
+    }
   }
 
   header {
@@ -488,7 +491,10 @@
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #top-header {
-    padding: 0 43px !important;
+    padding: 0 35px 0 43px !important;
+    .langs{
+      padding-top: 3px;
+    }
   }
 
   header {
@@ -961,7 +967,7 @@
   }
 
   #top-header {
-    padding: 0 20px !important;
+    padding: 0 14px 0 21px !important;
     .phone {
       padding-top: 5px;
       span {
@@ -969,6 +975,7 @@
       }
     }
     .langs {
+      padding-top: 3px;
       ul {
         li {
           font-size: 13px !important;
@@ -1508,7 +1515,7 @@
 
   #top-header {
     height: 34px !important;
-    padding: 0 11px !important;
+    padding: 0 7px 0 14px !important;
     .phone {
       padding-top: 5px;
       span {
@@ -1516,11 +1523,10 @@
       }
     }
     .langs {
+      padding-top: 3px;
       ul {
-        padding-top: 10px !important;
         li {
           font-size: 10px !important;
-          margin-right: 7px !important;
         }
       }
     }

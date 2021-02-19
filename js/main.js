@@ -63,16 +63,8 @@ $(document).ready(function () {
   $(document).on("click", ".icon-btn", function (e) {
     e.preventDefault();
     if (
-      !$(this).siblings().hasClass("visible") &&
-      !$(this).children().hasClass("flaticon-close")
-    ) {
-      $(this)
-        .siblings()
-        .addClass("visible")
-        .parent()
-        .siblings()
-        .children(".holder-div")
-        .removeClass("visible");
+      !$(this).siblings().hasClass("visible") && !$(this).children().hasClass("flaticon-close")) {
+      $(this).siblings().addClass("visible").parent().siblings().children(".holder-div").removeClass("visible");
       $(this).children().addClass("flaticon-close");
       $(this).parent().siblings().find("i").removeClass("flaticon-close");
     } else {

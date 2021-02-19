@@ -92,14 +92,19 @@
       </div>
       <ul class="navbar-nav links account">
         <li class="nav-item">
+          <div class="top-info-box">
+            <p>Search</p>
+          </div>
           <a class="nav-link search-btn-first icon-btn" href="#"><i class="flaticon-loupe"></i></a>
           <div class="search-area-holder holder-div">
               <input type="text" placeholder="Search.." name="search">
               <a class="search-btn-second" href="#"><i class="flaticon-loupe"></i></a>
           </div>
         </li>
-
         <li class="nav-item user">
+          <div class="top-info-box">
+            <p>Login</p>
+          </div>
           <a class="nav-link user-btn icon-btn" href="#"><i class="flaticon-user-1"></i></a>
           <div class="login-box-holder holder-div">
             <form action="#" method="POST" id="login">
@@ -140,6 +145,9 @@
           </div>
         </li>
         <li class="nav-item">
+          <div class="top-info-box">
+            <p>Cart</p>
+          </div>
           <a class="nav-link" href="#">
             <i class="flaticon-shopping-bag">
               <sup><span>0</span></sup>
@@ -215,6 +223,7 @@
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="main-holder" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
           <div class="holder d-flex flex-column align-items-center text-center">
             <div class="icon-holder">
               <i class="flaticon-hotel"></i>
@@ -223,8 +232,10 @@
             <hr>
             <p>We offer the finest selection of top notch hotels anywhere!</p>
           </div>
+          </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="main-holder" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
           <div class="holder d-flex flex-column align-items-center text-center">
             <div class="icon-holder">
               <i class="flaticon-public-transport"></i>
@@ -233,8 +244,10 @@
             <hr>
             <p>Whether it's about air tickets or shuttle bus, we will set it up!</p>
           </div>
+          </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="main-holder" data-aos="fade-up" data-aos-duration="800" data-aos-delay="650">
           <div class="holder d-flex flex-column align-items-center text-center">
             <div class="icon-holder">
               <i class="flaticon-map"></i>
@@ -243,8 +256,10 @@
             <hr>
             <p>Combined, the experience our agents have is centuries!</p>
           </div>
+          </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="main-holder" data-aos="fade-up" data-aos-duration="900" data-aos-delay="900">
           <div class="holder d-flex flex-column align-items-center text-center">
             <div class="icon-holder">
               <i class="flaticon-binoculars"></i>
@@ -252,6 +267,7 @@
             <h4>Amazing Views</h4>
             <hr>
             <p>Our travel agents are always ready to plan your perfect trip!</p>
+          </div>
           </div>
         </div>
       </div>
@@ -757,7 +773,7 @@
   <!-- animate on scroll -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({});
   </script>
   <!-- font-awesome -->
   <script src="https://kit.fontawesome.com/b7e00c266a.js" crossorigin="anonymous"></script>
