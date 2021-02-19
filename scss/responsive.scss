@@ -76,7 +76,7 @@
       .content {
         height: 138px !important;
         .content-header {
-          padding: 14px 15px 8px 15px !important;
+          padding: 18px 15px 12px 15px !important;
 
           .tour-name {
             i {
@@ -98,6 +98,7 @@
           }
         }
         .content-links {
+          height: 81px !important;
           padding: 16px 15px 25px 15px !important;
           a {
             font-size: 12px !important;
@@ -383,8 +384,9 @@
       }
       .content {
         height: 147px !important;
+
         .content-header {
-          padding: 17px 15px 8px 15px !important;
+          padding: 23px 15px 15px 15px !important;
           .tour-name {
             i {
               font-size: 15px !important;
@@ -405,8 +407,19 @@
           }
         }
         .content-links {
+          height: 83px !important;
           padding: 16px 15px 25px 15px !important;
           a {
+            .top-info-box {
+              left: 26%;
+              &::after{
+                left: calc(57% - 8px);
+              }
+            }
+             &:hover .top-info-box{
+                bottom: calc(93% + 5px);
+              }
+
             &:first-child {
               font-size: 15px !important;
             }
@@ -830,7 +843,7 @@
         .content {
           height: 148px !important;
           .content-header {
-            padding: 17px 14px 8px 14px !important;
+            padding: 20px 14px 12px 14px !important;
             .tour-name {
               i {
                 font-size: 14px !important;
@@ -852,6 +865,7 @@
             }
           }
           .content-links {
+            height: 80px !important;
             padding: 16px 14px 25px 14px !important;
             a {
               &:first-child {
@@ -1331,7 +1345,7 @@
         }
         .content {
           .content-header {
-            padding: 18px 15px 8px 15px !important;
+            padding: 21px 15px 14px 15px !important;
             .tour-name {
               i {
                 font-size: 17px !important;
@@ -1352,6 +1366,7 @@
             }
           }
           .content-links {
+            height: 81px !important;
             padding: 16px 15px 25px 15px !important;
             a {
               &:first-child {
@@ -1699,7 +1714,7 @@
   }
 
   #our-advantages {
-    padding: 70px 0 80px 0 !important;
+    padding: 50px 0 90px 0 !important;
     .caption {
       height: 110px !important;
       h1 {
@@ -1736,7 +1751,7 @@
   }
 
   #special-offers {
-    padding: 80px 10px 100px 10px !important;
+    padding: 80px 5px 90px 5px !important;
     .special-offers-caption {
       h1 {
         font-size: 28px !important;
@@ -1750,10 +1765,22 @@
     }
     .owl-carousel {
       .owl-dots {
-        margin-top: 15px !important;
+        margin-top: 5px !important;
         .owl-dot {
           span {
             width: 20px !important;
+          }
+        }
+      }
+
+      .item{
+        .info{
+          .slide-links{
+            a{
+              .top-info-box{
+                font-size: 10px !important;
+              }
+            }
           }
         }
       }
@@ -1874,7 +1901,7 @@
   }
 
   #popular-tours {
-    padding: 80px 5px 100px 5px !important;
+    padding: 80px 5px 80px 5px !important;
     .popular-tours-caption {
       padding: 0 15px 0 !important;
       h1 {
@@ -1914,7 +1941,7 @@
         .content {
           height: 131px !important;
           .content-header {
-            padding: 11px 15px 8px 15px !important;
+            padding: 9px 15px 10px 15px !important;
             .tour-name {
               i {
                 font-size: 14px !important;
@@ -1935,10 +1962,18 @@
             }
           }
           .content-links {
+            height: 75px !important;
             padding: 16px 15px 25px 15px !important;
             a {
               &:first-child {
                 font-size: 10px !important;
+              }
+
+              .top-info-box{
+                font-size: 10px !important;
+              }
+              &:hover .top-info-box{
+                bottom: calc(86% + 5px) !important;
               }
             }
           }
@@ -1948,6 +1983,7 @@
   }
 
   #coming-soon {
+    padding-top: 70px !important;
     .coming-soon-caption {
       padding: 0 7px 50px !important;
       h1 {
@@ -1998,7 +2034,7 @@
   }
 
   #our-achievements {
-    padding: 110px 0 100px 0 !important;
+    padding: 90px 0 100px 0 !important;
     .achievements-caption {
       padding-bottom: 18px !important;
       h1 {

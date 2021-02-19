@@ -23,7 +23,7 @@
 // ======= Popular Tours Owl-Carousel Start ======= //
 $(".owl-carousel.popular-tours-section-items").owlCarousel({
   loop: true,
-  margin: 20,
+  margin: 10,
   nav: false,
   dot: true,
   autoplay: true,

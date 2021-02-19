@@ -187,6 +187,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   font-size: 25px;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
+  margin-left: 0;
 }
 
 #special-offers .owl-carousel .item .info .slide-links a:hover, #popular-tours .owl-carousel .item .content .content-links a:hover {
@@ -195,6 +196,48 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 
 #special-offers .owl-carousel .item .info .slide-links a:hover i::before, #popular-tours .owl-carousel .item .content .content-links a:hover i::before {
   color: #769484;
+}
+
+#special-offers .owl-carousel .item .info .slide-links a .top-info-box, #popular-tours .owl-carousel .item .content .content-links a .top-info-box {
+  display: inline-block;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 48%;
+  white-space: nowrap;
+  text-decoration: none;
+  font-style: normal;
+  height: 26px;
+  padding: 0 7px;
+  font-size: 12px;
+  line-height: 26px;
+  color: #000;
+  background-color: #fff;
+  -webkit-transform: translate(calc(2px - 50%), 0);
+          transform: translate(calc(2px - 50%), 0);
+  opacity: 0;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#special-offers .owl-carousel .item .info .slide-links a .top-info-box::after, #popular-tours .owl-carousel .item .content .content-links a .top-info-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(100% - 2px);
+  left: calc(50% - 8px);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 6px 0 6px;
+  border-color: #fff transparent transparent transparent;
+}
+
+#special-offers .owl-carousel .item .info .slide-links a:hover .top-info-box, #popular-tours .owl-carousel .item .content .content-links a:hover .top-info-box {
+  bottom: calc(100% + 5px);
+  opacity: 1;
 }
 
 #special-offers .owl-carousel .item .price-info, #popular-tours .owl-carousel .item .price-info {
@@ -530,29 +573,6 @@ header nav .account li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-header nav .account li .top-info-box {
-  display: inline-block;
-  white-space: nowrap;
-  position: absolute;
-  height: 30px;
-  padding: 0 10px;
-  font-size: 14px;
-  line-height: 30px;
-  text-decoration: none;
-  color: #000;
-  bottom: calc(100% + 8px);
-  background-color: #fff;
-  left: 50%;
-  -webkit-transform: translate(calc(2px - 50%), 0);
-          transform: translate(calc(2px - 50%), 0);
-  opacity: 0;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
 }
 
 header nav .account li a {
@@ -938,7 +958,7 @@ header nav .active-link hr {
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
-  padding: 100px 80px 120px;
+  padding: 100px 70px 120px;
 }
 
 #special-offers .background-overlay {
@@ -967,7 +987,7 @@ header nav .active-link hr {
 }
 
 #special-offers .owl-carousel .item {
-  margin: 6px;
+  margin: 10px;
   padding: 1px;
   background-color: #efefef;
   position: relative;
@@ -1033,12 +1053,17 @@ header nav .active-link hr {
 }
 
 #special-offers .owl-carousel .item .info .slide-links {
+  height: 38px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#special-offers .owl-carousel .item .info .slide-links a {
+  position: relative;
 }
 
 #special-offers .owl-carousel .item .info .slide-links a:first-child {
@@ -1399,15 +1424,14 @@ header nav .active-link hr {
 }
 
 #popular-tours .popular-tours-caption {
-  padding-bottom: 10px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
 #popular-tours .owl-carousel .item {
   height: 467px;
-  overflow: hidden;
   position: relative;
-  margin-top: 50px;
+  margin: 10px;
 }
 
 #popular-tours .owl-carousel .item:hover img {
@@ -1418,14 +1442,10 @@ header nav .active-link hr {
 }
 
 #popular-tours .owl-carousel .item:hover .content {
-  position: absolute;
-  bottom: 0;
-  left: -1px !important;
-  right: -1px !important;
-  -webkit-transform: translate3d(0px, 13px, 0px);
-          transform: translate3d(0px, 13px, 0px);
-  -webkit-transition: all 0.4s cubic-bezier(0.29, 0.22, 0.07, 0.88);
-  transition: all 0.4s cubic-bezier(0.29, 0.22, 0.07, 0.88);
+  -webkit-transform: translateY(-75px);
+          transform: translateY(-75px);
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
 }
 
 #popular-tours .owl-carousel .item .price-info h5 {
@@ -1438,7 +1458,6 @@ header nav .active-link hr {
 
 #popular-tours .owl-carousel .item .img-box {
   height: 400px;
-  overflow: hidden;
 }
 
 #popular-tours .owl-carousel .item .img-box img {
@@ -1453,18 +1472,17 @@ header nav .active-link hr {
 }
 
 #popular-tours .owl-carousel .item .content {
+  width: 100%;
   background-color: white;
   height: 150px;
-  position: absolute;
-  bottom: -83px;
-  left: 0;
-  right: 0;
-  -webkit-transition: all 0.3s cubic-bezier(0.29, 0.22, 0.07, 0.88);
-  transition: all 0.3s cubic-bezier(0.29, 0.22, 0.07, 0.88);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
 }
 
 #popular-tours .owl-carousel .item .content .content-header {
-  padding: 20px 20px 8px 20px;
+  padding: 25px 20px 15px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1494,6 +1512,7 @@ header nav .active-link hr {
 }
 
 #popular-tours .owl-carousel .item .content .content-links {
+  height: 92px;
   padding: 16px 20px 35px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1504,6 +1523,24 @@ header nav .active-link hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#popular-tours .owl-carousel .item .content .content-links a {
+  position: relative;
+}
+
+#popular-tours .owl-carousel .item .content .content-links a .top-info-box {
+  left: 26%;
+  -webkit-box-shadow: -4px 4px 14px 4px rgba(75, 74, 74, 0.2);
+          box-shadow: -4px 4px 14px 4px rgba(75, 74, 74, 0.2);
+}
+
+#popular-tours .owl-carousel .item .content .content-links a .top-info-box::after {
+  left: calc(57% - 8px);
+}
+
+#popular-tours .owl-carousel .item .content .content-links a:hover .top-info-box {
+  bottom: calc(93% + 5px);
 }
 
 #popular-tours .owl-carousel .item .content .content-links a:first-of-type {
@@ -1576,6 +1613,10 @@ header nav .active-link hr {
   #popular-tours .owl-carousel .item {
     height: 370px !important;
   }
+  #popular-tours .owl-carousel .item:hover .content {
+    -webkit-transform: translateY(-110px);
+            transform: translateY(-110px);
+  }
   #popular-tours .owl-carousel .item .price-info {
     top: 14px !important;
     right: 14px !important;
@@ -1585,16 +1626,18 @@ header nav .active-link hr {
   }
   #popular-tours .owl-carousel .item .content {
     height: 132px !important;
+    -webkit-transform: translateY(-39px);
+            transform: translateY(-39px);
   }
   #popular-tours .owl-carousel .item .content .content-header {
-    padding: 11px 12px 8px 12px !important;
+    padding: 11px 12px 10px 12px !important;
   }
   #popular-tours .owl-carousel .item .content .content-header .tour-name i {
     font-size: 12px !important;
     margin-right: 3px !important;
   }
   #popular-tours .owl-carousel .item .content .content-header .tour-name h4 {
-    font-size: 14px !important;
+    font-size: 15px !important;
     letter-spacing: 0 !important;
   }
   #popular-tours .owl-carousel .item .content .content-header .tour-date i {
@@ -1607,6 +1650,12 @@ header nav .active-link hr {
   }
   #popular-tours .owl-carousel .item .content .content-links {
     padding: 16px 12px 25px 12px !important;
+  }
+  #popular-tours .owl-carousel .item .content .content-links a .top-info-box::after {
+    left: calc(57% - 8px);
+  }
+  #popular-tours .owl-carousel .item .content .content-links a:hover .top-info-box {
+    bottom: calc(84% + 5px);
   }
   #popular-tours .owl-carousel .item .content .content-links a i::before {
     font-size: 18px !important;
