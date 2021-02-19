@@ -26,7 +26,6 @@ $(document).ready(function () {
     }
     // === Nav Bg-Color End === //
 
-
     // === Header Position Start === //
     if ($(window).scrollTop() >= 33) {
       $("header").css("top", "0px");
@@ -59,19 +58,42 @@ $(document).ready(function () {
   });
   // ======= Counter-Up End ======= //
 
-
+  
   // ======= Making visible or invisible the Search-Box and Login-Area on click and replacing icon - Start ======= //
-  $(document).on("click", ".icon-btn", function () {
-    if(!$(this).siblings().hasClass("visible") && !$(this).children().hasClass("flaticon-close")){
-      $(this).siblings().addClass("visible").parent().siblings().children(".holder-div").removeClass("visible");
+  $(document).on("click", ".icon-btn", function (e) {
+    e.preventDefault();
+    if (
+      !$(this).siblings().hasClass("visible") &&
+      !$(this).children().hasClass("flaticon-close")
+    ) {
+      $(this)
+        .siblings()
+        .addClass("visible")
+        .parent()
+        .siblings()
+        .children(".holder-div")
+        .removeClass("visible");
       $(this).children().addClass("flaticon-close");
       $(this).parent().siblings().find("i").removeClass("flaticon-close");
-    }else{
+    } else {
       $(this).siblings().removeClass("visible");
       $(this).children().removeClass("flaticon-close");
     }
   });
   // ======= Making visible or invisible the Search-Box and Login-Area on click and replacing icon - End ======= //
+
+
+  // ======= Go to Reset Password Area and back - Start ======= //
+  $(document).on("click", ".forgotten-password-link", function () {
+    $(".reset-password").removeClass("d-none");
+    $(".login-box").addClass("d-none");
+  });
+
+  $(document).on("click", ".go-back", function () {
+    $(".reset-password").addClass("d-none");
+    $(".login-box").removeClass("d-none");
+  });
+  // ======= Go to Reset Password Area and back - End ======= //
 });
 
 
@@ -157,6 +179,7 @@ function init() {
 }
 // ======= Type Writer Effect End ======= //
 
+
 // ======= Countdown Start ======= //
 function countdown() {
   var now = new Date();
@@ -197,3 +220,90 @@ function countdown() {
 
 countdown();
 // ======= Countdown End ======= //
+
+
+// ======= Login Validation Start ======= //
+// selecting elements
+let loginForm = document.getElementById("login");
+let emailBox = document.querySelector(".email");
+let passwordBox = document.querySelector(".password");
+let resetForm = document.getElementById("reset-form");
+let resetEmail = document.querySelector(".email-for-resetting-password");
+let msgForReset = document.querySelector(".success");
+let resetPassArea = document.querySelector(".reset-password");
+
+
+// email - blur event
+emailBox.addEventListener("blur", function () {
+  if (emailBox.value == "" || emailBox.value.length < 8) {
+    emailBox.style.border = "2px solid red";
+  } else {
+    emailBox.style.border = "1px solid black";
+  }
+});
+
+// password - blur event
+passwordBox.addEventListener("blur", function () {
+  if (passwordBox.value == "" || passwordBox.value.length < 6) {
+    passwordBox.style.border = "2px solid red";
+  } else {
+    passwordBox.style.border = "1px solid black";
+  }
+});
+
+// password - input event
+passwordBox.addEventListener("input", function () {
+  passwordBox.style.border = "1px solid black";
+});
+
+// email - input event
+emailBox.addEventListener("input", function () {
+  emailBox.style.border = "1px solid black";
+});
+
+
+// login form - submit event
+loginForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  if (emailBox.value == "" || emailBox.value.length < 8) {
+    emailBox.style.border = "2px solid red";
+  } else {
+    emailBox.style.border = "1px solid black";
+  }
+
+  if (passwordBox.value == "" || passwordBox.value.length < 6) {
+    passwordBox.style.border = "2px solid red";
+  } else {
+    passwordBox.style.border = "1px solid black";
+  }
+});
+
+
+
+// reset-email - blur event
+resetEmail.addEventListener("blur", function () {
+  if (resetEmail.value == "" || resetEmail.value.length < 8) {
+    resetEmail.style.border = "2px solid red";
+  } else {
+    resetEmail.style.border = "1px solid black";
+  }
+});
+
+// reset-email - input event
+resetEmail.addEventListener("input", function () {
+  resetEmail.style.border = "1px solid black";
+});
+
+
+// reset-password form - submit event
+resetForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  if (resetEmail.value == "" || resetEmail.value.length < 8) {
+    resetEmail.style.border = "2px solid red";
+  } else {
+    resetEmail.style.border = "1px solid black";
+    msgForReset.classList.remove("hidden");
+    resetPassArea.classList.add("d-none");
+  }
+});
+// ======= Login Validation End ======= //

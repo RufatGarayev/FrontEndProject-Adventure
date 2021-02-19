@@ -98,21 +98,41 @@
         <li class="nav-item user">
           <a class="nav-link user-btn icon-btn" href="#"><i class="flaticon-user-1"></i></a>
           <div class="login-box-holder holder-div">
-            <div class="login-box">
+            <form action="#" method="POST" id="login">
+              <div class="login-box same-style-input-area">
               <div class="input-area">
-                <input type="text" name="email" placeholder="Email">
+                <input class="email" type="text" name="email" placeholder="Email">
               </div>
               <div class="input-area">
-                <input type="password" name="password" placeholder="Password">
+                <input class="password" type="password" name="password" placeholder="Password">
               </div>
               <div class="forgot-area">
-                <a href="#">Forgotten Password?</a>
+                <a class="forgotten-password-link" href="#">Forgotten Password?</a>
               </div>
               <div class="bottom-links">
                 <a href="#" class="sign-up">Sign Up</a> 
-                <a href="#" class="sign-in">Sign In</a>
+                <button class="sign-in">Sign In</button>
               </div>
-            </div>
+              </div>
+            </form>
+
+            <form action="#" method="GET" id="reset-form">
+              <div class="reset-password same-style-input-area d-none">
+              <p>Reset Password</p>
+              <div class="input-area">
+                <input class="email-for-resetting-password" type="text" name="email" placeholder="Please enter your Email">
+              </div>
+              <div class="bottom-links pt-2">
+                <a href="#" class="go-back">Back</a> 
+                <button class="reset">Reset</button>
+              </div>
+              </div>
+              <div class="success hidden d-flex text-center align-items-center">
+                <i class="far fa-check-circle"></i>
+                <h4>Thank You!</h4>
+                <p>To reset password, the message was sent to your Email Address.</p>
+              </div>
+            </form>
           </div>
         </li>
         <li class="nav-item">
@@ -260,7 +280,7 @@
                 <span>/Person</span>
               </div>
               <div class="img-box">
-                <img class="img-fluid" src="img/special-offers/special-offer3.jpg" alt="img1" />
+                <img class="img-fluid" src="img/special-offers/special-offer1.jpg" alt="img1" />
               </div>
               <div class="info">
                 <div class="tour-date">
@@ -483,7 +503,7 @@
                   <span>/Person</span>
                 </div>
                 <div class="img-box">
-                  <img class="img-fluid" src="img/popular-tours/pic1.jpg" alt="...">
+                  <img class="img-fluid" src="img/popular-tours/pic3.jpg" alt="...">
                 </div>
                 <div class="content">
                   <div class="content-header">
@@ -508,7 +528,7 @@
                 <span>/Person</span>
               </div>
               <div class="img-box">
-                <img class="img-fluid" src="img/popular-tours/pic2.jpg" alt="...">
+                <img class="img-fluid" src="img/popular-tours/pic4.jpg" alt="...">
               </div>
               <div class="content">
                 <div class="content-header">

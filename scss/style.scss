@@ -162,7 +162,7 @@ html {
         a {
           color: white;
           &:hover {
-            color: rgb(245, 192, 95);
+            color: #aac5b7 !important;
             text-decoration: none;
           }
         }
@@ -232,16 +232,153 @@ header {
             }
           }
           &:hover {
-            color: rgb(204, 176, 123) !important;
+            color: #aac5b7 !important;
+            // color: rgb(245, 192, 95) !important;
           }
         }
 
         .search-area-holder {
-          @extend %search-box;
+          width: 300px;
+          height: 50px;
+          position: fixed;
+          top: 112px;
+          right: 192px;
+          border-radius: 4px;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.5s linear;
+          box-shadow: 0 2px 12px 0 rgba(105, 96, 96, 10%);
+
+          input[type="text"] {
+            background-color: white;
+            color: black;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding-left: 15px;
+            border-radius: 5px;
+            &:focus {
+              outline: 0;
+              border: 1px solid black;
+            }
+          }
+
+          a {
+            position: absolute;
+            top: 11px;
+            right: 15px;
+            i {
+              &::before {
+                color: black;
+                font-size: 18px;
+              }
+            }
+          }
         }
 
         .login-box-holder {
-          @extend %login-area;
+          width: 420px;
+          background: #ffffff;
+          box-shadow: 0 5px 15px 0 rgba(105, 96, 96, 10%);
+          border-radius: 5px;
+          position: fixed;
+          top: 114px;
+          right: 139px;
+          padding: 50px 40px;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.5s linear;
+          .same-style-input-area {
+            width: 100%;
+            .input-area {
+              width: 100%;
+              height: 55px;
+              margin-bottom: 15px;
+              background: #ffffff;
+              font-size: 16px;
+              color: #3c3c3c;
+              input {
+                border-radius: 4px;
+                padding: 0 25px;
+                width: 100%;
+                height: 100%;
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                outline: none;
+                &:focus {
+                  border: 1px solid black;
+                }
+              }
+            }
+
+            .forgot-area {
+              text-align: right;
+              margin: 2px 0 20px 0;
+              a {
+                font-size: 14px;
+                color: #3c3c3c !important;
+                &:hover {
+                  color: #222121 !important;
+                }
+              }
+            }
+
+            .bottom-links {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .sign-up {
+                color: #3c3c3c !important;
+                font-weight: 600;
+                font-size: 15px;
+              }
+
+              .sign-in {
+                @extend %website-button;
+                cursor: pointer;
+                &:hover {
+                  color: white !important;
+                }
+                &:focus{
+                  outline: none;
+                }
+              }
+            }
+          }
+
+          .reset-password {
+            .go-back {
+              color: #3c3c3c !important;
+              font-weight: 600;
+              font-size: 15px;
+            }
+            .reset {
+              @extend %website-button;
+              cursor: pointer;
+              &:hover {
+                color: white !important;
+              }
+              &:focus{
+                outline: none;
+              }
+            }
+          }
+
+          .hidden {
+            display: none !important;
+          }
+
+          .success{
+            flex-direction: column;
+            height: 165px;
+            justify-content: space-between;
+            i{
+              font-size: 60px;
+              color: rgb(118,148,132);
+            }
+            h4, p{
+              margin-bottom: 0;
+            }
+          }
         }
 
         .visible {
@@ -346,6 +483,7 @@ header {
   position: relative;
   overflow: hidden;
   padding: 66px 0 99px 0;
+  background-color: rgba(118, 148, 132, 0.2);
   .caption {
     height: 115px;
     h1 {
@@ -463,7 +601,7 @@ header {
         height: 270px;
         margin: 2px;
         overflow: hidden;
-        filter: brightness(70%);
+        filter: brightness(90%);
         @media (min-width: 250px) and (max-width: 315px) {
           height: 280px;
         }
@@ -890,7 +1028,9 @@ header {
 // ======= Popular Tours Section Start ======= //
 #popular-tours {
   overflow-x: hidden;
-  background-color: rgb(234, 241, 241);
+  // background-color: rgb(147, 216, 216);
+  background-color: rgba(118, 148, 132, 0.2);
+
   padding: 100px 60px 120px 60px;
   .popular-tours-caption {
     padding-bottom: 10px;
@@ -1208,18 +1348,21 @@ header {
   }
 
   .first-pic {
-    background-image: url(../img/special-offers/special-offer3.jpg);
+    background-image: url(../img/coming-soon/coming-soon1.jpg);
+    filter: brightness(90%);
   }
 
   .second-pic {
-    background-image: url(../img/special-offers/special-offer4.jpg);
+    background-image: url(../img/coming-soon/coming-soon2.jpg);
+    filter: brightness(90%);
   }
 }
 // ======= Cooming Soon Section End ======= //
 
 // ======= Achievements Section Start ======= //
 #our-achievements {
-  background-color: rgb(234, 241, 241);
+  // background-color: rgb(234, 241, 241);
+  background-color: rgba(118, 148, 132, 0.2);
   padding: 90px 0 120px 0;
 
   .achievements-caption {
