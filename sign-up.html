@@ -121,7 +121,7 @@
                                     </div>
                                     <div class="bottom-links">
                                         <a href="#" class="sign-up">Sign Up</a>
-                                        <button class="sign-in">Sign In</button>
+                                        <button type="submit" class="sign-in">Sign In</button>
                                     </div>
                                 </div>
                             </form>
@@ -135,7 +135,7 @@
                                     </div>
                                     <div class="bottom-links pt-2">
                                         <a href="#" class="go-back">Back</a>
-                                        <button class="reset">Reset</button>
+                                        <button type="submit" class="reset">Reset</button>
                                     </div>
                                 </div>
                                 <div class="success hidden d-flex text-center align-items-center">
@@ -183,7 +183,7 @@
                     <div class="col-lg-6 offset-lg-3">
                         <div class="sign-up-holder">
                             <div class="caption-area text-center">
-                                <h3>Create Account!</h3>
+                                <h3>Create Account</h3>
                             </div>
                             <form action="#" method="POST" id="sign-up">
                                 <div class="sign-up-box same-style-input-area">
@@ -191,13 +191,17 @@
                                         <input class="username" type="text" name="username" placeholder="Username">
                                     </div>
                                     <div class="input-area">
-                                        <input class="email" type="text" name="email" placeholder="Email">
+                                        <input class="sign-up-email" type="text" name="email" placeholder="Email">
                                     </div>
                                     <div class="input-area">
-                                        <input class="password" type="password" name="password" placeholder="Password">
+                                        <input class="sign-up-password" type="password" name="password1" placeholder="Password">
                                     </div>
                                     <div class="input-area">
-                                        <input class="password" type="password" name="password" placeholder="Repeat Password">
+                                        <input class="sign-up-password repeat-pass" type="password" name="password2" placeholder="Repeat Password">
+                                    </div>
+                                    <div class="terms">
+                                        <input type="checkbox" id="terms-checkbox" name="terms" value="terms">
+                                        <label for="terms-checkbox">I have read and agree with the <a href="#">terms and conditions.</a></label>
                                     </div>
                                     <div class="bottom-links">
                                         <button class="sign-up-btn">Sign Up</button>
@@ -211,9 +215,39 @@
             </div>
         </section>
         <!-- ======= Sign Up Section End ======= -->
+
+        <!-- ======= Subscribe Section Start ======= -->
+        <section id="subscribe">
+            <div class="container">
+                <div class="row">
+                    <!-- area section title-->
+                    <div class="col-12">
+                        <div class="subscribe-title d-flex flex-column justify-content-center align-items-center"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <h1>Subscribe</h1>
+                            <hr>
+                            <p>Lorem Ipsum is simply dummy text the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 offset-lg-2 offset-md-2">
+                        <div class="form-holder d-flex justify-content-center">
+                            <form class="w-100" action="#" method="GET">
+                                <div class="form-field">
+                                    <input type="email" name="email" placeholder="Email Address" required />
+                                    <button type="submit" class="subs-btn" name="submit">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2"></div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= Subscribe Section End ======= -->
     </main>
     <!-- ======= Main Part End ======= -->
-
 
 
     <!-- ======= Footer Start ======= -->
@@ -306,8 +340,8 @@
     <!-- owl-carousel.js -->
     <script src="plugins/owl-carousel/owl.carousel.js"></script>
     <script src="js/owl-carousel.js"></script>
-    <!-- main.js -->
-    <script src="js/main.js"></script>
+    <!-- sign-up.js -->
+    <script src="js/sign-up.js"></script>
 </body>
 
 </html>
