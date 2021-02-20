@@ -1,0 +1,70 @@
+// ======= Subscribe Section Start ======= //
+#subscribe {
+    padding: 100px 0 120px;
+    background: url(../img/bg-images/forest.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      // background: rgba(13, 47, 93, 0.6);
+      background: rgba(48, 59, 54, 0.7);
+    }
+  
+    .subscribe-title {
+      text-align: center;
+      padding-bottom: 50px;
+      h1 {
+        @extend %section-caption;
+        color: white;
+      }
+      hr {
+        @extend %section-caption-bottom-line;
+        background-color: white;
+      }
+  
+      p {
+        @extend %paragraph;
+        color: white;
+      }
+    }
+  
+    .form-holder {
+      .form-field {
+        display: flex;
+        justify-content: center;
+        input {
+          width: 60%;
+          height: 50px;
+          border: 0;
+          padding-left: 33px;
+          border-radius: 5px 0 0 5px;
+          &:focus {
+            border-color: #ff6363;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+              0 0 8px rgba(3, 169, 244, 0.5);
+            outline: 0 none;
+          }
+        }
+  
+        .subs-btn {
+          @extend %website-button;
+          text-transform: none;
+          border: 0;
+          outline: none;
+          border-radius: 0 5px 5px 0;
+          cursor: pointer;
+          &::before {
+            border-radius: 0 5px 5px 0 !important;
+          }
+        }
+      }
+    }
+  }
+  // ======= Subscribe Section End ======= //

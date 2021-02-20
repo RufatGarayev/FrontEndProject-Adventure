@@ -1,0 +1,103 @@
+@import "../scss/partials/extends";
+@import "../scss/partials/variables";
+@import "../scss/partials/parts-of-web-page/header";
+@import "../scss/partials/parts-of-web-page/footer";
+@import "../scss/partials/parts-of-web-page/preloader";
+@import "../scss/partials/parts-of-web-page/subscribe";
+@import "../scss/partials/parts-of-web-page/back-to-top";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  font-family: "Nunito", sans-serif;
+}
+
+@font-face {
+  font-family: "ludicrous";
+  src: url(../WOFF-web-fonts/Ludicrous.woff);
+  font-weight: 100;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.stop-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+// ======= Intro-Pic Section Start ======= //
+#intro-pic {
+  background-image: url(../img/bg-images/wood.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 500px;
+}
+// ======= Intro-Pic Section End ======= //
+
+
+// ======= Sign Up Section Start ======= //
+#sign-up-section {
+  padding: 100px 0;
+  background-color: rgb(237,237,237);
+
+  .sign-up-holder {
+    background: #ffffff;
+    box-shadow: 0 3px 8px 0 rgba(66, 63, 63, 0.2);
+    border-radius: 5px;
+    padding: 50px 40px;
+    .caption-area{
+        padding-bottom: 20px;
+    }
+
+    .same-style-input-area {
+      width: 100%;
+      .input-area {
+        width: 100%;
+        height: 55px;
+        margin-bottom: 15px;
+        background: #ffffff;
+        font-size: 16px;
+        color: #3c3c3c;
+        input {
+          border-radius: 4px;
+          padding: 0 25px;
+          width: 100%;
+          height: 100%;
+          border: 1px solid rgba(0, 0, 0, 0.5);
+          outline: none;
+          &:focus {
+            border: 1px solid black;
+          }
+        }
+      }
+
+      .bottom-links {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .sign-up-btn {
+          @extend %website-button;
+          cursor: pointer;
+          &:hover {
+            color: white !important;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+// ======= Sign Up Section End ======= //
