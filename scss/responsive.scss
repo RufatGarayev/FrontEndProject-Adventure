@@ -129,7 +129,7 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
   #top-header {
     padding: 0 36px 0 42px !important;
-    .langs{
+    .langs {
       padding-top: 3px;
     }
   }
@@ -412,13 +412,13 @@
           a {
             .top-info-box {
               left: 26%;
-              &::after{
+              &::after {
                 left: calc(57% - 8px);
               }
             }
-             &:hover .top-info-box{
-                bottom: calc(93% + 5px);
-              }
+            &:hover .top-info-box {
+              bottom: calc(93% + 5px);
+            }
 
             &:first-child {
               font-size: 15px !important;
@@ -505,7 +505,7 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
   #top-header {
     padding: 0 35px 0 43px !important;
-    .langs{
+    .langs {
       padding-top: 3px;
     }
   }
@@ -976,7 +976,7 @@
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #topBtn{
+  #topBtn {
     right: 20px !important;
   }
 
@@ -1073,8 +1073,8 @@
             right: 19px !important;
             width: calc(100% - 37px) !important;
             padding: 50px 20px !important;
-            .bottom-links{
-              .sign-up{
+            .bottom-links {
+              .sign-up {
                 font-size: 16px !important;
               }
             }
@@ -1521,7 +1521,7 @@
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #topBtn{
+  #topBtn {
     right: 15px !important;
   }
 
@@ -1620,24 +1620,47 @@
             right: 14px !important;
             width: calc(100% - 27px) !important;
             padding: 38px 20px !important;
-            .input-area {
-              height: 45px !important;
-              font-size: 13px !important;
-            }
-
-            .forgot-area{
-              a{
+            .same-style-input-area {
+              .input-area {
+                height: 45px !important;
+                font-size: 11px !important;
+                input{
+                  padding: 0 15px !important;
+                }
+              }
+              .alert {
                 font-size: 11px !important;
               }
+
+              .forgot-area {
+                a {
+                  font-size: 11px !important;
+                }
+              }
+
+              .bottom-links {
+                .sign-up {
+                  font-size: 13px !important;
+                }
+                .sign-in {
+                  font-size: 13px !important;
+                  padding: 7px 20px !important;
+                }
+              }
             }
 
-            .bottom-links{
-              .sign-up{
-                font-size: 13px !important;
+            .reset-password {
+              .alert {
+                font-size: 11px !important;
               }
-              .sign-in{
-                font-size: 13px !important;
-                padding: 7px 20px !important;
+              .bottom-links{
+                .go-back{
+                  font-size: 13px !important;
+                }
+                .reset{
+                  font-size: 13px !important;
+                  padding: 7px 20px !important;
+                }
               }
             }
           }
@@ -1769,11 +1792,11 @@
         }
       }
 
-      .item{
-        .info{
-          .slide-links{
-            a{
-              .top-info-box{
+      .item {
+        .info {
+          .slide-links {
+            a {
+              .top-info-box {
                 font-size: 10px !important;
               }
             }
@@ -1965,10 +1988,10 @@
                 font-size: 10px !important;
               }
 
-              .top-info-box{
+              .top-info-box {
                 font-size: 10px !important;
               }
-              &:hover .top-info-box{
+              &:hover .top-info-box {
                 bottom: calc(86% + 5px) !important;
               }
             }

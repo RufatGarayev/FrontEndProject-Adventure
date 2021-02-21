@@ -1403,17 +1403,33 @@
     width: calc(100% - 27px) !important;
     padding: 38px 20px !important;
   }
-  header .navbar .account li .login-box-holder .input-area {
+  header .navbar .account li .login-box-holder .same-style-input-area .input-area {
     height: 45px !important;
-    font-size: 13px !important;
-  }
-  header .navbar .account li .login-box-holder .forgot-area a {
     font-size: 11px !important;
   }
-  header .navbar .account li .login-box-holder .bottom-links .sign-up {
+  header .navbar .account li .login-box-holder .same-style-input-area .input-area input {
+    padding: 0 15px !important;
+  }
+  header .navbar .account li .login-box-holder .same-style-input-area .alert {
+    font-size: 11px !important;
+  }
+  header .navbar .account li .login-box-holder .same-style-input-area .forgot-area a {
+    font-size: 11px !important;
+  }
+  header .navbar .account li .login-box-holder .same-style-input-area .bottom-links .sign-up {
     font-size: 13px !important;
   }
-  header .navbar .account li .login-box-holder .bottom-links .sign-in {
+  header .navbar .account li .login-box-holder .same-style-input-area .bottom-links .sign-in {
+    font-size: 13px !important;
+    padding: 7px 20px !important;
+  }
+  header .navbar .account li .login-box-holder .reset-password .alert {
+    font-size: 11px !important;
+  }
+  header .navbar .account li .login-box-holder .reset-password .bottom-links .go-back {
+    font-size: 13px !important;
+  }
+  header .navbar .account li .login-box-holder .reset-password .bottom-links .reset {
     font-size: 13px !important;
     padding: 7px 20px !important;
   }

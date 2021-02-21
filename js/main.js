@@ -236,85 +236,90 @@ countdown();
 // ======= Login Validation Start ======= //
 // selecting elements
 let loginForm = document.getElementById("login");
-let emailBox = document.querySelector(".email");
-let passwordBox = document.querySelector(".password");
+let loginEmail = document.querySelector(".email");
+let loginPassword = document.querySelector(".password");
 let resetForm = document.getElementById("reset-form");
 let resetEmail = document.querySelector(".email-for-resetting-password");
 let msgForReset = document.querySelector(".success");
 let resetPassArea = document.querySelector(".reset-password");
+let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+let icon = '<i class="far fa-times-circle"></i>';
 
 
-// email - blur event
-emailBox.addEventListener("blur", function () {
-  if (emailBox.value == "" || emailBox.value.length < 8) {
-    emailBox.style.border = "2px solid red";
-  } else {
-    emailBox.style.border = "1px solid black";
-  }
-});
-
-// password - blur event
-passwordBox.addEventListener("blur", function () {
-  if (passwordBox.value == "" || passwordBox.value.length < 6) {
-    passwordBox.style.border = "2px solid red";
-  } else {
-    passwordBox.style.border = "1px solid black";
-  }
+// email - input event
+loginEmail.addEventListener("input", function () {
+  this.style.border = "1px solid black";
+  this.parentNode.nextElementSibling.classList.add("d-none");
 });
 
 // password - input event
-passwordBox.addEventListener("input", function () {
-  passwordBox.style.border = "1px solid black";
-});
-
-// email - input event
-emailBox.addEventListener("input", function () {
-  emailBox.style.border = "1px solid black";
+loginPassword.addEventListener("input", function () {
+  this.style.border = "1px solid black";
+  this.parentNode.nextElementSibling.classList.add("d-none");
 });
 
 
 // login form - submit event
 loginForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  if (emailBox.value == "" || emailBox.value.length < 8) {
-    emailBox.style.border = "2px solid red";
+  // login-email
+  if (loginEmail.value == "") {
+    loginEmail.style.border = "2px solid red";
+    loginEmail.parentNode.nextElementSibling.classList.remove("d-none");
+    loginEmail.parentNode.nextElementSibling.innerHTML = `${icon} Email must be filled out!`;
+    return false;
+  } else if (!loginEmail.value.match(pattern)) {
+    loginEmail.style.border = "2px solid red";
+    loginEmail.parentNode.nextElementSibling.classList.remove("d-none");
+    loginEmail.parentNode.nextElementSibling.innerHTML = `${icon} Please enter valid Email Address.`;
+    return false;
   } else {
-    emailBox.style.border = "1px solid black";
+    loginEmail.style.border = "1px solid black";
+    loginEmail.parentNode.nextElementSibling.classList.add("d-none");
   }
 
-  if (passwordBox.value == "" || passwordBox.value.length < 6) {
-    passwordBox.style.border = "2px solid red";
+  // login-password
+  if (loginPassword.value == "") {
+    loginPassword.style.border = "2px solid red";
+    loginPassword.parentNode.nextElementSibling.classList.remove("d-none");
+    loginPassword.parentNode.nextElementSibling.innerHTML = `${icon} Password must be filled out!`;
+    return false;
+  } else if (loginPassword.value.length < 6) {
+    loginPassword.style.border = "2px solid red";
+    loginPassword.parentNode.nextElementSibling.classList.remove("d-none");
+    loginPassword.parentNode.nextElementSibling.innerHTML = `${icon} Password must be at least 6 character!`;
+    return false;
   } else {
-    passwordBox.style.border = "1px solid black";
-  }
-});
-
-
-
-// reset-email - blur event
-resetEmail.addEventListener("blur", function () {
-  if (resetEmail.value == "" || resetEmail.value.length < 8) {
-    resetEmail.style.border = "2px solid red";
-  } else {
-    resetEmail.style.border = "1px solid black";
-  }
-});
-
-// reset-email - input event
-resetEmail.addEventListener("input", function () {
-  resetEmail.style.border = "1px solid black";
-});
-
-
-// reset-password form - submit event
-resetForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-  if (resetEmail.value == "" || resetEmail.value.length < 8) {
-    resetEmail.style.border = "2px solid red";
-  } else {
-    resetEmail.style.border = "1px solid black";
-    msgForReset.classList.remove("hidden");
-    resetPassArea.classList.add("d-none");
+    loginPassword.style.border = "1px solid black";
+    loginPassword.parentNode.nextElementSibling.classList.add("d-none");
   }
 });
 // ======= Login Validation End ======= //
+
+
+// ======= Reset Password Start ======= //
+// email - input event
+resetEmail.addEventListener("input", function () {
+  this.style.border = "1px solid black";
+  this.parentNode.nextElementSibling.classList.add("d-none");
+});
+
+// form - submit event
+resetForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  if (resetEmail.value == "") {
+    resetEmail.style.border = "2px solid red";
+    resetEmail.parentNode.nextElementSibling.classList.remove("d-none");
+    resetEmail.parentNode.nextElementSibling.innerHTML = `${icon} Email must be filled out!`;
+    return false;
+  } else if (!resetEmail.value.match(pattern)) {
+    resetEmail.style.border = "2px solid red";
+    resetEmail.parentNode.nextElementSibling.classList.remove("d-none");
+    resetEmail.parentNode.nextElementSibling.innerHTML = `${icon} Please enter valid Email Address.`;
+    return false;
+  } else {
+    resetEmail.style.border = "1px solid black";
+    resetEmail.parentNode.nextElementSibling.classList.add("d-none");
+  }
+});
+// ======= Reset Password End ======= //

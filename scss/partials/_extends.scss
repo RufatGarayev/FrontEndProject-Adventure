@@ -87,7 +87,7 @@
     right: 0;
     bottom: 0;
     z-index: -1;
-    background-color: rgb(58,59,116);
+    background-color: rgb(58, 59, 116);
 
     transition: transform 300ms ease-in-out;
     transform: scaleX(0);
@@ -157,7 +157,7 @@
   }
 }
 
-%top-info-box{
+%top-info-box {
   .top-info-box {
     display: inline-block;
     position: absolute;
@@ -177,7 +177,7 @@
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: all 0.2s ease-out;
-    &::after{
+    &::after {
       content: "";
       display: block;
       position: absolute;
@@ -191,7 +191,7 @@
     }
   }
 
-  &:hover .top-info-box{
+  &:hover .top-info-box {
     bottom: calc(100% + 5px);
     opacity: 1;
   }
@@ -245,4 +245,10 @@
     text-decoration: none;
     color: #aac5b7 !important;
   }
+}
+
+%form-alert {
+  padding: 5px 0 0;
+  color: red;
+  font-weight: 600;
 }

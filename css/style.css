@@ -71,7 +71,7 @@ header nav .navbar-items .links li a:hover, header nav .account li a:hover {
   color: #db7355;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder .reset-password .reset, #subscribe .form-holder .form-field .subs-btn, #intro .banner-area .caption .button, #special-offers .owl-carousel .item .info .slide-links a:first-child, #view-tours .view-tours-btn a, #discount .discount_btn a, #popular-tours .owl-carousel .item .content .content-links a:first-of-type {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #intro .banner-area .caption .button, #special-offers .owl-carousel .item .info .slide-links a:first-child, #view-tours .view-tours-btn a, #discount .discount_btn a, #popular-tours .owl-carousel .item .content .content-links a:first-of-type {
   padding: 10px 24px;
   font-weight: 600;
   border: none;
@@ -86,7 +86,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   z-index: 1;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder .reset-password .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #intro .banner-area .caption .button::before, #special-offers .owl-carousel .item .info .slide-links a:first-child::before, #view-tours .view-tours-btn a::before, #discount .discount_btn a::before, #popular-tours .owl-carousel .item .content .content-links a:first-of-type::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #intro .banner-area .caption .button::before, #special-offers .owl-carousel .item .info .slide-links a:first-child::before, #view-tours .view-tours-btn a::before, #discount .discount_btn a::before, #popular-tours .owl-carousel .item .content .content-links a:first-of-type::before {
   content: "";
   border-radius: 3px;
   position: absolute;
@@ -106,12 +106,12 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
           transform-origin: left;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder .reset-password .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #intro .banner-area .caption .button:hover, #special-offers .owl-carousel .item .info .slide-links a:hover:first-child, #view-tours .view-tours-btn a:hover, #discount .discount_btn a:hover, #popular-tours .owl-carousel .item .content .content-links a:hover:first-of-type {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #intro .banner-area .caption .button:hover, #special-offers .owl-carousel .item .info .slide-links a:hover:first-child, #view-tours .view-tours-btn a:hover, #discount .discount_btn a:hover, #popular-tours .owl-carousel .item .content .content-links a:hover:first-of-type {
   color: white;
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder .reset-password .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #intro .banner-area .caption .button:hover::before, #special-offers .owl-carousel .item .info .slide-links a:first-child:hover::before, #view-tours .view-tours-btn a:hover::before, #discount .discount_btn a:hover::before, #popular-tours .owl-carousel .item .content .content-links a:first-of-type:hover::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #intro .banner-area .caption .button:hover::before, #special-offers .owl-carousel .item .info .slide-links a:first-child:hover::before, #view-tours .view-tours-btn a:hover::before, #discount .discount_btn a:hover::before, #popular-tours .owl-carousel .item .content .content-links a:first-of-type:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -263,6 +263,12 @@ footer .footer-top a {
 footer .footer-top a:hover {
   text-decoration: none;
   color: #aac5b7 !important;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert {
+  padding: 5px 0 0;
+  color: red;
+  font-weight: 600;
 }
 
 #top-header {
@@ -417,12 +423,11 @@ header nav .account li .search-area-holder {
   top: 112px;
   right: 192px;
   border-radius: 4px;
-  visibility: hidden;
-  opacity: 0;
+  display: none;
   -webkit-transition: 0.5s linear;
   transition: 0.5s linear;
-  -webkit-box-shadow: 0 2px 12px 0 #696060;
-          box-shadow: 0 2px 12px 0 #696060;
+  -webkit-box-shadow: 0 2px 6px 0 #2e2d2d;
+          box-shadow: 0 2px 6px 0 #2e2d2d;
 }
 
 header nav .account li .search-area-holder input[type="text"] {
@@ -453,16 +458,15 @@ header nav .account li .search-area-holder a i::before {
 
 header nav .account li .login-box-holder {
   width: 420px;
-  background: #ffffff;
-  -webkit-box-shadow: 0 5px 15px 0 #696060;
-          box-shadow: 0 5px 15px 0 #696060;
+  background: #5c755e;
+  -webkit-box-shadow: 0 2px 8px 0 #050505;
+          box-shadow: 0 2px 8px 0 #050505;
   border-radius: 5px;
   position: fixed;
   top: 114px;
   right: 139px;
-  padding: 50px 40px;
-  visibility: hidden;
-  opacity: 0;
+  padding: 35px 40px 50px;
+  display: none;
   -webkit-transition: 0.5s linear;
   transition: 0.5s linear;
 }
@@ -474,8 +478,7 @@ header nav .account li .login-box-holder .same-style-input-area {
 header nav .account li .login-box-holder .same-style-input-area .input-area {
   width: 100%;
   height: 55px;
-  margin-bottom: 15px;
-  background: #ffffff;
+  margin-top: 15px;
   font-size: 16px;
   color: #3c3c3c;
 }
@@ -495,16 +498,17 @@ header nav .account li .login-box-holder .same-style-input-area .input-area inpu
 
 header nav .account li .login-box-holder .same-style-input-area .forgot-area {
   text-align: right;
-  margin: 2px 0 20px 0;
+  margin: 10px 0 20px 0;
 }
 
 header nav .account li .login-box-holder .same-style-input-area .forgot-area a {
   font-size: 14px;
-  color: #3c3c3c !important;
+  font-weight: 200;
+  color: white;
 }
 
 header nav .account li .login-box-holder .same-style-input-area .forgot-area a:hover {
-  color: #222121 !important;
+  color: #e4e0e0 !important;
 }
 
 header nav .account li .login-box-holder .same-style-input-area .bottom-links {
@@ -520,9 +524,13 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links {
 }
 
 header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-up {
-  color: #3c3c3c !important;
-  font-weight: 600;
+  color: white;
+  font-weight: 300;
   font-size: 15px;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-up:hover {
+  color: #e0dada !important;
 }
 
 header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in {
@@ -537,21 +545,33 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   outline: none;
 }
 
-header nav .account li .login-box-holder .reset-password .go-back {
-  color: #3c3c3c !important;
-  font-weight: 600;
+header nav .account li .login-box-holder .reset-password p {
+  color: white;
+}
+
+header nav .account li .login-box-holder .reset-password .bottom-links {
+  padding-top: 20px !important;
+}
+
+header nav .account li .login-box-holder .reset-password .bottom-links .go-back {
+  color: white;
+  font-weight: 300;
   font-size: 15px;
 }
 
-header nav .account li .login-box-holder .reset-password .reset {
+header nav .account li .login-box-holder .reset-password .bottom-links .go-back:hover {
+  color: #e0dada !important;
+}
+
+header nav .account li .login-box-holder .reset-password .bottom-links .reset {
   cursor: pointer;
 }
 
-header nav .account li .login-box-holder .reset-password .reset:hover {
+header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover {
   color: white !important;
 }
 
-header nav .account li .login-box-holder .reset-password .reset:focus {
+header nav .account li .login-box-holder .reset-password .bottom-links .reset:focus {
   outline: none;
 }
 
@@ -581,8 +601,7 @@ header nav .account li .login-box-holder .success p {
 }
 
 header nav .account li .visible {
-  visibility: visible;
-  opacity: 1;
+  display: block;
 }
 
 header nav .account .user {
