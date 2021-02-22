@@ -121,14 +121,14 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   font-family: ludicrous;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #3a3b74;
+  color: white;
 }
 
 #subscribe .subscribe-title hr, #our-advantages .caption hr, #special-offers .special-offers-caption hr, #popular-tours .popular-tours-caption hr, #coming-soon .coming-soon-caption hr, #our-achievements .achievements-caption hr {
   margin: 8px 0;
   height: 0.7px;
   width: 60px;
-  background-color: #3a3b74;
+  background-color: white;
 }
 
 #subscribe .subscribe-title p, #special-offers .special-offers-caption p, #popular-tours .popular-tours-caption p, #coming-soon .coming-soon-caption p {
@@ -268,7 +268,8 @@ footer .footer-top a:hover {
 header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert {
   padding: 5px 0 0;
   color: red;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 #top-header {
@@ -1029,10 +1030,8 @@ html {
 }
 
 #intro .banner-area .caption h3 {
-  font-weight: normal;
-  font-size: 50px;
-  font-weight: bold;
-  letter-spacing: 8px;
+  font-size: 65px;
+  font-family: ludicrous;
 }
 
 @media (min-width: 500px) and (max-width: 575.98px) {
@@ -1044,16 +1043,22 @@ html {
 #intro .banner-area .caption h1 {
   font-weight: bold;
   font-size: 32px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-weight: bold;
   display: inline-block;
   margin-bottom: 0;
   padding: 30px 0 50px 0;
 }
 
-@media (min-width: 540px) and (max-width: 575.98px) {
+@media (min-width: 250px) and (max-width: 299.98px) {
+  #intro .banner-area {
+    top: 35% !important;
+  }
+  #intro .banner-area .caption h3 {
+    font-size: 54px !important;
+  }
   #intro .banner-area .caption h1 {
-    font-size: 34px !important;
+    font-size: 18px !important;
   }
 }
 
@@ -1083,7 +1088,7 @@ html {
   position: relative;
   overflow: hidden;
   padding: 66px 0 99px 0;
-  background-color: rgba(143, 143, 143, 0.2);
+  background-color: #769484;
 }
 
 #our-advantages .caption {
@@ -1108,10 +1113,6 @@ html {
   transition: 0.4s ease-in-out !important;
 }
 
-#our-advantages .main-holder .holder .icon-holder i {
-  color: #db7355;
-}
-
 #our-advantages .main-holder .holder .icon-holder i::before {
   font-size: 60px;
   margin-left: 0;
@@ -1122,7 +1123,6 @@ html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 20px;
   font-weight: 500;
-  color: #3a3b74;
 }
 
 #our-advantages .main-holder .holder hr {
@@ -1130,7 +1130,7 @@ html {
   display: inline-block;
   width: 26px;
   margin: 10px 0 0 0;
-  background-color: #3a3b74;
+  background-color: black;
 }
 
 #our-advantages .main-holder .holder p {
@@ -1138,7 +1138,6 @@ html {
   padding-top: 22px;
   font-size: 16px;
   font-weight: 300;
-  color: black;
 }
 
 @media (min-width: 250px) and (max-width: 315px) {
@@ -1171,14 +1170,6 @@ html {
   padding-bottom: 30px;
 }
 
-#special-offers .special-offers-caption h1 {
-  color: white;
-}
-
-#special-offers .special-offers-caption hr {
-  background-color: white;
-}
-
 #special-offers .special-offers-caption p {
   color: white;
 }
@@ -1186,7 +1177,7 @@ html {
 #special-offers .owl-carousel .item {
   margin: 10px;
   padding: 1px;
-  background-color: #efefef;
+  background-color: white;
   position: relative;
   cursor: pointer;
 }
@@ -1616,13 +1607,17 @@ html {
 
 #popular-tours {
   overflow-x: hidden;
-  background-color: rgba(143, 143, 143, 0.2);
+  background-color: #769484;
   padding: 100px 60px 120px 60px;
 }
 
 #popular-tours .popular-tours-caption {
   padding-bottom: 60px;
   text-align: center;
+}
+
+#popular-tours .popular-tours-caption p {
+  color: white;
 }
 
 #popular-tours .owl-carousel .item {
@@ -1872,6 +1867,14 @@ html {
   text-align: center;
 }
 
+#coming-soon .coming-soon-caption h1 {
+  color: #3a3b74;
+}
+
+#coming-soon .coming-soon-caption hr {
+  background-color: #3a3b74;
+}
+
 #coming-soon .content {
   height: 450px;
   background-color: #3a3b74;
@@ -1935,7 +1938,7 @@ html {
 }
 
 #our-achievements {
-  background-color: rgba(143, 143, 143, 0.2);
+  background-color: #769484;
   padding: 90px 0 120px 0;
 }
 
@@ -1960,14 +1963,12 @@ html {
 #our-achievements .content i::before {
   margin: 0;
   font-size: 60px;
-  color: #db7355;
 }
 
 #our-achievements .content h2 {
   padding: 25px 0 10px 0;
   font-size: 50px;
   font-weight: 700;
-  color: #3a3b74;
 }
 
 #our-achievements .content h3 {

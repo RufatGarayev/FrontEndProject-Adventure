@@ -110,14 +110,16 @@
   font-family: ludicrous;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: rgb(58, 59, 116);
+  // color: rgb(58, 59, 116);
+  color: white;
 }
 
 %section-caption-bottom-line {
   margin: 8px 0;
   height: 0.7px;
   width: 60px;
-  background-color: rgb(58, 59, 116);
+  // background-color: rgb(58, 59, 116);
+  background-color: white;
 }
 
 %paragraph {
@@ -250,5 +252,6 @@
 %form-alert {
   padding: 5px 0 0;
   color: red;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 14px;
 }

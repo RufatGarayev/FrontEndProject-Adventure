@@ -169,14 +169,19 @@
 
     <!-- ======= Main Part Start ======= -->
     <main>
-        <!-- ======= Intro-Pic Section Start ======= -->
-        <section id="intro-pic">
+        <!-- ======= Intro Section Start ======= -->
+        <section id="intro">
             <div class="container">
                 <div class="row">
+                    <div class="col-12">
+                        <div class="page-caption d-flex justify-content-center align-items-center">
+                            <h1>Sign Up</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- ======= Intro-Pic Section End ======= -->
+        <!-- ======= Intro Section End ======= -->
 
         <!-- ======= Sign Up Section Start ======= -->
         <section id="sign-up-section">
@@ -191,29 +196,35 @@
                                 <div class="sign-up-box same-style-input-area">
                                     <div class="input-area">
                                         <input class="username" type="text" name="username" placeholder="Username">
+                                        <i class="fas fa-check-circle d-none success-icon"></i>
+			                            <i class="fas fa-exclamation-circle d-none"></i>
+                                        <small class="username-alert alert"></small>
                                     </div>
-                                    <div class="alert d-none"></div>
                                     <div class="input-area">
                                         <input class="sign-up-email" type="text" name="email" placeholder="Email">
+                                        <i class="fas fa-check-circle d-none success-icon"></i>
+			                            <i class="fas fa-exclamation-circle d-none"></i>
+                                        <small class="email-alert alert"></small>
                                     </div>
-                                    <div class="alert d-none"></div>
                                     <div class="input-area">
-                                        <input class="sign-up-password" type="password" name="password1"
-                                            placeholder="Password">
+                                        <input class="sign-up-password sign-up-password1" type="password" name="password1" placeholder="Password">
+                                        <i class="fas fa-check-circle d-none success-icon"></i>
+			                            <i class="fas fa-exclamation-circle d-none"></i>
+                                        <small class="password-alert alert"></small>
                                     </div>
-                                    <div class="alert d-none"></div>
                                     <div class="input-area">
-                                        <input class="sign-up-password repeat-pass" type="password" name="password2"
-                                            placeholder="Repeat Password">
+                                        <input class="sign-up-password repeat-pass" type="password" name="password2" placeholder="Repeat Password">
+                                        <i class="fas fa-check-circle d-none success-icon"></i>
+			                            <i class="fas fa-exclamation-circle d-none"></i>
+                                        <small class="repeat-pass-alert alert"></small>
                                     </div>
-                                    <div class="alert d-none"></div>
                                     <div class="terms">
                                         <input type="checkbox" id="terms-checkbox" name="terms" value="terms">
-                                        <label for="terms-checkbox">I have read and agree with the <a href="#">terms and
-                                                conditions.</a></label>
+                                        <label for="terms-checkbox">I have read and agree with the <a href="#">terms and conditions.</a></label> <br>
+                                        <small class="checkbox-alert alert mb-0"></small>
                                     </div>
                                     <div class="bottom-links">
-                                        <button class="sign-up-btn">Sign Up</button>
+                                        <button type="submit" class="sign-up-btn">Sign Up</button>
                                     </div>
                                 </div>
                             </form>

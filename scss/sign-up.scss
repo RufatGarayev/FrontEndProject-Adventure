@@ -32,16 +32,27 @@ html {
 }
 
 
-// ======= Intro-Pic Section Start ======= //
-#intro-pic {
+// ======= Intro Section Start ======= //
+#intro {
   background-image: url(../img/bg-images/wood.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   height: 500px;
+
+  .page-caption {
+    height: 500px;
+    padding-top: 40px;
+    h1 {
+      color: white;
+      font-family: ludicrous;
+      text-transform: uppercase;
+      font-size: 65px;
+    }
+  }
 }
-// ======= Intro-Pic Section End ======= //
+// ======= Intro Section End ======= //
 
 
 // ======= Sign Up Section Start ======= //
@@ -50,7 +61,7 @@ html {
   background-color: #769484;
 
   .sign-up-holder {
-    background: rgb(92,117,94);
+    background: rgb(92, 117, 94);
     box-shadow: 0 2px 10px 3px rgba(66, 63, 63, 0.2);
     border-radius: 5px;
     padding: 50px 40px;
@@ -70,6 +81,20 @@ html {
         margin-top: 15px;
         font-size: 16px;
         color: #3c3c3c;
+        position: relative;
+        i {
+          position: absolute;
+          top: 18px;
+          right: 25px;
+          font-size: 18px;
+          color: red;
+          z-index: 0;
+        }
+
+        .success-icon{
+          color: green;
+          z-index: 5;
+        }
 
         input {
           border-radius: 4px;
@@ -95,6 +120,7 @@ html {
           cursor: pointer;
           color: white;
           font-weight: 300;
+          margin: 0 !important;
         }
         input[type="checkbox"] + label:before {
           border: 1px solid white;
@@ -108,7 +134,6 @@ html {
         }
         input[type="checkbox"]:checked + label:before {
           background: rgb(118, 148, 132);
-          // color: #333;
           content: "\2713";
           color: white;
           text-align: center;
@@ -122,15 +147,15 @@ html {
         }
 
         a {
-          color: rgb(153,204,255);
+          color: darkslateblue;
           &:hover {
-            color: rgb(128, 173, 231);
+            color: rgb(92, 84, 145);
             text-decoration: none;
           }
         }
       }
       .bottom-links {
-        padding-top: 30px;
+        padding-top: 35px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -159,6 +184,31 @@ html {
 
 
 // ======= Responsive Design Start ======= //
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #intro {
+    height: 100%;
+    .page-caption {
+      height: 420px;
+      h1 {
+        font-size: 55px;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #intro {
+    height: 100%;
+    .page-caption {
+      height: 420px;
+      padding-top: 30px;
+      h1 {
+        font-size: 55px;
+      }
+    }
+  }
+}
+
 @media (min-width: 375px) and (max-width: 420px) {
   #sign-up-section {
     .sign-up-holder {
@@ -168,6 +218,17 @@ html {
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
+  #intro {
+    height: 100%;
+    .page-caption {
+      height: 400px;
+      padding-top: 50px;
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+
   #sign-up-section {
     .sign-up-holder {
       padding: 50px 15px;
@@ -218,7 +279,7 @@ html {
   #sign-up-section {
     .sign-up-holder {
       padding: 40px 15px !important;
-      .caption-area{
+      .caption-area {
         padding-bottom: 5px !important;
       }
       .same-style-input-area {

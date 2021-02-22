@@ -31,7 +31,6 @@ html {
   overflow: hidden;
 }
 
-
 // ======= Intro Section Start ======= //
 #intro {
   overflow: hidden;
@@ -63,10 +62,8 @@ html {
       color: white;
       text-align: center;
       h3 {
-        font-weight: normal;
-        font-size: 50px;
-        font-weight: bold;
-        letter-spacing: 8px;
+        font-size: 65px;
+        font-family: ludicrous;
         @media (min-width: 500px) and (max-width: 575.98px) {
           font-size: 58px !important;
         }
@@ -75,17 +72,26 @@ html {
       h1 {
         font-weight: bold;
         font-size: 32px;
-        letter-spacing: 4px;
+        letter-spacing: 2px;
         font-weight: bold;
         display: inline-block;
         margin-bottom: 0;
         padding: 30px 0 50px 0;
-        @media (min-width: 540px) and (max-width: 575.98px) {
-          font-size: 34px !important;
-        }
       }
       .button {
         @extend %website-button;
+      }
+    }
+
+    @media (min-width: 250px) and (max-width: 299.98px) {
+      top: 35% !important;
+      .caption {
+        h3 {
+          font-size: 54px !important;
+        }
+        h1 {
+          font-size: 18px !important;
+        }
       }
     }
   }
@@ -106,7 +112,8 @@ html {
   position: relative;
   overflow: hidden;
   padding: 66px 0 99px 0;
-  background-color: rgba(143, 143, 143, 0.2);
+  background-color: rgba(118, 148, 132, 1);
+
   .caption {
     height: 115px;
     h1 {
@@ -130,7 +137,7 @@ html {
       }
       .icon-holder {
         i {
-          color: $icon-color;
+          // color: $icon-color;
           &::before {
             font-size: $big-icon-size;
             margin-left: 0;
@@ -143,7 +150,7 @@ html {
         font-family: $item-caption-font-family;
         padding-top: 20px;
         font-weight: 500;
-        color: rgb(58, 59, 116);
+        // color: rgb(58, 59, 116);
       }
 
       hr {
@@ -151,7 +158,8 @@ html {
         display: inline-block;
         width: 26px;
         margin: 10px 0 0 0;
-        background-color: rgb(58, 59, 116);
+        // background-color: rgb(58, 59, 116);
+        background-color: black;
       }
 
       p {
@@ -159,7 +167,8 @@ html {
         padding-top: 22px;
         font-size: $paragraph-size;
         font-weight: $paragraph-weight;
-        color: black;
+        // color: black;
+        // color: white;
       }
 
       @media (min-width: 250px) and (max-width: 315px) {
@@ -195,18 +204,16 @@ html {
     padding-bottom: 30px;
     h1 {
       @extend %section-caption;
-      color: white;
     }
     hr {
       @extend %section-caption-bottom-line;
-      background-color: white;
     }
     p {
       @extend %paragraph;
       color: white;
     }
   }
-  
+
   .owl-carousel {
     .owl-dots {
       @extend %owl-dots;
@@ -215,7 +222,7 @@ html {
     .item {
       margin: 10px;
       padding: 1px;
-      background-color: #efefef;
+      background-color: white;
       position: relative;
       cursor: pointer;
 
@@ -658,7 +665,7 @@ html {
 // ======= Popular Tours Section Start ======= //
 #popular-tours {
   overflow-x: hidden;
-  background-color: rgba(143, 143, 143, 0.2);
+  background-color: rgba(118, 148, 132, 1);
 
   padding: 100px 60px 120px 60px;
   .popular-tours-caption {
@@ -672,6 +679,7 @@ html {
     }
     p {
       @extend %paragraph;
+      color: white;
     }
   }
 
@@ -682,7 +690,6 @@ html {
 
     .item {
       height: 467px;
-      // box-shadow: 0 5px 15px 0 rgba(105, 96, 96, 10%);
       position: relative;
       margin: 10px;
       &:hover {
@@ -691,12 +698,7 @@ html {
           transition: linear 0.2s;
         }
         .content {
-          // position: absolute;
-          // bottom: 0;
-          // left: -1px !important;
-          // right: -1px !important;
           // transform: translate3d(0px, 13px, 0px);
-          // transition: all 0.4s cubic-bezier(0.29, 0.22, 0.07, 0.88);
           transform: translateY(-75px);
           transition: 0.4s all;
         }
@@ -728,16 +730,10 @@ html {
         width: 100%;
         background-color: white;
         height: 150px;
-        // position: absolute;
-        // bottom: -83px;
-        // left: 0;
-        // right: 0;
-        // transition: all 0.3s cubic-bezier(0.29, 0.22, 0.07, 0.88);
         transform: translateY(0px);
         transition: 0.4s all;
 
         .content-header {
-          // padding: 20px 20px 8px 20px;
           padding: 25px 20px 15px 20px;
           display: flex;
           justify-content: space-between;
@@ -774,13 +770,13 @@ html {
             .top-info-box {
               left: 26%;
               box-shadow: -4px 4px 14px 4px rgba(75, 74, 74, 0.2);
-              &::after{
+              &::after {
                 left: calc(57% - 8px);
               }
             }
-             &:hover .top-info-box{
-                bottom: calc(93% + 5px);
-              }
+            &:hover .top-info-box {
+              bottom: calc(93% + 5px);
+            }
 
             &:first-of-type {
               @extend %website-button;
@@ -872,8 +868,8 @@ html {
     .owl-carousel {
       .item {
         height: 370px !important;
-        &:hover{
-          .content{
+        &:hover {
+          .content {
             transform: translateY(-110px);
           }
         }
@@ -914,13 +910,13 @@ html {
             padding: 16px 12px 25px 12px !important;
             a {
               .top-info-box {
-                &::after{
+                &::after {
                   left: calc(57% - 8px);
                 }
               }
-               &:hover .top-info-box{
-                  bottom: calc(84% + 5px);
-                }
+              &:hover .top-info-box {
+                bottom: calc(84% + 5px);
+              }
 
               i {
                 &::before {
@@ -949,9 +945,11 @@ html {
     text-align: center;
     h1 {
       @extend %section-caption;
+      color: rgb(58, 59, 116);
     }
     hr {
       @extend %section-caption-bottom-line;
+      background-color: rgb(58, 59, 116);
     }
     p {
       @extend %paragraph;
@@ -1026,7 +1024,7 @@ html {
 
 // ======= Achievements Section Start ======= //
 #our-achievements {
-  background-color: rgba(143, 143, 143, 0.2);
+  background-color: rgba(118, 148, 132, 1);
   padding: 90px 0 120px 0;
 
   .achievements-caption {
@@ -1052,7 +1050,6 @@ html {
       &::before {
         margin: 0;
         font-size: $big-icon-size;
-        color: $icon-color;
       }
     }
 
@@ -1060,7 +1057,7 @@ html {
       padding: 25px 0 10px 0;
       font-size: 50px;
       font-weight: 700;
-      color: rgb(58, 59, 116);
+      // color: rgb(58, 59, 116);
     }
 
     h3 {

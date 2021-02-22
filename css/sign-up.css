@@ -97,14 +97,14 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   font-family: ludicrous;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #3a3b74;
+  color: white;
 }
 
 #subscribe .subscribe-title hr {
   margin: 8px 0;
   height: 0.7px;
   width: 60px;
-  background-color: #3a3b74;
+  background-color: white;
 }
 
 #subscribe .subscribe-title p {
@@ -138,7 +138,8 @@ footer .footer-top a:hover {
 header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert, #sign-up-section .sign-up-holder .same-style-input-area .alert {
   padding: 5px 0 0;
   color: red;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 #top-header {
@@ -861,13 +862,25 @@ html {
   overflow: hidden;
 }
 
-#intro-pic {
+#intro {
   background-image: url(../img/bg-images/wood.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   height: 500px;
+}
+
+#intro .page-caption {
+  height: 500px;
+  padding-top: 40px;
+}
+
+#intro .page-caption h1 {
+  color: white;
+  font-family: ludicrous;
+  text-transform: uppercase;
+  font-size: 65px;
 }
 
 #sign-up-section {
@@ -902,6 +915,21 @@ html {
   margin-top: 15px;
   font-size: 16px;
   color: #3c3c3c;
+  position: relative;
+}
+
+#sign-up-section .sign-up-holder .same-style-input-area .input-area i {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 18px;
+  color: red;
+  z-index: 0;
+}
+
+#sign-up-section .sign-up-holder .same-style-input-area .input-area .success-icon {
+  color: green;
+  z-index: 5;
 }
 
 #sign-up-section .sign-up-holder .same-style-input-area .input-area input {
@@ -931,6 +959,7 @@ html {
   cursor: pointer;
   color: white;
   font-weight: 300;
+  margin: 0 !important;
 }
 
 #sign-up-section .sign-up-holder .same-style-input-area .terms input[type="checkbox"] + label:before {
@@ -960,16 +989,16 @@ html {
 }
 
 #sign-up-section .sign-up-holder .same-style-input-area .terms a {
-  color: #99ccff;
+  color: darkslateblue;
 }
 
 #sign-up-section .sign-up-holder .same-style-input-area .terms a:hover {
-  color: #80ade7;
+  color: #5c5491;
   text-decoration: none;
 }
 
 #sign-up-section .sign-up-holder .same-style-input-area .bottom-links {
-  padding-top: 30px;
+  padding-top: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -994,6 +1023,31 @@ html {
   outline: none;
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #intro {
+    height: 100%;
+  }
+  #intro .page-caption {
+    height: 420px;
+  }
+  #intro .page-caption h1 {
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #intro {
+    height: 100%;
+  }
+  #intro .page-caption {
+    height: 420px;
+    padding-top: 30px;
+  }
+  #intro .page-caption h1 {
+    font-size: 55px;
+  }
+}
+
 @media (min-width: 375px) and (max-width: 420px) {
   #sign-up-section .sign-up-holder {
     padding: 50px 20px;
@@ -1001,6 +1055,16 @@ html {
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
+  #intro {
+    height: 100%;
+  }
+  #intro .page-caption {
+    height: 400px;
+    padding-top: 50px;
+  }
+  #intro .page-caption h1 {
+    font-size: 50px;
+  }
   #sign-up-section .sign-up-holder {
     padding: 50px 15px;
   }

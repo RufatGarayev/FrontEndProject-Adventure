@@ -4,8 +4,8 @@
   margin: 10,
   nav: false,
   dot: true,
-  // autoplay: true,
-  // autoplayHoverPause: true,
+  autoplay: true,
+  autoplayHoverPause: true,
   responsive: {
     0: {
       items: 1,

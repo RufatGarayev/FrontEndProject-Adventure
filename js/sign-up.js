@@ -106,7 +106,207 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, 500);
   });
   // ======= Back To Top Btn - End ======= //
+
+
+
+  // ======= Sign-Up Validation Start ======= //
+  $(function() {
+    // hiding alerts
+    $(".username-alert").hide();
+    $(".email-alert").hide();
+    $(".password-alert").hide();
+    $(".repeat-pass-alert").hide();
+    $(".checkbox-alert").hide();
+
+    // errors 
+    let error_username = false;
+    let error_email = false;
+    let error_password = false;
+    let error_repeat_pass = false;
+    let error_checkbox = false;
+
+    // focusout event
+    $(".username").focusout(function(){
+       check_username();
+    });
+    $(".sign-up-email").focusout(function() {
+       check_email();
+    });
+    $(".sign-up-password1").focusout(function() {
+       check_password();
+    });
+    $(".repeat-pass").focusout(function() {
+       check_repeat_pass();
+    });
+
+    // click event
+    $("#terms-checkbox").click(function() {
+       click_checkbox();
+    });
+
+
+    // username   
+    function check_username() {
+       let pattern = /^[a-zA-Z]*$/;
+       let userNameVal = $(".username").val();
+       if (userNameVal === "") {
+        $(".username-alert").html("Username must be filled out!");
+        $(".username-alert").show();
+        $(".username").css("border","2px solid red");
+        $(".username").parent().next().css("margin-top","33px");
+        $(".username").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".username").siblings(".fa-check-circle").addClass("d-none");
+        error_username = true;
+      }else if (userNameVal.length < 3){
+        $(".username-alert").html("Username must be at least 3 character!");
+        $(".username-alert").show();
+        $(".username").css("border","2px solid red");
+        $(".username").parent().next().css("margin-top","33px");
+        $(".username").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".username").siblings(".fa-check-circle").addClass("d-none");
+        error_username = true;
+      }else if (!pattern.test(userNameVal)){
+        $(".username-alert").html("Username must contain letters!");
+        $(".username-alert").show();
+        $(".username").css("border","2px solid red");
+        $(".username").parent().next().css("margin-top","33px");
+        $(".username").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".username").siblings(".fa-check-circle").addClass("d-none");
+        error_username = true;
+      }else {
+         $(".username-alert").hide();
+         $(".username").css("border","2px solid green");
+         $(".username").parent().next().css("margin-top","15px");
+         $(".username").siblings(".fa-check-circle").removeClass("d-none");
+         $(".username").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+    }
+
+    // email
+    function check_email() {
+       let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+       let signUpEmailVal = $(".sign-up-email").val();
+       if (signUpEmailVal === "") {
+        $(".email-alert").html("Email must be filled out!");
+        $(".email-alert").show();
+        $(".sign-up-email").css("border","2px solid red");
+        $(".sign-up-email").parent().next().css("margin-top","33px");
+        $(".sign-up-email").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".sign-up-email").siblings(".fa-check-circle").addClass("d-none");
+        error_email = true;
+      }else if(!pattern.test(signUpEmailVal)){
+        $(".email-alert").html("Please enter valid Email.");
+        $(".email-alert").show();
+        $(".sign-up-email").css("border","2px solid red");
+        $(".sign-up-email").parent().next().css("margin-top","33px");
+        $(".sign-up-email").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".sign-up-email").siblings(".fa-check-circle").addClass("d-none");
+        error_email = true;
+      } else {
+         $(".email-alert").hide();
+         $(".sign-up-email").css("border","2px solid green");
+         $(".sign-up-email").parent().next().css("margin-top","15px");
+         $(".sign-up-email").siblings(".fa-check-circle").removeClass("d-none");
+         $(".sign-up-email").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+    }
+
+    // password
+    function check_password() {
+       let signUpPassVal = $(".sign-up-password1").val();
+       if (signUpPassVal === "") {
+          $(".password-alert").html("Password must be filled out!");
+          $(".password-alert").show();
+          $(".sign-up-password1").css("border","2px solid red");
+          $(".sign-up-password1").parent().next().css("margin-top","33px");
+          $(".sign-up-password1").siblings(".fa-exclamation-circle").removeClass("d-none");
+          $(".sign-up-password1").siblings(".fa-check-circle").addClass("d-none");
+          error_password = true;
+       } else if(signUpPassVal.length < 8){
+          $(".password-alert").html("Password must be at least 8 character!");
+          $(".password-alert").show();
+          $(".sign-up-password1").css("border","2px solid red");
+          $(".sign-up-password1").parent().next().css("margin-top","33px");
+          $(".sign-up-password1").siblings(".fa-exclamation-circle").removeClass("d-none");
+          $(".sign-up-password1").siblings(".fa-check-circle").addClass("d-none");
+          error_password = true;
+       } else {
+          $(".password-alert").hide();
+          $(".sign-up-password1").css("border","2px solid green");
+          $(".sign-up-password1").parent().next().css("margin-top","15px");
+          $(".sign-up-password1").siblings(".fa-check-circle").removeClass("d-none");
+          $(".sign-up-password1").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+    }
+
+    // repeat-password
+    function check_repeat_pass() {
+       let signUpPassVal = $(".sign-up-password1").val();
+       let signUpRepeatPassVal = $(".repeat-pass").val();
+       if (signUpRepeatPassVal === "") {
+          $(".repeat-pass-alert").html("Repeat password must be filled out!");
+          $(".repeat-pass-alert").show();
+          $(".repeat-pass").css("border","2px solid red");
+          $(".repeat-pass").parent().next().css("margin-top","20px");
+          $(".repeat-pass").siblings(".fa-exclamation-circle").removeClass("d-none");
+          $(".repeat-pass").siblings(".fa-check-circle").addClass("d-none");
+          error_repeat_pass = true;
+       } else if (signUpPassVal !== signUpRepeatPassVal){
+          $(".repeat-pass-alert").html("Passwords don't match.");
+          $(".repeat-pass-alert").show();
+          $(".repeat-pass").css("border","2px solid red");
+          $(".repeat-pass").parent().next().css("margin-top","20px");
+          $(".repeat-pass").siblings(".fa-exclamation-circle").removeClass("d-none");
+          $(".repeat-pass").siblings(".fa-check-circle").addClass("d-none");
+          error_repeat_pass = true;
+       }else {
+          $(".repeat-pass-alert").hide();
+          $(".repeat-pass").css("border","2px solid green");
+          $(".repeat-pass").parent().next().css("margin-top","0px");
+          $(".repeat-pass").siblings(".fa-check-circle").removeClass("d-none");
+          $(".repeat-pass").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+    }
+
+    // checkbox
+    function click_checkbox() {
+       let checkBox = $("#terms-checkbox");
+       if ($(checkBox).prop("checked") == false) {
+          $(".checkbox-alert").html("You haven't accepted the terms yet.");
+          $(".checkbox-alert").show();
+          error_checkbox = true;
+       } else {
+          $(".checkbox-alert").hide();
+       }
+    }
+
+    // sign-up form - submit event
+    $("#sign-up").submit(function() {
+       error_username = false;
+       error_email = false;
+       error_password = false;
+       error_repeat_pass = false;
+       error_checkbox = false;
+
+       check_username();
+       check_email();
+       check_password();
+       check_repeat_pass();
+       click_checkbox();
+
+       if (error_username === false && error_email === false && error_password === false && error_repeat_pass === false && error_checkbox === false) {
+          alert("Registration Successfull");
+          return true;
+       } else {
+          alert("Please Fill the form Correctly");
+          return false;
+       }
+    });
+ });
+  // ======= Sign-Up Validation End ======= //
 });
+
+
 
 
 // ======= Navbar Hamburger Effect Start ======= //
@@ -119,260 +319,3 @@ menuIcon.addEventListener("click", () => {
   document.body.classList.toggle("stop-scroll");
 });
 // ======= Navbar Hamburger Effect End ======= //
-
-
-// ======= Login Validation Start ======= //
-// selecting elements
-let loginForm = document.getElementById("login");
-let loginEmail = document.querySelector(".email");
-let loginPassword = document.querySelector(".password");
-let resetForm = document.getElementById("reset-form");
-let resetEmail = document.querySelector(".email-for-resetting-password");
-let msgForReset = document.querySelector(".success");
-let resetPassArea = document.querySelector(".reset-password");
-let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-let icon = '<i class="far fa-times-circle"></i>';
-
-
-// email - input event
-loginEmail.addEventListener("input", function () {
-  this.style.border = "1px solid black";
-  this.parentNode.nextElementSibling.classList.add("d-none");
-});
-
-// password - input event
-loginPassword.addEventListener("input", function () {
-  this.style.border = "1px solid black";
-  this.parentNode.nextElementSibling.classList.add("d-none");
-});
-
-
-// login form - submit event
-loginForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-  // login-email
-  if (loginEmail.value == "") {
-    loginEmail.style.border = "2px solid red";
-    loginEmail.parentNode.nextElementSibling.classList.remove("d-none");
-    loginEmail.parentNode.nextElementSibling.innerHTML = `${icon} Email must be filled out!`;
-    return false;
-  } else if (!loginEmail.value.match(pattern)) {
-    loginEmail.style.border = "2px solid red";
-    loginEmail.parentNode.nextElementSibling.classList.remove("d-none");
-    loginEmail.parentNode.nextElementSibling.innerHTML = `${icon} Please enter valid Email Address.`;
-    return false;
-  } else {
-    loginEmail.style.border = "1px solid black";
-    loginEmail.parentNode.nextElementSibling.classList.add("d-none");
-  }
-
-  // login-password
-  if (loginPassword.value == "") {
-    loginPassword.style.border = "2px solid red";
-    loginPassword.parentNode.nextElementSibling.classList.remove("d-none");
-    loginPassword.parentNode.nextElementSibling.innerHTML = `${icon} Password must be filled out!`;
-    return false;
-  } else if (loginPassword.value.length < 6) {
-    loginPassword.style.border = "2px solid red";
-    loginPassword.parentNode.nextElementSibling.classList.remove("d-none");
-    loginPassword.parentNode.nextElementSibling.innerHTML = `${icon} Password must be at least 6 character!`;
-    return false;
-  } else {
-    loginPassword.style.border = "1px solid black";
-    loginPassword.parentNode.nextElementSibling.classList.add("d-none");
-  }
-});
-// ======= Login Validation End ======= //
-
-
-// ======= Reset Password Start ======= //
-// email - input event
-resetEmail.addEventListener("input", function () {
-  this.style.border = "1px solid black";
-  this.parentNode.nextElementSibling.classList.add("d-none");
-});
-
-// form - submit event
-resetForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-  if (resetEmail.value == "") {
-    resetEmail.style.border = "2px solid red";
-    resetEmail.parentNode.nextElementSibling.classList.remove("d-none");
-    resetEmail.parentNode.nextElementSibling.innerHTML = `${icon} Email must be filled out!`;
-    return false;
-  } else if (!resetEmail.value.match(pattern)) {
-    resetEmail.style.border = "2px solid red";
-    resetEmail.parentNode.nextElementSibling.classList.remove("d-none");
-    resetEmail.parentNode.nextElementSibling.innerHTML = `${icon} Please enter valid Email Address.`;
-    return false;
-  } else {
-    resetEmail.style.border = "1px solid black";
-    resetEmail.parentNode.nextElementSibling.classList.add("d-none");
-  }
-});
-// ======= Reset Password End ======= //
-
-
-// ======= Sign-Up Validation Start ======= //
-// selecting elements
-let signUpForm = document.getElementById("sign-up");
-let userName = document.querySelector(".username");
-let signUpEmail = document.querySelector(".sign-up-email");
-let signUpPassword = document.querySelector(".sign-up-password");
-let repeatPassword = document.querySelector(".repeat-pass");
-
-// username blur event
-userName.addEventListener("blur", function () {
-  if (userName.value == "") {
-    this.style.border = "2px solid red";
-    this.parentNode.nextElementSibling.classList.remove("d-none");
-    this.parentNode.nextElementSibling.innerHTML = `${icon} Name must be filled out!`;
-    return false;
-  } else {
-    this.style.border = "1px solid black";
-    this.parentNode.nextElementSibling.classList.add("d-none");
-  }
-});
-
-// username - input event
-userName.addEventListener("input", function () {
-  this.style.border = "1px solid black";
-  this.parentNode.nextElementSibling.classList.add("d-none");
-});
-
-// email - blur event
-signUpEmail.addEventListener("blur", function () {
-  if (signUpEmail.value == "") {
-    this.style.border = "2px solid red";
-    this.parentNode.nextElementSibling.classList.remove("d-none");
-    this.parentNode.nextElementSibling.innerHTML = `${icon} Email must be filled out!`;
-    return false;
-  } else if (!signUpEmail.value.match(pattern)) {
-    this.style.border = "2px solid red";
-    this.parentNode.nextElementSibling.classList.remove("d-none");
-    this.parentNode.nextElementSibling.innerHTML = `${icon} Please enter valid Email Address.`;
-    return false;
-  } else {
-    this.style.border = "1px solid black";
-    this.parentNode.nextElementSibling.classList.add("d-none");
-  }
-});
-
-// email - input event
-signUpEmail.addEventListener("input", function () {
-  this.style.border = "1px solid black";
-  this.parentNode.nextElementSibling.classList.add("d-none");
-});
-
-// password - blur event
-signUpPassword.addEventListener("blur", function () {
-  if (signUpPassword.value == "") {
-    this.style.border = "2px solid red";
-    this.parentNode.nextElementSibling.classList.remove("d-none");
-    this.parentNode.nextElementSibling.innerHTML = `${icon} Password must be filled out!`;
-    return false;
-  } else if (signUpPassword.value.length < 6) {
-    this.style.border = "2px solid red";
-    this.parentNode.nextElementSibling.classList.remove("d-none");
-    this.parentNode.nextElementSibling.innerHTML = `${icon} Password must be at least 6 character!`;
-    return false;
-  } else {
-    this.style.border = "1px solid black";
-    this.parentNode.nextElementSibling.classList.add("d-none");
-  }
-});
-
-// password - input event
-signUpPassword.addEventListener("input", function () {
-  this.style.border = "1px solid black";
-  this.parentNode.nextElementSibling.classList.add("d-none");
-});
-
-// repeat-password - blur event
-repeatPassword.addEventListener("change", function () {
-  if (repeatPassword.value == "") {
-    repeatPassword.style.border = "2px solid red";
-    repeatPassword.parentNode.nextElementSibling.classList.remove("d-none");
-    repeatPassword.parentNode.nextElementSibling.innerHTML = `${icon} Repeat password must be filled out!`;
-    return false;
-  } else if (repeatPassword.value !== signUpPassword.value) {
-    this.style.border = "2px solid red";
-    this.parentNode.nextElementSibling.classList.remove("d-none");
-    this.parentNode.nextElementSibling.innerHTML = `${icon} Passwords don't match.`;
-    return false;
-  } else {
-    this.style.border = "1px solid black";
-    this.parentNode.nextElementSibling.classList.add("d-none");
-  }
-});
-
-// repeat-password - input event
-repeatPassword.addEventListener("input", function () {
-  this.style.border = "1px solid black";
-  this.parentNode.nextElementSibling.classList.add("d-none");
-});
-
-
-// sign-up form - submit event
-signUpForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-  // username
-  if (userName.value == "") {
-    userName.style.border = "2px solid red";
-    userName.parentNode.nextElementSibling.classList.remove("d-none");
-    userName.parentNode.nextElementSibling.innerHTML = `${icon} Name must be filled out!`;
-    return false;
-  } else {
-    userName.style.border = "1px solid black";
-    userName.parentNode.nextElementSibling.classList.add("d-none");
-  }
-
-  // sign-up-email
-  if (signUpEmail.value == "") {
-    signUpEmail.style.border = "2px solid red";
-    signUpEmail.parentNode.nextElementSibling.classList.remove("d-none");
-    signUpEmail.parentNode.nextElementSibling.innerHTML = `${icon} Email must be filled out!`;
-    return false;
-  } else if (!signUpEmail.value.match(pattern)) {
-    signUpEmail.style.border = "2px solid red";
-    signUpEmail.parentNode.nextElementSibling.classList.remove("d-none");
-    signUpEmail.parentNode.nextElementSibling.innerHTML = `${icon} Please enter valid Email Address.`;
-    return false;
-  } else {
-    signUpEmail.style.border = "1px solid black";
-    signUpEmail.parentNode.nextElementSibling.classList.add("d-none");
-  }
-
-  // sign-up-password
-  if (signUpPassword.value == "") {
-    signUpPassword.style.border = "2px solid red";
-    signUpPassword.parentNode.nextElementSibling.classList.remove("d-none");
-    signUpPassword.parentNode.nextElementSibling.innerHTML = `${icon} Password must be filled out!`;
-    return false;
-  } else if (signUpPassword.value.length < 6) {
-    signUpPassword.style.border = "2px solid red";
-    signUpPassword.parentNode.nextElementSibling.classList.remove("d-none");
-    signUpPassword.parentNode.nextElementSibling.innerHTML = `${icon} Password must be at least 6 character!`;
-    return false;
-  } else {
-    signUpPassword.style.border = "1px solid black";
-    signUpPassword.parentNode.nextElementSibling.classList.add("d-none");
-  }
-
-  // repeat-password
-  if (repeatPassword.value == "") {
-    repeatPassword.style.border = "2px solid red";
-    repeatPassword.parentNode.nextElementSibling.classList.remove("d-none");
-    repeatPassword.parentNode.nextElementSibling.innerHTML = `${icon} Password must be filled out!`;
-    return false;
-  } else if (repeatPassword.value !== signUpPassword.value) {
-    repeatPassword.style.border = "2px solid red";
-    repeatPassword.parentNode.nextElementSibling.classList.remove("d-none");
-    repeatPassword.parentNode.nextElementSibling.innerHTML = `${icon} Passwords don't match.`;
-    return false;
-  } else {
-    repeatPassword.style.border = "1px solid black";
-    repeatPassword.parentNode.nextElementSibling.classList.add("d-none");
-  }
-});
-// ======= Sign-Up Validation End ======= //
