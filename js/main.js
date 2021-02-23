@@ -411,23 +411,23 @@ function init() {
 
 // ======= Countdown Start ======= //
 function countdown() {
-  var now = new Date();
-  var eventDate = new Date(2021, 03, 13);
+  let now = new Date();
+  let eventDate = new Date('Mart 13, 2021 00:00:00');
 
-  var currentTiime = now.getTime();
-  var eventTime = eventDate.getTime();
+  let currentTiime = now.getTime();
+  let eventTime = eventDate.getTime();
 
-  var remTime = eventTime - currentTiime;
+  let remTime = eventTime - currentTiime;
 
   if (remTime <= 0) {
     document.getElementById("discount").style.display = "none";
     return;
   }
 
-  var s = Math.floor(remTime / 1000);
-  var m = Math.floor(s / 60);
-  var h = Math.floor(m / 60);
-  var d = Math.floor(h / 24);
+  let s = Math.floor(remTime / 1000);
+  let m = Math.floor(s / 60);
+  let h = Math.floor(m / 60);
+  let d = Math.floor(h / 24);
 
   h %= 24;
   m %= 60;
