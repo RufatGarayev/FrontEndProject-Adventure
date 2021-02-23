@@ -149,6 +149,18 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   border-radius: 2px !important;
   height: 2px;
   width: 25px;
+  background: #6c757d;
+  position: relative;
+}
+
+#special-offers .owl-carousel .owl-dots .owl-dot.active span::after, #popular-tours .owl-carousel .owl-dots .owl-dot.active span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 25px;
+  background: white;
+  border-radius: 2px;
 }
 
 #special-offers .owl-carousel .item .info .slide-links a i::before, #popular-tours .owl-carousel .item .content .content-links a i::before {
@@ -265,7 +277,7 @@ footer .footer-top a:hover {
   color: #aac5b7 !important;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert {
+header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert, #subscribe .form-holder .alert {
   padding: 5px 0 0;
   color: red;
   font-weight: 400;
@@ -368,6 +380,7 @@ header nav .navbar-items {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 55px;
 }
 
 header nav .account {
@@ -482,6 +495,21 @@ header nav .account li .login-box-holder .same-style-input-area .input-area {
   margin-top: 15px;
   font-size: 16px;
   color: #3c3c3c;
+  position: relative;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area i {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 18px;
+  color: red;
+  z-index: 0;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area .success-icon {
+  color: green;
+  z-index: 5;
 }
 
 header nav .account li .login-box-holder .same-style-input-area .input-area input {
@@ -593,12 +621,19 @@ header nav .account li .login-box-holder .success {
 
 header nav .account li .login-box-holder .success i {
   font-size: 60px;
-  color: #769484;
+  color: #2ab06f;
 }
 
-header nav .account li .login-box-holder .success h4,
+header nav .account li .login-box-holder .success h4 {
+  margin: 7px 0 0;
+  font-weight: 400;
+  color: white;
+}
+
 header nav .account li .login-box-holder .success p {
   margin-bottom: 0;
+  font-weight: 100;
+  color: white;
 }
 
 header nav .account li .visible {
@@ -898,6 +933,10 @@ footer .footer-bottom .social-media ul li:hover .twitter {
   color: white;
 }
 
+#subscribe .form-holder {
+  position: relative;
+}
+
 #subscribe .form-holder .form-field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -911,7 +950,7 @@ footer .footer-bottom .social-media ul li:hover .twitter {
   width: 60%;
   height: 50px;
   border: 0;
-  padding-left: 33px;
+  padding-left: 25px;
   border-radius: 4px 0 0 4px;
 }
 
@@ -932,6 +971,25 @@ footer .footer-bottom .social-media ul li:hover .twitter {
 
 #subscribe .form-holder .form-field .subs-btn::before {
   border-radius: 0 4px 4px 0 !important;
+}
+
+#subscribe .form-holder i {
+  position: absolute;
+  top: 16px;
+  right: 230px;
+  font-size: 18px;
+  color: red;
+  z-index: 1;
+}
+
+#subscribe .form-holder .success-icon {
+  color: green;
+  z-index: 5;
+}
+
+#subscribe .form-holder .alert {
+  padding-left: 88px;
+  color: #f96220;
 }
 
 #topBtn {
@@ -1030,7 +1088,7 @@ html {
 }
 
 #intro .banner-area .caption h3 {
-  font-size: 65px;
+  font-size: 68px;
   font-family: ludicrous;
 }
 
@@ -1113,6 +1171,10 @@ html {
   transition: 0.4s ease-in-out !important;
 }
 
+#our-advantages .main-holder .holder .icon-holder i {
+  color: black;
+}
+
 #our-advantages .main-holder .holder .icon-holder i::before {
   font-size: 60px;
   margin-left: 0;
@@ -1122,7 +1184,8 @@ html {
   font-size: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 20px;
-  font-weight: 500;
+  font-weight: 400;
+  color: white;
 }
 
 #our-advantages .main-holder .holder hr {
@@ -1130,14 +1193,14 @@ html {
   display: inline-block;
   width: 26px;
   margin: 10px 0 0 0;
-  background-color: black;
+  background-color: white;
 }
 
 #our-advantages .main-holder .holder p {
   position: relative;
   padding-top: 22px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @media (min-width: 250px) and (max-width: 315px) {
@@ -1348,7 +1411,7 @@ html {
 
 #view-tours .view-tours-text i::before {
   font-size: 48px;
-  color: #db7355;
+  color: black;
   margin: 0 15px 0 0;
 }
 
@@ -1394,7 +1457,7 @@ html {
 }
 
 #discount {
-  background-image: url(../img/bg-images/landscape.jpg);
+  background-image: url(../img/bg-images/river.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1433,6 +1496,7 @@ html {
 
 #discount .discount_title h2 span {
   color: #dd795c;
+  font-weight: 700;
 }
 
 #discount .discount_title h1 {
@@ -1903,7 +1967,7 @@ html {
 #coming-soon .content .content-text p {
   padding-left: 55px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #coming-soon .third .content {
@@ -1960,6 +2024,10 @@ html {
   transition: 0.4s ease-in-out;
 }
 
+#our-achievements .content i {
+  color: black;
+}
+
 #our-achievements .content i::before {
   margin: 0;
   font-size: 60px;
@@ -1968,7 +2036,8 @@ html {
 #our-achievements .content h2 {
   padding: 25px 0 10px 0;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
+  color: white;
 }
 
 #our-achievements .content h3 {

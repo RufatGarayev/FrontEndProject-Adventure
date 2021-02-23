@@ -99,7 +99,7 @@
           <li class="nav-item">
             <a class="nav-link search-btn-first icon-btn" href="#"><i class="flaticon-loupe"></i></a>
             <div class="search-area-holder holder-div">
-              <input type="text" placeholder="Region Name" name="search">
+              <input type="text" placeholder="Region Name.." name="search">
               <a class="search-btn-second" href="#"><i class="flaticon-loupe"></i></a>
             </div>
           </li>
@@ -111,13 +111,17 @@
               <form action="#" method="POST" id="login">
                 <div class="login-box same-style-input-area">
                   <div class="input-area">
-                    <input class="email" type="text" name="email" placeholder="Email">
+                    <input class="email login-email" type="text" name="email" placeholder="Email">
+                    <i class="fas fa-check-circle d-none success-icon"></i>
+			              <i class="fas fa-exclamation-circle d-none"></i>
+                    <small class="alert login-email-alert"></small>
                   </div>
-                  <div class="alert d-none"></div>
                   <div class="input-area">
-                    <input class="password" type="password" name="password" placeholder="Password">
+                    <input class="password login-pass" type="password" name="password" placeholder="Password">
+                    <i class="fas fa-check-circle d-none success-icon"></i>
+			              <i class="fas fa-exclamation-circle d-none"></i>
+                    <small class="alert login-pass-alert"></small>
                   </div>
-                  <div class="alert d-none"></div>
                   <div class="forgot-area">
                     <a class="forgotten-password-link" href="#">Forgotten Password?</a>
                   </div>
@@ -132,9 +136,11 @@
                 <div class="reset-password same-style-input-area d-none">
                   <p>Reset Password</p>
                   <div class="input-area">
-                    <input class="email-for-resetting-password" type="text" name="email" placeholder="Please enter your Email">
+                    <input class="email-for-reset-pass" type="text" name="email" placeholder="Please enter your Email">
+                    <i class="fas fa-check-circle d-none success-icon"></i>
+                    <i class="fas fa-exclamation-circle d-none"></i>
+                    <small class="alert reset-email-alert"></small>
                   </div>
-                  <div class="alert d-none"></div>
                   <div class="bottom-links pt-2">
                     <a href="#" class="go-back">Back</a>
                     <button type="submit" class="reset">Reset</button>
@@ -699,8 +705,8 @@
     <section id="subscribe">
       <div class="container">
         <div class="row">
-          <!-- area section title-->
           <div class="col-12">
+            <!-- subscribe-section title-->
             <div class="subscribe-title d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
               data-aos-duration="1000">
               <h1>Subscribe</h1>
@@ -711,12 +717,16 @@
         </div>
         <div class="row">
           <div class="col-lg-8 col-md-8 col-sm-12 offset-lg-2 offset-md-2">
+            <!-- email area -->
             <div class="form-holder d-flex justify-content-center">
-              <form class="w-100" action="#" method="GET">
+              <form class="w-100" action="#" method="GET" id="subscribe-form">
                 <div class="form-field">
-                  <input type="email" name="email" placeholder="Email Address" required />
+                  <input type="email" name="email" class="subscribe-email" placeholder="Email Address"/>
                   <button type="submit" class="subs-btn" name="submit">Subscribe</button>
                 </div>
+                <i class="fas fa-check-circle d-none success-icon"></i>
+                <i class="fas fa-exclamation-circle d-none"></i>
+                <small class="alert subs-email-alert"></small>
               </form>
             </div>
           </div>

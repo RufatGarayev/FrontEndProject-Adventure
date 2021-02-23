@@ -62,7 +62,7 @@ html {
       color: white;
       text-align: center;
       h3 {
-        font-size: 65px;
+        font-size: 68px;
         font-family: ludicrous;
         @media (min-width: 500px) and (max-width: 575.98px) {
           font-size: 58px !important;
@@ -137,7 +137,7 @@ html {
       }
       .icon-holder {
         i {
-          // color: $icon-color;
+          color: $icon-color;
           &::before {
             font-size: $big-icon-size;
             margin-left: 0;
@@ -149,8 +149,8 @@ html {
         font-size: $item-caption-size;
         font-family: $item-caption-font-family;
         padding-top: 20px;
-        font-weight: 500;
-        // color: rgb(58, 59, 116);
+        font-weight: 400;
+        color: white;
       }
 
       hr {
@@ -158,8 +158,7 @@ html {
         display: inline-block;
         width: 26px;
         margin: 10px 0 0 0;
-        // background-color: rgb(58, 59, 116);
-        background-color: black;
+        background-color: white;
       }
 
       p {
@@ -457,7 +456,7 @@ html {
 
 // ======= Discount Section Start ======= //
 #discount {
-  background-image: url(../img/bg-images/landscape.jpg);
+  background-image: url(../img/bg-images/river.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -492,6 +491,7 @@ html {
       }
       span {
         color: rgb(221, 121, 92);
+        font-weight: 700;
       }
     }
     h1 {
@@ -1047,6 +1047,7 @@ html {
       transition: 0.4s ease-in-out;
     }
     i {
+      color: $icon-color;
       &::before {
         margin: 0;
         font-size: $big-icon-size;
@@ -1056,7 +1057,8 @@ html {
     h2 {
       padding: 25px 0 10px 0;
       font-size: 50px;
-      font-weight: 700;
+      font-weight: 500;
+      color: white;
       // color: rgb(58, 59, 116);
     }
 

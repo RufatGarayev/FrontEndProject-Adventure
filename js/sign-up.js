@@ -43,10 +43,18 @@ $(document).ready(function () {
   // ======= Events On Scroll End ======= //
 
 
+  // ======= Show or Hide navbar items when click on Hamburger btn - Start ======= //
+  $(document).on("click", ".hamburger", function () {
+    $(this).toggleClass("change");
+    $(".navbar-items").toggleClass("active");
+    $(document.body).toggleClass("stop-scroll");
+  });
+  // ======= Show or Hide navbar items when click on Hamburger btn - End ======= //
+
+
   // ======= Changing Link To Active OnClick Start ======= //
   $(document).on("click", ".navbar-items .nav-item", function () {
     $(this).addClass("active-link").siblings().removeClass("active-link");
-    // $(".account .nav-item").removeClass("active-link");
   });
   // ======= Changing Link To Active OnClick End ======= //
 
@@ -58,13 +66,7 @@ $(document).ready(function () {
       !$(this).siblings().hasClass("visible") &&
       !$(this).children().hasClass("flaticon-close")
     ) {
-      $(this)
-        .siblings()
-        .addClass("visible")
-        .parent()
-        .siblings()
-        .children(".holder-div")
-        .removeClass("visible");
+      $(this).siblings().addClass("visible").parent().siblings().children(".holder-div").removeClass("visible");
       $(this).children().addClass("flaticon-close");
       $(this).parent().siblings().find("i").removeClass("flaticon-close");
     } else {
@@ -107,6 +109,168 @@ $(document).ready(function () {
   });
   // ======= Back To Top Btn - End ======= //
 
+
+
+  // ======= Login Validation Start ======= //
+  $(function() {
+    // hiding alerts
+    $(".login-email-alert").hide();
+    $(".login-pass-alert").hide();
+
+    // errors 
+    let login_error_email = false;
+    let login_error_password = false;
+
+    // keyup event
+    $(".login-email").keyup(function() {
+      check_login_email();
+    });
+    $(".login-pass").keyup(function() {
+      check_login_password();
+    });
+
+
+    // email
+    function check_login_email() {
+       let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+       let loginEmailVal = $(".login-email").val();
+       if (loginEmailVal === "") {
+        $(".login-email-alert").html("Email must be filled out!");
+        $(".login-email-alert").show();
+        $(".login-email").css("border","2px solid red");
+        $(".login-email").parent().next().css("margin-top","33px");
+        $(".login-email").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".login-email").siblings(".fa-check-circle").addClass("d-none");
+        login_error_email = true;
+      }else if(!pattern.test(loginEmailVal)){
+        $(".login-email-alert").html("Please enter valid Email.");
+        $(".login-email-alert").show();
+        $(".login-email").css("border","2px solid red");
+        $(".login-email").parent().next().css("margin-top","33px");
+        $(".login-email").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".login-email").siblings(".fa-check-circle").addClass("d-none");
+        login_error_email = true;
+      } else {
+         $(".login-email-alert").hide();
+         $(".login-email").css("border","2px solid green");
+         $(".login-email").parent().next().css("margin-top","15px");
+         $(".login-email").siblings(".fa-check-circle").removeClass("d-none");
+         $(".login-email").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+    }
+
+    // password
+    function check_login_password() {
+       let loginPassVal = $(".login-pass").val();
+       if (loginPassVal === "") {
+          $(".login-pass-alert").html("Password must be filled out!");
+          $(".login-pass-alert").show();
+          $(".login-pass").css("border","2px solid red");
+          $(".login-pass").parent().next().css("margin-top","33px");
+          $(".login-pass").siblings(".fa-exclamation-circle").removeClass("d-none");
+          $(".login-pass").siblings(".fa-check-circle").addClass("d-none");
+          login_error_password = true;
+       } else if(loginPassVal.length < 8){
+          $(".login-pass-alert").html("Password must be at least 8 character!");
+          $(".login-pass-alert").show();
+          $(".login-pass").css("border","2px solid red");
+          $(".login-pass").parent().next().css("margin-top","33px");
+          $(".login-pass").siblings(".fa-exclamation-circle").removeClass("d-none");
+          $(".login-pass").siblings(".fa-check-circle").addClass("d-none");
+          login_error_password = true;
+       } else {
+          $(".login-pass-alert").hide();
+          $(".login-pass").css("border","2px solid green");
+          $(".login-pass").parent().next().css("margin-top","10px");
+          $(".login-pass").siblings(".fa-check-circle").removeClass("d-none");
+          $(".login-pass").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+    }
+
+
+    // login form - submit event
+    $("#login").submit(function() {
+       login_error_email = false;
+       login_error_password = false;
+
+       check_login_email();
+       check_login_password();
+
+       if (login_error_email === false && login_error_password === false) {
+          alert("Login Successfull");
+          return true;
+       } else {
+          alert("Please Fill the form Correctly");
+          return false;
+       }
+    });
+  });
+  // ======= Login Validation End ======= //
+
+
+  // ======= Reset Password Start ======= //
+  $(function() {
+    // hiding alerts
+    $(".reset-email-alert").hide();
+
+    // errors 
+    let error_reset_email = false;
+
+    // keyup event
+    $(".email-for-reset-pass").keyup(function() {
+      check_reset_email();
+    });
+
+
+    // email
+    function check_reset_email() {
+       let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+       let resetEmailVal = $(".email-for-reset-pass").val();
+       if (resetEmailVal === "") {
+        $(".reset-email-alert").html("Email must be filled out!");
+        $(".reset-email-alert").show();
+        $(".email-for-reset-pass").css("border","2px solid red");
+        $(".email-for-reset-pass").parent().next().css("margin-top","33px");
+        $(".email-for-reset-pass").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".email-for-reset-pass").siblings(".fa-check-circle").addClass("d-none");
+        error_reset_email = true;
+      }else if(!pattern.test(resetEmailVal)){
+        $(".reset-email-alert").html("Please enter valid Email.");
+        $(".reset-email-alert").show();
+        $(".email-for-reset-pass").css("border","2px solid red");
+        $(".email-for-reset-pass").parent().next().css("margin-top","33px");
+        $(".email-for-reset-pass").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".email-for-reset-pass").siblings(".fa-check-circle").addClass("d-none");
+        error_reset_email = true;
+      } else {
+         $(".reset-email-alert").hide();
+         $(".email-for-reset-pass").css("border","2px solid green");
+         $(".email-for-reset-pass").parent().next().css("margin-top","0px");
+         $(".email-for-reset-pass").siblings(".fa-check-circle").removeClass("d-none");
+         $(".email-for-reset-pass").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+    }
+
+
+    // login form - submit event
+    $("#reset-form").submit(function(e) {
+      e.preventDefault();
+
+       error_reset_email = false;
+
+       check_reset_email();
+
+       if (error_reset_email === false) {
+          $(".reset-password").addClass("d-none");
+          $(".success").removeClass("hidden");
+          return true;
+       } else {
+          alert("Please Fill the Email Correctly");
+          return false;
+       }
+    });
+  });
+  // ======= Reset Password End ======= //
 
 
   // ======= Sign-Up Validation Start ======= //
@@ -305,17 +469,3 @@ $(document).ready(function () {
  });
   // ======= Sign-Up Validation End ======= //
 });
-
-
-
-
-// ======= Navbar Hamburger Effect Start ======= //
-let menuIcon = document.querySelector(".hamburger");
-let navbar = document.querySelector(".navbar-items");
-
-menuIcon.addEventListener("click", () => {
-  menuIcon.classList.toggle("change");
-  navbar.classList.toggle("active");
-  document.body.classList.toggle("stop-scroll");
-});
-// ======= Navbar Hamburger Effect End ======= //

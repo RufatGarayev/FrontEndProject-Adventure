@@ -64,6 +64,7 @@ header {
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      padding-left: 55px;
 
       .links {
         @extend %nav-link-properties;
@@ -164,6 +165,21 @@ header {
               margin-top: 15px;
               font-size: 16px;
               color: #3c3c3c;
+              position: relative;
+              i {
+                position: absolute;
+                top: 18px;
+                right: 25px;
+                font-size: 18px;
+                color: red;
+                z-index: 0;
+              }
+      
+              .success-icon {
+                color: green;
+                z-index: 5;
+              }
+
               input {
                 border-radius: 4px;
                 padding: 0 25px;
@@ -259,11 +275,17 @@ header {
             justify-content: space-between;
             i {
               font-size: 60px;
-              color: rgb(118, 148, 132);
+              color: rgb(42,176,111);
             }
-            h4,
+            h4{
+              margin: 7px 0 0;
+              font-weight: 400;
+              color: white;
+            }
             p {
               margin-bottom: 0;
+              font-weight: 100;
+              color: white;
             }
           }
         }

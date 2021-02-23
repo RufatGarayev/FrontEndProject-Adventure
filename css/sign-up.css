@@ -135,7 +135,7 @@ footer .footer-top a:hover {
   color: #aac5b7 !important;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert, #sign-up-section .sign-up-holder .same-style-input-area .alert {
+header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert, #subscribe .form-holder .alert, #sign-up-section .sign-up-holder .same-style-input-area .alert {
   padding: 5px 0 0;
   color: red;
   font-weight: 400;
@@ -238,6 +238,7 @@ header nav .navbar-items {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 55px;
 }
 
 header nav .account {
@@ -352,6 +353,21 @@ header nav .account li .login-box-holder .same-style-input-area .input-area {
   margin-top: 15px;
   font-size: 16px;
   color: #3c3c3c;
+  position: relative;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area i {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 18px;
+  color: red;
+  z-index: 0;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area .success-icon {
+  color: green;
+  z-index: 5;
 }
 
 header nav .account li .login-box-holder .same-style-input-area .input-area input {
@@ -463,12 +479,19 @@ header nav .account li .login-box-holder .success {
 
 header nav .account li .login-box-holder .success i {
   font-size: 60px;
-  color: #769484;
+  color: #2ab06f;
 }
 
-header nav .account li .login-box-holder .success h4,
+header nav .account li .login-box-holder .success h4 {
+  margin: 7px 0 0;
+  font-weight: 400;
+  color: white;
+}
+
 header nav .account li .login-box-holder .success p {
   margin-bottom: 0;
+  font-weight: 100;
+  color: white;
 }
 
 header nav .account li .visible {
@@ -768,6 +791,10 @@ footer .footer-bottom .social-media ul li:hover .twitter {
   color: white;
 }
 
+#subscribe .form-holder {
+  position: relative;
+}
+
 #subscribe .form-holder .form-field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -781,7 +808,7 @@ footer .footer-bottom .social-media ul li:hover .twitter {
   width: 60%;
   height: 50px;
   border: 0;
-  padding-left: 33px;
+  padding-left: 25px;
   border-radius: 4px 0 0 4px;
 }
 
@@ -802,6 +829,25 @@ footer .footer-bottom .social-media ul li:hover .twitter {
 
 #subscribe .form-holder .form-field .subs-btn::before {
   border-radius: 0 4px 4px 0 !important;
+}
+
+#subscribe .form-holder i {
+  position: absolute;
+  top: 16px;
+  right: 230px;
+  font-size: 18px;
+  color: red;
+  z-index: 1;
+}
+
+#subscribe .form-holder .success-icon {
+  color: green;
+  z-index: 5;
+}
+
+#subscribe .form-holder .alert {
+  padding-left: 88px;
+  color: #f96220;
 }
 
 #topBtn {

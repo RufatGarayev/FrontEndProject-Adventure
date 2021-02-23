@@ -136,6 +136,20 @@
       border-radius: 2px !important;
       height: 2px;
       width: 25px;
+      background: #6c757d;
+      position: relative;
+    }
+  }
+
+  .owl-dot.active span {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 2px;
+      width: 25px;
+      background: white;
+      border-radius: 2px;
     }
   }
 }

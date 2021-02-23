@@ -36,14 +36,16 @@
     }
   
     .form-holder {
+      position: relative;
       .form-field {
         display: flex;
         justify-content: center;
+
         input {
           width: 60%;
           height: 50px;
           border: 0;
-          padding-left: 33px;
+          padding-left: 25px;
           border-radius: 4px 0 0 4px;
           &:focus {
             border-color: #ff6363;
@@ -52,7 +54,7 @@
             outline: 0 none;
           }
         }
-  
+
         .subs-btn {
           @extend %website-button;
           text-transform: none;
@@ -65,6 +67,26 @@
           }
         }
       }
+      
+      i {
+        position: absolute;
+        top: 16px;
+        right: 230px;
+        font-size: 18px;
+        color: red;
+        z-index: 1;
+      }
+
+      .success-icon {
+        color: green;
+        z-index: 5;
+      }
+
+      .alert{
+        @extend %form-alert;
+        padding-left: 88px;
+        color: #f96220;
+      }
     }
   }
-  // ======= Subscribe Section End ======= //
+// ======= Subscribe Section End ======= //

@@ -8,14 +8,14 @@
     left: 5% !important;
   }
   #intro .banner-area .caption h3 {
-    font-size: 86px !important;
+    font-size: 80px !important;
   }
   #intro .banner-area .caption h1 {
-    font-size: 44px !important;
+    font-size: 40px !important;
     padding: 50px 0 80px 0 !important;
   }
   #intro .banner-area .caption .button {
-    font-size: 24px !important;
+    font-size: 20px !important;
     border-radius: 2px !important;
   }
   #our-advantages {
@@ -78,6 +78,12 @@
   #popular-tours .item .content .content-links a {
     font-size: 12px !important;
   }
+  #subscribe .form-holder i {
+    right: 205px !important;
+  }
+  #subscribe .form-holder .alert {
+    padding-left: 65px !important;
+  }
   footer .footer-top .about-us {
     padding-right: 20% !important;
   }
@@ -112,6 +118,7 @@
   header .navbar .navbar-items {
     width: 100% !important;
     height: 97%;
+    padding-left: 0;
     background-color: #1b1b1b !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -393,6 +400,13 @@
   }
   #subscribe .form-holder .form-field input {
     width: 75% !important;
+    padding-left: 20px !important;
+  }
+  #subscribe .form-holder i {
+    right: 140px !important;
+  }
+  #subscribe .form-holder .alert {
+    padding-left: 3px !important;
   }
   footer .footer-top .about-us {
     padding-right: 20% !important;
@@ -428,6 +442,7 @@
   header .navbar .navbar-items {
     width: 100% !important;
     height: 98%;
+    padding-left: 0;
     background-color: #1b1b1b !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -791,6 +806,16 @@
   #subscribe .subscribe-title {
     padding: 0 50px 50px !important;
   }
+  #subscribe .form-holder .form-field input {
+    padding-left: 20px !important;
+  }
+  #subscribe .form-holder i {
+    right: 180px !important;
+    font-size: 17px !important;
+  }
+  #subscribe .form-holder .alert {
+    padding-left: 43px !important;
+  }
   footer .footer-top .about-us {
     padding-right: 27% !important;
   }
@@ -858,6 +883,7 @@
   header .navbar .navbar-items {
     width: 100% !important;
     height: 98%;
+    padding-left: 0;
     background-color: #1b1b1b !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1257,6 +1283,13 @@
     font-weight: 300 !important;
     padding: 10px 14px !important;
   }
+  #subscribe .form-holder i {
+    right: calc(60%/3 + 59px) !important;
+    font-size: 17px !important;
+  }
+  #subscribe .form-holder .alert {
+    padding-left: calc(15% - 35px) !important;
+  }
   footer {
     padding: 100px 10px 30px !important;
   }
@@ -1331,6 +1364,7 @@
   header .navbar .navbar-items {
     width: 100% !important;
     height: 98%;
+    padding-left: 0;
     background-color: #1b1b1b !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1787,14 +1821,14 @@
     font-size: 20px !important;
   }
   #subscribe .subscribe-title {
-    padding: 0 0 30px !important;
+    padding: 0 11px 25px !important;
   }
   #subscribe .subscribe-title h1 {
     font-size: 28px !important;
+    margin-bottom: 5px !important;
   }
   #subscribe .subscribe-title hr {
     width: 42px !important;
-    margin-bottom: 25px !important;
   }
   #subscribe .subscribe-title p {
     font-size: 12px !important;
@@ -1809,6 +1843,15 @@
     font-size: 13px;
     font-weight: 300 !important;
     padding: 8px 10px !important;
+  }
+  #subscribe .form-holder i {
+    top: 13px !important;
+    right: calc(60%/3 + 45px) !important;
+    font-size: 14px !important;
+  }
+  #subscribe .form-holder .alert {
+    font-size: 12px !important;
+    padding-left: calc(15% - 29px) !important;
   }
   footer {
     padding: 100px 5px 30px !important;

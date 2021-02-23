@@ -10,16 +10,16 @@
       left: 5% !important;
       .caption {
         h3 {
-          font-size: 86px !important;
+          font-size: 80px !important;
         }
 
         h1 {
-          font-size: 44px !important;
+          font-size: 40px !important;
           padding: 50px 0 80px 0 !important;
         }
 
         .button {
-          font-size: 24px !important;
+          font-size: 20px !important;
           border-radius: 2px !important;
         }
       }
@@ -108,6 +108,18 @@
     }
   }
 
+  #subscribe {
+    .form-holder {
+      i {
+        right: 205px !important;
+      }
+
+      .alert {
+        padding-left: 65px !important;
+      }
+    }
+  }
+
   footer {
     .footer-top {
       .about-us {
@@ -148,6 +160,7 @@
       .navbar-items {
         width: 100% !important;
         height: 97%;
+        padding-left: 0;
         background-color: rgb(27, 27, 27) !important;
 
         flex-direction: column;
@@ -479,7 +492,16 @@
       .form-field {
         input {
           width: 75% !important;
+          padding-left: 20px !important;
         }
+      }
+
+      i {
+        right: 140px !important;
+      }
+
+      .alert {
+        padding-left: 3px !important;
       }
     }
   }
@@ -524,6 +546,7 @@
       .navbar-items {
         width: 100% !important;
         height: 98%;
+        padding-left: 0;
         background-color: rgb(27, 27, 27) !important;
 
         flex-direction: column;
@@ -940,6 +963,23 @@
     .subscribe-title {
       padding: 0 50px 50px !important;
     }
+
+    .form-holder {
+      .form-field {
+        input {
+          padding-left: 20px !important;
+        }
+      }
+
+      i {
+        right: 180px !important;
+        font-size: 17px !important;
+      }
+
+      .alert {
+        padding-left: 43px !important;
+      }
+    }
   }
 
   footer {
@@ -1012,6 +1052,7 @@
       .navbar-items {
         width: 100% !important;
         height: 98%;
+        padding-left: 0;
         background-color: rgb(27, 27, 27) !important;
 
         flex-direction: column;
@@ -1479,6 +1520,15 @@
           padding: 10px 14px !important;
         }
       }
+
+      i {
+        right: calc(60%/3 + 59px) !important;
+        font-size: 17px !important;
+      }
+
+      .alert {
+        padding-left: calc(15% - 35px) !important;
+      }
     }
   }
 
@@ -1557,6 +1607,7 @@
       .navbar-items {
         width: 100% !important;
         height: 98%;
+        padding-left: 0;
         background-color: rgb(27, 27, 27) !important;
 
         flex-direction: column;
@@ -1623,7 +1674,7 @@
               .input-area {
                 height: 45px !important;
                 font-size: 11px !important;
-                input{
+                input {
                   padding: 0 15px !important;
                 }
               }
@@ -1652,11 +1703,11 @@
               .alert {
                 font-size: 11px !important;
               }
-              .bottom-links{
-                .go-back{
+              .bottom-links {
+                .go-back {
                   font-size: 13px !important;
                 }
-                .reset{
+                .reset {
                   font-size: 13px !important;
                   padding: 7px 20px !important;
                 }
@@ -2091,14 +2142,14 @@
 
   #subscribe {
     .subscribe-title {
-      padding: 0 0 30px !important;
+      padding: 0 11px 25px !important;
 
       h1 {
         font-size: 28px !important;
+        margin-bottom: 5px !important;
       }
       hr {
         width: 42px !important;
-        margin-bottom: 25px !important;
       }
       p {
         font-size: 12px !important;
@@ -2117,6 +2168,17 @@
           font-weight: 300 !important;
           padding: 8px 10px !important;
         }
+      }
+
+      i {
+        top: 13px !important;
+        right: calc(60%/3 + 45px) !important;
+        font-size: 14px !important;
+      }
+
+      .alert {
+        font-size: 12px !important;
+        padding-left: calc(15% - 29px) !important;
       }
     }
   }
