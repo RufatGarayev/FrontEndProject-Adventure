@@ -1,3 +1,4 @@
+// nav-link bottom-line
 %nav-li-line {
   position: absolute;
   bottom: 7px;
@@ -8,6 +9,7 @@
   background-color: white !important;
 }
 
+// nav-link hover
 %nav-li-hover {
   &:hover hr {
     width: 100% !important;
@@ -15,6 +17,7 @@
   }
 }
 
+// nav-link properties
 %nav-link-properties {
   width: 360px;
   display: flex;
@@ -40,6 +43,7 @@
   }
 }
 
+// carousel-control-button
 %carousel-control {
   .carousel-control {
     width: 50px;
@@ -68,6 +72,7 @@
   }
 }
 
+// website-button
 %website-button {
   padding: 10px 24px;
   font-weight: 600;
@@ -105,6 +110,7 @@
   z-index: 1;
 }
 
+// section-caption properties
 %section-caption {
   font-size: 46px;
   font-family: ludicrous;
@@ -114,6 +120,7 @@
   color: white;
 }
 
+// section-caption bottom-line
 %section-caption-bottom-line {
   margin: 8px 0;
   height: 0.7px;
@@ -122,12 +129,14 @@
   background-color: white;
 }
 
+// paragraph properties
 %paragraph {
   padding-top: 20px;
   font-size: 16px;
   font-weight: 300;
 }
 
+// owl-dot properties
 %owl-dots {
   margin-top: 20px;
   .owl-dot {
@@ -154,6 +163,7 @@
   }
 }
 
+// add-to-cart-icon properties
 %add-to-cart-icon {
   i {
     &::before {
@@ -173,6 +183,7 @@
   }
 }
 
+// top info-box properties
 %top-info-box {
   .top-info-box {
     display: inline-block;
@@ -213,6 +224,7 @@
   }
 }
 
+// price-box properties
 %price-box {
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
@@ -243,6 +255,7 @@
   }
 }
 
+// footer-caption properties
 %footer-captions {
   font-size: 16px;
   font-weight: 700;
@@ -252,6 +265,7 @@
   padding-bottom: 10px;
 }
 
+// footer-link properties
 %footer-links {
   color: white;
   font-weight: 200;
@@ -263,9 +277,26 @@
   }
 }
 
+// form-alert properties
 %form-alert {
   padding: 5px 0 0;
   color: red;
   font-weight: 400;
   font-size: 14px;
+}
+
+// about-section-back-pic properties
+%about-back-pic {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px;
+}
+
+// about-section-icon properties
+%about-icon {
+  &::before {
+    margin-left: 0;
+    font-size: 40px;
+  }
 }

@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 18/02/2021 23:43
+  	Creation date: 23/02/2021 16:31
   	*/
 
 @font-face {
@@ -48,3 +48,6 @@ margin-left: 20px;
 .flaticon-user-1:before { content: "\f10f"; }
 .flaticon-close:before { content: "\f110"; }
 .flaticon-upload:before { content: "\f111"; }
+.flaticon-street-sign:before { content: "\f112"; }
+.flaticon-steering-wheel:before { content: "\f113"; }
+.flaticon-bike:before { content: "\f114"; }

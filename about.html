@@ -22,11 +22,10 @@
     <link rel="stylesheet" href="font/flaticon.css">
     <!-- responsive.css -->
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- sign-up.css -->
-    <link rel="stylesheet" href="css/sign-up.css">
-    <title>Sign Up | Adventure</title>
+    <!-- about.css -->
+    <link rel="stylesheet" href="css/about.css">
+    <title>About | Adventure</title>
 </head>
-
 
 <body>
     <!-- ======= Loader Start ======= -->
@@ -81,8 +80,8 @@
                             <a class="nav-link" href="index.html">Home</a>
                             <hr>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                        <li class="nav-item active-link">
+                            <a class="nav-link" href="#">About</a>
                             <hr>
                         </li>
                         <li class="nav-item">
@@ -110,25 +109,26 @@
                         <div class="login-box-holder holder-div">
                             <form action="#" method="POST" id="login">
                                 <div class="login-box same-style-input-area">
-                                  <div class="input-area">
-                                    <input class="email login-email" type="text" name="email" placeholder="Email">
-                                    <i class="fas fa-check-circle d-none success-icon"></i>
-                                    <i class="fas fa-exclamation-circle d-none"></i>
-                                    <small class="alert login-email-alert"></small>
-                                  </div>
-                                  <div class="input-area">
-                                    <input class="password login-pass" type="password" name="password" placeholder="Password">
-                                    <i class="fas fa-check-circle d-none success-icon"></i>
-                                    <i class="fas fa-exclamation-circle d-none"></i>
-                                    <small class="alert login-pass-alert"></small>
-                                  </div>
-                                  <div class="forgot-area">
-                                    <a class="forgotten-password-link" href="#">Forgotten Password?</a>
-                                  </div>
-                                  <div class="bottom-links">
-                                    <a href="sign-up.html" class="sign-up">Sign Up</a>
-                                    <button type="submit" class="sign-in">Sign In</button>
-                                  </div>
+                                    <div class="input-area">
+                                        <input class="email login-email" type="text" name="email" placeholder="Email">
+                                        <i class="fas fa-check-circle d-none success-icon"></i>
+                                        <i class="fas fa-exclamation-circle d-none"></i>
+                                        <small class="alert login-email-alert"></small>
+                                    </div>
+                                    <div class="input-area">
+                                        <input class="password login-pass" type="password" name="password"
+                                            placeholder="Password">
+                                        <i class="fas fa-check-circle d-none success-icon"></i>
+                                        <i class="fas fa-exclamation-circle d-none"></i>
+                                        <small class="alert login-pass-alert"></small>
+                                    </div>
+                                    <div class="forgot-area">
+                                        <a class="forgotten-password-link" href="#">Forgotten Password?</a>
+                                    </div>
+                                    <div class="bottom-links">
+                                        <a href="sign-up.html" class="sign-up">Sign Up</a>
+                                        <button type="submit" class="sign-in">Sign In</button>
+                                    </div>
                                 </div>
                             </form>
 
@@ -136,7 +136,8 @@
                                 <div class="reset-password same-style-input-area d-none">
                                     <p>Reset Password</p>
                                     <div class="input-area">
-                                        <input class="email-for-reset-pass" type="text" name="email" placeholder="Please enter your Email">
+                                        <input class="email-for-reset-pass" type="text" name="email"
+                                            placeholder="Please enter your Email">
                                         <i class="fas fa-check-circle d-none success-icon"></i>
                                         <i class="fas fa-exclamation-circle d-none"></i>
                                         <small class="alert reset-email-alert"></small>
@@ -181,7 +182,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="page-caption d-flex justify-content-center align-items-center">
-                            <h1>Sign Up</h1>
+                            <h1>About</h1>
                         </div>
                     </div>
                 </div>
@@ -189,88 +190,166 @@
         </section>
         <!-- ======= Intro Section End ======= -->
 
-        <!-- ======= Sign Up Section Start ======= -->
-        <section id="sign-up-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <div class="sign-up-holder">
-                            <div class="caption-area text-center">
-                                <h3>Create Account</h3>
-                            </div>
-                            <form action="#" method="POST" id="sign-up">
-                                <div class="sign-up-box same-style-input-area">
-                                    <div class="input-area">
-                                        <input class="username" type="text" name="username" placeholder="Username">
-                                        <i class="fas fa-check-circle d-none success-icon"></i>
-			                            <i class="fas fa-exclamation-circle d-none"></i>
-                                        <small class="username-alert alert"></small>
-                                    </div>
-                                    <div class="input-area">
-                                        <input class="sign-up-email" type="text" name="email" placeholder="Email">
-                                        <i class="fas fa-check-circle d-none success-icon"></i>
-			                            <i class="fas fa-exclamation-circle d-none"></i>
-                                        <small class="email-alert alert"></small>
-                                    </div>
-                                    <div class="input-area">
-                                        <input class="sign-up-password sign-up-password1" type="password" name="password1" placeholder="Password">
-                                        <i class="fas fa-check-circle d-none success-icon"></i>
-			                            <i class="fas fa-exclamation-circle d-none"></i>
-                                        <small class="password-alert alert"></small>
-                                    </div>
-                                    <div class="input-area">
-                                        <input class="sign-up-password repeat-pass" type="password" name="password2" placeholder="Repeat Password">
-                                        <i class="fas fa-check-circle d-none success-icon"></i>
-			                            <i class="fas fa-exclamation-circle d-none"></i>
-                                        <small class="repeat-pass-alert alert"></small>
-                                    </div>
-                                    <div class="terms">
-                                        <input type="checkbox" id="terms-checkbox" name="terms" value="terms">
-                                        <label for="terms-checkbox">I have read and agree with the <a href="#">terms and conditions.</a></label> <br>
-                                        <small class="checkbox-alert alert mb-0"></small>
-                                    </div>
-                                    <div class="bottom-links">
-                                        <button type="submit" class="sign-up-btn">Sign Up</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ======= Sign Up Section End ======= -->
 
-        <!-- ======= Subscribe Section Start ======= -->
-        <section id="subscribe">
+        <!-- ======= Our Story Section Start ======= -->
+        <section id="our-story">
             <div class="container">
                 <div class="row">
-                    <!-- area section title-->
-                    <div class="col-12">
-                        <div class="subscribe-title d-flex flex-column justify-content-center align-items-center"
+                    <div class="col-lg-12">
+                        <div class="our-story-caption d-flex flex-column justify-content-center align-items-center"
                             data-aos="fade-up" data-aos-duration="1000">
-                            <h1>Subscribe</h1>
+                            <i class="flaticon-street-sign"></i>
+                            <h3>Our Story</h3>
                             <hr>
-                            <p>Lorem Ipsum is simply dummy text the printing and typesetting industry.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12 offset-lg-2 offset-md-2">
-                        <div class="form-holder d-flex justify-content-center">
-                            <form class="w-100" action="#" method="GET">
-                                <div class="form-field">
-                                    <input type="email" name="email" placeholder="Email Address" required />
-                                    <button type="submit" class="subs-btn" name="submit">Subscribe</button>
-                                </div>
-                            </form>
+                    <div class="col-lg-6">
+                        <div class="text text-justify" data-aos="fade-right" data-aos-duration="1000">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum fermentum
+                                fermentum.
+                                In nulla sem, gravida a feugiat in, maximus id orci. Donec nec sagittis ipsum, sit amet
+                                venenatis orci.
+                                Donec bibendum pulvinar dapibus. Duis ac dui accumsan, finibus erat sagittis, mollis
+                                nulla.
+                                Cras ac interdum lacus. Morbi at ante aliquet, faucibus purus quis, pretium justo.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum fermentum
+                                fermentum.
+                                In nulla sem, gravida a feugiat in, maximus id orci. Donec nec sagittis ipsum, sit amet
+                                venenatis orci.
+                                Donec bibendum pulvinar dapibus. Duis ac dui accumsan, finibus erat sagittis, mollis
+                                nulla.
+                                Cras ac interdum lacus. Morbi at ante aliquet, faucibus purus quis, pretium justo.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-2"></div>
+                    <div class="col-lg-6">
+                        <div class="our-story-pic"></div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- ======= Subscribe Section End ======= -->
+        <!-- ======= Our Story Section End ======= -->
+
+
+        <!-- ======= Our Mission Section Start ======= -->
+        <section id="our-mission">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="our-mission-caption d-flex flex-column justify-content-center align-items-center"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <i class="flaticon-steering-wheel"></i>
+                            <h3>Our Mission</h3>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="our-mission-pic"></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text text-justify" data-aos="fade-left" data-aos-duration="1000">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum fermentum
+                                fermentum.
+                                In nulla sem, gravida a feugiat in, maximus id orci. Donec nec sagittis ipsum, sit amet
+                                venenatis orci.
+                                Donec bibendum pulvinar dapibus. Duis ac dui accumsan, finibus erat sagittis, mollis
+                                nulla.
+                                Cras ac interdum lacus. Morbi at ante aliquet, faucibus purus quis, pretium justo.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum fermentum
+                                fermentum.
+                                In nulla sem, gravida a feugiat in, maximus id orci. Donec nec sagittis ipsum, sit amet
+                                venenatis orci.
+                                Donec bibendum pulvinar dapibus. Duis ac dui accumsan, finibus erat sagittis, mollis
+                                nulla.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= Our Mission Section End ======= -->
+
+
+        <!-- ======= Adventure Team Section Start ======= -->
+        <section id="adventure-team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="adventure-team-caption d-flex flex-column justify-content-center align-items-center"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <i class="flaticon-map"></i>
+                            <h3>Adventure Team</h3>
+                            <hr>
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="image">
+                                <img class="img-fluid" src="img/about/adventure-team1.jpg" alt="Guide">
+                            </div>
+                            <div class="social-media">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div class="info">
+                                <h5>Rubie Talley</h5>
+                                <h6>Tour Guide</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="image">
+                                <img class="img-fluid" src="img/about/adventure-team2.jpg" alt="Guide">
+                            </div>
+                            <div class="social-media">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div class="info">
+                                <h5>Rubie Talley</h5>
+                                <h6>Tour Guide</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="image">
+                                <img class="img-fluid" src="img/about/adventure-team3.jpg" alt="Guide">
+                            </div>
+                            <div class="social-media">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div class="info">
+                                <h5>Rubie Talley</h5>
+                                <h6>Tour Guide</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= Adventure Team Section End ======= -->
     </main>
     <!-- ======= Main Part End ======= -->
 

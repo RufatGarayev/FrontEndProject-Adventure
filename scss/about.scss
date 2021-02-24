@@ -1,0 +1,190 @@
+@import "../scss/partials/extends";
+@import "../scss/partials/variables";
+@import "../scss/reused_sections/header";
+@import "../scss/reused_sections/footer";
+@import "../scss/reused_sections/preloader";
+// @import "../scss/reused_sections/subscribe";
+@import "../scss/reused_sections/back-to-top";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  font-family: "Nunito", sans-serif;
+}
+
+@font-face {
+  font-family: "ludicrous";
+  src: url(../WOFF-web-fonts/Ludicrous.woff);
+  font-weight: 100;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.stop-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+// ======= Intro Section Start ======= //
+#intro {
+  background-image: url(../img/bg-images/wood.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 500px;
+
+  .page-caption {
+    height: 500px;
+    padding-top: 40px;
+    h1 {
+      color: white;
+      font-family: ludicrous;
+      text-transform: uppercase;
+      font-size: 65px;
+    }
+  }
+}
+// ======= Intro Section End ======= //
+
+// ======= Our Story Section Start ======= //
+#our-story {
+  overflow-x: hidden;
+  padding: 70px 0;
+
+  .our-story-caption {
+    padding-bottom: 60px;
+    i {
+      @extend %about-icon;
+    }
+
+    h3 {
+      padding: 15px 0;
+      @extend %section-caption;
+      color: black;
+      margin-bottom: 0;
+    }
+
+    hr {
+      @extend %section-caption-bottom-line;
+      background-color: black;
+      margin: 0;
+    }
+  }
+
+  .text {
+    height: 320px;
+  }
+
+  .our-story-pic {
+    background-image: url(../img/about/our-story.jpg);
+    @extend %about-back-pic;
+  }
+}
+// ======= Our Story Section End ======= //
+
+// ======= Our Mission Section Start ======= //
+#our-mission {
+  overflow-x: hidden;
+  padding: 70px 0;
+  background-color: rgb(118, 148, 132);
+
+  .our-mission-caption {
+    padding-bottom: 60px;
+    i {
+      @extend %about-icon;
+    }
+
+    h3 {
+      padding: 15px 0;
+      @extend %section-caption;
+      margin-bottom: 0;
+    }
+
+    hr {
+      @extend %section-caption-bottom-line;
+      margin: 0;
+    }
+  }
+
+  .text {
+    height: 320px;
+    color: white;
+    font-weight: 300;
+  }
+
+  .our-mission-pic {
+    background-image: url(../img/about/our-mission.jpg);
+    @extend %about-back-pic;
+  }
+}
+// ======= Our Mission Section End ======= //
+
+// ======= Adventure Team Section Start ======= //
+#adventure-team {
+  padding: 70px 0;
+
+  .adventure-team-caption {
+    padding-bottom: 60px;
+    i {
+      @extend %about-icon;
+    }
+
+    h3 {
+      padding: 15px 0;
+      @extend %section-caption;
+      margin-bottom: 0;
+      color: black;
+    }
+
+    hr {
+      @extend %section-caption-bottom-line;
+      margin: 0;
+      background-color: black;
+    }
+
+    p {
+      @extend %paragraph;
+      padding-top: 22px;
+    }
+  }
+
+  .item {
+     display: flex;
+    //  justify-content: center;
+     flex-direction: column;
+     align-items: center;
+
+    .image {
+      height: 350px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-160px);
+      width: 140px;
+      transition: 0.5s linear;
+      opacity: 0;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+// ======= Adventure Team Section End ======= //

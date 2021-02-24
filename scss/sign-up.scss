@@ -1,10 +1,10 @@
 @import "../scss/partials/extends";
 @import "../scss/partials/variables";
-@import "../scss/partials/parts-of-web-page/header";
-@import "../scss/partials/parts-of-web-page/footer";
-@import "../scss/partials/parts-of-web-page/preloader";
-@import "../scss/partials/parts-of-web-page/subscribe";
-@import "../scss/partials/parts-of-web-page/back-to-top";
+@import "../scss/reused_sections/header";
+@import "../scss/reused_sections/footer";
+@import "../scss/reused_sections/preloader";
+@import "../scss/reused_sections/subscribe";
+@import "../scss/reused_sections/back-to-top";
 
 * {
   margin: 0;
