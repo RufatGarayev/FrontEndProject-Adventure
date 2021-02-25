@@ -142,6 +142,78 @@ header nav .account li .login-box-holder .same-style-input-area .alert, header n
   font-size: 14px;
 }
 
+footer .footer-bottom .social-media ul li .instagram::before {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+footer .footer-bottom .social-media ul li a {
+  font-size: 16px;
+  color: white;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 99;
+}
+
+footer .footer-bottom .social-media ul li a::before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: transparent;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  z-index: -1;
+}
+
+footer .footer-bottom .social-media ul li:hover .facebook::before {
+  background-color: #4867aa;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+footer .footer-bottom .social-media ul li:hover .instagram::before {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+footer .footer-bottom .social-media ul li:hover .youtube::before {
+  background-color: red;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+footer .footer-bottom .social-media ul li:hover .twitter::before {
+  background-color: #00a2f3;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 #top-header {
   background-color: #1b1b1b;
   padding: 0 93px;
@@ -592,37 +664,6 @@ footer .footer-bottom .social-media ul {
   width: 40%;
 }
 
-footer .footer-bottom .social-media ul li a {
-  font-size: 16px;
-  color: white;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  display: inline-block;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 50%;
-}
-
-footer .footer-bottom .social-media ul li:hover .facebook {
-  background-color: #4867aa;
-}
-
-footer .footer-bottom .social-media ul li:hover .instagram {
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-  -webkit-transition: 0.3s linear !important;
-  transition: 0.3s linear !important;
-}
-
-footer .footer-bottom .social-media ul li:hover .youtube {
-  background-color: red;
-}
-
-footer .footer-bottom .social-media ul li:hover .twitter {
-  background-color: #00a2f3;
-}
-
 .loading {
   position: fixed;
   top: 0;
@@ -853,7 +894,7 @@ footer .footer-bottom .social-media ul li:hover .twitter {
 #topBtn {
   position: fixed;
   right: 30px;
-  bottom: 70px;
+  bottom: 80px;
   display: inline-block;
   text-align: center;
   border: none;

@@ -154,6 +154,78 @@ header nav .account li .login-box-holder .same-style-input-area .alert, header n
   font-size: 40px;
 }
 
+footer .footer-bottom .social-media ul li .instagram::before, #adventure-team .item .holder .social-media li .instagram::before {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+footer .footer-bottom .social-media ul li a, #adventure-team .item .holder .social-media li a {
+  font-size: 16px;
+  color: white;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 99;
+}
+
+footer .footer-bottom .social-media ul li a::before, #adventure-team .item .holder .social-media li a::before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: transparent;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  z-index: -1;
+}
+
+footer .footer-bottom .social-media ul li:hover .facebook::before, #adventure-team .item .holder .social-media li:hover .facebook::before {
+  background-color: #4867aa;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+footer .footer-bottom .social-media ul li:hover .instagram::before, #adventure-team .item .holder .social-media li:hover .instagram::before {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+footer .footer-bottom .social-media ul li:hover .youtube::before, #adventure-team .item .holder .social-media li:hover .youtube::before {
+  background-color: red;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+footer .footer-bottom .social-media ul li:hover .twitter::before, #adventure-team .item .holder .social-media li:hover .twitter::before {
+  background-color: #00a2f3;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 #top-header {
   background-color: #1b1b1b;
   padding: 0 93px;
@@ -604,37 +676,6 @@ footer .footer-bottom .social-media ul {
   width: 40%;
 }
 
-footer .footer-bottom .social-media ul li a {
-  font-size: 16px;
-  color: white;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  display: inline-block;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 50%;
-}
-
-footer .footer-bottom .social-media ul li:hover .facebook {
-  background-color: #4867aa;
-}
-
-footer .footer-bottom .social-media ul li:hover .instagram {
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-  -webkit-transition: 0.3s linear !important;
-  transition: 0.3s linear !important;
-}
-
-footer .footer-bottom .social-media ul li:hover .youtube {
-  background-color: red;
-}
-
-footer .footer-bottom .social-media ul li:hover .twitter {
-  background-color: #00a2f3;
-}
-
 .loading {
   position: fixed;
   top: 0;
@@ -770,7 +811,7 @@ footer .footer-bottom .social-media ul li:hover .twitter {
 #topBtn {
   position: fixed;
   right: 30px;
-  bottom: 70px;
+  bottom: 80px;
   display: inline-block;
   text-align: center;
   border: none;
@@ -848,7 +889,7 @@ html {
 
 #our-story {
   overflow-x: hidden;
-  padding: 70px 0;
+  padding: 70px 0 90px;
 }
 
 #our-story .our-story-caption {
@@ -876,7 +917,7 @@ html {
 
 #our-mission {
   overflow-x: hidden;
-  padding: 70px 0;
+  padding: 70px 0 90px;
   background-color: #769484;
 }
 
@@ -939,30 +980,83 @@ html {
           align-items: center;
 }
 
-#adventure-team .item .image {
+#adventure-team .item .holder {
   height: 350px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#adventure-team .item .image img {
+#adventure-team .item .holder img {
+  border-radius: 6px;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#adventure-team .item .social-media {
+#adventure-team .item .holder::before {
+  content: "";
+  border-radius: 6px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#adventure-team .item .holder .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transform: translateY(-160px);
-          transform: translateY(-160px);
+  position: absolute !important;
+  bottom: 150px !important;
   width: 140px;
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   opacity: 0;
+  visibility: hidden;
+}
+
+#adventure-team .item .holder:hover::before {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+#adventure-team .item .holder:hover .social-media {
+  bottom: 160px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 #adventure-team .item .info {
@@ -979,5 +1073,154 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 250px;
+  border-radius: 4px;
+  background-color: #769484;
+  height: 100px;
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
+}
+
+#adventure-team .item .info h5 {
+  color: white;
+}
+
+#adventure-team .item .info h6 {
+  color: #dae0e5;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #our-story .text {
+    height: 350px;
+  }
+  #our-mission {
+    padding: 70px 0 95px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #our-story {
+    padding: 70px 20px 90px;
+  }
+  #our-story .our-story-caption {
+    padding-bottom: 40px;
+  }
+  #our-story .text {
+    height: 240px;
+  }
+  #our-mission {
+    padding: 70px 20px 90px;
+  }
+  #our-mission .our-mission-caption {
+    padding-bottom: 40px;
+  }
+  #our-mission .text {
+    height: 240px;
+  }
+  #our-mission .first {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #our-mission .second {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #adventure-team {
+    padding: 70px 20px 40px;
+  }
+  #adventure-team .adventure-team-caption {
+    padding-bottom: 40px;
+  }
+  #adventure-team .item .holder {
+    height: 230px;
+  }
+  #adventure-team .item .info {
+    height: 90px;
+    width: 180px;
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
+    border-radius: 12px;
+  }
+  #adventure-team .item .info h5 {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #our-story {
+    padding: 70px 0 90px;
+  }
+  #our-story .our-story-caption {
+    padding-bottom: 40px;
+  }
+  #our-story .text {
+    height: 240px;
+  }
+  #our-mission {
+    padding: 70px 0 90px;
+  }
+  #our-mission .our-mission-caption {
+    padding-bottom: 40px;
+  }
+  #our-mission .text {
+    height: 240px;
+  }
+  #our-mission .first {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #our-mission .second {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #adventure-team {
+    padding: 70px 0 40px;
+  }
+  #adventure-team .adventure-team-caption {
+    padding-bottom: 40px;
+  }
+  #adventure-team .item .holder {
+    height: 230px;
+  }
+  #adventure-team .item .info {
+    height: 90px;
+    width: 180px;
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
+    border-radius: 12px;
+  }
+  #adventure-team .item .info h5 {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #intro {
+    height: 100%;
+  }
+  #intro .page-caption {
+    height: 420px;
+    padding-top: 30px;
+  }
+  #intro .page-caption h1 {
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #intro {
+    height: 100%;
+  }
+  #intro .page-caption {
+    height: 400px;
+    padding-top: 50px;
+  }
+  #intro .page-caption h1 {
+    font-size: 50px;
+  }
 }
 /*# sourceMappingURL=about.css.map */

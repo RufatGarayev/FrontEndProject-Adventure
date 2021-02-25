@@ -65,40 +65,7 @@ footer {
           justify-content: space-between;
           width: 40%;
           li {
-            a {
-              font-size: 16px;
-              color: white;
-              width: 30px;
-              height: 30px;
-              background-color: transparent;
-              display: inline-block;
-              text-align: center;
-              line-height: 30px;
-              border-radius: 50%;
-            }
-            &:hover {
-              .facebook {
-                background-color: rgb(72, 103, 170);
-              }
-              .instagram {
-                background: #d6249f;
-                background: radial-gradient(
-                  circle at 30% 107%,
-                  #fdf497 0%,
-                  #fdf497 5%,
-                  #fd5949 45%,
-                  #d6249f 60%,
-                  #285aeb 90%
-                );
-                transition: 0.3s linear !important;
-              }
-              .youtube {
-                background-color: rgb(255, 0, 0);
-              }
-              .twitter {
-                background-color: rgb(0, 162, 243);
-              }
-            }
+           @extend %social-media;
           }
         }
       }

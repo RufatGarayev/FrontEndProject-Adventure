@@ -31,6 +31,7 @@ html {
   overflow: hidden;
 }
 
+
 // ======= Intro Section Start ======= //
 #intro {
   background-image: url(../img/bg-images/wood.jpg);
@@ -56,7 +57,7 @@ html {
 // ======= Our Story Section Start ======= //
 #our-story {
   overflow-x: hidden;
-  padding: 70px 0;
+  padding: 70px 0 90px;
 
   .our-story-caption {
     padding-bottom: 60px;
@@ -92,7 +93,7 @@ html {
 // ======= Our Mission Section Start ======= //
 #our-mission {
   overflow-x: hidden;
-  padding: 70px 0;
+  padding: 70px 0 90px;
   background-color: rgb(118, 148, 132);
 
   .our-mission-caption {
@@ -156,27 +157,72 @@ html {
   }
 
   .item {
-     display: flex;
-    //  justify-content: center;
-     flex-direction: column;
-     align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .image {
+    .holder {
       height: 350px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+
       img {
+        border-radius: 6px;
         height: 100%;
         width: 100%;
         object-fit: cover;
       }
-    }
 
-    .social-media {
-      display: flex;
-      justify-content: space-between;
-      transform: translateY(-160px);
-      width: 140px;
-      transition: 0.5s linear;
-      opacity: 0;
+      &::before {
+        content: "";
+        border-radius: 6px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: all 0.4s;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .social-media {
+        display: flex;
+        justify-content: space-between;
+        position: absolute !important;
+        bottom: 150px !important;
+        width: 140px;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: all 0.4s;
+        opacity: 0;
+        visibility: hidden;
+        li {
+          @extend %social-media;
+        }
+      }
+
+      &:hover {
+        &::before {
+          transition: all 0.4s;
+          transform: scaleY(1);
+          opacity: 1;
+          visibility: visible;
+        }
+
+        .social-media {
+          bottom: 160px;
+          transition: all 0.4s;
+          opacity: 1;
+          visibility: visible;
+          transform: scaleY(1);
+          transform-origin: bottom;
+        }
+      }
     }
 
     .info {
@@ -184,7 +230,169 @@ html {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      width: 250px;
+      border-radius: 4px;
+      background-color: rgb(118, 148, 132);
+      height: 100px;
+      transform: translateY(-24px);
+      h5 {
+        color: white;
+      }
+
+      h6 {
+        color: #dae0e5;
+      }
     }
   }
 }
 // ======= Adventure Team Section End ======= //
+
+
+
+// ======= Responsive Design Start ======= //
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #our-story {
+    .text {
+      height: 350px;
+    }
+  }
+
+  #our-mission {
+    padding: 70px 0 95px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #our-story {
+    padding: 70px 20px 90px;
+    .our-story-caption {
+      padding-bottom: 40px;
+    }
+    .text {
+      height: 240px;
+    }
+  }
+
+  #our-mission {
+    padding: 70px 20px 90px;
+    .our-mission-caption {
+      padding-bottom: 40px;
+    }
+
+    .text {
+      height: 240px;
+    }
+
+    .first {
+      order: 1;
+    }
+    .second {
+      order: 2;
+    }
+  }
+
+  #adventure-team {
+    padding: 70px 20px 40px;
+    .adventure-team-caption {
+      padding-bottom: 40px;
+    }
+
+    .item {
+      .holder {
+        height: 230px;
+      }
+
+      .info {
+        height: 90px;
+        width: 180px;
+        transform: translateY(-55px);
+        border-radius: 12px;
+
+        h5 {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #our-story {
+        padding: 70px 0 90px;
+        .our-story-caption {
+          padding-bottom: 40px;
+        }
+        .text {
+          height: 240px;
+        }
+    }
+    
+      #our-mission {
+        padding: 70px 0 90px;
+        .our-mission-caption {
+          padding-bottom: 40px;
+        }
+    
+        .text {
+          height: 240px;
+        }
+    
+        .first {
+          order: 1;
+        }
+        .second {
+          order: 2;
+        }
+    }
+    
+      #adventure-team {
+        padding: 70px 0 40px;
+        .adventure-team-caption {
+          padding-bottom: 40px;
+        }
+    
+        .item {
+          .holder {
+            height: 230px;
+          }
+    
+          .info {
+            height: 90px;
+            width: 180px;
+            transform: translateY(-55px);
+            border-radius: 12px;
+    
+            h5 {
+              font-size: 19px;
+            }
+          }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #intro {
+    height: 100%;
+    .page-caption {
+      height: 420px;
+      padding-top: 30px;
+      h1 {
+        font-size: 55px;
+      }
+    }
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #intro {
+    height: 100%;
+    .page-caption {
+      height: 400px;
+      padding-top: 50px;
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+}
+// ======= Responsive Design End ======= //
