@@ -118,6 +118,14 @@
   text-transform: uppercase;
   // color: rgb(58, 59, 116);
   color: white;
+
+  @media (min-width: 375px) and (max-width: 575.98px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 250px) and (max-width: 374.98px) {
+    font-size: 28px;
+  }
 }
 
 // section-caption bottom-line
@@ -127,13 +135,26 @@
   width: 60px;
   // background-color: rgb(58, 59, 116);
   background-color: white;
+
+  @media (min-width: 375px) and (max-width: 575.98px) {
+    width: 45px;
+  }
+
+  @media (min-width: 250px) and (max-width: 374.98px) {
+    width: 35px;
+  }
 }
 
 // paragraph properties
 %paragraph {
-  padding-top: 20px;
+  padding-top: 16px;
   font-size: 16px;
   font-weight: 300;
+  margin-bottom: 0;
+
+  @media (min-width: 250px) and (max-width: 374.98px) {
+    font-size: 12px;
+  }
 }
 
 // owl-dot properties

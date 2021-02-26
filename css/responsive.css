@@ -1021,10 +1021,6 @@
   }
   #our-advantages .caption h1 {
     padding: 40px 0 80px 0 !important;
-    font-size: 40px !important;
-  }
-  #our-advantages .caption hr {
-    width: 45px !important;
   }
   #our-advantages .holder {
     padding: 40px 70px 0 70px !important;
@@ -1043,12 +1039,6 @@
   }
   #special-offers {
     padding: 100px 50px 110px 50px !important;
-  }
-  #special-offers .special-offers-caption h1 {
-    font-size: 40px !important;
-  }
-  #special-offers .special-offers-caption hr {
-    width: 45px !important;
   }
   #special-offers .owl-carousel .owl-dots {
     margin-top: 15px !important;
@@ -1158,12 +1148,6 @@
   #popular-tours .popular-tours-caption {
     padding: 0 15px 0 !important;
   }
-  #popular-tours .popular-tours-caption h1 {
-    font-size: 40px !important;
-  }
-  #popular-tours .popular-tours-caption hr {
-    width: 45px !important;
-  }
   #popular-tours .popular-tours-caption p {
     font-size: 16px !important;
   }
@@ -1206,12 +1190,6 @@
   #coming-soon .coming-soon-caption {
     padding: 0 20px 60px !important;
   }
-  #coming-soon .coming-soon-caption h1 {
-    font-size: 40px !important;
-  }
-  #coming-soon .coming-soon-caption hr {
-    width: 45px !important;
-  }
   #coming-soon .content {
     height: 320px !important;
     padding: 0 25px !important;
@@ -1242,12 +1220,6 @@
   #our-achievements {
     padding: 125px 0 100px 0 !important;
   }
-  #our-achievements .achievements-caption h1 {
-    font-size: 40px !important;
-  }
-  #our-achievements .achievements-caption hr {
-    width: 45px !important;
-  }
   #our-achievements .content {
     height: 330px !important;
     padding-top: 50px !important;
@@ -1268,12 +1240,6 @@
   }
   #subscribe .subscribe-title {
     padding: 0 20px 50px !important;
-  }
-  #subscribe .subscribe-title h1 {
-    font-size: 40px !important;
-  }
-  #subscribe .subscribe-title hr {
-    width: 45px !important;
   }
   #subscribe .form-holder .form-field input {
     padding-left: 20px !important;
@@ -1535,11 +1501,7 @@
     height: 110px !important;
   }
   #our-advantages .caption h1 {
-    font-size: 28px !important;
     padding: 20px 0 80px 0 !important;
-  }
-  #our-advantages .caption hr {
-    width: 42px !important;
   }
   #our-advantages .holder {
     height: 220px !important;
@@ -1560,15 +1522,6 @@
   }
   #special-offers {
     padding: 80px 5px 90px 5px !important;
-  }
-  #special-offers .special-offers-caption h1 {
-    font-size: 28px !important;
-  }
-  #special-offers .special-offers-caption hr {
-    width: 42px !important;
-  }
-  #special-offers .special-offers-caption p {
-    font-size: 12px !important;
   }
   #special-offers .owl-carousel .owl-dots {
     margin-top: 5px !important;
@@ -1680,18 +1633,6 @@
   #popular-tours {
     padding: 80px 5px 80px 5px !important;
   }
-  #popular-tours .popular-tours-caption {
-    padding: 0 15px 0 !important;
-  }
-  #popular-tours .popular-tours-caption h1 {
-    font-size: 28px !important;
-  }
-  #popular-tours .popular-tours-caption hr {
-    width: 42px !important;
-  }
-  #popular-tours .popular-tours-caption p {
-    font-size: 12px !important;
-  }
   #popular-tours .owl-carousel .owl-dots {
     margin-top: 15px !important;
   }
@@ -1752,15 +1693,6 @@
   #coming-soon .coming-soon-caption {
     padding: 0 7px 50px !important;
   }
-  #coming-soon .coming-soon-caption h1 {
-    font-size: 28px !important;
-  }
-  #coming-soon .coming-soon-caption hr {
-    width: 42px !important;
-  }
-  #coming-soon .coming-soon-caption p {
-    font-size: 12px !important;
-  }
   #coming-soon .content {
     height: 260px !important;
     padding: 0 15px !important;
@@ -1795,12 +1727,6 @@
   #our-achievements .achievements-caption {
     padding-bottom: 18px !important;
   }
-  #our-achievements .achievements-caption h1 {
-    font-size: 28px !important;
-  }
-  #our-achievements .achievements-caption hr {
-    width: 42px !important;
-  }
   #our-achievements .content {
     height: 250px !important;
     padding-top: 40px !important;
@@ -1824,14 +1750,7 @@
     padding: 0 11px 25px !important;
   }
   #subscribe .subscribe-title h1 {
-    font-size: 28px !important;
     margin-bottom: 5px !important;
-  }
-  #subscribe .subscribe-title hr {
-    width: 42px !important;
-  }
-  #subscribe .subscribe-title p {
-    font-size: 12px !important;
   }
   #subscribe .form-holder .form-field input {
     padding-left: 15px !important;

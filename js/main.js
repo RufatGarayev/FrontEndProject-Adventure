@@ -19,7 +19,7 @@ $(document).ready(function () {
     ",0.5)";
 
   window.onscroll = function () {
-    if ($(window).scrollTop() >= 750) {
+    if ($(window).scrollTop() >= 700) {
       $("nav").css("background-color", "#1B1B1B");
     } else {
       $("nav").css("background-color", rgbaCol);
@@ -50,13 +50,6 @@ $(document).ready(function () {
     $(document.body).toggleClass("stop-scroll");
   });
   // ======= Show or Hide navbar items when click on Hamburger btn - End ======= //
-
-
-  // ======= Changing Link To Active OnClick Start ======= //
-  $(document).on("click", ".navbar-items .nav-item", function () {
-    $(this).addClass("active-link").siblings().removeClass("active-link");
-  });
-  // ======= Changing Link To Active OnClick End ======= //
 
 
   // ======= Counter-Up Start ======= //
@@ -335,6 +328,366 @@ $(document).ready(function () {
     });
   });
   // ======= Subscribe Email Validation End ======= //
+
+
+  // ======= Sign-Up Validation Start ======= //
+   $(function() {
+    // hiding alerts
+    $(".username-alert").hide();
+    $(".email-alert").hide();
+    $(".password-alert").hide();
+    $(".repeat-pass-alert").hide();
+    $(".checkbox-alert").hide();
+
+    // errors 
+    let error_username = false;
+    let error_email = false;
+    let error_password = false;
+    let error_repeat_pass = false;
+    let error_checkbox = false;
+
+    // focusout event
+    $(".username").focusout(function(){
+       check_username();
+    });
+    $(".sign-up-email").focusout(function() {
+       check_email();
+    });
+    $(".sign-up-password1").focusout(function() {
+       check_password();
+    });
+    $(".repeat-pass").focusout(function() {
+       check_repeat_pass();
+    });
+
+    // click event
+    $("#terms-checkbox").click(function() {
+       click_checkbox();
+    });
+
+
+    // username   
+    function check_username() {
+       let pattern = /^[a-zA-Z]*$/;
+       let userNameVal = $(".username").val();
+       if (userNameVal === "") {
+        $(".username-alert").html("Username must be filled out!");
+        $(".username-alert").show();
+        $(".username").css("border","2px solid red");
+        $(".username").parent().next().css("margin-top","33px");
+        $(".username").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".username").siblings(".fa-check-circle").addClass("d-none");
+        error_username = true;
+      }else if (userNameVal.length < 3){
+        $(".username-alert").html("Username must be at least 3 character!");
+        $(".username-alert").show();
+        $(".username").css("border","2px solid red");
+        $(".username").parent().next().css("margin-top","33px");
+        $(".username").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".username").siblings(".fa-check-circle").addClass("d-none");
+        error_username = true;
+      }else if (!pattern.test(userNameVal)){
+        $(".username-alert").html("Username must contain letters!");
+        $(".username-alert").show();
+        $(".username").css("border","2px solid red");
+        $(".username").parent().next().css("margin-top","33px");
+        $(".username").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".username").siblings(".fa-check-circle").addClass("d-none");
+        error_username = true;
+      }else {
+         $(".username-alert").hide();
+         $(".username").css("border","2px solid green");
+         $(".username").parent().next().css("margin-top","15px");
+         $(".username").siblings(".fa-check-circle").removeClass("d-none");
+         $(".username").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+    }
+
+    // email
+    function check_email() {
+       let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+       let signUpEmailVal = $(".sign-up-email").val();
+       if (signUpEmailVal === "") {
+        $(".email-alert").html("Email must be filled out!");
+        $(".email-alert").show();
+        $(".sign-up-email").css("border","2px solid red");
+        $(".sign-up-email").parent().next().css("margin-top","33px");
+        $(".sign-up-email").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".sign-up-email").siblings(".fa-check-circle").addClass("d-none");
+        error_email = true;
+      }else if(!pattern.test(signUpEmailVal)){
+        $(".email-alert").html("Please enter valid Email.");
+        $(".email-alert").show();
+        $(".sign-up-email").css("border","2px solid red");
+        $(".sign-up-email").parent().next().css("margin-top","33px");
+        $(".sign-up-email").siblings(".fa-exclamation-circle").removeClass("d-none");
+        $(".sign-up-email").siblings(".fa-check-circle").addClass("d-none");
+        error_email = true;
+      } else {
+         $(".email-alert").hide();
+         $(".sign-up-email").css("border","2px solid green");
+         $(".sign-up-email").parent().next().css("margin-top","15px");
+         $(".sign-up-email").siblings(".fa-check-circle").removeClass("d-none");
+         $(".sign-up-email").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+    }
+
+    // password
+    function check_password() {
+       let signUpPassVal = $(".sign-up-password1").val();
+       if (signUpPassVal === "") {
+          $(".password-alert").html("Password must be filled out!");
+          $(".password-alert").show();
+          $(".sign-up-password1").css("border","2px solid red");
+          $(".sign-up-password1").parent().next().css("margin-top","33px");
+          $(".sign-up-password1").siblings(".fa-exclamation-circle").removeClass("d-none");
+          $(".sign-up-password1").siblings(".fa-check-circle").addClass("d-none");
+          error_password = true;
+       } else if(signUpPassVal.length < 8){
+          $(".password-alert").html("Password must be at least 8 character!");
+          $(".password-alert").show();
+          $(".sign-up-password1").css("border","2px solid red");
+          $(".sign-up-password1").parent().next().css("margin-top","33px");
+          $(".sign-up-password1").siblings(".fa-exclamation-circle").removeClass("d-none");
+          $(".sign-up-password1").siblings(".fa-check-circle").addClass("d-none");
+          error_password = true;
+       } else {
+          $(".password-alert").hide();
+          $(".sign-up-password1").css("border","2px solid green");
+          $(".sign-up-password1").parent().next().css("margin-top","15px");
+          $(".sign-up-password1").siblings(".fa-check-circle").removeClass("d-none");
+          $(".sign-up-password1").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+    }
+
+    // repeat-password
+    function check_repeat_pass() {
+       let signUpPassVal = $(".sign-up-password1").val();
+       let signUpRepeatPassVal = $(".repeat-pass").val();
+       if (signUpRepeatPassVal === "") {
+          $(".repeat-pass-alert").html("Repeat password must be filled out!");
+          $(".repeat-pass-alert").show();
+          $(".repeat-pass").css("border","2px solid red");
+          $(".repeat-pass").parent().next().css("margin-top","20px");
+          $(".repeat-pass").siblings(".fa-exclamation-circle").removeClass("d-none");
+          $(".repeat-pass").siblings(".fa-check-circle").addClass("d-none");
+          error_repeat_pass = true;
+       } else if (signUpPassVal !== signUpRepeatPassVal){
+          $(".repeat-pass-alert").html("Passwords don't match.");
+          $(".repeat-pass-alert").show();
+          $(".repeat-pass").css("border","2px solid red");
+          $(".repeat-pass").parent().next().css("margin-top","20px");
+          $(".repeat-pass").siblings(".fa-exclamation-circle").removeClass("d-none");
+          $(".repeat-pass").siblings(".fa-check-circle").addClass("d-none");
+          error_repeat_pass = true;
+       }else {
+          $(".repeat-pass-alert").hide();
+          $(".repeat-pass").css("border","2px solid green");
+          $(".repeat-pass").parent().next().css("margin-top","0px");
+          $(".repeat-pass").siblings(".fa-check-circle").removeClass("d-none");
+          $(".repeat-pass").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+    }
+
+    // checkbox
+    function click_checkbox() {
+       let checkBox = $("#terms-checkbox");
+       if ($(checkBox).prop("checked") == false) {
+          $(".checkbox-alert").html("You haven't accepted the terms yet.");
+          $(".checkbox-alert").show();
+          error_checkbox = true;
+       } else {
+          $(".checkbox-alert").hide();
+       }
+    }
+
+    // sign-up form - submit event
+    $("#sign-up").submit(function() {
+       error_username = false;
+       error_email = false;
+       error_password = false;
+       error_repeat_pass = false;
+       error_checkbox = false;
+
+       check_username();
+       check_email();
+       check_password();
+       check_repeat_pass();
+       click_checkbox();
+
+       if (error_username === false && error_email === false && error_password === false && error_repeat_pass === false && error_checkbox === false) {
+          alert("Registration Successfull");
+          return true;
+       } else {
+          alert("Please Fill the form Correctly");
+          return false;
+       }
+    });
+   });
+  // ======= Sign-Up Validation End ======= //
+
+
+  // ======= Send Message Start ======= //
+  $(function() {
+      // hiding the alerts
+      $(".name-alert").hide();
+      $(".msg-email-alert").hide();
+      $(".subject-alert").hide();
+      $(".msg-alert").hide();
+  
+      // errors 
+      let msg_error_name = false;
+      let msg_error_email = false;
+      let msg_error_subject = false;
+      let msg_error_message = false;
+  
+      // keyup event
+      $(".name").keyup(function() {
+        check_msg_name();
+      });
+      $(".send-msg-email").keyup(function() {
+        check_msg_email();
+      });
+      $(".subject").keyup(function() {
+        check_msg_subject();
+      });
+      $(".msg-area").keyup(function() {
+        check_message();
+      });
+  
+  
+      // name
+      function check_msg_name() {
+        let nameVal = $(".name").val();
+        if (nameVal === "") {
+         $(".name-alert").html("Name must be filled out!");
+         $(".name-alert").show();
+         $(".name").css("border","2px solid red");
+         $(".name").parent().next().css("margin-top","33px");
+         $(".name").siblings(".fa-exclamation-circle").removeClass("d-none");
+         $(".name").siblings(".fa-check-circle").addClass("d-none");
+         msg_error_name = true;
+       }else if (nameVal.length < 3){
+         $(".name-alert").html("Name must be at least 3 character!");
+         $(".name-alert").show();
+         $(".name").css("border","2px solid red");
+         $(".name").parent().next().css("margin-top","33px");
+         $(".name").siblings(".fa-exclamation-circle").removeClass("d-none");
+         $(".name").siblings(".fa-check-circle").addClass("d-none");
+         msg_error_name = true;
+       } else {
+          $(".name-alert").hide();
+          $(".name").css("border","2px solid green");
+          $(".name").parent().next().css("margin-top","15px");
+          $(".name").siblings(".fa-check-circle").removeClass("d-none");
+          $(".name").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+      }
+
+      // email
+      function check_msg_email() {
+        let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        let emailVal = $(".send-msg-email").val();
+        if (emailVal === "") {
+         $(".msg-email-alert").html("Email must be filled out!");
+         $(".msg-email-alert").show();
+         $(".send-msg-email").css("border","2px solid red");
+         $(".send-msg-email").parent().next().css("margin-top","33px");
+         $(".send-msg-email").siblings(".fa-exclamation-circle").removeClass("d-none");
+         $(".send-msg-email").siblings(".fa-check-circle").addClass("d-none");
+         msg_error_email = true;
+       }else if (!pattern.test(emailVal)){
+         $(".msg-email-alert").html("Please enter valid Email.");
+         $(".msg-email-alert").show();
+         $(".send-msg-email").css("border","2px solid red");
+         $(".send-msg-email").parent().next().css("margin-top","33px");
+         $(".send-msg-email").siblings(".fa-exclamation-circle").removeClass("d-none");
+         $(".send-msg-email").siblings(".fa-check-circle").addClass("d-none");
+         msg_error_email = true;
+       } else {
+          $(".msg-email-alert").hide();
+          $(".send-msg-email").css("border","2px solid green");
+          $(".send-msg-email").parent().next().css("margin-top","15px");
+          $(".send-msg-email").siblings(".fa-check-circle").removeClass("d-none");
+          $(".send-msg-email").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+      }
+  
+      // subject
+      function check_msg_subject() {
+        let subjectVal = $(".subject").val();
+        if (subjectVal === "") {
+         $(".subject-alert").html("Subject must be filled out!");
+         $(".subject-alert").show();
+         $(".subject").css("border","2px solid red");
+         $(".subject").parent().next().css("margin-top","33px");
+         $(".subject").siblings(".fa-exclamation-circle").removeClass("d-none");
+         $(".subject").siblings(".fa-check-circle").addClass("d-none");
+         msg_error_subject = true;
+       }else if (subjectVal.length < 3){
+         $(".subject-alert").html("Subject must be at least 3 character!");
+         $(".subject-alert").show();
+         $(".subject").css("border","2px solid red");
+         $(".subject").parent().next().css("margin-top","33px");
+         $(".subject").siblings(".fa-exclamation-circle").removeClass("d-none");
+         $(".subject").siblings(".fa-check-circle").addClass("d-none");
+         msg_error_subject = true;
+       } else {
+          $(".subject-alert").hide();
+          $(".subject").css("border","2px solid green");
+          $(".subject").parent().next().css("margin-top","15px");
+          $(".subject").siblings(".fa-check-circle").removeClass("d-none");
+          $(".subject").siblings(".fa-exclamation-circle").addClass("d-none");
+       }
+      }
+
+      // message
+      function check_message() {
+        let msgVal = $(".msg-area").val();
+        if (msgVal === "") {
+         $(".msg-alert").html("Message must be filled out!");
+         $(".msg-alert").show();
+         $(".msg-area").css("border","2px solid red");
+         $(".msg-area").parent().next().css("margin-top","33px");
+         msg_error_message = true;
+       }else if (msgVal.length < 20){
+         $(".msg-alert").html("Message must be at least 20 character!");
+         $(".msg-alert").show();
+         $(".msg-area").css("border","2px solid red");
+         $(".msg-area").parent().next().css("margin-top","33px");
+         msg_error_message = true;
+       } else {
+          $(".msg-alert").hide();
+          $(".msg-area").css("border","2px solid green");
+          $(".msg-area").parent().next().css("margin-top","15px");
+       }
+     }
+  
+  
+      // send message form - submit event
+      $("#send-msg").submit(function(e) {
+        e.preventDefault();
+
+         msg_error_name = false;
+         msg_error_email = false;
+         msg_error_subject = false;
+         msg_error_message = false;
+  
+         check_msg_name();
+         check_msg_email();
+         check_msg_subject();
+         check_message();
+  
+         if (msg_error_name === false && msg_error_email === false && msg_error_subject === false && msg_error_message === false) {
+            alert("Your message was sent Successfully");
+            return true;
+         } else {
+            alert("Please Fill the form Correctly");
+            return false;
+         }
+      });
+  });
+  // ======= Send Message End ======= //
 });
 
 

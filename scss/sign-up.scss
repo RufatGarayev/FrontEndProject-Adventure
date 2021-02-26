@@ -5,6 +5,7 @@
 @import "../scss/reused_sections/preloader";
 @import "../scss/reused_sections/subscribe";
 @import "../scss/reused_sections/back-to-top";
+@import "../scss/reused_sections/intro-page_caption";
 
 * {
   margin: 0;
@@ -35,22 +36,6 @@ html {
 // ======= Intro Section Start ======= //
 #intro {
   background-image: url(../img/bg-images/wood.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  height: 500px;
-
-  .page-caption {
-    height: 500px;
-    padding-top: 40px;
-    h1 {
-      color: white;
-      font-family: ludicrous;
-      text-transform: uppercase;
-      font-size: 65px;
-    }
-  }
 }
 // ======= Intro Section End ======= //
 
@@ -184,31 +169,6 @@ html {
 
 
 // ======= Responsive Design Start ======= //
-@media (min-width: 576px) and (max-width: 767.98px) {
-  #intro {
-    height: 100%;
-    .page-caption {
-      height: 420px;
-      h1 {
-        font-size: 55px;
-      }
-    }
-  }
-}
-
-@media (min-width: 375px) and (max-width: 575.98px) {
-  #intro {
-    height: 100%;
-    .page-caption {
-      height: 420px;
-      padding-top: 30px;
-      h1 {
-        font-size: 55px;
-      }
-    }
-  }
-}
-
 @media (min-width: 375px) and (max-width: 420px) {
   #sign-up-section {
     .sign-up-holder {
@@ -218,17 +178,6 @@ html {
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #intro {
-    height: 100%;
-    .page-caption {
-      height: 400px;
-      padding-top: 50px;
-      h1 {
-        font-size: 50px;
-      }
-    }
-  }
-
   #sign-up-section {
     .sign-up-holder {
       padding: 50px 15px;

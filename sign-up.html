@@ -90,7 +90,7 @@
                             <hr>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                             <hr class="contact-line">
                         </li>
                     </ul>
@@ -245,8 +245,8 @@
         <section id="subscribe">
             <div class="container">
                 <div class="row">
-                    <!-- area section title-->
                     <div class="col-12">
+                        <!-- subscribe-section title-->
                         <div class="subscribe-title d-flex flex-column justify-content-center align-items-center"
                             data-aos="fade-up" data-aos-duration="1000">
                             <h1>Subscribe</h1>
@@ -257,12 +257,17 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-12 offset-lg-2 offset-md-2">
+                        <!-- email area -->
                         <div class="form-holder d-flex justify-content-center">
-                            <form class="w-100" action="#" method="GET">
+                            <form class="w-100" action="#" method="GET" id="subscribe-form">
                                 <div class="form-field">
-                                    <input type="email" name="email" placeholder="Email Address" required />
+                                    <input type="email" name="email" class="subscribe-email"
+                                        placeholder="Email Address" />
                                     <button type="submit" class="subs-btn" name="submit">Subscribe</button>
                                 </div>
+                                <i class="fas fa-check-circle d-none success-icon"></i>
+                                <i class="fas fa-exclamation-circle d-none"></i>
+                                <small class="alert subs-email-alert"></small>
                             </form>
                         </div>
                     </div>
@@ -293,9 +298,9 @@
                             <h4>Quick Links</h4>
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="#">About</a></li>
+                                <li><a href="about.html">About</a></li>
                                 <li><a href="#">Tours</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -366,7 +371,7 @@
     <script src="plugins/owl-carousel/owl.carousel.js"></script>
     <script src="js/owl-carousel.js"></script>
     <!-- sign-up.js -->
-    <script src="js/sign-up.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

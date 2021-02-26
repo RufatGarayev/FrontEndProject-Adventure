@@ -124,6 +124,18 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   color: white;
 }
 
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #subscribe .subscribe-title h1, #our-advantages .caption h1, #special-offers .special-offers-caption h1, #popular-tours .popular-tours-caption h1, #coming-soon .coming-soon-caption h1, #our-achievements .achievements-caption h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #subscribe .subscribe-title h1, #our-advantages .caption h1, #special-offers .special-offers-caption h1, #popular-tours .popular-tours-caption h1, #coming-soon .coming-soon-caption h1, #our-achievements .achievements-caption h1 {
+    font-size: 28px;
+  }
+}
+
 #subscribe .subscribe-title hr, #our-advantages .caption hr, #special-offers .special-offers-caption hr, #popular-tours .popular-tours-caption hr, #coming-soon .coming-soon-caption hr, #our-achievements .achievements-caption hr {
   margin: 8px 0;
   height: 0.7px;
@@ -131,10 +143,29 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   background-color: white;
 }
 
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #subscribe .subscribe-title hr, #our-advantages .caption hr, #special-offers .special-offers-caption hr, #popular-tours .popular-tours-caption hr, #coming-soon .coming-soon-caption hr, #our-achievements .achievements-caption hr {
+    width: 45px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #subscribe .subscribe-title hr, #our-advantages .caption hr, #special-offers .special-offers-caption hr, #popular-tours .popular-tours-caption hr, #coming-soon .coming-soon-caption hr, #our-achievements .achievements-caption hr {
+    width: 35px;
+  }
+}
+
 #subscribe .subscribe-title p, #special-offers .special-offers-caption p, #popular-tours .popular-tours-caption p, #coming-soon .coming-soon-caption p {
-  padding-top: 20px;
+  padding-top: 16px;
   font-size: 16px;
   font-weight: 300;
+  margin-bottom: 0;
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #subscribe .subscribe-title p, #special-offers .special-offers-caption p, #popular-tours .popular-tours-caption p, #coming-soon .coming-soon-caption p {
+    font-size: 12px;
+  }
 }
 
 #special-offers .owl-carousel .owl-dots, #popular-tours .owl-carousel .owl-dots {
@@ -954,7 +985,7 @@ footer .footer-bottom .social-media ul {
   right: 0;
   bottom: 0;
   top: 0;
-  background: rgba(48, 59, 54, 0.7);
+  background: rgba(48, 59, 54, 0.6);
 }
 
 #subscribe .subscribe-title {

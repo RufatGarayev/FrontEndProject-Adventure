@@ -47,7 +47,7 @@ header nav .navbar-items .links li a:hover, header nav .account li a:hover {
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder .reset-password .bottom-links .reset {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn {
   padding: 10px 24px;
   font-weight: 600;
   border: none;
@@ -62,7 +62,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   z-index: 1;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before {
   content: "";
   border-radius: 3px;
   position: absolute;
@@ -82,17 +82,17 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
           transform-origin: left;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover {
   color: white;
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-#our-story .our-story-caption h3, #our-mission .our-mission-caption h3, #adventure-team .adventure-team-caption h3 {
+#subscribe .subscribe-title h1, #our-story .our-story-caption h3, #our-mission .our-mission-caption h3, #adventure-team .adventure-team-caption h3 {
   font-size: 46px;
   font-family: ludicrous;
   letter-spacing: 1px;
@@ -100,17 +100,48 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   color: white;
 }
 
-#our-story .our-story-caption hr, #our-mission .our-mission-caption hr, #adventure-team .adventure-team-caption hr {
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #subscribe .subscribe-title h1, #our-story .our-story-caption h3, #our-mission .our-mission-caption h3, #adventure-team .adventure-team-caption h3 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #subscribe .subscribe-title h1, #our-story .our-story-caption h3, #our-mission .our-mission-caption h3, #adventure-team .adventure-team-caption h3 {
+    font-size: 28px;
+  }
+}
+
+#subscribe .subscribe-title hr, #our-story .our-story-caption hr, #our-mission .our-mission-caption hr, #adventure-team .adventure-team-caption hr {
   margin: 8px 0;
   height: 0.7px;
   width: 60px;
   background-color: white;
 }
 
-#adventure-team .adventure-team-caption p {
-  padding-top: 20px;
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #subscribe .subscribe-title hr, #our-story .our-story-caption hr, #our-mission .our-mission-caption hr, #adventure-team .adventure-team-caption hr {
+    width: 45px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #subscribe .subscribe-title hr, #our-story .our-story-caption hr, #our-mission .our-mission-caption hr, #adventure-team .adventure-team-caption hr {
+    width: 35px;
+  }
+}
+
+#subscribe .subscribe-title p, #our-story .text p, #our-mission .text p, #adventure-team .adventure-team-caption p {
+  padding-top: 16px;
   font-size: 16px;
   font-weight: 300;
+  margin-bottom: 0;
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #subscribe .subscribe-title p, #our-story .text p, #our-mission .text p, #adventure-team .adventure-team-caption p {
+    font-size: 12px;
+  }
 }
 
 footer .footer-top h4 {
@@ -135,7 +166,7 @@ footer .footer-top a:hover {
   color: #aac5b7 !important;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert {
+header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert, #subscribe .form-holder .alert {
   padding: 5px 0 0;
   color: red;
   font-weight: 400;
@@ -808,6 +839,101 @@ footer .footer-bottom .social-media ul {
   }
 }
 
+#subscribe {
+  padding: 100px 0 120px;
+  background: url(../img/bg-images/forest.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#subscribe::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(48, 59, 54, 0.6);
+}
+
+#subscribe .subscribe-title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#subscribe .subscribe-title h1 {
+  color: white;
+}
+
+#subscribe .subscribe-title hr {
+  background-color: white;
+}
+
+#subscribe .subscribe-title p {
+  color: white;
+}
+
+#subscribe .form-holder {
+  position: relative;
+}
+
+#subscribe .form-holder .form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#subscribe .form-holder .form-field input {
+  width: 60%;
+  height: 50px;
+  border: 0;
+  padding-left: 25px;
+  border-radius: 4px 0 0 4px;
+}
+
+#subscribe .form-holder .form-field input:focus {
+  border-color: #ff6363;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(3, 169, 244, 0.5);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(3, 169, 244, 0.5);
+  outline: 0 none;
+}
+
+#subscribe .form-holder .form-field .subs-btn {
+  text-transform: none;
+  border: 0;
+  outline: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+#subscribe .form-holder .form-field .subs-btn::before {
+  border-radius: 0 4px 4px 0 !important;
+}
+
+#subscribe .form-holder i {
+  position: absolute;
+  top: 16px;
+  right: 230px;
+  font-size: 18px;
+  color: red;
+  z-index: 1;
+}
+
+#subscribe .form-holder .success-icon {
+  color: green;
+  z-index: 5;
+}
+
+#subscribe .form-holder .alert {
+  padding-left: 88px;
+  color: #f96220;
+}
+
 #topBtn {
   position: fixed;
   right: 30px;
@@ -839,6 +965,64 @@ footer .footer-bottom .social-media ul {
   margin-left: 0;
 }
 
+#intro {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 500px;
+}
+
+#intro .page-caption {
+  height: 500px;
+  padding-top: 40px;
+}
+
+#intro .page-caption h1 {
+  color: white;
+  font-family: ludicrous;
+  text-transform: uppercase;
+  font-size: 65px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #intro {
+    height: 100%;
+  }
+  #intro .page-caption {
+    height: 420px;
+  }
+  #intro .page-caption h1 {
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #intro {
+    height: 100%;
+  }
+  #intro .page-caption {
+    height: 420px;
+    padding-top: 30px;
+  }
+  #intro .page-caption h1 {
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #intro {
+    height: 100%;
+  }
+  #intro .page-caption {
+    height: 400px;
+    padding-top: 50px;
+  }
+  #intro .page-caption h1 {
+    font-size: 50px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -868,23 +1052,6 @@ html {
 
 #intro {
   background-image: url(../img/bg-images/wood.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  height: 500px;
-}
-
-#intro .page-caption {
-  height: 500px;
-  padding-top: 40px;
-}
-
-#intro .page-caption h1 {
-  color: white;
-  font-family: ludicrous;
-  text-transform: uppercase;
-  font-size: 65px;
 }
 
 #our-story {
@@ -909,6 +1076,14 @@ html {
 
 #our-story .text {
   height: 320px;
+}
+
+#our-story .text p {
+  padding: 0;
+}
+
+#our-story .text p:last-of-type {
+  margin-top: 10px;
 }
 
 #our-story .our-story-pic {
@@ -937,7 +1112,14 @@ html {
 #our-mission .text {
   height: 320px;
   color: white;
-  font-weight: 300;
+}
+
+#our-mission .text p {
+  padding: 0;
+}
+
+#our-mission .text p:last-of-type {
+  margin-top: 10px;
 }
 
 #our-mission .our-mission-pic {
@@ -1074,7 +1256,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 250px;
-  border-radius: 4px;
+  border-radius: 12px;
   background-color: #769484;
   height: 100px;
   -webkit-transform: translateY(-24px);
@@ -1087,6 +1269,7 @@ html {
 
 #adventure-team .item .info h6 {
   color: #dae0e5;
+  font-weight: 300;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -1136,12 +1319,14 @@ html {
   #adventure-team .item .holder {
     height: 230px;
   }
+  #adventure-team .item .holder .social-media {
+    bottom: 95px !important;
+  }
   #adventure-team .item .info {
     height: 90px;
     width: 180px;
     -webkit-transform: translateY(-55px);
             transform: translateY(-55px);
-    border-radius: 12px;
   }
   #adventure-team .item .info h5 {
     font-size: 19px;
@@ -1156,7 +1341,8 @@ html {
     padding-bottom: 40px;
   }
   #our-story .text {
-    height: 240px;
+    height: 304px;
+    margin-bottom: 25px;
   }
   #our-mission {
     padding: 70px 0 90px;
@@ -1165,7 +1351,8 @@ html {
     padding-bottom: 40px;
   }
   #our-mission .text {
-    height: 240px;
+    height: 280px;
+    margin-bottom: 25px;
   }
   #our-mission .first {
     -webkit-box-ordinal-group: 2;
@@ -1181,17 +1368,19 @@ html {
     padding: 70px 0 40px;
   }
   #adventure-team .adventure-team-caption {
-    padding-bottom: 40px;
+    padding: 0 20px 40px;
   }
   #adventure-team .item .holder {
-    height: 230px;
+    height: 480px;
+  }
+  #adventure-team .item .holder .social-media {
+    bottom: 210px !important;
   }
   #adventure-team .item .info {
     height: 90px;
-    width: 180px;
+    width: 460px;
     -webkit-transform: translateY(-55px);
             transform: translateY(-55px);
-    border-radius: 12px;
   }
   #adventure-team .item .info h5 {
     font-size: 19px;
@@ -1199,28 +1388,107 @@ html {
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #intro {
-    height: 100%;
+  #our-story {
+    padding: 70px 0 90px;
   }
-  #intro .page-caption {
-    height: 420px;
-    padding-top: 30px;
+  #our-story .our-story-caption {
+    padding-bottom: 40px;
   }
-  #intro .page-caption h1 {
-    font-size: 55px;
+  #our-story .text {
+    height: 95%;
+    margin-bottom: 25px;
+  }
+  #our-mission {
+    padding: 70px 0 90px;
+  }
+  #our-mission .our-mission-caption {
+    padding-bottom: 40px;
+  }
+  #our-mission .text {
+    height: 93%;
+    margin-bottom: 25px;
+  }
+  #our-mission .first {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #our-mission .second {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #adventure-team {
+    padding: 70px 0 40px;
+  }
+  #adventure-team .adventure-team-caption {
+    padding: 0 20px 40px;
+  }
+  #adventure-team .item .holder {
+    height: 445px;
+  }
+  #adventure-team .item .holder .social-media {
+    bottom: 210px !important;
+  }
+  #adventure-team .item .info {
+    height: 90px;
+    width: 88%;
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
+  }
+  #adventure-team .item .info h5 {
+    font-size: 19px;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #intro {
-    height: 100%;
+  #our-story {
+    padding: 40px 0 60px;
   }
-  #intro .page-caption {
-    height: 400px;
-    padding-top: 50px;
+  #our-story .our-story-caption {
+    padding-bottom: 25px;
   }
-  #intro .page-caption h1 {
-    font-size: 50px;
+  #our-story .text {
+    height: 95%;
+    margin-bottom: 25px;
+  }
+  #our-mission {
+    padding: 40px 0 60px;
+  }
+  #our-mission .our-mission-caption {
+    padding-bottom: 25px;
+  }
+  #our-mission .text {
+    height: 93%;
+    margin-bottom: 25px;
+  }
+  #our-mission .first {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #our-mission .second {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #adventure-team {
+    padding: 40px 0 50px;
+  }
+  #adventure-team .adventure-team-caption {
+    padding: 0 10px 40px;
+  }
+  #adventure-team .item .holder {
+    height: 300px;
+  }
+  #adventure-team .item .holder .social-media {
+    bottom: 130px !important;
+  }
+  #adventure-team .item .info {
+    height: 90px;
+    width: 86%;
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
   }
 }
 /*# sourceMappingURL=about.css.map */

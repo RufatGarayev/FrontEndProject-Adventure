@@ -47,7 +47,7 @@ header nav .navbar-items .links li a:hover, header nav .account li a:hover {
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn {
   padding: 10px 24px;
   font-weight: 600;
   border: none;
@@ -62,7 +62,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   z-index: 1;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn::before {
   content: "";
   border-radius: 3px;
   position: absolute;
@@ -82,17 +82,17 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
           transform-origin: left;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn:hover {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn:hover {
   color: white;
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn:hover::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-#subscribe .subscribe-title h1 {
+#subscribe .subscribe-title h1, #get-in-touch .get-in-touch-caption h1 {
   font-size: 46px;
   font-family: ludicrous;
   letter-spacing: 1px;
@@ -101,18 +101,18 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #subscribe .subscribe-title h1 {
+  #subscribe .subscribe-title h1, #get-in-touch .get-in-touch-caption h1 {
     font-size: 40px;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title h1 {
+  #subscribe .subscribe-title h1, #get-in-touch .get-in-touch-caption h1 {
     font-size: 28px;
   }
 }
 
-#subscribe .subscribe-title hr {
+#subscribe .subscribe-title hr, #get-in-touch .get-in-touch-caption hr {
   margin: 8px 0;
   height: 0.7px;
   width: 60px;
@@ -120,18 +120,18 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #subscribe .subscribe-title hr {
+  #subscribe .subscribe-title hr, #get-in-touch .get-in-touch-caption hr {
     width: 45px;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title hr {
+  #subscribe .subscribe-title hr, #get-in-touch .get-in-touch-caption hr {
     width: 35px;
   }
 }
 
-#subscribe .subscribe-title p {
+#subscribe .subscribe-title p, #get-in-touch .get-in-touch-caption p {
   padding-top: 16px;
   font-size: 16px;
   font-weight: 300;
@@ -139,7 +139,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title p {
+  #subscribe .subscribe-title p, #get-in-touch .get-in-touch-caption p {
     font-size: 12px;
   }
 }
@@ -166,7 +166,7 @@ footer .footer-top a:hover {
   color: #aac5b7 !important;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert, #subscribe .form-holder .alert, #sign-up-section .sign-up-holder .same-style-input-area .alert {
+header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert, #subscribe .form-holder .alert, #get-in-touch .message .same-style-input-area .alert {
   padding: 5px 0 0;
   color: red;
   font-weight: 400;
@@ -1042,42 +1042,92 @@ html {
   background-image: url(../img/bg-images/wood.jpg);
 }
 
-#sign-up-section {
-  padding: 100px 0;
-  background-color: #769484;
+#get-in-touch {
+  padding: 80px 0 90px;
 }
 
-#sign-up-section .sign-up-holder {
-  background: #5c755e;
-  -webkit-box-shadow: 0 2px 10px 3px rgba(66, 63, 63, 0.2);
-          box-shadow: 0 2px 10px 3px rgba(66, 63, 63, 0.2);
-  border-radius: 5px;
-  padding: 50px 40px;
+#get-in-touch .get-in-touch-caption {
+  padding-bottom: 50px;
 }
 
-#sign-up-section .sign-up-holder .caption-area {
-  padding-bottom: 5px;
+#get-in-touch .get-in-touch-caption h1 {
+  color: black;
 }
 
-#sign-up-section .sign-up-holder .caption-area h3 {
-  color: white;
-  font-weight: 600;
+#get-in-touch .get-in-touch-caption hr {
+  background-color: black;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area {
+#get-in-touch .holder {
+  height: 300px;
+  padding-left: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#get-in-touch .holder .address,
+#get-in-touch .holder .email,
+#get-in-touch .holder .phone {
+  position: relative;
+}
+
+#get-in-touch .holder .address h4,
+#get-in-touch .holder .email h4,
+#get-in-touch .holder .phone h4 {
+  font-weight: 700;
+}
+
+#get-in-touch .holder .address::before,
+#get-in-touch .holder .email::before,
+#get-in-touch .holder .phone::before {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: -2px;
+  left: -25px;
+  color: #56685e;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+#get-in-touch .holder .address::before {
+  content: "\f3c5";
+}
+
+#get-in-touch .holder .email::before {
+  content: "\f0e0";
+  left: -29px;
+}
+
+#get-in-touch .holder .phone::before {
+  content: "\f879";
+  left: -27px;
+}
+
+#get-in-touch .message .same-style-input-area {
   width: 100%;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .input-area {
+#get-in-touch .message .same-style-input-area .input-area {
   width: 100%;
-  height: 55px;
-  margin-top: 15px;
+  height: 50px;
   font-size: 16px;
   color: #3c3c3c;
   position: relative;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .input-area i {
+#get-in-touch .message .same-style-input-area .input-area:not(:first-child) {
+  margin-top: 15px;
+}
+
+#get-in-touch .message .same-style-input-area .input-area i {
   position: absolute;
   top: 18px;
   right: 25px;
@@ -1086,12 +1136,12 @@ html {
   z-index: 0;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .input-area .success-icon {
+#get-in-touch .message .same-style-input-area .input-area .success-icon {
   color: green;
   z-index: 5;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .input-area input {
+#get-in-touch .message .same-style-input-area .input-area input {
   border-radius: 4px;
   padding: 0 25px;
   width: 100%;
@@ -1100,137 +1150,103 @@ html {
   outline: none;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .input-area input:focus {
+#get-in-touch .message .same-style-input-area .input-area input:focus {
   border: 1px solid black;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .terms {
+#get-in-touch .message .same-style-input-area .input-area .msg-area {
+  width: 100%;
+  padding: 13px 25px;
+  border-radius: 4px;
+}
+
+#get-in-touch .message .same-style-input-area .msg-area-holder {
+  height: 126px;
+}
+
+#get-in-touch .message .same-style-input-area .bottom-links {
   padding-top: 20px;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .terms input[type="checkbox"] {
-  visibility: hidden;
-  position: absolute;
-  left: -9999px;
-}
-
-#sign-up-section .sign-up-holder .same-style-input-area .terms label {
-  cursor: pointer;
-  color: white;
-  font-weight: 300;
-  margin: 0 !important;
-}
-
-#sign-up-section .sign-up-holder .same-style-input-area .terms input[type="checkbox"] + label:before {
-  border: 1px solid white;
-  content: "\00a0";
-  display: inline-block;
-  font: 16px/1em sans-serif;
-  height: 16px;
-  width: 16px;
-  margin: 0 5px 0 0;
-  padding: 0;
-}
-
-#sign-up-section .sign-up-holder .same-style-input-area .terms input[type="checkbox"]:checked + label:before {
-  background: #769484;
-  content: "\2713";
-  color: white;
-  text-align: center;
-}
-
-#sign-up-section .sign-up-holder .same-style-input-area .terms input[type="checkbox"]:checked + label:after {
-  font-weight: bold;
-}
-
-#sign-up-section .sign-up-holder .same-style-input-area .terms input[type="checkbox"]:focus + label::before {
-  outline: #3b99fc auto 5px;
-}
-
-#sign-up-section .sign-up-holder .same-style-input-area .terms a {
-  color: darkslateblue;
-}
-
-#sign-up-section .sign-up-holder .same-style-input-area .terms a:hover {
-  color: #5c5491;
-  text-decoration: none;
-}
-
-#sign-up-section .sign-up-holder .same-style-input-area .bottom-links {
-  padding-top: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn {
-  padding: 10px 35px;
+#get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn {
+  padding: 10px 36px;
   cursor: pointer;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn:hover {
+#get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn:hover {
   color: white !important;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn:focus {
+#get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn:focus {
   outline: none;
 }
 
-@media (min-width: 375px) and (max-width: 420px) {
-  #sign-up-section .sign-up-holder {
-    padding: 50px 20px;
+#map-area {
+  height: 100%;
+}
+
+#map-area iframe {
+  width: 100%;
+  height: 450px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #get-in-touch .get-in-touch-caption {
+    padding: 0 50px 50px;
+  }
+  #get-in-touch .holder {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #get-in-touch .get-in-touch-caption {
+    padding: 0 35px 50px;
+  }
+  #get-in-touch .holder {
+    height: 270px;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #sign-up-section .sign-up-holder {
-    padding: 50px 15px;
+  #get-in-touch .get-in-touch-caption {
+    padding: 0 12px 50px;
   }
-  #sign-up-section .sign-up-holder .caption-area {
-    padding-bottom: 20px;
+  #get-in-touch .holder {
+    height: 260px;
+    margin-bottom: 50px;
   }
-  #sign-up-section .sign-up-holder .caption-area h3 {
-    font-size: 20px !important;
+  #get-in-touch .holder h4 {
+    font-size: 17px;
   }
-  #sign-up-section .sign-up-holder .same-style-input-area .input-area {
-    height: 45px !important;
-    font-size: 12px !important;
+  #get-in-touch .holder .address::before,
+  #get-in-touch .holder .email::before,
+  #get-in-touch .holder .phone::before {
+    top: -4px;
+    left: -19px;
+    font-size: 17px;
   }
-  #sign-up-section .sign-up-holder .same-style-input-area .input-area input {
+  #get-in-touch .holder .email::before {
+    left: -23px;
+  }
+  #get-in-touch .holder .phone::before {
+    left: -22px;
+  }
+  #get-in-touch .message .input-area input {
     padding: 0 15px !important;
+    font-size: 12px;
   }
-  #sign-up-section .sign-up-holder .same-style-input-area .terms input[type="checkbox"] + label:before {
-    font: 12px/1em sans-serif;
-    height: 13px;
-    width: 13px;
+  #get-in-touch .message .input-area .msg-area {
+    font-size: 12px;
+    padding: 10px 15px !important;
   }
-  #sign-up-section .sign-up-holder .same-style-input-area .terms label {
-    font-size: 13px;
+  #get-in-touch .message .msg-area-holder {
+    height: 93px !important;
   }
-  #sign-up-section .sign-up-holder .same-style-input-area .bottom-links button {
-    padding: 8px 28px !important;
-    font-size: 14px;
-  }
-  #sign-up-section .sign-up-holder .same-style-input-area .alert {
-    font-size: 13px;
+  #get-in-touch .message .bottom-links button {
+    padding: 8px 26px !important;
+    font-size: 13px !important;
   }
 }
-
-@media (min-width: 250px) and (max-width: 299.98px) {
-  #sign-up-section .sign-up-holder {
-    padding: 40px 15px !important;
-  }
-  #sign-up-section .sign-up-holder .caption-area {
-    padding-bottom: 5px !important;
-  }
-  #sign-up-section .sign-up-holder .same-style-input-area .alert {
-    font-size: 11px !important;
-  }
-}
-/*# sourceMappingURL=sign-up.css.map */
+/*# sourceMappingURL=contact.css.map */
