@@ -1,0 +1,236 @@
+@import "../scss/partials/extends";
+@import "../scss/partials/variables";
+@import "../scss/reused_sections/header";
+@import "../scss/reused_sections/footer";
+@import "../scss/reused_sections/preloader";
+@import "../scss/reused_sections/subscribe";
+@import "../scss/reused_sections/back-to-top";
+@import "../scss/reused_sections/intro-page_caption";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  font-family: "Nunito", sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "ludicrous";
+  src: url(../WOFF-web-fonts/Ludicrous.woff);
+  font-weight: 100;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.stop-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+// ======= Intro Section Start ======= //
+#intro {
+  background-image: url(../img/bg-images/wood.jpg);
+}
+// ======= Intro Section End ======= //
+
+// ======= Tours Section Start ======= //
+#tours {
+  padding: 80px 20px 60px;
+  background-color: rgb(237, 237, 237);
+  .sidebar-area {
+    height: 360px;
+    padding: 20px 40px 0;
+    background-color: white;
+    .price-filter {
+      height: 150px;
+      padding-top: 30px;
+      border-bottom: 1px solid rgb(240, 229, 229);
+      h5 {
+        padding-bottom: 15px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .slider-tour-sorting {
+        background-color: rgb(237, 237, 237);
+        height: 3px;
+        border: none;
+        span {
+          transition: none;
+          border: 3px solid rgb(58, 59, 116);
+          background: white;
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          top: -8px;
+          cursor: pointer;
+          &:focus {
+            outline: none;
+          }
+        }
+        .ui-slider-range {
+          height: 3px;
+          background: rgb(58, 59, 116);
+          transition: none;
+        }
+        width: 84%;
+      }
+
+      .tour-range-detail {
+        padding-top: 20px;
+        input[type="text"] {
+          width: 100%;
+          font-size: 17px;
+          border: none;
+          font-family: "Times New Roman", Times, serif;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .province {
+      height: 150px;
+      padding-top: 30px;
+      h5 {
+        padding-bottom: 5px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      @extend %checkbox;
+    }
+  }
+
+  .category {
+    height: 60px;
+    background-color: white;
+    margin: 0 16px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+
+    .category-btns {
+      display: flex;
+      justify-content: space-between;
+      width: 370px;
+      button {
+        cursor: pointer;
+        padding: 3px 16px;
+        font-weight: 300;
+        border: none;
+        color: white;
+        background-color: rgb(118, 148, 132);
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .active-btn {
+        background-color: rgb(58, 59, 116);
+      }
+    }
+  }
+
+  .tour-holder {
+    .item {
+      padding: 1px;
+      margin-bottom: 30px;
+      background-color: white;
+
+      position: relative;
+      cursor: pointer;
+
+      .price-info {
+        @extend %price-box;
+      }
+
+      .img-box {
+        height: 270px;
+        margin: 2px;
+        overflow: hidden;
+        filter: brightness(90%);
+        @media (min-width: 250px) and (max-width: 315px) {
+          height: 280px;
+        }
+        img {
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s;
+        }
+      }
+
+      &:hover img {
+        transform: scale(1.3);
+      }
+
+      .info {
+        padding: 20px 20px 30px 20px;
+        .tour-date {
+          span,
+          i {
+            color: rgb(98, 107, 114);
+            font-size: 13px;
+            font-weight: 400;
+          }
+        }
+        .tour-name {
+          padding: 12px 0 20px 0;
+          i {
+            font-size: 15px;
+            margin: 3px 5px 0 0;
+            color: rgb(98, 107, 114);
+          }
+          h4 {
+            font-size: 18px;
+            font-family: $item-caption-font-family;
+            letter-spacing: 1px;
+            color: rgb(37, 43, 45);
+            font-weight: 500;
+          }
+        }
+        .slide-links {
+          height: 38px;
+          justify-content: space-between;
+          align-items: center;
+          a {
+            @extend %add-to-cart-icon;
+            position: relative;
+            &:first-child {
+              @extend %website-button;
+              padding: 9px 16px;
+              font-size: 12px;
+              font-weight: 400;
+              letter-spacing: 1px;
+            }
+
+            @extend %top-info-box;
+          }
+        }
+      }
+    }
+  }
+
+  nav{
+      background-color: transparent !important;
+      display: flex;
+      justify-content: center;
+  }
+}
+// ======= Tours Section End ======= //
+
+
+// ======= Responsive Design Start ======= //
+// ======= Responsive Design End ======= //

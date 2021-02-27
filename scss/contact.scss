@@ -44,7 +44,7 @@ html {
   padding: 80px 0 90px;
 
   .get-in-touch-caption {
-      padding-bottom: 50px;
+    padding-bottom: 50px;
     h1 {
       @extend %section-caption;
       color: black;
@@ -114,8 +114,8 @@ html {
         font-size: 16px;
         color: #3c3c3c;
         position: relative;
-        &:not(:first-child){
-            margin-top: 15px;
+        &:not(:first-child) {
+          margin-top: 15px;
         }
 
         i {
@@ -194,7 +194,7 @@ html {
 @media (min-width: 576px) and (max-width: 767.98px) {
   #get-in-touch {
     .get-in-touch-caption {
-        padding: 0 50px 50px;
+      padding: 0 50px 50px;
     }
     .holder {
       margin-bottom: 50px;
@@ -205,7 +205,7 @@ html {
 @media (min-width: 375px) and (max-width: 575.98px) {
   #get-in-touch {
     .get-in-touch-caption {
-        padding: 0 35px 50px;
+      padding: 0 35px 50px;
     }
     .holder {
       height: 270px;
@@ -217,14 +217,14 @@ html {
 @media (min-width: 250px) and (max-width: 374.98px) {
   #get-in-touch {
     .get-in-touch-caption {
-        padding: 0 12px 50px;
+      padding: 0 12px 50px;
     }
 
     .holder {
       height: 260px;
       margin-bottom: 50px;
       h4 {
-       font-size: 17px;
+        font-size: 17px;
       }
       .address,
       .email,

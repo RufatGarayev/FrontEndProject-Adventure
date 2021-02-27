@@ -47,7 +47,7 @@ header nav .navbar-items .links li a:hover, header nav .account li a:hover {
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #tours .tour-holder .item .info .slide-links a:first-child {
   padding: 10px 24px;
   font-weight: 600;
   border: none;
@@ -62,7 +62,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   z-index: 1;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #tours .tour-holder .item .info .slide-links a:first-child::before {
   content: "";
   border-radius: 3px;
   position: absolute;
@@ -82,12 +82,12 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
           transform-origin: left;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn:hover {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #tours .tour-holder .item .info .slide-links a:hover:first-child {
   color: white;
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn:hover::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #tours .tour-holder .item .info .slide-links a:first-child:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -144,6 +144,98 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   }
 }
 
+#tours .tour-holder .item .info .slide-links a i::before {
+  color: #1b1b1b;
+  font-size: 25px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  margin-left: 0;
+}
+
+#tours .tour-holder .item .info .slide-links a:hover {
+  text-decoration: none;
+}
+
+#tours .tour-holder .item .info .slide-links a:hover i::before {
+  color: #769484;
+}
+
+#tours .tour-holder .item .info .slide-links a .top-info-box {
+  display: inline-block;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 48%;
+  white-space: nowrap;
+  text-decoration: none;
+  font-style: normal;
+  height: 26px;
+  padding: 0 7px;
+  font-size: 12px;
+  line-height: 26px;
+  color: #000;
+  background-color: #fff;
+  -webkit-transform: translate(calc(2px - 50%), 0);
+          transform: translate(calc(2px - 50%), 0);
+  opacity: 0;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#tours .tour-holder .item .info .slide-links a .top-info-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(100% - 2px);
+  left: calc(50% - 8px);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 6px 0 6px;
+  border-color: #fff transparent transparent transparent;
+}
+
+#tours .tour-holder .item .info .slide-links a:hover .top-info-box {
+  bottom: calc(100% + 5px);
+  opacity: 1;
+}
+
+#tours .tour-holder .item .price-info {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 7px 12px 15px 12px;
+  line-height: 3px;
+  text-align: center;
+  border-radius: 4px;
+  z-index: 11;
+}
+
+#tours .tour-holder .item .price-info h5 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#tours .tour-holder .item .price-info span {
+  font-size: 12px;
+}
+
+@media (min-width: 250px) and (max-width: 315px) {
+  #tours .tour-holder .item .price-info {
+    padding: 7px 7px 12px 7px !important;
+  }
+  #tours .tour-holder .item .price-info h5 {
+    font-size: 22px !important;
+  }
+  #tours .tour-holder .item .price-info span {
+    font-size: 11px;
+  }
+}
+
 footer .footer-top h4 {
   font-size: 16px;
   font-weight: 700;
@@ -166,7 +258,7 @@ footer .footer-top a:hover {
   color: #aac5b7 !important;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert, #subscribe .form-holder .alert, #sign-up-section .sign-up-holder .same-style-input-area .alert {
+header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert, #subscribe .form-holder .alert {
   padding: 5px 0 0;
   color: red;
   font-weight: 400;
@@ -245,18 +337,18 @@ footer .footer-bottom .social-media ul li:hover .twitter::before {
           transform: scale(1);
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .terms input[type="checkbox"] {
+#tours .sidebar-area .province input[type="checkbox"] {
   visibility: hidden;
   position: absolute;
   left: -9999px;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .terms label {
+#tours .sidebar-area .province label {
   cursor: pointer;
   font-weight: 400;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .terms input[type="checkbox"] + label:before {
+#tours .sidebar-area .province input[type="checkbox"] + label:before {
   border: 1px solid black;
   content: "\00a0";
   display: inline-block;
@@ -267,14 +359,14 @@ footer .footer-bottom .social-media ul li:hover .twitter::before {
   padding: 0;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .terms input[type="checkbox"]:checked + label:before {
+#tours .sidebar-area .province input[type="checkbox"]:checked + label:before {
   background: #769484;
   content: "\2713";
   color: white;
   text-align: center;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .terms input[type="checkbox"]:checked + label:after {
+#tours .sidebar-area .province input[type="checkbox"]:checked + label:after {
   font-weight: bold;
 }
 
@@ -1056,6 +1148,10 @@ footer .footer-bottom .social-media ul {
   font-family: "Nunito", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "ludicrous";
   src: url(../WOFF-web-fonts/Ludicrous.woff);
@@ -1075,166 +1171,222 @@ html {
   background-image: url(../img/bg-images/wood.jpg);
 }
 
-#sign-up-section {
-  padding: 100px 0;
-  background-color: #769484;
+#tours {
+  padding: 80px 20px 60px;
+  background-color: #ededed;
 }
 
-#sign-up-section .sign-up-holder {
-  background: #5c755e;
-  -webkit-box-shadow: 0 2px 10px 3px rgba(66, 63, 63, 0.2);
-          box-shadow: 0 2px 10px 3px rgba(66, 63, 63, 0.2);
-  border-radius: 5px;
-  padding: 50px 40px;
+#tours .sidebar-area {
+  height: 360px;
+  padding: 20px 40px 0;
+  background-color: white;
 }
 
-#sign-up-section .sign-up-holder .caption-area {
-  padding-bottom: 5px;
+#tours .sidebar-area .price-filter {
+  height: 150px;
+  padding-top: 30px;
+  border-bottom: 1px solid #f0e5e5;
 }
 
-#sign-up-section .sign-up-holder .caption-area h3 {
-  color: white;
+#tours .sidebar-area .price-filter h5 {
+  padding-bottom: 15px;
+  font-size: 18px;
   font-weight: 600;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area {
-  width: 100%;
+#tours .sidebar-area .price-filter .slider-tour-sorting {
+  background-color: #ededed;
+  height: 3px;
+  border: none;
+  width: 84%;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .input-area {
-  width: 100%;
-  height: 55px;
-  margin-top: 15px;
-  font-size: 16px;
-  color: #3c3c3c;
-  position: relative;
+#tours .sidebar-area .price-filter .slider-tour-sorting span {
+  -webkit-transition: none;
+  transition: none;
+  border: 3px solid #3a3b74;
+  background: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  top: -8px;
+  cursor: pointer;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .input-area i {
-  position: absolute;
-  top: 18px;
-  right: 25px;
-  font-size: 18px;
-  color: red;
-  z-index: 0;
-}
-
-#sign-up-section .sign-up-holder .same-style-input-area .input-area .success-icon {
-  color: green;
-  z-index: 5;
-}
-
-#sign-up-section .sign-up-holder .same-style-input-area .input-area input {
-  border-radius: 4px;
-  padding: 0 25px;
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+#tours .sidebar-area .price-filter .slider-tour-sorting span:focus {
   outline: none;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .input-area input:focus {
-  border: 1px solid black;
+#tours .sidebar-area .price-filter .slider-tour-sorting .ui-slider-range {
+  height: 3px;
+  background: #3a3b74;
+  -webkit-transition: none;
+  transition: none;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .terms {
+#tours .sidebar-area .price-filter .tour-range-detail {
   padding-top: 20px;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .terms label {
+#tours .sidebar-area .price-filter .tour-range-detail input[type="text"] {
+  width: 100%;
+  font-size: 17px;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#tours .sidebar-area .price-filter .tour-range-detail input[type="text"]:focus {
+  outline: none;
+}
+
+#tours .sidebar-area .province {
+  height: 150px;
+  padding-top: 30px;
+}
+
+#tours .sidebar-area .province h5 {
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#tours .category {
+  height: 60px;
+  background-color: white;
+  margin: 0 16px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 20px;
+}
+
+#tours .category .category-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 370px;
+}
+
+#tours .category .category-btns button {
+  cursor: pointer;
+  padding: 3px 16px;
   font-weight: 300;
-  margin-bottom: 0 !important;
+  border: none;
   color: white;
+  background-color: #769484;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .terms input[type="checkbox"] + label:before {
-  border: 1px solid white;
+#tours .category .category-btns button:focus {
+  outline: none;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .terms a {
-  color: darkslateblue;
+#tours .category .category-btns .active-btn {
+  background-color: #3a3b74;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .terms a:hover {
-  color: #5c5491;
-  text-decoration: none;
+#tours .tour-holder .item {
+  padding: 1px;
+  margin-bottom: 30px;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
 }
 
-#sign-up-section .sign-up-holder .same-style-input-area .bottom-links {
-  padding-top: 35px;
+#tours .tour-holder .item .img-box {
+  height: 270px;
+  margin: 2px;
+  overflow: hidden;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+@media (min-width: 250px) and (max-width: 315px) {
+  #tours .tour-holder .item .img-box {
+    height: 280px;
+  }
+}
+
+#tours .tour-holder .item .img-box img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#tours .tour-holder .item:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+#tours .tour-holder .item .info {
+  padding: 20px 20px 30px 20px;
+}
+
+#tours .tour-holder .item .info .tour-date span,
+#tours .tour-holder .item .info .tour-date i {
+  color: #626b72;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+#tours .tour-holder .item .info .tour-name {
+  padding: 12px 0 20px 0;
+}
+
+#tours .tour-holder .item .info .tour-name i {
+  font-size: 15px;
+  margin: 3px 5px 0 0;
+  color: #626b72;
+}
+
+#tours .tour-holder .item .info .tour-name h4 {
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  color: #252b2d;
+  font-weight: 500;
+}
+
+#tours .tour-holder .item .info .slide-links {
+  height: 38px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tours .tour-holder .item .info .slide-links a {
+  position: relative;
+}
+
+#tours .tour-holder .item .info .slide-links a:first-child {
+  padding: 9px 16px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#tours nav {
+  background-color: transparent !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-
-#sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn {
-  padding: 10px 35px;
-  cursor: pointer;
-}
-
-#sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn:hover {
-  color: white !important;
-}
-
-#sign-up-section .sign-up-holder .same-style-input-area .bottom-links .sign-up-btn:focus {
-  outline: none;
-}
-
-@media (min-width: 375px) and (max-width: 420px) {
-  #sign-up-section .sign-up-holder {
-    padding: 50px 20px;
-  }
-}
-
-@media (min-width: 250px) and (max-width: 374.98px) {
-  #sign-up-section .sign-up-holder {
-    padding: 50px 15px;
-  }
-  #sign-up-section .sign-up-holder .caption-area {
-    padding-bottom: 20px;
-  }
-  #sign-up-section .sign-up-holder .caption-area h3 {
-    font-size: 20px !important;
-  }
-  #sign-up-section .sign-up-holder .same-style-input-area .input-area {
-    height: 45px !important;
-    font-size: 12px !important;
-  }
-  #sign-up-section .sign-up-holder .same-style-input-area .input-area input {
-    padding: 0 15px !important;
-  }
-  #sign-up-section .sign-up-holder .same-style-input-area .terms input[type="checkbox"] + label:before {
-    font: 12px/1em sans-serif;
-    height: 13px;
-    width: 13px;
-  }
-  #sign-up-section .sign-up-holder .same-style-input-area .terms label {
-    font-size: 13px;
-  }
-  #sign-up-section .sign-up-holder .same-style-input-area .bottom-links button {
-    padding: 8px 28px !important;
-    font-size: 14px;
-  }
-  #sign-up-section .sign-up-holder .same-style-input-area .alert {
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 250px) and (max-width: 299.98px) {
-  #sign-up-section .sign-up-holder {
-    padding: 40px 15px !important;
-  }
-  #sign-up-section .sign-up-holder .caption-area {
-    padding-bottom: 5px !important;
-  }
-  #sign-up-section .sign-up-holder .same-style-input-area .alert {
-    font-size: 11px !important;
-  }
-}
-/*# sourceMappingURL=sign-up.css.map */
+/*# sourceMappingURL=tours.css.map */

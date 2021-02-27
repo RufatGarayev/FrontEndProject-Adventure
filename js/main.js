@@ -106,6 +106,25 @@ $(document).ready(function () {
   // ======= Back To Top Btn - End ======= //
 
 
+  // ======= Price Range Filter - Start ======= //
+  if($('.slider-tour-sorting').length){
+    $( function() {
+        $( ".slider-tour-sorting" ).slider({
+        range: true,
+        min: 50,
+        max: 100,
+        values: [ 60, 80 ],
+        slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + "  -  $" + ui.values[ 1 ] );
+        }
+        });
+        $( "#amount" ).val( "$" + $( ".slider-tour-sorting" ).slider( "values", 0 ) +
+        "  -  $" + $( ".slider-tour-sorting" ).slider( "values", 1 ) );
+    } );
+   }
+  // ======= Price Range Filter - End ======= //
+
+
 
   // ======= Login Validation Start ======= //
   $(function() {
@@ -688,6 +707,24 @@ $(document).ready(function () {
       });
   });
   // ======= Send Message End ======= //
+
+
+  // ======= Tour Filter and Background-color of Button when click on it - Start ======= //
+  $(".tour-holder").isotope({
+      itemSelector: ".item-col",
+      layoutMode: "fitRows"
+  });
+    
+  $(document).on("click", ".category-btns button", function(){
+      $(this).addClass("active-btn").siblings().removeClass("active-btn");
+  
+      let selector = $(this).attr("data-filter");
+      $(".tour-holder").isotope({
+        filter: selector
+      });
+      return false;
+  });
+  // ======= Tour Filter and Background-color of Button when click on it - End ======= //
 });
 
 

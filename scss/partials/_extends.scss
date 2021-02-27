@@ -407,3 +407,39 @@
     }
   }
 }
+
+// checkbox
+%checkbox{
+  input[type="checkbox"] {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+  }
+  label {
+    cursor: pointer;
+    font-weight: 400;
+  }
+  input[type="checkbox"] + label:before {
+    border: 1px solid black;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    width: 16px;
+    margin: 0 5px 0 0;
+    padding: 0;
+  }
+  input[type="checkbox"]:checked + label:before {
+    background: rgb(118, 148, 132);
+    content: "\2713";
+    color: white;
+    text-align: center;
+  }
+  input[type="checkbox"]:checked + label:after {
+    font-weight: bold;
+  }
+
+  // input[type="checkbox"]:focus + label::before {
+  //   outline: rgb(59, 153, 252) auto 5px;
+  // }
+}

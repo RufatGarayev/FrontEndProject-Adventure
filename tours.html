@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/plugins/owl-carousel/assets/owl.theme.default.min.css" />
     <!-- animate on scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- google-fonts -->
@@ -23,8 +25,8 @@
     <!-- responsive.css -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- about.css -->
-    <link rel="stylesheet" href="css/about.css">
-    <title>About | Adventure</title>
+    <link rel="stylesheet" href="css/tours.css">
+    <title>Tours | Adventure</title>
 </head>
 
 <body>
@@ -68,7 +70,6 @@
     </section>
     <!-- ======= Top Header End ======= -->
 
-
     <!-- ======= Main Header Start ======= -->
     <header>
         <nav class="navbar">
@@ -80,11 +81,11 @@
                             <a class="nav-link" href="index.html">Home</a>
                             <hr>
                         </li>
-                        <li class="nav-item active-link">
+                        <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                             <hr>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active-link">
                             <a class="nav-link" href="tours.html">Tours</a>
                             <hr>
                         </li>
@@ -182,7 +183,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="page-caption d-flex justify-content-center align-items-center">
-                            <h1>About</h1>
+                            <h1>Tours</h1>
                         </div>
                     </div>
                 </div>
@@ -191,164 +192,253 @@
         <!-- ======= Intro Section End ======= -->
 
 
-        <!-- ======= Our Story Section Start ======= -->
-        <section id="our-story">
-            <div class="container">
+        <!-- ======= Tours Section Start ======= -->
+        <section id="tours">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="our-story-caption d-flex flex-column justify-content-center align-items-center">
-                            <i class="flaticon-street-sign"></i>
-                            <h3>Our Story</h3>
-                            <hr>
+                    <div class="col-lg-3">
+                        <div class="sidebar-area">
+                            <div class="price-filter">
+                                <h5>Price Filter</h5>
+                                <div class="slider-tour-sorting"></div>
+                                <div class="tour-range-detail">
+                                    <input type="text" id="amount" readonly>
+                                </div>
+                            </div>
+                            <div class="province">
+                                <h5>Province</h5>
+                                <form action="#">
+                                    <input type="checkbox" id="gcaucasus" name="greater-caucasus"
+                                        value="greater-caucasus">
+                                    <label for="gcaucasus">Greater Caucasus</label><br>
+                                    <input type="checkbox" id="lcaucasus" name="lesser-caucasus"
+                                        value="lesser-caucasus">
+                                    <label for="lcaucasus">Lesser Caucasus</label><br>
+                                    <input type="checkbox" id="talish" name="talish" value="talish">
+                                    <label for="talish">Talish</label><br><br>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="text text-justify">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum fermentum
-                                fermentum.
-                                In nulla sem, gravida a feugiat in, maximus id orci. Donec nec sagittis ipsum, sit amet
-                                venenatis orci.
-                                Donec bibendum pulvinar dapibus. Duis ac dui accumsan, finibus erat sagittis, mollis
-                                nulla.
-                                Cras ac interdum lacus. Morbi at ante aliquet, faucibus purus quis, pretium justo.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum fermentum
-                                fermentum.
-                                In nulla sem, gravida a feugiat in, maximus id orci. Donec nec sagittis ipsum, sit amet
-                                venenatis orci.
-                                Donec bibendum pulvinar dapibus. Duis ac dui accumsan, finibus erat sagittis, mollis
-                                nulla.
-                                Cras ac interdum lacus. Morbi at ante aliquet, faucibus purus quis, pretium justo.
-                            </p>
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="category">
+                                    <div class="category-btns">
+                                        <button data-filter="*" class="btns all active-btn">All</button>
+                                        <button data-filter=".special" class="btns special">Special</button>
+                                        <button data-filter=".popular" class="btns popular">Popular</button>
+                                        <button data-filter=".discount" class="btns discount">Discount</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="our-story-pic"></div>
+                        <div class="tour-holder">
+                            <div class="row">
+                                <div class="col-lg-4 item-col special">
+                                    <div class="item">
+                                        <div class="price-info">
+                                            <h5>$79</h5> <br>
+                                            <span>/Person</span>
+                                        </div>
+                                        <div class="img-box">
+                                            <img class="img-fluid" src="img/special-offers/special-offer1.jpg"
+                                                alt="img1" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="tour-date">
+                                                <i class="fas fa-calendar-alt mr-1"></i>
+                                                <span>APRIL 09, 2021 / 2 DAYS</span>
+                                            </div>
+                                            <div class="tour-name d-flex">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <h4>Gabala Tour</h4>
+                                            </div>
+                                            <div class="slide-links d-flex">
+                                                <a href="#">Learn More</a>
+                                                <a href="#">
+                                                    <i class="flaticon-add-to-basket"></i>
+                                                    <em class="top-info-box">Add To Cart</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 item-col special">
+                                    <div class="item">
+                                        <div class="price-info">
+                                            <h5>$85</h5> <br>
+                                            <span>/Person</span>
+                                        </div>
+                                        <div class="img-box">
+                                            <img class="img-fluid" src="img/special-offers/special-offer2.jpg"
+                                                alt="img1" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="tour-date">
+                                                <i class="fas fa-calendar-alt mr-1"></i>
+                                                <span>JULY 11, 2021 / 2 DAYS</span>
+                                            </div>
+                                            <div class="tour-name d-flex">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <h4>Zagatala Tour</h4>
+                                            </div>
+                                            <div class="slide-links d-flex">
+                                                <a href="#">Learn More</a>
+                                                <a href="#">
+                                                    <i class="flaticon-add-to-basket"></i>
+                                                    <em class="top-info-box">Add To Cart</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 item-col popular">
+                                    <div class="item">
+                                        <div class="price-info">
+                                            <h5>$72</h5> <br>
+                                            <span>/Person</span>
+                                        </div>
+                                        <div class="img-box">
+                                            <img class="img-fluid" src="img/special-offers/special-offer3.jpg"
+                                                alt="img1" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="tour-date">
+                                                <i class="fas fa-calendar-alt mr-1"></i>
+                                                <span>JUNE 14, 2021 / 2 DAYS</span>
+                                            </div>
+                                            <div class="tour-name d-flex">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <h4>Lerik Tour</h4>
+                                            </div>
+                                            <div class="slide-links d-flex">
+                                                <a href="#">Learn More</a>
+                                                <a href="#">
+                                                    <i class="flaticon-add-to-basket"></i>
+                                                    <em class="top-info-box">Add To Cart</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 item-col popular">
+                                    <div class="item">
+                                        <div class="price-info">
+                                            <h5>$88</h5> <br>
+                                            <span>/Person</span>
+                                        </div>
+                                        <div class="img-box">
+                                            <img class="img-fluid" src="img/special-offers/special-offer1.jpg"
+                                                alt="img1" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="tour-date">
+                                                <i class="fas fa-calendar-alt mr-1"></i>
+                                                <span>APRIL 09, 2021 / 2 DAYS</span>
+                                            </div>
+                                            <div class="tour-name d-flex">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <h4>Gabala Tour</h4>
+                                            </div>
+                                            <div class="slide-links d-flex">
+                                                <a href="#">Learn More</a>
+                                                <a href="#">
+                                                    <i class="flaticon-add-to-basket"></i>
+                                                    <em class="top-info-box">Add To Cart</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 item-col special">
+                                    <div class="item">
+                                        <div class="price-info">
+                                            <h5>$70</h5> <br>
+                                            <span>/Person</span>
+                                        </div>
+                                        <div class="img-box">
+                                            <img class="img-fluid" src="img/special-offers/special-offer2.jpg"
+                                                alt="img1" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="tour-date">
+                                                <i class="fas fa-calendar-alt mr-1"></i>
+                                                <span>JULY 11, 2021 / 2 DAYS</span>
+                                            </div>
+                                            <div class="tour-name d-flex">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <h4>Zagatala Tour</h4>
+                                            </div>
+                                            <div class="slide-links d-flex">
+                                                <a href="#">Learn More</a>
+                                                <a href="#">
+                                                    <i class="flaticon-add-to-basket"></i>
+                                                    <em class="top-info-box">Add To Cart</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 item-col popular">
+                                    <div class="item">
+                                        <div class="price-info">
+                                            <h5>$76</h5> <br>
+                                            <span>/Person</span>
+                                        </div>
+                                        <div class="img-box">
+                                            <img class="img-fluid" src="img/special-offers/special-offer3.jpg"
+                                                alt="img1" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="tour-date">
+                                                <i class="fas fa-calendar-alt mr-1"></i>
+                                                <span>JUNE 14, 2021 / 2 DAYS</span>
+                                            </div>
+                                            <div class="tour-name d-flex">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <h4>Lerik Tour</h4>
+                                            </div>
+                                            <div class="slide-links d-flex">
+                                                <a href="#">Learn More</a>
+                                                <a href="#">
+                                                    <i class="flaticon-add-to-basket"></i>
+                                                    <em class="top-info-box">Add To Cart</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ======= Our Story Section End ======= -->
-
-
-        <!-- ======= Our Mission Section Start ======= -->
-        <section id="our-mission">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="our-mission-caption d-flex flex-column justify-content-center align-items-center"
-                            data-aos="fade-up" data-aos-duration="1000">
-                            <i class="flaticon-steering-wheel"></i>
-                            <h3>Our Mission</h3>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 second">
-                        <div class="our-mission-pic"></div>
-                    </div>
-                    <div class="col-lg-6 first">
-                        <div class="text text-justify">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum fermentum
-                                fermentum.
-                                In nulla sem, gravida a feugiat in, maximus id orci. Donec nec sagittis ipsum, sit amet
-                                venenatis orci.
-                                Donec bibendum pulvinar dapibus. Duis ac dui accumsan, finibus erat sagittis, mollis
-                                nulla.
-                                Cras ac interdum lacus. Morbi at ante aliquet, faucibus purus quis, pretium justo.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum fermentum
-                                fermentum.
-                                In nulla sem, gravida a feugiat in, maximus id orci. Donec nec sagittis ipsum, sit amet
-                                venenatis orci.
-                                Donec bibendum pulvinar dapibus. Duis ac dui accumsan, finibus erat sagittis, mollis
-                                nulla.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ======= Our Mission Section End ======= -->
-
-
-        <!-- ======= Adventure Team Section Start ======= -->
-        <section id="adventure-team">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12">
-                        <div class="adventure-team-caption text-center d-flex flex-column justify-content-center align-items-center"
-                            data-aos="fade-up" data-aos-duration="1000">
-                            <i class="flaticon-map"></i>
-                            <h3>Adventure Team</h3>
-                            <hr>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="item">
-                            <div class="holder">
-                                <img class="img-fluid" src="img/about/adventure-team1.jpg" alt="Guide">
-                                <ul class="social-media">
-                                    <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h5>Rubie Talley</h5>
-                                <h6>Tour Guide</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="item">
-                            <div class="holder">
-                                <img class="img-fluid" src="img/about/adventure-team2.jpg" alt="Guide">
-                                <ul class="social-media">
-                                    <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h5>Marcel Frame</h5>
-                                <h6>Tour Guide</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="item">
-                            <div class="holder">
-                                <img class="img-fluid" src="img/about/adventure-team3.jpg" alt="Guide">
-                                <ul class="social-media">
-                                    <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h5>Dina Driscoll</h5>
-                                <h6>Tour Guide</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ======= Adventure Team Section End ======= -->
+        <!-- ======= Tours Section End ======= -->
 
 
         <!-- ======= Subscribe Section Start ======= -->
@@ -477,6 +567,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- isotope-filter -->
+    <script src="plugins/isotope-filter-plugin/isotope.pkgd.min.js"></script>
     <!-- owl-carousel.js -->
     <script src="plugins/owl-carousel/owl.carousel.js"></script>
     <script src="js/owl-carousel.js"></script>

@@ -96,39 +96,14 @@ html {
       .terms {
         padding-top: 20px;
 
-        input[type="checkbox"] {
-          visibility: hidden;
-          position: absolute;
-          left: -9999px;
-        }
+        @extend %checkbox;
         label {
-          cursor: pointer;
-          color: white;
           font-weight: 300;
-          margin: 0 !important;
+          margin-bottom: 0 !important;
+          color: white;
         }
         input[type="checkbox"] + label:before {
           border: 1px solid white;
-          content: "\00a0";
-          display: inline-block;
-          font: 16px/1em sans-serif;
-          height: 16px;
-          width: 16px;
-          margin: 0 5px 0 0;
-          padding: 0;
-        }
-        input[type="checkbox"]:checked + label:before {
-          background: rgb(118, 148, 132);
-          content: "\2713";
-          color: white;
-          text-align: center;
-        }
-        input[type="checkbox"]:checked + label:after {
-          font-weight: bold;
-        }
-
-        input[type="checkbox"]:focus + label::before {
-          outline: rgb(59, 153, 252) auto 5px;
         }
 
         a {
