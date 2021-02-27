@@ -111,10 +111,12 @@ header {
           top: 112px;
           right: 192px;
           border-radius: 4px;
-          // visibility: hidden;
-          // opacity: 0;
-          display: none;
-          transition: 0.5s linear;
+          backface-visibility: hidden;
+          visibility: hidden;
+          opacity: 0;
+          transform-origin: 50% 0;
+          transform: scale(0.75) translateY(-21px);
+          transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
           box-shadow: 0 2px 6px 0 rgba(46, 45, 45, 7%);
 
           input[type="text"] {
@@ -153,10 +155,14 @@ header {
           top: 114px;
           right: 139px;
           padding: 35px 40px 50px;
-          // visibility: hidden;
-          // opacity: 0;
-          display: none;
-          transition: 0.5s linear;
+          backface-visibility: hidden;
+          visibility: hidden;
+          opacity: 0;
+          overflow: hidden;
+          transform-origin: 50% 0;
+          transform: scale(0.75) translateY(-21px);
+          transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+
           .same-style-input-area {
             width: 100%;
             .input-area {
@@ -174,7 +180,7 @@ header {
                 color: red;
                 z-index: 0;
               }
-      
+
               .success-icon {
                 color: green;
                 z-index: 5;
@@ -217,7 +223,7 @@ header {
                 color: white;
                 font-weight: 300;
                 font-size: 15px;
-                &:hover{
+                &:hover {
                   color: rgb(224, 218, 218) !important;
                 }
               }
@@ -235,65 +241,67 @@ header {
             }
           }
 
-          .reset-password {
-            p{
-              color: white
-            }
-            .alert{
-              @extend %form-alert;
-            }
-            .bottom-links {
-              padding-top: 20px !important;
-              .go-back {
+          #reset-form {
+            .reset-password {
+
+              p {
                 color: white;
-                font-weight: 300;
-                font-size: 15px;
-                &:hover{
-                  color: rgb(224, 218, 218) !important;
+              }
+              .alert {
+                @extend %form-alert;
+              }
+              .bottom-links {
+                padding-top: 20px !important;
+                .go-back {
+                  color: white;
+                  font-weight: 300;
+                  font-size: 15px;
+                  &:hover {
+                    color: rgb(224, 218, 218) !important;
+                  }
+                }
+                .reset {
+                  @extend %website-button;
+                  cursor: pointer;
+                  &:hover {
+                    color: white !important;
+                  }
+                  &:focus {
+                    outline: none;
+                  }
                 }
               }
-              .reset {
-                @extend %website-button;
-                cursor: pointer;
-                &:hover {
-                  color: white !important;
-                }
-                &:focus {
-                  outline: none;
-                }
+            }
+
+            .hidden {
+              display: none !important;
+            }
+
+            .success {
+              flex-direction: column;
+              height: 165px;
+              justify-content: space-between;
+              i {
+                font-size: 60px;
+                color: rgb(42, 176, 111);
               }
-            }
-          }
-
-          .hidden {
-            display: none !important;
-          }
-
-          .success {
-            flex-direction: column;
-            height: 165px;
-            justify-content: space-between;
-            i {
-              font-size: 60px;
-              color: rgb(42,176,111);
-            }
-            h4{
-              margin: 7px 0 0;
-              font-weight: 400;
-              color: white;
-            }
-            p {
-              margin-bottom: 0;
-              font-weight: 100;
-              color: white;
+              h4 {
+                margin: 7px 0 0;
+                font-weight: 400;
+                color: white;
+              }
+              p {
+                margin-bottom: 0;
+                font-weight: 100;
+                color: white;
+              }
             }
           }
         }
 
         .visible {
-          // visibility: visible;
-          // opacity: 1;
-          display: block;
+          opacity: 1;
+          transform: rotateX(0deg) translatey(0px);
         }
       }
       .user {

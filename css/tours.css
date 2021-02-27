@@ -47,7 +47,7 @@ header nav .navbar-items .links li a:hover, header nav .account li a:hover {
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #tours .tour-holder .item .info .slide-links a:first-child {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #tours .tour-holder .item .info .slide-links a:first-child {
   padding: 10px 24px;
   font-weight: 600;
   border: none;
@@ -62,7 +62,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   z-index: 1;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #tours .tour-holder .item .info .slide-links a:first-child::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #tours .tour-holder .item .info .slide-links a:first-child::before {
   content: "";
   border-radius: 3px;
   position: absolute;
@@ -82,12 +82,12 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
           transform-origin: left;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #tours .tour-holder .item .info .slide-links a:hover:first-child {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #tours .tour-holder .item .info .slide-links a:hover:first-child {
   color: white;
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #tours .tour-holder .item .info .slide-links a:first-child:hover::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #tours .tour-holder .item .info .slide-links a:first-child:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -258,7 +258,7 @@ footer .footer-top a:hover {
   color: #aac5b7 !important;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert, #subscribe .form-holder .alert {
+header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder #reset-form .reset-password .alert, #subscribe .form-holder .alert {
   padding: 5px 0 0;
   color: red;
   font-weight: 400;
@@ -523,9 +523,16 @@ header nav .account li .search-area-holder {
   top: 112px;
   right: 192px;
   border-radius: 4px;
-  display: none;
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-transform: scale(0.75) translateY(-21px);
+          transform: scale(0.75) translateY(-21px);
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
   -webkit-box-shadow: 0 2px 6px 0 #2e2d2d;
           box-shadow: 0 2px 6px 0 #2e2d2d;
 }
@@ -566,9 +573,17 @@ header nav .account li .login-box-holder {
   top: 114px;
   right: 139px;
   padding: 35px 40px 50px;
-  display: none;
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-transform: scale(0.75) translateY(-21px);
+          transform: scale(0.75) translateY(-21px);
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
 }
 
 header nav .account li .login-box-holder .same-style-input-area {
@@ -660,41 +675,41 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   outline: none;
 }
 
-header nav .account li .login-box-holder .reset-password p {
+header nav .account li .login-box-holder #reset-form .reset-password p {
   color: white;
 }
 
-header nav .account li .login-box-holder .reset-password .bottom-links {
+header nav .account li .login-box-holder #reset-form .reset-password .bottom-links {
   padding-top: 20px !important;
 }
 
-header nav .account li .login-box-holder .reset-password .bottom-links .go-back {
+header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .go-back {
   color: white;
   font-weight: 300;
   font-size: 15px;
 }
 
-header nav .account li .login-box-holder .reset-password .bottom-links .go-back:hover {
+header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .go-back:hover {
   color: #e0dada !important;
 }
 
-header nav .account li .login-box-holder .reset-password .bottom-links .reset {
+header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset {
   cursor: pointer;
 }
 
-header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover {
+header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover {
   color: white !important;
 }
 
-header nav .account li .login-box-holder .reset-password .bottom-links .reset:focus {
+header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:focus {
   outline: none;
 }
 
-header nav .account li .login-box-holder .hidden {
+header nav .account li .login-box-holder #reset-form .hidden {
   display: none !important;
 }
 
-header nav .account li .login-box-holder .success {
+header nav .account li .login-box-holder #reset-form .success {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -705,25 +720,27 @@ header nav .account li .login-box-holder .success {
           justify-content: space-between;
 }
 
-header nav .account li .login-box-holder .success i {
+header nav .account li .login-box-holder #reset-form .success i {
   font-size: 60px;
   color: #2ab06f;
 }
 
-header nav .account li .login-box-holder .success h4 {
+header nav .account li .login-box-holder #reset-form .success h4 {
   margin: 7px 0 0;
   font-weight: 400;
   color: white;
 }
 
-header nav .account li .login-box-holder .success p {
+header nav .account li .login-box-holder #reset-form .success p {
   margin-bottom: 0;
   font-weight: 100;
   color: white;
 }
 
 header nav .account li .visible {
-  display: block;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg) translatey(0px);
+          transform: rotateX(0deg) translatey(0px);
 }
 
 header nav .account .user {
@@ -1062,6 +1079,8 @@ footer .footer-bottom .social-media ul {
   background-color: #3a3b74;
   -webkit-transform: translateY(200px);
           transform: translateY(200px);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   visibility: hidden;
   -webkit-transition: 0.6s all;
   transition: 0.6s all;
@@ -1152,14 +1171,14 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "ludicrous";
   src: url(../WOFF-web-fonts/Ludicrous.woff);
   font-weight: 100;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .stop-scroll {
@@ -1250,7 +1269,7 @@ html {
   font-weight: 600;
 }
 
-#tours .category {
+#tours .category-and-sorting {
   height: 60px;
   background-color: white;
   margin: 0 16px 30px;
@@ -1260,13 +1279,13 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-left: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
 }
 
-#tours .category .category-btns {
+#tours .category-and-sorting .category-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1276,21 +1295,133 @@ html {
   width: 370px;
 }
 
-#tours .category .category-btns button {
+#tours .category-and-sorting .category-btns button {
   cursor: pointer;
   padding: 3px 16px;
   font-weight: 300;
   border: none;
+  border-radius: 3px;
   color: white;
   background-color: #769484;
 }
 
-#tours .category .category-btns button:focus {
+#tours .category-and-sorting .category-btns button:focus {
   outline: none;
 }
 
-#tours .category .category-btns .active-btn {
+#tours .category-and-sorting .category-btns .active-btn {
   background-color: #3a3b74;
+}
+
+#tours .category-and-sorting .sorting {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tours .category-and-sorting .sorting .dropholder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 34px;
+  padding: 0 0 0 14px;
+  color: #3a3b74;
+  position: relative;
+}
+
+#tours .category-and-sorting .sorting .dropholder h5 {
+  font-size: 16px;
+  color: black;
+  line-height: 32px;
+}
+
+#tours .category-and-sorting .sorting .dropholder .dropdown {
+  cursor: pointer;
+  border-radius: 3px;
+  background: #3a3b74;
+  margin-left: 20px;
+  width: 162px;
+  padding: 0 0 0 14px;
+  height: 100%;
+  position: relative;
+}
+
+#tours .category-and-sorting .sorting .dropholder .dropdown p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 32px;
+  color: white;
+}
+
+#tours .category-and-sorting .sorting .dropholder .dropdown i {
+  position: absolute;
+  right: 12px;
+  top: 5px;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+#tours .category-and-sorting .sorting .dropholder .dropdown i::before {
+  color: white;
+  font-size: 13px;
+  margin-left: 0;
+}
+
+#tours .category-and-sorting .sorting .dropholder .menu {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  width: 161px;
+  cursor: pointer;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotatey(180deg) rotateX(5deg) translatey(100px);
+          transform: rotatey(180deg) rotateX(5deg) translatey(100px);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  opacity: 0;
+  background: #769484;
+  border: 1px solid #769484;
+  border-radius: 3px;
+  z-index: 99;
+  overflow: hidden;
+  padding: 1px;
+}
+
+#tours .category-and-sorting .sorting .dropholder .menu li {
+  font-size: 14px;
+  padding: 9px;
+  border-bottom: 1px solid #fff;
+  color: #e8f8ff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  list-style: none;
+}
+
+#tours .category-and-sorting .sorting .dropholder .menu li:hover {
+  background: #3a3b74;
+  padding-left: 20px;
+}
+
+#tours .category-and-sorting .sorting .dropholder .menu li:last-child {
+  border: none;
+}
+
+#tours .category-and-sorting .sorting .dropholder .showMenu {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg) translatey(0px);
+          transform: rotateX(0deg) translatey(0px);
+}
+
+#tours .category-and-sorting .sorting .dropholder .rotate {
+  -webkit-transform: rotateZ(-180deg);
+          transform: rotateZ(-180deg);
 }
 
 #tours .tour-holder .item {

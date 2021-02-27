@@ -725,6 +725,20 @@ $(document).ready(function () {
       return false;
   });
   // ======= Tour Filter and Background-color of Button when click on it - End ======= //
+
+
+  // ======= Sorting Dropdown Start ======= //
+  $("#tours .dropdown").click(function() {
+    $("#tours .menu").toggleClass("#tours showMenu");
+    $("#tours .dropdown i").toggleClass("#tours rotate");
+
+    $("#tours .menu li").click(function() {
+      $("#tours .dropdown p").html($(this).html());
+      $("#tours .menu").removeClass("#tours showMenu");
+      $("#tours .dropdown i").removeClass("#tours rotate");
+    });
+  });
+  // ======= Sorting Dropdown End ======= //
 });
 
 

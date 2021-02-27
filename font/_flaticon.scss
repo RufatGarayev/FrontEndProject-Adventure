@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 23/02/2021 16:31
+    Creation date: 27/02/2021 21:26
     */
 
     @font-face {
@@ -58,6 +58,7 @@
 .flaticon-street-sign:before { content: "\f112"; }
 .flaticon-steering-wheel:before { content: "\f113"; }
 .flaticon-bike:before { content: "\f114"; }
+.flaticon-down-arrow:before { content: "\f115"; }
     
     $font-Flaticon-hotel: "\f100";
     $font-Flaticon-public-transport: "\f101";
@@ -80,3 +81,4 @@
     $font-Flaticon-street-sign: "\f112";
     $font-Flaticon-steering-wheel: "\f113";
     $font-Flaticon-bike: "\f114";
+    $font-Flaticon-down-arrow: "\f115";

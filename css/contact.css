@@ -47,7 +47,7 @@ header nav .navbar-items .links li a:hover, header nav .account li a:hover {
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn {
   padding: 10px 24px;
   font-weight: 600;
   border: none;
@@ -62,7 +62,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   z-index: 1;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn::before {
   content: "";
   border-radius: 3px;
   position: absolute;
@@ -82,12 +82,12 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
           transform-origin: left;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn:hover {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn:hover {
   color: white;
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn:hover::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #get-in-touch .message .same-style-input-area .bottom-links .sign-up-btn:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -166,7 +166,7 @@ footer .footer-top a:hover {
   color: #aac5b7 !important;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder .reset-password .alert, #subscribe .form-holder .alert, #get-in-touch .message .same-style-input-area .alert {
+header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder #reset-form .reset-password .alert, #subscribe .form-holder .alert, #get-in-touch .message .same-style-input-area .alert {
   padding: 5px 0 0;
   color: red;
   font-weight: 400;
@@ -398,9 +398,16 @@ header nav .account li .search-area-holder {
   top: 112px;
   right: 192px;
   border-radius: 4px;
-  display: none;
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-transform: scale(0.75) translateY(-21px);
+          transform: scale(0.75) translateY(-21px);
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
   -webkit-box-shadow: 0 2px 6px 0 #2e2d2d;
           box-shadow: 0 2px 6px 0 #2e2d2d;
 }
@@ -441,9 +448,17 @@ header nav .account li .login-box-holder {
   top: 114px;
   right: 139px;
   padding: 35px 40px 50px;
-  display: none;
-  -webkit-transition: 0.5s linear;
-  transition: 0.5s linear;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-transform: scale(0.75) translateY(-21px);
+          transform: scale(0.75) translateY(-21px);
+  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
 }
 
 header nav .account li .login-box-holder .same-style-input-area {
@@ -535,41 +550,41 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   outline: none;
 }
 
-header nav .account li .login-box-holder .reset-password p {
+header nav .account li .login-box-holder #reset-form .reset-password p {
   color: white;
 }
 
-header nav .account li .login-box-holder .reset-password .bottom-links {
+header nav .account li .login-box-holder #reset-form .reset-password .bottom-links {
   padding-top: 20px !important;
 }
 
-header nav .account li .login-box-holder .reset-password .bottom-links .go-back {
+header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .go-back {
   color: white;
   font-weight: 300;
   font-size: 15px;
 }
 
-header nav .account li .login-box-holder .reset-password .bottom-links .go-back:hover {
+header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .go-back:hover {
   color: #e0dada !important;
 }
 
-header nav .account li .login-box-holder .reset-password .bottom-links .reset {
+header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset {
   cursor: pointer;
 }
 
-header nav .account li .login-box-holder .reset-password .bottom-links .reset:hover {
+header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover {
   color: white !important;
 }
 
-header nav .account li .login-box-holder .reset-password .bottom-links .reset:focus {
+header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:focus {
   outline: none;
 }
 
-header nav .account li .login-box-holder .hidden {
+header nav .account li .login-box-holder #reset-form .hidden {
   display: none !important;
 }
 
-header nav .account li .login-box-holder .success {
+header nav .account li .login-box-holder #reset-form .success {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -580,25 +595,27 @@ header nav .account li .login-box-holder .success {
           justify-content: space-between;
 }
 
-header nav .account li .login-box-holder .success i {
+header nav .account li .login-box-holder #reset-form .success i {
   font-size: 60px;
   color: #2ab06f;
 }
 
-header nav .account li .login-box-holder .success h4 {
+header nav .account li .login-box-holder #reset-form .success h4 {
   margin: 7px 0 0;
   font-weight: 400;
   color: white;
 }
 
-header nav .account li .login-box-holder .success p {
+header nav .account li .login-box-holder #reset-form .success p {
   margin-bottom: 0;
   font-weight: 100;
   color: white;
 }
 
 header nav .account li .visible {
-  display: block;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg) translatey(0px);
+          transform: rotateX(0deg) translatey(0px);
 }
 
 header nav .account .user {
@@ -937,6 +954,8 @@ footer .footer-bottom .social-media ul {
   background-color: #3a3b74;
   -webkit-transform: translateY(200px);
           transform: translateY(200px);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   visibility: hidden;
   -webkit-transition: 0.6s all;
   transition: 0.6s all;
