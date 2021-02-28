@@ -23,7 +23,7 @@
     <!-- flaticon.css -->
     <link rel="stylesheet" href="font/flaticon.css">
     <!-- responsive.css -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <!-- about.css -->
     <link rel="stylesheet" href="css/tours.css">
     <title>Tours | Adventure</title>
@@ -47,6 +47,10 @@
     <!-- ======= Back To Top Start ======= -->
     <button id="topBtn"><i class="flaticon-upload"></i></button>
     <!-- ======= Back To Top End ======= -->
+
+    <!-- ======= Dark Bg-Color Start ======= -->
+    <div class="dark-bgcolor"></div>
+    <!-- ======= Dark Bg-Color End ======= -->
 
     <!-- ======= Top Header Start ======= -->
     <section id="top-header">
@@ -196,51 +200,56 @@
         <section id="tours">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 pr-0">
                         <div class="sidebar-area">
-                            <div class="price-filter">
-                                <h5>Price Filter</h5>
-                                <div class="slider-tour-sorting"></div>
-                                <div class="tour-range-detail">
-                                    <input type="text" id="amount" readonly>
+                            <div class="filters">
+                                <div class="price-filter">
+                                    <h5>Price Filter</h5>
+                                    <div class="slider-tour-sorting"></div>
+                                    <div class="tour-range-detail">
+                                        <input type="text" id="amount" readonly>
+                                    </div>
+                                </div>
+                                <div class="province">
+                                    <h5>Province</h5>
+                                    <form action="#">
+                                        <input type="checkbox" id="gcaucasus" name="greater-caucasus"
+                                            value="greater-caucasus">
+                                        <label for="gcaucasus">Greater Caucasus</label><br>
+                                        <input type="checkbox" id="lcaucasus" name="lesser-caucasus"
+                                            value="lesser-caucasus">
+                                        <label for="lcaucasus">Lesser Caucasus</label><br>
+                                        <input type="checkbox" id="talish" name="talish" value="talish">
+                                        <label for="talish">Talish</label><br><br>
+                                    </form>
                                 </div>
                             </div>
-                            <div class="province">
-                                <h5>Province</h5>
-                                <form action="#">
-                                    <input type="checkbox" id="gcaucasus" name="greater-caucasus"
-                                        value="greater-caucasus">
-                                    <label for="gcaucasus">Greater Caucasus</label><br>
-                                    <input type="checkbox" id="lcaucasus" name="lesser-caucasus"
-                                        value="lesser-caucasus">
-                                    <label for="lcaucasus">Lesser Caucasus</label><br>
-                                    <input type="checkbox" id="talish" name="talish" value="talish">
-                                    <label for="talish">Talish</label><br><br>
-                                </form>
-                            </div>
+                            <a href="#" class="sidebar-filter-toggle"></a>
                         </div>
                     </div>
                     <div class="col-lg-9">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="category-and-sorting">
+                        <div class="category-and-sorting">
+                            <div class="row w-100 no-gutters">
+                                <div class="col-lg-7 col-md-7 col-sm-7">
                                     <div class="category-btns">
                                         <button data-filter="*" class="btns all active-btn">All</button>
                                         <button data-filter=".special" class="btns special">Special</button>
                                         <button data-filter=".popular" class="btns popular">Popular</button>
                                         <button data-filter=".discount" class="btns discount">Discount</button>
                                     </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-5">
                                     <div class="sorting">
                                         <div class="dropholder">
                                             <h5>Sort By:</h5>
                                             <div class="dropdown d-flex">
-                                              <p>Default</p>
-                                              <i class="flaticon-down-arrow"></i>
+                                                <p>Default</p>
+                                                <i class="flaticon-down-arrow"></i>
                                             </div>
                                             <ul class="menu">
-                                              <li>Default</li>
-                                              <li>Name (A-Z)</li>
-                                              <li>Price (Min - Max)</li>
+                                                <li>Default</li>
+                                                <li>Name (A-Z)</li>
+                                                <li>Price (Min - Max)</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -248,8 +257,8 @@
                             </div>
                         </div>
                         <div class="tour-holder">
-                            <div class="row">
-                                <div class="col-lg-4 item-col special">
+                            <div class="row no-gutters">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col special">
                                     <div class="item">
                                         <div class="price-info">
                                             <h5>$79</h5> <br>
@@ -278,7 +287,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 item-col special">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col special">
                                     <div class="item">
                                         <div class="price-info">
                                             <h5>$85</h5> <br>
@@ -307,7 +316,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 item-col popular">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col popular">
                                     <div class="item">
                                         <div class="price-info">
                                             <h5>$72</h5> <br>
@@ -336,7 +345,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 item-col popular">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col popular">
                                     <div class="item">
                                         <div class="price-info">
                                             <h5>$88</h5> <br>
@@ -365,7 +374,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 item-col special">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col special">
                                     <div class="item">
                                         <div class="price-info">
                                             <h5>$70</h5> <br>
@@ -394,7 +403,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 item-col popular">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col popular">
                                     <div class="item">
                                         <div class="price-info">
                                             <h5>$76</h5> <br>
@@ -564,6 +573,7 @@
         </div>
     </footer>
     <!-- ======= Footer End ======= -->
+
 
     <!-- animate on scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

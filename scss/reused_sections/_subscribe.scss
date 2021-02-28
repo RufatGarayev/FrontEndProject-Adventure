@@ -90,3 +90,134 @@
   }
 }
 // ======= Subscribe Section End ======= //
+
+
+
+// ======= Responsive Design Start ======= //
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #subscribe {
+    .form-holder {
+      i {
+        right: 205px !important;
+      }
+
+      .alert {
+        padding-left: 65px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #subscribe {
+    .form-holder {
+      .form-field {
+        input {
+          width: 75% !important;
+          padding-left: 20px !important;
+        }
+      }
+
+      i {
+        right: 140px !important;
+      }
+
+      .alert {
+        padding-left: 3px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #subscribe {
+    .subscribe-title {
+      padding: 0 50px 50px !important;
+    }
+
+    .form-holder {
+      .form-field {
+        input {
+          padding-left: 20px !important;
+        }
+      }
+
+      i {
+        right: 180px !important;
+        font-size: 17px !important;
+      }
+
+      .alert {
+        padding-left: 43px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #subscribe {
+    .subscribe-title {
+      padding: 0 20px 50px !important;
+    }
+    .form-holder {
+      .form-field {
+        input {
+          padding-left: 20px !important;
+          width: 65% !important;
+        }
+        .subs-btn {
+          font-weight: 300 !important;
+          padding: 10px 14px !important;
+        }
+      }
+
+      i {
+        right: calc(60%/3 + 59px) !important;
+        font-size: 17px !important;
+      }
+
+      .alert {
+        padding-left: calc(15% - 35px) !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #subscribe {
+    .subscribe-title {
+      padding: 0 11px 25px !important;
+
+      h1 {
+        margin-bottom: 5px !important;
+      }
+    }
+    .form-holder {
+      .form-field {
+        input {
+          padding-left: 15px !important;
+          font-size: 13px;
+          height: 40px !important;
+          width: 65% !important;
+        }
+        .subs-btn {
+          font-size: 13px;
+          font-weight: 300 !important;
+          padding: 8px 10px !important;
+        }
+      }
+
+      i {
+        top: 13px !important;
+        right: calc(60%/3 + 45px) !important;
+        font-size: 14px !important;
+      }
+
+      .alert {
+        font-size: 12px !important;
+        padding-left: calc(15% - 29px) !important;
+      }
+    }
+  }
+}
+// ======= Responsive Design End ======= //

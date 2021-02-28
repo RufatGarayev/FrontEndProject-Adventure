@@ -48,6 +48,7 @@ $(document).ready(function () {
     $(this).toggleClass("change");
     $(".navbar-items").toggleClass("active");
     $(document.body).toggleClass("stop-scroll");
+    $(".sidebar-filter-toggle").toggleClass("hide-filter-btn");
   });
   // ======= Show or Hide navbar items when click on Hamburger btn - End ======= //
 
@@ -112,8 +113,8 @@ $(document).ready(function () {
         $( ".slider-tour-sorting" ).slider({
         range: true,
         min: 50,
-        max: 100,
-        values: [ 60, 80 ],
+        max: 150,
+        values: [ 50, 150 ],
         slide: function( event, ui ) {
         $( "#amount" ).val( "$" + ui.values[ 0 ] + "  -  $" + ui.values[ 1 ] );
         }
@@ -739,6 +740,16 @@ $(document).ready(function () {
     });
   });
   // ======= Sorting Dropdown End ======= //
+
+
+  // ======= Show or Hide Sidebar Filter when click on filter btn - Start ======= //
+  $(document).on("click", ".sidebar-filter-toggle", function (e) {
+    e.preventDefault();
+    $(".sidebar-area .filters").toggleClass("show-sidebar");
+    $(".dark-bgcolor").toggleClass("show-dark-bgcolor");
+    $(document.body).toggleClass("stop-scroll");
+  });
+  // ======= Show or Hide Sidebar Filter when click on filter btn - End ======= //
 });
 
 

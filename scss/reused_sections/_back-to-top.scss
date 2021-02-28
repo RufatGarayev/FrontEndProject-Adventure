@@ -17,6 +17,10 @@
     visibility: hidden;
     transition: 0.6s all;
     z-index: 999;
+    opacity: 0.8;
+    &:hover{
+      opacity: 1;
+    }
     &:focus{
       outline: none;
     }
@@ -29,3 +33,18 @@
     }
 }
 // ======= Back To Top End ======= //
+
+
+// ======= Responsive Design Start ======= //
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #topBtn {
+    right: 20px !important;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #topBtn {
+    right: 15px !important;
+  }
+}
+// ======= Responsive Design End ======= //
