@@ -2149,9 +2149,12 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 370px;
+  height: 44px;
+  padding-top: 10px;
+  margin-bottom: 0;
 }
 
-#tours .category-and-sorting .category-btns button {
+#tours .category-and-sorting .category-btns li a {
   cursor: pointer;
   padding: 3px 16px;
   font-weight: 300;
@@ -2161,11 +2164,11 @@ html {
   background-color: #769484;
 }
 
-#tours .category-and-sorting .category-btns button:focus {
-  outline: none;
+#tours .category-and-sorting .category-btns li a:hover {
+  text-decoration: none;
 }
 
-#tours .category-and-sorting .category-btns .active-btn {
+#tours .category-and-sorting .category-btns li .active-btn {
   background-color: #3a3b74;
 }
 
@@ -2389,7 +2392,7 @@ html {
   #tours .category-and-sorting .category-btns {
     width: 350px;
   }
-  #tours .category-and-sorting .category-btns button {
+  #tours .category-and-sorting .category-btns li {
     font-size: 15px;
   }
   #tours .category-and-sorting .sorting .dropholder h5 {
@@ -2402,7 +2405,7 @@ html {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   #tours {
-    padding: 80px 0px 60px;
+    padding: 50px 0px 50px;
   }
   #tours .sidebar-area {
     padding: 0;
@@ -2469,7 +2472,7 @@ html {
   #tours .category-and-sorting .category-btns {
     width: 350px;
   }
-  #tours .category-and-sorting .category-btns button {
+  #tours .category-and-sorting .category-btns li {
     font-size: 15px;
   }
   #tours .category-and-sorting .sorting .dropholder h5 {
@@ -2482,7 +2485,7 @@ html {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #tours {
-    padding: 50px 0px 60px;
+    padding: 50px 0px 50px;
   }
   #tours .sidebar-area {
     padding: 0;
@@ -2554,8 +2557,10 @@ html {
   #tours .category-and-sorting .category-btns {
     width: 280px;
   }
-  #tours .category-and-sorting .category-btns button {
+  #tours .category-and-sorting .category-btns li {
     font-size: 13px;
+  }
+  #tours .category-and-sorting .category-btns li a {
     padding: 3px 12px;
   }
   #tours .category-and-sorting .sorting .dropholder {
@@ -2564,7 +2569,7 @@ html {
   }
   #tours .category-and-sorting .sorting .dropholder h5 {
     font-size: 13px !important;
-    line-height: 27px;
+    line-height: 28px;
   }
   #tours .category-and-sorting .sorting .dropholder .dropdown {
     margin-left: 7px;
@@ -2572,7 +2577,7 @@ html {
     padding: 0 0 0 10px;
   }
   #tours .category-and-sorting .sorting .dropholder .dropdown p {
-    line-height: 27px;
+    line-height: 28px;
     font-size: 13px;
   }
   #tours .category-and-sorting .sorting .dropholder .dropdown i {
@@ -2589,11 +2594,18 @@ html {
   #tours .category-and-sorting .sorting .dropholder .menu li {
     font-size: 13px;
   }
+  #tours .tour-holder .item .info .tour-name i {
+    font-size: 14px !important;
+    margin: 4px 7px 0 0 !important;
+  }
+  #tours .tour-holder .item .info .slide-links a {
+    font-size: 10px !important;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #tours {
-    padding: 80px 20px 60px;
+    padding: 50px 30px 50px;
   }
   #tours .sidebar-area {
     padding: 0;
@@ -2657,23 +2669,79 @@ html {
     -webkit-transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
     transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
   }
-  #tours .category-and-sorting .category-btns {
-    width: 350px;
+  #tours .category-and-sorting {
+    height: 110px;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    padding: 16px 20px;
   }
-  #tours .category-and-sorting .category-btns button {
+  #tours .category-and-sorting .category-btns {
+    height: 44px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #tours .category-and-sorting .category-btns li {
     font-size: 15px;
+    margin-right: 10px;
+  }
+  #tours .category-and-sorting .sorting {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  #tours .category-and-sorting .sorting .dropholder {
+    height: 32px;
+    padding: 0;
   }
   #tours .category-and-sorting .sorting .dropholder h5 {
     font-size: 15px !important;
   }
   #tours .category-and-sorting .sorting .dropholder .dropdown {
     margin-left: 15px;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 575.98px) {
+  .item .img-box {
+    height: 300px !important;
+  }
+  .item .info {
+    padding: 20px 30px 30px 30px !important;
+  }
+  .item .info .tour-name h4 {
+    font-size: 20px !important;
+  }
+  .item .info .slide-links a {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 434px) {
+  #tours .category-and-sorting {
+    height: 165px;
+  }
+  #tours .category-and-sorting .category-btns {
+    height: 82px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 500px) {
+  #tours {
+    padding: 50px 0px 50px !important;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #tours {
-    padding: 80px 0px 60px;
+    padding: 50px 0px 50px;
   }
   #tours .sidebar-area {
     padding: 0;
@@ -2737,17 +2805,111 @@ html {
     -webkit-transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
     transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
   }
-  #tours .category-and-sorting .category-btns {
-    width: 350px;
+  #tours .category-and-sorting {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    padding: 16px 20px;
   }
-  #tours .category-and-sorting .category-btns button {
-    font-size: 15px;
+  #tours .category-and-sorting .category-btns {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 75px !important;
+  }
+  #tours .category-and-sorting .category-btns li {
+    font-size: 13px;
+    margin-right: 10px;
+  }
+  #tours .category-and-sorting .sorting {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  #tours .category-and-sorting .sorting .dropholder {
+    height: 32px;
+    padding: 0;
   }
   #tours .category-and-sorting .sorting .dropholder h5 {
-    font-size: 15px !important;
+    font-size: 13px;
   }
   #tours .category-and-sorting .sorting .dropholder .dropdown {
-    margin-left: 15px;
+    width: 140px;
+    margin-left: 12px;
+  }
+  #tours .category-and-sorting .sorting .dropholder .dropdown p {
+    font-size: 13px;
+  }
+  #tours .category-and-sorting .sorting .dropholder .dropdown i {
+    top: 2px;
+  }
+  #tours .category-and-sorting .sorting .dropholder .dropdown i::before {
+    font-size: 10px;
+  }
+  #tours .category-and-sorting .sorting .dropholder .menu {
+    width: 140px;
+  }
+  #tours .category-and-sorting .sorting .dropholder .menu li {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 315px) {
+  .item .img-box {
+    height: 230px !important;
+  }
+  .item .info {
+    padding: 10px 10px 24px 10px !important;
+  }
+  .item .info .tour-date span,
+  .item .info .tour-date i {
+    font-size: 11px !important;
+  }
+  .item .info .tour-name i {
+    font-size: 14px !important;
+  }
+  .item .info .tour-name h4 {
+    font-size: 17px !important;
+  }
+  .item .info .slide-links a .top-info-box {
+    font-size: 10px !important;
+  }
+  .item .info .slide-links a i::before {
+    font-size: 22px !important;
+  }
+  .item .info .slide-links a:first-child {
+    padding: 8px 14px !important;
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 288px) {
+  .category-and-sorting {
+    height: 148px !important;
+    padding: 12px 10px 10px !important;
+  }
+  .category-and-sorting .sorting {
+    margin-bottom: 15px;
+  }
+  .category-and-sorting .sorting .dropholder h5 {
+    font-size: 11px !important;
+  }
+  .category-and-sorting .sorting .dropholder .dropdown {
+    padding: 0 0 0 8px !important;
+    width: 130px !important;
+    margin-left: 10px !important;
+  }
+  .category-and-sorting .sorting .dropholder .dropdown i {
+    right: 9px !important;
+  }
+  .category-and-sorting .sorting .dropholder .menu {
+    width: 130px !important;
   }
 }
 /*# sourceMappingURL=tours.css.map */

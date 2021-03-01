@@ -7,6 +7,7 @@
 @import "../scss/reused_sections/back-to-top";
 @import "../scss/reused_sections/intro-page_caption";
 
+
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +39,7 @@ html {
 
 
 // ======= Dark Bg-Color Start ======= //
-.dark-bgcolor{
+.dark-bgcolor {
   width: 100%;
   height: 100%;
   background: #000;
@@ -50,7 +51,7 @@ html {
   z-index: 99;
 }
 
-.show-dark-bgcolor{
+.show-dark-bgcolor {
   opacity: 0.6 !important;
   visibility: visible !important;
 }
@@ -130,8 +131,8 @@ html {
           font-weight: 600;
         }
 
-        form{
-          label{
+        form {
+          label {
             margin-bottom: 12px;
           }
         }
@@ -154,21 +155,26 @@ html {
       display: flex;
       justify-content: space-between;
       width: 370px;
-      button {
-        cursor: pointer;
-        padding: 3px 16px;
-        font-weight: 300;
-        border: none;
-        border-radius: 3px;
-        color: white;
-        background-color: rgb(118, 148, 132);
-        &:focus {
-          outline: none;
+      height: 44px;
+      padding-top: 10px;
+      margin-bottom: 0;
+      li {
+        a {
+          cursor: pointer;
+          padding: 3px 16px;
+          font-weight: 300;
+          border: none;
+          border-radius: 3px;
+          color: white;
+          background-color: rgb(118, 148, 132);
+          &:hover {
+            text-decoration: none;
+          }
         }
-      }
 
-      .active-btn {
-        background-color: rgb(58, 59, 116);
+        .active-btn {
+          background-color: rgb(58, 59, 116);
+        }
       }
     }
 
@@ -270,14 +276,14 @@ html {
       padding: 1px;
       margin: 10px 10px 10px;
       background-color: white;
-
+    
       position: relative;
       cursor: pointer;
-
+    
       .price-info {
         @extend %price-box;
       }
-
+    
       .img-box {
         height: 270px;
         margin: 2px;
@@ -293,11 +299,11 @@ html {
           transition: transform 0.3s;
         }
       }
-
+    
       &:hover img {
         transform: scale(1.3);
       }
-
+    
       .info {
         padding: 20px 20px 30px 20px;
         .tour-date {
@@ -337,7 +343,7 @@ html {
               font-weight: 400;
               letter-spacing: 1px;
             }
-
+    
             @extend %top-info-box;
           }
         }
@@ -355,6 +361,7 @@ html {
 // ======= Tours Section End ======= //
 
 
+
 // ======= Responsive Design Start ======= //
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #tours {
@@ -365,7 +372,7 @@ html {
     .category-and-sorting {
       .category-btns {
         width: 350px;
-        button {
+        li {
           font-size: 15px;
         }
       }
@@ -386,7 +393,7 @@ html {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   #tours {
-    padding: 80px 0px 60px;
+    padding: 50px 0px 50px;
     .sidebar-area {
       padding: 0;
       height: 100%;
@@ -400,7 +407,7 @@ html {
         visibility: hidden;
         overflow: hidden;
         opacity: 0;
-        transition:  0.4s cubic-bezier(1, 0, 0, 1) !important;
+        transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
 
         .price-filter {
           height: 180px;
@@ -439,7 +446,7 @@ html {
         border-radius: 0 5px 5px 0;
       }
 
-      .hide-filter-btn{
+      .hide-filter-btn {
         transform: translateX(-60px);
         transition: 0.4s linear;
       }
@@ -451,13 +458,13 @@ html {
       padding: 30px 30px 0;
       visibility: visible !important;
       opacity: 1 !important;
-      transition:  0.4s cubic-bezier(1, 0, 0, 1) !important;
+      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
     }
 
     .category-and-sorting {
       .category-btns {
         width: 350px;
-        button {
+        li {
           font-size: 15px;
         }
       }
@@ -478,7 +485,7 @@ html {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #tours {
-    padding: 50px 0px 60px;
+    padding: 50px 0px 50px;
     .sidebar-area {
       padding: 0;
       height: 100%;
@@ -492,7 +499,7 @@ html {
         visibility: hidden;
         overflow: hidden;
         opacity: 0;
-        transition:  0.4s cubic-bezier(1, 0, 0, 1) !important;
+        transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
 
         .price-filter {
           height: 180px;
@@ -531,7 +538,7 @@ html {
         border-radius: 0 5px 5px 0;
       }
 
-      .hide-filter-btn{
+      .hide-filter-btn {
         transform: translateX(-60px);
         transition: 0.4s linear;
       }
@@ -543,7 +550,7 @@ html {
       padding: 30px 30px 0;
       visibility: visible !important;
       opacity: 1 !important;
-      transition:  0.4s cubic-bezier(1, 0, 0, 1) !important;
+      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
     }
 
     .category-and-sorting {
@@ -552,9 +559,11 @@ html {
       height: 48px;
       .category-btns {
         width: 280px;
-        button {
+        li {
           font-size: 13px;
-          padding: 3px 12px;
+          a{
+            padding: 3px 12px;
+          }
         }
       }
 
@@ -565,32 +574,32 @@ html {
 
           h5 {
             font-size: 13px !important;
-            line-height: 27px;
+            line-height: 28px;
           }
           .dropdown {
             margin-left: 7px;
             width: 135px;
             padding: 0 0 0 10px;
 
-            p{
-              line-height: 27px;
+            p {
+              line-height: 28px;
               font-size: 13px;
             }
 
-            i{
+            i {
               top: 0px;
               right: 10px;
-              &::before{
+              &::before {
                 font-size: 11px;
               }
             }
           }
 
-          .menu{
+          .menu {
             top: 29px;
             width: 135px;
 
-            li{
+            li {
               font-size: 13px;
             }
           }
@@ -598,17 +607,29 @@ html {
       }
     }
 
-    // .tour-holder{
-    //   .item{
-
-    //   }
-    // }
+    .tour-holder{
+      .item {
+        .info {
+          .tour-name {
+            i {
+              font-size: 14px !important;
+              margin: 4px 7px 0 0 !important;
+            }
+          }
+          .slide-links {
+            a {
+              font-size: 10px !important;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #tours {
-    padding: 80px 20px 60px;
+    padding: 50px 30px 50px;
     .sidebar-area {
       padding: 0;
       height: 100%;
@@ -622,7 +643,7 @@ html {
         visibility: hidden;
         overflow: hidden;
         opacity: 0;
-        transition:  0.4s cubic-bezier(1, 0, 0, 1) !important;
+        transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
 
         .price-filter {
           height: 180px;
@@ -661,7 +682,7 @@ html {
         border-radius: 0 5px 5px 0;
       }
 
-      .hide-filter-btn{
+      .hide-filter-btn {
         transform: translateX(-60px);
         transition: 0.4s linear;
       }
@@ -672,19 +693,30 @@ html {
       padding: 30px 30px 0;
       visibility: visible !important;
       opacity: 1 !important;
-      transition:  0.4s cubic-bezier(1, 0, 0, 1) !important;
+      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
     }
 
     .category-and-sorting {
+      height: 110px;
+      align-items: normal;
+      padding: 16px 20px;
       .category-btns {
-        width: 350px;
-        button {
+        height: 44px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+        li {
           font-size: 15px;
+          margin-right: 10px;
         }
       }
 
       .sorting {
+        justify-content: flex-start !important;
         .dropholder {
+          height: 32px;
+          padding: 0;
           h5 {
             font-size: 15px !important;
           }
@@ -694,12 +726,51 @@ html {
         }
       }
     }
+  }
+}
+
+@media (min-width: 430px) and (max-width: 575.98px) {
+  .item {
+    .img-box {
+      height: 300px !important;
+    }
+    .info {
+      padding: 20px 30px 30px 30px !important;
+      .tour-name {
+        h4 {
+          font-size: 20px !important;
+        }
+      }
+      .slide-links {
+        a {
+          font-size: 13px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 434px) {
+  #tours {
+    .category-and-sorting {
+      height: 165px;
+
+      .category-btns {
+        height: 82px;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 500px) {
+  #tours {
+    padding: 50px 0px 50px !important;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #tours {
-    padding: 80px 0px 60px;
+    padding: 50px 0px 50px;
     .sidebar-area {
       padding: 0;
       height: 100%;
@@ -713,7 +784,7 @@ html {
         visibility: hidden;
         overflow: hidden;
         opacity: 0;
-        transition:  0.4s cubic-bezier(1, 0, 0, 1) !important;
+        transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
 
         .price-filter {
           height: 180px;
@@ -752,7 +823,7 @@ html {
         border-radius: 0 5px 5px 0;
       }
 
-      .hide-filter-btn{
+      .hide-filter-btn {
         transform: translateX(-60px);
         transition: 0.4s linear;
       }
@@ -763,25 +834,123 @@ html {
       padding: 30px 30px 0;
       visibility: visible !important;
       opacity: 1 !important;
-      transition:  0.4s cubic-bezier(1, 0, 0, 1) !important;
+      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
     }
 
     .category-and-sorting {
+      align-items: normal;
+      padding: 16px 20px;
       .category-btns {
-        width: 350px;
-        button {
-          font-size: 15px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+        height: 75px !important;
+        li {
+          font-size: 13px;
+          margin-right: 10px;
         }
       }
 
       .sorting {
+        justify-content: flex-start !important;
         .dropholder {
+          height: 32px;
+          padding: 0;
           h5 {
-            font-size: 15px !important;
+            font-size: 13px;
           }
           .dropdown {
-            margin-left: 15px;
+            width: 140px;
+            margin-left: 12px;
+            p {
+              font-size: 13px;
+            }
+            i {
+              top: 2px;
+              &::before {
+                font-size: 10px;
+              }
+            }
           }
+
+          .menu {
+            width: 140px;
+            li {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 250px) and (max-width: 315px) {
+  .item {
+    .img-box {
+      height: 230px !important;
+    }
+    .info {
+      padding: 10px 10px 24px 10px !important;
+      .tour-date {
+        span,
+        i {
+          font-size: 11px !important;
+        }
+      }
+      .tour-name {
+        i {
+          font-size: 14px !important;
+        }
+        h4 {
+          font-size: 17px !important;
+        }
+      }
+      .slide-links {
+        a {
+          .top-info-box {
+              font-size: 10px !important;
+            }
+
+          i {
+            &::before {
+              font-size: 22px !important;
+            }
+          }
+          &:first-child {
+            padding: 8px 14px !important;
+            font-size: 11px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 288px) {
+  .category-and-sorting {
+    height: 148px !important;
+    padding: 12px 10px 10px !important;
+    .sorting {
+      margin-bottom: 15px;
+      .dropholder {
+        h5 {
+          font-size: 11px !important;
+        }
+
+        .dropdown {
+          padding: 0 0 0 8px !important;
+          width: 130px !important;
+          margin-left: 10px !important;
+
+          i {
+            right: 9px !important;
+          }
+        }
+
+        .menu {
+          width: 130px !important;
         }
       }
     }

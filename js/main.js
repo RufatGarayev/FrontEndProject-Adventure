@@ -49,7 +49,7 @@ $(document).ready(function () {
     $(".navbar-items").toggleClass("active");
     $(document.body).toggleClass("stop-scroll");
     $(".sidebar-filter-toggle").toggleClass("hide-filter-btn");
-  });
+   });
   // ======= Show or Hide navbar items when click on Hamburger btn - End ======= //
 
 
@@ -716,8 +716,9 @@ $(document).ready(function () {
       layoutMode: "fitRows"
   });
     
-  $(document).on("click", ".category-btns button", function(){
-      $(this).addClass("active-btn").siblings().removeClass("active-btn");
+  $(document).on("click", ".category-btns li a", function(){
+      $(this).addClass("active-btn");
+      $(this).parent().siblings().children().removeClass("active-btn");
   
       let selector = $(this).attr("data-filter");
       $(".tour-holder").isotope({
