@@ -71,7 +71,7 @@ header nav .navbar-items .links li a:hover, header nav .account li a:hover {
   color: #db7355;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #intro .banner-area .caption .button, #special-offers .owl-carousel .item .info .slide-links a:first-child, #view-tours .view-tours-btn a, #discount .discount_btn a, #popular-tours .owl-carousel .item .content .content-links a:first-of-type {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, .main-tourItem-design .info .slide-links a:first-child, #intro .banner-area .caption .button, #view-tours .view-tours-btn a, #discount .discount_btn a, #popular-tours .owl-carousel .item .content .content-links a:first-of-type {
   padding: 10px 24px;
   font-weight: 600;
   border: none;
@@ -86,7 +86,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   z-index: 1;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #intro .banner-area .caption .button::before, #special-offers .owl-carousel .item .info .slide-links a:first-child::before, #view-tours .view-tours-btn a::before, #discount .discount_btn a::before, #popular-tours .owl-carousel .item .content .content-links a:first-of-type::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, .main-tourItem-design .info .slide-links a:first-child::before, #intro .banner-area .caption .button::before, #view-tours .view-tours-btn a::before, #discount .discount_btn a::before, #popular-tours .owl-carousel .item .content .content-links a:first-of-type::before {
   content: "";
   border-radius: 3px;
   position: absolute;
@@ -106,12 +106,12 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
           transform-origin: left;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #intro .banner-area .caption .button:hover, #special-offers .owl-carousel .item .info .slide-links a:hover:first-child, #view-tours .view-tours-btn a:hover, #discount .discount_btn a:hover, #popular-tours .owl-carousel .item .content .content-links a:hover:first-of-type {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, .main-tourItem-design .info .slide-links a:hover:first-child, #intro .banner-area .caption .button:hover, #view-tours .view-tours-btn a:hover, #discount .discount_btn a:hover, #popular-tours .owl-carousel .item .content .content-links a:hover:first-of-type {
   color: white;
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #intro .banner-area .caption .button:hover::before, #special-offers .owl-carousel .item .info .slide-links a:first-child:hover::before, #view-tours .view-tours-btn a:hover::before, #discount .discount_btn a:hover::before, #popular-tours .owl-carousel .item .content .content-links a:first-of-type:hover::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, .main-tourItem-design .info .slide-links a:first-child:hover::before, #intro .banner-area .caption .button:hover::before, #view-tours .view-tours-btn a:hover::before, #discount .discount_btn a:hover::before, #popular-tours .owl-carousel .item .content .content-links a:first-of-type:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -194,7 +194,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   border-radius: 2px;
 }
 
-#special-offers .owl-carousel .item .info .slide-links a i::before, #popular-tours .owl-carousel .item .content .content-links a i::before {
+.main-tourItem-design .info .slide-links a i::before, #popular-tours .owl-carousel .item .content .content-links a i::before {
   color: #1b1b1b;
   font-size: 25px;
   -webkit-transition: 0.2s linear;
@@ -202,15 +202,15 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   margin-left: 0;
 }
 
-#special-offers .owl-carousel .item .info .slide-links a:hover, #popular-tours .owl-carousel .item .content .content-links a:hover {
+.main-tourItem-design .info .slide-links a:hover, #popular-tours .owl-carousel .item .content .content-links a:hover {
   text-decoration: none;
 }
 
-#special-offers .owl-carousel .item .info .slide-links a:hover i::before, #popular-tours .owl-carousel .item .content .content-links a:hover i::before {
+.main-tourItem-design .info .slide-links a:hover i::before, #popular-tours .owl-carousel .item .content .content-links a:hover i::before {
   color: #769484;
 }
 
-#special-offers .owl-carousel .item .info .slide-links a .top-info-box, #popular-tours .owl-carousel .item .content .content-links a .top-info-box {
+.main-tourItem-design .info .slide-links a .top-info-box, #popular-tours .owl-carousel .item .content .content-links a .top-info-box {
   display: inline-block;
   position: absolute;
   bottom: calc(100% + 8px);
@@ -234,7 +234,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   transition: all 0.2s ease-out;
 }
 
-#special-offers .owl-carousel .item .info .slide-links a .top-info-box::after, #popular-tours .owl-carousel .item .content .content-links a .top-info-box::after {
+.main-tourItem-design .info .slide-links a .top-info-box::after, #popular-tours .owl-carousel .item .content .content-links a .top-info-box::after {
   content: "";
   display: block;
   position: absolute;
@@ -247,12 +247,12 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   border-color: #fff transparent transparent transparent;
 }
 
-#special-offers .owl-carousel .item .info .slide-links a:hover .top-info-box, #popular-tours .owl-carousel .item .content .content-links a:hover .top-info-box {
+.main-tourItem-design .info .slide-links a:hover .top-info-box, #popular-tours .owl-carousel .item .content .content-links a:hover .top-info-box {
   bottom: calc(100% + 5px);
   opacity: 1;
 }
 
-#special-offers .owl-carousel .item .price-info, #popular-tours .owl-carousel .item .price-info {
+.main-tourItem-design .price-info, #popular-tours .owl-carousel .item .price-info {
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
   position: absolute;
@@ -265,23 +265,23 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   z-index: 11;
 }
 
-#special-offers .owl-carousel .item .price-info h5, #popular-tours .owl-carousel .item .price-info h5 {
+.main-tourItem-design .price-info h5, #popular-tours .owl-carousel .item .price-info h5 {
   font-size: 25px;
   font-family: "Times New Roman", Times, serif;
 }
 
-#special-offers .owl-carousel .item .price-info span, #popular-tours .owl-carousel .item .price-info span {
+.main-tourItem-design .price-info span, #popular-tours .owl-carousel .item .price-info span {
   font-size: 12px;
 }
 
 @media (min-width: 250px) and (max-width: 315px) {
-  #special-offers .owl-carousel .item .price-info, #popular-tours .owl-carousel .item .price-info {
+  .main-tourItem-design .price-info, #popular-tours .owl-carousel .item .price-info {
     padding: 7px 7px 12px 7px !important;
   }
-  #special-offers .owl-carousel .item .price-info h5, #popular-tours .owl-carousel .item .price-info h5 {
+  .main-tourItem-design .price-info h5, #popular-tours .owl-carousel .item .price-info h5 {
     font-size: 22px !important;
   }
-  #special-offers .owl-carousel .item .price-info span, #popular-tours .owl-carousel .item .price-info span {
+  .main-tourItem-design .price-info span, #popular-tours .owl-carousel .item .price-info span {
     font-size: 11px;
   }
 }
@@ -1948,6 +1948,153 @@ footer .footer-bottom .social-media ul {
   }
 }
 
+.main-tourItem-design {
+  padding: 1px;
+  margin: 10px 10px 10px;
+  background-color: white;
+  position: relative;
+}
+
+.main-tourItem-design .img-box {
+  height: 270px;
+  margin: 2px;
+  overflow: hidden;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+@media (min-width: 250px) and (max-width: 315px) {
+  .main-tourItem-design .img-box {
+    height: 280px;
+  }
+}
+
+.main-tourItem-design .img-box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.main-tourItem-design:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.main-tourItem-design .info {
+  padding: 20px 20px 30px 20px;
+}
+
+.main-tourItem-design .info .tour-date span,
+.main-tourItem-design .info .tour-date i {
+  color: #626b72;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.main-tourItem-design .info .tour-name {
+  padding: 12px 0 20px 0;
+}
+
+.main-tourItem-design .info .tour-name i {
+  font-size: 15px;
+  margin: 3px 5px 0 0;
+  color: #626b72;
+}
+
+.main-tourItem-design .info .tour-name h4 {
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  color: #252b2d;
+  font-weight: 500;
+}
+
+.main-tourItem-design .info .slide-links {
+  height: 38px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-tourItem-design .info .slide-links a {
+  position: relative;
+}
+
+.main-tourItem-design .info .slide-links a:first-child {
+  padding: 9px 16px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .main-tourItem-design .img-box {
+    height: 220px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .main-tourItem-design .info .tour-name i {
+    font-size: 14px !important;
+    margin: 4px 7px 0 0 !important;
+  }
+  .main-tourItem-design .info .slide-links a {
+    font-size: 10px !important;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 575.98px) {
+  .main-tourItem-design .img-box {
+    height: 300px !important;
+  }
+  .main-tourItem-design .info {
+    padding: 20px 30px 30px 30px !important;
+  }
+  .main-tourItem-design .info .tour-name h4 {
+    font-size: 20px !important;
+  }
+  .main-tourItem-design .info .slide-links a {
+    font-size: 13px !important;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 315px) {
+  .main-tourItem-design .img-box {
+    height: 230px !important;
+  }
+  .main-tourItem-design .info {
+    padding: 10px 10px 24px 10px !important;
+  }
+  .main-tourItem-design .info .tour-date span,
+  .main-tourItem-design .info .tour-date i {
+    font-size: 11px !important;
+  }
+  .main-tourItem-design .info .tour-name i {
+    font-size: 14px !important;
+  }
+  .main-tourItem-design .info .tour-name h4 {
+    font-size: 17px !important;
+  }
+  .main-tourItem-design .info .slide-links a .top-info-box {
+    font-size: 10px !important;
+  }
+  .main-tourItem-design .info .slide-links a i::before {
+    font-size: 22px !important;
+  }
+  .main-tourItem-design .info .slide-links a:first-child {
+    padding: 8px 14px !important;
+    font-size: 11px !important;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2162,111 +2309,6 @@ html {
   color: white;
 }
 
-#special-offers .owl-carousel .item {
-  margin: 10px;
-  padding: 1px;
-  background-color: white;
-  position: relative;
-  cursor: pointer;
-}
-
-#special-offers .owl-carousel .item .img-box {
-  height: 270px;
-  margin: 2px;
-  overflow: hidden;
-  -webkit-filter: brightness(90%);
-          filter: brightness(90%);
-}
-
-@media (min-width: 250px) and (max-width: 315px) {
-  #special-offers .owl-carousel .item .img-box {
-    height: 280px;
-  }
-}
-
-#special-offers .owl-carousel .item .img-box img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
-#special-offers .owl-carousel .item:hover img {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-}
-
-#special-offers .owl-carousel .item .info {
-  padding: 20px 20px 30px 20px;
-}
-
-#special-offers .owl-carousel .item .info .tour-date span,
-#special-offers .owl-carousel .item .info .tour-date i {
-  color: #626b72;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-#special-offers .owl-carousel .item .info .tour-name {
-  padding: 12px 0 20px 0;
-}
-
-#special-offers .owl-carousel .item .info .tour-name i {
-  font-size: 15px;
-  margin: 3px 5px 0 0;
-  color: #626b72;
-}
-
-#special-offers .owl-carousel .item .info .tour-name h4 {
-  font-size: 18px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 1px;
-  color: #252b2d;
-  font-weight: 500;
-}
-
-#special-offers .owl-carousel .item .info .slide-links {
-  height: 38px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#special-offers .owl-carousel .item .info .slide-links a {
-  position: relative;
-}
-
-#special-offers .owl-carousel .item .info .slide-links a:first-child {
-  padding: 9px 16px;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-
-@media (min-width: 470px) and (max-width: 575.98px) {
-  #special-offers .owl-carousel .item .img-box {
-    height: 300px !important;
-  }
-  #special-offers .owl-carousel .item .info .tour-name h4 {
-    font-size: 24px !important;
-  }
-  #special-offers .owl-carousel .item .info .slide-links a {
-    font-size: 13px !important;
-  }
-}
-
-@media (min-width: 250px) and (max-width: 299.98px) {
-  #special-offers .owl-carousel .info .slide-links a {
-    font-size: 10px !important;
-  }
-}
-
 @media (min-width: 900px) and (max-width: 999.98px) {
   #special-offers {
     padding: 100px 80px 120px !important;
@@ -2283,43 +2325,17 @@ html {
   #special-offers {
     padding: 100px 60px 110px 60px !important;
   }
-  #special-offers .img-box {
+  #special-offers .item .img-box {
     height: 320px !important;
   }
-  #special-offers .info .tour-name {
+  #special-offers .item .info .tour-name {
     padding: 17px 0 !important;
   }
-  #special-offers .info .tour-name h4 {
+  #special-offers .item .info .tour-name h4 {
     font-size: 24px !important;
   }
-  #special-offers .info .slide-links a {
+  #special-offers .item .info .slide-links a {
     font-size: 14px !important;
-  }
-}
-
-@media (min-width: 250px) and (max-width: 315px) {
-  #special-offers .item .img-box {
-    height: 230px !important;
-  }
-  #special-offers .item .info {
-    padding: 20px 10px 30px 10px !important;
-  }
-  #special-offers .item .info .tour-date span,
-  #special-offers .item .info .tour-date i {
-    font-size: 11px !important;
-  }
-  #special-offers .item .info .tour-name i {
-    font-size: 14px !important;
-  }
-  #special-offers .item .info .tour-name h4 {
-    font-size: 17px !important;
-  }
-  #special-offers .item .info .slide-links a i::before {
-    font-size: 22px !important;
-  }
-  #special-offers .item .info .slide-links a:first-child {
-    padding: 8px 14px !important;
-    font-size: 11px !important;
   }
 }
 

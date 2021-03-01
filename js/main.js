@@ -49,6 +49,30 @@ $(document).ready(function () {
     $(".navbar-items").toggleClass("active");
     $(document.body).toggleClass("stop-scroll");
     $(".sidebar-filter-toggle").toggleClass("hide-filter-btn");
+
+    if ($(".sidebar-area .filters").hasClass("show-sidebar")) {
+      $(".sidebar-area .filters").removeClass("show-sidebar");
+    }
+
+
+    let scrollAndWhiteBg = (background, body) => {
+      if (!$(".sidebar-area .filters").hasClass("show-sidebar")) {
+      $(background).removeClass("show-dark-bgcolor");
+      $(body).removeClass("stop-scroll");
+      }else{
+      $(background).addClass("show-dark-bgcolor");
+      $(body).addClass("stop-scroll");
+      }
+
+
+      if (!$(".navbar-items").hasClass("active")) {
+        $(body).removeClass("stop-scroll");
+      }else{
+        $(body).addClass("stop-scroll");
+      }
+    };
+
+    scrollAndWhiteBg(".dark-bgcolor", document.body);
    });
   // ======= Show or Hide navbar items when click on Hamburger btn - End ======= //
 
@@ -114,7 +138,7 @@ $(document).ready(function () {
         range: true,
         min: 50,
         max: 150,
-        values: [ 50, 150 ],
+        values: [ 55, 150 ],
         slide: function( event, ui ) {
         $( "#amount" ).val( "$" + ui.values[ 0 ] + "  -  $" + ui.values[ 1 ] );
         }
@@ -713,10 +737,12 @@ $(document).ready(function () {
   // ======= Tour Filter and Background-color of Button when click on it - Start ======= //
   $(".tour-holder").isotope({
       itemSelector: ".item-col",
+      percentPosition: true,
       layoutMode: "fitRows"
   });
     
-  $(document).on("click", ".category-btns li a", function(){
+  $(document).on("click", ".category-btns li a", function(e){
+    e.preventDefault();
       $(this).addClass("active-btn");
       $(this).parent().siblings().children().removeClass("active-btn");
   

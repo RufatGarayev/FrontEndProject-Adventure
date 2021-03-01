@@ -37,9 +37,6 @@
 
   #special-offers {
     padding: 100px 30px 120px !important;
-    .img-box {
-      height: 220px !important;
-    }
   }
 
   #discount {
@@ -407,21 +404,6 @@
         .owl-dot {
           span {
             width: 23px !important;
-          }
-        }
-      }
-      .item {
-        .info {
-          .tour-name {
-            i {
-              font-size: 14px !important;
-              margin: 4px 7px 0 0 !important;
-            }
-          }
-          .slide-links {
-            a {
-              font-size: 10px !important;
-            }
           }
         }
       }
@@ -1049,18 +1031,6 @@
         .owl-dot {
           span {
             width: 20px !important;
-          }
-        }
-      }
-
-      .item {
-        .info {
-          .slide-links {
-            a {
-              .top-info-box {
-                font-size: 10px !important;
-              }
-            }
           }
         }
       }

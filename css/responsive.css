@@ -27,9 +27,6 @@
   #special-offers {
     padding: 100px 30px 120px !important;
   }
-  #special-offers .img-box {
-    height: 220px !important;
-  }
   #discount .discount_title h1 {
     font-size: 58px !important;
   }
@@ -312,13 +309,6 @@
   }
   #special-offers .owl-carousel .owl-dots .owl-dot span {
     width: 23px !important;
-  }
-  #special-offers .owl-carousel .item .info .tour-name i {
-    font-size: 14px !important;
-    margin: 4px 7px 0 0 !important;
-  }
-  #special-offers .owl-carousel .item .info .slide-links a {
-    font-size: 10px !important;
   }
   #view-tours {
     padding: 55px 0 88px 0 !important;
@@ -830,9 +820,6 @@
   }
   #special-offers .owl-carousel .owl-dots .owl-dot span {
     width: 20px !important;
-  }
-  #special-offers .owl-carousel .item .info .slide-links a .top-info-box {
-    font-size: 10px !important;
   }
   #view-tours {
     padding: 50px 0 75px 0 !important;
