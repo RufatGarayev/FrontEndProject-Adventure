@@ -777,6 +777,17 @@ $(document).ready(function () {
     $(document.body).toggleClass("stop-scroll");
   });
   // ======= Show or Hide Sidebar Filter when click on filter btn - End ======= //
+
+
+  // ======= Show an appropriate Image when click a small image - Start ======= //
+  $(document).on("click", "#tour .small-img-box a", function (e) {
+    e.preventDefault();
+
+    $(this).parent().addClass("#tour active-img");
+    $(this).parent().parent().siblings().find(".small-img-box").removeClass("#tour active-img");   
+    $("#tour .tour-img-box img").attr("src", $(this).attr("href"));
+  });
+  // ======= Show an appropriate Image when click a small image - End ======= //
 });
 
 

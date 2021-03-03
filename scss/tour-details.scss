@@ -1,0 +1,286 @@
+@import "../scss/partials/extends";
+@import "../scss/partials/variables";
+@import "../scss/reused_sections/header";
+@import "../scss/reused_sections/footer";
+@import "../scss/reused_sections/preloader";
+@import "../scss/reused_sections/subscribe";
+@import "../scss/reused_sections/back-to-top";
+@import "../scss/reused_sections/intro-page_caption";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "ludicrous";
+  src: url(../WOFF-web-fonts/Ludicrous.woff);
+  font-weight: 100;
+}
+
+.stop-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+// ======= Intro Section Start ======= //
+#intro {
+  background-image: url(../img/bg-images/wood.jpg);
+}
+// ======= Intro Section End ======= //
+
+// ======= Tour Section Start ======= //
+#tour {
+  padding: 70px 0 60px;
+
+  .tour-basic-info {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eadede;
+    img {
+      object-fit: cover;
+    }
+
+    .tour-img-box {
+      padding-bottom: 20px;
+      height: 350px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .small-img-box {
+      height: 80px;
+      padding: 2px;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .active-img {
+      border: 1px solid rgb(58, 59, 116);
+    }
+
+    .tour-info {
+      padding: 0 20px 0 10px;
+      .top-part {
+        width: 448px;
+        justify-content: space-between;
+        padding-right: 130px;
+        .caption {
+          h2 {
+            margin-bottom: 0;
+          }
+        }
+        .rating {
+          width: 110px;
+          align-items: center;
+          i {
+            color: rgb(118, 148, 132);
+            font-size: 15px;
+          }
+        }
+      }
+
+      .basic-info {
+        height: 85px;
+        width: 460px;
+        padding: 22px 0 17px;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+          &::before {
+            font-size: 26px;
+            margin: 0 10px 0 0;
+          }
+        }
+
+        h6 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        .price {
+          i {
+            &::before {
+              margin: 0;
+              font-size: 25px;
+            }
+          }
+          h5 {
+            font-size: 24px;
+            span {
+              font-size: 18px;
+              font-weight: 500;
+            }
+            margin-bottom: 0;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .addToCart {
+      padding: 20px 10px;
+      input[type="number"] {
+        border: 1px solid #d8d8d8;
+        padding: 7px 14px;
+        border-radius: 3px;
+        margin-right: 5px;
+      }
+
+      .addToCart-btn {
+        @extend %website-button;
+        text-transform: none;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 9px 24px;
+      }
+    }
+  }
+
+  .descAndReviews-wrapper {
+    padding: 50px 0;
+    .tour-tabs {
+      padding-right: 40px;
+      li {
+        height: 47px;
+        line-height: 45px;
+        border-bottom: 1px solid #eadede;
+        a {
+          font-size: 17px;
+          color: #64736b;
+          transition: 0.3s linear;
+          font-weight: 700;
+          &:hover {
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+        .active-tabBtn {
+          color: black;
+        }
+      }
+    }
+
+    .tab-items {
+      .reviews {
+        h4,
+        h6 {
+          font-weight: 700;
+        }
+        p {
+          margin-bottom: 20px;
+        }
+        .rating-caption {
+          margin-bottom: 6px;
+        }
+
+        .rating {
+          width: 110px;
+          margin-bottom: 20px;
+          align-items: center;
+          a {
+            font-size: 15px;
+            color: black;
+          }
+        }
+
+        #review-form {
+          .input-area {
+            width: 100%;
+            height: 80px;
+            position: relative;
+            //   font-size: 16px;
+            //   color: #3c3c3c;
+            //   &:not(:first-child) {
+            //     margin-top: 15px;
+            //   }
+
+            //   i {
+            //     position: absolute;
+            //     top: 18px;
+            //     right: 25px;
+            //     font-size: 18px;
+            //     color: red;
+            //     z-index: 0;
+            //   }
+
+            //   .success-icon {
+            //     color: green;
+            //     z-index: 5;
+            //   }
+
+            input {
+              border-radius: 4px;
+              padding: 0 25px;
+              width: 100%;
+              height: 50px;
+              border: 1px solid rgba(0, 0, 0, 0.5);
+              outline: none;
+              &:focus {
+                border: 1px solid black;
+              }
+            }
+
+            .review-area {
+              width: 100%;
+              padding: 13px 25px;
+              border-radius: 4px;
+            }
+          }
+
+          .review-area-holder {
+            height: 155px;
+            margin-bottom: 14px;
+          }
+
+          .bottom-links {
+            padding-top: 22px;
+
+            .review-btn {
+              @extend %website-button;
+              text-transform: none;
+              padding: 8px 36px;
+              cursor: pointer;
+              &:hover {
+                color: white !important;
+              }
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+
+      .tab-holder{
+          display: none;
+      }
+    }
+  }
+}
+// ======= Tour Section End ======= //
+
+
+
+// ======= Responsive Design Start ======= //
+// ======= Responsive Design End ======= //

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="/plugins/owl-carousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/plugins/owl-carousel/assets/owl.theme.default.min.css" />
+    <!-- animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- google-fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!-- flaticon.css -->
+    <link rel="stylesheet" href="font/flaticon.css">
+    <!-- responsive.css -->
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <!-- tour-details.css -->
+    <link rel="stylesheet" href="css/tour-details.css">
+    <title>Tour Details | Adventure</title>
+</head>
+
+<body>
+    <!-- ======= Loader Start ======= -->
+    <div class="loading">
+        <div class="loading-text">
+            <span class="loading-text-words" data-preloader="L">L</span>
+            <span class="loading-text-words" data-preloader="O">O</span>
+            <span class="loading-text-words" data-preloader="A">A</span>
+            <span class="loading-text-words" data-preloader="D">D</span>
+            <span class="loading-text-words" data-preloader="I">I</span>
+            <span class="loading-text-words" data-preloader="N">N</span>
+            <span class="loading-text-words" data-preloader="G">G</span>
+        </div>
+    </div>
+    <!-- ======= Loader End ======= -->
+
+    <!-- ======= Back To Top Start ======= -->
+    <button id="topBtn"><i class="flaticon-upload"></i></button>
+    <!-- ======= Back To Top End ======= -->
+
+
+    <!-- ======= Top Header Start ======= -->
+    <section id="top-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 p-0">
+                    <div class="phone text-white">
+                        <span><i class="fas fa-phone-alt"></i> +994 517779977</span>
+                    </div>
+                </div>
+                <div class="col-6 p-0">
+                    <div class="langs">
+                        <ul class="d-flex">
+                            <li><a href="#">Az</a></li>
+                            <li><a href="#">En</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= Top Header End ======= -->
+
+    <!-- ======= Main Header Start ======= -->
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/logo/travel-logo.png" alt="logo"></a>
+                <div class="navbar-items d-flex">
+                    <ul class="navbar-nav links middle-links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                            <hr>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                            <hr>
+                        </li>
+                        <li class="nav-item active-link">
+                            <a class="nav-link" href="tours.html">Tours</a>
+                            <hr>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                            <hr class="contact-line">
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav links account">
+                    <li class="nav-item">
+                        <a class="nav-link search-btn-first icon-btn" href="#"><i class="flaticon-loupe"></i></a>
+                        <div class="search-area-holder holder-div">
+                            <input type="text" placeholder="Region Name.." name="search">
+                            <a class="search-btn-second" href="#"><i class="flaticon-loupe"></i></a>
+                        </div>
+                    </li>
+                    <li class="nav-item user">
+                        <a class="nav-link user-btn icon-btn" href="#">
+                            <i class="flaticon-user-1"></i>
+                        </a>
+                        <div class="login-box-holder holder-div">
+                            <form action="#" method="POST" id="login">
+                                <div class="login-box same-style-input-area">
+                                    <div class="input-area">
+                                        <input class="email login-email" type="text" name="email" placeholder="Email">
+                                        <i class="fas fa-check-circle d-none success-icon"></i>
+                                        <i class="fas fa-exclamation-circle d-none"></i>
+                                        <small class="alert login-email-alert"></small>
+                                    </div>
+                                    <div class="input-area">
+                                        <input class="password login-pass" type="password" name="password"
+                                            placeholder="Password">
+                                        <i class="fas fa-check-circle d-none success-icon"></i>
+                                        <i class="fas fa-exclamation-circle d-none"></i>
+                                        <small class="alert login-pass-alert"></small>
+                                    </div>
+                                    <div class="forgot-area">
+                                        <a class="forgotten-password-link" href="#">Forgotten Password?</a>
+                                    </div>
+                                    <div class="bottom-links">
+                                        <a href="sign-up.html" class="sign-up">Sign Up</a>
+                                        <button type="submit" class="sign-in">Sign In</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <form action="#" method="GET" id="reset-form">
+                                <div class="reset-password same-style-input-area d-none">
+                                    <p>Reset Password</p>
+                                    <div class="input-area">
+                                        <input class="email-for-reset-pass" type="text" name="email"
+                                            placeholder="Please enter your Email">
+                                        <i class="fas fa-check-circle d-none success-icon"></i>
+                                        <i class="fas fa-exclamation-circle d-none"></i>
+                                        <small class="alert reset-email-alert"></small>
+                                    </div>
+                                    <div class="bottom-links pt-2">
+                                        <a href="#" class="go-back">Back</a>
+                                        <button type="submit" class="reset">Reset</button>
+                                    </div>
+                                </div>
+                                <div class="success hidden d-flex text-center align-items-center">
+                                    <i class="far fa-check-circle"></i>
+                                    <h4>Thank You!</h4>
+                                    <p>To reset password, the message was sent to your Email Address.</p>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="flaticon-shopping-bag">
+                                <sup><span>0</span></sup>
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ======= Main Header End ======= -->
+
+
+    <!-- ======= Main Part Start ======= -->
+    <main>
+        <!-- ======= Intro Section Start ======= -->
+        <section id="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-caption d-flex justify-content-center align-items-center">
+                            <h1>Tour Details</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= Intro Section End ======= -->
+
+
+        <!-- ======= Tour Section Start ======= -->
+        <section id="tour">
+            <div class="container">
+                <div class="tour-basic-info">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="tour-img-box">
+                                        <img class="img-fluid" src="/img/special-offers/special-offer1.jpg"
+                                            alt="gabala">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="small-img-box active-img">
+                                        <a href="/img/special-offers/special-offer1.jpg">
+                                            <img class="img-fluid" src="/img/special-offers/special-offer1.jpg"
+                                                alt="gabala">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="small-img-box">
+                                        <a href="/img/tour-details/tour-img1.jpg" target="tour-img-box">
+                                            <img class="img-fluid" src="/img/tour-details/tour-img1.jpg" alt="gabala">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="small-img-box">
+                                        <a href="/img/tour-details/tour-img2.jpg" target="tour-img-box">
+                                            <img class="img-fluid" src="/img/tour-details/tour-img2.jpg" alt="gabala">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="small-img-box">
+                                        <a href="/img/tour-details/tour-img3.jpg" target="tour-img-box">
+                                            <img class="img-fluid" src="/img/tour-details/tour-img3.jpg" alt="gabala">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="tour-info">
+                                <div class="top-part d-flex">
+                                    <div class="caption">
+                                        <h2>Gabala Tour</h2>
+                                    </div>
+                                    <div class="rating d-flex justify-content-between">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="basic-info d-flex">
+                                    <div class="price d-flex align-items-center">
+                                        <i class="flaticon-dollar"></i>
+                                        <h5>79<span> / person</span></h5>
+                                    </div>
+                                    <div class="photo-friendly d-flex align-items-center">
+                                        <i class="flaticon-camera"></i>
+                                        <h6>Photo Friendly</h6>
+                                    </div>
+                                    <div class="time d-flex align-items-center">
+                                        <i class="flaticon-schedule"></i>
+                                        <h6>2 Days</h6>
+                                    </div>
+                                </div>
+                                <div class="text-part">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Nam vitae ornare massa, at consequat ipsum. Sed ullamcorper,
+                                        dui consequat vehicula volutpat, dolor neque hendrerit elit.
+                                        Nam vitae ornare massa, at consequat ipsum.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="addToCart d-flex">
+                                <form action="#">
+                                    <input type="number" name="quantity" value="1" min="1" max="10">
+                                    <button class="addToCart-btn" type="submit">Add To Cart</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descAndReviews-wrapper">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <ul class="tour-tabs">
+                                <li><a class="active-tabBtn" href="#" data-target-section="description">Description</a></li>
+                                <li><a href="#" data-target-section="reviews">Reviews (0)</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="tab-items">
+                                <div class="description tab-holder show-tab">
+                                    <h4>Description</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip
+                                        ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt
+                                        mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <div class="reviews tab-holder">
+                                    <h4>Reviews</h4>
+                                    <p>Your email address will not be published.</p>
+                                    <h6 class="rating-caption">Your Rating</h6>
+                                    <div class="rating d-flex justify-content-between">
+                                        <a href="#"><i class="far fa-star"></i></a>
+                                        <a href="#"><i class="far fa-star"></i></a>
+                                        <a href="#"><i class="far fa-star"></i></a>
+                                        <a href="#"><i class="far fa-star"></i></a>
+                                        <a href="#"><i class="far fa-star"></i></a>
+                                    </div>
+                                    <form action="#" method="GET" id="review-form">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="review-area-holder input-area">
+                                                    <h6>Your Review</h6>
+                                                    <textarea class="review-area" name="review" rows="4"
+                                                        cols="55"></textarea>
+                                                    <!-- <small class="msg-alert alert"></small> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="input-area">
+                                                    <h6>Name</h6>
+                                                    <input class="review-name" type="text" name="name">
+                                                    <!-- <i class="fas fa-check-circle d-none success-icon"></i>
+                                                <i class="fas fa-exclamation-circle d-none"></i>
+                                                <small class="name-alert alert"></small> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="input-area">
+                                                    <h6>Email</h6>
+                                                    <input class="review-email" type="text" name="email">
+                                                    <!-- <i class="fas fa-check-circle d-none success-icon"></i>
+                                                <i class="fas fa-exclamation-circle d-none"></i>
+                                                <small class="msg-email-alert alert"></small> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="bottom-links">
+                                                    <button type="submit" class="review-btn">Send</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= Tour Section End ======= -->
+
+
+        <!-- ======= Subscribe Section Start ======= -->
+        <section id="subscribe">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- subscribe-section title-->
+                        <div class="subscribe-title d-flex flex-column justify-content-center align-items-center"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            <h1>Subscribe</h1>
+                            <hr>
+                            <p>Lorem Ipsum is simply dummy text the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 offset-lg-2 offset-md-2">
+                        <!-- email area -->
+                        <div class="form-holder d-flex justify-content-center">
+                            <form class="w-100" action="#" method="GET" id="subscribe-form">
+                                <div class="form-field">
+                                    <input type="email" name="email" class="subscribe-email"
+                                        placeholder="Email Address" />
+                                    <button type="submit" class="subs-btn" name="submit">Subscribe</button>
+                                </div>
+                                <i class="fas fa-check-circle d-none success-icon"></i>
+                                <i class="fas fa-exclamation-circle d-none"></i>
+                                <small class="alert subs-email-alert"></small>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2"></div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= Subscribe Section End ======= -->
+    </main>
+    <!-- ======= Main Part End ======= -->
+
+
+    <!-- ======= Footer Start ======= -->
+    <footer>
+        <div class="container">
+            <!-- Footer Top Start -->
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="about-us">
+                            <h4>About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+                        <div class="quick-links">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="tours.html">Tours</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+                        <div class="legal">
+                            <h4>Legal</h4>
+                            <ul>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="contact">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i><span>Baku, Azerbaijan</span></li>
+                                <li><i class="fas fa-phone-alt"></i><span>+994 517779977</span></li>
+                                <li><i class="far fa-envelope"></i><span>adventure@gmail.com</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Top End -->
+
+            <!-- Footer Bottom Start -->
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 copyright-bottom">
+                        <div class="copyright-holder">
+                            <p>Copyright © 2021. Created by Rufat Garayev</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 social-media-top">
+                        <div class="social-media d-flex">
+                            <ul class="d-flex">
+                                <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="youtube" href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom End -->
+        </div>
+    </footer>
+    <!-- ======= Footer End ======= -->
+
+
+    <!-- animate on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({});
+    </script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/b7e00c266a.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- isotope-filter -->
+    <script src="plugins/isotope-filter-plugin/isotope.pkgd.min.js"></script>
+    <!-- owl-carousel.js -->
+    <script src="plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    <!-- main.js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
