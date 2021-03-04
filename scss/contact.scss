@@ -78,7 +78,7 @@ html {
         position: absolute;
         top: -2px;
         left: -25px;
-        color: rgb(86, 104, 94);
+        color: black;
         font-weight: 900;
         font-size: 20px;
       }
@@ -160,7 +160,8 @@ html {
 
         .sign-up-btn {
           @extend %website-button;
-          padding: 10px 36px;
+          padding: 8px 36px;
+          text-transform: none;
           cursor: pointer;
           &:hover {
             color: white !important;

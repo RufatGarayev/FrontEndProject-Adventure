@@ -7,6 +7,7 @@
 @import "../scss/reused_sections/back-to-top";
 @import "../scss/reused_sections/intro-page_caption";
 
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +22,10 @@
   font-family: "ludicrous";
   src: url(../WOFF-web-fonts/Ludicrous.woff);
   font-weight: 100;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 html {
@@ -71,7 +76,7 @@ html {
       padding: 0;
 
       &:last-of-type{
-        margin-top: 10px;
+        margin-top: 15px;
       }
     }
   }
@@ -116,7 +121,7 @@ html {
       padding: 0;
 
       &:last-of-type{
-        margin-top: 10px;
+        margin-top: 15px;
       }
     }
   }

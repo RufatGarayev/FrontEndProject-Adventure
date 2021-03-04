@@ -8,7 +8,6 @@
 @import "../scss/reused_sections/intro-page_caption";
 @import "../scss/reused_sections/main_tourItem_design";
 
-
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +48,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 9999;
 }
 
 .show-dark-bgcolor {
@@ -57,7 +56,6 @@ html {
   visibility: visible !important;
 }
 // ======= Dark Bg-Color End ======= //
-
 
 // ======= Intro Section Start ======= //
 #intro {
@@ -140,6 +138,29 @@ html {
         }
 
         @extend %checkbox;
+      }
+    }
+
+    .sidebar-filter-toggle {
+      display: none;
+      box-shadow: 0px 0px 2px 0px #edbfbf;
+      background-color: white;
+      width: 44px;
+      height: 44px;
+      position: absolute;
+      top: calc(64% - 30px);
+      right: -43px;
+      border-radius: 0 5px 5px 0;
+
+      i {
+        line-height: 44px;
+        &::before {
+          font-size: 38px;
+          color: black;
+          margin: 0;
+          text-align: center;
+          margin-left: 3px;
+        }
       }
     }
   }
@@ -273,17 +294,17 @@ html {
     }
   }
 
-  .tour-holder{
-    .item{
-      .discount-price{
+  .tour-holder {
+    .item {
+      .discount-price {
         background-color: rgba(255, 0, 0, 0.5);
-        h5{
+        h5 {
           font-size: 16px;
           text-decoration: line-through;
           margin-bottom: 0;
         }
-        h3{
-          font-family: 'Times New Roman', Times, serif;
+        h3 {
+          font-family: "Times New Roman", Times, serif;
           margin-bottom: 5px;
           font-size: 25px;
         }
@@ -297,27 +318,27 @@ html {
     justify-content: center;
     padding-top: 30px;
 
-    .pagination{
+    .pagination {
       width: 80px;
       display: flex;
       justify-content: space-between;
 
       li {
-        &:focus{
-          outline: 0!important;
+        &:focus {
+          outline: 0 !important;
         }
-        a{
-          color: rgb(58,59,116);
+        a {
+          color: rgb(58, 59, 116);
           border-radius: 4px;
-          &:hover{
+          &:hover {
             background-color: white;
-            border: 1px solid rgb(58,59,116);
+            border: 1px solid rgb(58, 59, 116);
           }
         }
-        .active{
-          border: 1px solid rgb(58,59,116);
+        .active {
+          border: 1px solid rgb(58, 59, 116);
           color: white;
-          background-color: rgb(58,59,116) !important;
+          background-color: rgb(58, 59, 116) !important;
         }
       }
     }
@@ -399,16 +420,7 @@ html {
       }
 
       .sidebar-filter-toggle {
-        background: #fff url(../img/filter_icon.svg) no-repeat 50%;
-        background-size: 45%;
-        box-shadow: 0px 0px 2px 0px #edbfbf;
         display: block;
-        width: 48px;
-        height: 48px;
-        position: absolute;
-        top: calc(50% - 25px);
-        right: -48px;
-        border-radius: 0 5px 5px 0;
       }
 
       .hide-filter-btn {
@@ -418,7 +430,6 @@ html {
     }
 
     .show-sidebar {
-      // width: calc(100vw - 60px) !important;
       width: 350px !important;
       padding: 30px 30px 0;
       visibility: visible !important;
@@ -446,9 +457,9 @@ html {
       }
     }
 
-    .tour-holder{
-      .item{
-        .info{
+    .tour-holder {
+      .item {
+        .info {
           padding: 20px 30px 30px 30px !important;
         }
       }
@@ -499,16 +510,7 @@ html {
       }
 
       .sidebar-filter-toggle {
-        background: #fff url(../img/filter_icon.svg) no-repeat 50%;
-        background-size: 45%;
-        box-shadow: 0px 0px 2px 0px #edbfbf;
         display: block;
-        width: 48px;
-        height: 48px;
-        position: absolute;
-        top: calc(50% - 25px);
-        right: -48px;
-        border-radius: 0 5px 5px 0;
       }
 
       .hide-filter-btn {
@@ -534,7 +536,7 @@ html {
         width: 280px;
         li {
           font-size: 13px;
-          a{
+          a {
             padding: 3px 12px;
           }
         }
@@ -625,16 +627,7 @@ html {
       }
 
       .sidebar-filter-toggle {
-        background: #fff url(../img/filter_icon.svg) no-repeat 50%;
-        background-size: 45%;
-        box-shadow: 0px 0px 2px 0px #edbfbf;
         display: block;
-        width: 48px;
-        height: 48px;
-        position: absolute;
-        top: calc(50% - 25px);
-        right: -48px;
-        border-radius: 0 5px 5px 0;
       }
 
       .hide-filter-btn {
@@ -745,16 +738,16 @@ html {
       }
 
       .sidebar-filter-toggle {
-        background: #fff url(../img/filter_icon.svg) no-repeat 50%;
-        background-size: 45%;
-        box-shadow: 0px 0px 2px 0px #edbfbf;
         display: block;
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        top: calc(50% - 25px);
-        right: -40px;
-        border-radius: 0 5px 5px 0;
+        width: 38px;
+        height: 38px;
+        right: -38px;
+        i{
+          line-height: 39px;
+          &::before{
+            font-size: 32px;
+          }
+        }
       }
 
       .hide-filter-btn {

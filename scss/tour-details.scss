@@ -36,16 +36,16 @@ html {
   overflow: hidden;
 }
 
-
 // ======= Intro Section Start ======= //
 #intro {
   background-image: url(../img/bg-images/wood.jpg);
+  text-align: center;
 }
 // ======= Intro Section End ======= //
 
 // ======= Tour Section Start ======= //
 #tour {
-  padding: 70px 0 60px;
+  padding: 70px 0;
 
   .tour-basic-info {
     padding-bottom: 50px;
@@ -55,30 +55,42 @@ html {
     }
 
     .tour-img-box {
-      padding-bottom: 20px;
+      margin: 0 5px 20px;
       height: 350px;
+      overflow: hidden;
       img {
         height: 100%;
         width: 100%;
+        filter: brightness(85%);
+        &:hover {
+          transform: scale(1.3);
+        }
       }
     }
 
     .small-img-box {
+      transition: 0.3s ease-in-out;
+      border: 2px solid white;
       height: 80px;
+      margin: 5px;
       padding: 2px;
 
       img {
         height: 100%;
         width: 100%;
       }
+
+      &:hover {
+        border: 2px solid rgb(58, 59, 116);
+      }
     }
 
     .active-img {
-      border: 1px solid rgb(58, 59, 116);
+      border: 2px solid rgb(58, 59, 116);
     }
 
     .tour-info {
-      padding: 0 20px 0 10px;
+      padding: 0 0 0 10px;
       .top-part {
         width: 448px;
         justify-content: space-between;
@@ -86,13 +98,14 @@ html {
         .caption {
           h2 {
             margin-bottom: 0;
+            font-weight: 700;
           }
         }
         .rating {
           width: 110px;
           align-items: center;
           i {
-            color: rgb(118, 148, 132);
+            color: rgb(58, 59, 116);
             font-size: 15px;
           }
         }
@@ -135,6 +148,11 @@ html {
           }
         }
       }
+
+      .text-part {
+        text-align: justify;
+        @extend %paragraph;
+      }
     }
 
     .addToCart {
@@ -157,7 +175,7 @@ html {
   }
 
   .descAndReviews-wrapper {
-    padding: 50px 0;
+    padding: 50px 0 0;
     .tour-tabs {
       padding-right: 40px;
       li {
@@ -182,13 +200,19 @@ html {
     }
 
     .tab-items {
+      padding-top: 8px;
+      h4,
+      h6 {
+        font-weight: 700;
+      }
+      p{
+        @extend %paragraph;
+        padding-top: 0 !important;
+      }
+
       .reviews {
-        h4,
-        h6 {
-          font-weight: 700;
-        }
         p {
-          margin-bottom: 20px;
+          margin-bottom: 25px;
         }
         .rating-caption {
           margin-bottom: 6px;
@@ -196,7 +220,7 @@ html {
 
         .rating {
           width: 110px;
-          margin-bottom: 20px;
+          margin-bottom: 25px;
           align-items: center;
           a {
             font-size: 15px;
@@ -209,25 +233,6 @@ html {
             width: 100%;
             height: 80px;
             position: relative;
-            //   font-size: 16px;
-            //   color: #3c3c3c;
-            //   &:not(:first-child) {
-            //     margin-top: 15px;
-            //   }
-
-            //   i {
-            //     position: absolute;
-            //     top: 18px;
-            //     right: 25px;
-            //     font-size: 18px;
-            //     color: red;
-            //     z-index: 0;
-            //   }
-
-            //   .success-icon {
-            //     color: green;
-            //     z-index: 5;
-            //   }
 
             input {
               border-radius: 4px;
@@ -272,8 +277,8 @@ html {
         }
       }
 
-      .tab-holder{
-          display: none;
+      .tab-content:not(:first-of-type) {
+        display: none;
       }
     }
   }
@@ -283,4 +288,295 @@ html {
 
 
 // ======= Responsive Design Start ======= //
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .tour-basic-info {
+    .tour-info {
+      .basic-info {
+        width: 436px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .tour-basic-info {
+    .tour-img-box {
+      height: 400px !important;
+    }
+
+    .small-img-box {
+      height: 90px !important;
+    }
+
+    .tour-info {
+      padding: 50px 20px 0 10px !important;
+    }
+  }
+
+  .descAndReviews-wrapper {
+    .tab-items {
+      #review-form {
+        .name-area,
+        .email-area {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #tour {
+    padding: 40px 0;
+    .tour-basic-info {
+      .tour-img-box {
+        height: 320px !important;
+      }
+
+      .small-img-box {
+        height: 70px !important;
+      }
+
+      .tour-info {
+        padding: 40px 20px 0 10px !important;
+      }
+    }
+
+    .descAndReviews-wrapper {
+      .tab-items {
+        padding-top: 30px !important;
+        .reviews {
+          p,
+          .rating {
+            margin-bottom: 27px !important;
+          }
+
+          #review-form {
+            .name-area,
+            .email-area {
+              margin-top: 15px;
+              input {
+                height: 45px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #tour {
+    padding: 50px 0;
+    .tour-basic-info {
+      .tour-img-box {
+        height: 270px !important;
+        margin: 0 3px 20px;
+      }
+
+      .small-img-box {
+        height: 60px !important;
+        margin: 3px;
+      }
+
+      .tour-info {
+        padding: 40px 20px 0 10px !important;
+
+        .top-part {
+          width: 305px;
+          padding: 0;
+          .caption {
+            h2 {
+              font-size: 30px !important;
+            }
+          }
+
+          .rating {
+            width: 100px;
+            i {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .basic-info {
+          height: 172px;
+          width: 156px;
+          padding: 30px 0 26px;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .price {
+            i {
+              &::before {
+                font-size: 27px;
+              }
+            }
+
+            h5 {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+    }
+
+    .descAndReviews-wrapper {
+      .tab-items {
+        padding-top: 30px !important;
+        .reviews {
+          p,
+          .rating {
+            margin-bottom: 27px !important;
+          }
+
+          #review-form {
+            .name-area,
+            .email-area {
+              margin-top: 15px;
+              input {
+                height: 45px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #tour {
+    padding: 50px 0;
+    .tour-basic-info {
+      .tour-img-box {
+        height: 200px !important;
+        margin: 0 1px 20px;
+      }
+
+      .small-img-box {
+        height: 50px !important;
+        margin: 1px;
+      }
+
+      .tour-info {
+        padding: 30px 0 0 !important;
+        .top-part {
+          width: 180px;
+          height: 55px;
+          flex-direction: column;
+          padding: 0;
+
+          .caption {
+            h2 {
+              font-size: 24px !important;
+            }
+          }
+
+          .rating {
+            width: 90px;
+            i {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .basic-info {
+          height: 150px;
+          width: 156px;
+          padding: 30px 0 15px;
+          flex-direction: column;
+          align-items: flex-start;
+
+          i {
+            &::before {
+              font-size: 22px;
+            }
+          }
+
+          h6 {
+            font-size: 16px;
+          }
+
+          .price {
+            i {
+              &::before {
+                font-size: 25px;
+              }
+            }
+
+            h5 {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+
+      .addToCart {
+        form {
+          input {
+            padding: 5px 14px !important;
+          }
+
+          button{
+            font-size: 13px !important;
+            padding: 8px 24px !important;
+          }
+        }
+      }
+    }
+
+    .descAndReviews-wrapper {
+      .tour-tabs{
+        li{
+          a{
+            font-size: 15px !important;
+          }
+        }
+      }
+
+      .tab-items {
+        padding-top: 30px !important;
+        h4{
+          font-size: 20px
+        }
+        h6{
+          font-size: 15px;
+        }
+
+        .reviews {
+          p,
+          .rating {
+            margin-bottom: 27px !important;
+          }
+
+          .rating{
+            a{
+              font-size: 14px;
+            }
+          }
+
+          #review-form {
+            .name-area,
+            .email-area {
+              margin-top: 7px;
+              input {
+                height: 42px !important;
+                padding: 0 15px;
+              }
+            }
+
+            .bottom-links{
+              button{
+                font-size: 14px !important;
+                padding: 7px 32px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 // ======= Responsive Design End ======= //

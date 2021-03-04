@@ -1894,6 +1894,10 @@ footer .footer-bottom .social-media ul {
   font-weight: 100;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1936,7 +1940,7 @@ html {
 }
 
 #our-story .text p:last-of-type {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 #our-story .our-story-pic {
@@ -1972,7 +1976,7 @@ html {
 }
 
 #our-mission .text p:last-of-type {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 #our-mission .our-mission-pic {

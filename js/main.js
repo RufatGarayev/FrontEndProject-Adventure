@@ -49,30 +49,6 @@ $(document).ready(function () {
     $(".navbar-items").toggleClass("active");
     $(document.body).toggleClass("stop-scroll");
     $(".sidebar-filter-toggle").toggleClass("hide-filter-btn");
-
-    if ($(".sidebar-area .filters").hasClass("show-sidebar")) {
-      $(".sidebar-area .filters").removeClass("show-sidebar");
-    }
-
-
-    let scrollAndWhiteBg = (background, body) => {
-      if (!$(".sidebar-area .filters").hasClass("show-sidebar")) {
-      $(background).removeClass("show-dark-bgcolor");
-      $(body).removeClass("stop-scroll");
-      }else{
-      $(background).addClass("show-dark-bgcolor");
-      $(body).addClass("stop-scroll");
-      }
-
-
-      if (!$(".navbar-items").hasClass("active")) {
-        $(body).removeClass("stop-scroll");
-      }else{
-        $(body).addClass("stop-scroll");
-      }
-    };
-
-    scrollAndWhiteBg(".dark-bgcolor", document.body);
    });
   // ======= Show or Hide navbar items when click on Hamburger btn - End ======= //
 
@@ -88,8 +64,7 @@ $(document).ready(function () {
   // ======= Making visible or invisible the Search-Box and Login-Area on click and replacing icon - Start ======= //
   $(document).on("click", ".icon-btn", function (e) {
     e.preventDefault();
-    if (
-      !$(this).siblings().hasClass("visible") && !$(this).children().hasClass("flaticon-close")) {
+    if (!$(this).siblings().hasClass("visible") && !$(this).children().hasClass("flaticon-close")) {
       $(this).siblings().addClass("visible").parent().siblings().children(".holder-div").removeClass("visible");
       $(this).children().addClass("flaticon-close");
       $(this).parent().siblings().find("i").removeClass("flaticon-close");
@@ -148,7 +123,6 @@ $(document).ready(function () {
     } );
    }
   // ======= Price Range Filter - End ======= //
-
 
 
   // ======= Login Validation Start ======= //
@@ -734,27 +708,6 @@ $(document).ready(function () {
   // ======= Send Message End ======= //
 
 
-  // ======= Tour Filter and Background-color of Button when click on it - Start ======= //
-  $(".tour-holder").isotope({
-      itemSelector: ".item-col",
-      percentPosition: true,
-      layoutMode: "fitRows"
-  });
-    
-  $(document).on("click", ".category-btns li a", function(e){
-    e.preventDefault();
-      $(this).addClass("active-btn");
-      $(this).parent().siblings().children().removeClass("active-btn");
-  
-      let selector = $(this).attr("data-filter");
-      $(".tour-holder").isotope({
-        filter: selector
-      });
-      return false;
-  });
-  // ======= Tour Filter and Background-color of Button when click on it - End ======= //
-
-
   // ======= Sorting Dropdown Start ======= //
   $("#tours .dropdown").click(function() {
     $("#tours .menu").toggleClass("#tours showMenu");
@@ -779,7 +732,7 @@ $(document).ready(function () {
   // ======= Show or Hide Sidebar Filter when click on filter btn - End ======= //
 
 
-  // ======= Show an appropriate Image when click a small image - Start ======= //
+  // ======= Show appropriate Image when click a small image - Start ======= //
   $(document).on("click", "#tour .small-img-box a", function (e) {
     e.preventDefault();
 
@@ -787,7 +740,40 @@ $(document).ready(function () {
     $(this).parent().parent().siblings().find(".small-img-box").removeClass("#tour active-img");   
     $("#tour .tour-img-box img").attr("src", $(this).attr("href"));
   });
-  // ======= Show an appropriate Image when click a small image - End ======= //
+  // ======= Show appropriate Image when click a small image - End ======= //
+
+
+  // ======= Show appropriate tab content when click a tab button - Start ======= //
+  $(document).on("click", ".tour-tabs li a", function (e) {
+    e.preventDefault();
+    
+    $(".tour-tabs li a").removeClass("active-tabBtn");
+    $(this).addClass("active-tabBtn");
+    $(".tab-items .tab-content").hide();
+    $($(this).data("value")).show();
+  });
+  // ======= Show appropriate tab content when click a tab button - End ======= //
+
+
+  // ======= Tour Filter and Background-color of Button when click on it - Start ======= //
+  $(".tour-holder").isotope({
+    itemSelector: ".item-col",
+    percentPosition: true,
+    layoutMode: "fitRows"
+  });
+    
+  $(document).on("click", ".category-btns li a", function(e){
+    e.preventDefault();
+      $(this).addClass("active-btn");
+      $(this).parent().siblings().children().removeClass("active-btn");
+  
+      let selector = $(this).attr("data-filter");
+      $(".tour-holder").isotope({
+        filter: selector
+      });
+      return false;
+  });
+  // ======= Tour Filter and Background-color of Button when click on it - End ======= //
 });
 
 
