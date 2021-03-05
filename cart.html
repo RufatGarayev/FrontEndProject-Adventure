@@ -22,10 +22,10 @@
         rel="stylesheet">
     <!-- flaticon.css -->
     <link rel="stylesheet" href="font/flaticon.css">
-    <!-- tour-details.css -->
-    <link rel="stylesheet" href="css/tour-details.css">
+    <!-- cart.css -->
+    <link rel="stylesheet" href="css/cart.css">
     <!-- page-title -->
-    <title>Tour Details | Adventure</title>
+    <title>Cart | Adventure</title>
 </head>
 
 <body>
@@ -183,7 +183,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="page-caption d-flex justify-content-center align-items-center">
-                            <h1>Tour Details</h1>
+                            <h1>Cart</h1>
                         </div>
                     </div>
                 </div>
@@ -192,204 +192,75 @@
         <!-- ======= Intro Section End ======= -->
 
 
-        <!-- ======= Tour Section Start ======= -->
-        <section id="tour">
+        <!-- ======= Shop Cart Section Start ======= -->
+        <section id="shop-cart">
             <div class="container">
-                <div class="tourPics-and-basicInfo">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="row no-gutters">
-                                <div class="col-12">
-                                    <div class="tour-img-box">
-                                        <img class="img-fluid" src="/img/special-offers/special-offer1.jpg"
-                                            alt="gabala">
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="small-img-box active-img">
-                                        <a href="/img/special-offers/special-offer1.jpg">
-                                            <img class="img-fluid" src="/img/special-offers/special-offer1.jpg"
-                                                alt="gabala">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="small-img-box">
-                                        <a href="/img/tour-details/tour-img1.jpg" target="tour-img-box">
-                                            <img class="img-fluid" src="/img/tour-details/tour-img1.jpg" alt="gabala">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="small-img-box">
-                                        <a href="/img/tour-details/tour-img2.jpg" target="tour-img-box">
-                                            <img class="img-fluid" src="/img/tour-details/tour-img2.jpg" alt="gabala">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="small-img-box">
-                                        <a href="/img/tour-details/tour-img3.jpg" target="tour-img-box">
-                                            <img class="img-fluid" src="/img/tour-details/tour-img3.jpg" alt="gabala">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="tour-info">
-                                <div class="top-part d-flex">
-                                    <div class="caption">
-                                        <h2>Gabala Tour</h2>
-                                    </div>
-                                    <div class="rating d-flex justify-content-between">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <div class="location">
-                                    <h6><i class="fas fa-map-marker-alt"></i> Gabala, Azerbaijan</h6>
-                                </div>
-                                <div class="basic-info d-flex">
-                                    <div class="price d-flex align-items-center">
-                                        <i class="flaticon-dollar"></i>
-                                        <h5>79<span> / person</span></h5>
-                                    </div>
-                                    <div class="photo-friendly d-flex align-items-center">
-                                        <i class="flaticon-camera"></i>
-                                        <h6>Photo Friendly</h6>
-                                    </div>
-                                    <div class="time d-flex align-items-center">
-                                        <i class="flaticon-schedule"></i>
-                                        <h6>2 Days</h6>
-                                    </div>
-                                </div>
-                                <div class="text-part">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Nam vitae ornare massa, at consequat ipsum. Sed ullamcorper,
-                                        dui consequat vehicula volutpat, dolor neque hendrerit elit.
-                                        Nam vitae ornare massa, at consequat ipsum.
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="addToCart d-flex">
-                                <form action="#">
-                                    <input type="number" name="quantity" value="1" min="1" max="10">
-                                    <button class="addToCart-btn" type="submit">Add To Cart</button>
-                                </form>
-                            </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="shop-table-wrapper">
+                            <!-- table -->
+                            <table class="shop-table">
+                                <!-- table-head -->
+                                <thead>
+                                    <tr class="thead-row">
+                                        <th class="tour-img"></th>
+                                        <th class="tour-name">Tour</th>
+                                        <th class="tour-price">Price</th>
+                                        <th class="tour-quantity">Quantity</th>
+                                        <th class="tour-total">Total</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <!-- table-body -->
+                                <tbody>
+                                    <tr class="tbody-row">
+                                        <td>
+                                            <div class="tour-smallImg">
+                                                <img class="img-fluid" src="/img/special-offers/special-offer1.jpg" alt="gabala">
+                                            </div>
+                                        </td>
+                                        <td class="tour-name">Gabala Tour</td>
+                                        <td class="tour-price">
+                                            <span><i class="flaticon-dollar"></i>79</span>
+                                        </td>
+                                        <td class="tour-quantity">
+                                            <input type="number" name="quantity" value="1" min="1" max="10">
+                                        </td>
+                                        <td class="tour-total">
+                                            <span><i class="flaticon-dollar"></i>79</span>
+                                        </td>
+                                        <td class="remove-tour">
+                                            <a href="#"><i class="fas fa-times"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-                <div class="descAndReviews-wrapper">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4">
-                            <ul class="tour-tabs">
-                                <li><a class="active-tabBtn" href="#" data-value=".description">Description</a></li>
-                                <li><a href="#" data-value=".reviews">Reviews (0)</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-8 col-md-8">
-                            <div class="tab-items">
-                                <div class="description tab-content">
-                                    <h4>Description</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                        aliquip
-                                        ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                        deserunt
-                                        mollit anim id est laborum.
-                                    </p>
-                                    <span class="read-more">
-                                        <p class="mt-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip
-                                            ex ea commodo consequat.
-                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                            eu
-                                            fugiat nulla pariatur.
-                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                            deserunt
-                                            mollit anim id est laborum.
-                                        </p>
-                                        <p class="mt-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip
-                                            ex ea commodo consequat.
-                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                            eu
-                                            fugiat nulla pariatur.
-                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                            deserunt
-                                            mollit anim id est laborum.
-                                        </p>
-                                    </span>
-                                    <div class="readMoreBtn-wrapper">
-                                        <a class="readMore-btn" href="javascript:void(0)">Read More...</a>
-                                    </div>
-                                </div>
-                                <div class="reviews tab-content">
-                                    <h4>Reviews</h4>
-                                    <p>Your email address will not be published.</p>
-                                    <h6 class="rating-caption">Your Rating</h6>
-                                    <div class="rating d-flex justify-content-between">
-                                        <a href="javascript:void(0)"><i class="far fa-star"></i></a>
-                                        <a href="javascript:void(0)"><i class="far fa-star"></i></a>
-                                        <a href="javascript:void(0)"><i class="far fa-star"></i></a>
-                                        <a href="javascript:void(0)"><i class="far fa-star"></i></a>
-                                        <a href="javascript:void(0)"><i class="far fa-star"></i></a>
-                                    </div>
-                                    <form action="#" method="GET" id="review-form">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="review-area-holder input-area">
-                                                    <h6>Your Review</h6>
-                                                    <textarea class="review-area" name="review" rows="4"
-                                                        cols="55"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="input-area name-area">
-                                                    <h6>Name</h6>
-                                                    <input class="review-name" type="text" name="name">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="input-area email-area">
-                                                    <h6>Email</h6>
-                                                    <input class="review-email" type="text" name="email">
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="bottom-links">
-                                                    <button type="submit" class="review-btn">Send</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-8 col-md-4 offset-md-8">
+                        <div class="cart-totals">
+                            <div class="cart-totals-head">
+                                <h5>Cart Totals</h5>
+                            </div>
+                            <div class="subtotal d-flex justify-content-between align-items-center">
+                                <h6>Subtotal</h6>
+                                <span><i class="flaticon-dollar"></i>79</span>
+                            </div>
+                            <div class="total d-flex justify-content-between align-items-center">
+                                <h6>Total</h6>
+                                <span><i class="flaticon-dollar"></i>79</span>
+                            </div>
+                            <div class="checkout-btn">
+                                <a class="bttn" href="#">Proceed To Checkout</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ======= Tour Section End ======= -->
+        <!-- ======= Shop Cart Section End ======= -->
 
 
         <!-- ======= Subscribe Section Start ======= -->

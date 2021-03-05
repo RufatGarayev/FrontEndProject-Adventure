@@ -513,7 +513,6 @@ html {
     a {
       @extend %website-button;
       font-size: 16px;
-      display: inline-block;
       padding: 10px 30px;
       @media (min-width: 250px) and (max-width: 315px) {
         font-size: 12px !important;

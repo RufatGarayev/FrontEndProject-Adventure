@@ -748,18 +748,27 @@ $(document).ready(function () {
 
   // ======= Sorting Dropdown Start ======= //
   $("#tours .dropdown").click(function() {
+    // toggle the dropdown menu
     $("#tours .menu").toggleClass("#tours showMenu");
+    // toggle the arrow icon
     $("#tours .dropdown i").toggleClass("#tours rotate");
 
     $("#tours .menu li").click(function() {
+      // equalize p to li
       $("#tours .dropdown p").html($(this).html());
+      // hide dropdown menu
       $("#tours .menu").removeClass("#tours showMenu");
+      // rotate the arrow icon
       $("#tours .dropdown i").removeClass("#tours rotate");
     });
 
     $(document).mouseup(function(e) {
+      if (!$("#tours .dropdown").is(e.target) && $("#tours .dropdown").has(e.target).length === 0) {
+        // hide dropdown menu
         $("#tours .menu").removeClass("#tours showMenu");
+        // rotate the arrow icon
         $("#tours .dropdown i").removeClass("#tours rotate");
+      }
     });
   });
   // ======= Sorting Dropdown End ======= //

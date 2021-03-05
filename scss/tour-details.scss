@@ -36,6 +36,7 @@ html {
   overflow: hidden;
 }
 
+
 // ======= Intro Section Start ======= //
 #intro {
   background-image: url(../img/bg-images/wood.jpg);
@@ -112,10 +113,18 @@ html {
         }
       }
 
+      .location{
+        padding: 20px 0 7px;
+        h6{
+          color: rgb(98,107,114);
+          margin: 0;
+        }
+      }
+
       .basic-info {
-        height: 85px;
+        height: 65px;
         width: 460px;
-        padding: 22px 0 17px;
+        // padding: 22px 0 17px;
         justify-content: space-between;
         align-items: center;
 
@@ -151,6 +160,7 @@ html {
       }
 
       .text-part {
+        padding: 0;
         text-align: justify;
         @extend %paragraph;
       }
@@ -444,7 +454,7 @@ html {
         .basic-info {
           height: 172px;
           width: 156px;
-          padding: 30px 0 26px;
+          padding: 16px 0 26px;
           flex-direction: column;
           align-items: flex-start;
 
@@ -530,10 +540,17 @@ html {
           }
         }
 
+        .location{
+          padding: 28px 0 7px;
+          h6{
+            font-size: 13px;
+          }
+        }
+
         .basic-info {
           height: 150px;
           width: 156px;
-          padding: 30px 0 15px;
+          padding: 15px 0 15px;
           flex-direction: column;
           align-items: flex-start;
 

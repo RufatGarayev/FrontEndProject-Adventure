@@ -91,8 +91,22 @@ header {
               font-size: 10px;
               font-style: normal;
               position: absolute;
-              top: 3px;
-              right: -7px;
+              top: -1px;
+              right: -5px;
+              span{
+                position: relative;
+                &::after{
+                  content: "";
+                    position: absolute;
+                    top: 0px;
+                    right: -3px;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    background-color: cornflowerblue;
+                    z-index: -1;
+                }
+              }
             }
             &::before {
               font-size: 17px;
