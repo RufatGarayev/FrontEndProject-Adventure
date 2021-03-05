@@ -47,7 +47,7 @@ header nav .navbar-items .links li a:hover, header nav .account li a:hover {
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #tour .tour-basic-info .addToCart .addToCart-btn, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #tour .tourPics-and-basicInfo .addToCart .addToCart-btn, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn {
   padding: 10px 24px;
   font-weight: 600;
   border: none;
@@ -62,7 +62,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   z-index: 1;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #tour .tour-basic-info .addToCart .addToCart-btn::before, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #tour .tourPics-and-basicInfo .addToCart .addToCart-btn::before, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn::before {
   content: "";
   border-radius: 3px;
   position: absolute;
@@ -82,12 +82,12 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
           transform-origin: left;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #tour .tour-basic-info .addToCart .addToCart-btn:hover, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn:hover {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #tour .tourPics-and-basicInfo .addToCart .addToCart-btn:hover, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn:hover {
   color: white;
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #tour .tour-basic-info .addToCart .addToCart-btn:hover::before, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn:hover::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #tour .tourPics-and-basicInfo .addToCart .addToCart-btn:hover::before, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -131,7 +131,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   }
 }
 
-#subscribe .subscribe-title p, #tour .tour-basic-info .tour-info .text-part, #tour .descAndReviews-wrapper .tab-items p {
+#subscribe .subscribe-title p, #tour .tourPics-and-basicInfo .tour-info .text-part, #tour .descAndReviews-wrapper .tab-items p {
   padding-top: 16px;
   font-size: 16px;
   font-weight: 300;
@@ -139,8 +139,8 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title p, #tour .tour-basic-info .tour-info .text-part, #tour .descAndReviews-wrapper .tab-items p {
-    font-size: 12px;
+  #subscribe .subscribe-title p, #tour .tourPics-and-basicInfo .tour-info .text-part, #tour .descAndReviews-wrapper .tab-items p {
+    font-size: 13px;
   }
 }
 
@@ -398,16 +398,9 @@ header nav .account li .search-area-holder {
   top: 112px;
   right: 192px;
   border-radius: 4px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transform-origin: 50% 0;
-          transform-origin: 50% 0;
-  -webkit-transform: scale(0.75) translateY(-21px);
-          transform: scale(0.75) translateY(-21px);
-  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  -webkit-animation: fadeEffect 0.7s;
+          animation: fadeEffect 0.7s;
+  display: none;
   -webkit-box-shadow: 0 2px 6px 0 #2e2d2d;
           box-shadow: 0 2px 6px 0 #2e2d2d;
 }
@@ -448,17 +441,10 @@ header nav .account li .login-box-holder {
   top: 114px;
   right: 139px;
   padding: 35px 40px 50px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  visibility: hidden;
-  opacity: 0;
   overflow: hidden;
-  -webkit-transform-origin: 50% 0;
-          transform-origin: 50% 0;
-  -webkit-transform: scale(0.75) translateY(-21px);
-          transform: scale(0.75) translateY(-21px);
-  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  -webkit-animation: fadeEffect 0.7s;
+          animation: fadeEffect 0.7s;
+  display: none;
 }
 
 header nav .account li .login-box-holder .same-style-input-area {
@@ -613,9 +599,7 @@ header nav .account li .login-box-holder #reset-form .success p {
 }
 
 header nav .account li .visible {
-  opacity: 1;
-  -webkit-transform: rotateX(0deg) translatey(0px);
-          transform: rotateX(0deg) translatey(0px);
+  display: block;
 }
 
 header nav .account .user {
@@ -626,6 +610,24 @@ header nav .account .user {
 @media (min-width: 280px) and (max-width: 374.98px) {
   header nav .account {
     right: 60px !important;
+  }
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -1904,61 +1906,61 @@ html {
   padding: 70px 0;
 }
 
-#tour .tour-basic-info {
+#tour .tourPics-and-basicInfo {
   padding-bottom: 50px;
   border-bottom: 1px solid #eadede;
 }
 
-#tour .tour-basic-info img {
+#tour .tourPics-and-basicInfo img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#tour .tour-basic-info .tour-img-box {
+#tour .tourPics-and-basicInfo .tour-img-box {
   margin: 0 5px 20px;
   height: 350px;
   overflow: hidden;
 }
 
-#tour .tour-basic-info .tour-img-box img {
+#tour .tourPics-and-basicInfo .tour-img-box img {
   height: 100%;
   width: 100%;
   -webkit-filter: brightness(85%);
           filter: brightness(85%);
 }
 
-#tour .tour-basic-info .tour-img-box img:hover {
+#tour .tourPics-and-basicInfo .tour-img-box img:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
 
-#tour .tour-basic-info .small-img-box {
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+#tour .tourPics-and-basicInfo .small-img-box {
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
   border: 2px solid white;
   height: 80px;
   margin: 5px;
   padding: 2px;
 }
 
-#tour .tour-basic-info .small-img-box img {
+#tour .tourPics-and-basicInfo .small-img-box img {
   height: 100%;
   width: 100%;
 }
 
-#tour .tour-basic-info .small-img-box:hover {
+#tour .tourPics-and-basicInfo .small-img-box:hover {
   border: 2px solid #3a3b74;
 }
 
-#tour .tour-basic-info .active-img {
+#tour .tourPics-and-basicInfo .active-img {
   border: 2px solid #3a3b74;
 }
 
-#tour .tour-basic-info .tour-info {
+#tour .tourPics-and-basicInfo .tour-info {
   padding: 0 0 0 10px;
 }
 
-#tour .tour-basic-info .tour-info .top-part {
+#tour .tourPics-and-basicInfo .tour-info .top-part {
   width: 448px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1966,24 +1968,24 @@ html {
   padding-right: 130px;
 }
 
-#tour .tour-basic-info .tour-info .top-part .caption h2 {
+#tour .tourPics-and-basicInfo .tour-info .top-part .caption h2 {
   margin-bottom: 0;
   font-weight: 700;
 }
 
-#tour .tour-basic-info .tour-info .top-part .rating {
+#tour .tourPics-and-basicInfo .tour-info .top-part .rating {
   width: 110px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#tour .tour-basic-info .tour-info .top-part .rating i {
+#tour .tourPics-and-basicInfo .tour-info .top-part .rating i {
   color: #3a3b74;
   font-size: 15px;
 }
 
-#tour .tour-basic-info .tour-info .basic-info {
+#tour .tourPics-and-basicInfo .tour-info .basic-info {
   height: 85px;
   width: 460px;
   padding: 22px 0 17px;
@@ -1995,48 +1997,48 @@ html {
           align-items: center;
 }
 
-#tour .tour-basic-info .tour-info .basic-info i::before {
+#tour .tourPics-and-basicInfo .tour-info .basic-info i::before {
   font-size: 26px;
   margin: 0 10px 0 0;
 }
 
-#tour .tour-basic-info .tour-info .basic-info h6 {
+#tour .tourPics-and-basicInfo .tour-info .basic-info h6 {
   margin-bottom: 0;
   font-size: 18px;
 }
 
-#tour .tour-basic-info .tour-info .basic-info .price i::before {
+#tour .tourPics-and-basicInfo .tour-info .basic-info .price i::before {
   margin: 0;
   font-size: 25px;
 }
 
-#tour .tour-basic-info .tour-info .basic-info .price h5 {
+#tour .tourPics-and-basicInfo .tour-info .basic-info .price h5 {
   font-size: 24px;
   margin-bottom: 0;
   font-weight: 600;
 }
 
-#tour .tour-basic-info .tour-info .basic-info .price h5 span {
+#tour .tourPics-and-basicInfo .tour-info .basic-info .price h5 span {
   font-size: 18px;
   font-weight: 500;
 }
 
-#tour .tour-basic-info .tour-info .text-part {
+#tour .tourPics-and-basicInfo .tour-info .text-part {
   text-align: justify;
 }
 
-#tour .tour-basic-info .addToCart {
+#tour .tourPics-and-basicInfo .addToCart {
   padding: 20px 10px;
 }
 
-#tour .tour-basic-info .addToCart input[type="number"] {
+#tour .tourPics-and-basicInfo .addToCart input[type="number"] {
   border: 1px solid #d8d8d8;
   padding: 7px 14px;
   border-radius: 3px;
   margin-right: 5px;
 }
 
-#tour .tour-basic-info .addToCart .addToCart-btn {
+#tour .tourPics-and-basicInfo .addToCart .addToCart-btn {
   text-transform: none;
   cursor: pointer;
   font-size: 14px;
@@ -2085,6 +2087,33 @@ html {
 
 #tour .descAndReviews-wrapper .tab-items p {
   padding-top: 0 !important;
+}
+
+#tour .descAndReviews-wrapper .tab-items .description .read-more {
+  display: none;
+}
+
+#tour .descAndReviews-wrapper .tab-items .description .show-more-text {
+  display: block;
+  -webkit-animation: fadeEffect 0.7s;
+          animation: fadeEffect 0.7s;
+}
+
+#tour .descAndReviews-wrapper .tab-items .description .readMoreBtn-wrapper {
+  margin-top: 15px;
+}
+
+#tour .descAndReviews-wrapper .tab-items .description .readMoreBtn-wrapper a {
+  display: inline-block;
+  padding: 8px 30px;
+  font-size: 15px;
+  font-weight: 200;
+  color: white;
+  background-color: #3a3b74;
+}
+
+#tour .descAndReviews-wrapper .tab-items .description .readMoreBtn-wrapper a:hover {
+  text-decoration: none;
 }
 
 #tour .descAndReviews-wrapper .tab-items .reviews p {
@@ -2156,24 +2185,38 @@ html {
   outline: none;
 }
 
+#tour .descAndReviews-wrapper .tab-items .tab-content {
+  -webkit-animation: fadeEffect 0.7s;
+          animation: fadeEffect 0.7s;
+}
+
 #tour .descAndReviews-wrapper .tab-items .tab-content:not(:first-of-type) {
   display: none;
 }
 
+@keyframes fadeEffect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .tour-basic-info .tour-info .basic-info {
+  .tourPics-and-basicInfo .tour-info .basic-info {
     width: 436px !important;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .tour-basic-info .tour-img-box {
+  .tourPics-and-basicInfo .tour-img-box {
     height: 400px !important;
   }
-  .tour-basic-info .small-img-box {
+  .tourPics-and-basicInfo .small-img-box {
     height: 90px !important;
   }
-  .tour-basic-info .tour-info {
+  .tourPics-and-basicInfo .tour-info {
     padding: 50px 20px 0 10px !important;
   }
   .descAndReviews-wrapper .tab-items #review-form .name-area,
@@ -2186,13 +2229,13 @@ html {
   #tour {
     padding: 40px 0;
   }
-  #tour .tour-basic-info .tour-img-box {
+  #tour .tourPics-and-basicInfo .tour-img-box {
     height: 320px !important;
   }
-  #tour .tour-basic-info .small-img-box {
+  #tour .tourPics-and-basicInfo .small-img-box {
     height: 70px !important;
   }
-  #tour .tour-basic-info .tour-info {
+  #tour .tourPics-and-basicInfo .tour-info {
     padding: 40px 20px 0 10px !important;
   }
   #tour .descAndReviews-wrapper .tab-items {
@@ -2216,31 +2259,31 @@ html {
   #tour {
     padding: 50px 0;
   }
-  #tour .tour-basic-info .tour-img-box {
+  #tour .tourPics-and-basicInfo .tour-img-box {
     height: 270px !important;
     margin: 0 3px 20px;
   }
-  #tour .tour-basic-info .small-img-box {
+  #tour .tourPics-and-basicInfo .small-img-box {
     height: 60px !important;
     margin: 3px;
   }
-  #tour .tour-basic-info .tour-info {
+  #tour .tourPics-and-basicInfo .tour-info {
     padding: 40px 20px 0 10px !important;
   }
-  #tour .tour-basic-info .tour-info .top-part {
+  #tour .tourPics-and-basicInfo .tour-info .top-part {
     width: 305px;
     padding: 0;
   }
-  #tour .tour-basic-info .tour-info .top-part .caption h2 {
+  #tour .tourPics-and-basicInfo .tour-info .top-part .caption h2 {
     font-size: 30px !important;
   }
-  #tour .tour-basic-info .tour-info .top-part .rating {
+  #tour .tourPics-and-basicInfo .tour-info .top-part .rating {
     width: 100px;
   }
-  #tour .tour-basic-info .tour-info .top-part .rating i {
+  #tour .tourPics-and-basicInfo .tour-info .top-part .rating i {
     font-size: 14px;
   }
-  #tour .tour-basic-info .tour-info .basic-info {
+  #tour .tourPics-and-basicInfo .tour-info .basic-info {
     height: 172px;
     width: 156px;
     padding: 30px 0 26px;
@@ -2252,14 +2295,17 @@ html {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  #tour .tour-basic-info .tour-info .basic-info .price i::before {
+  #tour .tourPics-and-basicInfo .tour-info .basic-info .price i::before {
     font-size: 27px;
   }
-  #tour .tour-basic-info .tour-info .basic-info .price h5 {
+  #tour .tourPics-and-basicInfo .tour-info .basic-info .price h5 {
     font-size: 26px;
   }
   #tour .descAndReviews-wrapper .tab-items {
     padding-top: 30px !important;
+  }
+  #tour .descAndReviews-wrapper .tab-items .description .readMoreBtn-wrapper a {
+    font-size: 14px;
   }
   #tour .descAndReviews-wrapper .tab-items .reviews p,
   #tour .descAndReviews-wrapper .tab-items .reviews .rating {
@@ -2279,18 +2325,18 @@ html {
   #tour {
     padding: 50px 0;
   }
-  #tour .tour-basic-info .tour-img-box {
+  #tour .tourPics-and-basicInfo .tour-img-box {
     height: 200px !important;
     margin: 0 1px 20px;
   }
-  #tour .tour-basic-info .small-img-box {
+  #tour .tourPics-and-basicInfo .small-img-box {
     height: 50px !important;
     margin: 1px;
   }
-  #tour .tour-basic-info .tour-info {
+  #tour .tourPics-and-basicInfo .tour-info {
     padding: 30px 0 0 !important;
   }
-  #tour .tour-basic-info .tour-info .top-part {
+  #tour .tourPics-and-basicInfo .tour-info .top-part {
     width: 180px;
     height: 55px;
     -webkit-box-orient: vertical;
@@ -2299,16 +2345,16 @@ html {
             flex-direction: column;
     padding: 0;
   }
-  #tour .tour-basic-info .tour-info .top-part .caption h2 {
+  #tour .tourPics-and-basicInfo .tour-info .top-part .caption h2 {
     font-size: 24px !important;
   }
-  #tour .tour-basic-info .tour-info .top-part .rating {
+  #tour .tourPics-and-basicInfo .tour-info .top-part .rating {
     width: 90px;
   }
-  #tour .tour-basic-info .tour-info .top-part .rating i {
+  #tour .tourPics-and-basicInfo .tour-info .top-part .rating i {
     font-size: 12px;
   }
-  #tour .tour-basic-info .tour-info .basic-info {
+  #tour .tourPics-and-basicInfo .tour-info .basic-info {
     height: 150px;
     width: 156px;
     padding: 30px 0 15px;
@@ -2320,22 +2366,22 @@ html {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  #tour .tour-basic-info .tour-info .basic-info i::before {
+  #tour .tourPics-and-basicInfo .tour-info .basic-info i::before {
     font-size: 22px;
   }
-  #tour .tour-basic-info .tour-info .basic-info h6 {
+  #tour .tourPics-and-basicInfo .tour-info .basic-info h6 {
     font-size: 16px;
   }
-  #tour .tour-basic-info .tour-info .basic-info .price i::before {
+  #tour .tourPics-and-basicInfo .tour-info .basic-info .price i::before {
     font-size: 25px;
   }
-  #tour .tour-basic-info .tour-info .basic-info .price h5 {
+  #tour .tourPics-and-basicInfo .tour-info .basic-info .price h5 {
     font-size: 24px;
   }
-  #tour .tour-basic-info .addToCart form input {
+  #tour .tourPics-and-basicInfo .addToCart form input {
     padding: 5px 14px !important;
   }
-  #tour .tour-basic-info .addToCart form button {
+  #tour .tourPics-and-basicInfo .addToCart form button {
     font-size: 13px !important;
     padding: 8px 24px !important;
   }
@@ -2350,6 +2396,10 @@ html {
   }
   #tour .descAndReviews-wrapper .tab-items h6 {
     font-size: 15px;
+  }
+  #tour .descAndReviews-wrapper .tab-items .description .readMoreBtn-wrapper a {
+    font-size: 13px;
+    padding: 7px 26px;
   }
   #tour .descAndReviews-wrapper .tab-items .reviews p,
   #tour .descAndReviews-wrapper .tab-items .reviews .rating {

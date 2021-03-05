@@ -155,7 +155,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   }
 }
 
-#subscribe .subscribe-title p, #special-offers .special-offers-caption p, #popular-tours .popular-tours-caption p, #coming-soon .coming-soon-caption p {
+#subscribe .subscribe-title p, #our-advantages .main-holder .holder p, #special-offers .special-offers-caption p, #popular-tours .popular-tours-caption p, #coming-soon .coming-soon-caption p {
   padding-top: 16px;
   font-size: 16px;
   font-weight: 300;
@@ -163,8 +163,8 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title p, #special-offers .special-offers-caption p, #popular-tours .popular-tours-caption p, #coming-soon .coming-soon-caption p {
-    font-size: 12px;
+  #subscribe .subscribe-title p, #our-advantages .main-holder .holder p, #special-offers .special-offers-caption p, #popular-tours .popular-tours-caption p, #coming-soon .coming-soon-caption p {
+    font-size: 13px;
   }
 }
 
@@ -540,16 +540,9 @@ header nav .account li .search-area-holder {
   top: 112px;
   right: 192px;
   border-radius: 4px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transform-origin: 50% 0;
-          transform-origin: 50% 0;
-  -webkit-transform: scale(0.75) translateY(-21px);
-          transform: scale(0.75) translateY(-21px);
-  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  -webkit-animation: fadeEffect 0.7s;
+          animation: fadeEffect 0.7s;
+  display: none;
   -webkit-box-shadow: 0 2px 6px 0 #2e2d2d;
           box-shadow: 0 2px 6px 0 #2e2d2d;
 }
@@ -590,17 +583,10 @@ header nav .account li .login-box-holder {
   top: 114px;
   right: 139px;
   padding: 35px 40px 50px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  visibility: hidden;
-  opacity: 0;
   overflow: hidden;
-  -webkit-transform-origin: 50% 0;
-          transform-origin: 50% 0;
-  -webkit-transform: scale(0.75) translateY(-21px);
-          transform: scale(0.75) translateY(-21px);
-  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  -webkit-animation: fadeEffect 0.7s;
+          animation: fadeEffect 0.7s;
+  display: none;
 }
 
 header nav .account li .login-box-holder .same-style-input-area {
@@ -755,9 +741,7 @@ header nav .account li .login-box-holder #reset-form .success p {
 }
 
 header nav .account li .visible {
-  opacity: 1;
-  -webkit-transform: rotateX(0deg) translatey(0px);
-          transform: rotateX(0deg) translatey(0px);
+  display: block;
 }
 
 header nav .account .user {
@@ -768,6 +752,24 @@ header nav .account .user {
 @media (min-width: 280px) and (max-width: 374.98px) {
   header nav .account {
     right: 60px !important;
+  }
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -2271,13 +2273,11 @@ html {
 #our-advantages .main-holder .holder p {
   position: relative;
   padding-top: 22px;
-  font-size: 16px;
-  font-weight: 400;
 }
 
 @media (min-width: 250px) and (max-width: 315px) {
   #our-advantages .main-holder .holder h4 {
-    font-size: 18px !important;
+    font-size: 17px !important;
   }
 }
 
@@ -2302,7 +2302,7 @@ html {
 }
 
 #special-offers .special-offers-caption {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 #special-offers .special-offers-caption p {
@@ -2467,21 +2467,22 @@ html {
 
 @media (min-width: 250px) and (max-width: 299.98px) {
   #discount .discount_title h2 {
-    font-size: 10px !important;
+    font-size: 15px !important;
+    padding: 0 20px 10px;
   }
   #discount .discount_title h2:first-of-type {
-    font-size: 18px !important;
-    padding-bottom: 10px;
+    font-size: 23px !important;
+    padding-bottom: 10px !important;
   }
   #discount .discount_title h1 {
-    font-size: 21px !important;
+    font-size: 23px !important;
   }
   #discount .discount_title .price .norm-price {
-    font-size: 16px !important;
+    font-size: 18px !important;
     margin-right: 9px !important;
   }
   #discount .discount_title .price .discount-price {
-    font-size: 24px !important;
+    font-size: 25px !important;
   }
 }
 
@@ -2617,7 +2618,7 @@ html {
 }
 
 #popular-tours .popular-tours-caption {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -2777,7 +2778,7 @@ html {
 
 @media (min-width: 375px) and (max-width: 440px) {
   #popular-tours {
-    padding: 115px 30px 130px 30px !important;
+    padding: 100px 30px !important;
   }
   #popular-tours .item {
     height: 470px !important;

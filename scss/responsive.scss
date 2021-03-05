@@ -61,9 +61,6 @@
 
   #popular-tours {
     padding: 100px 30px 120px 30px !important;
-    .popular-tours-caption {
-      padding-bottom: 0 !important;
-    }
 
     .img-box {
       height: 406px !important;
@@ -233,9 +230,7 @@
 
   #popular-tours {
     padding: 100px 20px 120px !important;
-    .popular-tours-caption {
-      padding-bottom: 0 !important;
-    }
+
     .item {
       height: 488px !important;
       .price-info {
@@ -521,9 +516,9 @@
   }
 
   #popular-tours {
-    padding: 100px 20px 120px !important;
+    padding: 100px 20px 100px !important;
     .popular-tours-caption {
-      padding: 0 20px 0 !important;
+      padding: 0 20px 40px !important;
     }
     .owl-carousel {
       .owl-dots {
@@ -830,7 +825,7 @@
   }
 
   #popular-tours {
-    padding: 120px 50px 130px 50px !important;
+    padding: 100px 50px !important;
     .popular-tours-caption {
       padding: 0 15px 0 !important;
       p {
@@ -991,7 +986,7 @@
   }
 
   #our-advantages {
-    padding: 50px 0 90px 0 !important;
+    padding: 50px 0 65px 0 !important;
     .caption {
       height: 110px !important;
       h1 {
@@ -1000,7 +995,7 @@
     }
 
     .holder {
-      height: 220px !important;
+      height: 235px !important;
       padding: 32px 35px 0 35px !important;
       i {
         &::before {
@@ -1016,15 +1011,11 @@
       hr {
         width: 24px !important;
       }
-
-      p {
-        font-size: 12px !important;
-      }
     }
   }
 
   #special-offers {
-    padding: 80px 5px 90px 5px !important;
+    padding: 70px 5px 70px !important;
     .owl-carousel {
       .owl-dots {
         margin-top: 5px !important;
@@ -1151,7 +1142,7 @@
   }
 
   #popular-tours {
-    padding: 80px 5px 80px 5px !important;
+    padding: 70px 5px 70px !important;
 
     .owl-carousel {
       .owl-dots {

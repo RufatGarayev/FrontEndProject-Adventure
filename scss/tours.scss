@@ -387,13 +387,15 @@ html {
       top: 0px;
       left: 0;
       z-index: 9999;
+
+      width: 0;
+      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+
       .filters {
         height: 100%;
-        width: 0;
         visibility: hidden;
         overflow: hidden;
         opacity: 0;
-        transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
 
         .price-filter {
           height: 180px;
@@ -417,11 +419,13 @@ html {
             font-size: 18px;
           }
         }
-      }
 
+
+      }
       .sidebar-filter-toggle {
         display: block;
       }
+
 
       .hide-filter-btn {
         transform: translateX(-60px);
@@ -432,9 +436,12 @@ html {
     .show-sidebar {
       width: 350px !important;
       padding: 30px 30px 0;
+      .filters {
+      padding: 0 3px;
       visibility: visible !important;
       opacity: 1 !important;
       transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+      }
     }
 
     .category-and-sorting {
@@ -477,13 +484,14 @@ html {
       top: 0px;
       left: 0;
       z-index: 9999;
+      width: 0;
+      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+
       .filters {
         height: 100%;
-        width: 0;
         visibility: hidden;
         overflow: hidden;
         opacity: 0;
-        transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
 
         .price-filter {
           height: 180px;
@@ -520,12 +528,14 @@ html {
     }
 
     .show-sidebar {
-      // width: calc(100vw - 60px) !important;
       width: 350px !important;
       padding: 30px 30px 0;
+      .filters {
+      padding: 0 3px;
       visibility: visible !important;
       opacity: 1 !important;
       transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+      }
     }
 
     .category-and-sorting {
@@ -594,13 +604,14 @@ html {
       top: 0px;
       left: 0;
       z-index: 9999;
+      width: 0;
+      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+
       .filters {
         height: 100%;
-        width: 0;
         visibility: hidden;
         overflow: hidden;
         opacity: 0;
-        transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
 
         .price-filter {
           height: 180px;
@@ -639,9 +650,12 @@ html {
     .show-sidebar {
       width: calc(100vw - 60px) !important;
       padding: 30px 30px 0;
+      .filters {
+      padding: 0 3px;
       visibility: visible !important;
       opacity: 1 !important;
       transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+      }
     }
 
     .category-and-sorting {
@@ -705,13 +719,14 @@ html {
       top: 0px;
       left: 0;
       z-index: 9999;
+      width: 0;
+      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+      
       .filters {
         height: 100%;
-        width: 0;
         visibility: hidden;
         overflow: hidden;
         opacity: 0;
-        transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
 
         .price-filter {
           height: 180px;
@@ -758,10 +773,13 @@ html {
 
     .show-sidebar {
       width: calc(100vw - 48px) !important;
-      padding: 30px 20px 0;
+      padding: 30px 30px 0;
+      .filters {
+      padding: 0 3px;
       visibility: visible !important;
       opacity: 1 !important;
       transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+      }
     }
 
     .category-and-sorting {

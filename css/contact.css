@@ -140,7 +140,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #subscribe .subscribe-title p, #get-in-touch .get-in-touch-caption p {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
@@ -398,16 +398,9 @@ header nav .account li .search-area-holder {
   top: 112px;
   right: 192px;
   border-radius: 4px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transform-origin: 50% 0;
-          transform-origin: 50% 0;
-  -webkit-transform: scale(0.75) translateY(-21px);
-          transform: scale(0.75) translateY(-21px);
-  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  -webkit-animation: fadeEffect 0.7s;
+          animation: fadeEffect 0.7s;
+  display: none;
   -webkit-box-shadow: 0 2px 6px 0 #2e2d2d;
           box-shadow: 0 2px 6px 0 #2e2d2d;
 }
@@ -448,17 +441,10 @@ header nav .account li .login-box-holder {
   top: 114px;
   right: 139px;
   padding: 35px 40px 50px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  visibility: hidden;
-  opacity: 0;
   overflow: hidden;
-  -webkit-transform-origin: 50% 0;
-          transform-origin: 50% 0;
-  -webkit-transform: scale(0.75) translateY(-21px);
-          transform: scale(0.75) translateY(-21px);
-  -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  -webkit-animation: fadeEffect 0.7s;
+          animation: fadeEffect 0.7s;
+  display: none;
 }
 
 header nav .account li .login-box-holder .same-style-input-area {
@@ -613,9 +599,7 @@ header nav .account li .login-box-holder #reset-form .success p {
 }
 
 header nav .account li .visible {
-  opacity: 1;
-  -webkit-transform: rotateX(0deg) translatey(0px);
-          transform: rotateX(0deg) translatey(0px);
+  display: block;
 }
 
 header nav .account .user {
@@ -626,6 +610,24 @@ header nav .account .user {
 @media (min-width: 280px) and (max-width: 374.98px) {
   header nav .account {
     right: 60px !important;
+  }
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

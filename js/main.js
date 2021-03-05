@@ -19,7 +19,7 @@ $(document).ready(function () {
     ",0.5)";
 
   window.onscroll = function () {
-    if ($(window).scrollTop() >= 700) {
+    if ($(window).scrollTop() >= 600) {
       $("nav").css("background-color", "#1B1B1B");
     } else {
       $("nav").css("background-color", rgbaCol);
@@ -46,9 +46,33 @@ $(document).ready(function () {
    // ======= Show or Hide navbar items when click on Hamburger btn - Start ======= //
    $(document).on("click", ".hamburger", function () {
     $(this).toggleClass("change");
+    // toggle navbar
     $(".navbar-items").toggleClass("active");
-    $(document.body).toggleClass("stop-scroll");
+    // toggle filter btn
     $(".sidebar-filter-toggle").toggleClass("hide-filter-btn");
+
+    // disable scroll
+    if ($(".navbar-items").hasClass("active")) {
+      $(document.body).addClass("stop-scroll");
+    }else{
+      // enable scroll
+      $(document.body).removeClass("stop-scroll");
+    }
+
+
+    $(document).mouseup(function(e) {
+      if (!$("header").is(e.target) && $("header").has(e.target).length === 0 && 
+        !$("#top-header").is(e.target) && $("#top-header").has(e.target).length === 0)
+      {
+        // enable scroll
+        $(document.body).removeClass("stop-scroll");
+        // return;
+      }
+      else{
+        // disable scroll
+        $(document.body).addClass("stop-scroll");
+      }
+    });
    });
   // ======= Show or Hide navbar items when click on Hamburger btn - End ======= //
 
@@ -62,6 +86,7 @@ $(document).ready(function () {
 
   
   // ======= Making visible or invisible the Search-Box and Login-Area on click and replacing icon - Start ======= //
+  // show or hide search-box and login-area, and change icons when click them
   $(document).on("click", ".icon-btn", function (e) {
     e.preventDefault();
     if (!$(this).siblings().hasClass("visible") && !$(this).children().hasClass("flaticon-close")) {
@@ -72,6 +97,19 @@ $(document).ready(function () {
       $(this).siblings().removeClass("visible");
       $(this).children().removeClass("flaticon-close");
     }
+
+    // hide search-box and login-area, and change icons when click outside
+    $(document).mouseup(function(e) {
+      if (
+          !$(".search-area-holder").is(e.target) && $(".search-area-holder").has(e.target).length === 0 &&
+          !$(".login-box-holder").is(e.target) && $(".login-box-holder").has(e.target).length === 0 &&
+          !$(".icon-btn").is(e.target) && $(".icon-btn").has(e.target).length === 0
+         )
+      {
+        $(".search-area-holder").removeClass("visible").siblings().children().removeClass("flaticon-close");
+        $(".login-box-holder").removeClass("visible").siblings().children().removeClass("flaticon-close");
+      }
+    });
   });
   // ======= Making visible or invisible the Search-Box and Login-Area on click and replacing icon - End ======= //
 
@@ -718,18 +756,47 @@ $(document).ready(function () {
       $("#tours .menu").removeClass("#tours showMenu");
       $("#tours .dropdown i").removeClass("#tours rotate");
     });
+
+    $(document).mouseup(function(e) {
+        $("#tours .menu").removeClass("#tours showMenu");
+        $("#tours .dropdown i").removeClass("#tours rotate");
+    });
   });
   // ======= Sorting Dropdown End ======= //
 
 
-  // ======= Show or Hide Sidebar Filter when click on filter btn - Start ======= //
+  // ======= Show or Hide Sidebar Filter - Start ======= //
   $(document).on("click", ".sidebar-filter-toggle", function (e) {
     e.preventDefault();
-    $(".sidebar-area .filters").toggleClass("show-sidebar");
+    // toggle sidebar
+    $(".sidebar-area").toggleClass("show-sidebar");
+    // toggle bg-color
     $(".dark-bgcolor").toggleClass("show-dark-bgcolor");
-    $(document.body).toggleClass("stop-scroll");
+
+    // disable scroll
+    if ($(".sidebar-area").hasClass("show-sidebar")) {
+      $(document.body).addClass("stop-scroll");
+    }else{
+      // enable scroll
+      $(document.body).removeClass("stop-scroll");
+    }
+
+    $(document).mouseup(function(e) {
+      if (!$(".sidebar-area").is(e.target) && $(".sidebar-area").has(e.target).length === 0)
+      {
+        // hide sidebar when click outside
+        $(".sidebar-area").removeClass("show-sidebar");
+        // cancel dark bg-color
+        $(".dark-bgcolor").removeClass("show-dark-bgcolor");
+        // disable scroll
+        $(document.body).removeClass("stop-scroll");
+      }else{
+        // enable scroll
+        $(document.body).addClass("stop-scroll");
+      }
+    });
   });
-  // ======= Show or Hide Sidebar Filter when click on filter btn - End ======= //
+  // ======= Show or Hide Sidebar Filter - End ======= //
 
 
   // ======= Show appropriate Image when click a small image - Start ======= //
@@ -753,6 +820,65 @@ $(document).ready(function () {
     $($(this).data("value")).show();
   });
   // ======= Show appropriate tab content when click a tab button - End ======= //
+
+
+  // ======= Countdown Start ======= //
+  let countdown = () => {
+    // select time
+    let now = new Date();
+    let eventDate = new Date('Mart 13, 2021 00:00:00');
+    let currentTiime = now.getTime();
+    let eventTime = eventDate.getTime();
+    let remTime = eventTime - currentTiime;
+
+    // hide discount section when the time is up
+    if (remTime <= 0) {
+      $("#discount").css("display", "none");
+      return;
+    }
+
+    // calculate sec, min, hour and day
+    let s = Math.floor(remTime / 1000);
+    let m = Math.floor(s / 60);
+    let h = Math.floor(m / 60);
+    let d = Math.floor(h / 24);
+
+    h %= 24;
+    m %= 60;
+    s %= 60;
+
+    h = h < 10 ? "0" + h : h;
+    m = m < 10 ? "0" + m : m;
+    s = s < 10 ? "0" + s : s;
+
+    // add the measures of time into compatible elements
+    $(".days").text(d);
+    $(".days").text(d);
+
+    $(".hours").text(h);
+    $(".minutes").text(m);
+    $(".seconds").text(s);
+
+    setTimeout(countdown, 1000);
+  }
+
+  countdown();
+  // ======= Countdown End ======= //
+
+  
+  // ======= Read More Start ======= //
+  $(document).on("click", ".readMore-btn", function(){
+    // show more text or hide
+    $(".read-more").toggleClass("show-more-text");
+    
+    // change the btn text
+    if ($(".read-more").hasClass("show-more-text")) {
+      $(".readMore-btn").text("Read Less...");
+    }else{
+      $(".readMore-btn").text("Read More...");
+    }
+  });
+  // ======= Read More End ======= //
 
 
   // ======= Tour Filter and Background-color of Button when click on it - Start ======= //
@@ -846,45 +972,3 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 // ======= Type Writer Effect End ======= //
-
-
-// ======= Countdown Start ======= //
-function countdown() {
-  let now = new Date();
-  let eventDate = new Date('Mart 13, 2021 00:00:00');
-
-  let currentTiime = now.getTime();
-  let eventTime = eventDate.getTime();
-
-  let remTime = eventTime - currentTiime;
-
-  if (remTime <= 0) {
-    document.getElementById("discount").style.display = "none";
-    return;
-  }
-
-  let s = Math.floor(remTime / 1000);
-  let m = Math.floor(s / 60);
-  let h = Math.floor(m / 60);
-  let d = Math.floor(h / 24);
-
-  h %= 24;
-  m %= 60;
-  s %= 60;
-
-  h = h < 10 ? "0" + h : h;
-  m = m < 10 ? "0" + m : m;
-  s = s < 10 ? "0" + s : s;
-
-  document.querySelector(".days").textContent = d;
-  document.querySelector(".days").innerText = d;
-
-  document.querySelector(".hours").textContent = h;
-  document.querySelector(".minutes").textContent = m;
-  document.querySelector(".seconds").textContent = s;
-
-  setTimeout(countdown, 1000);
-}
-
-countdown();
-// ======= Countdown End ======= //

@@ -47,9 +47,10 @@ html {
 #tour {
   padding: 70px 0;
 
-  .tour-basic-info {
+  .tourPics-and-basicInfo {
     padding-bottom: 50px;
     border-bottom: 1px solid #eadede;
+
     img {
       object-fit: cover;
     }
@@ -69,7 +70,7 @@ html {
     }
 
     .small-img-box {
-      transition: 0.3s ease-in-out;
+      transition: 0.4s linear;
       border: 2px solid white;
       height: 80px;
       margin: 5px;
@@ -210,6 +211,32 @@ html {
         padding-top: 0 !important;
       }
 
+      .description{
+        .read-more{
+          display: none;
+        }
+
+        .show-more-text{
+          display: block;
+          animation: fadeEffect 0.7s;
+        }
+
+        .readMoreBtn-wrapper{
+          margin-top: 15px;
+          a{
+            display: inline-block;
+            padding: 8px 30px;
+            font-size: 15px;
+            font-weight: 200;
+            color: white;
+            background-color: rgb(58,59,116);
+            &:hover{
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
       .reviews {
         p {
           margin-bottom: 25px;
@@ -277,9 +304,23 @@ html {
         }
       }
 
+      .tab-content{
+        animation: fadeEffect 0.7s;
+      }
+
       .tab-content:not(:first-of-type) {
         display: none;
       }
+
+    }
+  }
+
+  @keyframes fadeEffect {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }
@@ -289,7 +330,7 @@ html {
 
 // ======= Responsive Design Start ======= //
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .tour-basic-info {
+  .tourPics-and-basicInfo {
     .tour-info {
       .basic-info {
         width: 436px !important;
@@ -299,7 +340,7 @@ html {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .tour-basic-info {
+  .tourPics-and-basicInfo {
     .tour-img-box {
       height: 400px !important;
     }
@@ -328,7 +369,7 @@ html {
 @media (min-width: 576px) and (max-width: 767.98px) {
   #tour {
     padding: 40px 0;
-    .tour-basic-info {
+    .tourPics-and-basicInfo {
       .tour-img-box {
         height: 320px !important;
       }
@@ -369,7 +410,7 @@ html {
 @media (min-width: 375px) and (max-width: 575.98px) {
   #tour {
     padding: 50px 0;
-    .tour-basic-info {
+    .tourPics-and-basicInfo {
       .tour-img-box {
         height: 270px !important;
         margin: 0 3px 20px;
@@ -425,6 +466,13 @@ html {
     .descAndReviews-wrapper {
       .tab-items {
         padding-top: 30px !important;
+        .description{
+          .readMoreBtn-wrapper{
+            a{
+              font-size: 14px;
+            }
+          }
+        }
         .reviews {
           p,
           .rating {
@@ -449,7 +497,7 @@ html {
 @media (min-width: 250px) and (max-width: 374.98px) {
   #tour {
     padding: 50px 0;
-    .tour-basic-info {
+    .tourPics-and-basicInfo {
       .tour-img-box {
         height: 200px !important;
         margin: 0 1px 20px;
@@ -545,6 +593,14 @@ html {
           font-size: 15px;
         }
 
+        .description{
+          .readMoreBtn-wrapper{
+            a{
+              font-size: 13px;
+              padding: 7px 26px;
+            }
+          }
+        }
         .reviews {
           p,
           .rating {

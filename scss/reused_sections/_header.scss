@@ -111,12 +111,8 @@ header {
           top: 112px;
           right: 192px;
           border-radius: 4px;
-          backface-visibility: hidden;
-          visibility: hidden;
-          opacity: 0;
-          transform-origin: 50% 0;
-          transform: scale(0.75) translateY(-21px);
-          transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+          animation: fadeEffect 0.7s;
+          display: none;
           box-shadow: 0 2px 6px 0 rgba(46, 45, 45, 7%);
 
           input[type="text"] {
@@ -155,13 +151,9 @@ header {
           top: 114px;
           right: 139px;
           padding: 35px 40px 50px;
-          backface-visibility: hidden;
-          visibility: hidden;
-          opacity: 0;
           overflow: hidden;
-          transform-origin: 50% 0;
-          transform: scale(0.75) translateY(-21px);
-          transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+          animation: fadeEffect 0.7s;
+          display: none;
 
           .same-style-input-area {
             width: 100%;
@@ -300,8 +292,7 @@ header {
         }
 
         .visible {
-          opacity: 1;
-          transform: rotateX(0deg) translatey(0px);
+          display: block;
         }
       }
       .user {
@@ -311,6 +302,15 @@ header {
 
       @media (min-width: 280px) and (max-width: 374.98px) {
         right: 60px !important;
+      }
+
+      @keyframes fadeEffect {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
     }
 
