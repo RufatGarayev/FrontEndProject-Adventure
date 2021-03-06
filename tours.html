@@ -22,11 +22,9 @@
         rel="stylesheet">
     <!-- flaticon.css -->
     <link rel="stylesheet" href="font/flaticon.css">
-    <!-- responsive.css -->
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <!-- tours.css -->
     <link rel="stylesheet" href="css/tours.css">
-    <!-- title -->
+    <!-- page-title -->
     <title>Tours | Adventure</title>
 </head>
 
@@ -58,11 +56,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6 p-0">
+                    <!-- phone -->
                     <div class="phone text-white">
                         <span><i class="fas fa-phone-alt"></i> +994 517779977</span>
                     </div>
                 </div>
                 <div class="col-6 p-0">
+                    <!-- languages -->
                     <div class="langs">
                         <ul class="d-flex">
                             <li><a href="#">Az</a></li>
@@ -79,7 +79,9 @@
     <header>
         <nav class="navbar">
             <div class="container-fluid">
+                <!-- navbar-logo -->
                 <a class="navbar-brand" href="index.html"><img src="img/logo/travel-logo.png" alt="logo"></a>
+                <!-- navbar-middle-links -->
                 <div class="navbar-items d-flex">
                     <ul class="navbar-nav links middle-links">
                         <li class="nav-item">
@@ -90,7 +92,7 @@
                             <a class="nav-link" href="about.html">About</a>
                             <hr>
                         </li>
-                        <li class="nav-item active-link">
+                        <li class="nav-item">
                             <a class="nav-link" href="tours.html">Tours</a>
                             <hr>
                         </li>
@@ -100,7 +102,9 @@
                         </li>
                     </ul>
                 </div>
+                <!-- navbar-side-links-and-btns -->
                 <ul class="navbar-nav links account">
+                    <!-- search -->
                     <li class="nav-item">
                         <a class="nav-link search-btn-first icon-btn" href="#"><i class="flaticon-loupe"></i></a>
                         <div class="search-area-holder holder-div">
@@ -108,11 +112,13 @@
                             <a class="search-btn-second" href="#"><i class="flaticon-loupe"></i></a>
                         </div>
                     </li>
+                    <!-- user -->
                     <li class="nav-item user">
                         <a class="nav-link user-btn icon-btn" href="#">
                             <i class="flaticon-user-1"></i>
                         </a>
                         <div class="login-box-holder holder-div">
+                            <!-- login -->
                             <form action="#" method="POST" id="login">
                                 <div class="login-box same-style-input-area">
                                     <div class="input-area">
@@ -138,6 +144,7 @@
                                 </div>
                             </form>
 
+                            <!-- reset-password -->
                             <form action="#" method="GET" id="reset-form">
                                 <div class="reset-password same-style-input-area d-none">
                                     <p>Reset Password</p>
@@ -161,14 +168,16 @@
                             </form>
                         </div>
                     </li>
+                    <!-- cart -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="cart.html">
                             <i class="flaticon-shopping-bag">
                                 <sup><span>0</span></sup>
                             </i>
                         </a>
                     </li>
                 </ul>
+                <!-- hamburger-btn -->
                 <div class="hamburger">
                     <div class="line line-1"></div>
                     <div class="line line-2"></div>
@@ -202,8 +211,11 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 pr-0">
+                        <!-- sidebar -->
                         <div class="sidebar-area">
+                            <!-- filters -->
                             <div class="filters">
+                                <!-- price-filter -->
                                 <div class="price-filter">
                                     <h5>Price Filter</h5>
                                     <div class="slider-tour-sorting"></div>
@@ -211,6 +223,7 @@
                                         <input type="text" id="amount" readonly>
                                     </div>
                                 </div>
+                                <!-- province-filter -->
                                 <div class="province">
                                     <h5>Province</h5>
                                     <form action="#">
@@ -225,13 +238,16 @@
                                     </form>
                                 </div>
                             </div>
+                            <!-- filter-btn -->
                             <a href="#" class="sidebar-filter-toggle"><i class="flaticon-filter"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-9">
+                        <!-- category-and-sorting-area -->
                         <div class="category-and-sorting">
                             <div class="row w-100 no-gutters">
                                 <div class="col-lg-7 col-md-7 col-sm-7">
+                                    <!-- category -->
                                     <ul class="category-btns">
                                         <li><a data-filter="*" class="btns all active-btn" href="#">All</a></li>
                                         <li><a data-filter=".special" class="btns special" href="#">Special</a></li>
@@ -240,6 +256,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-lg-5 col-md-5 col-sm-5">
+                                    <!-- sorting -->
                                     <div class="sorting">
                                         <div class="dropholder">
                                             <h5>Sort By:</h5>
@@ -257,18 +274,23 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- tours -->
                         <div class="tour-holder">
                             <div class="row no-gutters">
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col special">
+                                    <!-- single-tour -->
                                     <div class="item main-tourItem-design">
+                                        <!-- price -->
                                         <div class="price-info">
                                             <h5>$79</h5> <br>
                                             <span>/Person</span>
                                         </div>
+                                        <!-- image -->
                                         <div class="img-box">
                                             <img class="img-fluid" src="img/special-offers/special-offer1.jpg"
                                                 alt="img1" />
                                         </div>
+                                        <!-- info -->
                                         <div class="info">
                                             <div class="tour-date">
                                                 <i class="fas fa-calendar-alt mr-1"></i>
@@ -289,43 +311,51 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col popular">
+                                    <!-- single-tour -->
                                     <div class="item main-tourItem-design">
+                                        <!-- price -->
                                         <div class="price-info">
-                                          <h5>$79</h5> <br>
-                                          <span>/Person</span>
+                                            <h5>$79</h5> <br>
+                                            <span>/Person</span>
                                         </div>
+                                        <!-- image -->
                                         <div class="img-box">
-                                          <img class="img-fluid" src="img/popular-tours/pic4.jpg" alt="goygol" />
+                                            <img class="img-fluid" src="img/popular-tours/pic4.jpg" alt="goygol" />
                                         </div>
+                                        <!-- info -->
                                         <div class="info">
-                                          <div class="tour-date">
-                                            <i class="fas fa-calendar-alt mr-1"></i>
-                                            <span>MAY 10, 2021 / 2 DAYS</span>
-                                          </div>
-                                          <div class="tour-name d-flex">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                            <h4>Goygol Tour</h4>
-                                          </div>
-                                          <div class="slide-links d-flex">
-                                            <a href="#">Learn More</a>
-                                            <a href="#">
-                                              <i class="flaticon-add-to-basket"></i>
-                                              <em class="top-info-box">Add To Cart</em>
-                                            </a>
-                                          </div>
+                                            <div class="tour-date">
+                                                <i class="fas fa-calendar-alt mr-1"></i>
+                                                <span>MAY 10, 2021 / 2 DAYS</span>
+                                            </div>
+                                            <div class="tour-name d-flex">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <h4>Goygol Tour</h4>
+                                            </div>
+                                            <div class="slide-links d-flex">
+                                                <a href="#">Learn More</a>
+                                                <a href="#">
+                                                    <i class="flaticon-add-to-basket"></i>
+                                                    <em class="top-info-box">Add To Cart</em>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col special">
+                                    <!-- single-tour -->
                                     <div class="item main-tourItem-design">
+                                        <!-- price -->
                                         <div class="price-info">
                                             <h5>$85</h5> <br>
                                             <span>/Person</span>
                                         </div>
+                                        <!-- image -->
                                         <div class="img-box">
                                             <img class="img-fluid" src="img/special-offers/special-offer2.jpg"
                                                 alt="img1" />
                                         </div>
+                                        <!-- info -->
                                         <div class="info">
                                             <div class="tour-date">
                                                 <i class="fas fa-calendar-alt mr-1"></i>
@@ -346,44 +376,52 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col discount">
+                                    <!-- single-tour -->
                                     <div class="item main-tourItem-design">
+                                        <!-- price -->
                                         <div class="price-info discount-price">
-                                          <h5>$79</h5> <br>
-                                          <h3>$55</h3> <br>
-                                          <span>/Person</span>
+                                            <h5>$79</h5> <br>
+                                            <h3>$55</h3> <br>
+                                            <span>/Person</span>
                                         </div>
+                                        <!-- image -->
                                         <div class="img-box">
-                                          <img class="img-fluid" src="img/bg-images/river.jpg" alt="sheki" />
+                                            <img class="img-fluid" src="img/bg-images/river.jpg" alt="sheki" />
                                         </div>
+                                        <!-- info -->
                                         <div class="info">
-                                          <div class="tour-date">
-                                            <i class="fas fa-calendar-alt mr-1"></i>
-                                            <span>MAY 10, 2021 / 2 DAYS</span>
-                                          </div>
-                                          <div class="tour-name d-flex">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                            <h4>Sheki Tour</h4>
-                                          </div>
-                                          <div class="slide-links d-flex">
-                                            <a href="#">Learn More</a>
-                                            <a href="#">
-                                              <i class="flaticon-add-to-basket"></i>
-                                              <em class="top-info-box">Add To Cart</em>
-                                            </a>
-                                          </div>
+                                            <div class="tour-date">
+                                                <i class="fas fa-calendar-alt mr-1"></i>
+                                                <span>MAY 10, 2021 / 2 DAYS</span>
+                                            </div>
+                                            <div class="tour-name d-flex">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <h4>Sheki Tour</h4>
+                                            </div>
+                                            <div class="slide-links d-flex">
+                                                <a href="#">Learn More</a>
+                                                <a href="#">
+                                                    <i class="flaticon-add-to-basket"></i>
+                                                    <em class="top-info-box">Add To Cart</em>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col special">
+                                    <!-- single-tour -->
                                     <div class="item main-tourItem-design">
+                                        <!-- price -->
                                         <div class="price-info">
                                             <h5>$72</h5> <br>
                                             <span>/Person</span>
                                         </div>
+                                        <!-- image -->
                                         <div class="img-box">
                                             <img class="img-fluid" src="img/special-offers/special-offer3.jpg"
                                                 alt="img1" />
                                         </div>
+                                        <!-- info -->
                                         <div class="info">
                                             <div class="tour-date">
                                                 <i class="fas fa-calendar-alt mr-1"></i>
@@ -404,15 +442,18 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col popular">
+                                    <!-- single-tour -->
                                     <div class="item main-tourItem-design">
+                                        <!-- price -->
                                         <div class="price-info">
                                             <h5>$88</h5> <br>
                                             <span>/Person</span>
                                         </div>
+                                        <!-- image -->
                                         <div class="img-box">
-                                            <img class="img-fluid" src="img/popular-tours/pic3.jpg"
-                                                alt="goygol" />
+                                            <img class="img-fluid" src="img/popular-tours/pic3.jpg" alt="goygol" />
                                         </div>
+                                        <!-- info -->
                                         <div class="info">
                                             <div class="tour-date">
                                                 <i class="fas fa-calendar-alt mr-1"></i>
@@ -433,15 +474,18 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col popular">
+                                    <!-- single-tour -->
                                     <div class="item main-tourItem-design">
+                                        <!-- price -->
                                         <div class="price-info">
                                             <h5>$70</h5> <br>
                                             <span>/Person</span>
                                         </div>
+                                        <!-- image -->
                                         <div class="img-box">
-                                            <img class="img-fluid" src="img/popular-tours/pic2.jpg"
-                                                alt="gusar" />
+                                            <img class="img-fluid" src="img/popular-tours/pic2.jpg" alt="gusar" />
                                         </div>
+                                        <!-- info -->
                                         <div class="info">
                                             <div class="tour-date">
                                                 <i class="fas fa-calendar-alt mr-1"></i>
@@ -462,63 +506,73 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col special">
+                                    <!-- single-tour -->
                                     <div class="item main-tourItem-design">
+                                        <!-- price -->
                                         <div class="price-info">
-                                          <h5>$79</h5> <br>
-                                          <span>/Person</span>
+                                            <h5>$79</h5> <br>
+                                            <span>/Person</span>
                                         </div>
+                                        <!-- image -->
                                         <div class="img-box">
-                                          <img class="img-fluid" src="img/special-offers/special-offer4.jpg" alt="img1" />
+                                            <img class="img-fluid" src="img/special-offers/special-offer4.jpg"
+                                                alt="img1" />
                                         </div>
+                                        <!-- info -->
                                         <div class="info">
-                                          <div class="tour-date">
-                                            <i class="fas fa-calendar-alt mr-1"></i>
-                                            <span>MAY 10, 2021 / 2 DAYS</span>
-                                          </div>
-                                          <div class="tour-name d-flex">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                            <h4>Guba Tour</h4>
-                                          </div>
-                                          <div class="slide-links d-flex">
-                                            <a href="#">Learn More</a>
-                                            <a href="#">
-                                              <i class="flaticon-add-to-basket"></i>
-                                              <em class="top-info-box">Add To Cart</em>
-                                            </a>
-                                          </div>
+                                            <div class="tour-date">
+                                                <i class="fas fa-calendar-alt mr-1"></i>
+                                                <span>MAY 10, 2021 / 2 DAYS</span>
+                                            </div>
+                                            <div class="tour-name d-flex">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <h4>Guba Tour</h4>
+                                            </div>
+                                            <div class="slide-links d-flex">
+                                                <a href="#">Learn More</a>
+                                                <a href="#">
+                                                    <i class="flaticon-add-to-basket"></i>
+                                                    <em class="top-info-box">Add To Cart</em>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col popular">
+                                    <!-- single-tour -->
                                     <div class="item main-tourItem-design">
+                                        <!-- price -->
                                         <div class="price-info">
-                                          <h5>$79</h5> <br>
-                                          <span>/Person</span>
+                                            <h5>$79</h5> <br>
+                                            <span>/Person</span>
                                         </div>
+                                        <!-- image -->
                                         <div class="img-box">
-                                          <img class="img-fluid" src="img/popular-tours/pic1.jpg" alt="shamakhi" />
+                                            <img class="img-fluid" src="img/popular-tours/pic1.jpg" alt="shamakhi" />
                                         </div>
+                                        <!-- info -->
                                         <div class="info">
-                                          <div class="tour-date">
-                                            <i class="fas fa-calendar-alt mr-1"></i>
-                                            <span>MAY 10, 2021 / 2 DAYS</span>
-                                          </div>
-                                          <div class="tour-name d-flex">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                            <h4>Shamakhi Tour</h4>
-                                          </div>
-                                          <div class="slide-links d-flex">
-                                            <a href="#">Learn More</a>
-                                            <a href="#">
-                                              <i class="flaticon-add-to-basket"></i>
-                                              <em class="top-info-box">Add To Cart</em>
-                                            </a>
-                                          </div>
+                                            <div class="tour-date">
+                                                <i class="fas fa-calendar-alt mr-1"></i>
+                                                <span>MAY 10, 2021 / 2 DAYS</span>
+                                            </div>
+                                            <div class="tour-name d-flex">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <h4>Shamakhi Tour</h4>
+                                            </div>
+                                            <div class="slide-links d-flex">
+                                                <a href="#">Learn More</a>
+                                                <a href="#">
+                                                    <i class="flaticon-add-to-basket"></i>
+                                                    <em class="top-info-box">Add To Cart</em>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- pagination-area -->
                         <div class="row">
                             <div class="col-12">
                                 <nav aria-label="Page navigation example">
@@ -543,7 +597,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <!-- subscribe-section title-->
+                        <!-- section-title -->
                         <div class="subscribe-title d-flex flex-column justify-content-center align-items-center"
                             data-aos="fade-up" data-aos-duration="1000">
                             <h1>Subscribe</h1>
@@ -584,13 +638,16 @@
             <div class="footer-top">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12">
+                        <!-- about -->
                         <div class="about-us">
                             <h4>About Us</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna.</p>
+                                ut labore et
+                                dolore magna.</p>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+                        <!-- quick-links -->
                         <div class="quick-links">
                             <h4>Quick Links</h4>
                             <ul>
@@ -602,6 +659,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+                        <!-- legal -->
                         <div class="legal">
                             <h4>Legal</h4>
                             <ul>
@@ -611,6 +669,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
+                        <!-- contact -->
                         <div class="contact">
                             <h4>Contact Info</h4>
                             <ul>
@@ -628,11 +687,13 @@
             <div class="footer-bottom">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 copyright-bottom">
+                        <!-- copyright -->
                         <div class="copyright-holder">
                             <p>Copyright © 2021. Created by Rufat Garayev</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 social-media-top">
+                        <!-- social-media -->
                         <div class="social-media d-flex">
                             <ul class="d-flex">
                                 <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -653,7 +714,9 @@
     <!-- animate on scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({});
+        AOS.init({
+            once: true
+        });
     </script>
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/b7e00c266a.js" crossorigin="anonymous"></script>

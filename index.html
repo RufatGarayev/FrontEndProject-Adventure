@@ -24,8 +24,8 @@
   <link rel="stylesheet" href="css/responsive.css">
   <!-- style.css -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- title -->
-  <title>Adventure</title>
+  <!-- page-title -->
+  <title>Home | Adventure</title>
 </head>
 
 <body>
@@ -51,148 +51,163 @@
   <!-- ======= Top Header Start ======= -->
   <section id="top-header">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-6 p-0">
-          <div class="phone text-white">
-            <span><i class="fas fa-phone-alt"></i> +994 517779977</span>
-          </div>
+        <div class="row">
+            <div class="col-6 p-0">
+                <!-- phone -->
+                <div class="phone text-white">
+                    <span><i class="fas fa-phone-alt"></i> +994 517779977</span>
+                </div>
+            </div>
+            <div class="col-6 p-0">
+                <!-- languages -->
+                <div class="langs">
+                    <ul class="d-flex">
+                        <li><a href="#">Az</a></li>
+                        <li><a href="#">En</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-6 p-0">
-          <div class="langs">
-            <ul class="d-flex">
-              <li><a href="#">Az</a></li>
-              <li><a href="#">En</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- ======= Top Header End ======= -->
+</section>
+<!-- ======= Top Header End ======= -->
 
-
-  <!-- ======= Main Header Start ======= -->
-  <header>
+<!-- ======= Main Header Start ======= -->
+<header>
     <nav class="navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="img/logo/travel-logo.png" alt="logo"></a>
-        <div class="navbar-items d-flex">
-          <ul class="navbar-nav links middle-links">
-            <li class="nav-item active-link">
-              <a class="nav-link" href="index.html">Home</a>
-              <hr>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-              <hr>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tours.html">Tours</a>
-              <hr>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-              <hr class="contact-line">
-            </li>
-          </ul>
-        </div>
-        <ul class="navbar-nav links account">
-          <li class="nav-item">
-            <a class="nav-link search-btn-first icon-btn" href="#"><i class="flaticon-loupe"></i></a>
-            <div class="search-area-holder holder-div">
-              <input type="text" placeholder="Region Name.." name="search">
-              <a class="search-btn-second" href="#"><i class="flaticon-loupe"></i></a>
+        <div class="container-fluid">
+            <!-- navbar-logo -->
+            <a class="navbar-brand" href="index.html"><img src="img/logo/travel-logo.png" alt="logo"></a>
+            <!-- navbar-middle-links -->
+            <div class="navbar-items d-flex">
+                <ul class="navbar-nav links middle-links">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <hr>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                        <hr>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Tours</a>
+                        <hr>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                        <hr class="contact-line">
+                    </li>
+                </ul>
             </div>
-          </li>
-          <li class="nav-item user">
-            <a class="nav-link user-btn icon-btn" href="#">
-              <i class="flaticon-user-1"></i>
-            </a>
-            <div class="login-box-holder holder-div">
-              <form action="#" method="POST" id="login">
-                <div class="login-box same-style-input-area">
-                  <div class="input-area">
-                    <input class="email login-email" type="text" name="email" placeholder="Email">
-                    <i class="fas fa-check-circle d-none success-icon"></i>
-			              <i class="fas fa-exclamation-circle d-none"></i>
-                    <small class="alert login-email-alert"></small>
-                  </div>
-                  <div class="input-area">
-                    <input class="password login-pass" type="password" name="password" placeholder="Password">
-                    <i class="fas fa-check-circle d-none success-icon"></i>
-			              <i class="fas fa-exclamation-circle d-none"></i>
-                    <small class="alert login-pass-alert"></small>
-                  </div>
-                  <div class="forgot-area">
-                    <a class="forgotten-password-link" href="#">Forgotten Password?</a>
-                  </div>
-                  <div class="bottom-links">
-                    <a href="sign-up.html" class="sign-up">Sign Up</a>
-                    <button type="submit" class="sign-in">Sign In</button>
-                  </div>
-                </div>
-              </form>
+            <!-- navbar-side-links-and-btns -->
+            <ul class="navbar-nav links account">
+                <!-- search -->
+                <li class="nav-item">
+                    <a class="nav-link search-btn-first icon-btn" href="#"><i class="flaticon-loupe"></i></a>
+                    <div class="search-area-holder holder-div">
+                        <input type="text" placeholder="Region Name.." name="search">
+                        <a class="search-btn-second" href="#"><i class="flaticon-loupe"></i></a>
+                    </div>
+                </li>
+                <!-- user -->
+                <li class="nav-item user">
+                    <a class="nav-link user-btn icon-btn" href="#">
+                        <i class="flaticon-user-1"></i>
+                    </a>
+                    <div class="login-box-holder holder-div">
+                        <!-- login -->
+                        <form action="#" method="POST" id="login">
+                            <div class="login-box same-style-input-area">
+                              <div class="input-area">
+                                <input class="email login-email" type="text" name="email" placeholder="Email">
+                                <i class="fas fa-check-circle d-none success-icon"></i>
+                                <i class="fas fa-exclamation-circle d-none"></i>
+                                <small class="alert login-email-alert"></small>
+                              </div>
+                              <div class="input-area">
+                                <input class="password login-pass" type="password" name="password" placeholder="Password">
+                                <i class="fas fa-check-circle d-none success-icon"></i>
+                                <i class="fas fa-exclamation-circle d-none"></i>
+                                <small class="alert login-pass-alert"></small>
+                              </div>
+                              <div class="forgot-area">
+                                <a class="forgotten-password-link" href="#">Forgotten Password?</a>
+                              </div>
+                              <div class="bottom-links">
+                                <a href="sign-up.html" class="sign-up">Sign Up</a>
+                                <button type="submit" class="sign-in">Sign In</button>
+                              </div>
+                            </div>
+                        </form>
 
-              <form action="#" method="GET" id="reset-form">
-                <div class="reset-password same-style-input-area d-none">
-                  <p>Reset Password</p>
-                  <div class="input-area">
-                    <input class="email-for-reset-pass" type="text" name="email" placeholder="Please enter your Email">
-                    <i class="fas fa-check-circle d-none success-icon"></i>
-                    <i class="fas fa-exclamation-circle d-none"></i>
-                    <small class="alert reset-email-alert"></small>
-                  </div>
-                  <div class="bottom-links pt-2">
-                    <a href="#" class="go-back">Back</a>
-                    <button type="submit" class="reset">Reset</button>
-                  </div>
-                </div>
-                <div class="success hidden d-flex text-center align-items-center">
-                  <i class="far fa-check-circle"></i>
-                  <h4>Thank You!</h4>
-                  <p>To reset password, the message was sent to your Email Address.</p>
-                </div>
-              </form>
+                        <!-- reset-password -->
+                        <form action="#" method="GET" id="reset-form">
+                            <div class="reset-password same-style-input-area d-none">
+                                <p>Reset Password</p>
+                                <div class="input-area">
+                                    <input class="email-for-reset-pass" type="text" name="email" placeholder="Please enter your Email">
+                                    <i class="fas fa-check-circle d-none success-icon"></i>
+                                    <i class="fas fa-exclamation-circle d-none"></i>
+                                    <small class="alert reset-email-alert"></small>
+                                </div>
+                                <div class="bottom-links pt-2">
+                                    <a href="#" class="go-back">Back</a>
+                                    <button type="submit" class="reset">Reset</button>
+                                </div>
+                            </div>
+                            <div class="success hidden d-flex text-center align-items-center">
+                                <i class="far fa-check-circle"></i>
+                                <h4>Thank You!</h4>
+                                <p>To reset password, the message was sent to your Email Address.</p>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <!-- cart -->
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <i class="flaticon-shopping-bag">
+                            <sup><span>0</span></sup>
+                        </i>
+                    </a>
+                </li>
+            </ul>
+            <!-- hamburger-btn -->
+            <div class="hamburger">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="flaticon-shopping-bag">
-                <sup><span>0</span></sup>
-              </i>
-            </a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <div class="line line-1"></div>
-          <div class="line line-2"></div>
-          <div class="line line-3"></div>
         </div>
-      </div>
     </nav>
-  </header>
-  <!-- ======= Main Header End ======= -->
+</header>
+<!-- ======= Main Header End ======= -->
 
 
   <!-- ======= Main Part Start ======= -->
   <main>
     <!-- ======= Intro Section Start ======= -->
     <section id="intro">
+      <!-- carousel -->
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
+          <!-- carousel-item -->
           <div class="carousel-item item1 active" data-interval="200">
             <img src="img/intro-carousel/carousel1.jpg" class="d-block w-100" alt="lake">
           </div>
+          <!-- carousel-item -->
           <div class="carousel-item item2" data-interval="200">
             <img src="img//intro-carousel/carousel2.jpg" class="d-block w-100" alt="cave">
           </div>
         </div>
+        <!-- left-arrow -->
         <a class="carousel-control-prev carousel-button" href="#carouselExampleFade" role="button" data-slide="prev">
           <span class="carousel-control" aria-hidden="true">
             <i class="flaticon-left-arrow"></i>
           </span>
           <span class="sr-only">Previous</span>
         </a>
+        <!-- right-arrow -->
         <a class="carousel-control-next carousel-button" href="#carouselExampleFade" role="button" data-slide="next">
           <span class="carousel-control" aria-hidden="true">
             <i class="flaticon-right-arrow-angle"></i>
@@ -200,6 +215,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+      <!-- banner -->
       <div class="banner-area">
         <div class="container">
           <div class="row">
@@ -224,6 +240,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
+            <!-- section-title -->
             <div class="caption d-flex flex-column align-items-center" data-aos="fade-up" data-aos-duration="1000">
               <h1>Our Advantages</h1>
               <hr>
@@ -232,6 +249,7 @@
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12">
+            <!-- single-item -->
             <div class="main-holder" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
               <div class="holder d-flex flex-column align-items-center text-center">
                 <div class="icon-holder">
@@ -244,6 +262,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
+            <!-- single-item -->
             <div class="main-holder" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
               <div class="holder d-flex flex-column align-items-center text-center">
                 <div class="icon-holder">
@@ -256,6 +275,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
+            <!-- single-item -->
             <div class="main-holder" data-aos="fade-up" data-aos-duration="800" data-aos-delay="650">
               <div class="holder d-flex flex-column align-items-center text-center">
                 <div class="icon-holder">
@@ -268,6 +288,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
+            <!-- single-item -->
             <div class="main-holder" data-aos="fade-up" data-aos-duration="900" data-aos-delay="900">
               <div class="holder d-flex flex-column align-items-center text-center">
                 <div class="icon-holder">
@@ -291,6 +312,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-8 col-md-12 offset-lg-2">
+            <!-- section-title -->
             <div class="special-offers-caption text-center d-flex flex-column align-items-center" data-aos="fade-up"
               data-aos-duration="1000">
               <h1>Special Offers</h1>
@@ -303,15 +325,20 @@
         </div>
         <div class="row">
           <div class="col-lg-12 p-0">
+            <!-- carousel-area -->
             <div class="owl-carousel owl-theme specials-section-items">
+              <!-- single-tour -->
               <div class="item main-tourItem-design">
+                <!-- price -->
                 <div class="price-info">
                   <h5>$79</h5> <br>
                   <span>/Person</span>
                 </div>
+                <!-- image -->
                 <div class="img-box">
                   <img class="img-fluid" src="img/special-offers/special-offer1.jpg" alt="img1" />
                 </div>
+                <!-- info -->
                 <div class="info">
                   <div class="tour-date">
                     <i class="fas fa-calendar-alt mr-1"></i>
@@ -330,14 +357,18 @@
                   </div>
                 </div>
               </div>
+              <!-- single-tour -->
               <div class="item main-tourItem-design">
+                <!-- price -->
                 <div class="price-info">
                   <h5>$79</h5> <br>
                   <span>/Person</span>
                 </div>
+                <!-- image -->
                 <div class="img-box">
                   <img class="img-fluid" src="img/special-offers/special-offer2.jpg" alt="img1" />
                 </div>
+                <!-- info -->
                 <div class="info">
                   <div class="tour-date">
                     <i class="fas fa-calendar-alt mr-1"></i>
@@ -356,14 +387,18 @@
                   </div>
                 </div>
               </div>
+              <!-- single-tour -->
               <div class="item main-tourItem-design">
+                <!-- price -->
                 <div class="price-info">
                   <h5>$79</h5> <br>
                   <span>/Person</span>
                 </div>
+                <!-- image -->
                 <div class="img-box">
                   <img class="img-fluid" src="img/special-offers/special-offer3.jpg" alt="img1" />
                 </div>
+                <!-- info -->
                 <div class="info">
                   <div class="tour-date">
                     <i class="fas fa-calendar-alt mr-1"></i>
@@ -382,14 +417,18 @@
                   </div>
                 </div>
               </div>
+              <!-- single-tour -->
               <div class="item main-tourItem-design">
+                <!-- price -->
                 <div class="price-info">
                   <h5>$79</h5> <br>
                   <span>/Person</span>
                 </div>
+                <!-- image -->
                 <div class="img-box">
                   <img class="img-fluid" src="img/special-offers/special-offer4.jpg" alt="img1" />
                 </div>
+                <!-- info -->
                 <div class="info">
                   <div class="tour-date">
                     <i class="fas fa-calendar-alt mr-1"></i>
@@ -421,12 +460,14 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+            <!-- text-area -->
             <div class="view-tours-text d-flex align-items-center" data-aos="fade-right" data-aos-duration="1000">
               <i class="flaticon-compass"></i>
               <h4>Book Your Adventure Today!</h4>
             </div>
           </div>
           <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+            <!-- btn-area -->
             <div class="view-tours-btn" data-aos="fade-left" data-aos-duration="1000">
               <a href="tours.html">View Tours</a>
             </div>
@@ -442,6 +483,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+            <!-- discount-titles -->
             <div class="discount_title">
               <h2 data-aos="zoom-in" data-aos-duration="1000"><span>Sheki</span> Tour</h2>
               <h2 data-aos="zoom-in" data-aos-duration="1000">On Going Limited <span>Time Offer</span></h2>
@@ -450,6 +492,7 @@
                 <span class="norm-price">$79</span><span class="discount-price">$55</span>
               </h2>
             </div>
+            <!-- countdown -->
             <div class="counterdowns" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50">
               <div class="counter">
                 <div class="timer">
@@ -464,6 +507,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <!-- btn-area -->
             <div class="discount_btn" data-aos="zoom-in" data-aos-duration="1000">
               <a href="#">Book Now</a>
             </div>
@@ -479,6 +523,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
+            <!-- section-title -->
             <div class="popular-tours-caption d-flex flex-column justify-content-center align-items-center"
               data-aos="fade-up" data-aos-duration="1000">
               <h1>Popular Tours</h1>
@@ -489,15 +534,20 @@
         </div>
         <div class="row">
           <div class="col-lg-12 p-0">
+            <!-- carousel-area -->
             <div class="owl-carousel owl-theme popular-tours-section-items">
+              <!-- single-tour -->
               <div class="item">
+                <!-- price -->
                 <div class="price-info">
                   <h5>$79</h5> <br>
                   <span>/Person</span>
                 </div>
+                <!-- image -->
                 <div class="img-box">
                   <img class="img-fluid" src="img/popular-tours/pic1.jpg" alt="...">
                 </div>
+                <!-- info -->
                 <div class="content">
                   <div class="content-header">
                     <div class="tour-name d-flex flex-row align-items-center">
@@ -518,14 +568,18 @@
                   </div>
                 </div>
               </div>
+              <!-- single-tour -->
               <div class="item">
+                <!-- price -->
                 <div class="price-info">
                   <h5>$79</h5> <br>
                   <span>/Person</span>
                 </div>
+                <!-- image -->
                 <div class="img-box">
                   <img class="img-fluid" src="img/popular-tours/pic2.jpg" alt="...">
                 </div>
+                <!-- info -->
                 <div class="content">
                   <div class="content-header">
                     <div class="tour-name d-flex flex-row align-items-center">
@@ -546,14 +600,18 @@
                   </div>
                 </div>
               </div>
+              <!-- single-tour -->
               <div class="item">
+                <!-- price -->
                 <div class="price-info">
                   <h5>$79</h5> <br>
                   <span>/Person</span>
                 </div>
+                <!-- image -->
                 <div class="img-box">
                   <img class="img-fluid" src="img/popular-tours/pic3.jpg" alt="...">
                 </div>
+                <!-- info -->
                 <div class="content">
                   <div class="content-header">
                     <div class="tour-name d-flex flex-row align-items-center">
@@ -574,14 +632,18 @@
                   </div>
                 </div>
               </div>
+              <!-- single-tour -->
               <div class="item">
+                <!-- price -->
                 <div class="price-info">
                   <h5>$79</h5> <br>
                   <span>/Person</span>
                 </div>
+                <!-- image -->
                 <div class="img-box">
                   <img class="img-fluid" src="img/popular-tours/pic4.jpg" alt="...">
                 </div>
+                <!-- info -->
                 <div class="content">
                   <div class="content-header">
                     <div class="tour-name d-flex flex-row align-items-center">
@@ -615,6 +677,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
+            <!-- section-title -->
             <div class="coming-soon-caption d-flex flex-column justify-content-center align-items-center"
               data-aos="fade-up" data-aos-duration="1000">
               <h1>Coming Soon</h1>
@@ -625,6 +688,7 @@
         </div>
         <div class="row">
           <div class="col-lg-6 col-md-6 p-0">
+            <!-- single-item -->
             <div class="content d-flex flex-column align-items-start justify-content-center">
               <div class="content-name d-flex flex-row" data-aos="fade-right" data-aos-duration="1000">
                 <i class="flaticon-national-park"></i>
@@ -639,12 +703,15 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-6 p-0">
+            <!-- image-area -->
             <div class="img-box first-pic"></div>
           </div>
           <div class="col-lg-6 col-md-6 p-0 fourth">
+            <!-- image-area -->
             <div class="img-box second-pic"></div>
           </div>
           <div class="col-lg-6 col-md-6 p-0 third">
+            <!-- single-item -->
             <div class="content d-flex flex-column align-items-start justify-content-center">
               <div class="content-name d-flex flex-row" data-aos="fade-left" data-aos-duration="1000">
                 <i class="flaticon-national-park"></i>
@@ -668,6 +735,7 @@
     <section id="our-achievements">
       <div class="container">
         <div class="row">
+          <!-- section-title -->
           <div class="achievements-caption d-flex flex-column justify-content-center align-items-center"
             data-aos="fade-up" data-aos-duration="1000">
             <h1>Our Achievements</h1>
@@ -676,6 +744,7 @@
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12">
+            <!-- awards-item -->
             <div class="content awards d-flex flex-column align-items-center">
               <i class="flaticon-medal"></i>
               <h2 class="counter-up">12</h2>
@@ -683,6 +752,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
+            <!-- travellers-item -->
             <div class="content travellers d-flex flex-column align-items-center">
               <i class="flaticon-traveller"></i>
               <h2><span class="counter-up">500</span> <span>+</span></h2>
@@ -690,6 +760,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
+            <!-- members-item -->
             <div class="content members d-flex flex-column align-items-center">
               <i class="flaticon-community"></i>
               <h2 class="counter-up">42</h2>
@@ -707,7 +778,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <!-- subscribe-section title-->
+            <!-- section-title -->
             <div class="subscribe-title d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
               data-aos-duration="1000">
               <h1>Subscribe</h1>
@@ -747,6 +818,7 @@
       <div class="footer-top">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12">
+            <!-- about -->
             <div class="about-us">
               <h4>About Us</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -754,6 +826,7 @@
             </div>
           </div>
           <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+            <!-- quick-links -->
             <div class="quick-links">
               <h4>Quick Links</h4>
               <ul>
@@ -765,6 +838,7 @@
             </div>
           </div>
           <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+            <!-- legal -->
             <div class="legal">
               <h4>Legal</h4>
               <ul>
@@ -774,6 +848,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
+            <!-- contact -->
             <div class="contact">
               <h4>Contact Info</h4>
               <ul>
@@ -791,11 +866,13 @@
       <div class="footer-bottom">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 copyright-bottom">
+            <!-- copyright -->
             <div class="copyright-holder">
               <p>Copyright © 2021. Created by Rufat Garayev</p>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 social-media-top">
+            <!-- social-media -->
             <div class="social-media d-flex">
               <ul class="d-flex">
                 <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -816,7 +893,9 @@
   <!-- animate on scroll -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init({});
+    AOS.init({
+      once: true
+    });
   </script>
   <!-- font-awesome -->
   <script src="https://kit.fontawesome.com/b7e00c266a.js" crossorigin="anonymous"></script>

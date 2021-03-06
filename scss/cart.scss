@@ -59,7 +59,10 @@ html {
           height: 70px;
           border-bottom: 1px solid #eadfdf;
           .tour-img {
-            width: 9%;
+            width: 10%;
+          }
+          .resize {
+            width: 19%;
           }
         }
       }
@@ -177,4 +180,43 @@ html {
 
 
 // ======= Responsive Design Start ======= //
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #shop-cart {
+    .shop-table {
+      thead {
+        .thead-row {
+          .tour-img {
+            width: 13% !important;
+          }
+          .tour-name{
+            width: 32%;
+          }
+          .resize{
+            width: 20% !important;
+          }
+        }
+      }
+
+      tbody {
+        .tbody-row {
+          .tour-smallImg {
+            height: 46px !important;
+            width: 60px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #shop-cart {
+    .shop-table {
+      th, td {
+        display: block !important;
+        float: left !important;
+    }
+    }
+  }
+}
 // ======= Responsive Design End ======= //

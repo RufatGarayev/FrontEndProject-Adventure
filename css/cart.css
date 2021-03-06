@@ -1936,7 +1936,11 @@ html {
 }
 
 #shop-cart .shop-table-wrapper .shop-table thead .thead-row .tour-img {
-  width: 9%;
+  width: 10%;
+}
+
+#shop-cart .shop-table-wrapper .shop-table thead .thead-row .resize {
+  width: 19%;
 }
 
 #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row {
@@ -2041,5 +2045,28 @@ html {
   text-transform: none;
   padding: 12px 0;
   width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #shop-cart .shop-table thead .thead-row .tour-img {
+    width: 13% !important;
+  }
+  #shop-cart .shop-table thead .thead-row .tour-name {
+    width: 32%;
+  }
+  #shop-cart .shop-table thead .thead-row .resize {
+    width: 20% !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .tour-smallImg {
+    height: 46px !important;
+    width: 60px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #shop-cart .shop-table th, #shop-cart .shop-table td {
+    display: block !important;
+    float: left !important;
+  }
 }
 /*# sourceMappingURL=cart.css.map */
