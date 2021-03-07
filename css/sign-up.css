@@ -280,7 +280,7 @@ footer .footer-bottom .social-media ul li:hover .twitter::before {
 }
 
 #top-header {
-  background-color: #1b1b1b;
+  background-color: black;
   padding: 0 93px;
   height: 34px;
 }
@@ -405,6 +405,7 @@ header nav .account li a {
 }
 
 header nav .account li a i {
+  z-index: 11;
   position: relative;
 }
 
@@ -710,7 +711,7 @@ header nav .active-link hr {
     width: 100% !important;
     height: 97%;
     padding-left: 0;
-    background-color: #1b1b1b !important;
+    background-color: black !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -762,9 +763,13 @@ header nav .active-link hr {
     font-size: 20px !important;
   }
   header .navbar .account li a i sup {
-    top: 0px;
-    right: -9px;
+    top: -2px;
+    right: -6px;
     font-size: 13px;
+  }
+  header .navbar .account li a i sup span::after {
+    top: 1px;
+    right: -2px;
   }
   header .navbar .account li .search-area-holder {
     right: 236px;
@@ -831,7 +836,7 @@ header nav .active-link hr {
     width: 100% !important;
     height: 98%;
     padding-left: 0;
-    background-color: #1b1b1b !important;
+    background-color: black !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -887,9 +892,13 @@ header nav .active-link hr {
     font-size: 20px !important;
   }
   header .navbar .account li a i sup {
-    top: 0px;
-    right: -9px;
-    font-size: 13px;
+    top: -2px;
+    right: -7px;
+    font-size: 12px;
+  }
+  header .navbar .account li a i sup span::after {
+    top: 1px;
+    right: -2.5px;
   }
   header .navbar .account li .search-area-holder {
     width: calc(100% - 82px) !important;
@@ -969,7 +978,7 @@ header nav .active-link hr {
     width: 100% !important;
     height: 98%;
     padding-left: 0;
-    background-color: #1b1b1b !important;
+    background-color: black !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1027,6 +1036,10 @@ header nav .active-link hr {
     top: 0px;
     right: -8px;
     font-size: 12px;
+  }
+  header .navbar .account li a i sup span::after {
+    top: 1px;
+    right: -2.5px;
   }
   header .navbar .account li .search-area-holder {
     width: calc(100% - 37px) !important;
@@ -1111,7 +1124,7 @@ header nav .active-link hr {
     width: 100% !important;
     height: 98%;
     padding-left: 0;
-    background-color: #1b1b1b !important;
+    background-color: black !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1167,9 +1180,15 @@ header nav .active-link hr {
     font-size: 15px !important;
   }
   header .navbar .account li a i sup {
-    top: 3px;
-    right: -6px;
-    font-size: 9px;
+    top: 2px;
+    right: -5px;
+    font-size: 10px;
+  }
+  header .navbar .account li a i sup span::after {
+    top: 1px;
+    right: -2px;
+    height: 12px;
+    width: 12px;
   }
   header .navbar .account li .search-area-holder {
     width: calc(100% - 27px) !important;

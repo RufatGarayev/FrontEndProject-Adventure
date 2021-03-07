@@ -890,6 +890,67 @@ $(document).ready(function () {
   // ======= Read More End ======= //
 
 
+ // ======= Increase or Decrease the Quantity - Start ======= //
+ // taking count
+ let count;
+
+ // taking price
+ let price = $(".total-price .price").text();
+
+ // price calculation function
+ function total() {
+    let total = count * price;
+    $(".total-price .price").text(total);
+ }
+
+ $(document).on("click", ".increase-decrease .plus-btn", function(){
+    // getting value of input
+    count = $(".increase-decrease .amount").val();
+
+    // input value increment by 1
+    count++;
+
+    // setting increment input value
+    $(".increase-decrease .amount").val(count);
+
+    // enable minus-btn, if count > 1
+    if (count > 1) {
+      $(".increase-decrease .minus-btn").removeAttr("disabled");
+    }
+    
+    // disable plus-btn, if count >= 10
+    if (count >= 10){
+      $(".increase-decrease .plus-btn").attr("disabled", true);
+    }
+
+    total();
+ });
+
+ $(document).on("click", ".increase-decrease .minus-btn", function(){
+    // getting value of input
+    count = $(".increase-decrease .amount").val();
+
+    // input value increment by 1
+    count--;
+
+    //setting increment input value
+    $(".increase-decrease .amount").val(count);
+
+    // disable minus-btn, if count === 1
+    if (count === 1) {
+      $(".increase-decrease .minus-btn").attr("disabled", true);
+    }
+
+    // enable plus-btn, if count < 10
+    if (count < 10) {
+      $(".increase-decrease .plus-btn").removeAttr("disabled");
+    }
+
+    total();
+ });
+ // ======= Increase or Decrease the Quantity - End ======= //
+
+
   // ======= Tour Filter and Background-color of Button when click on it - Start ======= //
   $(".tour-holder").isotope({
     itemSelector: ".item-col",

@@ -118,25 +118,26 @@
                             <!-- login -->
                             <form action="#" method="POST" id="login">
                                 <div class="login-box same-style-input-area">
-                                  <div class="input-area">
-                                    <input class="email login-email" type="text" name="email" placeholder="Email">
-                                    <i class="fas fa-check-circle d-none success-icon"></i>
-                                    <i class="fas fa-exclamation-circle d-none"></i>
-                                    <small class="alert login-email-alert"></small>
-                                  </div>
-                                  <div class="input-area">
-                                    <input class="password login-pass" type="password" name="password" placeholder="Password">
-                                    <i class="fas fa-check-circle d-none success-icon"></i>
-                                    <i class="fas fa-exclamation-circle d-none"></i>
-                                    <small class="alert login-pass-alert"></small>
-                                  </div>
-                                  <div class="forgot-area">
-                                    <a class="forgotten-password-link" href="#">Forgotten Password?</a>
-                                  </div>
-                                  <div class="bottom-links">
-                                    <a href="sign-up.html" class="sign-up">Sign Up</a>
-                                    <button type="submit" class="sign-in">Sign In</button>
-                                  </div>
+                                    <div class="input-area">
+                                        <input class="email login-email" type="text" name="email" placeholder="Email">
+                                        <i class="fas fa-check-circle d-none success-icon"></i>
+                                        <i class="fas fa-exclamation-circle d-none"></i>
+                                        <small class="alert login-email-alert"></small>
+                                    </div>
+                                    <div class="input-area">
+                                        <input class="password login-pass" type="password" name="password"
+                                            placeholder="Password">
+                                        <i class="fas fa-check-circle d-none success-icon"></i>
+                                        <i class="fas fa-exclamation-circle d-none"></i>
+                                        <small class="alert login-pass-alert"></small>
+                                    </div>
+                                    <div class="forgot-area">
+                                        <a class="forgotten-password-link" href="#">Forgotten Password?</a>
+                                    </div>
+                                    <div class="bottom-links">
+                                        <a href="sign-up.html" class="sign-up">Sign Up</a>
+                                        <button type="submit" class="sign-in">Sign In</button>
+                                    </div>
                                 </div>
                             </form>
 
@@ -145,7 +146,8 @@
                                 <div class="reset-password same-style-input-area d-none">
                                     <p>Reset Password</p>
                                     <div class="input-area">
-                                        <input class="email-for-reset-pass" type="text" name="email" placeholder="Please enter your Email">
+                                        <input class="email-for-reset-pass" type="text" name="email"
+                                            placeholder="Please enter your Email">
                                         <i class="fas fa-check-circle d-none success-icon"></i>
                                         <i class="fas fa-exclamation-circle d-none"></i>
                                         <small class="alert reset-email-alert"></small>
@@ -299,9 +301,22 @@
                                 </div>
                             </div>
                             <!-- add-to-cart-area -->
-                            <div class="addToCart d-flex">
-                                <form action="#">
-                                    <input type="number" name="quantity" value="1" min="1" max="10">
+                            <div class="addToCart">
+                                <form class="d-flex" action="#">
+                                    <div class="quantity d-flex">
+                                        <!-- increase or decrease the quantity -->
+                                        <div class="increase-decrease">
+                                            <button type="button" class="btn minus-btn" disabled><i class="fas fa-minus"></i></button>
+                                            <input type="text" class="amount" value="1" readonly>
+                                            <button type="button" class="btn plus-btn"><i class="fas fa-plus"></i></button>
+                                        </div>
+                                        <!-- total-price -->
+                                        <div class="total-price">
+                                            <i class="flaticon-dollar"></i>
+                                            <span class="price">79</span>
+                                        </div>
+                                    </div>
+
                                     <button class="addToCart-btn" type="submit">Add To Cart</button>
                                 </form>
                             </div>

@@ -217,7 +217,7 @@
                                         <th class="tour-img"></th>
                                         <th class="tour-name">Tour</th>
                                         <th class="tour-price resize">Price</th>
-                                        <th class="tour-quantity resize">Quantity</th>
+                                        <th class="increase-decrease resize">Quantity</th>
                                         <th class="tour-total resize">Total</th>
                                         <th class="remove-tour"></th>
                                     </tr>
@@ -225,22 +225,32 @@
                                 <!-- table-body -->
                                 <tbody>
                                     <tr class="tbody-row">
+                                        <!-- tour-img -->
                                         <td>
                                             <div class="tour-smallImg">
                                                 <img class="img-fluid" src="/img/special-offers/special-offer1.jpg"
                                                     alt="gabala">
                                             </div>
                                         </td>
-                                        <td class="tour-name">Gabala Tour</td>
+                                        <!-- tour-name -->
+                                        <td class="tour-name">Gabala</td>
+                                        <!-- tour-price -->
                                         <td class="tour-price">
                                             <span><i class="flaticon-dollar"></i>79</span>
                                         </td>
-                                        <td class="tour-quantity">
-                                            <input type="number" name="quantity" value="1" min="1" max="10">
+                                        <!-- increase or decrease the quantity -->
+                                        <td class="increase-decrease">
+                                            <div class="increase-decrease-area">
+                                                <button type="button" class="btn minus-btn" disabled><i class="fas fa-minus"></i></button>
+                                                <input type="text" class="amount" value="1" readonly>
+                                                <button type="button" class="btn plus-btn"><i class="fas fa-plus"></i></button>
+                                            </div>
                                         </td>
-                                        <td class="tour-total">
-                                            <span><i class="flaticon-dollar"></i>79</span>
+                                        <!-- total-price -->
+                                        <td class="total-price">
+                                            <span class="price"><i class="flaticon-dollar"></i>79</span>
                                         </td>
+                                        <!-- remove-btn -->
                                         <td class="remove-tour">
                                             <a href="#"><i class="fas fa-times"></i></a>
                                         </td>
@@ -254,17 +264,21 @@
                     <div class="col-lg-4 offset-lg-8 col-md-4 offset-md-8">
                         <!-- total-area -->
                         <div class="cart-totals">
+                            <!-- title -->
                             <div class="cart-totals-head">
                                 <h5>Cart Totals</h5>
                             </div>
-                            <div class="subtotal d-flex justify-content-between align-items-center">
+                            <!-- subtotal -->
+                            <div class="subtotal total-price d-flex justify-content-between align-items-center">
                                 <h6>Subtotal</h6>
-                                <span><i class="flaticon-dollar"></i>79</span>
+                                <span class="price"><i class="flaticon-dollar"></i>79</span>
                             </div>
-                            <div class="total d-flex justify-content-between align-items-center">
+                            <!-- total -->
+                            <div class="total total-price d-flex justify-content-between align-items-center">
                                 <h6>Total</h6>
-                                <span><i class="flaticon-dollar"></i>79</span>
+                                <span class="price"><i class="flaticon-dollar"></i>79</span>
                             </div>
+                            <!-- checkout-btn -->
                             <div class="checkout-btn">
                                 <a class="bttn" href="#">Proceed To Checkout</a>
                             </div>

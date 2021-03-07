@@ -1,6 +1,7 @@
 // ======= Top Header Start ======= //
 #top-header {
-  background-color: rgb(27, 27, 27);
+  // background-color: rgb(27, 27, 27);
+  background-color: black;
   padding: 0 93px;
   height: 34px;
   .phone {
@@ -86,6 +87,7 @@ header {
         a {
           padding: 0;
           i {
+            z-index: 11;
             position: relative;
             sup {
               font-size: 10px;
@@ -93,18 +95,18 @@ header {
               position: absolute;
               top: -1px;
               right: -5px;
-              span{
+              span {
                 position: relative;
-                &::after{
+                &::after {
                   content: "";
-                    position: absolute;
-                    top: 0px;
-                    right: -3px;
-                    width: 14px;
-                    height: 14px;
-                    border-radius: 50%;
-                    background-color: cornflowerblue;
-                    z-index: -1;
+                  position: absolute;
+                  top: 0px;
+                  right: -3px;
+                  width: 14px;
+                  height: 14px;
+                  border-radius: 50%;
+                  background-color: cornflowerblue;
+                  z-index: -1;
                 }
               }
             }
@@ -249,7 +251,6 @@ header {
 
           #reset-form {
             .reset-password {
-
               p {
                 color: white;
               }
@@ -342,7 +343,6 @@ header {
 // ======= Main Header End ======= //
 
 
-
 // ======= Responsive Design Start ======= //
 @media (min-width: 768px) and (max-width: 991.98px) {
   #top-header {
@@ -367,7 +367,7 @@ header {
         width: 100% !important;
         height: 97%;
         padding-left: 0;
-        background-color: rgb(27, 27, 27) !important;
+        background-color: black !important;
 
         flex-direction: column;
         justify-content: space-around;
@@ -409,9 +409,15 @@ header {
                 font-size: 20px !important;
               }
               sup {
-                top: 0px;
-                right: -9px;
+                top: -2px;
+                right: -6px;
                 font-size: 13px;
+                span {
+                  &::after {
+                    top: 1px;
+                    right: -2px;
+                  }
+                }
               }
             }
           }
@@ -482,7 +488,7 @@ header {
         width: 100% !important;
         height: 98%;
         padding-left: 0;
-        background-color: rgb(27, 27, 27) !important;
+        background-color: black !important;
 
         flex-direction: column;
         justify-content: space-around;
@@ -526,9 +532,15 @@ header {
                 font-size: 20px !important;
               }
               sup {
-                top: 0px;
-                right: -9px;
-                font-size: 13px;
+                top: -2px;
+                right: -7px;
+                font-size: 12px;
+                span {
+                  &::after {
+                    top: 1px;
+                    right: -2.5px;
+                  }
+                }
               }
             }
           }
@@ -614,7 +626,7 @@ header {
         width: 100% !important;
         height: 98%;
         padding-left: 0;
-        background-color: rgb(27, 27, 27) !important;
+        background-color: black !important;
 
         flex-direction: column;
         justify-content: space-around;
@@ -660,6 +672,12 @@ header {
                 top: 0px;
                 right: -8px;
                 font-size: 12px;
+                span {
+                  &::after {
+                    top: 1px;
+                    right: -2.5px;
+                  }
+                }
               }
             }
           }
@@ -752,7 +770,7 @@ header {
         width: 100% !important;
         height: 98%;
         padding-left: 0;
-        background-color: rgb(27, 27, 27) !important;
+        background-color: black !important;
 
         flex-direction: column;
         justify-content: space-around;
@@ -796,9 +814,17 @@ header {
                 font-size: 15px !important;
               }
               sup {
-                top: 3px;
-                right: -6px;
-                font-size: 9px;
+                top: 2px;
+                right: -5px;
+                font-size: 10px;
+                span {
+                  &::after {
+                    top: 1px;
+                    right: -2px;
+                    height: 12px;
+                    width: 12px;
+                  }
+                }
               }
             }
           }

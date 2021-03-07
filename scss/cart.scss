@@ -36,7 +36,6 @@ html {
   overflow: hidden;
 }
 
-
 // ======= Intro Section Start ======= //
 #intro {
   background-image: url(../img/bg-images/wood.jpg);
@@ -61,8 +60,16 @@ html {
           .tour-img {
             width: 10%;
           }
-          .resize {
-            width: 19%;
+          .tour-price {
+            width: 170px;
+          }
+
+          .increase-decrease {
+            width: 275px;
+          }
+
+          .tour-total {
+            width: 110px;
           }
         }
       }
@@ -71,6 +78,7 @@ html {
         .tbody-row {
           height: 100px;
           border-bottom: 1px solid #eadfdf;
+
           .flaticon-dollar {
             &::before {
               margin-left: 0;
@@ -87,12 +95,10 @@ html {
             }
           }
 
-          .tour-quantity {
-            input[type="number"] {
-              border: 1px solid #d8d8d8;
-              padding: 7px 14px;
-              border-radius: 3px;
-              margin-right: 5px;
+          .increase-decrease {
+            .increase-decrease-area {
+              @extend %increase-decrease;
+              padding: 0 131px 0px 0;
             }
           }
 
@@ -179,6 +185,7 @@ html {
 // ======= Shop Cart Section End ======= //
 
 
+
 // ======= Responsive Design Start ======= //
 @media (min-width: 768px) and (max-width: 991.98px) {
   #shop-cart {
@@ -188,11 +195,17 @@ html {
           .tour-img {
             width: 13% !important;
           }
-          .tour-name{
-            width: 32%;
+          .tour-name {
+            width: 190px;
           }
-          .resize{
-            width: 20% !important;
+          .tour-price {
+            width: 100px !important;
+          }
+          .increase-decrease {
+            width: 195px !important;
+          }
+          .tour-total {
+            width: 100px !important;
           }
         }
       }
@@ -203,6 +216,16 @@ html {
             height: 46px !important;
             width: 60px !important;
           }
+
+          .increase-decrease-area {
+            padding: 0 48px 0px 0 !important;
+          }
+
+          .remove-tour {
+            i {
+              margin-top: 6px !important;
+            }
+          }
         }
       }
     }
@@ -212,10 +235,247 @@ html {
 @media (min-width: 576px) and (max-width: 767.98px) {
   #shop-cart {
     .shop-table {
-      th, td {
-        display: block !important;
-        float: left !important;
+      thead {
+        .thead-row {
+          .tour-img {
+            width: 13% !important;
+          }
+          .tour-name {
+            width: 190px;
+          }
+          .tour-price {
+            width: 105px !important;
+          }
+          .increase-decrease {
+            width: 168px !important;
+          }
+          .tour-total {
+            width: 90px !important;
+          }
+        }
+      }
+
+      tbody {
+        .tbody-row {
+          .tour-smallImg {
+            height: 46px !important;
+            width: 60px !important;
+          }
+
+          .tour-name{
+            font-size: 14px;
+            font-weight: bold;
+          }
+
+          .increase-decrease-area {
+            padding: 0 24px 0 0 !important;
+            .btn {
+              width: 34px !important;
+              height: 38px !important;
+              font-size: 10px !important;
+            }
+            input[type="text"] {
+              width: 55px;
+            }
+          }
+
+          .remove-tour {
+            i {
+              margin-top: 6px !important;
+            }
+          }
+        }
+      }
     }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #shop-cart {
+    .shop-table {
+      th,
+      td {
+        display: block;
+        float: left;
+      }
+
+      th {
+        width: 100%;
+        padding-top: 10px;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tbody {
+        .tbody-row {
+          td {
+            width: 33.33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          td::before {
+            display: block;
+            font-weight: bold;
+            margin: 12px 0 3px;
+            font-family: "Montserrat", sans-serif;
+            text-transform: uppercase;
+            font-size: 13px;
+          }
+
+          td:nth-child(2):before {
+            content: "Tour";
+          }
+
+          td:nth-child(3):before {
+            content: "Price";
+          }
+
+          td:nth-child(4):before {
+            content: "Quantity";
+          }
+
+          td:nth-child(5):before {
+            content: "Total";
+          }
+
+          .increase-decrease-area {
+            padding: 0 !important;
+            .btn {
+              width: 34px !important;
+              height: 38px !important;
+              font-size: 10px !important;
+            }
+            input[type="text"] {
+              width: 42px !important;
+            }
+          }
+
+          .tour-total {
+            span {
+              margin-top: 5px;
+            }
+          }
+
+          .remove-tour {
+            height: 60px;
+            padding-top: 38px;
+            margin-bottom: 45px;
+            text-align: left !important;
+            i {
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #shop-cart {
+    .shop-table {
+      th,
+      td {
+        display: block;
+        float: left;
+      }
+
+      th {
+        width: 100%;
+        padding-top: 10px;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tbody {
+        .tbody-row {
+          td {
+            font-size: 13px !important;
+            width: 33.33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          td::before {
+            display: block;
+            font-weight: bold;
+            margin: 12px 0 3px;
+            font-family: "Montserrat", sans-serif;
+            text-transform: uppercase;
+            font-size: 11px;
+          }
+
+          td:nth-child(2):before {
+            content: "Tour";
+          }
+
+          td:nth-child(3):before {
+            content: "Price";
+          }
+
+          td:nth-child(4):before {
+            content: "Quantity";
+            margin-top: 20px;
+          }
+
+          td:nth-child(5):before {
+            content: "Total";
+            margin-top: 20px;
+          }
+
+          .flaticon-dollar {
+            &::before {
+              font-size: 13px !important;
+            }
+          }
+
+          .tour-total {
+            span {
+              margin-top: 5px;
+            }
+          }
+
+          .increase-decrease-area {
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0 !important;
+            .btn {
+              width: 34px !important;
+              height: 32px !important;
+              font-size: 9px !important;
+              border-radius: 0 !important;
+            }
+            input[type="text"] {
+              border: 1px solid #aaaaaa !important;
+              width: 34px !important;
+              height: 22px;
+              font-size: 11px !important;
+            }
+          }
+
+          .remove-tour {
+            padding-top: 30px;
+            margin-bottom: 100px;
+            text-align: left !important;
+            i {
+              margin-left: 8px;
+            }
+          }
+
+          .tour-smallImg {
+            margin-top: 11px;
+            width: 53px !important;
+            height: 40px !important;
+          }
+        }
+      }
     }
   }
 }

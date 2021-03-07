@@ -113,10 +113,10 @@ html {
         }
       }
 
-      .location{
+      .location {
         padding: 20px 0 7px;
-        h6{
-          color: rgb(98,107,114);
+        h6 {
+          color: rgb(98, 107, 114);
           margin: 0;
         }
       }
@@ -168,19 +168,37 @@ html {
 
     .addToCart {
       padding: 20px 10px;
-      input[type="number"] {
-        border: 1px solid #d8d8d8;
-        padding: 7px 14px;
-        border-radius: 3px;
-        margin-right: 5px;
-      }
+      form {
+        align-items: center;
+        justify-content: flex-start;
+        .quantity {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .increase-decrease {
+            @extend %increase-decrease;
+          }
 
-      .addToCart-btn {
-        @extend %website-button;
-        text-transform: none;
-        cursor: pointer;
-        font-size: 14px;
-        padding: 9px 24px;
+          .total-price {
+            text-align: center;
+            font-size: 25px;
+            .flaticon-dollar {
+              &::before {
+                font-size: 22px;
+                margin: 0px;
+              }
+            }
+          }
+        }
+
+        .addToCart-btn {
+          @extend %website-button;
+          text-transform: none;
+          cursor: pointer;
+          font-size: 14px;
+          padding: 10px 30px;
+          margin: 10px 0 48px 25px;
+        }
       }
     }
   }
@@ -216,31 +234,31 @@ html {
       h6 {
         font-weight: 700;
       }
-      p{
+      p {
         @extend %paragraph;
         padding-top: 0 !important;
       }
 
-      .description{
-        .read-more{
+      .description {
+        .read-more {
           display: none;
         }
 
-        .show-more-text{
+        .show-more-text {
           display: block;
           animation: fadeEffect 0.7s;
         }
 
-        .readMoreBtn-wrapper{
+        .readMoreBtn-wrapper {
           margin-top: 15px;
-          a{
+          a {
             display: inline-block;
             padding: 8px 30px;
             font-size: 15px;
             font-weight: 200;
             color: white;
-            background-color: rgb(58,59,116);
-            &:hover{
+            background-color: rgb(58, 59, 116);
+            &:hover {
               text-decoration: none;
             }
           }
@@ -314,14 +332,13 @@ html {
         }
       }
 
-      .tab-content{
+      .tab-content {
         animation: fadeEffect 0.7s;
       }
 
       .tab-content:not(:first-of-type) {
         display: none;
       }
-
     }
   }
 
@@ -335,7 +352,6 @@ html {
   }
 }
 // ======= Tour Section End ======= //
-
 
 
 // ======= Responsive Design Start ======= //
@@ -381,7 +397,7 @@ html {
     padding: 40px 0;
     .tourPics-and-basicInfo {
       .tour-img-box {
-        height: 320px !important;
+        height: 300px !important;
       }
 
       .small-img-box {
@@ -427,7 +443,7 @@ html {
       }
 
       .small-img-box {
-        height: 60px !important;
+        height: 75px !important;
         margin: 3px;
       }
 
@@ -439,7 +455,7 @@ html {
           padding: 0;
           .caption {
             h2 {
-              font-size: 30px !important;
+              font-size: 29px !important;
             }
           }
 
@@ -476,9 +492,9 @@ html {
     .descAndReviews-wrapper {
       .tab-items {
         padding-top: 30px !important;
-        .description{
-          .readMoreBtn-wrapper{
-            a{
+        .description {
+          .readMoreBtn-wrapper {
+            a {
               font-size: 14px;
             }
           }
@@ -506,7 +522,7 @@ html {
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #tour {
-    padding: 50px 0;
+    padding: 70px 0;
     .tourPics-and-basicInfo {
       .tour-img-box {
         height: 200px !important;
@@ -540,9 +556,9 @@ html {
           }
         }
 
-        .location{
+        .location {
           padding: 28px 0 7px;
-          h6{
+          h6 {
             font-size: 13px;
           }
         }
@@ -579,23 +595,41 @@ html {
       }
 
       .addToCart {
+        padding: 20px 0px !important;
         form {
-          input {
-            padding: 5px 14px !important;
+          flex-direction: column !important;
+          align-items: flex-start !important;
+          .btn{
+            height: 39px !important;
+          }
+          input[type="text"] {
+            width: 58px !important;
           }
 
-          button{
+          .total-price{
+            i{
+              &::before{
+                font-size: 20px !important;
+              }
+            }
+            span{
+              font-size: 22px;
+            }
+          }
+          
+          .addToCart-btn {
             font-size: 13px !important;
-            padding: 8px 24px !important;
+            padding: 9px 32px !important;
+            margin: 20px 0 0 !important;
           }
         }
       }
     }
 
     .descAndReviews-wrapper {
-      .tour-tabs{
-        li{
-          a{
+      .tour-tabs {
+        li {
+          a {
             font-size: 15px !important;
           }
         }
@@ -603,16 +637,16 @@ html {
 
       .tab-items {
         padding-top: 30px !important;
-        h4{
-          font-size: 20px
+        h4 {
+          font-size: 20px;
         }
-        h6{
+        h6 {
           font-size: 15px;
         }
 
-        .description{
-          .readMoreBtn-wrapper{
-            a{
+        .description {
+          .readMoreBtn-wrapper {
+            a {
               font-size: 13px;
               padding: 7px 26px;
             }
@@ -624,8 +658,8 @@ html {
             margin-bottom: 27px !important;
           }
 
-          .rating{
-            a{
+          .rating {
+            a {
               font-size: 14px;
             }
           }
@@ -640,8 +674,8 @@ html {
               }
             }
 
-            .bottom-links{
-              button{
+            .bottom-links {
+              button {
                 font-size: 14px !important;
                 padding: 7px 32px !important;
               }

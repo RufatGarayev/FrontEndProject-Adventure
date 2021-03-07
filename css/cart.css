@@ -246,8 +246,56 @@ footer .footer-bottom .social-media ul li:hover .twitter::before {
           transform: scale(1);
 }
 
+#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area .btn {
+  width: 38px;
+  height: 42px;
+  color: #0f0e0e;
+  border: 1px solid #aaaaaa;
+  background: white;
+  border-radius: 0;
+  font-size: 13px;
+  outline: none;
+}
+
+#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area .btn:focus {
+  border: 1px solid #aaaaaa;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area .minus-btn {
+  border-radius: 3px 0 0 3px;
+}
+
+#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area .plus-btn {
+  border-radius: 0 3px 3px 0;
+}
+
+#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area input {
+  text-align: center;
+  width: 66px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area input:focus {
+  outline: none;
+}
+
 #top-header {
-  background-color: #1b1b1b;
+  background-color: black;
   padding: 0 93px;
   height: 34px;
 }
@@ -372,6 +420,7 @@ header nav .account li a {
 }
 
 header nav .account li a i {
+  z-index: 11;
   position: relative;
 }
 
@@ -677,7 +726,7 @@ header nav .active-link hr {
     width: 100% !important;
     height: 97%;
     padding-left: 0;
-    background-color: #1b1b1b !important;
+    background-color: black !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -729,9 +778,13 @@ header nav .active-link hr {
     font-size: 20px !important;
   }
   header .navbar .account li a i sup {
-    top: 0px;
-    right: -9px;
+    top: -2px;
+    right: -6px;
     font-size: 13px;
+  }
+  header .navbar .account li a i sup span::after {
+    top: 1px;
+    right: -2px;
   }
   header .navbar .account li .search-area-holder {
     right: 236px;
@@ -798,7 +851,7 @@ header nav .active-link hr {
     width: 100% !important;
     height: 98%;
     padding-left: 0;
-    background-color: #1b1b1b !important;
+    background-color: black !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -854,9 +907,13 @@ header nav .active-link hr {
     font-size: 20px !important;
   }
   header .navbar .account li a i sup {
-    top: 0px;
-    right: -9px;
-    font-size: 13px;
+    top: -2px;
+    right: -7px;
+    font-size: 12px;
+  }
+  header .navbar .account li a i sup span::after {
+    top: 1px;
+    right: -2.5px;
   }
   header .navbar .account li .search-area-holder {
     width: calc(100% - 82px) !important;
@@ -936,7 +993,7 @@ header nav .active-link hr {
     width: 100% !important;
     height: 98%;
     padding-left: 0;
-    background-color: #1b1b1b !important;
+    background-color: black !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -994,6 +1051,10 @@ header nav .active-link hr {
     top: 0px;
     right: -8px;
     font-size: 12px;
+  }
+  header .navbar .account li a i sup span::after {
+    top: 1px;
+    right: -2.5px;
   }
   header .navbar .account li .search-area-holder {
     width: calc(100% - 37px) !important;
@@ -1078,7 +1139,7 @@ header nav .active-link hr {
     width: 100% !important;
     height: 98%;
     padding-left: 0;
-    background-color: #1b1b1b !important;
+    background-color: black !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1134,9 +1195,15 @@ header nav .active-link hr {
     font-size: 15px !important;
   }
   header .navbar .account li a i sup {
-    top: 3px;
-    right: -6px;
-    font-size: 9px;
+    top: 2px;
+    right: -5px;
+    font-size: 10px;
+  }
+  header .navbar .account li a i sup span::after {
+    top: 1px;
+    right: -2px;
+    height: 12px;
+    width: 12px;
   }
   header .navbar .account li .search-area-holder {
     width: calc(100% - 27px) !important;
@@ -1939,8 +2006,16 @@ html {
   width: 10%;
 }
 
-#shop-cart .shop-table-wrapper .shop-table thead .thead-row .resize {
-  width: 19%;
+#shop-cart .shop-table-wrapper .shop-table thead .thead-row .tour-price {
+  width: 170px;
+}
+
+#shop-cart .shop-table-wrapper .shop-table thead .thead-row .increase-decrease {
+  width: 275px;
+}
+
+#shop-cart .shop-table-wrapper .shop-table thead .thead-row .tour-total {
+  width: 110px;
 }
 
 #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row {
@@ -1963,11 +2038,8 @@ html {
   width: 100%;
 }
 
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .tour-quantity input[type="number"] {
-  border: 1px solid #d8d8d8;
-  padding: 7px 14px;
-  border-radius: 3px;
-  margin-right: 5px;
+#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area {
+  padding: 0 131px 0px 0;
 }
 
 #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .remove-tour {
@@ -2052,21 +2124,229 @@ html {
     width: 13% !important;
   }
   #shop-cart .shop-table thead .thead-row .tour-name {
-    width: 32%;
+    width: 190px;
   }
-  #shop-cart .shop-table thead .thead-row .resize {
-    width: 20% !important;
+  #shop-cart .shop-table thead .thead-row .tour-price {
+    width: 100px !important;
+  }
+  #shop-cart .shop-table thead .thead-row .increase-decrease {
+    width: 195px !important;
+  }
+  #shop-cart .shop-table thead .thead-row .tour-total {
+    width: 100px !important;
   }
   #shop-cart .shop-table tbody .tbody-row .tour-smallImg {
     height: 46px !important;
     width: 60px !important;
   }
+  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area {
+    padding: 0 48px 0px 0 !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .remove-tour i {
+    margin-top: 6px !important;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  #shop-cart .shop-table th, #shop-cart .shop-table td {
-    display: block !important;
-    float: left !important;
+  #shop-cart .shop-table thead .thead-row .tour-img {
+    width: 13% !important;
+  }
+  #shop-cart .shop-table thead .thead-row .tour-name {
+    width: 190px;
+  }
+  #shop-cart .shop-table thead .thead-row .tour-price {
+    width: 105px !important;
+  }
+  #shop-cart .shop-table thead .thead-row .increase-decrease {
+    width: 168px !important;
+  }
+  #shop-cart .shop-table thead .thead-row .tour-total {
+    width: 90px !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .tour-smallImg {
+    height: 46px !important;
+    width: 60px !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .tour-name {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area {
+    padding: 0 24px 0 0 !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area .btn {
+    width: 34px !important;
+    height: 38px !important;
+    font-size: 10px !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area input[type="text"] {
+    width: 55px;
+  }
+  #shop-cart .shop-table tbody .tbody-row .remove-tour i {
+    margin-top: 6px !important;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #shop-cart .shop-table th,
+  #shop-cart .shop-table td {
+    display: block;
+    float: left;
+  }
+  #shop-cart .shop-table th {
+    width: 100%;
+    padding-top: 10px;
+  }
+  #shop-cart .shop-table thead {
+    display: none;
+  }
+  #shop-cart .shop-table tbody .tbody-row td {
+    width: 33.33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #shop-cart .shop-table tbody .tbody-row td::before {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 3px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(2):before {
+    content: "Tour";
+  }
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(3):before {
+    content: "Price";
+  }
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(4):before {
+    content: "Quantity";
+  }
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(5):before {
+    content: "Total";
+  }
+  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area {
+    padding: 0 !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area .btn {
+    width: 34px !important;
+    height: 38px !important;
+    font-size: 10px !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area input[type="text"] {
+    width: 42px !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .tour-total span {
+    margin-top: 5px;
+  }
+  #shop-cart .shop-table tbody .tbody-row .remove-tour {
+    height: 60px;
+    padding-top: 38px;
+    margin-bottom: 45px;
+    text-align: left !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .remove-tour i {
+    margin-left: 8px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #shop-cart .shop-table th,
+  #shop-cart .shop-table td {
+    display: block;
+    float: left;
+  }
+  #shop-cart .shop-table th {
+    width: 100%;
+    padding-top: 10px;
+  }
+  #shop-cart .shop-table thead {
+    display: none;
+  }
+  #shop-cart .shop-table tbody .tbody-row td {
+    font-size: 13px !important;
+    width: 33.33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #shop-cart .shop-table tbody .tbody-row td::before {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 3px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(2):before {
+    content: "Tour";
+  }
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(3):before {
+    content: "Price";
+  }
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(4):before {
+    content: "Quantity";
+    margin-top: 20px;
+  }
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(5):before {
+    content: "Total";
+    margin-top: 20px;
+  }
+  #shop-cart .shop-table tbody .tbody-row .flaticon-dollar::before {
+    font-size: 13px !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .tour-total span {
+    margin-top: 5px;
+  }
+  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0 !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area .btn {
+    width: 34px !important;
+    height: 32px !important;
+    font-size: 9px !important;
+    border-radius: 0 !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area input[type="text"] {
+    border: 1px solid #aaaaaa !important;
+    width: 34px !important;
+    height: 22px;
+    font-size: 11px !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .remove-tour {
+    padding-top: 30px;
+    margin-bottom: 100px;
+    text-align: left !important;
+  }
+  #shop-cart .shop-table tbody .tbody-row .remove-tour i {
+    margin-left: 8px;
+  }
+  #shop-cart .shop-table tbody .tbody-row .tour-smallImg {
+    margin-top: 11px;
+    width: 53px !important;
+    height: 40px !important;
   }
 }
 /*# sourceMappingURL=cart.css.map */
