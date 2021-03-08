@@ -4,6 +4,7 @@
   background-color: black;
   padding: 0 93px;
   height: 34px;
+
   .phone {
     padding-top: 5px;
     span {
@@ -23,7 +24,7 @@
       height: 100%;
       li {
         font-size: 14px;
-        width: 30px;
+        width: 36px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -468,8 +469,20 @@ header {
 @media (min-width: 576px) and (max-width: 767.98px) {
   #top-header {
     padding: 0 35px 0 43px !important;
+    .phone {
+      // padding-top: 5px;
+      span {
+        font-size: 13px !important;
+      }
+    }
     .langs {
       padding-top: 3px;
+      ul {
+        li {
+          width: 38px !important;
+          font-size: 16px !important;
+        }
+      }
     }
   }
 
@@ -598,14 +611,15 @@ header {
     .phone {
       padding-top: 5px;
       span {
-        font-size: 12px !important;
+        font-size: 14px !important;
       }
     }
     .langs {
       padding-top: 3px;
       ul {
         li {
-          font-size: 13px !important;
+          width: 36px !important;
+          font-size: 16px !important;
         }
       }
     }
@@ -742,14 +756,15 @@ header {
     .phone {
       padding-top: 5px;
       span {
-        font-size: 9px !important;
+        font-size: 11px !important;
       }
     }
     .langs {
       padding-top: 3px;
       ul {
         li {
-          font-size: 10px !important;
+          width: 32px !important;
+          font-size: 13px !important;
         }
       }
     }

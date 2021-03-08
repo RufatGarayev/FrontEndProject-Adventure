@@ -36,6 +36,7 @@ html {
   overflow: hidden;
 }
 
+
 // ======= Intro Section Start ======= //
 #intro {
   background-image: url(../img/bg-images/wood.jpg);
@@ -46,6 +47,7 @@ html {
 // ======= Shop Cart Section Start ======= //
 #shop-cart {
   padding: 70px 0;
+  background-color: $light-background;
   .shop-table-wrapper {
     .shop-table {
       width: 100%;
@@ -56,7 +58,7 @@ html {
           text-transform: uppercase;
           font-size: 13px;
           height: 70px;
-          border-bottom: 1px solid #eadfdf;
+          border-bottom: $light-line;
           .tour-img {
             width: 10%;
           }
@@ -77,13 +79,11 @@ html {
       tbody {
         .tbody-row {
           height: 100px;
-          border-bottom: 1px solid #eadfdf;
+          border-bottom: $light-line;
 
-          .flaticon-dollar {
-            &::before {
-              margin-left: 0;
-              font-size: 17px;
-            }
+          .total-price,
+          .tour-price {
+            @extend %cart-price;
           }
 
           .tour-smallImg {
@@ -144,18 +144,16 @@ html {
       h6 {
         margin-bottom: 0;
       }
-      span {
-        i {
-          &::before {
-            font-size: 17px;
-            margin-left: 0;
-          }
-        }
+    }
+
+    .subtotal {
+      .subtotal-price {
+        @extend %cart-price;
       }
     }
 
     .total {
-      border-top: 1px solid #eadfdf;
+      border-top: $light-line;
       h6 {
         font-weight: 700;
       }
@@ -262,7 +260,7 @@ html {
             width: 60px !important;
           }
 
-          .tour-name{
+          .tour-name {
             font-size: 14px;
             font-weight: bold;
           }
@@ -430,9 +428,17 @@ html {
             margin-top: 20px;
           }
 
-          .flaticon-dollar {
-            &::before {
-              font-size: 13px !important;
+          .total-price,
+          .tour-price {
+            .price-wrapper {
+              i {
+                &::before {
+                  font-size: 15px !important;
+                }
+              }
+              span {
+                font-size: 15px !important;
+              }
             }
           }
 

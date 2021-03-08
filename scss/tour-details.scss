@@ -47,10 +47,11 @@ html {
 // ======= Tour Section Start ======= //
 #tour {
   padding: 70px 0;
+  background-color: $light-background;
 
   .tourPics-and-basicInfo {
     padding-bottom: 50px;
-    border-bottom: 1px solid #eadede;
+    border-bottom: $light-line;
 
     img {
       object-fit: cover;
@@ -72,7 +73,7 @@ html {
 
     .small-img-box {
       transition: 0.4s linear;
-      border: 2px solid white;
+      border: 2px solid rgb(237,237,237);
       height: 80px;
       margin: 5px;
       padding: 2px;
@@ -191,7 +192,7 @@ html {
           }
         }
 
-        .addToCart-btn {
+        .addToCartBtn {
           @extend %website-button;
           text-transform: none;
           cursor: pointer;
@@ -210,7 +211,7 @@ html {
       li {
         height: 47px;
         line-height: 45px;
-        border-bottom: 1px solid #eadede;
+        border-bottom: $light-line;
         a {
           font-size: 17px;
           color: #64736b;
@@ -617,7 +618,7 @@ html {
             }
           }
           
-          .addToCart-btn {
+          .addToCartBtn {
             font-size: 13px !important;
             padding: 9px 32px !important;
             margin: 20px 0 0 !important;

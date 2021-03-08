@@ -282,7 +282,7 @@ footer .footer-bottom .social-media ul li:hover .twitter::before {
 
 #top-header .langs ul li {
   font-size: 14px;
-  width: 30px;
+  width: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,8 +786,15 @@ header nav .active-link hr {
   #top-header {
     padding: 0 35px 0 43px !important;
   }
+  #top-header .phone span {
+    font-size: 13px !important;
+  }
   #top-header .langs {
     padding-top: 3px;
+  }
+  #top-header .langs ul li {
+    width: 38px !important;
+    font-size: 16px !important;
   }
   header .navbar {
     height: 75px;
@@ -923,13 +930,14 @@ header nav .active-link hr {
     padding-top: 5px;
   }
   #top-header .phone span {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
   #top-header .langs {
     padding-top: 3px;
   }
   #top-header .langs ul li {
-    font-size: 13px !important;
+    width: 36px !important;
+    font-size: 16px !important;
   }
   header .navbar {
     height: 75px;
@@ -1069,13 +1077,14 @@ header nav .active-link hr {
     padding-top: 5px;
   }
   #top-header .phone span {
-    font-size: 9px !important;
+    font-size: 11px !important;
   }
   #top-header .langs {
     padding-top: 3px;
   }
   #top-header .langs ul li {
-    font-size: 10px !important;
+    width: 32px !important;
+    font-size: 13px !important;
   }
   header .navbar {
     height: 75px;
@@ -1238,7 +1247,7 @@ header nav .active-link hr {
 
 footer {
   padding: 100px 0px 30px;
-  background-color: #1b1b1b;
+  background-color: black;
   color: white;
   overflow-x: hidden;
 }
@@ -1935,6 +1944,7 @@ html {
 
 #get-in-touch {
   padding: 80px 0 90px;
+  background-color: #ededed;
 }
 
 #get-in-touch .get-in-touch-caption {

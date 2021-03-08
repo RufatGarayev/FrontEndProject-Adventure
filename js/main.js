@@ -20,7 +20,7 @@ $(document).ready(function () {
 
   window.onscroll = function () {
     if ($(window).scrollTop() >= 600) {
-      $("nav").css("background-color", "#1B1B1B");
+      $("nav").css("background-color", "black");
     } else {
       $("nav").css("background-color", rgbaCol);
     }
@@ -901,6 +901,8 @@ $(document).ready(function () {
  function total() {
     let total = count * price;
     $(".total-price .price").text(total);
+
+    $(".cart-totals .total-price span").text(total);
  }
 
  $(document).on("click", ".increase-decrease .plus-btn", function(){
@@ -948,7 +950,56 @@ $(document).ready(function () {
 
     total();
  });
+
  // ======= Increase or Decrease the Quantity - End ======= //
+
+
+ // ======= Add To Cart - Start ======= //
+ // taking "add-to-cart" btn
+ let addToCart = document.querySelectorAll(".addToCartBtn");
+
+ if(localStorage.getItem("cart") == null) {
+    localStorage.setItem("cart", JSON.stringify([]));
+ }
+
+ addToCart.forEach(btn => {
+    btn.addEventListener("click", function(e){
+        e.preventDefault();
+        let id = $(this).parent().parent().parent().attr("data-id");
+        let image = $(this).parent().parent().siblings(".img-box").children().attr("src");
+        let name = $(this).parent().siblings(".tour-name").find("h4").text();
+
+        if (localStorage.getItem("cart") == null) {
+          localStorage.setItem("cart", JSON.stringify([]))
+        }
+
+        let cart = JSON.parse(localStorage.getItem("cart"));
+
+        let tour = cart.find(t => t.id == id);
+        if (tour === undefined) {
+            cart.push({
+                id: id,
+                img: image,
+                name: name,
+                count: 1
+            });
+        }
+        else{
+            tour.count += 1;
+        }
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        getTourCount();
+    });
+  });
+
+  function getTourCount() {
+    let arrCart = JSON.parse(localStorage.getItem("cart"));
+    document.querySelector(".tour-count").innerText = arrCart.length;
+  };
+
+  getTourCount();
+  // ======= Add To Cart - End ======= //
 
 
   // ======= Tour Filter and Background-color of Button when click on it - Start ======= //

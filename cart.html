@@ -167,9 +167,9 @@
                     </li>
                     <!-- cart -->
                     <li class="nav-item">
-                        <a class="nav-link" href="cart.html">
+                        <a class="nav-link cart" href="cart.html">
                             <i class="flaticon-shopping-bag">
-                                <sup><span>0</span></sup>
+                                <sup><span class="tour-count">0</span></sup>
                             </i>
                         </a>
                     </li>
@@ -236,7 +236,10 @@
                                         <td class="tour-name">Gabala</td>
                                         <!-- tour-price -->
                                         <td class="tour-price">
-                                            <span><i class="flaticon-dollar"></i>79</span>
+                                            <div class="price-wrapper">
+                                                <i class="flaticon-dollar"></i>
+                                                <span>79</span>
+                                            </div>
                                         </td>
                                         <!-- increase or decrease the quantity -->
                                         <td class="increase-decrease">
@@ -247,8 +250,11 @@
                                             </div>
                                         </td>
                                         <!-- total-price -->
-                                        <td class="total-price">
-                                            <span class="price"><i class="flaticon-dollar"></i>79</span>
+                                        <td class="total-price tour-total-price">
+                                            <div class="price-wrapper">
+                                                <i class="flaticon-dollar"></i>
+                                                <span class="price">79</span>
+                                            </div>
                                         </td>
                                         <!-- remove-btn -->
                                         <td class="remove-tour">
@@ -269,14 +275,20 @@
                                 <h5>Cart Totals</h5>
                             </div>
                             <!-- subtotal -->
-                            <div class="subtotal total-price d-flex justify-content-between align-items-center">
+                            <!-- <div class="subtotal d-flex justify-content-between align-items-center">
                                 <h6>Subtotal</h6>
-                                <span class="price"><i class="flaticon-dollar"></i>79</span>
-                            </div>
+                                <div class="subtotal-price">
+                                    <i class="flaticon-dollar"></i>
+                                    <span>79</span>
+                                </div>
+                            </div> -->
                             <!-- total -->
-                            <div class="total total-price d-flex justify-content-between align-items-center">
+                            <div class="total d-flex justify-content-between align-items-center">
                                 <h6>Total</h6>
-                                <span class="price"><i class="flaticon-dollar"></i>79</span>
+                                <div class="total-price">
+                                    <i class="flaticon-dollar"></i>
+                                    <span>79</span>
+                                </div>
                             </div>
                             <!-- checkout-btn -->
                             <div class="checkout-btn">
@@ -432,6 +444,8 @@
     <!-- owl-carousel.js -->
     <script src="plugins/owl-carousel/owl.carousel.js"></script>
     <script src="js/owl-carousel.js"></script>
+    <!-- cart.js -->
+    <script src="js/cart.js"></script>
     <!-- main.js -->
     <script src="js/main.js"></script>
 </body>

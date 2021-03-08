@@ -485,3 +485,16 @@
     }
   }
 }
+
+// cart-price properties
+%cart-price {
+  i {
+    &::before {
+      font-size: 17px !important;
+      margin-left: 0;
+    }
+  }
+  span {
+    font-size: 18px;
+  }
+}
