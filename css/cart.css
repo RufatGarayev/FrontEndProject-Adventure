@@ -246,60 +246,12 @@ footer .footer-bottom .social-media ul li:hover .twitter::before {
           transform: scale(1);
 }
 
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area .btn {
-  width: 38px;
-  height: 42px;
-  color: #0f0e0e;
-  border: 1px solid #aaaaaa;
-  background: white;
-  border-radius: 0;
-  font-size: 13px;
-  outline: none;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area .btn:focus {
-  border: 1px solid #aaaaaa;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area .minus-btn {
-  border-radius: 3px 0 0 3px;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area .plus-btn {
-  border-radius: 0 3px 3px 0;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area input {
-  text-align: center;
-  width: 66px;
-  font-size: 16px;
-  font-weight: 400;
-  border: none;
-  border-top: 1px solid #aaaaaa;
-  border-bottom: 1px solid #aaaaaa;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area input:focus {
-  outline: none;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .total-price i::before, #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .tour-price i::before, #shop-cart .cart-totals .subtotal .subtotal-price i::before {
+#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .total-price i::before, #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .tour-price i::before {
   font-size: 17px !important;
   margin-left: 0;
 }
 
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .total-price span, #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .tour-price span, #shop-cart .cart-totals .subtotal .subtotal-price span {
+#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .total-price span, #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .tour-price span {
   font-size: 18px;
 }
 
@@ -2045,15 +1997,13 @@ html {
 #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .tour-smallImg {
   height: 50px;
   width: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .tour-smallImg img {
   height: 100%;
   width: 100%;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area {
-  padding: 0 131px 0px 0;
 }
 
 #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .remove-tour {
@@ -2089,12 +2039,10 @@ html {
   margin-bottom: 15px;
 }
 
-#shop-cart .cart-totals .subtotal,
 #shop-cart .cart-totals .total {
   height: 50px !important;
 }
 
-#shop-cart .cart-totals .subtotal h6,
 #shop-cart .cart-totals .total h6 {
   margin-bottom: 0;
 }
@@ -2179,17 +2127,6 @@ html {
     font-size: 14px;
     font-weight: bold;
   }
-  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area {
-    padding: 0 24px 0 0 !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area .btn {
-    width: 34px !important;
-    height: 38px !important;
-    font-size: 10px !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area input[type="text"] {
-    width: 55px;
-  }
   #shop-cart .shop-table tbody .tbody-row .remove-tour i {
     margin-top: 6px !important;
   }
@@ -2240,17 +2177,6 @@ html {
   }
   #shop-cart .shop-table tbody .tbody-row td:nth-child(5):before {
     content: "Total";
-  }
-  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area {
-    padding: 0 !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area .btn {
-    width: 34px !important;
-    height: 38px !important;
-    font-size: 10px !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area input[type="text"] {
-    width: 42px !important;
   }
   #shop-cart .shop-table tbody .tbody-row .tour-total span {
     margin-top: 5px;
@@ -2325,28 +2251,6 @@ html {
   }
   #shop-cart .shop-table tbody .tbody-row .tour-total span {
     margin-top: 5px;
-  }
-  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    padding: 0 !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area .btn {
-    width: 34px !important;
-    height: 32px !important;
-    font-size: 9px !important;
-    border-radius: 0 !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area input[type="text"] {
-    border: 1px solid #aaaaaa !important;
-    width: 34px !important;
-    height: 22px;
-    font-size: 11px !important;
   }
   #shop-cart .shop-table tbody .tbody-row .remove-tour {
     padding-top: 30px;

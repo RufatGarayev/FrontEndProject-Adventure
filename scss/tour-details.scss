@@ -172,25 +172,6 @@ html {
       form {
         align-items: center;
         justify-content: flex-start;
-        .quantity {
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .increase-decrease {
-            @extend %increase-decrease;
-          }
-
-          .total-price {
-            text-align: center;
-            font-size: 25px;
-            .flaticon-dollar {
-              &::before {
-                font-size: 22px;
-                margin: 0px;
-              }
-            }
-          }
-        }
 
         .addToCartBtn {
           @extend %website-button;
@@ -198,7 +179,6 @@ html {
           cursor: pointer;
           font-size: 14px;
           padding: 10px 30px;
-          margin: 10px 0 48px 25px;
         }
       }
     }
@@ -600,24 +580,6 @@ html {
         form {
           flex-direction: column !important;
           align-items: flex-start !important;
-          .btn{
-            height: 39px !important;
-          }
-          input[type="text"] {
-            width: 58px !important;
-          }
-
-          .total-price{
-            i{
-              &::before{
-                font-size: 20px !important;
-              }
-            }
-            span{
-              font-size: 22px;
-            }
-          }
-          
           .addToCartBtn {
             font-size: 13px !important;
             padding: 9px 32px !important;

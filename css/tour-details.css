@@ -246,54 +246,6 @@ footer .footer-bottom .social-media ul li:hover .twitter::before {
           transform: scale(1);
 }
 
-#tour .tourPics-and-basicInfo .addToCart form .quantity .increase-decrease {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#tour .tourPics-and-basicInfo .addToCart form .quantity .increase-decrease .btn {
-  width: 38px;
-  height: 42px;
-  color: #0f0e0e;
-  border: 1px solid #aaaaaa;
-  background: white;
-  border-radius: 0;
-  font-size: 13px;
-  outline: none;
-}
-
-#tour .tourPics-and-basicInfo .addToCart form .quantity .increase-decrease .btn:focus {
-  border: 1px solid #aaaaaa;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-#tour .tourPics-and-basicInfo .addToCart form .quantity .increase-decrease .minus-btn {
-  border-radius: 3px 0 0 3px;
-}
-
-#tour .tourPics-and-basicInfo .addToCart form .quantity .increase-decrease .plus-btn {
-  border-radius: 0 3px 3px 0;
-}
-
-#tour .tourPics-and-basicInfo .addToCart form .quantity .increase-decrease input {
-  text-align: center;
-  width: 66px;
-  font-size: 16px;
-  font-weight: 400;
-  border: none;
-  border-top: 1px solid #aaaaaa;
-  border-bottom: 1px solid #aaaaaa;
-}
-
-#tour .tourPics-and-basicInfo .addToCart form .quantity .increase-decrease input:focus {
-  outline: none;
-}
-
 #top-header {
   background-color: black;
   padding: 0 93px;
@@ -2143,35 +2095,11 @@ html {
           justify-content: flex-start;
 }
 
-#tour .tourPics-and-basicInfo .addToCart form .quantity {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#tour .tourPics-and-basicInfo .addToCart form .quantity .total-price {
-  text-align: center;
-  font-size: 25px;
-}
-
-#tour .tourPics-and-basicInfo .addToCart form .quantity .total-price .flaticon-dollar::before {
-  font-size: 22px;
-  margin: 0px;
-}
-
 #tour .tourPics-and-basicInfo .addToCart form .addToCartBtn {
   text-transform: none;
   cursor: pointer;
   font-size: 14px;
   padding: 10px 30px;
-  margin: 10px 0 48px 25px;
 }
 
 #tour .descAndReviews-wrapper {
@@ -2524,18 +2452,6 @@ html {
     -webkit-box-align: start !important;
         -ms-flex-align: start !important;
             align-items: flex-start !important;
-  }
-  #tour .tourPics-and-basicInfo .addToCart form .btn {
-    height: 39px !important;
-  }
-  #tour .tourPics-and-basicInfo .addToCart form input[type="text"] {
-    width: 58px !important;
-  }
-  #tour .tourPics-and-basicInfo .addToCart form .total-price i::before {
-    font-size: 20px !important;
-  }
-  #tour .tourPics-and-basicInfo .addToCart form .total-price span {
-    font-size: 22px;
   }
   #tour .tourPics-and-basicInfo .addToCart form .addToCartBtn {
     font-size: 13px !important;
