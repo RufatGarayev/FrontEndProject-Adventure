@@ -53,8 +53,10 @@ html {
       width: 100%;
 
       thead {
+        background-color: rgb(118,148,132);
         .thead-row {
           font-family: "Montserrat", sans-serif;
+          color: white;
           text-transform: uppercase;
           font-size: 13px;
           height: 70px;
@@ -87,12 +89,19 @@ html {
           }
 
           .tour-smallImg {
-            height: 50px;
-            width: 70px;
-            object-fit: cover;
+            height: 70px;
+            width: 100px;
             img {
+              object-fit: cover;
               height: 100%;
               width: 100%;
+            }
+          }
+
+          .increase-decrease {
+            .increase-decrease-area {
+              @extend %increase-decrease;
+              padding: 0 131px 0px 0;
             }
           }
 
@@ -116,6 +125,14 @@ html {
             }
           }
         }
+      }
+    }
+
+    .empty-alert{
+      a{
+        @extend %website-button;
+        text-transform: none;
+        padding: 8px 30px;
       }
     }
   }
@@ -253,6 +270,18 @@ html {
             font-weight: bold;
           }
 
+          .increase-decrease-area {
+            padding: 0 24px 0 0 !important;
+            .btn {
+              width: 34px !important;
+              height: 38px !important;
+              font-size: 10px !important;
+            }
+            input[type="text"] {
+              width: 55px;
+            }
+          }
+
           .remove-tour {
             i {
               margin-top: 6px !important;
@@ -266,6 +295,7 @@ html {
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #shop-cart {
+    padding: 50px 0 80px;
     .shop-table {
       th,
       td {
@@ -289,6 +319,7 @@ html {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 30px;
           }
 
           td::before {
@@ -316,6 +347,23 @@ html {
             content: "Total";
           }
 
+          .tour-smallImg{
+            height: 60px !important;
+            width: 90px !important;
+          }
+
+          .increase-decrease-area {
+            padding: 0 !important;
+            .btn {
+              width: 34px !important;
+              height: 32px !important;
+              font-size: 9px !important;
+            }
+            input[type="text"] {
+              width: 42px !important;
+            }
+          }
+
           .tour-total {
             span {
               margin-top: 5px;
@@ -339,6 +387,7 @@ html {
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #shop-cart {
+    padding: 40px 0 80px;
     .shop-table {
       th,
       td {
@@ -363,6 +412,7 @@ html {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 30px;
           }
 
           td::before {
@@ -409,6 +459,24 @@ html {
           .tour-total {
             span {
               margin-top: 5px;
+            }
+          }
+
+          .increase-decrease-area {
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0 !important;
+            .btn {
+              width: 34px !important;
+              height: 24px !important;
+              font-size: 8px !important;
+              border-radius: 0 !important;
+            }
+            input[type="text"] {
+              border: 1px solid #aaaaaa !important;
+              width: 34px !important;
+              height: 25px;
+              font-size: 12px !important;
             }
           }
 

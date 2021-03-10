@@ -52,7 +52,7 @@ html {
 }
 
 .show-dark-bgcolor {
-  opacity: 0.6 !important;
+  opacity: 0.4 !important;
   visibility: visible !important;
 }
 // ======= Dark Bg-Color End ======= //
@@ -90,7 +90,7 @@ html {
           border: none;
           span {
             transition: none;
-            border: 3px solid rgb(58, 59, 116);
+            border: 4px solid rgb(58, 59, 116);
             background: white;
             height: 20px;
             width: 20px;
@@ -144,7 +144,7 @@ html {
 
     .sidebar-filter-toggle {
       display: none;
-      box-shadow: 0px 0px 2px 0px #edbfbf;
+      box-shadow: 0px 0px 4px 0px #817979;
       background-color: white;
       width: 44px;
       height: 44px;
@@ -382,15 +382,16 @@ html {
   #tours {
     padding: 50px 30px 50px;
     .sidebar-area {
+      background-color:rgba(0, 0, 0, 0.8);
       padding: 0;
       height: 100%;
       position: fixed;
       top: 0px;
       left: 0;
       z-index: 9999;
-
       width: 0;
-      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+      color: white;
+      transition: 0.6s cubic-bezier(1, 0, 0, 1) !important;
 
       .filters {
         height: 100%;
@@ -399,7 +400,7 @@ html {
         opacity: 0;
 
         .price-filter {
-          height: 180px;
+          height: 200px;
           h5 {
             font-size: 22px;
           }
@@ -407,6 +408,8 @@ html {
           .tour-range-detail {
             input[type="text"] {
               font-size: 20px;
+              background-color: rgba(0, 0, 0, 0.8);
+              color: white;
             }
           }
         }
@@ -418,6 +421,10 @@ html {
 
           label {
             font-size: 18px;
+            font-weight: 200;
+            &::before{
+              border-color: white !important;
+            }
           }
         }
 
@@ -436,12 +443,12 @@ html {
 
     .show-sidebar {
       width: 350px !important;
-      padding: 30px 30px 0;
+      padding: 40px 30px 0;
       .filters {
       padding: 0 3px;
       visibility: visible !important;
       opacity: 1 !important;
-      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+      transition: 0.8s cubic-bezier(1, 0, 0, 1) !important;
       }
     }
 
@@ -479,6 +486,8 @@ html {
   #tours {
     padding: 50px 0px 50px;
     .sidebar-area {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
       padding: 0;
       height: 100%;
       position: fixed;
@@ -486,7 +495,7 @@ html {
       left: 0;
       z-index: 9999;
       width: 0;
-      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+      transition: 0.6s cubic-bezier(1, 0, 0, 1) !important;
 
       .filters {
         height: 100%;
@@ -495,14 +504,16 @@ html {
         opacity: 0;
 
         .price-filter {
-          height: 180px;
+          height: 200px;
           h5 {
             font-size: 22px;
           }
 
           .tour-range-detail {
             input[type="text"] {
+              background-color: rgba(0, 0, 0, 0.8);
               font-size: 20px;
+              color: white;
             }
           }
         }
@@ -514,6 +525,10 @@ html {
 
           label {
             font-size: 18px;
+            font-weight: 200;
+            &::before{
+              border-color: white !important;
+            }
           }
         }
       }
@@ -535,7 +550,7 @@ html {
       padding: 0 3px;
       visibility: visible !important;
       opacity: 1 !important;
-      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+      transition: 0.8s cubic-bezier(1, 0, 0, 1) !important;
       }
     }
 
@@ -599,6 +614,8 @@ html {
   #tours {
     padding: 50px 30px 50px;
     .sidebar-area {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
       padding: 0;
       height: 100%;
       position: fixed;
@@ -606,7 +623,7 @@ html {
       left: 0;
       z-index: 9999;
       width: 0;
-      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+      transition: 0.6s cubic-bezier(1, 0, 0, 1) !important;
 
       .filters {
         height: 100%;
@@ -615,7 +632,7 @@ html {
         opacity: 0;
 
         .price-filter {
-          height: 180px;
+          height: 200px;
           h5 {
             font-size: 22px;
           }
@@ -623,6 +640,8 @@ html {
           .tour-range-detail {
             input[type="text"] {
               font-size: 20px;
+              color: white;
+              background-color: rgba(0, 0, 0, 0.8);
             }
           }
         }
@@ -634,6 +653,10 @@ html {
 
           label {
             font-size: 18px;
+            font-weight: 200;
+            &::before{
+              border-color: white !important;
+            }
           }
         }
       }
@@ -655,7 +678,7 @@ html {
       padding: 0 3px;
       visibility: visible !important;
       opacity: 1 !important;
-      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+      transition: 0.8s cubic-bezier(1, 0, 0, 1) !important;
       }
     }
 
@@ -714,6 +737,8 @@ html {
   #tours {
     padding: 50px 0px 50px;
     .sidebar-area {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
       padding: 0;
       height: 100%;
       position: fixed;
@@ -721,7 +746,7 @@ html {
       left: 0;
       z-index: 9999;
       width: 0;
-      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+      transition: 0.5s cubic-bezier(1, 0, 0, 1) !important;
       
       .filters {
         height: 100%;
@@ -730,13 +755,15 @@ html {
         opacity: 0;
 
         .price-filter {
-          height: 180px;
+          height: 200px;
           h5 {
             font-size: 20px;
           }
 
           .tour-range-detail {
             input[type="text"] {
+              background-color: rgba(0, 0, 0, 0.8);
+              color: white;
               font-size: 18px;
             }
           }
@@ -748,7 +775,11 @@ html {
           }
 
           label {
-            font-size: 15px;
+            font-size: 14px;
+            font-weight: 200;
+            &::before{
+              border-color: white !important;
+            }
           }
         }
       }
@@ -779,7 +810,7 @@ html {
       padding: 0 3px;
       visibility: visible !important;
       opacity: 1 !important;
-      transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;
+      transition: 0.7s cubic-bezier(1, 0, 0, 1) !important;
       }
     }
 

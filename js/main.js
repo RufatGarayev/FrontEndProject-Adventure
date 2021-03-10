@@ -46,30 +46,27 @@ $(document).ready(function () {
    // ======= Show or Hide navbar items when click on Hamburger btn - Start ======= //
    $(document).on("click", ".hamburger", function () {
     $(this).toggleClass("change");
-    // toggle navbar
     $(".navbar-items").toggleClass("active");
-    // toggle filter btn
     $(".sidebar-filter-toggle").toggleClass("hide-filter-btn");
 
-    // disable scroll
     if ($(".navbar-items").hasClass("active")) {
       $(document.body).addClass("stop-scroll");
     }else{
-      // enable scroll
       $(document.body).removeClass("stop-scroll");
     }
 
 
+    // processes when click outside
     $(document).mouseup(function(e) {
       if (!$("header").is(e.target) && $("header").has(e.target).length === 0 && 
         !$("#top-header").is(e.target) && $("#top-header").has(e.target).length === 0)
       {
-        // enable scroll
         $(document.body).removeClass("stop-scroll");
-        // return;
+        $(".navbar-items").removeClass("active");
+        $(".hamburger").removeClass("change");
+        $(".sidebar-filter-toggle").removeClass("hide-filter-btn");
       }
       else{
-        // disable scroll
         $(document.body).addClass("stop-scroll");
       }
     });
@@ -150,8 +147,8 @@ $(document).ready(function () {
         $( ".slider-tour-sorting" ).slider({
         range: true,
         min: 50,
-        max: 150,
-        values: [ 55, 150 ],
+        max: 100,
+        values: [ 55, 100 ],
         slide: function( event, ui ) {
         $( "#amount" ).val( "$" + ui.values[ 0 ] + "  -  $" + ui.values[ 1 ] );
         }
@@ -777,31 +774,22 @@ $(document).ready(function () {
   // ======= Show or Hide Sidebar Filter - Start ======= //
   $(document).on("click", ".sidebar-filter-toggle", function (e) {
     e.preventDefault();
-    // toggle sidebar
     $(".sidebar-area").toggleClass("show-sidebar");
-    // toggle bg-color
     $(".dark-bgcolor").toggleClass("show-dark-bgcolor");
 
-    // disable scroll
     if ($(".sidebar-area").hasClass("show-sidebar")) {
       $(document.body).addClass("stop-scroll");
     }else{
-      // enable scroll
       $(document.body).removeClass("stop-scroll");
     }
 
+    // processes when click outside
     $(document).mouseup(function(e) {
       if (!$(".sidebar-area").is(e.target) && $(".sidebar-area").has(e.target).length === 0)
       {
-        // hide sidebar when click outside
         $(".sidebar-area").removeClass("show-sidebar");
-        // cancel dark bg-color
         $(".dark-bgcolor").removeClass("show-dark-bgcolor");
-        // disable scroll
         $(document.body).removeClass("stop-scroll");
-      }else{
-        // enable scroll
-        $(document.body).addClass("stop-scroll");
       }
     });
   });
@@ -888,7 +876,6 @@ $(document).ready(function () {
     }
   });
   // ======= Read More End ======= //
-
 
 
   // ======= Tour Filter and Background-color of Button when click on it - Start ======= //
