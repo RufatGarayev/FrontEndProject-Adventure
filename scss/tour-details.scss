@@ -73,7 +73,7 @@ html {
 
     .small-img-box {
       transition: 0.4s linear;
-      border: 2px solid rgb(237,237,237);
+      border: 2px solid rgb(237, 237, 237);
       height: 80px;
       margin: 5px;
       padding: 2px;
@@ -169,18 +169,36 @@ html {
 
     .addToCart {
       padding: 20px 10px;
-      form {
+      .addToCartBtnBig {
+        @extend %website-button;
+        text-transform: none;
+        display: flex;
+        justify-content: space-around;
         align-items: center;
-        justify-content: flex-start;
+        cursor: pointer;
+        font-size: 14px;
+        height: 36px;
+        width: 134px;
+        padding: 0 12px;
+        &:focus {
+          outline: none;
+        }
 
-        .addToCartBtn {
-          @extend %website-button;
-          text-transform: none;
-          cursor: pointer;
+        .spinner {
+          @extend %spinner;
+          width: 16px;
+          height: 16px;
+        }
+
+        .successIcon {
+          @extend %successIcon;
+          color: white;
           font-size: 14px;
-          padding: 10px 30px;
-          &:focus{
-            outline: none;
+        }
+
+        @keyframes rotate {
+          0% {
+            transform: rotate(360deg);
           }
         }
       }
@@ -269,26 +287,11 @@ html {
 
         #review-form {
           .input-area {
-            width: 100%;
+            @extend %input;
             height: 80px;
-            position: relative;
-
-            input {
-              border-radius: 4px;
-              padding: 0 25px;
-              width: 100%;
-              height: 50px;
-              border: 1px solid rgba(0, 0, 0, 0.5);
-              outline: none;
-              &:focus {
-                border: 1px solid black;
-              }
-            }
 
             .review-area {
-              width: 100%;
-              padding: 13px 25px;
-              border-radius: 4px;
+              @extend %msg-area;
             }
           }
 
@@ -356,7 +359,7 @@ html {
     }
 
     .small-img-box {
-      height: 90px !important;
+      height: 97px !important;
     }
 
     .tour-info {
@@ -378,7 +381,7 @@ html {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #tour {
-    padding: 40px 0;
+    padding: 60px 0;
     .tourPics-and-basicInfo {
       .tour-img-box {
         height: 300px !important;
@@ -390,6 +393,22 @@ html {
 
       .tour-info {
         padding: 40px 20px 0 10px !important;
+        .top-part {
+          width: 407px;
+
+          .caption {
+            h2 {
+              font-size: 26px;
+            }
+          }
+
+          .rating {
+            width: 90px !important;
+            i {
+              font-size: 13px !important;
+            }
+          }
+        }
       }
     }
 
@@ -506,7 +525,7 @@ html {
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #tour {
-    padding: 70px 0;
+    padding: 50px 0;
     .tourPics-and-basicInfo {
       .tour-img-box {
         height: 200px !important;
@@ -580,14 +599,8 @@ html {
 
       .addToCart {
         padding: 20px 0px !important;
-        form {
-          flex-direction: column !important;
-          align-items: flex-start !important;
-          .addToCartBtn {
-            font-size: 13px !important;
-            padding: 9px 32px !important;
-            margin: 20px 0 0 !important;
-          }
+        .addToCartBtnBig {
+          font-size: 13px !important;
         }
       }
     }

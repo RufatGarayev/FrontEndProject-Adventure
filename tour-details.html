@@ -214,16 +214,14 @@
                                 <div class="col-12">
                                     <!-- tour-big-img -->
                                     <div class="tour-img-box">
-                                        <img class="img-fluid" src="img/tours/gabala.jpg"
-                                            alt="gabala">
+                                        <img class="img-fluid" src="img/tours/gabala.jpg" alt="gabala">
                                     </div>
                                 </div>
                                 <div class="col-3">
                                     <!-- tour-small-img -->
                                     <div class="small-img-box active-img">
                                         <a href="img/tours/gabala.jpg">
-                                            <img class="img-fluid" src="img/tours/gabala.jpg"
-                                                alt="gabala">
+                                            <img class="img-fluid" src="img/tours/gabala.jpg" alt="gabala">
                                         </a>
                                     </div>
                                 </div>
@@ -302,11 +300,11 @@
                             </div>
                             <!-- add-to-cart-area -->
                             <div class="addToCart">
-                                <form class="d-flex" action="#">
-                                    <button class="addToCartBtn" onClick="cartLS.add({id: 1, name: 'Gabala Tour', price: 79})" type="submit">
-                                        Add To Cart
-                                    </button>
-                                </form>
+                                <a href="javascript:void(0)" class="addToCartBtnBig" onClick="cartLS.add({id: 1, name: 'Gabala Tour', price: 79})" type="submit">
+                                    Add To Cart
+                                    <div class="spinner d-none"></div>
+                                    <i class="fas fa-check successIcon d-none"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -574,7 +572,8 @@
     <script src="plugins/owl-carousel/owl.carousel.js"></script>
     <script src="js/owl-carousel.js"></script>
     <!-- shopping-cart-local-storage -->
-    <script src="https://unpkg.com/cart-localstorage@1.1.4/dist/cart-localstorage.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/cart-localstorage@1.1.4/dist/cart-localstorage.min.js"
+        type="text/javascript"></script>
     <!-- cart.js -->
     <script src="js/cart.js"></script>
     <!-- main.js -->

@@ -113,14 +113,14 @@
 
 // section-caption properties
 %section-caption {
-  font-size: 46px;
+  font-size: 40px;
   font-family: ludicrous;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: white;
 
   @media (min-width: 375px) and (max-width: 575.98px) {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   @media (min-width: 250px) and (max-width: 374.98px) {
@@ -133,7 +133,6 @@
   margin: 8px 0;
   height: 0.7px;
   width: 60px;
-  // background-color: rgb(58, 59, 116);
   background-color: white;
 
   @media (min-width: 375px) and (max-width: 575.98px) {
@@ -202,6 +201,22 @@
       }
     }
   }
+}
+
+// spinner properties
+%spinner {
+  width: 25px;
+  height: 25px;
+  border: 3px solid lightgray;
+  border-radius: 50%;
+  border-left-color: coral;
+  animation: rotate linear 0.7s infinite;
+}
+
+// success-icon properties
+%successIcon {
+  color: green;
+  font-size: 20px;
 }
 
 // top info-box properties
@@ -273,6 +288,56 @@
     span {
       font-size: 11px;
     }
+  }
+}
+
+// input form properties
+%input {
+  width: 100%;
+  height: 50px;
+  // font-size: 16px;
+  // color: #3c3c3c;
+  position: relative;
+  &:not(:first-child) {
+    margin-top: 15px;
+  }
+
+  input {
+    border-radius: 4px;
+    padding: 0 25px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid #dbc5c5;
+    &:focus {
+      border: 1px solid black;
+    }
+  }
+
+  i {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 18px;
+    color: red;
+    z-index: 0;
+  }
+
+  .success-icon {
+    color: green;
+    z-index: 5;
+  }
+}
+
+// msg-area properties
+%msg-area {
+  width: 100%;
+  padding: 13px 25px;
+  border-radius: 4px;
+  border: 1px solid #dbc5c5;
+  &:focus {
+    border: 1px solid black;
+    outline: 0;
   }
 }
 
@@ -465,9 +530,9 @@
       border: 1px solid #aaaaaa;
       box-shadow: none;
     }
-    &:hover{
-      background-color: rgb(58,59,116);
-      border: 1px solid rgb(58,59,116);
+    &:hover {
+      background-color: rgb(58, 59, 116);
+      border: 1px solid rgb(58, 59, 116);
       color: white;
     }
   }
@@ -497,6 +562,6 @@
 
 // cart-price properties
 %cart-price {
-    font-size: 19px;
-    font-family: 'Times New Roman', Times, serif;
+  font-size: 19px;
+  font-family: "Times New Roman", Times, serif;
 }

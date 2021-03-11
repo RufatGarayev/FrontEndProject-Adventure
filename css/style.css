@@ -118,7 +118,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 #subscribe .subscribe-title h1, #our-advantages .caption h1, #special-offers .special-offers-caption h1, #popular-tours .popular-tours-caption h1, #coming-soon .coming-soon-caption h1, #our-achievements .achievements-caption h1 {
-  font-size: 46px;
+  font-size: 40px;
   font-family: ludicrous;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -127,7 +127,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #subscribe .subscribe-title h1, #our-advantages .caption h1, #special-offers .special-offers-caption h1, #popular-tours .popular-tours-caption h1, #coming-soon .coming-soon-caption h1, #our-achievements .achievements-caption h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 
@@ -211,6 +211,21 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   color: #769484;
 }
 
+.main-tourItem-design .info .slide-links .spinner, #popular-tours .owl-carousel .item .content .content-links .spinner {
+  width: 25px;
+  height: 25px;
+  border: 3px solid lightgray;
+  border-radius: 50%;
+  border-left-color: coral;
+  -webkit-animation: rotate linear 0.7s infinite;
+          animation: rotate linear 0.7s infinite;
+}
+
+.main-tourItem-design .info .slide-links .successIcon, #popular-tours .owl-carousel .item .content .content-links .successIcon {
+  color: green;
+  font-size: 20px;
+}
+
 .main-tourItem-design .info .slide-links a .top-info-box, #popular-tours .owl-carousel .item .content .content-links a .top-info-box {
   display: inline-block;
   position: absolute;
@@ -285,6 +300,43 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   .main-tourItem-design .price-info span, #popular-tours .owl-carousel .item .price-info span {
     font-size: 11px;
   }
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area:not(:first-child) {
+  margin-top: 15px;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area input {
+  border-radius: 4px;
+  padding: 0 25px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: 1px solid #dbc5c5;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area input:focus {
+  border: 1px solid black;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area i {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 18px;
+  color: red;
+  z-index: 0;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area .success-icon {
+  color: green;
+  z-index: 5;
 }
 
 footer .footer-top h4 {
@@ -593,42 +645,6 @@ header nav .account li .login-box-holder {
 
 header nav .account li .login-box-holder .same-style-input-area {
   width: 100%;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area {
-  width: 100%;
-  height: 55px;
-  margin-top: 15px;
-  font-size: 16px;
-  color: #3c3c3c;
-  position: relative;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area i {
-  position: absolute;
-  top: 18px;
-  right: 25px;
-  font-size: 18px;
-  color: red;
-  z-index: 0;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area .success-icon {
-  color: green;
-  z-index: 5;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area input {
-  border-radius: 4px;
-  padding: 0 25px;
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  outline: none;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area input:focus {
-  border: 1px solid black;
 }
 
 header nav .account li .login-box-holder .same-style-input-area .forgot-area {
@@ -2056,6 +2072,20 @@ footer .footer-bottom .social-media ul {
   letter-spacing: 1px;
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .main-tourItem-design .img-box {
     height: 220px !important;
@@ -2763,6 +2793,13 @@ html {
   padding: 9px 18px !important;
   font-size: 13px;
   font-weight: 500;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @media (min-width: 576px) and (max-width: 599.98px) {

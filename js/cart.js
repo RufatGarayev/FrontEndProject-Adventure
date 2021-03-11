@@ -10,7 +10,6 @@ addToCart.forEach((btn) => {
 });
 
 
-
 // getting tour count
 function getTourCount() {
     let cart = JSON.parse(localStorage.getItem("__cart"));

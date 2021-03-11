@@ -878,10 +878,49 @@ $(document).ready(function () {
   // ======= Read More End ======= //
 
 
+  // ======= Add To Cart Btn - Start ======= //
+  $(document).on("click", ".addToCartBtn", function(){
+    // taking this
+    let $this = $(this);
+    // hiding this
+    $this.addClass("d-none");
+    // showing spinner
+    $this.next(".spinner").removeClass("d-none");
+    
+    setTimeout(function(){
+      // hiding spinner 0.5s later
+      $this.next(".spinner").addClass("d-none");
+      // showing successIcon 0.5s later
+      $this.siblings(".successIcon").removeClass("d-none");
+    }, 500);
+  });
+
+  $(document).on("click", ".addToCartBtnBig", function(){
+    // taking this
+    let $this = $(this);
+    // showing spinner
+    $this.find(".spinner").removeClass("d-none");
+    
+    setTimeout(function(){
+      // hiding spinner 0.5s later
+      $this.find(".spinner").addClass("d-none");
+      // showing success-icon 0.5s later
+      $this.find(".successIcon").removeClass("d-none");
+    }, 700);
+
+    // if the spinner is visible, hide the success-icon
+    if (!$this.find(".spinner").hasClass("d-none")) {
+      $this.find(".successIcon").addClass("d-none");
+    }else{
+      $this.find(".successIcon").removeClass("d-none");
+    }
+  });
+  // ======= Add To Cart Btn - End ======= //
+
+
   // ======= Tour Filter and Background-color of Button when click on it - Start ======= //
   $(".tour-holder").isotope({
     itemSelector: ".item-col",
-    percentPosition: true,
     layoutMode: "fitRows"
   });
     

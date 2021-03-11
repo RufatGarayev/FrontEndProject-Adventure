@@ -47,7 +47,7 @@ header nav .navbar-items .links li a:hover, header nav .account li a:hover {
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #tour .tourPics-and-basicInfo .addToCart form .addToCartBtn, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn {
   padding: 10px 24px;
   display: inline-block;
   font-weight: 600;
@@ -63,7 +63,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   z-index: 1;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #tour .tourPics-and-basicInfo .addToCart form .addToCartBtn::before, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig::before, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn::before {
   content: "";
   border-radius: 3px;
   position: absolute;
@@ -83,18 +83,18 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
           transform-origin: left;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #tour .tourPics-and-basicInfo .addToCart form .addToCartBtn:hover, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn:hover {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig:hover, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn:hover {
   color: white;
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #tour .tourPics-and-basicInfo .addToCart form .addToCartBtn:hover::before, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn:hover::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig:hover::before, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
 #subscribe .subscribe-title h1 {
-  font-size: 46px;
+  font-size: 40px;
   font-family: ludicrous;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -103,7 +103,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #subscribe .subscribe-title h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 
@@ -143,6 +143,70 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   #subscribe .subscribe-title p, #tour .tourPics-and-basicInfo .tour-info .text-part, #tour .descAndReviews-wrapper .tab-items p {
     font-size: 13px;
   }
+}
+
+#tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig .spinner {
+  width: 25px;
+  height: 25px;
+  border: 3px solid lightgray;
+  border-radius: 50%;
+  border-left-color: coral;
+  -webkit-animation: rotate linear 0.7s infinite;
+          animation: rotate linear 0.7s infinite;
+}
+
+#tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig .successIcon {
+  color: green;
+  font-size: 20px;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area:not(:first-child), #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area:not(:first-child) {
+  margin-top: 15px;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area input, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area input {
+  border-radius: 4px;
+  padding: 0 25px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: 1px solid #dbc5c5;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area input:focus, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area input:focus {
+  border: 1px solid black;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area i, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area i {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 18px;
+  color: red;
+  z-index: 0;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area .success-icon, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area .success-icon {
+  color: green;
+  z-index: 5;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area .review-area {
+  width: 100%;
+  padding: 13px 25px;
+  border-radius: 4px;
+  border: 1px solid #dbc5c5;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area .review-area:focus {
+  border: 1px solid black;
+  outline: 0;
 }
 
 footer .footer-top h4 {
@@ -451,42 +515,6 @@ header nav .account li .login-box-holder {
 
 header nav .account li .login-box-holder .same-style-input-area {
   width: 100%;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area {
-  width: 100%;
-  height: 55px;
-  margin-top: 15px;
-  font-size: 16px;
-  color: #3c3c3c;
-  position: relative;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area i {
-  position: absolute;
-  top: 18px;
-  right: 25px;
-  font-size: 18px;
-  color: red;
-  z-index: 0;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area .success-icon {
-  color: green;
-  z-index: 5;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area input {
-  border-radius: 4px;
-  padding: 0 25px;
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  outline: none;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area input:focus {
-  border: 1px solid black;
 }
 
 header nav .account li .login-box-holder .same-style-input-area .forgot-area {
@@ -1847,15 +1875,27 @@ footer .footer-bottom .social-media ul {
   font-size: 65px;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #intro {
+    height: 100%;
+  }
+  #intro .page-caption {
+    height: 550px !important;
+  }
+  #intro .page-caption h1 {
+    font-size: 55px;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   #intro {
     height: 100%;
   }
   #intro .page-caption {
-    height: 420px;
+    height: 450px;
   }
   #intro .page-caption h1 {
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 
@@ -1868,7 +1908,7 @@ footer .footer-bottom .social-media ul {
     padding-top: 30px;
   }
   #intro .page-caption h1 {
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 
@@ -1877,11 +1917,11 @@ footer .footer-bottom .social-media ul {
     height: 100%;
   }
   #intro .page-caption {
-    height: 400px;
+    height: 370px;
     padding-top: 50px;
   }
   #intro .page-caption h1 {
-    font-size: 50px;
+    font-size: 44px;
   }
 }
 
@@ -2060,24 +2100,49 @@ html {
   padding: 20px 10px;
 }
 
-#tour .tourPics-and-basicInfo .addToCart form {
+#tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig {
+  text-transform: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-#tour .tourPics-and-basicInfo .addToCart form .addToCartBtn {
-  text-transform: none;
   cursor: pointer;
   font-size: 14px;
-  padding: 10px 30px;
+  height: 36px;
+  width: 134px;
+  padding: 0 12px;
 }
 
-#tour .tourPics-and-basicInfo .addToCart form .addToCartBtn:focus {
+#tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig:focus {
   outline: none;
+}
+
+#tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig .spinner {
+  width: 16px;
+  height: 16px;
+}
+
+#tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig .successIcon {
+  color: white;
+  font-size: 14px;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 #tour .descAndReviews-wrapper {
@@ -2173,28 +2238,7 @@ html {
 }
 
 #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area {
-  width: 100%;
   height: 80px;
-  position: relative;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area input {
-  border-radius: 4px;
-  padding: 0 25px;
-  width: 100%;
-  height: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  outline: none;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area input:focus {
-  border: 1px solid black;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area .review-area {
-  width: 100%;
-  padding: 13px 25px;
-  border-radius: 4px;
 }
 
 #tour .descAndReviews-wrapper .tab-items .reviews #review-form .review-area-holder {
@@ -2249,7 +2293,7 @@ html {
     height: 400px !important;
   }
   .tourPics-and-basicInfo .small-img-box {
-    height: 90px !important;
+    height: 97px !important;
   }
   .tourPics-and-basicInfo .tour-info {
     padding: 50px 20px 0 10px !important;
@@ -2262,7 +2306,7 @@ html {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #tour {
-    padding: 40px 0;
+    padding: 60px 0;
   }
   #tour .tourPics-and-basicInfo .tour-img-box {
     height: 300px !important;
@@ -2272,6 +2316,18 @@ html {
   }
   #tour .tourPics-and-basicInfo .tour-info {
     padding: 40px 20px 0 10px !important;
+  }
+  #tour .tourPics-and-basicInfo .tour-info .top-part {
+    width: 407px;
+  }
+  #tour .tourPics-and-basicInfo .tour-info .top-part .caption h2 {
+    font-size: 26px;
+  }
+  #tour .tourPics-and-basicInfo .tour-info .top-part .rating {
+    width: 90px !important;
+  }
+  #tour .tourPics-and-basicInfo .tour-info .top-part .rating i {
+    font-size: 13px !important;
   }
   #tour .descAndReviews-wrapper .tab-items {
     padding-top: 30px !important;
@@ -2358,7 +2414,7 @@ html {
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #tour {
-    padding: 70px 0;
+    padding: 50px 0;
   }
   #tour .tourPics-and-basicInfo .tour-img-box {
     height: 200px !important;
@@ -2422,19 +2478,8 @@ html {
   #tour .tourPics-and-basicInfo .addToCart {
     padding: 20px 0px !important;
   }
-  #tour .tourPics-and-basicInfo .addToCart form {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
-  }
-  #tour .tourPics-and-basicInfo .addToCart form .addToCartBtn {
+  #tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig {
     font-size: 13px !important;
-    padding: 9px 32px !important;
-    margin: 20px 0 0 !important;
   }
   #tour .descAndReviews-wrapper .tour-tabs li a {
     font-size: 15px !important;

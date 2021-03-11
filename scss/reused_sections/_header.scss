@@ -161,38 +161,9 @@ header {
           .same-style-input-area {
             width: 100%;
             .input-area {
-              width: 100%;
-              height: 55px;
-              margin-top: 15px;
-              font-size: 16px;
-              color: #3c3c3c;
-              position: relative;
-              i {
-                position: absolute;
-                top: 18px;
-                right: 25px;
-                font-size: 18px;
-                color: red;
-                z-index: 0;
-              }
-
-              .success-icon {
-                color: green;
-                z-index: 5;
-              }
-
-              input {
-                border-radius: 4px;
-                padding: 0 25px;
-                width: 100%;
-                height: 100%;
-                border: 1px solid rgba(0, 0, 0, 0.5);
-                outline: none;
-                &:focus {
-                  border: 1px solid black;
-                }
-              }
+              @extend %input;
             }
+            
             .alert {
               @extend %form-alert;
             }

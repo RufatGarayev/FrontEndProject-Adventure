@@ -94,7 +94,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 #subscribe .subscribe-title h1, #get-in-touch .get-in-touch-caption h1 {
-  font-size: 46px;
+  font-size: 40px;
   font-family: ludicrous;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -103,7 +103,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #subscribe .subscribe-title h1, #get-in-touch .get-in-touch-caption h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 
@@ -143,6 +143,55 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   #subscribe .subscribe-title p, #get-in-touch .get-in-touch-caption p {
     font-size: 13px;
   }
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area, #get-in-touch .message .same-style-input-area .input-area {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area:not(:first-child), #get-in-touch .message .same-style-input-area .input-area:not(:first-child) {
+  margin-top: 15px;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area input, #get-in-touch .message .same-style-input-area .input-area input {
+  border-radius: 4px;
+  padding: 0 25px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: 1px solid #dbc5c5;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area input:focus, #get-in-touch .message .same-style-input-area .input-area input:focus {
+  border: 1px solid black;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area i, #get-in-touch .message .same-style-input-area .input-area i {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 18px;
+  color: red;
+  z-index: 0;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .input-area .success-icon, #get-in-touch .message .same-style-input-area .input-area .success-icon {
+  color: green;
+  z-index: 5;
+}
+
+#get-in-touch .message .same-style-input-area .input-area .msg-area {
+  width: 100%;
+  padding: 13px 25px;
+  border-radius: 4px;
+  border: 1px solid #dbc5c5;
+}
+
+#get-in-touch .message .same-style-input-area .input-area .msg-area:focus {
+  border: 1px solid black;
+  outline: 0;
 }
 
 footer .footer-top h4 {
@@ -451,42 +500,6 @@ header nav .account li .login-box-holder {
 
 header nav .account li .login-box-holder .same-style-input-area {
   width: 100%;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area {
-  width: 100%;
-  height: 55px;
-  margin-top: 15px;
-  font-size: 16px;
-  color: #3c3c3c;
-  position: relative;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area i {
-  position: absolute;
-  top: 18px;
-  right: 25px;
-  font-size: 18px;
-  color: red;
-  z-index: 0;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area .success-icon {
-  color: green;
-  z-index: 5;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area input {
-  border-radius: 4px;
-  padding: 0 25px;
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  outline: none;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area input:focus {
-  border: 1px solid black;
 }
 
 header nav .account li .login-box-holder .same-style-input-area .forgot-area {
@@ -1847,15 +1860,27 @@ footer .footer-bottom .social-media ul {
   font-size: 65px;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #intro {
+    height: 100%;
+  }
+  #intro .page-caption {
+    height: 550px !important;
+  }
+  #intro .page-caption h1 {
+    font-size: 55px;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   #intro {
     height: 100%;
   }
   #intro .page-caption {
-    height: 420px;
+    height: 450px;
   }
   #intro .page-caption h1 {
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 
@@ -1868,7 +1893,7 @@ footer .footer-bottom .social-media ul {
     padding-top: 30px;
   }
   #intro .page-caption h1 {
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 
@@ -1877,11 +1902,11 @@ footer .footer-bottom .social-media ul {
     height: 100%;
   }
   #intro .page-caption {
-    height: 400px;
+    height: 370px;
     padding-top: 50px;
   }
   #intro .page-caption h1 {
-    font-size: 50px;
+    font-size: 44px;
   }
 }
 
@@ -1917,7 +1942,7 @@ html {
 }
 
 #get-in-touch {
-  padding: 80px 0 90px;
+  padding: 70px 0 60px;
   background-color: #ededed;
 }
 
@@ -1990,51 +2015,6 @@ html {
   width: 100%;
 }
 
-#get-in-touch .message .same-style-input-area .input-area {
-  width: 100%;
-  height: 50px;
-  font-size: 16px;
-  color: #3c3c3c;
-  position: relative;
-}
-
-#get-in-touch .message .same-style-input-area .input-area:not(:first-child) {
-  margin-top: 15px;
-}
-
-#get-in-touch .message .same-style-input-area .input-area i {
-  position: absolute;
-  top: 18px;
-  right: 25px;
-  font-size: 18px;
-  color: red;
-  z-index: 0;
-}
-
-#get-in-touch .message .same-style-input-area .input-area .success-icon {
-  color: green;
-  z-index: 5;
-}
-
-#get-in-touch .message .same-style-input-area .input-area input {
-  border-radius: 4px;
-  padding: 0 25px;
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  outline: none;
-}
-
-#get-in-touch .message .same-style-input-area .input-area input:focus {
-  border: 1px solid black;
-}
-
-#get-in-touch .message .same-style-input-area .input-area .msg-area {
-  width: 100%;
-  padding: 13px 25px;
-  border-radius: 4px;
-}
-
 #get-in-touch .message .same-style-input-area .msg-area-holder {
   height: 126px;
 }
@@ -2059,11 +2039,34 @@ html {
 
 #map-area {
   height: 100%;
+  padding: 0 50px 30px;
+  height: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ededed;
 }
 
 #map-area iframe {
+  border: 30px solid white !important;
+  -webkit-box-shadow: 0 0 7px 0 #cecbcb;
+          box-shadow: 0 0 7px 0 #cecbcb;
   width: 100%;
-  height: 450px;
+  height: 480px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #map-area {
+    padding: 0 30px 30px !important;
+    height: 530px !important;
+  }
+  #map-area iframe {
+    border: 30px solid white !important;
+    height: 430px !important;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -2073,9 +2076,20 @@ html {
   #get-in-touch .holder {
     margin-bottom: 50px;
   }
+  #map-area {
+    padding: 0 30px 50px !important;
+    height: 550px !important;
+  }
+  #map-area iframe {
+    border: 20px solid white !important;
+    height: 450px !important;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
+  #get-in-touch {
+    padding: 70px 0 70px !important;
+  }
   #get-in-touch .get-in-touch-caption {
     padding: 0 35px 50px;
   }
@@ -2083,9 +2097,20 @@ html {
     height: 270px;
     margin-bottom: 50px;
   }
+  #map-area {
+    padding: 0 15px 50px !important;
+    height: 550px !important;
+  }
+  #map-area iframe {
+    border: 15px solid white !important;
+    height: 450px !important;
+  }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
+  #get-in-touch {
+    padding: 70px 0 50px !important;
+  }
   #get-in-touch .get-in-touch-caption {
     padding: 0 12px 50px;
   }
@@ -2123,6 +2148,14 @@ html {
   #get-in-touch .message .bottom-links button {
     padding: 8px 26px !important;
     font-size: 13px !important;
+  }
+  #map-area {
+    padding: 0 12px 40px !important;
+    height: 500px !important;
+  }
+  #map-area iframe {
+    border: 10px solid white !important;
+    height: 400px !important;
   }
 }
 /*# sourceMappingURL=contact.css.map */

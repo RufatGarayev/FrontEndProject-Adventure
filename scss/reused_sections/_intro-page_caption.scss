@@ -22,13 +22,25 @@
 
 
 // ======= Responsive Design Start ======= //
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #intro {
+    height: 100%;
+    .page-caption {
+      height: 550px !important;
+      h1 {
+        font-size: 55px;
+      }
+    }
+  }
+}
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   #intro {
     height: 100%;
     .page-caption {
-      height: 420px;
+      height: 450px;
       h1 {
-        font-size: 55px;
+        font-size: 50px;
       }
     }
   }
@@ -41,7 +53,7 @@
       height: 420px;
       padding-top: 30px;
       h1 {
-        font-size: 55px;
+        font-size: 50px;
       }
     }
   }
@@ -51,10 +63,10 @@
   #intro {
     height: 100%;
     .page-caption {
-      height: 400px;
+      height: 370px;
       padding-top: 50px;
       h1 {
-        font-size: 50px;
+        font-size: 44px;
       }
     }
   }

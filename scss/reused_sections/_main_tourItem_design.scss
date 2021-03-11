@@ -72,6 +72,20 @@
 
         @extend %top-info-box;
       }
+
+      .spinner{
+        @extend %spinner;
+      }
+
+      .successIcon{
+        @extend %successIcon;
+      }
+
+      @keyframes rotate {
+        0%{
+          transform: rotate(360deg);
+        }
+      }
     }
   }
 }
