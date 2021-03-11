@@ -57,7 +57,6 @@ html {
 }
 // ======= Dark Bg-Color End ======= //
 
-
 // ======= Intro Section Start ======= //
 #intro {
   background-image: url(../img/bg-images/wood.jpg);
@@ -348,7 +347,6 @@ html {
 // ======= Tours Section End ======= //
 
 
-
 // ======= Responsive Design Start ======= //
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #tours {
@@ -382,7 +380,7 @@ html {
   #tours {
     padding: 50px 30px 50px;
     .sidebar-area {
-      background-color:rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.8);
       padding: 0;
       height: 100%;
       position: fixed;
@@ -422,18 +420,15 @@ html {
           label {
             font-size: 18px;
             font-weight: 200;
-            &::before{
+            &::before {
               border-color: white !important;
             }
           }
         }
-
-
       }
       .sidebar-filter-toggle {
         display: block;
       }
-
 
       .hide-filter-btn {
         transform: translateX(-60px);
@@ -445,10 +440,10 @@ html {
       width: 350px !important;
       padding: 40px 30px 0;
       .filters {
-      padding: 0 3px;
-      visibility: visible !important;
-      opacity: 1 !important;
-      transition: 0.8s cubic-bezier(1, 0, 0, 1) !important;
+        padding: 0 3px;
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition: 0.8s cubic-bezier(1, 0, 0, 1) !important;
       }
     }
 
@@ -526,7 +521,7 @@ html {
           label {
             font-size: 18px;
             font-weight: 200;
-            &::before{
+            &::before {
               border-color: white !important;
             }
           }
@@ -547,10 +542,10 @@ html {
       width: 350px !important;
       padding: 30px 30px 0;
       .filters {
-      padding: 0 3px;
-      visibility: visible !important;
-      opacity: 1 !important;
-      transition: 0.8s cubic-bezier(1, 0, 0, 1) !important;
+        padding: 0 3px;
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition: 0.8s cubic-bezier(1, 0, 0, 1) !important;
       }
     }
 
@@ -654,7 +649,7 @@ html {
           label {
             font-size: 18px;
             font-weight: 200;
-            &::before{
+            &::before {
               border-color: white !important;
             }
           }
@@ -675,10 +670,10 @@ html {
       width: calc(100vw - 60px) !important;
       padding: 30px 30px 0;
       .filters {
-      padding: 0 3px;
-      visibility: visible !important;
-      opacity: 1 !important;
-      transition: 0.8s cubic-bezier(1, 0, 0, 1) !important;
+        padding: 0 3px;
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition: 0.8s cubic-bezier(1, 0, 0, 1) !important;
       }
     }
 
@@ -747,7 +742,7 @@ html {
       z-index: 9999;
       width: 0;
       transition: 0.5s cubic-bezier(1, 0, 0, 1) !important;
-      
+
       .filters {
         height: 100%;
         visibility: hidden;
@@ -777,7 +772,7 @@ html {
           label {
             font-size: 14px;
             font-weight: 200;
-            &::before{
+            &::before {
               border-color: white !important;
             }
           }
@@ -789,9 +784,9 @@ html {
         width: 38px;
         height: 38px;
         right: -38px;
-        i{
+        i {
           line-height: 39px;
-          &::before{
+          &::before {
             font-size: 32px;
           }
         }
@@ -807,10 +802,10 @@ html {
       width: calc(100vw - 48px) !important;
       padding: 30px 30px 0;
       .filters {
-      padding: 0 3px;
-      visibility: visible !important;
-      opacity: 1 !important;
-      transition: 0.7s cubic-bezier(1, 0, 0, 1) !important;
+        padding: 0 3px;
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition: 0.7s cubic-bezier(1, 0, 0, 1) !important;
       }
     }
 

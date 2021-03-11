@@ -2076,6 +2076,10 @@ html {
   padding: 10px 30px;
 }
 
+#tour .tourPics-and-basicInfo .addToCart form .addToCartBtn:focus {
+  outline: none;
+}
+
 #tour .descAndReviews-wrapper {
   padding: 50px 0 0;
 }

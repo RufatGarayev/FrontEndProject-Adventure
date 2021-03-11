@@ -256,11 +256,20 @@ footer .footer-bottom .social-media ul li:hover .twitter::before {
 }
 
 #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area .btn {
-  width: 38px;
-  height: 42px;
+  width: 33px;
+  height: 37px;
   color: #0f0e0e;
   border: 1px solid #aaaaaa;
   background-color: #eef0f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 0;
   font-size: 10px;
   outline: none;
@@ -270,6 +279,12 @@ footer .footer-bottom .social-media ul li:hover .twitter::before {
   border: 1px solid #aaaaaa;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area .btn:hover {
+  background-color: #3a3b74;
+  border: 1px solid #3a3b74;
+  color: white;
 }
 
 #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area .minus-btn {
@@ -283,7 +298,7 @@ footer .footer-bottom .social-media ul li:hover .twitter::before {
 #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area input {
   background-color: #eef0f2;
   text-align: center;
-  width: 66px;
+  width: 55px;
   font-size: 16px;
   font-weight: 400;
   border: none;
@@ -295,13 +310,9 @@ footer .footer-bottom .social-media ul li:hover .twitter::before {
   outline: none;
 }
 
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .total-price i::before, #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .tour-price i::before {
-  font-size: 17px !important;
-  margin-left: 0;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .total-price span, #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .tour-price span {
-  font-size: 18px;
+#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .tour-price span, #shop-cart .cart-totals .total span {
+  font-size: 19px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #top-header {
@@ -1990,6 +2001,7 @@ html {
 
 #shop-cart .shop-table-wrapper .shop-table thead {
   background-color: #769484;
+  text-align: center;
 }
 
 #shop-cart .shop-table-wrapper .shop-table thead .thead-row {
@@ -2001,61 +2013,21 @@ html {
   border-bottom: 1px solid #dbc5c5;
 }
 
-#shop-cart .shop-table-wrapper .shop-table thead .thead-row .tour-img {
-  width: 10%;
+#shop-cart .shop-table-wrapper .shop-table thead th {
+  width: 25%;
 }
 
-#shop-cart .shop-table-wrapper .shop-table thead .thead-row .tour-price {
-  width: 170px;
-}
-
-#shop-cart .shop-table-wrapper .shop-table thead .thead-row .increase-decrease {
-  width: 275px;
-}
-
-#shop-cart .shop-table-wrapper .shop-table thead .thead-row .tour-total {
-  width: 110px;
+#shop-cart .shop-table-wrapper .shop-table tbody {
+  text-align: center;
 }
 
 #shop-cart .shop-table-wrapper .shop-table tbody .tbody-row {
-  height: 100px;
+  height: 90px;
   border-bottom: 1px solid #dbc5c5;
 }
 
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .tour-smallImg {
-  height: 70px;
-  width: 100px;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .tour-smallImg img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .increase-decrease .increase-decrease-area {
-  padding: 0 131px 0px 0;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .remove-tour {
-  text-align: right;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .remove-tour a i {
-  font-size: 16px;
-  color: red;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  border-radius: 50%;
-}
-
-#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .remove-tour a i:hover {
-  color: white;
-  background-color: red;
+#shop-cart .shop-table-wrapper .shop-table tbody .tbody-row .remove-tour a {
+  font-size: 14px;
 }
 
 #shop-cart .shop-table-wrapper .empty-alert a {
@@ -2093,13 +2065,8 @@ html {
 }
 
 #shop-cart .cart-totals .total span {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
-}
-
-#shop-cart .cart-totals .total span i::before {
-  font-weight: 500;
-  font-size: 21px;
 }
 
 #shop-cart .cart-totals .checkout-btn {
@@ -2112,77 +2079,30 @@ html {
   width: 100%;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  #shop-cart .shop-table thead .thead-row .tour-img {
-    width: 13% !important;
-  }
-  #shop-cart .shop-table thead .thead-row .tour-name {
-    width: 190px;
-  }
-  #shop-cart .shop-table thead .thead-row .tour-price {
-    width: 100px !important;
-  }
-  #shop-cart .shop-table thead .thead-row .increase-decrease {
-    width: 195px !important;
-  }
-  #shop-cart .shop-table thead .thead-row .tour-total {
-    width: 100px !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .tour-smallImg {
-    height: 46px !important;
-    width: 60px !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area {
-    padding: 0 48px 0px 0 !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .remove-tour i {
-    margin-top: 6px !important;
-  }
-}
-
 @media (min-width: 576px) and (max-width: 767.98px) {
-  #shop-cart .shop-table thead .thead-row .tour-img {
-    width: 13% !important;
-  }
-  #shop-cart .shop-table thead .thead-row .tour-name {
-    width: 190px;
-  }
-  #shop-cart .shop-table thead .thead-row .tour-price {
-    width: 105px !important;
-  }
-  #shop-cart .shop-table thead .thead-row .increase-decrease {
-    width: 168px !important;
-  }
-  #shop-cart .shop-table thead .thead-row .tour-total {
-    width: 90px !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .tour-smallImg {
-    height: 46px !important;
-    width: 60px !important;
-  }
   #shop-cart .shop-table tbody .tbody-row .tour-name {
     font-size: 14px;
-    font-weight: bold;
   }
-  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area {
-    padding: 0 24px 0 0 !important;
+  #shop-cart .shop-table tbody .tbody-row .tour-price span {
+    font-size: 18px !important;
   }
   #shop-cart .shop-table tbody .tbody-row .increase-decrease-area .btn {
-    width: 34px !important;
-    height: 38px !important;
-    font-size: 10px !important;
+    width: 29px !important;
+    height: 35px !important;
+    font-size: 9px !important;
   }
   #shop-cart .shop-table tbody .tbody-row .increase-decrease-area input[type="text"] {
-    width: 55px;
+    width: 46px !important;
+    font-size: 14px !important;
   }
-  #shop-cart .shop-table tbody .tbody-row .remove-tour i {
-    margin-top: 6px !important;
+  #shop-cart .shop-table tbody .tbody-row .remove-tour a {
+    font-size: 12px !important;
   }
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #shop-cart {
-    padding: 50px 0 80px;
+    padding: 45px 0 80px;
   }
   #shop-cart .shop-table th,
   #shop-cart .shop-table td {
@@ -2196,8 +2116,11 @@ html {
   #shop-cart .shop-table thead {
     display: none;
   }
+  #shop-cart .shop-table tbody .tbody-row {
+    height: 187px !important;
+  }
   #shop-cart .shop-table tbody .tbody-row td {
-    width: 33.33%;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2208,7 +2131,8 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
+    font-size: 17px;
   }
   #shop-cart .shop-table tbody .tbody-row td::before {
     display: block;
@@ -2218,50 +2142,35 @@ html {
     text-transform: uppercase;
     font-size: 13px;
   }
-  #shop-cart .shop-table tbody .tbody-row td:nth-child(2):before {
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(1):before {
     content: "Tour";
   }
-  #shop-cart .shop-table tbody .tbody-row td:nth-child(3):before {
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(2):before {
     content: "Price";
   }
-  #shop-cart .shop-table tbody .tbody-row td:nth-child(4):before {
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(3):before {
     content: "Quantity";
+    margin-bottom: 8px;
   }
-  #shop-cart .shop-table tbody .tbody-row td:nth-child(5):before {
-    content: "Total";
-  }
-  #shop-cart .shop-table tbody .tbody-row .tour-smallImg {
-    height: 60px !important;
-    width: 90px !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area {
-    padding: 0 !important;
+  #shop-cart .shop-table tbody .tbody-row .tour-price span {
+    font-size: 20px !important;
   }
   #shop-cart .shop-table tbody .tbody-row .increase-decrease-area .btn {
-    width: 34px !important;
+    width: 28px !important;
     height: 32px !important;
     font-size: 9px !important;
   }
   #shop-cart .shop-table tbody .tbody-row .increase-decrease-area input[type="text"] {
-    width: 42px !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .tour-total span {
-    margin-top: 5px;
+    width: 44px !important;
   }
   #shop-cart .shop-table tbody .tbody-row .remove-tour {
-    height: 60px;
-    padding-top: 38px;
-    margin-bottom: 45px;
-    text-align: left !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .remove-tour i {
-    margin-left: 8px;
+    margin-top: 46px;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #shop-cart {
-    padding: 40px 0 80px;
+    padding: 45px 0 80px;
   }
   #shop-cart .shop-table th,
   #shop-cart .shop-table td {
@@ -2275,9 +2184,11 @@ html {
   #shop-cart .shop-table thead {
     display: none;
   }
+  #shop-cart .shop-table tbody .tbody-row {
+    height: 175px !important;
+  }
   #shop-cart .shop-table tbody .tbody-row td {
-    font-size: 13px !important;
-    width: 33.33%;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2288,7 +2199,8 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
+    font-size: 14px;
   }
   #shop-cart .shop-table tbody .tbody-row td::before {
     display: block;
@@ -2298,65 +2210,33 @@ html {
     text-transform: uppercase;
     font-size: 11px;
   }
-  #shop-cart .shop-table tbody .tbody-row td:nth-child(2):before {
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(1):before {
     content: "Tour";
   }
-  #shop-cart .shop-table tbody .tbody-row td:nth-child(3):before {
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(2):before {
     content: "Price";
   }
-  #shop-cart .shop-table tbody .tbody-row td:nth-child(4):before {
+  #shop-cart .shop-table tbody .tbody-row td:nth-child(3):before {
     content: "Quantity";
-    margin-top: 20px;
+    margin-bottom: 8px;
   }
-  #shop-cart .shop-table tbody .tbody-row td:nth-child(5):before {
-    content: "Total";
-    margin-top: 20px;
-  }
-  #shop-cart .shop-table tbody .tbody-row .total-price .price-wrapper i::before,
-  #shop-cart .shop-table tbody .tbody-row .tour-price .price-wrapper i::before {
-    font-size: 15px !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .total-price .price-wrapper span,
-  #shop-cart .shop-table tbody .tbody-row .tour-price .price-wrapper span {
-    font-size: 15px !important;
-  }
-  #shop-cart .shop-table tbody .tbody-row .tour-total span {
-    margin-top: 5px;
-  }
-  #shop-cart .shop-table tbody .tbody-row .increase-decrease-area {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    padding: 0 !important;
+  #shop-cart .shop-table tbody .tbody-row .tour-price span {
+    font-size: 17px !important;
   }
   #shop-cart .shop-table tbody .tbody-row .increase-decrease-area .btn {
-    width: 34px !important;
-    height: 24px !important;
+    width: 26px !important;
+    height: 32px !important;
     font-size: 8px !important;
-    border-radius: 0 !important;
   }
   #shop-cart .shop-table tbody .tbody-row .increase-decrease-area input[type="text"] {
-    border: 1px solid #aaaaaa !important;
-    width: 34px !important;
-    height: 25px;
-    font-size: 12px !important;
+    width: 38px !important;
+    font-size: 14px !important;
   }
   #shop-cart .shop-table tbody .tbody-row .remove-tour {
-    padding-top: 30px;
-    margin-bottom: 100px;
-    text-align: left !important;
+    margin-top: 46px;
   }
-  #shop-cart .shop-table tbody .tbody-row .remove-tour i {
-    margin-left: 8px;
-  }
-  #shop-cart .shop-table tbody .tbody-row .tour-smallImg {
-    margin-top: 11px;
-    width: 53px !important;
-    height: 40px !important;
+  #shop-cart .shop-table tbody .tbody-row .remove-tour a {
+    font-size: 12px !important;
   }
 }
 /*# sourceMappingURL=cart.css.map */

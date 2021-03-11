@@ -450,17 +450,25 @@
   justify-content: center;
 
   .btn {
-    width: 38px;
-    height: 42px;
+    width: 33px;
+    height: 37px;
     color: rgb(15, 14, 14);
     border: 1px solid #aaaaaa;
     background-color: #eef0f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 0;
     font-size: 10px;
     outline: none;
     &:focus {
       border: 1px solid #aaaaaa;
       box-shadow: none;
+    }
+    &:hover{
+      background-color: rgb(58,59,116);
+      border: 1px solid rgb(58,59,116);
+      color: white;
     }
   }
 
@@ -475,7 +483,7 @@
   input {
     background-color: #eef0f2;
     text-align: center;
-    width: 66px;
+    width: 55px;
     font-size: 16px;
     font-weight: 400;
     border: none;
@@ -489,13 +497,6 @@
 
 // cart-price properties
 %cart-price {
-  i {
-    &::before {
-      font-size: 17px !important;
-      margin-left: 0;
-    }
-  }
-  span {
-    font-size: 18px;
-  }
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
 }

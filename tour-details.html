@@ -303,7 +303,9 @@
                             <!-- add-to-cart-area -->
                             <div class="addToCart">
                                 <form class="d-flex" action="#">
-                                    <button class="addToCartBtn" type="submit">Add To Cart</button>
+                                    <button class="addToCartBtn" onClick="cartLS.add({id: 1, name: 'Gabala Tour', price: 79})" type="submit">
+                                        Add To Cart
+                                    </button>
                                 </form>
                             </div>
                         </div>
@@ -571,6 +573,8 @@
     <!-- owl-carousel.js -->
     <script src="plugins/owl-carousel/owl.carousel.js"></script>
     <script src="js/owl-carousel.js"></script>
+    <!-- shopping-cart-local-storage -->
+    <script src="https://unpkg.com/cart-localstorage@1.1.4/dist/cart-localstorage.min.js" type="text/javascript"></script>
     <!-- cart.js -->
     <script src="js/cart.js"></script>
     <!-- main.js -->

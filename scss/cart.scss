@@ -54,6 +54,7 @@ html {
 
       thead {
         background-color: rgb(118,148,132);
+        text-align: center;
         .thead-row {
           font-family: "Montserrat", sans-serif;
           color: white;
@@ -61,67 +62,40 @@ html {
           font-size: 13px;
           height: 70px;
           border-bottom: $light-line;
-          .tour-img {
-            width: 10%;
-          }
-          .tour-price {
-            width: 170px;
-          }
+          // .tour-price {
+          //   width: 170px;
+          // }
 
-          .increase-decrease {
-            width: 275px;
-          }
-
-          .tour-total {
-            width: 110px;
-          }
+          // .increase-decrease {
+          //   width: 275px;
+          // }
+        }
+        th{
+          width: 25%;
         }
       }
 
       tbody {
+        text-align: center;
         .tbody-row {
-          height: 100px;
+          height: 90px;
           border-bottom: $light-line;
 
-          .total-price,
           .tour-price {
-            @extend %cart-price;
-          }
-
-          .tour-smallImg {
-            height: 70px;
-            width: 100px;
-            img {
-              object-fit: cover;
-              height: 100%;
-              width: 100%;
+            span{
+              @extend %cart-price;
             }
           }
 
           .increase-decrease {
             .increase-decrease-area {
               @extend %increase-decrease;
-              padding: 0 131px 0px 0;
             }
           }
 
           .remove-tour {
-            text-align: right;
             a {
-              i {
-                font-size: 16px;
-                color: red;
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                line-height: 20px;
-                text-align: center;
-                border-radius: 50%;
-                &:hover {
-                  color: white;
-                  background-color: red;
-                }
-              }
+              font-size: 14px;
             }
           }
         }
@@ -163,14 +137,9 @@ html {
         font-weight: 700;
       }
       span {
-        font-size: 22px;
+        @extend %cart-price;
+        font-size: 24px;
         font-weight: 700;
-        i {
-          &::before {
-            font-weight: 500;
-            font-size: 21px;
-          }
-        }
       }
     }
 
@@ -190,101 +159,36 @@ html {
 
 
 // ======= Responsive Design Start ======= //
-@media (min-width: 768px) and (max-width: 991.98px) {
-  #shop-cart {
-    .shop-table {
-      thead {
-        .thead-row {
-          .tour-img {
-            width: 13% !important;
-          }
-          .tour-name {
-            width: 190px;
-          }
-          .tour-price {
-            width: 100px !important;
-          }
-          .increase-decrease {
-            width: 195px !important;
-          }
-          .tour-total {
-            width: 100px !important;
-          }
-        }
-      }
-
-      tbody {
-        .tbody-row {
-          .tour-smallImg {
-            height: 46px !important;
-            width: 60px !important;
-          }
-
-          .increase-decrease-area {
-            padding: 0 48px 0px 0 !important;
-          }
-
-          .remove-tour {
-            i {
-              margin-top: 6px !important;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 @media (min-width: 576px) and (max-width: 767.98px) {
   #shop-cart {
     .shop-table {
-      thead {
-        .thead-row {
-          .tour-img {
-            width: 13% !important;
-          }
-          .tour-name {
-            width: 190px;
-          }
-          .tour-price {
-            width: 105px !important;
-          }
-          .increase-decrease {
-            width: 168px !important;
-          }
-          .tour-total {
-            width: 90px !important;
-          }
-        }
-      }
-
       tbody {
         .tbody-row {
-          .tour-smallImg {
-            height: 46px !important;
-            width: 60px !important;
-          }
-
           .tour-name {
             font-size: 14px;
-            font-weight: bold;
+          }
+
+          .tour-price{
+            span{
+              font-size: 18px !important;
+            }
           }
 
           .increase-decrease-area {
-            padding: 0 24px 0 0 !important;
             .btn {
-              width: 34px !important;
-              height: 38px !important;
-              font-size: 10px !important;
+              width: 29px !important;
+              height: 35px !important;
+              font-size: 9px !important;
             }
             input[type="text"] {
-              width: 55px;
+              width: 46px !important;
+              font-size: 14px !important;
             }
           }
 
-          .remove-tour {
-            i {
-              margin-top: 6px !important;
+          .remove-tour{
+            a{
+              font-size: 12px !important;
             }
           }
         }
@@ -295,7 +199,7 @@ html {
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #shop-cart {
-    padding: 50px 0 80px;
+    padding: 45px 0 80px;
     .shop-table {
       th,
       td {
@@ -314,12 +218,14 @@ html {
 
       tbody {
         .tbody-row {
+          height: 187px !important;
           td {
-            width: 33.33%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 30px;
+            margin-top: 10px;
+            font-size: 17px;
           }
 
           td::before {
@@ -331,53 +237,38 @@ html {
             font-size: 13px;
           }
 
-          td:nth-child(2):before {
+          td:nth-child(1):before {
             content: "Tour";
           }
 
-          td:nth-child(3):before {
+          td:nth-child(2):before {
             content: "Price";
           }
 
-          td:nth-child(4):before {
+          td:nth-child(3):before {
             content: "Quantity";
+            margin-bottom: 8px;
           }
 
-          td:nth-child(5):before {
-            content: "Total";
-          }
-
-          .tour-smallImg{
-            height: 60px !important;
-            width: 90px !important;
+          .tour-price{
+            span{
+              font-size: 20px !important;
+            }
           }
 
           .increase-decrease-area {
-            padding: 0 !important;
             .btn {
-              width: 34px !important;
+              width: 28px !important;
               height: 32px !important;
               font-size: 9px !important;
             }
             input[type="text"] {
-              width: 42px !important;
+              width: 44px !important;
             }
           }
 
-          .tour-total {
-            span {
-              margin-top: 5px;
-            }
-          }
-
-          .remove-tour {
-            height: 60px;
-            padding-top: 38px;
-            margin-bottom: 45px;
-            text-align: left !important;
-            i {
-              margin-left: 8px;
-            }
+          .remove-tour{
+            margin-top: 46px;
           }
         }
       }
@@ -387,7 +278,7 @@ html {
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #shop-cart {
-    padding: 40px 0 80px;
+    padding: 45px 0 80px;
     .shop-table {
       th,
       td {
@@ -406,13 +297,14 @@ html {
 
       tbody {
         .tbody-row {
+          height: 175px !important;
           td {
-            font-size: 13px !important;
-            width: 33.33%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 30px;
+            margin-top: 10px;
+            font-size: 14px;
           }
 
           td::before {
@@ -424,75 +316,42 @@ html {
             font-size: 11px;
           }
 
-          td:nth-child(2):before {
+          td:nth-child(1):before {
             content: "Tour";
           }
 
-          td:nth-child(3):before {
+          td:nth-child(2):before {
             content: "Price";
           }
 
-          td:nth-child(4):before {
+          td:nth-child(3):before {
             content: "Quantity";
-            margin-top: 20px;
+            margin-bottom: 8px;
           }
 
-          td:nth-child(5):before {
-            content: "Total";
-            margin-top: 20px;
-          }
-
-          .total-price,
-          .tour-price {
-            .price-wrapper {
-              i {
-                &::before {
-                  font-size: 15px !important;
-                }
-              }
-              span {
-                font-size: 15px !important;
-              }
-            }
-          }
-
-          .tour-total {
-            span {
-              margin-top: 5px;
+          .tour-price{
+            span{
+              font-size: 17px !important;
             }
           }
 
           .increase-decrease-area {
-            display: flex;
-            flex-direction: column-reverse;
-            padding: 0 !important;
             .btn {
-              width: 34px !important;
-              height: 24px !important;
+              width: 26px !important;
+              height: 32px !important;
               font-size: 8px !important;
-              border-radius: 0 !important;
             }
             input[type="text"] {
-              border: 1px solid #aaaaaa !important;
-              width: 34px !important;
-              height: 25px;
+              width: 38px !important;
+              font-size: 14px !important;
+            }
+          }
+
+          .remove-tour{
+            margin-top: 46px;
+            a{
               font-size: 12px !important;
             }
-          }
-
-          .remove-tour {
-            padding-top: 30px;
-            margin-bottom: 100px;
-            text-align: left !important;
-            i {
-              margin-left: 8px;
-            }
-          }
-
-          .tour-smallImg {
-            margin-top: 11px;
-            width: 53px !important;
-            height: 40px !important;
           }
         }
       }
