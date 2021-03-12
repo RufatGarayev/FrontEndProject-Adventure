@@ -2146,6 +2146,161 @@ footer .footer-bottom .social-media ul {
   }
 }
 
+#our-advantages {
+  position: relative;
+  overflow: hidden;
+  padding: 66px 0 99px 0;
+  background-color: #769484;
+}
+
+#our-advantages .caption {
+  height: 115px;
+}
+
+#our-advantages .caption h1 {
+  text-align: center;
+  padding: 30px 0 0 !important;
+}
+
+#our-advantages .main-holder .holder {
+  padding: 40px 5px 0 5px;
+  height: 257px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+#our-advantages .main-holder .holder:hover {
+  padding-top: 15px !important;
+  -webkit-transition: 0.4s ease-in-out !important;
+  transition: 0.4s ease-in-out !important;
+}
+
+#our-advantages .main-holder .holder .icon-holder i {
+  color: black;
+}
+
+#our-advantages .main-holder .holder .icon-holder i::before {
+  font-size: 60px;
+  margin-left: 0;
+}
+
+#our-advantages .main-holder .holder h4 {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+#our-advantages .main-holder .holder hr {
+  height: 0.5px !important;
+  display: inline-block;
+  width: 26px;
+  margin: 10px 0 0 0;
+  background-color: white;
+}
+
+#our-advantages .main-holder .holder p {
+  position: relative;
+  padding-top: 22px;
+}
+
+@media (min-width: 250px) and (max-width: 315px) {
+  #our-advantages .main-holder .holder h4 {
+    font-size: 17px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #our-advantages {
+    padding: 80px 0 145px 0 !important;
+  }
+  #our-advantages .holder h4 {
+    font-size: 22px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #our-advantages {
+    padding: 80px 0 100px 0 !important;
+  }
+  #our-advantages .holder {
+    margin: 20px 0;
+    padding: 0 10px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #our-advantages {
+    padding: 120px 0 140px 0 !important;
+  }
+  #our-advantages .caption {
+    padding-bottom: 40px;
+  }
+  #our-advantages .holder {
+    padding: 40px 90px 0 90px !important;
+    height: 280px !important;
+  }
+  #our-advantages .holder .icon-holder i::before {
+    font-size: 70px !important;
+  }
+  #our-advantages .holder hr {
+    height: 1px !important;
+    width: 40px !important;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #our-advantages {
+    padding: 80px 0 100px 0 !important;
+  }
+  #our-advantages .caption h1 {
+    padding: 40px 0 80px 0 !important;
+  }
+  #our-advantages .holder {
+    padding: 40px 70px 0 70px !important;
+    height: 280px !important;
+    font-size: 17px;
+  }
+  #our-advantages .holder i::before {
+    font-size: 60px !important;
+  }
+  #our-advantages .holder hr {
+    width: 25px !important;
+  }
+  #our-advantages .holder p {
+    font-size: 16px !important;
+    width: 250px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #our-advantages {
+    padding: 50px 0 65px 0 !important;
+  }
+  #our-advantages .caption {
+    height: 110px !important;
+  }
+  #our-advantages .caption h1 {
+    padding: 20px 0 80px 0 !important;
+  }
+  #our-advantages .holder {
+    height: 235px !important;
+    padding: 32px 35px 0 35px !important;
+  }
+  #our-advantages .holder i::before {
+    font-size: 50px !important;
+  }
+  #our-advantages .holder h4 {
+    font-size: 20px !important;
+    padding-top: 10px !important;
+  }
+  #our-advantages .holder hr {
+    width: 24px !important;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2262,71 +2417,6 @@ html {
   to {
     -webkit-transform: scale(1.2, 1.2);
             transform: scale(1.2, 1.2);
-  }
-}
-
-#our-advantages {
-  position: relative;
-  overflow: hidden;
-  padding: 66px 0 99px 0;
-  background-color: #769484;
-}
-
-#our-advantages .caption {
-  height: 115px;
-}
-
-#our-advantages .caption h1 {
-  text-align: center;
-  padding: 30px 0 0 !important;
-}
-
-#our-advantages .main-holder .holder {
-  padding: 40px 5px 0 5px;
-  height: 257px;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-#our-advantages .main-holder .holder:hover {
-  padding-top: 15px !important;
-  -webkit-transition: 0.4s ease-in-out !important;
-  transition: 0.4s ease-in-out !important;
-}
-
-#our-advantages .main-holder .holder .icon-holder i {
-  color: black;
-}
-
-#our-advantages .main-holder .holder .icon-holder i::before {
-  font-size: 60px;
-  margin-left: 0;
-}
-
-#our-advantages .main-holder .holder h4 {
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 20px;
-  font-weight: 400;
-  color: white;
-}
-
-#our-advantages .main-holder .holder hr {
-  height: 0.5px !important;
-  display: inline-block;
-  width: 26px;
-  margin: 10px 0 0 0;
-  background-color: white;
-}
-
-#our-advantages .main-holder .holder p {
-  position: relative;
-  padding-top: 22px;
-}
-
-@media (min-width: 250px) and (max-width: 315px) {
-  #our-advantages .main-holder .holder h4 {
-    font-size: 17px !important;
   }
 }
 

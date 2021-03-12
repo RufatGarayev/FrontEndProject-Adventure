@@ -208,7 +208,7 @@
             <div class="container">
                 <!-- === tour-pics-and-info === -->
                 <div class="tourPics-and-basicInfo">
-                    <div class="row">
+                    <div class="row no-gutters">
                         <div class="col-lg-6">
                             <div class="row no-gutters">
                                 <div class="col-12">
@@ -259,12 +259,8 @@
                                     <div class="caption">
                                         <h2>Gabala Tour</h2>
                                     </div>
-                                    <div class="rating d-flex justify-content-between">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                                    <div class="rating d-flex">
+                                        <span>5<i class="fas fa-star"></i></span>
                                     </div>
                                 </div>
                                 <!-- location -->
@@ -274,8 +270,7 @@
                                 <!-- basic-info -->
                                 <div class="basic-info d-flex">
                                     <div class="price d-flex align-items-center">
-                                        <i class="flaticon-dollar"></i>
-                                        <h5>79<span> / person</span></h5>
+                                        <h5>$79<span> / person</span></h5>
                                     </div>
                                     <div class="photo-friendly d-flex align-items-center">
                                         <i class="flaticon-camera"></i>
@@ -300,7 +295,8 @@
                             </div>
                             <!-- add-to-cart-area -->
                             <div class="addToCart">
-                                <a href="javascript:void(0)" class="addToCartBtnBig" onClick="cartLS.add({id: 1, name: 'Gabala Tour', price: 79})" type="submit">
+                                <a href="javascript:void(0)" class="addToCartBtn addToCartBtnBig"
+                                    onClick="cartLS.add({id: 1, name: 'Gabala Tour', price: 79})" type="submit">
                                     Add To Cart
                                     <div class="spinner d-none"></div>
                                     <i class="fas fa-check successIcon d-none"></i>
@@ -316,7 +312,7 @@
                             <!-- tab-btns -->
                             <ul class="tour-tabs">
                                 <li><a class="active-tabBtn" href="#" data-value=".description">Description</a></li>
-                                <li><a href="#" data-value=".reviews">Reviews (0)</a></li>
+                                <li><a href="#" data-value=".reviews">Reviews <span>(2)</span></a></li>
                             </ul>
                         </div>
                         <div class="col-lg-8 col-md-8">
@@ -377,6 +373,61 @@
                                     <!-- caption -->
                                     <h4>Reviews</h4>
                                     <p>Your email address will not be published.</p>
+                                    <!-- media -->
+                                    <div class="media-holder">
+                                        <!-- single-item -->
+                                        <div class="media">
+                                            <div class="img-and-rating">
+                                                <div class="media-img">
+                                                    <img src="img/reviews/media-img1.jpg" alt="jonna">
+                                                </div>
+                                                <div class="media-rating d-flex justify-content-between">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="top d-flex">
+                                                    <h6>Jonna Jinton</h6>
+                                                    <div class="date">February 20 2021, 21:20</div>
+                                                </div>
+                                                <p>
+                                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                                    scelerisque ante sollicitudin.
+                                                    Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- single-item -->
+                                        <div class="media">
+                                            <div class="img-and-rating">
+                                                <div class="media-img">
+                                                    <img src="img/reviews/media-img2.jpg" alt="johan">
+                                                </div>
+                                                <div class="media-rating d-flex justify-content-between">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="top d-flex">
+                                                    <h6>Johan Bystrom</h6>
+                                                    <div class="date">February 20 2021, 21:37</div>
+                                                </div>
+                                                <p>
+                                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                                    scelerisque ante sollicitudin.
+                                                    Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <!-- rating -->
                                     <h6 class="rating-caption">Your Rating</h6>
                                     <div class="rating d-flex justify-content-between">
@@ -427,6 +478,60 @@
             </div>
         </section>
         <!-- ======= Tour Section End ======= -->
+
+        
+        <!-- ======= Our Advantages Section Start ======= -->
+        <section id="our-advantages">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <!-- single-item -->
+                        <div class="main-holder" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <div class="holder d-flex flex-column align-items-center text-center">
+                                <div class="icon-holder">
+                                    <i class="flaticon-hotel"></i>
+                                </div>
+                                <h4>Accomodation</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <!-- single-item -->
+                        <div class="main-holder" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <div class="holder d-flex flex-column align-items-center text-center">
+                                <div class="icon-holder">
+                                    <i class="flaticon-public-transport"></i>
+                                </div>
+                                <h4>Shuttle Included</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <!-- single-item -->
+                        <div class="main-holder" data-aos="fade-up" data-aos-duration="800" data-aos-delay="650">
+                            <div class="holder d-flex flex-column align-items-center text-center">
+                                <div class="icon-holder">
+                                    <i class="flaticon-map"></i>
+                                </div>
+                                <h4>Professional Guides</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <!-- single-item -->
+                        <div class="main-holder" data-aos="fade-up" data-aos-duration="900" data-aos-delay="900">
+                            <div class="holder d-flex flex-column align-items-center text-center">
+                                <div class="icon-holder">
+                                    <i class="flaticon-binoculars"></i>
+                                </div>
+                                <h4>Amazing Views</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======= Our Advantages Section End ======= -->
 
 
         <!-- ======= Subscribe Section Start ======= -->
@@ -574,6 +679,8 @@
     <!-- shopping-cart-local-storage -->
     <script src="https://unpkg.com/cart-localstorage@1.1.4/dist/cart-localstorage.min.js"
         type="text/javascript"></script>
+    <!-- form-validation.js -->
+    <script src="js/form-validation.js"></script>
     <!-- cart.js -->
     <script src="js/cart.js"></script>
     <!-- main.js -->

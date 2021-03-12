@@ -6,6 +6,7 @@
 @import "../scss/reused_sections/subscribe";
 @import "../scss/reused_sections/back-to-top";
 @import "../scss/reused_sections/main_tourItem_design";
+@import "../scss/reused_sections/our-advantages";
 
 
 * {
@@ -110,76 +111,6 @@ html {
   }
 }
 // ======= Intro Section End ======= //
-
-// ======= Our Advantages Section Start ======= //
-#our-advantages {
-  position: relative;
-  overflow: hidden;
-  padding: 66px 0 99px 0;
-  background-color: rgba(118, 148, 132, 1);
-
-  .caption {
-    height: 115px;
-    h1 {
-      @extend %section-caption;
-      text-align: center;
-      padding: 30px 0 0 !important;
-    }
-    hr {
-      @extend %section-caption-bottom-line;
-    }
-  }
-
-  .main-holder {
-    .holder {
-      padding: 40px 5px 0 5px;
-      height: 257px;
-      transition: 0.4s ease-in-out;
-      &:hover {
-        padding-top: 15px !important;
-        transition: 0.4s ease-in-out !important;
-      }
-      .icon-holder {
-        i {
-          color: $icon-color;
-          &::before {
-            font-size: $big-icon-size;
-            margin-left: 0;
-          }
-        }
-      }
-
-      h4 {
-        font-size: $item-caption-size;
-        font-family: $item-caption-font-family;
-        padding-top: 20px;
-        font-weight: 400;
-        color: white;
-      }
-
-      hr {
-        height: 0.5px !important;
-        display: inline-block;
-        width: 26px;
-        margin: 10px 0 0 0;
-        background-color: white;
-      }
-
-      p {
-        position: relative;
-        padding-top: 22px;
-        @extend %paragraph;
-      }
-
-      @media (min-width: 250px) and (max-width: 315px) {
-        h4 {
-          font-size: 17px !important;
-        }
-      }
-    }
-  }
-}
-// ======= Our Advantages Section End ======= //
 
 // ======= Special Offers Section Start ======= //
 #special-offers {

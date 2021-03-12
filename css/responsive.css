@@ -18,12 +18,6 @@
     font-size: 20px !important;
     border-radius: 2px !important;
   }
-  #our-advantages {
-    padding: 80px 0 145px 0 !important;
-  }
-  #our-advantages .holder h4 {
-    font-size: 22px !important;
-  }
   #special-offers {
     padding: 100px 30px 120px !important;
   }
@@ -96,14 +90,6 @@
   }
   #intro .banner-area .caption .button {
     font-size: 20px !important;
-  }
-  #our-advantages {
-    padding: 80px 0 100px 0 !important;
-  }
-  #our-advantages .holder {
-    margin: 20px 0;
-    padding: 0 10px;
-    font-size: 17px;
   }
   #special-offers {
     padding: 100px 30px 120px !important;
@@ -277,23 +263,6 @@
   }
   #intro .banner-area .caption .button {
     font-size: 17px !important;
-  }
-  #our-advantages {
-    padding: 120px 0 140px 0 !important;
-  }
-  #our-advantages .caption {
-    padding-bottom: 40px;
-  }
-  #our-advantages .holder {
-    padding: 40px 90px 0 90px !important;
-    height: 280px !important;
-  }
-  #our-advantages .holder .icon-holder i::before {
-    font-size: 70px !important;
-  }
-  #our-advantages .holder hr {
-    height: 1px !important;
-    width: 40px !important;
   }
   #special-offers {
     padding: 100px 20px 110px !important;
@@ -529,27 +498,6 @@
   #intro .banner-area .caption .button {
     font-size: 15px !important;
   }
-  #our-advantages {
-    padding: 80px 0 100px 0 !important;
-  }
-  #our-advantages .caption h1 {
-    padding: 40px 0 80px 0 !important;
-  }
-  #our-advantages .holder {
-    padding: 40px 70px 0 70px !important;
-    height: 280px !important;
-    font-size: 17px;
-  }
-  #our-advantages .holder i::before {
-    font-size: 60px !important;
-  }
-  #our-advantages .holder hr {
-    width: 25px !important;
-  }
-  #our-advantages .holder p {
-    font-size: 16px !important;
-    width: 250px;
-  }
   #special-offers {
     padding: 100px 50px 110px 50px !important;
   }
@@ -779,29 +727,6 @@
   #intro .banner-area .caption .button {
     font-size: 13px !important;
     padding: 7px 20px !important;
-  }
-  #our-advantages {
-    padding: 50px 0 65px 0 !important;
-  }
-  #our-advantages .caption {
-    height: 110px !important;
-  }
-  #our-advantages .caption h1 {
-    padding: 20px 0 80px 0 !important;
-  }
-  #our-advantages .holder {
-    height: 235px !important;
-    padding: 32px 35px 0 35px !important;
-  }
-  #our-advantages .holder i::before {
-    font-size: 50px !important;
-  }
-  #our-advantages .holder h4 {
-    font-size: 20px !important;
-    padding-top: 10px !important;
-  }
-  #our-advantages .holder hr {
-    width: 24px !important;
   }
   #special-offers {
     padding: 70px 5px 70px !important;

@@ -93,7 +93,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
           transform: scaleX(1);
 }
 
-#subscribe .subscribe-title h1 {
+#subscribe .subscribe-title h1, #our-advantages .caption h1 {
   font-size: 40px;
   font-family: ludicrous;
   letter-spacing: 1px;
@@ -102,18 +102,18 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #subscribe .subscribe-title h1 {
+  #subscribe .subscribe-title h1, #our-advantages .caption h1 {
     font-size: 36px;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title h1 {
+  #subscribe .subscribe-title h1, #our-advantages .caption h1 {
     font-size: 28px;
   }
 }
 
-#subscribe .subscribe-title hr {
+#subscribe .subscribe-title hr, #our-advantages .caption hr {
   margin: 8px 0;
   height: 0.7px;
   width: 60px;
@@ -121,18 +121,18 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #subscribe .subscribe-title hr {
+  #subscribe .subscribe-title hr, #our-advantages .caption hr {
     width: 45px;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title hr {
+  #subscribe .subscribe-title hr, #our-advantages .caption hr {
     width: 35px;
   }
 }
 
-#subscribe .subscribe-title p, #tour .tourPics-and-basicInfo .tour-info .text-part, #tour .descAndReviews-wrapper .tab-items p {
+#subscribe .subscribe-title p, #our-advantages .main-holder .holder p, #tour .tourPics-and-basicInfo .tour-info .text-part, #tour .descAndReviews-wrapper .tab-items p, #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body p {
   padding-top: 16px;
   font-size: 16px;
   font-weight: 300;
@@ -140,7 +140,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title p, #tour .tourPics-and-basicInfo .tour-info .text-part, #tour .descAndReviews-wrapper .tab-items p {
+  #subscribe .subscribe-title p, #our-advantages .main-holder .holder p, #tour .tourPics-and-basicInfo .tour-info .text-part, #tour .descAndReviews-wrapper .tab-items p, #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body p {
     font-size: 13px;
   }
 }
@@ -1880,7 +1880,7 @@ footer .footer-bottom .social-media ul {
     height: 100%;
   }
   #intro .page-caption {
-    height: 550px !important;
+    height: 620px !important;
   }
   #intro .page-caption h1 {
     font-size: 55px;
@@ -1892,7 +1892,7 @@ footer .footer-bottom .social-media ul {
     height: 100%;
   }
   #intro .page-caption {
-    height: 450px;
+    height: 500px;
   }
   #intro .page-caption h1 {
     font-size: 50px;
@@ -1904,7 +1904,7 @@ footer .footer-bottom .social-media ul {
     height: 100%;
   }
   #intro .page-caption {
-    height: 420px;
+    height: 460px;
     padding-top: 30px;
   }
   #intro .page-caption h1 {
@@ -1922,6 +1922,161 @@ footer .footer-bottom .social-media ul {
   }
   #intro .page-caption h1 {
     font-size: 44px;
+  }
+}
+
+#our-advantages {
+  position: relative;
+  overflow: hidden;
+  padding: 66px 0 99px 0;
+  background-color: #769484;
+}
+
+#our-advantages .caption {
+  height: 115px;
+}
+
+#our-advantages .caption h1 {
+  text-align: center;
+  padding: 30px 0 0 !important;
+}
+
+#our-advantages .main-holder .holder {
+  padding: 40px 5px 0 5px;
+  height: 257px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+#our-advantages .main-holder .holder:hover {
+  padding-top: 15px !important;
+  -webkit-transition: 0.4s ease-in-out !important;
+  transition: 0.4s ease-in-out !important;
+}
+
+#our-advantages .main-holder .holder .icon-holder i {
+  color: black;
+}
+
+#our-advantages .main-holder .holder .icon-holder i::before {
+  font-size: 60px;
+  margin-left: 0;
+}
+
+#our-advantages .main-holder .holder h4 {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+#our-advantages .main-holder .holder hr {
+  height: 0.5px !important;
+  display: inline-block;
+  width: 26px;
+  margin: 10px 0 0 0;
+  background-color: white;
+}
+
+#our-advantages .main-holder .holder p {
+  position: relative;
+  padding-top: 22px;
+}
+
+@media (min-width: 250px) and (max-width: 315px) {
+  #our-advantages .main-holder .holder h4 {
+    font-size: 17px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #our-advantages {
+    padding: 80px 0 145px 0 !important;
+  }
+  #our-advantages .holder h4 {
+    font-size: 22px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #our-advantages {
+    padding: 80px 0 100px 0 !important;
+  }
+  #our-advantages .holder {
+    margin: 20px 0;
+    padding: 0 10px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #our-advantages {
+    padding: 120px 0 140px 0 !important;
+  }
+  #our-advantages .caption {
+    padding-bottom: 40px;
+  }
+  #our-advantages .holder {
+    padding: 40px 90px 0 90px !important;
+    height: 280px !important;
+  }
+  #our-advantages .holder .icon-holder i::before {
+    font-size: 70px !important;
+  }
+  #our-advantages .holder hr {
+    height: 1px !important;
+    width: 40px !important;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #our-advantages {
+    padding: 80px 0 100px 0 !important;
+  }
+  #our-advantages .caption h1 {
+    padding: 40px 0 80px 0 !important;
+  }
+  #our-advantages .holder {
+    padding: 40px 70px 0 70px !important;
+    height: 280px !important;
+    font-size: 17px;
+  }
+  #our-advantages .holder i::before {
+    font-size: 60px !important;
+  }
+  #our-advantages .holder hr {
+    width: 25px !important;
+  }
+  #our-advantages .holder p {
+    font-size: 16px !important;
+    width: 250px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #our-advantages {
+    padding: 50px 0 65px 0 !important;
+  }
+  #our-advantages .caption {
+    height: 110px !important;
+  }
+  #our-advantages .caption h1 {
+    padding: 20px 0 80px 0 !important;
+  }
+  #our-advantages .holder {
+    height: 235px !important;
+    padding: 32px 35px 0 35px !important;
+  }
+  #our-advantages .holder i::before {
+    font-size: 50px !important;
+  }
+  #our-advantages .holder h4 {
+    font-size: 20px !important;
+    padding-top: 10px !important;
+  }
+  #our-advantages .holder hr {
+    width: 24px !important;
   }
 }
 
@@ -1962,7 +2117,7 @@ html {
 }
 
 #tour {
-  padding: 70px 0;
+  padding: 70px 0 80px;
   background-color: #ededed;
 }
 
@@ -2017,24 +2172,38 @@ html {
 }
 
 #tour .tourPics-and-basicInfo .tour-info {
-  padding: 0 0 0 10px;
+  padding: 4px 0 0 40px;
 }
 
 #tour .tourPics-and-basicInfo .tour-info .top-part {
-  width: 448px;
+  width: 225px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 130px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #tour .tourPics-and-basicInfo .tour-info .top-part .caption h2 {
   margin-bottom: 0;
   font-weight: 700;
+  font-size: 27px;
 }
 
 #tour .tourPics-and-basicInfo .tour-info .top-part .rating {
-  width: 110px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tour .tourPics-and-basicInfo .tour-info .top-part .rating span {
+  font-size: 23px;
+  font-weight: 700;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2042,7 +2211,8 @@ html {
 
 #tour .tourPics-and-basicInfo .tour-info .top-part .rating i {
   color: #3a3b74;
-  font-size: 15px;
+  font-size: 17px;
+  margin: 0 0 2px 3px;
 }
 
 #tour .tourPics-and-basicInfo .tour-info .location {
@@ -2075,13 +2245,9 @@ html {
   font-size: 18px;
 }
 
-#tour .tourPics-and-basicInfo .tour-info .basic-info .price i::before {
-  margin: 0;
-  font-size: 25px;
-}
-
 #tour .tourPics-and-basicInfo .tour-info .basic-info .price h5 {
-  font-size: 24px;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
   margin-bottom: 0;
   font-weight: 600;
 }
@@ -2089,6 +2255,7 @@ html {
 #tour .tourPics-and-basicInfo .tour-info .basic-info .price h5 span {
   font-size: 18px;
   font-weight: 500;
+  font-family: "Nunito", sans-serif;
 }
 
 #tour .tourPics-and-basicInfo .tour-info .text-part {
@@ -2097,7 +2264,7 @@ html {
 }
 
 #tour .tourPics-and-basicInfo .addToCart {
-  padding: 20px 10px;
+  padding: 20px 40px;
 }
 
 #tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig {
@@ -2220,6 +2387,91 @@ html {
   margin-bottom: 25px;
 }
 
+#tour .descAndReviews-wrapper .tab-items .reviews .media-holder {
+  margin: 40px 0 70px;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media {
+  border-radius: 4px;
+  padding: 24px;
+  border: 1px solid #dbc5c5;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .img-and-rating {
+  margin-right: 23px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .img-and-rating .media-img {
+  width: 70px;
+  height: 70px;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .img-and-rating .media-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .img-and-rating .media-rating {
+  width: 60px;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .img-and-rating .media-rating i {
+  font-size: 9px;
+  color: #3a3b74;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body {
+  padding-left: 20px;
+  border-left: 1px solid #dbc5c5;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body p {
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top {
+  padding-bottom: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top h6 {
+  margin: 0;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top .date {
+  font-size: 11px;
+  color: #aaaaaa;
+}
+
 #tour .descAndReviews-wrapper .tab-items .reviews .rating-caption {
   margin-bottom: 6px;
 }
@@ -2282,52 +2534,76 @@ html {
   }
 }
 
+#our-advantages {
+  padding: 12px 0 50px 0;
+}
+
+#our-advantages .main-holder .holder {
+  height: 190px;
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .tourPics-and-basicInfo .tour-info .basic-info {
+  #tour .tourPics-and-basicInfo .tour-info .basic-info {
     width: 436px !important;
+  }
+  #tour #our-advantages {
+    padding: 12px 0 50px 0 !important;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .tourPics-and-basicInfo .tour-img-box {
-    height: 400px !important;
+  #tour .tourPics-and-basicInfo .tour-img-box {
+    height: 420px !important;
   }
-  .tourPics-and-basicInfo .small-img-box {
-    height: 97px !important;
+  #tour .tourPics-and-basicInfo .small-img-box {
+    height: 105px !important;
   }
-  .tourPics-and-basicInfo .tour-info {
+  #tour .tourPics-and-basicInfo .tour-info {
     padding: 50px 20px 0 10px !important;
   }
-  .descAndReviews-wrapper .tab-items #review-form .name-area,
-  .descAndReviews-wrapper .tab-items #review-form .email-area {
+  #tour .tourPics-and-basicInfo .addToCart {
+    padding: 20px 0 0 10px !important;
+  }
+  #tour .descAndReviews-wrapper .tab-items #review-form .name-area,
+  #tour .descAndReviews-wrapper .tab-items #review-form .email-area {
     margin-top: 15px;
+  }
+  #our-advantages {
+    padding: 12px 0 42px 0 !important;
+  }
+  #our-advantages .main-holder .holder {
+    height: 200px;
+    margin: 0;
+  }
+  #our-advantages .main-holder .holder h4 {
+    font-size: 17px !important;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #tour {
-    padding: 60px 0;
+    padding: 60px 0 70px;
+  }
+  #tour .tourPics-and-basicInfo {
+    padding-bottom: 30px !important;
   }
   #tour .tourPics-and-basicInfo .tour-img-box {
-    height: 300px !important;
+    height: 325px !important;
   }
   #tour .tourPics-and-basicInfo .small-img-box {
-    height: 70px !important;
+    height: 80px !important;
   }
   #tour .tourPics-and-basicInfo .tour-info {
     padding: 40px 20px 0 10px !important;
   }
   #tour .tourPics-and-basicInfo .tour-info .top-part {
-    width: 407px;
+    width: 215px;
   }
-  #tour .tourPics-and-basicInfo .tour-info .top-part .caption h2 {
-    font-size: 26px;
+  #tour .tourPics-and-basicInfo .addToCart {
+    padding: 20px 12px;
   }
-  #tour .tourPics-and-basicInfo .tour-info .top-part .rating {
-    width: 90px !important;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .top-part .rating i {
-    font-size: 13px !important;
+  #tour .descAndReviews-wrapper .tour-tabs {
+    padding-right: 0 !important;
   }
   #tour .descAndReviews-wrapper .tab-items {
     padding-top: 30px !important;
@@ -2344,35 +2620,46 @@ html {
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area input {
     height: 45px !important;
   }
+  #our-advantages {
+    padding: 12px 0 50px 0 !important;
+  }
+  #our-advantages .main-holder .holder {
+    padding: 40px 0 0 !important;
+    height: 190px !important;
+    margin: 0;
+  }
+  #our-advantages .main-holder .holder .icon-holder i::before {
+    font-size: 60px !important;
+  }
+  #our-advantages .main-holder .holder h4 {
+    font-size: 18px !important;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #tour {
-    padding: 50px 0;
+    padding: 50px 0 70px;
+  }
+  #tour .tourPics-and-basicInfo {
+    padding-bottom: 40px;
   }
   #tour .tourPics-and-basicInfo .tour-img-box {
-    height: 270px !important;
+    height: 320px !important;
     margin: 0 3px 20px;
   }
   #tour .tourPics-and-basicInfo .small-img-box {
-    height: 75px !important;
+    height: 80px !important;
     margin: 3px;
   }
   #tour .tourPics-and-basicInfo .tour-info {
-    padding: 40px 20px 0 10px !important;
+    padding: 40px 3px 0 !important;
   }
   #tour .tourPics-and-basicInfo .tour-info .top-part {
-    width: 305px;
+    width: 225px;
     padding: 0;
   }
   #tour .tourPics-and-basicInfo .tour-info .top-part .caption h2 {
-    font-size: 29px !important;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .top-part .rating {
-    width: 100px;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .top-part .rating i {
-    font-size: 14px;
+    font-size: 28px !important;
   }
   #tour .tourPics-and-basicInfo .tour-info .basic-info {
     height: 172px;
@@ -2392,11 +2679,33 @@ html {
   #tour .tourPics-and-basicInfo .tour-info .basic-info .price h5 {
     font-size: 26px;
   }
+  #tour .tourPics-and-basicInfo .addToCart {
+    padding: 20px 3px;
+  }
+  #tour .descAndReviews-wrapper .tour-tabs {
+    padding-right: 0;
+  }
   #tour .descAndReviews-wrapper .tab-items {
     padding-top: 30px !important;
   }
   #tour .descAndReviews-wrapper .tab-items .description .readMoreBtn-wrapper a {
     font-size: 14px;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: self-start;
+        -ms-flex-align: self-start;
+            align-items: self-start;
+    padding-bottom: 4px !important;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top h6 {
+    margin-bottom: 10px;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body p {
+    margin-bottom: 0 !important;
   }
   #tour .descAndReviews-wrapper .tab-items .reviews p,
   #tour .descAndReviews-wrapper .tab-items .reviews .rating {
@@ -2410,43 +2719,56 @@ html {
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area input {
     height: 45px !important;
   }
+  #our-advantages {
+    padding: 25px 0 66px 0 !important;
+  }
+  #our-advantages .main-holder .holder {
+    padding: 40px 0 0 !important;
+    height: 180px !important;
+    margin: 0;
+  }
+  #our-advantages .main-holder .holder .icon-holder i::before {
+    font-size: 60px !important;
+  }
+  #our-advantages .main-holder .holder h4 {
+    font-size: 18px !important;
+  }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #tour {
-    padding: 50px 0;
+    padding: 50px 0 70px;
+  }
+  #tour .tourPics-and-basicInfo {
+    padding-bottom: 35px;
   }
   #tour .tourPics-and-basicInfo .tour-img-box {
-    height: 200px !important;
+    height: 250px !important;
     margin: 0 1px 20px;
   }
   #tour .tourPics-and-basicInfo .small-img-box {
-    height: 50px !important;
+    height: 54px !important;
     margin: 1px;
   }
   #tour .tourPics-and-basicInfo .tour-info {
-    padding: 30px 0 0 !important;
+    padding: 20px 0 0 !important;
   }
   #tour .tourPics-and-basicInfo .tour-info .top-part {
     width: 180px;
     height: 55px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     padding: 0;
   }
   #tour .tourPics-and-basicInfo .tour-info .top-part .caption h2 {
-    font-size: 24px !important;
+    font-size: 22px !important;
   }
-  #tour .tourPics-and-basicInfo .tour-info .top-part .rating {
-    width: 90px;
+  #tour .tourPics-and-basicInfo .tour-info .top-part .rating span {
+    font-size: 21px !important;
   }
-  #tour .tourPics-and-basicInfo .tour-info .top-part .rating i {
-    font-size: 12px;
+  #tour .tourPics-and-basicInfo .tour-info .top-part .rating span i {
+    font-size: 14px;
   }
   #tour .tourPics-and-basicInfo .tour-info .location {
-    padding: 28px 0 7px;
+    padding: 6px 0 7px;
   }
   #tour .tourPics-and-basicInfo .tour-info .location h6 {
     font-size: 13px;
@@ -2469,17 +2791,17 @@ html {
   #tour .tourPics-and-basicInfo .tour-info .basic-info h6 {
     font-size: 16px;
   }
-  #tour .tourPics-and-basicInfo .tour-info .basic-info .price i::before {
-    font-size: 25px;
-  }
   #tour .tourPics-and-basicInfo .tour-info .basic-info .price h5 {
-    font-size: 24px;
+    font-size: 22px;
   }
   #tour .tourPics-and-basicInfo .addToCart {
     padding: 20px 0px !important;
   }
   #tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig {
     font-size: 13px !important;
+  }
+  #tour .descAndReviews-wrapper .tour-tabs {
+    padding-right: 0;
   }
   #tour .descAndReviews-wrapper .tour-tabs li a {
     font-size: 15px !important;
@@ -2496,6 +2818,35 @@ html {
   #tour .descAndReviews-wrapper .tab-items .description .readMoreBtn-wrapper a {
     font-size: 13px;
     padding: 7px 26px;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media {
+    padding: 14px !important;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .img-and-rating {
+    margin-right: 15px;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body {
+    padding-left: 15px;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: self-start;
+        -ms-flex-align: self-start;
+            align-items: self-start;
+    padding-bottom: 4px !important;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top h6 {
+    margin-bottom: 12px;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top .date {
+    font-size: 10px !important;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body p {
+    margin-bottom: 0 !important;
+    text-align: left;
   }
   #tour .descAndReviews-wrapper .tab-items .reviews p,
   #tour .descAndReviews-wrapper .tab-items .reviews .rating {
@@ -2516,6 +2867,20 @@ html {
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links button {
     font-size: 14px !important;
     padding: 7px 32px !important;
+  }
+  #our-advantages {
+    padding: 25px 0 66px 0 !important;
+  }
+  #our-advantages .main-holder .holder {
+    padding: 40px 0 0 !important;
+    height: 155px !important;
+    margin: 0;
+  }
+  #our-advantages .main-holder .holder .icon-holder i::before {
+    font-size: 50px !important;
+  }
+  #our-advantages .main-holder .holder h4 {
+    font-size: 18px !important;
   }
 }
 /*# sourceMappingURL=tour-details.css.map */
