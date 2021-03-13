@@ -337,6 +337,20 @@ $(document).ready(function () {
   // ======= Add To Cart Btn - End ======= //
 
 
+  // ======= Accordion - Start ======= //
+  $(document).on("click", ".accordion-btn", function(){
+      // showing or hiding the text
+      $(this).next().toggleClass("show-text");
+      // changing the icon
+      $(this).children(".vertical").toggleClass("icon-rotate");
+      // changing other buttons' icon
+      $(this).siblings(".accordion-btn").children(".vertical").removeClass("icon-rotate");
+      // hiding other text that is active
+      $(this).next().siblings(".accordion-text").removeClass("show-text");
+  });
+  // ======= Accordion - End ======= //
+
+
   // ======= Tour Filter and Background-color of Button when click on it - Start ======= //
   $(".tour-holder").isotope({
     itemSelector: ".item-col",

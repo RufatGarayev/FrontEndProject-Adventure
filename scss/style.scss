@@ -8,7 +8,6 @@
 @import "../scss/reused_sections/main_tourItem_design";
 @import "../scss/reused_sections/our-advantages";
 
-
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +32,6 @@ html {
   height: 100vh;
   overflow: hidden;
 }
-
 
 
 // ======= Intro Section Start ======= //
@@ -162,7 +160,7 @@ html {
   @media (min-width: 576px) and (max-width: 599.98px) {
     padding: 100px 60px 110px 60px !important;
 
-    .item{
+    .item {
       .img-box {
         height: 320px !important;
       }
@@ -459,7 +457,7 @@ html {
   overflow-x: hidden;
   background-color: rgba(118, 148, 132, 1);
   padding: 100px 60px 120px 60px;
-  
+
   .popular-tours-caption {
     padding-bottom: 40px;
     text-align: center;
@@ -534,20 +532,32 @@ html {
             margin-right: 7px;
             color: rgb(98, 107, 114);
           }
+
           .tour-name {
             h4 {
-              font-size: $item-caption-size;
+              font-size: 18px;
               font-family: $item-caption-font-family;
               letter-spacing: 1px;
+              @media (min-width: 375px) and (max-width: 440px) {
+                font-size: 18px !important;
+              }
             }
           }
+
           .tour-date {
             span {
               font-size: 13px;
               color: rgb(98, 107, 114);
             }
+
+            @media (min-width: 375px) and (max-width: 440px) {
+               i, span{
+                 font-size: 12px !important;
+               }
+            }
           }
         }
+
         .content-links {
           height: 92px;
           padding: 16px 20px 35px 20px;
@@ -577,16 +587,16 @@ html {
             }
           }
 
-          .spinner{
+          .spinner {
             @extend %spinner;
           }
-    
-          .successIcon{
+
+          .successIcon {
             @extend %successIcon;
           }
-    
+
           @keyframes rotate {
-            0%{
+            0% {
               transform: rotate(360deg);
             }
           }
@@ -647,7 +657,6 @@ html {
           padding: 17px 15px 8px 15px !important;
           .tour-name {
             h4 {
-              font-size: 18px !important;
               letter-spacing: 0.5px !important;
             }
           }

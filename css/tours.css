@@ -313,7 +313,7 @@ footer .footer-top a:hover {
 
 header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder #reset-form .reset-password .alert, #subscribe .form-holder .alert {
   padding: 5px 0 0;
-  color: red;
+  color: black;
   font-weight: 400;
   font-size: 14px;
 }
@@ -2079,11 +2079,27 @@ footer .footer-bottom .social-media ul {
   padding: 20px 20px 30px 20px;
 }
 
-.main-tourItem-design .info .tour-date span,
-.main-tourItem-design .info .tour-date i {
+.main-tourItem-design .info .tour-date-and-rating .tour-date span,
+.main-tourItem-design .info .tour-date-and-rating .tour-date i {
   color: #626b72;
   font-size: 13px;
   font-weight: 400;
+}
+
+.main-tourItem-design .info .tour-date-and-rating .rating span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 19px;
+}
+
+.main-tourItem-design .info .tour-date-and-rating .rating span i {
+  font-size: 14px;
+  margin: 0 0 2px 3px;
+  color: #626b72;
 }
 
 .main-tourItem-design .info .tour-name {
@@ -2143,12 +2159,18 @@ footer .footer-bottom .social-media ul {
   .main-tourItem-design .img-box {
     height: 220px !important;
   }
+  .main-tourItem-design .tour-date-and-rating .rating span i {
+    margin: 0 0 1px 3px !important;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .main-tourItem-design .info .tour-name i {
-    font-size: 14px !important;
-    margin: 4px 7px 0 0 !important;
+    font-size: 17px !important;
+    margin: 7px 7px 0 0 !important;
+  }
+  .main-tourItem-design .info .tour-name h4 {
+    font-size: 23px !important;
   }
   .main-tourItem-design .info .slide-links a {
     font-size: 10px !important;
@@ -2392,11 +2414,10 @@ html {
 #tours .category-and-sorting .category-btns li a {
   cursor: pointer;
   padding: 4px 16px;
-  font-weight: 300;
   border: none;
   border-radius: 3px;
-  color: white;
-  background-color: #769484;
+  background-color: #ededed;
+  color: black;
 }
 
 #tours .category-and-sorting .category-btns li a:hover {
@@ -2404,6 +2425,7 @@ html {
 }
 
 #tours .category-and-sorting .category-btns li .active-btn {
+  color: white;
   background-color: #3a3b74;
 }
 

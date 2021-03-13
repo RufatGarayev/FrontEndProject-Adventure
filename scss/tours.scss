@@ -185,17 +185,17 @@ html {
         a {
           cursor: pointer;
           padding: 4px 16px;
-          font-weight: 300;
           border: none;
           border-radius: 3px;
-          color: white;
-          background-color: rgb(118, 148, 132);
+          background-color: rgb(237,237,237);
+          color: black;
           &:hover {
             text-decoration: none;
           }
         }
 
         .active-btn {
+          color: white;
           background-color: rgb(58, 59, 116);
         }
       }

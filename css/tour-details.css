@@ -233,7 +233,7 @@ footer .footer-top a:hover {
 
 header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder #reset-form .reset-password .alert, #subscribe .form-holder .alert {
   padding: 5px 0 0;
-  color: red;
+  color: black;
   font-weight: 400;
   font-size: 14px;
 }

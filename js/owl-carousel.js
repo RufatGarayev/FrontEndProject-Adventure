@@ -1,5 +1,5 @@
 // ======= Special Offers Owl-Carousel Start ======= //
- $(".owl-carousel.specials-section-items").owlCarousel({
+$(".owl-carousel.specials-section-items").owlCarousel({
   loop: true,
   margin: 10,
   nav: false,

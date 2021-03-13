@@ -93,7 +93,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
           transform: scaleX(1);
 }
 
-#subscribe .subscribe-title h1, #our-story .our-story-caption h3, #our-mission .our-mission-caption h3, #adventure-team .adventure-team-caption h3 {
+#subscribe .subscribe-title h1, #our-story .our-story-caption h3, #our-mission .our-mission-caption h3, #adventure-team .adventure-team-caption h3, #careers-with-us .careers-with-us-caption h3 {
   font-size: 40px;
   font-family: ludicrous;
   letter-spacing: 1px;
@@ -102,18 +102,18 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #subscribe .subscribe-title h1, #our-story .our-story-caption h3, #our-mission .our-mission-caption h3, #adventure-team .adventure-team-caption h3 {
+  #subscribe .subscribe-title h1, #our-story .our-story-caption h3, #our-mission .our-mission-caption h3, #adventure-team .adventure-team-caption h3, #careers-with-us .careers-with-us-caption h3 {
     font-size: 36px;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title h1, #our-story .our-story-caption h3, #our-mission .our-mission-caption h3, #adventure-team .adventure-team-caption h3 {
+  #subscribe .subscribe-title h1, #our-story .our-story-caption h3, #our-mission .our-mission-caption h3, #adventure-team .adventure-team-caption h3, #careers-with-us .careers-with-us-caption h3 {
     font-size: 28px;
   }
 }
 
-#subscribe .subscribe-title hr, #our-story .our-story-caption hr, #our-mission .our-mission-caption hr, #adventure-team .adventure-team-caption hr {
+#subscribe .subscribe-title hr, #our-story .our-story-caption hr, #our-mission .our-mission-caption hr, #adventure-team .adventure-team-caption hr, #careers-with-us .careers-with-us-caption hr {
   margin: 8px 0;
   height: 0.7px;
   width: 60px;
@@ -121,18 +121,18 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #subscribe .subscribe-title hr, #our-story .our-story-caption hr, #our-mission .our-mission-caption hr, #adventure-team .adventure-team-caption hr {
+  #subscribe .subscribe-title hr, #our-story .our-story-caption hr, #our-mission .our-mission-caption hr, #adventure-team .adventure-team-caption hr, #careers-with-us .careers-with-us-caption hr {
     width: 45px;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title hr, #our-story .our-story-caption hr, #our-mission .our-mission-caption hr, #adventure-team .adventure-team-caption hr {
+  #subscribe .subscribe-title hr, #our-story .our-story-caption hr, #our-mission .our-mission-caption hr, #adventure-team .adventure-team-caption hr, #careers-with-us .careers-with-us-caption hr {
     width: 35px;
   }
 }
 
-#subscribe .subscribe-title p, #our-story .text p, #our-mission .text p, #adventure-team .adventure-team-caption p {
+#subscribe .subscribe-title p, #our-story .text p, #our-mission .text p, #adventure-team .adventure-team-caption p, #careers-with-us .careers-with-us-caption p, #careers-with-us .accordion .accordion-text p {
   padding-top: 16px;
   font-size: 16px;
   font-weight: 300;
@@ -140,7 +140,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title p, #our-story .text p, #our-mission .text p, #adventure-team .adventure-team-caption p {
+  #subscribe .subscribe-title p, #our-story .text p, #our-mission .text p, #adventure-team .adventure-team-caption p, #careers-with-us .careers-with-us-caption p, #careers-with-us .accordion .accordion-text p {
     font-size: 13px;
   }
 }
@@ -206,7 +206,7 @@ footer .footer-top a:hover {
 
 header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder #reset-form .reset-password .alert, #subscribe .form-holder .alert {
   padding: 5px 0 0;
-  color: red;
+  color: black;
   font-weight: 400;
   font-size: 14px;
 }
@@ -215,10 +215,10 @@ header nav .account li .login-box-holder .same-style-input-area .alert, header n
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 320px;
+  height: 380px;
 }
 
-#our-story .our-story-caption i::before, #our-mission .our-mission-caption i::before, #adventure-team .adventure-team-caption i::before {
+#our-story .our-story-caption i::before, #our-mission .our-mission-caption i::before, #adventure-team .adventure-team-caption i::before, #careers-with-us .careers-with-us-caption i::before {
   margin-left: 0;
   font-size: 40px;
 }
@@ -2163,12 +2163,120 @@ html {
   font-weight: 300;
 }
 
+#careers-with-us {
+  background-color: #769484;
+  padding: 55px 0 85px;
+}
+
+#careers-with-us .careers-with-us-caption {
+  padding-bottom: 60px;
+  color: white;
+}
+
+#careers-with-us .careers-with-us-caption i::before {
+  font-size: 55px;
+  color: black;
+}
+
+#careers-with-us .careers-with-us-caption h3 {
+  padding: 2px 0 15px;
+  margin-bottom: 0;
+}
+
+#careers-with-us .careers-with-us-caption hr {
+  margin: 0;
+}
+
+#careers-with-us .careers-with-us-caption p {
+  padding-top: 22px;
+}
+
+#careers-with-us .accordion .accordion-btn {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  cursor: pointer;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #dbc5c5;
+  background-color: white;
+  position: relative;
+}
+
+#careers-with-us .accordion .accordion-btn:focus {
+  outline: none;
+}
+
+#careers-with-us .accordion .accordion-btn:first-of-type {
+  border-radius: 4px 4px 0 0;
+}
+
+#careers-with-us .accordion .accordion-btn:last-of-type {
+  border-radius: 0 0 4px 4px;
+}
+
+#careers-with-us .accordion .accordion-btn:last-of-type:focus {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+#careers-with-us .accordion .accordion-btn h6 {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+#careers-with-us .accordion .accordion-btn i::before {
+  font-size: 13px;
+  margin-left: 0;
+}
+
+#careers-with-us .accordion .accordion-btn .vertical {
+  position: absolute;
+  right: 20px;
+}
+
+#careers-with-us .accordion .accordion-btn .icon-rotate {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#careers-with-us .accordion .accordion-text {
+  margin: 0;
+  width: 100%;
+  height: 0px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  background-color: #5c755e;
+}
+
+#careers-with-us .accordion .accordion-text:last-of-type {
+  border-radius: 0 0 4px 4px;
+}
+
+#careers-with-us .accordion .accordion-text p {
+  color: white;
+  padding: 15px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#careers-with-us .accordion .show-text {
+  height: 86px;
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #our-story .text {
     height: 350px;
   }
   #our-mission {
     padding: 70px 0 95px;
+  }
+  #careers-with-us .accordion .show-text {
+    height: 108px;
   }
 }
 
@@ -2221,6 +2329,9 @@ html {
   }
   #adventure-team .item .info h5 {
     font-size: 19px;
+  }
+  #careers-with-us .accordion .show-text {
+    height: 108px;
   }
 }
 
@@ -2276,6 +2387,12 @@ html {
   #adventure-team .item .info h5 {
     font-size: 19px;
   }
+  #careers-with-us .careers-with-us-caption {
+    padding: 0 20px 40px !important;
+  }
+  #careers-with-us .accordion .show-text {
+    height: 108px;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
@@ -2330,9 +2447,19 @@ html {
   #adventure-team .item .info h5 {
     font-size: 19px;
   }
+  #careers-with-us .careers-with-us-caption {
+    padding: 0 20px 40px !important;
+  }
+  #careers-with-us .accordion .show-text {
+    height: 132px;
+  }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
+  .our-mission-pic,
+  .our-story-pic {
+    height: 320px !important;
+  }
   #our-story {
     padding: 40px 0 60px;
   }
@@ -2364,7 +2491,7 @@ html {
             order: 2;
   }
   #adventure-team {
-    padding: 40px 0 50px;
+    padding: 40px 0 20px;
   }
   #adventure-team .adventure-team-caption {
     padding: 0 10px 40px;
@@ -2380,6 +2507,15 @@ html {
     width: 86%;
     -webkit-transform: translateY(-55px);
             transform: translateY(-55px);
+  }
+  #careers-with-us .careers-with-us-caption {
+    padding: 0 10px 40px !important;
+  }
+  #careers-with-us .accordion .accordion-btn h6 {
+    font-size: 16px;
+  }
+  #careers-with-us .accordion .show-text {
+    height: auto;
   }
 }
 /*# sourceMappingURL=about.css.map */

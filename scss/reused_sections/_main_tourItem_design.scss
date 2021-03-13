@@ -32,12 +32,26 @@
 
   .info {
     padding: 20px 20px 30px 20px;
-    .tour-date {
-      span,
-      i {
-        color: rgb(98, 107, 114);
-        font-size: 13px;
-        font-weight: 400;
+    .tour-date-and-rating {
+      .tour-date {
+        span,
+        i {
+          color: rgb(98, 107, 114);
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
+      .rating {
+        span {
+          display: flex;
+          align-items: center;
+          font-size: 19px;
+          i {
+            font-size: 14px;
+            margin: 0 0 2px 3px;
+            color: rgb(98, 107, 114);
+          }
+        }
       }
     }
     .tour-name {
@@ -73,16 +87,16 @@
         @extend %top-info-box;
       }
 
-      .spinner{
+      .spinner {
         @extend %spinner;
       }
 
-      .successIcon{
+      .successIcon {
         @extend %successIcon;
       }
 
       @keyframes rotate {
-        0%{
+        0% {
           transform: rotate(360deg);
         }
       }
@@ -98,6 +112,16 @@
     .img-box {
       height: 220px !important;
     }
+
+    .tour-date-and-rating {
+      .rating {
+        span {
+          i {
+            margin: 0 0 1px 3px !important;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -106,8 +130,12 @@
     .info {
       .tour-name {
         i {
-          font-size: 14px !important;
-          margin: 4px 7px 0 0 !important;
+          font-size: 17px !important;
+          margin: 7px 7px 0 0 !important;
+        }
+
+        h4{
+          font-size: 23px !important;
         }
       }
       .slide-links {
