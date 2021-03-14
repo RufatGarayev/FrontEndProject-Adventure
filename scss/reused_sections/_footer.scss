@@ -1,43 +1,51 @@
 // ======= Footer Start ======= //
 footer {
-    padding: 100px 0px 30px;
-    background-color: black;
-    color: white;
-    overflow-x: hidden;
-  
-    .footer-top {
-      padding-bottom: 30px;
-      h4 {
-        @extend %footer-captions;
+  padding: 100px 70px 30px;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+
+  .footer-top {
+    padding-bottom: 30px;
+    h4 {
+      @extend %footer-captions;
+    }
+    a {
+      @extend %footer-links;
+    }
+    .about-us {
+      padding-right: 10%;
+      p {
+        color: white;
+        font-weight: 200;
+        font-size: 15px;
       }
-      a {
-        @extend %footer-links;
-      }
-      .about-us {
-        padding-right: 10%;
-        p {
-          color: white;
-          font-weight: 200;
-          font-size: 15px;
-        }
-      }
-  
-      .quick-links {
-        padding-left: 18%;
+    }
+
+    .quick-links {
+      padding-left: 18%;
+      ul {
+        list-style: none;
         li {
           padding-bottom: 5px;
         }
       }
-  
-      .legal {
-        padding-left: 44%;
+    }
+
+    .legal {
+      padding-left: 44%;
+      ul {
+        list-style: none;
         li {
           padding-bottom: 5px;
         }
       }
-  
-      .contact {
-        padding-left: 35%;
+    }
+
+    .contact {
+      padding-left: 35%;
+      ul {
+        list-style: none;
         li {
           padding-bottom: 5px;
           color: white;
@@ -49,30 +57,31 @@ footer {
         }
       }
     }
-  
-    .footer-bottom {
-      padding-top: 40px;
-      border-top: 0.1px solid rgb(158, 157, 157);
-      .copyright-holder {
-        p {
-          font-size: 15px;
-          font-weight: 200;
-        }
+  }
+
+  .footer-bottom {
+    padding-top: 40px;
+    border-top: 0.1px solid rgb(158, 157, 157);
+    .copyright-holder {
+      p {
+        font-size: 15px;
+        font-weight: 200;
       }
-      .social-media {
-        justify-content: flex-end;
-        ul {
-          justify-content: space-between;
-          width: 40%;
-          li {
-           @extend %social-media;
-          }
+    }
+    .social-media {
+      justify-content: flex-end;
+      ul {
+        justify-content: space-between;
+        list-style: none;
+        width: 40%;
+        li {
+          @extend %social-media;
         }
       }
     }
+  }
 }
 // ======= Footer End ======= //
-
 
 
 // ======= Responsive Design Start ======= //
@@ -97,6 +106,7 @@ footer {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   footer {
+    padding: 100px 30px 30px;
     .footer-top {
       .about-us {
         padding-right: 20% !important;
@@ -109,6 +119,11 @@ footer {
       }
       .contact {
         padding-left: 18% !important;
+        ul{
+          li{
+            font-size: 14px;
+          }
+        }
       }
     }
   }
@@ -116,6 +131,7 @@ footer {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   footer {
+    padding: 100px 27px 30px;
     .footer-top {
       .about-us {
         padding-right: 27% !important;

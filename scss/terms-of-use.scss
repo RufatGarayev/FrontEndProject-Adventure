@@ -1,0 +1,39 @@
+// ======= Importing Partials and Reused Sections ======= //
+@import "../scss/partials/extends";
+@import "../scss/partials/variables";
+@import "../scss/partials/common-features";
+@import "../scss/reused_sections/header";
+@import "../scss/reused_sections/footer";
+@import "../scss/reused_sections/preloader";
+@import "../scss/reused_sections/subscribe";
+@import "../scss/reused_sections/back-to-top";
+@import "../scss/reused_sections/intro-page_caption";
+
+
+
+// ======= Intro Section Start ======= //
+#intro {
+  background-image: url(../img/bg-images/wood.jpg);
+}
+// ======= Intro Section End ======= //
+
+
+// ======= Privacy Content Section Start ======= //
+#terms-of-use-content {
+  padding: 40px 0;
+  *{
+    list-style: disc;
+  }
+
+  .text {
+    @extend %paragraph;
+    ul {
+      padding-left: 30px;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+}
+// ======= Privacy Content Section End ======= //

@@ -191,6 +191,12 @@ footer .footer-top h4 {
   padding-bottom: 10px;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  footer .footer-top h4 {
+    font-size: 15px;
+  }
+}
+
 footer .footer-top a {
   color: white;
   font-weight: 200;
@@ -215,7 +221,7 @@ header nav .account li .login-box-holder .same-style-input-area .alert, header n
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 380px;
+  height: 350px;
 }
 
 #our-story .our-story-caption i::before, #our-mission .our-mission-caption i::before, #adventure-team .adventure-team-caption i::before, #careers-with-us .careers-with-us-caption i::before {
@@ -293,6 +299,37 @@ footer .footer-bottom .social-media ul li:hover .twitter::before, #adventure-tea
   transition: 0.3s ease-in-out;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "ludicrous";
+  src: url(../WOFF-web-fonts/Ludicrous.woff);
+  font-weight: 100;
+}
+
+.stop-scroll {
+  height: 100vh;
+  overflow: hidden;
 }
 
 #top-header {
@@ -1233,7 +1270,7 @@ header nav .active-link hr {
 }
 
 footer {
-  padding: 100px 0px 30px;
+  padding: 100px 70px 30px;
   background-color: black;
   color: white;
   overflow-x: hidden;
@@ -1257,7 +1294,11 @@ footer .footer-top .quick-links {
   padding-left: 18%;
 }
 
-footer .footer-top .quick-links li {
+footer .footer-top .quick-links ul {
+  list-style: none;
+}
+
+footer .footer-top .quick-links ul li {
   padding-bottom: 5px;
 }
 
@@ -1265,7 +1306,11 @@ footer .footer-top .legal {
   padding-left: 44%;
 }
 
-footer .footer-top .legal li {
+footer .footer-top .legal ul {
+  list-style: none;
+}
+
+footer .footer-top .legal ul li {
   padding-bottom: 5px;
 }
 
@@ -1273,14 +1318,18 @@ footer .footer-top .contact {
   padding-left: 35%;
 }
 
-footer .footer-top .contact li {
+footer .footer-top .contact ul {
+  list-style: none;
+}
+
+footer .footer-top .contact ul li {
   padding-bottom: 5px;
   color: white;
   font-weight: 200;
   font-size: 15px;
 }
 
-footer .footer-top .contact li i {
+footer .footer-top .contact ul li i {
   margin-right: 10px;
 }
 
@@ -1304,6 +1353,7 @@ footer .footer-bottom .social-media ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  list-style: none;
   width: 40%;
 }
 
@@ -1323,6 +1373,9 @@ footer .footer-bottom .social-media ul {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  footer {
+    padding: 100px 30px 30px;
+  }
   footer .footer-top .about-us {
     padding-right: 20% !important;
   }
@@ -1335,9 +1388,15 @@ footer .footer-bottom .social-media ul {
   footer .footer-top .contact {
     padding-left: 18% !important;
   }
+  footer .footer-top .contact ul li {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+  footer {
+    padding: 100px 27px 30px;
+  }
   footer .footer-top .about-us {
     padding-right: 27% !important;
   }
@@ -1910,37 +1969,6 @@ footer .footer-bottom .social-media ul {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
-  font-family: "Nunito", sans-serif;
-}
-
-@font-face {
-  font-family: "ludicrous";
-  src: url(../WOFF-web-fonts/Ludicrous.woff);
-  font-weight: 100;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.stop-scroll {
-  height: 100vh;
-  overflow: hidden;
-}
-
 #intro {
   background-image: url(../img/bg-images/wood.jpg);
 }
@@ -2226,6 +2254,12 @@ html {
   font-weight: 700;
 }
 
+@media (min-width: 280px) and (max-width: 374.98px) {
+  #careers-with-us .accordion .accordion-btn h6 {
+    font-size: 15px !important;
+  }
+}
+
 #careers-with-us .accordion .accordion-btn i::before {
   font-size: 13px;
   margin-left: 0;
@@ -2234,11 +2268,13 @@ html {
 #careers-with-us .accordion .accordion-btn .vertical {
   position: absolute;
   right: 20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 #careers-with-us .accordion .accordion-btn .icon-rotate {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -2264,8 +2300,20 @@ html {
   line-height: 24px;
 }
 
+@media (min-width: 280px) and (max-width: 374.98px) {
+  #careers-with-us .accordion .accordion-text p {
+    font-size: 14px !important;
+  }
+}
+
 #careers-with-us .accordion .show-text {
   height: 86px;
+}
+
+@media (min-width: 300px) and (max-width: 374.98px) {
+  #careers-with-us .accordion .show-text {
+    height: 152px !important;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -2512,10 +2560,13 @@ html {
     padding: 0 10px 40px !important;
   }
   #careers-with-us .accordion .accordion-btn h6 {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  #careers-with-us .accordion .accordion-text p {
+    font-size: 13px;
   }
   #careers-with-us .accordion .show-text {
-    height: auto;
+    height: 174px;
   }
 }
 /*# sourceMappingURL=about.css.map */

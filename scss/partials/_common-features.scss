@@ -1,0 +1,30 @@
+// ======= Common Features Start ======= //
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "ludicrous";
+  src: url(../WOFF-web-fonts/Ludicrous.woff);
+  font-weight: 100;
+}
+
+.stop-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+// ======= Common Features End ======= //

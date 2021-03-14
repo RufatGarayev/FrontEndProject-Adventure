@@ -1,5 +1,7 @@
+// ======= Importing Partials and Reused Sections ======= //
 @import "../scss/partials/extends";
 @import "../scss/partials/variables";
+@import "../scss/partials/common-features";
 @import "../scss/reused_sections/header";
 @import "../scss/reused_sections/footer";
 @import "../scss/reused_sections/preloader";
@@ -8,30 +10,6 @@
 @import "../scss/reused_sections/main_tourItem_design";
 @import "../scss/reused_sections/our-advantages";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  transition: 0.2s linear;
-  font-family: "Nunito", sans-serif;
-}
-
-@font-face {
-  font-family: "ludicrous";
-  src: url(../WOFF-web-fonts/Ludicrous.woff);
-  font-weight: 100;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.stop-scroll {
-  height: 100vh;
-  overflow: hidden;
-}
 
 
 // ======= Intro Section Start ======= //

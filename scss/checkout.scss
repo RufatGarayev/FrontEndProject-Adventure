@@ -1,0 +1,289 @@
+// ======= Importing Partials and Reused Sections ======= //
+@import "../scss/partials/extends";
+@import "../scss/partials/variables";
+@import "../scss/partials/common-features";
+@import "../scss/reused_sections/header";
+@import "../scss/reused_sections/footer";
+@import "../scss/reused_sections/preloader";
+@import "../scss/reused_sections/subscribe";
+@import "../scss/reused_sections/back-to-top";
+@import "../scss/reused_sections/intro-page_caption";
+
+
+
+// ======= Intro Section Start ======= //
+#intro {
+  background-image: url(../img/bg-images/wood.jpg);
+  text-align: center;
+}
+// ======= Intro Section End ======= //
+
+// ======= Checkout Section Start ======= //
+#checkout {
+  padding: 70px 0;
+
+  .billing-details {
+    padding-right: 40px;
+    .input-area {
+      @extend %input;
+      height: 92px;
+      h6 {
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      input {
+        height: 45px;
+        font-size: 14px;
+
+        @media (min-width: 250px) and (max-width: 270px) {
+            font-size: 12px !important;
+        }
+      }
+    }
+  }
+
+  .order-area {
+    padding: 30px 25px;
+    border: 2px solid #e6dada;
+
+    h6,
+    p {
+      margin-bottom: 0;
+    }
+
+    .order-area-header {
+      padding-bottom: 20px;
+      h2 {
+        font-size: 29px;
+      }
+    }
+
+    .order-area-body {
+      .caption {
+        height: 36px;
+        h6 {
+          font-family: "Nunito", sans-serif;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 900;
+        }
+      }
+
+      .ordered-tour,
+      .total {
+        height: 50px;
+        .price {
+          font-family: "Times New Roman", Times, serif;
+          font-size: 19px;
+        }
+      }
+
+      .total {
+        h6,
+        span {
+          font-weight: 700;
+        }
+      }
+
+      .ordered-tour {
+        border-top: 1px solid #e4d5d5;
+        border-bottom: 1px solid #e4d5d5;
+
+        h6 {
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+
+      .payment-method {
+        padding: 33px 0 30px;
+
+        input[type="radio"] {
+          &:last-of-type {
+            margin-top: 27px;
+          }
+        }
+
+        label {
+          font-weight: 700;
+          margin-left: 5px;
+        }
+
+        .msg {
+          font-size: 13px;
+          border-radius: 5px;
+          background-color: rgb(237, 247, 255);
+          border: 1px solid rgb(73, 175, 245);
+          transition: all 0.3s ease-in-out;
+          overflow: hidden;
+          height: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          visibility: hidden;
+
+          p {
+            padding: 13px 20px;
+          }
+        }
+
+        .msg2 {
+          justify-content: flex-start;
+        }
+
+        .show-msg {
+          height: 73px;
+          border: 1px solid rgb(73, 175, 245);
+          visibility: visible;
+        }
+      }
+    }
+
+    .order-area-footer {
+      .checkout-btn {
+        width: 100%;
+        font-size: 14px;
+        @extend %website-button;
+        cursor: pointer;
+        text-transform: none;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+// ======= Checkout Section End ======= //
+
+
+
+// ======= Responsive Design Start ======= //
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #checkout {
+    .billing-details {
+      padding-right: 25px;
+    }
+
+    .order-area {
+      .price {
+        font-size: 18px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #checkout {
+    .billing-details {
+      padding-right: 0;
+      .input-area {
+        h6 {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .order-area {
+      margin-top: 28px;
+      padding: 32px 25px 45px;
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #checkout {
+    .billing-details {
+      padding-right: 0;
+      .input-area {
+        h6 {
+          font-size: 16px;
+        }
+
+        input {
+          padding: 0 20px;
+        }
+      }
+    }
+
+    .order-area {
+      margin-top: 28px;
+      padding: 30px 25px 45px;
+    }
+  }
+}
+
+@media (min-width: 250px) and (max-width: 375.98px) {
+  #checkout {
+    .billing-details {
+      padding-right: 0;
+      .input-area {
+        h6 {
+          font-size: 14px;
+        }
+
+        input {
+          padding: 0 15px;
+          font-size: 13px;
+        }
+      }
+    }
+
+    .order-area {
+      margin-top: 28px;
+      padding: 30px 15px 45px;
+
+      .order-area-header {
+        h2 {
+          font-size: 25px;
+        }
+      }
+
+      .order-area-body {
+        .caption {
+          h6 {
+            font-size: 11px;
+          }
+        }
+
+        .ordered-tour,
+        .total {
+          h6 {
+            font-size: 14px;
+          }
+
+          .price {
+            font-size: 16px;
+          }
+        }
+
+        .payment-method {
+          padding: 27px 0 30px;
+
+          label {
+            font-size: 14px;
+          }
+
+          .msg {
+            p {
+              padding: 13px 12px;
+            }
+          }
+
+          .show-msg {
+            height: 95px;
+          }
+        }
+      }
+
+      .order-area-footer {
+        .checkout-btn {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+// ======= Responsive Design End ======= //

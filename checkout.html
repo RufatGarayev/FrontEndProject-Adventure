@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/plugins/owl-carousel/assets/owl.theme.default.min.css" />
     <!-- animate on scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- google-fonts -->
@@ -20,10 +22,10 @@
         rel="stylesheet">
     <!-- flaticon.css -->
     <link rel="stylesheet" href="font/flaticon.css">
-    <!-- about.css -->
-    <link rel="stylesheet" href="css/about.css">
+    <!-- cart.css -->
+    <link rel="stylesheet" href="css/checkout.css">
     <!-- page-title -->
-    <title>About | Adventure</title>
+    <title>Checkout | Adventure</title>
 </head>
 
 <body>
@@ -82,7 +84,7 @@
                             <a class="nav-link" href="index.html">Home</a>
                             <hr>
                         </li>
-                        <li class="nav-item active-link">
+                        <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                             <hr>
                         </li>
@@ -164,7 +166,7 @@
                     </li>
                     <!-- cart -->
                     <li class="nav-item">
-                        <a class="nav-link" href="cart.html">
+                        <a class="nav-link cart" href="cart.html">
                             <i class="flaticon-shopping-bag">
                                 <sup><span class="tour-count">0</span></sup>
                             </i>
@@ -182,7 +184,6 @@
     </header>
     <!-- ======= Main Header End ======= -->
 
-
     <!-- ======= Main Part Start ======= -->
     <main>
         <!-- ======= Intro Section Start ======= -->
@@ -191,7 +192,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="page-caption d-flex justify-content-center align-items-center">
-                            <h1>About</h1>
+                            <h1>Checkout</h1>
                         </div>
                     </div>
                 </div>
@@ -199,248 +200,124 @@
         </section>
         <!-- ======= Intro Section End ======= -->
 
-
-        <!-- ======= Our Story Section Start ======= -->
-        <section id="our-story">
+        <!-- ======= Checkout Section Start ======= -->
+        <div id="checkout">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!-- section-title -->
-                        <div class="our-story-caption d-flex flex-column justify-content-center align-items-center">
-                            <i class="flaticon-street-sign"></i>
-                            <h3>Our Story</h3>
-                            <hr>
+                <form action="#" method="GET" id="checkout-form">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-7">
+                            <!-- billing-details -->
+                            <div class="billing-details">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <!-- first-name -->
+                                        <div class="input-area first-name-area">
+                                            <h6>First Name *</h6>
+                                            <input class="first-name" type="text" name="first-name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <!-- last-name -->
+                                        <div class="input-area last-name-area">
+                                            <h6>Last Name *</h6>
+                                            <input class="last-name" type="text" name="last-name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- street-address -->
+                                        <div class="input-area street-address-area">
+                                            <h6>Street Address *</h6>
+                                            <input class="street-address" type="text" name="street-address"
+                                                placeholder="House Number and Street Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- city -->
+                                        <div class="input-area city-area">
+                                            <h6>Town / City *</h6>
+                                            <input class="city" type="text" name="city">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- country -->
+                                        <div class="input-area country-area">
+                                            <h6>State / Country *</h6>
+                                            <input class="country" type="text" name="country">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- phone -->
+                                        <div class="input-area phone-area">
+                                            <h6>Phone *</h6>
+                                            <input class="checkout-phone" type="text" name="phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- email-address -->
+                                        <div class="input-area email-area">
+                                            <h6>Email Address *</h6>
+                                            <input class="checkout-email" type="text" name="email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <!-- order-area -->
+                            <div class="order-area">
+                                <!-- order-area-header -->
+                                <div class="order-area-header">
+                                    <h2>Your order</h2>
+                                </div>
+                                <!-- order-area-body -->
+                                <div class="order-area-body">
+                                    <!-- caption -->
+                                    <div class="caption d-flex justify-content-between align-items-center">
+                                        <h6>Tour</h6>
+                                        <h6>Total</h6>
+                                    </div>
+                                    <!-- tour -->
+                                    <div class="ordered-tour d-flex justify-content-between align-items-center">
+                                        <h6>Gabala Tour <span class="ml-2">x 1</span></h6>
+                                        <span class="price">$79</span>
+                                    </div>
+                                    <!-- total -->
+                                    <div class="total d-flex justify-content-between align-items-center">
+                                        <h6>Total</h6>
+                                        <span class="price">$79</span>
+                                    </div>
+                                    <!-- payment-method -->
+                                    <div class="payment-method">
+                                        <!-- check-payments -->
+                                        <input type="radio" id="check-payments" name="payment-method" value="check-payments" checked>
+                                        <label for="check-payments">Check Payments</label>
+                                        <div class="msg msg1 show-msg">
+                                            <p>
+                                                Please send a check to Store Name, Store Street, 
+                                                Store Town, Store State / County.
+                                            </p>
+                                        </div>
+                                        <!-- cash-on-delivery -->
+                                        <input type="radio" id="cash-on-delivery" name="payment-method" value="cash-on-delivery">
+                                        <label for="cash-on-delivery">Cash on Delivery</label>
+                                        <div class="msg msg2">
+                                            <p>
+                                                Pay with cash upon delivery.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- order-area-footer -->
+                                <div class="order-area-footer">
+                                    <button class="checkout-btn" type="submit">Place Order</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <!-- text-area -->
-                        <div class="text text-justify" data-aos="fade-right" data-aos-duration="1000">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum fermentum
-                                fermentum.
-                                In nulla sem, gravida a feugiat in, maximus id orci. Donec nec sagittis ipsum, sit amet
-                                venenatis orci.
-                                Donec bibendum pulvinar dapibus. Duis ac dui accumsan, finibus erat sagittis, mollis
-                                nulla.
-                                Cras ac interdum lacus. Morbi at ante aliquet, faucibus purus quis, pretium justo.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum fermentum
-                                fermentum.
-                                In nulla sem, gravida a feugiat in, maximus id orci. Donec nec sagittis ipsum, sit amet
-                                venenatis orci.
-                                Donec bibendum pulvinar dapibus. Duis ac dui accumsan, finibus erat sagittis, mollis
-                                nulla.
-                                Cras ac interdum lacus. Morbi at ante aliquet, faucibus purus quis, pretium justo.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <!-- image-area -->
-                        <div class="our-story-pic" data-aos="fade-left" data-aos-duration="1000"></div>
-                    </div>
-                </div>
+                </form>
             </div>
-        </section>
-        <!-- ======= Our Story Section End ======= -->
-
-
-        <!-- ======= Our Mission Section Start ======= -->
-        <section id="our-mission">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!-- section-title -->
-                        <div class="our-mission-caption d-flex flex-column justify-content-center align-items-center"
-                            data-aos="fade-up" data-aos-duration="1000">
-                            <i class="flaticon-steering-wheel"></i>
-                            <h3>Our Mission</h3>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 second">
-                        <!-- image-area -->
-                        <div class="our-mission-pic" data-aos="fade-right" data-aos-duration="1000"></div>
-                    </div>
-                    <div class="col-lg-6 first">
-                        <!-- text-area -->
-                        <div class="text text-justify" data-aos="fade-left" data-aos-duration="1000">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum fermentum
-                                fermentum.
-                                In nulla sem, gravida a feugiat in, maximus id orci. Donec nec sagittis ipsum, sit amet
-                                venenatis orci.
-                                Donec bibendum pulvinar dapibus. Duis ac dui accumsan, finibus erat sagittis, mollis
-                                nulla.
-                                Cras ac interdum lacus. Morbi at ante aliquet, faucibus purus quis, pretium justo.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum fermentum
-                                fermentum.
-                                In nulla sem, gravida a feugiat in, maximus id orci. Donec nec sagittis ipsum, sit amet
-                                venenatis orci.
-                                Donec bibendum pulvinar dapibus. Duis ac dui accumsan, finibus erat sagittis, mollis
-                                nulla.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ======= Our Mission Section End ======= -->
-
-
-        <!-- ======= Adventure Team Section Start ======= -->
-        <section id="adventure-team">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12">
-                        <!-- section-title -->
-                        <div class="adventure-team-caption text-center d-flex flex-column justify-content-center align-items-center"
-                            data-aos="fade-up" data-aos-duration="1000">
-                            <i class="flaticon-map"></i>
-                            <h3>Adventure Team</h3>
-                            <hr>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <!-- single-item -->
-                        <div class="item">
-                            <div class="holder">
-                                <img class="img-fluid" src="img/about/adventure-team1.jpg" alt="Guide">
-                                <ul class="social-media">
-                                    <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h5>Rubie Talley</h5>
-                                <h6>Tour Guide</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <!-- single-item -->
-                        <div class="item">
-                            <div class="holder">
-                                <img class="img-fluid" src="img/about/adventure-team2.jpg" alt="Guide">
-                                <ul class="social-media">
-                                    <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h5>Marcel Frame</h5>
-                                <h6>Tour Guide</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <!-- single-item -->
-                        <div class="item">
-                            <div class="holder">
-                                <img class="img-fluid" src="img/about/adventure-team3.jpg" alt="Guide">
-                                <ul class="social-media">
-                                    <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h5>Dina Driscoll</h5>
-                                <h6>Tour Guide</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ======= Adventure Team Section End ======= -->
-
-
-        <!-- ======= Careers With Us Section Start ======= -->
-        <section id="careers-with-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12">
-                        <!-- section-title -->
-                        <div class="careers-with-us-caption text-center d-flex flex-column justify-content-center align-items-center"
-                            data-aos="fade-up" data-aos-duration="1000">
-                            <i class="flaticon-camping-tent"></i>
-                            <h3>Careers With Us</h3>
-                            <hr>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                        <!-- accordion-wrapper -->
-                        <div class="accordion">
-                            <!-- accordion-btn -->
-                            <button class="accordion-btn d-flex justify-content-between align-items-center">
-                                <h6>Equipment Manager</h6>
-                                <i class="flaticon-minus-sign horizontal"></i>
-                                <i class="flaticon-minus-sign vertical"></i>
-                            </button>
-                            <!-- accordion-text -->
-                            <div class="accordion-text">
-                                <p>
-                                    I am item content. Click edit button to change this text. 
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                                </p>
-                            </div>
-                            <!-- accordion-btn -->
-                            <button class="accordion-btn d-flex justify-content-between align-items-center">
-                                <h6>Shuttle Driver</h6>
-                                <i class="flaticon-minus-sign horizontal"></i>
-                                <i class="flaticon-minus-sign vertical"></i>
-                            </button>
-                            <!-- accordion-text -->
-                            <div class="accordion-text">
-                                <p>
-                                    I am item content. Click edit button to change this text. 
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                                </p>
-                            </div>
-                            <!-- accordion-btn -->
-                            <button class="accordion-btn d-flex justify-content-between align-items-center">
-                                <h6>Tour Guide</h6>
-                                <i class="flaticon-minus-sign horizontal"></i>
-                                <i class="flaticon-minus-sign vertical"></i>
-                            </button>
-                            <!-- accordion-text -->
-                            <div class="accordion-text">
-                                <p>
-                                    I am item content. Click edit button to change this text. 
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ======= Careers With Us Section End ======= -->
-
+        </div>
+        <!-- ======= Checkout Section End ======= -->
 
         <!-- ======= Subscribe Section Start ======= -->
         <section id="subscribe">
@@ -480,7 +357,6 @@
     </main>
     <!-- ======= Main Part End ======= -->
 
-
     <!-- ======= Footer Start ======= -->
     <footer>
         <div class="container-fluid">
@@ -492,7 +368,8 @@
                         <div class="about-us">
                             <h4>About Us</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt
                                 ut labore et dolore magna. Nullam a nibh in dolor blandit tincidunt et vel ipsum.
                             </p>
                         </div>
@@ -579,9 +456,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- isotope-filter -->
+    <script src="plugins/isotope-filter-plugin/isotope.pkgd.min.js"></script>
     <!-- owl-carousel.js -->
     <script src="plugins/owl-carousel/owl.carousel.js"></script>
     <script src="js/owl-carousel.js"></script>
+    <!-- shopping-cart-local-storage -->
+    <script src="https://unpkg.com/cart-localstorage@1.1.4/dist/cart-localstorage.min.js"
+        type="text/javascript"></script>
     <!-- form-validation.js -->
     <script src="js/form-validation.js"></script>
     <!-- cart.js -->

@@ -238,20 +238,20 @@ $(document).ready(function () {
 
   // ======= Countdown Start ======= //
   let countdown = () => {
-    // select time
+    // selecting time
     let now = new Date();
     let eventDate = new Date('Mart 13, 2023 00:00:00');
     let currentTiime = now.getTime();
     let eventTime = eventDate.getTime();
     let remTime = eventTime - currentTiime;
 
-    // hide discount section when the time is up
+    // hiding discount section when the time is up
     if (remTime <= 0) {
       $("#discount").css("display", "none");
       return;
     }
 
-    // calculate sec, min, hour and day
+    // calculating sec, min, hour and day
     let s = Math.floor(remTime / 1000);
     let m = Math.floor(s / 60);
     let h = Math.floor(m / 60);
@@ -265,7 +265,7 @@ $(document).ready(function () {
     m = m < 10 ? "0" + m : m;
     s = s < 10 ? "0" + s : s;
 
-    // add the measures of time into compatible elements
+    // adding the measures of time into compatible elements
     $(".days").text(d);
     $(".days").text(d);
 
@@ -349,6 +349,14 @@ $(document).ready(function () {
       $(this).next().siblings(".accordion-text").removeClass("show-text");
   });
   // ======= Accordion - End ======= //
+
+
+  // ======= Showing the bottom content when click the Radio button - Start ======= //
+  $(document).on("click", ".payment-method input", function(){
+    $(this).next().next().addClass(".payment-method show-msg");
+    $(this).next().next().siblings().removeClass(".payment-method show-msg");
+  });
+  // ======= Showing the bottom content when click the Radio button - End ======= //
 
 
   // ======= Tour Filter and Background-color of Button when click on it - Start ======= //

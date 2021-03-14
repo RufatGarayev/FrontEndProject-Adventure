@@ -47,7 +47,7 @@ header nav .navbar-items .links li a:hover, header nav .account li a:hover {
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset, #subscribe .form-holder .form-field .subs-btn, #checkout .order-area .order-area-footer .checkout-btn {
   padding: 10px 24px;
   display: inline-block;
   font-weight: 600;
@@ -63,7 +63,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
   z-index: 1;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig::before, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset::before, #subscribe .form-holder .form-field .subs-btn::before, #checkout .order-area .order-area-footer .checkout-btn::before {
   content: "";
   border-radius: 3px;
   position: absolute;
@@ -83,17 +83,17 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
           transform-origin: left;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig:hover, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn:hover {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover, #subscribe .form-holder .form-field .subs-btn:hover, #checkout .order-area .order-area-footer .checkout-btn:hover {
   color: white;
   text-decoration: none;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig:hover::before, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn:hover::before {
+header nav .account li .login-box-holder .same-style-input-area .bottom-links .sign-in:hover::before, header nav .account li .login-box-holder #reset-form .reset-password .bottom-links .reset:hover::before, #subscribe .form-holder .form-field .subs-btn:hover::before, #checkout .order-area .order-area-footer .checkout-btn:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-#subscribe .subscribe-title h1, #our-advantages .caption h1 {
+#subscribe .subscribe-title h1 {
   font-size: 40px;
   font-family: ludicrous;
   letter-spacing: 1px;
@@ -102,18 +102,18 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #subscribe .subscribe-title h1, #our-advantages .caption h1 {
+  #subscribe .subscribe-title h1 {
     font-size: 36px;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title h1, #our-advantages .caption h1 {
+  #subscribe .subscribe-title h1 {
     font-size: 28px;
   }
 }
 
-#subscribe .subscribe-title hr, #our-advantages .caption hr {
+#subscribe .subscribe-title hr {
   margin: 8px 0;
   height: 0.7px;
   width: 60px;
@@ -121,18 +121,18 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #subscribe .subscribe-title hr, #our-advantages .caption hr {
+  #subscribe .subscribe-title hr {
     width: 45px;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title hr, #our-advantages .caption hr {
+  #subscribe .subscribe-title hr {
     width: 35px;
   }
 }
 
-#subscribe .subscribe-title p, #our-advantages .main-holder .holder p, #tour .tourPics-and-basicInfo .tour-info .text-part, #tour .descAndReviews-wrapper .tab-items p, #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body p {
+#subscribe .subscribe-title p {
   padding-top: 16px;
   font-size: 16px;
   font-weight: 300;
@@ -140,37 +140,22 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
-  #subscribe .subscribe-title p, #our-advantages .main-holder .holder p, #tour .tourPics-and-basicInfo .tour-info .text-part, #tour .descAndReviews-wrapper .tab-items p, #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body p {
+  #subscribe .subscribe-title p {
     font-size: 13px;
   }
 }
 
-#tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig .spinner {
-  width: 25px;
-  height: 25px;
-  border: 3px solid lightgray;
-  border-radius: 50%;
-  border-left-color: coral;
-  -webkit-animation: rotate linear 0.7s infinite;
-          animation: rotate linear 0.7s infinite;
-}
-
-#tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig .successIcon {
-  color: green;
-  font-size: 20px;
-}
-
-header nav .account li .login-box-holder .same-style-input-area .input-area, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area {
+header nav .account li .login-box-holder .same-style-input-area .input-area, #checkout .billing-details .input-area {
   width: 100%;
   height: 50px;
   position: relative;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .input-area:not(:first-child), #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area:not(:first-child) {
+header nav .account li .login-box-holder .same-style-input-area .input-area:not(:first-child), #checkout .billing-details .input-area:not(:first-child) {
   margin-top: 15px;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .input-area input, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area input {
+header nav .account li .login-box-holder .same-style-input-area .input-area input, #checkout .billing-details .input-area input {
   border-radius: 4px;
   padding: 0 25px;
   width: 100%;
@@ -179,11 +164,11 @@ header nav .account li .login-box-holder .same-style-input-area .input-area inpu
   border: 1px solid #dbc5c5;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .input-area input:focus, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area input:focus {
+header nav .account li .login-box-holder .same-style-input-area .input-area input:focus, #checkout .billing-details .input-area input:focus {
   border: 1px solid black;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .input-area i, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area i {
+header nav .account li .login-box-holder .same-style-input-area .input-area i, #checkout .billing-details .input-area i {
   position: absolute;
   top: 18px;
   right: 25px;
@@ -192,21 +177,9 @@ header nav .account li .login-box-holder .same-style-input-area .input-area i, #
   z-index: 0;
 }
 
-header nav .account li .login-box-holder .same-style-input-area .input-area .success-icon, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area .success-icon {
+header nav .account li .login-box-holder .same-style-input-area .input-area .success-icon, #checkout .billing-details .input-area .success-icon {
   color: green;
   z-index: 5;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area .review-area {
-  width: 100%;
-  padding: 13px 25px;
-  border-radius: 4px;
-  border: 1px solid #dbc5c5;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area .review-area:focus {
-  border: 1px solid black;
-  outline: 0;
 }
 
 footer .footer-top h4 {
@@ -1984,931 +1957,236 @@ footer .footer-bottom .social-media ul {
   }
 }
 
-#our-advantages {
-  position: relative;
-  overflow: hidden;
-  padding: 66px 0 99px 0;
-  background-color: #769484;
-}
-
-#our-advantages .caption {
-  height: 115px;
-}
-
-#our-advantages .caption h1 {
-  text-align: center;
-  padding: 30px 0 0 !important;
-}
-
-#our-advantages .main-holder .holder {
-  padding: 40px 5px 0 5px;
-  height: 257px;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-#our-advantages .main-holder .holder:hover {
-  padding-top: 15px !important;
-  -webkit-transition: 0.4s ease-in-out !important;
-  transition: 0.4s ease-in-out !important;
-}
-
-#our-advantages .main-holder .holder .icon-holder i {
-  color: black;
-}
-
-#our-advantages .main-holder .holder .icon-holder i::before {
-  font-size: 60px;
-  margin-left: 0;
-}
-
-#our-advantages .main-holder .holder h4 {
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 20px;
-  font-weight: 400;
-  color: white;
-}
-
-#our-advantages .main-holder .holder hr {
-  height: 0.5px !important;
-  display: inline-block;
-  width: 26px;
-  margin: 10px 0 0 0;
-  background-color: white;
-}
-
-#our-advantages .main-holder .holder p {
-  position: relative;
-  padding-top: 22px;
-}
-
-@media (min-width: 250px) and (max-width: 315px) {
-  #our-advantages .main-holder .holder h4 {
-    font-size: 17px !important;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  #our-advantages {
-    padding: 80px 0 145px 0 !important;
-  }
-  #our-advantages .holder h4 {
-    font-size: 22px !important;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  #our-advantages {
-    padding: 80px 0 100px 0 !important;
-  }
-  #our-advantages .holder {
-    margin: 20px 0;
-    padding: 0 10px;
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  #our-advantages {
-    padding: 120px 0 140px 0 !important;
-  }
-  #our-advantages .caption {
-    padding-bottom: 40px;
-  }
-  #our-advantages .holder {
-    padding: 40px 90px 0 90px !important;
-    height: 280px !important;
-  }
-  #our-advantages .holder .icon-holder i::before {
-    font-size: 70px !important;
-  }
-  #our-advantages .holder hr {
-    height: 1px !important;
-    width: 40px !important;
-  }
-}
-
-@media (min-width: 375px) and (max-width: 575.98px) {
-  #our-advantages {
-    padding: 80px 0 100px 0 !important;
-  }
-  #our-advantages .caption h1 {
-    padding: 40px 0 80px 0 !important;
-  }
-  #our-advantages .holder {
-    padding: 40px 70px 0 70px !important;
-    height: 280px !important;
-    font-size: 17px;
-  }
-  #our-advantages .holder i::before {
-    font-size: 60px !important;
-  }
-  #our-advantages .holder hr {
-    width: 25px !important;
-  }
-  #our-advantages .holder p {
-    font-size: 16px !important;
-    width: 250px;
-  }
-}
-
-@media (min-width: 250px) and (max-width: 374.98px) {
-  #our-advantages {
-    padding: 50px 0 65px 0 !important;
-  }
-  #our-advantages .caption {
-    height: 110px !important;
-  }
-  #our-advantages .caption h1 {
-    padding: 20px 0 80px 0 !important;
-  }
-  #our-advantages .holder {
-    height: 235px !important;
-    padding: 32px 35px 0 35px !important;
-  }
-  #our-advantages .holder i::before {
-    font-size: 50px !important;
-  }
-  #our-advantages .holder h4 {
-    font-size: 20px !important;
-    padding-top: 10px !important;
-  }
-  #our-advantages .holder hr {
-    width: 24px !important;
-  }
-}
-
 #intro {
   background-image: url(../img/bg-images/wood.jpg);
   text-align: center;
 }
 
-#tour {
-  padding: 70px 0 80px;
-  background-color: #ededed;
+#checkout {
+  padding: 70px 0;
 }
 
-#tour .tourPics-and-basicInfo {
-  padding-bottom: 50px;
-  border-bottom: 1px solid #dbc5c5;
-}
-
-#tour .tourPics-and-basicInfo img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#tour .tourPics-and-basicInfo .tour-img-box {
-  margin: 0 5px 20px;
-  height: 350px;
-  overflow: hidden;
-}
-
-#tour .tourPics-and-basicInfo .tour-img-box img {
-  height: 100%;
-  width: 100%;
-  -webkit-filter: brightness(85%);
-          filter: brightness(85%);
-}
-
-#tour .tourPics-and-basicInfo .tour-img-box img:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-}
-
-#tour .tourPics-and-basicInfo .small-img-box {
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
-  border: 2px solid #ededed;
-  height: 80px;
-  margin: 5px;
-  padding: 2px;
-}
-
-#tour .tourPics-and-basicInfo .small-img-box img {
-  height: 100%;
-  width: 100%;
-}
-
-#tour .tourPics-and-basicInfo .small-img-box:hover {
-  border: 2px solid #3a3b74;
-}
-
-#tour .tourPics-and-basicInfo .active-img {
-  border: 2px solid #3a3b74;
-}
-
-#tour .tourPics-and-basicInfo .tour-info {
-  padding: 4px 0 0 40px;
-}
-
-#tour .tourPics-and-basicInfo .tour-info .top-part {
-  width: 225px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#tour .tourPics-and-basicInfo .tour-info .top-part .caption h2 {
-  margin-bottom: 0;
-  font-weight: 700;
-  font-size: 27px;
-}
-
-#tour .tourPics-and-basicInfo .tour-info .top-part .rating {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#tour .tourPics-and-basicInfo .tour-info .top-part .rating span {
-  font-size: 23px;
-  font-weight: 700;
-  height: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#tour .tourPics-and-basicInfo .tour-info .top-part .rating i {
-  color: #3a3b74;
-  font-size: 17px;
-  margin: 0 0 2px 3px;
-}
-
-#tour .tourPics-and-basicInfo .tour-info .location {
-  padding: 20px 0 7px;
-}
-
-#tour .tourPics-and-basicInfo .tour-info .location h6 {
-  color: #626b72;
-  margin: 0;
-}
-
-#tour .tourPics-and-basicInfo .tour-info .basic-info {
-  height: 65px;
-  width: 460px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#tour .tourPics-and-basicInfo .tour-info .basic-info i::before {
-  font-size: 26px;
-  margin: 0 10px 0 0;
-}
-
-#tour .tourPics-and-basicInfo .tour-info .basic-info h6 {
-  margin-bottom: 0;
-  font-size: 18px;
-}
-
-#tour .tourPics-and-basicInfo .tour-info .basic-info .price h5 {
-  font-size: 25px;
-  font-family: "Times New Roman", Times, serif;
-  margin-bottom: 0;
-  font-weight: 600;
-}
-
-#tour .tourPics-and-basicInfo .tour-info .basic-info .price h5 span {
-  font-size: 18px;
-  font-weight: 500;
-  font-family: "Nunito", sans-serif;
-}
-
-#tour .tourPics-and-basicInfo .tour-info .text-part {
-  padding: 0;
-  text-align: justify;
-}
-
-#tour .tourPics-and-basicInfo .addToCart {
-  padding: 20px 40px;
-}
-
-#tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig {
-  text-transform: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  font-size: 14px;
-  height: 36px;
-  width: 134px;
-  padding: 0 12px;
-}
-
-#tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig:focus {
-  outline: none;
-}
-
-#tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig .spinner {
-  width: 16px;
-  height: 16px;
-}
-
-#tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig .successIcon {
-  color: white;
-  font-size: 14px;
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-#tour .descAndReviews-wrapper {
-  padding: 50px 0 0;
-}
-
-#tour .descAndReviews-wrapper .tour-tabs {
+#checkout .billing-details {
   padding-right: 40px;
 }
 
-#tour .descAndReviews-wrapper .tour-tabs li {
-  height: 47px;
-  line-height: 45px;
-  border-bottom: 1px solid #dbc5c5;
+#checkout .billing-details .input-area {
+  height: 92px;
 }
 
-#tour .descAndReviews-wrapper .tour-tabs li a {
-  font-size: 17px;
-  color: #64736b;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
+#checkout .billing-details .input-area h6 {
   font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
-#tour .descAndReviews-wrapper .tour-tabs li a:hover {
-  text-decoration: none;
-  color: black;
+#checkout .billing-details .input-area input {
+  height: 45px;
+  font-size: 14px;
 }
 
-#tour .descAndReviews-wrapper .tour-tabs li .active-tabBtn {
-  color: black;
+@media (min-width: 250px) and (max-width: 270px) {
+  #checkout .billing-details .input-area input {
+    font-size: 12px !important;
+  }
 }
 
-#tour .descAndReviews-wrapper .tab-items {
-  padding-top: 8px;
+#checkout .order-area {
+  padding: 30px 25px;
+  border: 2px solid #e6dada;
 }
 
-#tour .descAndReviews-wrapper .tab-items h4,
-#tour .descAndReviews-wrapper .tab-items h6 {
-  font-weight: 700;
-}
-
-#tour .descAndReviews-wrapper .tab-items p {
-  padding-top: 0 !important;
-}
-
-#tour .descAndReviews-wrapper .tab-items .description .read-more {
-  display: none;
-}
-
-#tour .descAndReviews-wrapper .tab-items .description .show-more-text {
-  display: block;
-  -webkit-animation: fadeEffect 0.7s;
-          animation: fadeEffect 0.7s;
-}
-
-#tour .descAndReviews-wrapper .tab-items .description .readMoreBtn-wrapper {
-  margin-top: 15px;
-}
-
-#tour .descAndReviews-wrapper .tab-items .description .readMoreBtn-wrapper a {
-  display: inline-block;
-  padding: 8px 30px;
-  font-size: 15px;
-  font-weight: 200;
-  color: white;
-  background-color: #3a3b74;
-}
-
-#tour .descAndReviews-wrapper .tab-items .description .readMoreBtn-wrapper a:hover {
-  text-decoration: none;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews p {
-  margin-bottom: 25px;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews .media-holder {
-  margin: 40px 0 70px;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media {
-  border-radius: 4px;
-  padding: 24px;
-  border: 1px solid #dbc5c5;
-  margin-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .img-and-rating {
-  margin-right: 23px;
-  height: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .img-and-rating .media-img {
-  width: 70px;
-  height: 70px;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .img-and-rating .media-img img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .img-and-rating .media-rating {
-  width: 60px;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .img-and-rating .media-rating i {
-  font-size: 9px;
-  color: #3a3b74;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body {
-  padding-left: 20px;
-  border-left: 1px solid #dbc5c5;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body p {
+#checkout .order-area h6,
+#checkout .order-area p {
   margin-bottom: 0;
-  text-align: justify;
 }
 
-#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top {
-  padding-bottom: 10px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+#checkout .order-area .order-area-header {
+  padding-bottom: 20px;
+}
+
+#checkout .order-area .order-area-header h2 {
+  font-size: 29px;
+}
+
+#checkout .order-area .order-area-body .caption {
+  height: 36px;
+}
+
+#checkout .order-area .order-area-body .caption h6 {
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+#checkout .order-area .order-area-body .ordered-tour,
+#checkout .order-area .order-area-body .total {
+  height: 50px;
+}
+
+#checkout .order-area .order-area-body .ordered-tour .price,
+#checkout .order-area .order-area-body .total .price {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 19px;
+}
+
+#checkout .order-area .order-area-body .total h6,
+#checkout .order-area .order-area-body .total span {
+  font-weight: 700;
+}
+
+#checkout .order-area .order-area-body .ordered-tour {
+  border-top: 1px solid #e4d5d5;
+  border-bottom: 1px solid #e4d5d5;
+}
+
+#checkout .order-area .order-area-body .ordered-tour h6 span {
+  font-weight: 700;
+}
+
+#checkout .order-area .order-area-body .payment-method {
+  padding: 33px 0 30px;
+}
+
+#checkout .order-area .order-area-body .payment-method input[type="radio"]:last-of-type {
+  margin-top: 27px;
+}
+
+#checkout .order-area .order-area-body .payment-method label {
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+#checkout .order-area .order-area-body .payment-method .msg {
+  font-size: 13px;
+  border-radius: 5px;
+  background-color: #edf7ff;
+  border: 1px solid #49aff5;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  visibility: hidden;
 }
 
-#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top h6 {
-  margin: 0;
+#checkout .order-area .order-area-body .payment-method .msg p {
+  padding: 13px 20px;
 }
 
-#tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top .date {
-  font-size: 11px;
-  color: #aaaaaa;
+#checkout .order-area .order-area-body .payment-method .msg2 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-#tour .descAndReviews-wrapper .tab-items .reviews .rating-caption {
-  margin-bottom: 6px;
+#checkout .order-area .order-area-body .payment-method .show-msg {
+  height: 73px;
+  border: 1px solid #49aff5;
+  visibility: visible;
 }
 
-#tour .descAndReviews-wrapper .tab-items .reviews .rating {
-  width: 110px;
-  margin-bottom: 25px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews .rating a {
-  font-size: 15px;
-  color: black;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area {
-  height: 80px;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews #review-form .review-area-holder {
-  height: 155px;
-  margin-bottom: 14px;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links {
-  padding-top: 22px;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn {
-  text-transform: none;
-  padding: 8px 36px;
+#checkout .order-area .order-area-footer .checkout-btn {
+  width: 100%;
+  font-size: 14px;
   cursor: pointer;
+  text-transform: none;
 }
 
-#tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn:hover {
-  color: white !important;
-}
-
-#tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn:focus {
+#checkout .order-area .order-area-footer .checkout-btn:focus {
   outline: none;
 }
 
-#tour .descAndReviews-wrapper .tab-items .tab-content {
-  -webkit-animation: fadeEffect 0.7s;
-          animation: fadeEffect 0.7s;
-}
-
-#tour .descAndReviews-wrapper .tab-items .tab-content:not(:first-of-type) {
-  display: none;
-}
-
-@keyframes fadeEffect {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#our-advantages {
-  padding: 12px 0 50px 0;
-}
-
-#our-advantages .main-holder .holder {
-  height: 190px;
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  #tour .tourPics-and-basicInfo .tour-info .basic-info {
-    width: 436px !important;
-  }
-  #tour #our-advantages {
-    padding: 12px 0 50px 0 !important;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 991.98px) {
-  #tour .tourPics-and-basicInfo .tour-img-box {
-    height: 420px !important;
+  #checkout .billing-details {
+    padding-right: 25px;
   }
-  #tour .tourPics-and-basicInfo .small-img-box {
-    height: 105px !important;
-  }
-  #tour .tourPics-and-basicInfo .tour-info {
-    padding: 50px 20px 0 10px !important;
-  }
-  #tour .tourPics-and-basicInfo .addToCart {
-    padding: 20px 0 0 10px !important;
-  }
-  #tour .descAndReviews-wrapper .tab-items #review-form .name-area,
-  #tour .descAndReviews-wrapper .tab-items #review-form .email-area {
-    margin-top: 15px;
-  }
-  #our-advantages {
-    padding: 12px 0 42px 0 !important;
-  }
-  #our-advantages .main-holder .holder {
-    height: 200px;
-    margin: 0;
-  }
-  #our-advantages .main-holder .holder h4 {
-    font-size: 17px !important;
+  #checkout .order-area .price {
+    font-size: 18px !important;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  #tour {
-    padding: 60px 0 70px;
+  #checkout .billing-details {
+    padding-right: 0;
   }
-  #tour .tourPics-and-basicInfo {
-    padding-bottom: 30px !important;
+  #checkout .billing-details .input-area h6 {
+    font-size: 16px;
   }
-  #tour .tourPics-and-basicInfo .tour-img-box {
-    height: 325px !important;
-  }
-  #tour .tourPics-and-basicInfo .small-img-box {
-    height: 80px !important;
-  }
-  #tour .tourPics-and-basicInfo .tour-info {
-    padding: 40px 20px 0 10px !important;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .top-part {
-    width: 215px;
-  }
-  #tour .tourPics-and-basicInfo .addToCart {
-    padding: 20px 12px;
-  }
-  #tour .descAndReviews-wrapper .tour-tabs {
-    padding-right: 0 !important;
-  }
-  #tour .descAndReviews-wrapper .tab-items {
-    padding-top: 30px !important;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews p,
-  #tour .descAndReviews-wrapper .tab-items .reviews .rating {
-    margin-bottom: 27px !important;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area,
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area {
-    margin-top: 15px;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area input,
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area input {
-    height: 45px !important;
-  }
-  #our-advantages {
-    padding: 12px 0 50px 0 !important;
-  }
-  #our-advantages .main-holder .holder {
-    padding: 40px 0 0 !important;
-    height: 190px !important;
-    margin: 0;
-  }
-  #our-advantages .main-holder .holder .icon-holder i::before {
-    font-size: 60px !important;
-  }
-  #our-advantages .main-holder .holder h4 {
-    font-size: 18px !important;
+  #checkout .order-area {
+    margin-top: 28px;
+    padding: 32px 25px 45px;
   }
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
-  #tour {
-    padding: 50px 0 70px;
-  }
-  #tour .tourPics-and-basicInfo {
-    padding-bottom: 40px;
-  }
-  #tour .tourPics-and-basicInfo .tour-img-box {
-    height: 320px !important;
-    margin: 0 3px 20px;
-  }
-  #tour .tourPics-and-basicInfo .small-img-box {
-    height: 80px !important;
-    margin: 3px;
-  }
-  #tour .tourPics-and-basicInfo .tour-info {
-    padding: 40px 3px 0 !important;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .top-part {
-    width: 225px;
-    padding: 0;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .top-part .caption h2 {
-    font-size: 28px !important;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .basic-info {
-    height: 172px;
-    width: 156px;
-    padding: 16px 0 26px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .basic-info .price i::before {
-    font-size: 27px;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .basic-info .price h5 {
-    font-size: 26px;
-  }
-  #tour .tourPics-and-basicInfo .addToCart {
-    padding: 20px 3px;
-  }
-  #tour .descAndReviews-wrapper .tour-tabs {
+  #checkout .billing-details {
     padding-right: 0;
   }
-  #tour .descAndReviews-wrapper .tab-items {
-    padding-top: 30px !important;
+  #checkout .billing-details .input-area h6 {
+    font-size: 16px;
   }
-  #tour .descAndReviews-wrapper .tab-items .description .readMoreBtn-wrapper a {
-    font-size: 14px;
+  #checkout .billing-details .input-area input {
+    padding: 0 20px;
   }
-  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: self-start;
-        -ms-flex-align: self-start;
-            align-items: self-start;
-    padding-bottom: 4px !important;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top h6 {
-    margin-bottom: 10px;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body p {
-    margin-bottom: 0 !important;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews p,
-  #tour .descAndReviews-wrapper .tab-items .reviews .rating {
-    margin-bottom: 27px !important;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area,
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area {
-    margin-top: 15px;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area input,
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area input {
-    height: 45px !important;
-  }
-  #our-advantages {
-    padding: 25px 0 66px 0 !important;
-  }
-  #our-advantages .main-holder .holder {
-    padding: 40px 0 0 !important;
-    height: 180px !important;
-    margin: 0;
-  }
-  #our-advantages .main-holder .holder .icon-holder i::before {
-    font-size: 60px !important;
-  }
-  #our-advantages .main-holder .holder h4 {
-    font-size: 18px !important;
+  #checkout .order-area {
+    margin-top: 28px;
+    padding: 30px 25px 45px;
   }
 }
 
-@media (min-width: 250px) and (max-width: 374.98px) {
-  #tour {
-    padding: 50px 0 70px;
-  }
-  #tour .tourPics-and-basicInfo {
-    padding-bottom: 35px;
-  }
-  #tour .tourPics-and-basicInfo .tour-img-box {
-    height: 250px !important;
-    margin: 0 1px 20px;
-  }
-  #tour .tourPics-and-basicInfo .small-img-box {
-    height: 54px !important;
-    margin: 1px;
-  }
-  #tour .tourPics-and-basicInfo .tour-info {
-    padding: 20px 0 0 !important;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .top-part {
-    width: 180px;
-    height: 55px;
-    padding: 0;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .top-part .caption h2 {
-    font-size: 22px !important;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .top-part .rating span {
-    font-size: 21px !important;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .top-part .rating span i {
-    font-size: 14px;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .location {
-    padding: 6px 0 7px;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .location h6 {
-    font-size: 13px;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .basic-info {
-    height: 150px;
-    width: 156px;
-    padding: 15px 0 15px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .basic-info i::before {
-    font-size: 22px;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .basic-info h6 {
-    font-size: 16px;
-  }
-  #tour .tourPics-and-basicInfo .tour-info .basic-info .price h5 {
-    font-size: 22px;
-  }
-  #tour .tourPics-and-basicInfo .addToCart {
-    padding: 20px 0px !important;
-  }
-  #tour .tourPics-and-basicInfo .addToCart .addToCartBtnBig {
-    font-size: 13px !important;
-  }
-  #tour .descAndReviews-wrapper .tour-tabs {
+@media (min-width: 250px) and (max-width: 375.98px) {
+  #checkout .billing-details {
     padding-right: 0;
   }
-  #tour .descAndReviews-wrapper .tour-tabs li a {
-    font-size: 15px !important;
-  }
-  #tour .descAndReviews-wrapper .tab-items {
-    padding-top: 30px !important;
-  }
-  #tour .descAndReviews-wrapper .tab-items h4 {
-    font-size: 20px;
-  }
-  #tour .descAndReviews-wrapper .tab-items h6 {
-    font-size: 15px;
-  }
-  #tour .descAndReviews-wrapper .tab-items .description .readMoreBtn-wrapper a {
-    font-size: 13px;
-    padding: 7px 26px;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media {
-    padding: 14px !important;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .img-and-rating {
-    margin-right: 15px;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body {
-    padding-left: 15px;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: self-start;
-        -ms-flex-align: self-start;
-            align-items: self-start;
-    padding-bottom: 4px !important;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top h6 {
-    margin-bottom: 12px;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body .top .date {
-    font-size: 10px !important;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews .media-holder .media .media-body p {
-    margin-bottom: 0 !important;
-    text-align: left;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews p,
-  #tour .descAndReviews-wrapper .tab-items .reviews .rating {
-    margin-bottom: 27px !important;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews .rating a {
+  #checkout .billing-details .input-area h6 {
     font-size: 14px;
   }
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area,
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area {
-    margin-top: 7px;
-  }
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area input,
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area input {
-    height: 42px !important;
+  #checkout .billing-details .input-area input {
     padding: 0 15px;
+    font-size: 13px;
   }
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links button {
-    font-size: 14px !important;
-    padding: 7px 32px !important;
+  #checkout .order-area {
+    margin-top: 28px;
+    padding: 30px 15px 45px;
   }
-  #our-advantages {
-    padding: 25px 0 66px 0 !important;
+  #checkout .order-area .order-area-header h2 {
+    font-size: 25px;
   }
-  #our-advantages .main-holder .holder {
-    padding: 40px 0 0 !important;
-    height: 155px !important;
-    margin: 0;
+  #checkout .order-area .order-area-body .caption h6 {
+    font-size: 11px;
   }
-  #our-advantages .main-holder .holder .icon-holder i::before {
-    font-size: 50px !important;
+  #checkout .order-area .order-area-body .ordered-tour h6,
+  #checkout .order-area .order-area-body .total h6 {
+    font-size: 14px;
   }
-  #our-advantages .main-holder .holder h4 {
-    font-size: 18px !important;
+  #checkout .order-area .order-area-body .ordered-tour .price,
+  #checkout .order-area .order-area-body .total .price {
+    font-size: 16px;
+  }
+  #checkout .order-area .order-area-body .payment-method {
+    padding: 27px 0 30px;
+  }
+  #checkout .order-area .order-area-body .payment-method label {
+    font-size: 14px;
+  }
+  #checkout .order-area .order-area-body .payment-method .msg p {
+    padding: 13px 12px;
+  }
+  #checkout .order-area .order-area-body .payment-method .show-msg {
+    height: 95px;
+  }
+  #checkout .order-area .order-area-footer .checkout-btn {
+    font-size: 13px;
   }
 }
-/*# sourceMappingURL=tour-details.css.map */
+/*# sourceMappingURL=checkout.css.map */
