@@ -1528,7 +1528,7 @@ footer .footer-bottom .social-media ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #1d1e21;
+  background: #000000;
   z-index: 9999;
 }
 
@@ -1550,15 +1550,8 @@ footer .footer-bottom .social-media ul {
   position: relative;
   overflow: hidden;
   color: #000;
-  font-size: 40px;
-  letter-spacing: 11px;
-}
-
-@media (min-width: 375px) and (max-width: 530px) {
-  .loading-text span {
-    font-size: 30px;
-    letter-spacing: 7px;
-  }
+  font-size: 30px;
+  letter-spacing: 7px;
 }
 
 @media (max-width: 374.98px) {

@@ -579,3 +579,119 @@
       });
   });
   // ======= Send Message End ======= //
+
+
+
+
+
+  // ======= Checkout Validation Start ======= //
+//   $(function() {
+//    // hiding the alerts
+//    $(".firstName-alert").hide();
+//    $(".msg-email-alert").hide();
+//    $(".subject-alert").hide();
+//    $(".msg-alert").hide();
+
+//    // errors 
+//    let msg_error_name = false;
+//    let msg_error_email = false;
+//    let msg_error_subject = false;
+//    let msg_error_message = false;
+
+//    // keyup event
+//    $(".name").keyup(function() {
+//      check_msg_name();
+//    });
+//    $(".send-msg-email").keyup(function() {
+//      check_msg_email();
+//    });
+//    $(".subject").keyup(function() {
+//      check_msg_subject();
+//    });
+//    $(".msg-area").keyup(function() {
+//      check_message();
+//    });
+
+
+
+//   function check_msg_name() {
+//    let nameVal = $(".name").val();
+//    if (nameVal === "") {
+//     $(".name-alert").html("Name must be filled out!");
+//     $(".name-alert").show();
+//     $(".name").css("border","2px solid red");
+//     $(".name").parent().next().css("margin-top","33px");
+//     $(".name").siblings(".fa-exclamation-circle").removeClass("d-none");
+//     $(".name").siblings(".fa-check-circle").addClass("d-none");
+//     msg_error_name = true;
+//   }else if (nameVal.length < 3){
+//     $(".name-alert").html("Name must be at least 3 character!");
+//     $(".name-alert").show();
+//     $(".name").css("border","2px solid red");
+//     $(".name").parent().next().css("margin-top","33px");
+//     $(".name").siblings(".fa-exclamation-circle").removeClass("d-none");
+//     $(".name").siblings(".fa-check-circle").addClass("d-none");
+//     msg_error_name = true;
+//   } else {
+//      $(".name-alert").hide();
+//      $(".name").css("border","2px solid green");
+//      $(".name").parent().next().css("margin-top","15px");
+//      $(".name").siblings(".fa-check-circle").removeClass("d-none");
+//      $(".name").siblings(".fa-exclamation-circle").addClass("d-none");
+//   }
+//  }
+
+//  // email
+//  function check_msg_email() {
+//    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+//    let emailVal = $(".send-msg-email").val();
+//    if (emailVal === "") {
+//     $(".msg-email-alert").html("Email must be filled out!");
+//     $(".msg-email-alert").show();
+//     $(".send-msg-email").css("border","2px solid red");
+//     $(".send-msg-email").parent().next().css("margin-top","33px");
+//     $(".send-msg-email").siblings(".fa-exclamation-circle").removeClass("d-none");
+//     $(".send-msg-email").siblings(".fa-check-circle").addClass("d-none");
+//     msg_error_email = true;
+//   }else if (!pattern.test(emailVal)){
+//     $(".msg-email-alert").html("Please enter valid Email.");
+//     $(".msg-email-alert").show();
+//     $(".send-msg-email").css("border","2px solid red");
+//     $(".send-msg-email").parent().next().css("margin-top","33px");
+//     $(".send-msg-email").siblings(".fa-exclamation-circle").removeClass("d-none");
+//     $(".send-msg-email").siblings(".fa-check-circle").addClass("d-none");
+//     msg_error_email = true;
+//   } else {
+//      $(".msg-email-alert").hide();
+//      $(".send-msg-email").css("border","2px solid green");
+//      $(".send-msg-email").parent().next().css("margin-top","15px");
+//      $(".send-msg-email").siblings(".fa-check-circle").removeClass("d-none");
+//      $(".send-msg-email").siblings(".fa-exclamation-circle").addClass("d-none");
+//   }
+//  }
+
+
+//   $("#checkout-form").submit(function(e) {
+//    e.preventDefault();
+
+//     msg_error_name = false;
+//     msg_error_email = false;
+//     msg_error_subject = false;
+//     msg_error_message = false;
+
+//     check_msg_name();
+//     check_msg_email();
+//     check_msg_subject();
+//     check_message();
+
+//     if (msg_error_name === false && msg_error_email === false && msg_error_subject === false && msg_error_message === false) {
+//        alert("Your message was sent Successfully");
+//        return true;
+//     } else {
+//        alert("Please Fill the form Correctly");
+//        return false;
+//     }
+//   }); 
+
+//   });
+  // ======= Checkout Validation End ======= //

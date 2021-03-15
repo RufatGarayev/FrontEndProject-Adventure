@@ -3,8 +3,12 @@
   padding: 1px;
   margin: 10px 10px 10px;
   background-color: white;
-
   position: relative;
+  transition: 1s ease !important;
+  &:hover{
+    box-shadow: 0 1px 10px 1px #cbc7c7;
+    transition: 0.2s linear !important;
+  }
 
   .price-info {
     @extend %price-box;
@@ -46,10 +50,10 @@
           display: flex;
           align-items: center;
           font-size: 19px;
+          color: rgb(98,107,114);
           i {
             font-size: 14px;
             margin: 0 0 2px 3px;
-            color: rgb(98, 107, 114);
           }
         }
       }
@@ -179,6 +183,14 @@
         span,
         i {
           font-size: 11px !important;
+        }
+      }
+      .rating {
+        span {
+          font-size: 16px !important;
+          i{
+            font-size: 12px !important;
+          }
         }
       }
       .tour-name {

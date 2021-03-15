@@ -1685,7 +1685,7 @@ footer .footer-bottom .social-media ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #1d1e21;
+  background: #000000;
   z-index: 9999;
 }
 
@@ -1707,15 +1707,8 @@ footer .footer-bottom .social-media ul {
   position: relative;
   overflow: hidden;
   color: #000;
-  font-size: 40px;
-  letter-spacing: 11px;
-}
-
-@media (min-width: 375px) and (max-width: 530px) {
-  .loading-text span {
-    font-size: 30px;
-    letter-spacing: 7px;
-  }
+  font-size: 30px;
+  letter-spacing: 7px;
 }
 
 @media (max-width: 374.98px) {
@@ -2049,6 +2042,15 @@ footer .footer-bottom .social-media ul {
   margin: 10px 10px 10px;
   background-color: white;
   position: relative;
+  -webkit-transition: 1s ease !important;
+  transition: 1s ease !important;
+}
+
+.main-tourItem-design:hover {
+  -webkit-box-shadow: 0 1px 10px 1px #cbc7c7;
+          box-shadow: 0 1px 10px 1px #cbc7c7;
+  -webkit-transition: 0.2s linear !important;
+  transition: 0.2s linear !important;
 }
 
 .main-tourItem-design .img-box {
@@ -2100,12 +2102,12 @@ footer .footer-bottom .social-media ul {
       -ms-flex-align: center;
           align-items: center;
   font-size: 19px;
+  color: #626b72;
 }
 
 .main-tourItem-design .info .tour-date-and-rating .rating span i {
   font-size: 14px;
   margin: 0 0 2px 3px;
-  color: #626b72;
 }
 
 .main-tourItem-design .info .tour-name {
@@ -2208,6 +2210,12 @@ footer .footer-bottom .social-media ul {
   .main-tourItem-design .info .tour-date span,
   .main-tourItem-design .info .tour-date i {
     font-size: 11px !important;
+  }
+  .main-tourItem-design .info .rating span {
+    font-size: 16px !important;
+  }
+  .main-tourItem-design .info .rating span i {
+    font-size: 12px !important;
   }
   .main-tourItem-design .info .tour-name i {
     font-size: 14px !important;

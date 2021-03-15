@@ -214,6 +214,9 @@
                                         <div class="input-area first-name-area">
                                             <h6>First Name *</h6>
                                             <input class="first-name" type="text" name="first-name">
+                                            <i class="fas fa-check-circle d-none success-icon"></i>
+			                                <i class="fas fa-exclamation-circle d-none"></i>
+                                            <small class="firstName-alert alert"></small>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
@@ -221,6 +224,9 @@
                                         <div class="input-area last-name-area">
                                             <h6>Last Name *</h6>
                                             <input class="last-name" type="text" name="last-name">
+                                            <i class="fas fa-check-circle d-none success-icon"></i>
+			                                <i class="fas fa-exclamation-circle d-none"></i>
+                                            <small class="lastName-alert alert"></small>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -229,6 +235,9 @@
                                             <h6>Street Address *</h6>
                                             <input class="street-address" type="text" name="street-address"
                                                 placeholder="House Number and Street Name">
+                                            <i class="fas fa-check-circle d-none success-icon"></i>
+			                                <i class="fas fa-exclamation-circle d-none"></i>
+                                            <small class="streetAddress-alert alert"></small>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -236,6 +245,9 @@
                                         <div class="input-area city-area">
                                             <h6>Town / City *</h6>
                                             <input class="city" type="text" name="city">
+                                            <i class="fas fa-check-circle d-none success-icon"></i>
+			                                <i class="fas fa-exclamation-circle d-none"></i>
+                                            <small class="city-alert alert"></small>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -243,6 +255,9 @@
                                         <div class="input-area country-area">
                                             <h6>State / Country *</h6>
                                             <input class="country" type="text" name="country">
+                                            <i class="fas fa-check-circle d-none success-icon"></i>
+			                                <i class="fas fa-exclamation-circle d-none"></i>
+                                            <small class="country-alert alert"></small>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -250,6 +265,9 @@
                                         <div class="input-area phone-area">
                                             <h6>Phone *</h6>
                                             <input class="checkout-phone" type="text" name="phone">
+                                            <i class="fas fa-check-circle d-none success-icon"></i>
+			                                <i class="fas fa-exclamation-circle d-none"></i>
+                                            <small class="phone-alert alert"></small>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -257,6 +275,9 @@
                                         <div class="input-area email-area">
                                             <h6>Email Address *</h6>
                                             <input class="checkout-email" type="text" name="email">
+                                            <i class="fas fa-check-circle d-none success-icon"></i>
+			                                <i class="fas fa-exclamation-circle d-none"></i>
+                                            <small class="checkoutEmail-alert alert"></small>
                                         </div>
                                     </div>
                                 </div>
@@ -289,16 +310,18 @@
                                     <!-- payment-method -->
                                     <div class="payment-method">
                                         <!-- check-payments -->
-                                        <input type="radio" id="check-payments" name="payment-method" value="check-payments" checked>
+                                        <input type="radio" id="check-payments" name="payment-method"
+                                            value="check-payments" checked>
                                         <label for="check-payments">Check Payments</label>
                                         <div class="msg msg1 show-msg">
                                             <p>
-                                                Please send a check to Store Name, Store Street, 
+                                                Please send a check to Store Name, Store Street,
                                                 Store Town, Store State / County.
                                             </p>
                                         </div>
                                         <!-- cash-on-delivery -->
-                                        <input type="radio" id="cash-on-delivery" name="payment-method" value="cash-on-delivery">
+                                        <input type="radio" id="cash-on-delivery" name="payment-method"
+                                            value="cash-on-delivery">
                                         <label for="cash-on-delivery">Cash on Delivery</label>
                                         <div class="msg msg2">
                                             <p>
@@ -315,6 +338,23 @@
                         </div>
                     </div>
                 </form>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- order-details -->
+                        <div class="order-details d-none">
+                            <h6>Thank you. Your order has been received.</h6>
+                            <ul>
+                                <li>ORDER NUMBER: <strong>2002</strong></li>
+                                <li>DATE: <strong>March 15, 2021</strong></li>
+                                <li>TOTAL: <strong><span>$</span>79.00</strong></li>
+                                <li>PAYMENT METHOD: <strong>Check payments</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- ======= Checkout Section End ======= -->

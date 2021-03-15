@@ -1,9 +1,9 @@
 $(document).ready(function () {
-  // ======= Reload-Img Start ======= //
+  // ======= Reload Start ======= //
   $(window).on("load", function () {
     $(".loading").fadeOut("slow");
   });
-  // ======= Reload-Img End ======= //
+  // ======= Reload End ======= //
 
 
   // ======= Events On Scroll Start ======= //

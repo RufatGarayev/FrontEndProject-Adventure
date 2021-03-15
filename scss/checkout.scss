@@ -155,6 +155,36 @@
       }
     }
   }
+
+  .order-details{
+    padding: 50px 0;
+    
+    ul{
+      display: flex;
+      margin-top: 30px;
+
+      li{
+        display: flex;
+        flex-direction: column;
+        padding-right: 25px;
+        margin-right: 25px;
+        font-size: 11px;
+        font-family: "Nunito", sans-serif;
+
+        &:not(:last-of-type){
+          border-right: 1px dashed rgb(194, 185, 185);
+        }
+
+        strong{
+          font-size: 16px;
+          span{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
 }
 // ======= Checkout Section End ======= //
 
