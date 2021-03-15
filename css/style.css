@@ -2637,7 +2637,7 @@ footer .footer-bottom .social-media ul {
 }
 
 #discount .discount_title h2 span {
-  color: #dd795c;
+  color: black;
   font-weight: 700;
 }
 
@@ -2657,7 +2657,7 @@ footer .footer-bottom .social-media ul {
   text-decoration: line-through;
   margin-right: 20px;
   font-size: 35px;
-  color: #dd795c;
+  color: black;
 }
 
 #discount .discount_title .price .discount-price {

@@ -310,6 +310,10 @@
           font-size: 16px;
           text-decoration: line-through;
           margin-bottom: 0;
+
+          @media (min-width: 250px) and (max-width: 374.98px) {
+            font-size: 18px !important;
+          }
         }
         h3 {
           font-family: "Times New Roman", Times, serif;

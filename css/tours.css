@@ -2606,6 +2606,12 @@ footer .footer-bottom .social-media ul {
   margin-bottom: 0;
 }
 
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #tours .tour-holder .item .discount-price h5 {
+    font-size: 18px !important;
+  }
+}
+
 #tours .tour-holder .item .discount-price h3 {
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 5px;
