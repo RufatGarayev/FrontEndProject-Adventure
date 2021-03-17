@@ -10,7 +10,6 @@
 @import "../scss/reused_sections/intro-page_caption";
 
 
-
 // ======= Intro Section Start ======= //
 #intro {
   background-image: url(../img/bg-images/wood.jpg);
@@ -27,6 +26,8 @@
     .input-area {
       @extend %input;
       height: 92px;
+      margin-bottom: 10px;
+
       h6 {
         font-weight: 700;
         font-size: 14px;
@@ -38,8 +39,17 @@
         font-size: 14px;
 
         @media (min-width: 250px) and (max-width: 270px) {
-            font-size: 12px !important;
+          font-size: 12px !important;
         }
+      }
+
+      i{
+        top: 35px;
+      }
+
+      .error{
+        font-size: 14px;
+        color: red;
       }
     }
   }
@@ -156,14 +166,12 @@
     }
   }
 
-  .order-details{
-    padding: 50px 0;
-    
-    ul{
+  .order-details {
+    ul {
       display: flex;
       margin-top: 30px;
 
-      li{
+      li {
         display: flex;
         flex-direction: column;
         padding-right: 25px;
@@ -171,14 +179,14 @@
         font-size: 11px;
         font-family: "Nunito", sans-serif;
 
-        &:not(:last-of-type){
+        &:not(:last-of-type) {
           border-right: 1px dashed rgb(194, 185, 185);
         }
 
-        strong{
+        strong {
           font-size: 16px;
-          span{
-            font-family: 'Times New Roman', Times, serif;
+          span {
+            font-family: "Times New Roman", Times, serif;
             font-size: 17px;
           }
         }
@@ -212,6 +220,10 @@
       .input-area {
         h6 {
           font-size: 16px;
+        }
+
+        i{
+          top: 37px !important;
         }
       }
     }
@@ -257,6 +269,16 @@
         input {
           padding: 0 15px;
           font-size: 13px;
+        }
+
+        i{
+          top: 36px !important;
+          right: 15px !important;
+          font-size: 15px !important;
+        }
+
+        .error{
+          font-size: 13px !important;
         }
       }
     }

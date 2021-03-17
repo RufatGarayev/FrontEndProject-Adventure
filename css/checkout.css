@@ -1739,7 +1739,8 @@ footer .footer-bottom .social-media ul {
 
 #subscribe .form-holder .alert {
   padding-left: 88px;
-  color: #f96220;
+  color: black;
+  font-weight: 700;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -1965,6 +1966,7 @@ footer .footer-bottom .social-media ul {
 
 #checkout .billing-details .input-area {
   height: 92px;
+  margin-bottom: 10px;
 }
 
 #checkout .billing-details .input-area h6 {
@@ -1982,6 +1984,15 @@ footer .footer-bottom .social-media ul {
   #checkout .billing-details .input-area input {
     font-size: 12px !important;
   }
+}
+
+#checkout .billing-details .input-area i {
+  top: 35px;
+}
+
+#checkout .billing-details .input-area .error {
+  font-size: 14px;
+  color: red;
 }
 
 #checkout .order-area {
@@ -2099,10 +2110,6 @@ footer .footer-bottom .social-media ul {
   outline: none;
 }
 
-#checkout .order-details {
-  padding: 50px 0;
-}
-
 #checkout .order-details ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2133,7 +2140,7 @@ footer .footer-bottom .social-media ul {
 }
 
 #checkout .order-details ul li strong span {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 17px;
 }
 
@@ -2152,6 +2159,9 @@ footer .footer-bottom .social-media ul {
   }
   #checkout .billing-details .input-area h6 {
     font-size: 16px;
+  }
+  #checkout .billing-details .input-area i {
+    top: 37px !important;
   }
   #checkout .order-area {
     margin-top: 28px;
@@ -2185,6 +2195,14 @@ footer .footer-bottom .social-media ul {
   #checkout .billing-details .input-area input {
     padding: 0 15px;
     font-size: 13px;
+  }
+  #checkout .billing-details .input-area i {
+    top: 36px !important;
+    right: 15px !important;
+    font-size: 15px !important;
+  }
+  #checkout .billing-details .input-area .error {
+    font-size: 13px !important;
   }
   #checkout .order-area {
     margin-top: 28px;

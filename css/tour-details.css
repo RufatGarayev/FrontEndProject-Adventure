@@ -1766,7 +1766,8 @@ footer .footer-bottom .social-media ul {
 
 #subscribe .form-holder .alert {
   padding-left: 88px;
-  color: #f96220;
+  color: black;
+  font-weight: 700;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -2416,7 +2417,7 @@ footer .footer-bottom .social-media ul {
   border-radius: 4px;
   padding: 24px;
   border: 1px solid #dbc5c5;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2514,13 +2515,22 @@ footer .footer-bottom .social-media ul {
   height: 80px;
 }
 
+#tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area i {
+  top: 42px;
+}
+
 #tour .descAndReviews-wrapper .tab-items .reviews #review-form .review-area-holder {
   height: 155px;
-  margin-bottom: 14px;
+  margin-bottom: 35px;
+}
+
+#tour .descAndReviews-wrapper .tab-items .reviews #review-form .error {
+  font-size: 15px;
+  color: red;
 }
 
 #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links {
-  padding-top: 22px;
+  padding-top: 35px;
 }
 
 #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links .review-btn {
@@ -2556,7 +2566,7 @@ footer .footer-bottom .social-media ul {
 }
 
 #our-advantages {
-  padding: 12px 0 50px 0;
+  padding: 10px 0 60px 0 !important;
 }
 
 #our-advantages .main-holder .holder {
@@ -2585,9 +2595,15 @@ footer .footer-bottom .social-media ul {
   #tour .tourPics-and-basicInfo .addToCart {
     padding: 20px 0 0 10px !important;
   }
+  #tour .descAndReviews-wrapper .tab-items #review-form .bottom-links {
+    padding-top: 10px !important;
+  }
+  #tour .descAndReviews-wrapper .tab-items #review-form .review-area-holder {
+    margin-bottom: 35px !important;
+  }
   #tour .descAndReviews-wrapper .tab-items #review-form .name-area,
   #tour .descAndReviews-wrapper .tab-items #review-form .email-area {
-    margin-top: 15px;
+    margin-bottom: 30px;
   }
   #our-advantages {
     padding: 12px 0 42px 0 !important;
@@ -2633,13 +2649,23 @@ footer .footer-bottom .social-media ul {
   #tour .descAndReviews-wrapper .tab-items .reviews .rating {
     margin-bottom: 27px !important;
   }
+  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links {
+    padding-top: 10px !important;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .review-area-holder {
+    margin-bottom: 39px !important;
+  }
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area,
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area {
-    margin-top: 15px;
+    margin-bottom: 30px;
   }
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area input,
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area input {
     height: 45px !important;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area i,
+  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area i {
+    top: 40px !important;
   }
   #our-advantages {
     padding: 12px 0 50px 0 !important;
@@ -2732,13 +2758,23 @@ footer .footer-bottom .social-media ul {
   #tour .descAndReviews-wrapper .tab-items .reviews .rating {
     margin-bottom: 27px !important;
   }
+  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links {
+    padding-top: 10px !important;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .review-area-holder {
+    margin-bottom: 39px !important;
+  }
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area,
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area {
-    margin-top: 15px;
+    margin-bottom: 30px;
   }
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area input,
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area input {
     height: 45px !important;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area i,
+  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area i {
+    top: 40px !important;
   }
   #our-advantages {
     padding: 25px 0 66px 0 !important;
@@ -2876,18 +2912,27 @@ footer .footer-bottom .social-media ul {
   #tour .descAndReviews-wrapper .tab-items .reviews .rating a {
     font-size: 14px;
   }
+  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links {
+    padding-top: 10px !important;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .review-area-holder {
+    margin-bottom: 39px !important;
+  }
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area,
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area {
-    margin-top: 7px;
+    margin-bottom: 30px;
   }
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .name-area input,
   #tour .descAndReviews-wrapper .tab-items .reviews #review-form .email-area input {
-    height: 42px !important;
-    padding: 0 15px;
+    height: 45px !important;
   }
-  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .bottom-links button {
+  #tour .descAndReviews-wrapper .tab-items .reviews #review-form i {
+    top: 39px !important;
+    right: 15px !important;
+    font-size: 16px !important;
+  }
+  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .error {
     font-size: 14px !important;
-    padding: 7px 32px !important;
   }
   #our-advantages {
     padding: 25px 0 66px 0 !important;

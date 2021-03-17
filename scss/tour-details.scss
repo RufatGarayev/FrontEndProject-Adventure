@@ -256,7 +256,7 @@
             border-radius: 4px;
             padding: 24px;
             border: 1px solid #dbc5c5;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             display: flex;
             align-items: center;
             .img-and-rating {
@@ -329,15 +329,24 @@
             .review-area {
               @extend %msg-area;
             }
+
+            i {
+              top: 42px;
+            }
           }
 
           .review-area-holder {
             height: 155px;
-            margin-bottom: 14px;
+            margin-bottom: 35px;
+          }
+
+          .error {
+            font-size: 15px;
+            color: red;
           }
 
           .bottom-links {
-            padding-top: 22px;
+            padding-top: 35px;
 
             .review-btn {
               @extend %website-button;
@@ -378,7 +387,7 @@
 
 // ======= Our Advantages Section Start ======= //
 #our-advantages {
-  padding: 12px 0 50px 0;
+  padding: 10px 0 60px 0 !important;
   .main-holder {
     .holder {
       height: 190px;
@@ -386,7 +395,6 @@
   }
 }
 // ======= Our Advantages Section End ======= //
-
 
 
 // ======= Responsive Design Start ======= //
@@ -429,9 +437,15 @@
     .descAndReviews-wrapper {
       .tab-items {
         #review-form {
+          .bottom-links {
+            padding-top: 10px !important;
+          }
+          .review-area-holder {
+            margin-bottom: 35px !important;
+          }
           .name-area,
           .email-area {
-            margin-top: 15px;
+            margin-bottom: 30px;
           }
         }
       }
@@ -440,11 +454,11 @@
 
   #our-advantages {
     padding: 12px 0 42px 0 !important;
-    .main-holder{
-      .holder{
+    .main-holder {
+      .holder {
         height: 200px;
         margin: 0;
-        h4{
+        h4 {
           font-size: 17px !important;
         }
       }
@@ -490,11 +504,20 @@
           }
 
           #review-form {
+            .bottom-links {
+              padding-top: 10px !important;
+            }
+            .review-area-holder {
+              margin-bottom: 39px !important;
+            }
             .name-area,
             .email-area {
-              margin-top: 15px;
+              margin-bottom: 30px;
               input {
                 height: 45px !important;
+              }
+              i {
+                top: 40px !important;
               }
             }
           }
@@ -505,19 +528,19 @@
 
   #our-advantages {
     padding: 12px 0 50px 0 !important;
-    .main-holder{
-      .holder{
+    .main-holder {
+      .holder {
         padding: 40px 0 0 !important;
         height: 190px !important;
         margin: 0;
-        .icon-holder{
-          i{
-            &::before{
+        .icon-holder {
+          i {
+            &::before {
               font-size: 60px !important;
             }
           }
         }
-        h4{
+        h4 {
           font-size: 18px !important;
         }
       }
@@ -618,11 +641,20 @@
           }
 
           #review-form {
+            .bottom-links {
+              padding-top: 10px !important;
+            }
+            .review-area-holder {
+              margin-bottom: 39px !important;
+            }
             .name-area,
             .email-area {
-              margin-top: 15px;
+              margin-bottom: 30px;
               input {
                 height: 45px !important;
+              }
+              i {
+                top: 40px !important;
               }
             }
           }
@@ -633,19 +665,19 @@
 
   #our-advantages {
     padding: 25px 0 66px 0 !important;
-    .main-holder{
-      .holder{
+    .main-holder {
+      .holder {
         padding: 40px 0 0 !important;
         height: 180px !important;
         margin: 0;
-        .icon-holder{
-          i{
-            &::before{
+        .icon-holder {
+          i {
+            &::before {
               font-size: 60px !important;
             }
           }
         }
-        h4{
+        h4 {
           font-size: 18px !important;
         }
       }
@@ -799,20 +831,28 @@
           }
 
           #review-form {
+            .bottom-links {
+              padding-top: 10px !important;
+            }
+            .review-area-holder {
+              margin-bottom: 39px !important;
+            }
             .name-area,
             .email-area {
-              margin-top: 7px;
+              margin-bottom: 30px;
               input {
-                height: 42px !important;
-                padding: 0 15px;
+                height: 45px !important;
               }
             }
 
-            .bottom-links {
-              button {
-                font-size: 14px !important;
-                padding: 7px 32px !important;
-              }
+            i {
+              top: 39px !important;
+              right: 15px !important;
+              font-size: 16px !important;
+            }
+
+            .error {
+              font-size: 14px !important;
             }
           }
         }
@@ -822,19 +862,19 @@
 
   #our-advantages {
     padding: 25px 0 66px 0 !important;
-    .main-holder{
-      .holder{
+    .main-holder {
+      .holder {
         padding: 40px 0 0 !important;
         height: 155px !important;
         margin: 0;
-        .icon-holder{
-          i{
-            &::before{
+        .icon-holder {
+          i {
+            &::before {
               font-size: 50px !important;
             }
           }
         }
-        h4{
+        h4 {
           font-size: 18px !important;
         }
       }

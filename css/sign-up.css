@@ -1772,7 +1772,8 @@ footer .footer-bottom .social-media ul {
 
 #subscribe .form-holder .alert {
   padding-left: 88px;
-  color: #f96220;
+  color: black;
+  font-weight: 700;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {

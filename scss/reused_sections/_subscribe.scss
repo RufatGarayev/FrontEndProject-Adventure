@@ -85,7 +85,8 @@
     .alert {
       @extend %form-alert;
       padding-left: 88px;
-      color: #f96220;
+      color: black;
+      font-weight: 700;
     }
   }
 }
