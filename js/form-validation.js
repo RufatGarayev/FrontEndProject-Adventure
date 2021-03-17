@@ -76,7 +76,9 @@ $(function () {
 
 
    // login form - submit event
-   $("#login").submit(function () {
+   $("#login").submit(function (e) {
+      e.preventDefault();
+
       login_error_email = false;
       login_error_password = false;
 
@@ -212,7 +214,6 @@ $(function () {
          alert("You subscribed Correctly. Thank You!");
          return true;
       } else {
-         alert("Please Fill the Email Correctly");
          return false;
       }
    });
@@ -392,7 +393,9 @@ $(function () {
    }
 
    // sign-up form - submit event
-   $("#sign-up").submit(function () {
+   $("#sign-up").submit(function (e) {
+      e.preventDefault();
+
       error_username = false;
       error_email = false;
       error_password = false;
@@ -411,7 +414,6 @@ $(function () {
          alert("Registration Successfull");
          return true;
       } else {
-         alert("Please Fill the form Correctly");
          return false;
       }
    });
@@ -541,17 +543,23 @@ $(function () {
          $(".msg-alert").show();
          $(".msg-area").css("border", "2px solid red");
          $(".msg-area").parent().next().css("margin-top", "33px");
+         $(".msg-area").siblings(".fa-exclamation-circle").removeClass("d-none");
+         $(".msg-area").siblings(".fa-check-circle").addClass("d-none");
          msg_error_message = true;
       } else if (msgVal.length < 20) {
          $(".msg-alert").html("Message must be at least 20 character!");
          $(".msg-alert").show();
          $(".msg-area").css("border", "2px solid red");
          $(".msg-area").parent().next().css("margin-top", "33px");
+         $(".msg-area").siblings(".fa-exclamation-circle").removeClass("d-none");
+         $(".msg-area").siblings(".fa-check-circle").addClass("d-none");
          msg_error_message = true;
       } else {
          $(".msg-alert").hide();
          $(".msg-area").css("border", "2px solid green");
          $(".msg-area").parent().next().css("margin-top", "15px");
+         $(".msg-area").siblings(".fa-check-circle").removeClass("d-none");
+         $(".msg-area").siblings(".fa-exclamation-circle").addClass("d-none");
       }
    }
 
@@ -570,10 +578,26 @@ $(function () {
       check_message();
 
       if (msg_error_name === false && msg_error_email === false && msg_error_subject === false && msg_error_message === false) {
-         alert("Your message was sent Successfully");
+         function  modalMsg() {
+            $("#modal").addClass("active-modal");
+            $(".dark-bgcolor").addClass("active-darkBg");
+   
+            function closeModal(){
+               $("#modal").removeClass("active-modal");
+               $(".dark-bgcolor").removeClass("active-darkBg");
+            }
+            
+            $(document).on("click", ".dark-bgcolor", () => {
+               closeModal();
+            });
+   
+            $(document).on("click", "#modal .close-button", () => {
+               closeModal();
+            });
+         }
+         modalMsg();
          return true;
       } else {
-         alert("Please Fill the form Correctly");
          return false;
       }
    });
@@ -589,7 +613,21 @@ $(function () {
   // the processes that take place in the submission
   $.validator.setDefaults({
       submitHandler: function () {
-         alert("Done");
+         $("#modal").addClass("active-modal");
+         $(".dark-bgcolor").addClass("active-darkBg");
+
+         function closeModal(){
+            $("#modal").removeClass("active-modal");
+            $(".dark-bgcolor").removeClass("active-darkBg");
+         }
+         
+         $(document).on("click", ".dark-bgcolor", () => {
+            closeModal();
+         });
+
+         $(document).on("click", "#modal .close-button", () => {
+            closeModal();
+         });
       }
   });
 
@@ -598,7 +636,7 @@ $(function () {
       rules: {
          reviewArea: {
             required: true,
-            minlength: 10,
+            minlength: 20,
          },
          reviewName: {
             required: true,
@@ -610,11 +648,14 @@ $(function () {
          }
       },
 
+      // in the case of an error
       highlight: function(element) {
          $(element).css("border", "2px solid red");
          $(element).siblings(".fa-exclamation-circle").removeClass("d-none");
          $(element).siblings(".fa-check-circle").addClass("d-none");
        },
+
+      // when there is no error
        unhighlight: function(element) {
          $(element).css("border", "2px solid green");
          $(element).siblings(".fa-exclamation-circle").addClass("d-none");
@@ -672,11 +713,14 @@ $(function () {
          }
       },
 
+      // in the case of an error
       highlight: function(element) {
          $(element).css("border", "2px solid red");
          $(element).siblings(".fa-exclamation-circle").removeClass("d-none");
          $(element).siblings(".fa-check-circle").addClass("d-none");
        },
+
+       // when there is no error
        unhighlight: function(element) {
          $(element).css("border", "2px solid green");
          $(element).siblings(".fa-exclamation-circle").addClass("d-none");

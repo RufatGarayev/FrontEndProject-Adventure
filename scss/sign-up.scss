@@ -85,6 +85,7 @@
 
       .alert {
         @extend %form-alert;
+        color: black;
       }
     }
   }
@@ -119,15 +120,6 @@
         }
       }
       .same-style-input-area {
-        .input-area {
-          height: 45px !important;
-          font-size: 12px !important;
-
-          input {
-            padding: 0 15px !important;
-          }
-        }
-
         .terms {
           input[type="checkbox"] + label:before {
             font: 12px/1em sans-serif;
@@ -148,7 +140,7 @@
         }
 
         .alert {
-          font-size: 13px;
+          font-size: 12px !important;
         }
       }
     }
@@ -159,14 +151,6 @@
   #sign-up-section {
     .sign-up-holder {
       padding: 40px 15px !important;
-      .caption-area {
-        padding-bottom: 5px !important;
-      }
-      .same-style-input-area {
-        .alert {
-          font-size: 11px !important;
-        }
-      }
     }
   }
 }

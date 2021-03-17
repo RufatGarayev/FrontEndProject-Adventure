@@ -19,7 +19,6 @@ function getTourCount() {
 getTourCount();
 
 
-
 // showing alert when cart is empty
 function showAlert() {
   // taking the elements

@@ -22,7 +22,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 9977;
 }
 
 .show-dark-bgcolor {
@@ -401,9 +401,9 @@
       padding: 0;
       height: 100%;
       position: fixed;
+      z-index: 9999;
       top: 0px;
       left: 0;
-      z-index: 9999;
       width: 0;
       color: white;
       transition: 0.4s cubic-bezier(1, 0, 0, 1) !important;

@@ -162,7 +162,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 
 header nav .account li .login-box-holder .same-style-input-area .input-area, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area {
   width: 100%;
-  height: 50px;
+  height: 45px;
   position: relative;
 }
 
@@ -172,9 +172,9 @@ header nav .account li .login-box-holder .same-style-input-area .input-area:not(
 
 header nav .account li .login-box-holder .same-style-input-area .input-area input, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area input {
   border-radius: 4px;
-  padding: 0 25px;
+  padding: 0 42px 0 25px;
   width: 100%;
-  height: 50px;
+  height: 45px;
   outline: none;
   border: 1px solid #dbc5c5;
 }
@@ -183,13 +183,27 @@ header nav .account li .login-box-holder .same-style-input-area .input-area inpu
   border: 1px solid black;
 }
 
+@media (min-width: 250px) and (max-width: 374.98px) {
+  header nav .account li .login-box-holder .same-style-input-area .input-area input, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area input {
+    padding: 10px 42px 10px 15px !important;
+    font-size: 13px !important;
+  }
+}
+
 header nav .account li .login-box-holder .same-style-input-area .input-area i, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area i {
   position: absolute;
-  top: 18px;
+  top: 14px;
   right: 25px;
   font-size: 18px;
   color: red;
   z-index: 0;
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  header nav .account li .login-box-holder .same-style-input-area .input-area i, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area i {
+    font-size: 15px !important;
+    right: 15px !important;
+  }
 }
 
 header nav .account li .login-box-holder .same-style-input-area .input-area .success-icon, #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area .success-icon {
@@ -199,7 +213,7 @@ header nav .account li .login-box-holder .same-style-input-area .input-area .suc
 
 #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area .review-area {
   width: 100%;
-  padding: 13px 25px;
+  padding: 13px 42px 13px 25px;
   border-radius: 4px;
   border: 1px solid #dbc5c5;
 }
@@ -207,6 +221,12 @@ header nav .account li .login-box-holder .same-style-input-area .input-area .suc
 #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area .review-area:focus {
   border: 1px solid black;
   outline: 0;
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #tour .descAndReviews-wrapper .tab-items .reviews #review-form .input-area .review-area {
+    padding: 10px 42px 10px 15px !important;
+  }
 }
 
 footer .footer-top h4 {
@@ -239,9 +259,15 @@ footer .footer-top a:hover {
 
 header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder #reset-form .reset-password .alert, #subscribe .form-holder .alert {
   padding: 5px 0 0;
-  color: black;
+  color: red;
   font-weight: 400;
   font-size: 14px;
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder #reset-form .reset-password .alert, #subscribe .form-holder .alert {
+    font-size: 13px !important;
+  }
 }
 
 footer .footer-bottom .social-media ul li .instagram::before {
@@ -314,6 +340,20 @@ footer .footer-bottom .social-media ul li:hover .twitter::before {
   transition: 0.3s ease-in-out;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.dark-bgcolor {
+  position: fixed;
+  opacity: 0;
+  z-index: 9;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
 }
 
 * {
@@ -412,7 +452,7 @@ html {
 header {
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 9979;
 }
 
 header nav {
@@ -552,6 +592,17 @@ header nav .account li .login-box-holder {
 
 header nav .account li .login-box-holder .same-style-input-area {
   width: 100%;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .alert {
+  color: black;
+  font-size: 14px;
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  header nav .account li .login-box-holder .same-style-input-area .alert {
+    font-size: 12px !important;
+  }
 }
 
 header nav .account li .login-box-holder .same-style-input-area .forgot-area {
@@ -727,7 +778,7 @@ header nav .active-link hr {
     width: 355px !important;
     height: 97%;
     padding-left: 0;
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
     padding: 125px 0 0 64px !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -742,8 +793,8 @@ header nav .active-link hr {
     position: fixed;
     top: 33px;
     right: -100%;
-    -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
-    transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+    -webkit-transition: right 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: right 0.5s cubic-bezier(1, 0, 0, 1);
   }
   header .navbar .navbar-items .middle-links {
     height: 280px;
@@ -816,8 +867,8 @@ header nav .active-link hr {
     width: 100%;
     height: 3px;
     background-color: white;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   header .navbar .change .line-1 {
     -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
@@ -860,7 +911,7 @@ header nav .active-link hr {
     width: 325px !important;
     height: 98%;
     padding-left: 0;
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
     padding: 125px 0 0 64px !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -875,8 +926,8 @@ header nav .active-link hr {
     position: fixed;
     top: 33px;
     right: -100%;
-    -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
-    transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+    -webkit-transition: right 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: right 0.5s cubic-bezier(1, 0, 0, 1);
   }
   header .navbar .navbar-items .middle-links {
     height: 250px;
@@ -953,8 +1004,8 @@ header nav .active-link hr {
     width: 100%;
     height: 3px;
     background-color: white;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   header .navbar .change .line-1 {
     -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
@@ -1000,7 +1051,7 @@ header nav .active-link hr {
     width: 285px !important;
     height: 98%;
     padding-left: 0;
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
     padding: 106px 0 0 60px !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1015,8 +1066,8 @@ header nav .active-link hr {
     position: fixed;
     top: 33px;
     right: -100%;
-    -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
-    transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+    -webkit-transition: right 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: right 0.5s cubic-bezier(1, 0, 0, 1);
   }
   header .navbar .navbar-items .middle-links {
     height: 230px;
@@ -1097,8 +1148,8 @@ header nav .active-link hr {
     width: 100%;
     height: 3px;
     background-color: white;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   header .navbar .change .line-1 {
     -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
@@ -1158,8 +1209,8 @@ header nav .active-link hr {
     position: fixed;
     top: 33px;
     right: -100%;
-    -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
-    transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+    -webkit-transition: right 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: right 0.4s cubic-bezier(1, 0, 0, 1);
   }
   header .navbar .navbar-items .links {
     padding-top: 20px;
@@ -1216,16 +1267,6 @@ header nav .active-link hr {
     width: calc(100% - 27px) !important;
     padding: 38px 20px !important;
   }
-  header .navbar .account li .login-box-holder .same-style-input-area .input-area {
-    height: 45px !important;
-    font-size: 11px !important;
-  }
-  header .navbar .account li .login-box-holder .same-style-input-area .input-area input {
-    padding: 0 15px !important;
-  }
-  header .navbar .account li .login-box-holder .same-style-input-area .alert {
-    font-size: 11px !important;
-  }
   header .navbar .account li .login-box-holder .same-style-input-area .forgot-area a {
     font-size: 11px !important;
   }
@@ -1235,9 +1276,6 @@ header nav .active-link hr {
   header .navbar .account li .login-box-holder .same-style-input-area .bottom-links .sign-in {
     font-size: 13px !important;
     padding: 7px 20px !important;
-  }
-  header .navbar .account li .login-box-holder .reset-password .alert {
-    font-size: 11px !important;
   }
   header .navbar .account li .login-box-holder .reset-password .bottom-links .go-back {
     font-size: 13px !important;
@@ -1268,8 +1306,8 @@ header nav .active-link hr {
     width: 100%;
     height: 2px;
     background-color: white;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
   }
   header .navbar .change .line-1 {
     -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
@@ -1922,6 +1960,7 @@ footer .footer-bottom .social-media ul {
 }
 
 #intro .page-caption h1 {
+  text-align: center;
   color: white;
   font-family: ludicrous;
   text-transform: uppercase;
@@ -2131,6 +2170,95 @@ footer .footer-bottom .social-media ul {
   #our-advantages .holder hr {
     width: 24px !important;
   }
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  border-radius: 3px;
+  z-index: 10;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 12px 1px #968888;
+          box-shadow: 0 2px 12px 1px #968888;
+  width: 320px;
+  max-width: 80%;
+}
+
+#modal .modal-header {
+  padding: 7px 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0;
+}
+
+#modal .modal-header .close-button {
+  font-size: 14px;
+  color: #dc3545;
+}
+
+#modal .modal-header .close-button:hover {
+  text-decoration: none;
+}
+
+#modal .modal-body {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.active-modal {
+  -webkit-transform: translate(-50%, -50%) scale(1) !important;
+          transform: translate(-50%, -50%) scale(1) !important;
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #modal {
+    width: 280px;
+  }
+  #modal .modal-body p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #modal {
+    width: 280px;
+  }
+  #modal .modal-body {
+    padding-top: 10px;
+  }
+  #modal .modal-body h4 {
+    font-size: 22px;
+  }
+  #modal .modal-body p {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+.active-darkBg {
+  opacity: 1;
+  pointer-events: all;
 }
 
 #intro {

@@ -41,6 +41,22 @@
     </div>
     <!-- ======= Loader End ======= -->
 
+    <!-- ======= Modal Start ======= -->
+    <div id="modal">
+        <div class="modal-header">
+          <a href="javascript:void()" class="close-button">✖</a>
+        </div>
+        <div class="modal-body">
+            <h4>Thank You!</h4>
+            <p>Message was sent Successfully.</p>
+        </div>
+    </div>
+    <!-- ======= Modal End ======= -->
+
+    <!-- ======= Dark Bg-Color Start ======= -->
+    <div class="dark-bgcolor"></div>
+    <!-- ======= Dark Bg-Color End ======= -->
+
     <!-- ======= Back To Top Start ======= -->
     <button id="topBtn"><i class="flaticon-upload"></i></button>
     <!-- ======= Back To Top End ======= -->
@@ -238,28 +254,35 @@
                                 <div class="message">
                                     <form action="#" method="POST" id="send-msg">
                                         <div class="send-msg-box same-style-input-area">
+                                            <!-- name -->
                                             <div class="input-area">
                                                 <input class="name" type="text" name="name" placeholder="Name">
                                                 <i class="fas fa-check-circle d-none success-icon"></i>
                                                 <i class="fas fa-exclamation-circle d-none"></i>
                                                 <small class="name-alert alert"></small>
                                             </div>
+                                            <!-- email -->
                                             <div class="input-area">
                                                 <input class="send-msg-email" type="text" name="email"  placeholder="Email">
                                                 <i class="fas fa-check-circle d-none success-icon"></i>
                                                 <i class="fas fa-exclamation-circle d-none"></i>
                                                 <small class="msg-email-alert alert"></small>
                                             </div>
+                                            <!-- subject -->
                                             <div class="input-area">
                                                 <input class="subject" type="text" name="subject" placeholder="Subject">
                                                 <i class="fas fa-check-circle d-none success-icon"></i>
                                                 <i class="fas fa-exclamation-circle d-none"></i>
                                                 <small class="subject-alert alert"></small>
                                             </div>
+                                            <!-- message -->
                                             <div class="msg-area-holder input-area">
                                                 <textarea class="msg-area" name="message" rows="4" cols="55" placeholder="Message"></textarea>
+                                                <i class="fas fa-check-circle d-none success-icon"></i>
+                                                <i class="fas fa-exclamation-circle d-none"></i>
                                                 <small class="msg-alert alert"></small>
                                             </div>
+                                            <!-- send-btn -->
                                             <div class="bottom-links">
                                                 <button type="submit" class="sign-up-btn">Send</button>
                                             </div>

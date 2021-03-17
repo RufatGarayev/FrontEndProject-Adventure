@@ -66,9 +66,9 @@ $(document).ready(function () {
         $(".hamburger").removeClass("change");
         $(".sidebar-filter-toggle").removeClass("hide-filter-btn");
       }
-      else{
-        $(document.body).addClass("stop-scroll");
-      }
+      // else{
+      //   $(document.body).addClass("stop-scroll");
+      // }
     });
    });
   // ======= Show or Hide navbar items when click on Hamburger btn - End ======= //

@@ -147,7 +147,7 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 
 header nav .account li .login-box-holder .same-style-input-area .input-area {
   width: 100%;
-  height: 50px;
+  height: 45px;
   position: relative;
 }
 
@@ -157,9 +157,9 @@ header nav .account li .login-box-holder .same-style-input-area .input-area:not(
 
 header nav .account li .login-box-holder .same-style-input-area .input-area input {
   border-radius: 4px;
-  padding: 0 25px;
+  padding: 0 42px 0 25px;
   width: 100%;
-  height: 50px;
+  height: 45px;
   outline: none;
   border: 1px solid #dbc5c5;
 }
@@ -168,13 +168,27 @@ header nav .account li .login-box-holder .same-style-input-area .input-area inpu
   border: 1px solid black;
 }
 
+@media (min-width: 250px) and (max-width: 374.98px) {
+  header nav .account li .login-box-holder .same-style-input-area .input-area input {
+    padding: 10px 42px 10px 15px !important;
+    font-size: 13px !important;
+  }
+}
+
 header nav .account li .login-box-holder .same-style-input-area .input-area i {
   position: absolute;
-  top: 18px;
+  top: 14px;
   right: 25px;
   font-size: 18px;
   color: red;
   z-index: 0;
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  header nav .account li .login-box-holder .same-style-input-area .input-area i {
+    font-size: 15px !important;
+    right: 15px !important;
+  }
 }
 
 header nav .account li .login-box-holder .same-style-input-area .input-area .success-icon {
@@ -212,9 +226,15 @@ footer .footer-top a:hover {
 
 header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder #reset-form .reset-password .alert, #subscribe .form-holder .alert {
   padding: 5px 0 0;
-  color: black;
+  color: red;
   font-weight: 400;
   font-size: 14px;
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  header nav .account li .login-box-holder .same-style-input-area .alert, header nav .account li .login-box-holder #reset-form .reset-password .alert, #subscribe .form-holder .alert {
+    font-size: 13px !important;
+  }
 }
 
 #our-story .our-story-pic, #our-mission .our-mission-pic {
@@ -397,7 +417,7 @@ html {
 header {
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 9979;
 }
 
 header nav {
@@ -537,6 +557,17 @@ header nav .account li .login-box-holder {
 
 header nav .account li .login-box-holder .same-style-input-area {
   width: 100%;
+}
+
+header nav .account li .login-box-holder .same-style-input-area .alert {
+  color: black;
+  font-size: 14px;
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  header nav .account li .login-box-holder .same-style-input-area .alert {
+    font-size: 12px !important;
+  }
 }
 
 header nav .account li .login-box-holder .same-style-input-area .forgot-area {
@@ -712,7 +743,7 @@ header nav .active-link hr {
     width: 355px !important;
     height: 97%;
     padding-left: 0;
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
     padding: 125px 0 0 64px !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -727,8 +758,8 @@ header nav .active-link hr {
     position: fixed;
     top: 33px;
     right: -100%;
-    -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
-    transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+    -webkit-transition: right 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: right 0.5s cubic-bezier(1, 0, 0, 1);
   }
   header .navbar .navbar-items .middle-links {
     height: 280px;
@@ -801,8 +832,8 @@ header nav .active-link hr {
     width: 100%;
     height: 3px;
     background-color: white;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   header .navbar .change .line-1 {
     -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
@@ -845,7 +876,7 @@ header nav .active-link hr {
     width: 325px !important;
     height: 98%;
     padding-left: 0;
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
     padding: 125px 0 0 64px !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -860,8 +891,8 @@ header nav .active-link hr {
     position: fixed;
     top: 33px;
     right: -100%;
-    -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
-    transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+    -webkit-transition: right 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: right 0.5s cubic-bezier(1, 0, 0, 1);
   }
   header .navbar .navbar-items .middle-links {
     height: 250px;
@@ -938,8 +969,8 @@ header nav .active-link hr {
     width: 100%;
     height: 3px;
     background-color: white;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   header .navbar .change .line-1 {
     -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
@@ -985,7 +1016,7 @@ header nav .active-link hr {
     width: 285px !important;
     height: 98%;
     padding-left: 0;
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
     padding: 106px 0 0 60px !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1000,8 +1031,8 @@ header nav .active-link hr {
     position: fixed;
     top: 33px;
     right: -100%;
-    -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
-    transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+    -webkit-transition: right 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: right 0.5s cubic-bezier(1, 0, 0, 1);
   }
   header .navbar .navbar-items .middle-links {
     height: 230px;
@@ -1082,8 +1113,8 @@ header nav .active-link hr {
     width: 100%;
     height: 3px;
     background-color: white;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   header .navbar .change .line-1 {
     -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
@@ -1143,8 +1174,8 @@ header nav .active-link hr {
     position: fixed;
     top: 33px;
     right: -100%;
-    -webkit-transition: right 0.7s cubic-bezier(1, 0, 0, 1);
-    transition: right 0.7s cubic-bezier(1, 0, 0, 1);
+    -webkit-transition: right 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: right 0.4s cubic-bezier(1, 0, 0, 1);
   }
   header .navbar .navbar-items .links {
     padding-top: 20px;
@@ -1201,16 +1232,6 @@ header nav .active-link hr {
     width: calc(100% - 27px) !important;
     padding: 38px 20px !important;
   }
-  header .navbar .account li .login-box-holder .same-style-input-area .input-area {
-    height: 45px !important;
-    font-size: 11px !important;
-  }
-  header .navbar .account li .login-box-holder .same-style-input-area .input-area input {
-    padding: 0 15px !important;
-  }
-  header .navbar .account li .login-box-holder .same-style-input-area .alert {
-    font-size: 11px !important;
-  }
   header .navbar .account li .login-box-holder .same-style-input-area .forgot-area a {
     font-size: 11px !important;
   }
@@ -1220,9 +1241,6 @@ header nav .active-link hr {
   header .navbar .account li .login-box-holder .same-style-input-area .bottom-links .sign-in {
     font-size: 13px !important;
     padding: 7px 20px !important;
-  }
-  header .navbar .account li .login-box-holder .reset-password .alert {
-    font-size: 11px !important;
   }
   header .navbar .account li .login-box-holder .reset-password .bottom-links .go-back {
     font-size: 13px !important;
@@ -1253,8 +1271,8 @@ header nav .active-link hr {
     width: 100%;
     height: 2px;
     background-color: white;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
   }
   header .navbar .change .line-1 {
     -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
@@ -1907,6 +1925,7 @@ footer .footer-bottom .social-media ul {
 }
 
 #intro .page-caption h1 {
+  text-align: center;
   color: white;
   font-family: ludicrous;
   text-transform: uppercase;
