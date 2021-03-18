@@ -47,14 +47,16 @@ $(document).ready(function () {
    $(document).on("click", ".hamburger", function () {
     $(this).toggleClass("change");
     $(".navbar-items").toggleClass("active");
+    $(".dark-bgcolor").toggleClass("active-darkBg");
     $(".sidebar-filter-toggle").toggleClass("hide-filter-btn");
 
     if ($(".navbar-items").hasClass("active")) {
       $(document.body).addClass("stop-scroll");
+      $(".dark-bgcolor").addClass("active-darkBg");
     }else{
       $(document.body).removeClass("stop-scroll");
+      $(".dark-bgcolor").removeClass("active-darkBg");
     }
-
 
     // processes when click outside
     $(document).mouseup(function(e) {
@@ -62,13 +64,11 @@ $(document).ready(function () {
         !$("#top-header").is(e.target) && $("#top-header").has(e.target).length === 0)
       {
         $(document.body).removeClass("stop-scroll");
+        $(".dark-bgcolor").removeClass("active-darkBg");
         $(".navbar-items").removeClass("active");
         $(".hamburger").removeClass("change");
         $(".sidebar-filter-toggle").removeClass("hide-filter-btn");
       }
-      // else{
-      //   $(document.body).addClass("stop-scroll");
-      // }
     });
    });
   // ======= Show or Hide navbar items when click on Hamburger btn - End ======= //
@@ -82,19 +82,9 @@ $(document).ready(function () {
   // ======= Counter-Up End ======= //
 
   
-  // ======= Making visible or invisible the Search-Box and Login-Area on click and replacing icon - Start ======= //
-  // show or hide search-box and login-area, and change icons when click them
+  // ======= Making visible or invisible the Search-Box and Login-Area and replacing the icon when click the btn - Start ======= //
   $(document).on("click", ".icon-btn", function (e) {
     e.preventDefault();
-    if (!$(this).siblings().hasClass("visible") && !$(this).children().hasClass("flaticon-close")) {
-      $(this).siblings().addClass("visible").parent().siblings().children(".holder-div").removeClass("visible");
-      $(this).children().addClass("flaticon-close");
-      $(this).parent().siblings().find("i").removeClass("flaticon-close");
-    } else {
-      $(this).siblings().removeClass("visible");
-      $(this).children().removeClass("flaticon-close");
-    }
-
     // hide search-box and login-area, and change icons when click outside
     $(document).mouseup(function(e) {
       if (
@@ -103,10 +93,34 @@ $(document).ready(function () {
           !$(".icon-btn").is(e.target) && $(".icon-btn").has(e.target).length === 0
          )
       {
-        $(".search-area-holder").removeClass("visible").siblings().children().removeClass("flaticon-close");
-        $(".login-box-holder").removeClass("visible").siblings().children().removeClass("flaticon-close");
+        $(".search-area-holder").removeClass("visible").siblings().children().removeClass("flaticon-close").addClass("flaticon-search-interface-symbol");
+        $(".login-box-holder").removeClass("visible").siblings().children().removeClass("flaticon-close").addClass("flaticon-user-1");
       }
     });
+  });
+
+  // showing or hiding search-box and change icons when click the btn
+  $(document).on("click", ".search-btn-first", function () {
+    if (!$(this).siblings().hasClass("visible") && !$(this).children().hasClass("flaticon-close")) {
+      $(this).siblings().addClass("visible").parent().siblings().children(".holder-div").removeClass("visible");
+      $(this).children().addClass("flaticon-close").removeClass("flaticon-search-interface-symbol");
+      $(this).parent().siblings().find(".icon-btn i").removeClass("flaticon-close").addClass("flaticon-user-1");
+    } else {
+      $(this).siblings().removeClass("visible");
+      $(this).children().removeClass("flaticon-close").addClass("flaticon-search-interface-symbol");
+    }
+  });
+
+  // showing or hiding login-area and change icons when click the btn
+  $(document).on("click", ".user-btn", function () {
+    if (!$(this).siblings().hasClass("visible") && !$(this).children().hasClass("flaticon-close")) {
+      $(this).siblings().addClass("visible").parent().siblings().children(".holder-div").removeClass("visible");
+      $(this).children().addClass("flaticon-close").removeClass("flaticon-user-1");
+      $(this).parent().siblings().find(".icon-btn i").removeClass("flaticon-close").addClass("flaticon-search-interface-symbol");
+    } else {
+      $(this).siblings().removeClass("visible");
+      $(this).children().removeClass("flaticon-close").addClass("flaticon-user-1");
+    }
   });
   // ======= Making visible or invisible the Search-Box and Login-Area on click and replacing icon - End ======= //
 
@@ -192,25 +206,17 @@ $(document).ready(function () {
   $(document).on("click", ".sidebar-filter-toggle", function (e) {
     e.preventDefault();
     $(".sidebar-area").toggleClass("show-sidebar");
-    $(".dark-bgcolor").toggleClass("show-dark-bgcolor");
-
-    if ($(".sidebar-area").hasClass("show-sidebar")) {
-      $(document.body).addClass("stop-scroll");
-    }else{
-      $(document.body).removeClass("stop-scroll");
-    }
 
     // processes when click outside
     $(document).mouseup(function(e) {
       if (!$(".sidebar-area").is(e.target) && $(".sidebar-area").has(e.target).length === 0)
       {
         $(".sidebar-area").removeClass("show-sidebar");
-        $(".dark-bgcolor").removeClass("show-dark-bgcolor");
-        $(document.body).removeClass("stop-scroll");
       }
     });
   });
   // ======= Show or Hide Sidebar Filter - End ======= //
+
 
 
   // ======= Show appropriate Image when click a small image - Start ======= //

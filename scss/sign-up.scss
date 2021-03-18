@@ -11,12 +11,22 @@
 
 
 
+// ======= Dark Bg-color Start ======= //
+.dark-bgcolor{
+  @extend %dark-bg;
+}
+
+.active-darkBg {
+  opacity: 1;
+  pointer-events: all;
+}
+// ======= Dark Bg-color End ======= //
+
 // ======= Intro Section Start ======= //
 #intro {
   background-image: url(../img/bg-images/wood.jpg);
 }
 // ======= Intro Section End ======= //
-
 
 // ======= Sign Up Section Start ======= //
 #sign-up-section {

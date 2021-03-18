@@ -1,0 +1,173 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?6d1d28fc66b0ae410192df4c3261abb8") format("truetype"),
+url("./flaticon.woff?6d1d28fc66b0ae410192df4c3261abb8") format("woff"),
+url("./flaticon.woff2?6d1d28fc66b0ae410192df4c3261abb8") format("woff2"),
+url("./flaticon.eot?6d1d28fc66b0ae410192df4c3261abb8#iefix") format("embedded-opentype"),
+url("./flaticon.svg?6d1d28fc66b0ae410192df4c3261abb8#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "add-to-basket": "\f101",
+    "bike": "\f102",
+    "binoculars": "\f103",
+    "call": "\f104",
+    "camera-1": "\f105",
+    "camera": "\f106",
+    "camping-tent": "\f107",
+    "clock": "\f108",
+    "close": "\f109",
+    "community": "\f10a",
+    "compass": "\f10b",
+    "dollar": "\f10c",
+    "down-arrow": "\f10d",
+    "envelope": "\f10e",
+    "filter": "\f10f",
+    "hotel": "\f110",
+    "left-arrow": "\f111",
+    "loupe": "\f112",
+    "map": "\f113",
+    "medal": "\f114",
+    "minus-sign": "\f115",
+    "national-park": "\f116",
+    "phone-call": "\f117",
+    "pin": "\f118",
+    "pointed-star": "\f119",
+    "public-transport": "\f11a",
+    "remove": "\f11b",
+    "right-arrow-angle": "\f11c",
+    "schedule": "\f11d",
+    "search-interface-symbol": "\f11e",
+    "shopping-bag": "\f11f",
+    "steering-wheel": "\f120",
+    "street-sign": "\f121",
+    "traveller": "\f122",
+    "upload": "\f123",
+    "user-1": "\f124",
+    "user": "\f125",
+);
+
+.flaticon-add-to-basket:before {
+    content: map-get($flaticon-map, "add-to-basket");
+}
+.flaticon-bike:before {
+    content: map-get($flaticon-map, "bike");
+}
+.flaticon-binoculars:before {
+    content: map-get($flaticon-map, "binoculars");
+}
+.flaticon-call:before {
+    content: map-get($flaticon-map, "call");
+}
+.flaticon-camera-1:before {
+    content: map-get($flaticon-map, "camera-1");
+}
+.flaticon-camera:before {
+    content: map-get($flaticon-map, "camera");
+}
+.flaticon-camping-tent:before {
+    content: map-get($flaticon-map, "camping-tent");
+}
+.flaticon-clock:before {
+    content: map-get($flaticon-map, "clock");
+}
+.flaticon-close:before {
+    content: map-get($flaticon-map, "close");
+}
+.flaticon-community:before {
+    content: map-get($flaticon-map, "community");
+}
+.flaticon-compass:before {
+    content: map-get($flaticon-map, "compass");
+}
+.flaticon-dollar:before {
+    content: map-get($flaticon-map, "dollar");
+}
+.flaticon-down-arrow:before {
+    content: map-get($flaticon-map, "down-arrow");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon-map, "envelope");
+}
+.flaticon-filter:before {
+    content: map-get($flaticon-map, "filter");
+}
+.flaticon-hotel:before {
+    content: map-get($flaticon-map, "hotel");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon-map, "left-arrow");
+}
+.flaticon-loupe:before {
+    content: map-get($flaticon-map, "loupe");
+}
+.flaticon-map:before {
+    content: map-get($flaticon-map, "map");
+}
+.flaticon-medal:before {
+    content: map-get($flaticon-map, "medal");
+}
+.flaticon-minus-sign:before {
+    content: map-get($flaticon-map, "minus-sign");
+}
+.flaticon-national-park:before {
+    content: map-get($flaticon-map, "national-park");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}
+.flaticon-pin:before {
+    content: map-get($flaticon-map, "pin");
+}
+.flaticon-pointed-star:before {
+    content: map-get($flaticon-map, "pointed-star");
+}
+.flaticon-public-transport:before {
+    content: map-get($flaticon-map, "public-transport");
+}
+.flaticon-remove:before {
+    content: map-get($flaticon-map, "remove");
+}
+.flaticon-right-arrow-angle:before {
+    content: map-get($flaticon-map, "right-arrow-angle");
+}
+.flaticon-schedule:before {
+    content: map-get($flaticon-map, "schedule");
+}
+.flaticon-search-interface-symbol:before {
+    content: map-get($flaticon-map, "search-interface-symbol");
+}
+.flaticon-shopping-bag:before {
+    content: map-get($flaticon-map, "shopping-bag");
+}
+.flaticon-steering-wheel:before {
+    content: map-get($flaticon-map, "steering-wheel");
+}
+.flaticon-street-sign:before {
+    content: map-get($flaticon-map, "street-sign");
+}
+.flaticon-traveller:before {
+    content: map-get($flaticon-map, "traveller");
+}
+.flaticon-upload:before {
+    content: map-get($flaticon-map, "upload");
+}
+.flaticon-user-1:before {
+    content: map-get($flaticon-map, "user-1");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
