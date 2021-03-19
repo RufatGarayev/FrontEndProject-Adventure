@@ -345,7 +345,7 @@ html {
 
 @font-face {
   font-family: "ludicrous";
-  src: url(../WOFF-web-fonts/Ludicrous.woff);
+  src: url(/other/WOFF-web-fonts/Ludicrous.woff);
   font-weight: 100;
 }
 
