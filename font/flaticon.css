@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon";
-    src: url("./flaticon.ttf?6d1d28fc66b0ae410192df4c3261abb8") format("truetype"),
-url("./flaticon.woff?6d1d28fc66b0ae410192df4c3261abb8") format("woff"),
-url("./flaticon.woff2?6d1d28fc66b0ae410192df4c3261abb8") format("woff2"),
-url("./flaticon.eot?6d1d28fc66b0ae410192df4c3261abb8#iefix") format("embedded-opentype"),
-url("./flaticon.svg?6d1d28fc66b0ae410192df4c3261abb8#flaticon") format("svg");
+    src: url("./flaticon.ttf?a9c85ba09824df22fa58307fec521126") format("truetype"),
+url("./flaticon.woff?a9c85ba09824df22fa58307fec521126") format("woff"),
+url("./flaticon.woff2?a9c85ba09824df22fa58307fec521126") format("woff2"),
+url("./flaticon.eot?a9c85ba09824df22fa58307fec521126#iefix") format("embedded-opentype"),
+url("./flaticon.svg?a9c85ba09824df22fa58307fec521126#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -51,81 +51,72 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-compass:before {
     content: "\f10b";
 }
-.flaticon-dollar:before {
+.flaticon-down-arrow:before {
     content: "\f10c";
 }
-.flaticon-down-arrow:before {
+.flaticon-envelope:before {
     content: "\f10d";
 }
-.flaticon-envelope:before {
+.flaticon-filter:before {
     content: "\f10e";
 }
-.flaticon-filter:before {
+.flaticon-hotel:before {
     content: "\f10f";
 }
-.flaticon-hotel:before {
+.flaticon-left-arrow:before {
     content: "\f110";
 }
-.flaticon-left-arrow:before {
+.flaticon-map:before {
     content: "\f111";
 }
-.flaticon-loupe:before {
+.flaticon-medal:before {
     content: "\f112";
 }
-.flaticon-map:before {
+.flaticon-minus-sign:before {
     content: "\f113";
 }
-.flaticon-medal:before {
+.flaticon-national-park:before {
     content: "\f114";
 }
-.flaticon-minus-sign:before {
+.flaticon-phone-call:before {
     content: "\f115";
 }
-.flaticon-national-park:before {
+.flaticon-pin:before {
     content: "\f116";
 }
-.flaticon-phone-call:before {
+.flaticon-pointed-star:before {
     content: "\f117";
 }
-.flaticon-pin:before {
+.flaticon-public-transport:before {
     content: "\f118";
 }
-.flaticon-pointed-star:before {
+.flaticon-remove:before {
     content: "\f119";
 }
-.flaticon-public-transport:before {
+.flaticon-right-arrow-angle:before {
     content: "\f11a";
 }
-.flaticon-remove:before {
+.flaticon-schedule:before {
     content: "\f11b";
 }
-.flaticon-right-arrow-angle:before {
+.flaticon-search-interface-symbol:before {
     content: "\f11c";
 }
-.flaticon-schedule:before {
+.flaticon-shopping-bag:before {
     content: "\f11d";
 }
-.flaticon-search-interface-symbol:before {
+.flaticon-steering-wheel:before {
     content: "\f11e";
 }
-.flaticon-shopping-bag:before {
+.flaticon-street-sign:before {
     content: "\f11f";
 }
-.flaticon-steering-wheel:before {
+.flaticon-traveller:before {
     content: "\f120";
 }
-.flaticon-street-sign:before {
+.flaticon-upload:before {
     content: "\f121";
 }
-.flaticon-traveller:before {
-    content: "\f122";
-}
-.flaticon-upload:before {
-    content: "\f123";
-}
-.flaticon-user-1:before {
-    content: "\f124";
-}
 .flaticon-user:before {
-    content: "\f125";
+    content: "\f122";
 }

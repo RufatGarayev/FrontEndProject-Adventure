@@ -5,7 +5,7 @@ $(document).ready(function () {
       $(".login-email-alert").hide();
       $(".login-pass-alert").hide();
 
-      // errors 
+      // errors = false
       let login_error_email = false;
       let login_error_password = false;
 
@@ -80,14 +80,17 @@ $(document).ready(function () {
       $("#login").submit(function (e) {
          e.preventDefault();
 
+         // errors = false
          login_error_email = false;
          login_error_password = false;
 
+         // called functions
          check_login_email();
          check_login_password();
 
          if (login_error_email === false && login_error_password === false) {
-            alert("Login Successfull");
+            modalMsg();
+            $("#modal p").text("Login Successful.");
             return true;
          } else {
             return false;
@@ -154,7 +157,6 @@ $(document).ready(function () {
             $(".success").removeClass("hidden");
             return true;
          } else {
-            alert("Please Fill the Email Correctly");
             return false;
          }
       });
@@ -212,7 +214,8 @@ $(document).ready(function () {
          check_subscribe_email();
 
          if (error_subs_email === false) {
-            alert("You subscribed Correctly. Thank You!");
+            modalMsg();
+            $("#modal p").text("You subscribed Correctly.");
             return true;
          } else {
             return false;
@@ -231,7 +234,7 @@ $(document).ready(function () {
       $(".repeat-pass-alert").hide();
       $(".checkbox-alert").hide();
 
-      // errors 
+      // errors = false
       let error_username = false;
       let error_email = false;
       let error_password = false;
@@ -397,12 +400,14 @@ $(document).ready(function () {
       $("#sign-up").submit(function (e) {
          e.preventDefault();
 
+         // errors = false
          error_username = false;
          error_email = false;
          error_password = false;
          error_repeat_pass = false;
          error_checkbox = false;
 
+         // called functions
          check_username();
          check_email();
          check_password();
@@ -412,7 +417,8 @@ $(document).ready(function () {
          if (error_username === false && error_email === false &&
             error_password === false && error_repeat_pass === false &&
             error_checkbox === false) {
-            alert("Registration Successfull");
+            modalMsg();
+            $("#modal p").text("Sign Up Successful.");
             return true;
          } else {
             return false;
@@ -430,7 +436,7 @@ $(document).ready(function () {
       $(".subject-alert").hide();
       $(".msg-alert").hide();
 
-      // errors 
+      // errors = false
       let msg_error_name = false;
       let msg_error_email = false;
       let msg_error_subject = false;
@@ -568,35 +574,22 @@ $(document).ready(function () {
       $("#send-msg").submit(function (e) {
          e.preventDefault();
 
+         // errors = false
          msg_error_name = false;
          msg_error_email = false;
          msg_error_subject = false;
          msg_error_message = false;
 
+         // called functions
          check_msg_name();
          check_msg_email();
          check_msg_subject();
          check_message();
 
-         if (msg_error_name === false && msg_error_email === false && msg_error_subject === false && msg_error_message === false) {
-            function modalMsg() {
-               $("#modal").addClass("active-modal");
-               $(".dark-bgcolor").addClass("active-darkBg");
-
-               function closeModal() {
-                  $("#modal").removeClass("active-modal");
-                  $(".dark-bgcolor").removeClass("active-darkBg");
-               }
-
-               $(document).on("click", ".dark-bgcolor", () => {
-                  closeModal();
-               });
-
-               $(document).on("click", "#modal .close-button", () => {
-                  closeModal();
-               });
-            }
+         if (msg_error_name === false && msg_error_email === false && 
+            msg_error_subject === false && msg_error_message === false) {
             modalMsg();
+            $("#modal p").text("Message was sent Successfully.");
             return true;
          } else {
             return false;
@@ -606,29 +599,15 @@ $(document).ready(function () {
    // ======= Send Message Validation End ======= //
 
 
-
-   // =========== Jquery Validation Plugin =========== //
+   // =========== Jquery Validation Plugin Start =========== //
 
    // ======= Review(Tour Details) Validation Start ======= //
    $(function () {
       // the processes that take place in the submission
       $.validator.setDefaults({
          submitHandler: function () {
-            $("#modal").addClass("active-modal");
-            $(".dark-bgcolor").addClass("active-darkBg");
-
-            function closeModal() {
-               $("#modal").removeClass("active-modal");
-               $(".dark-bgcolor").removeClass("active-darkBg");
-            }
-
-            $(document).on("click", ".dark-bgcolor", () => {
-               closeModal();
-            });
-
-            $(document).on("click", "#modal .close-button", () => {
-               closeModal();
-            });
+            modalMsg();
+            $("#modal p").text("Message was sent Successfully.");
          }
       });
 
@@ -730,4 +709,27 @@ $(document).ready(function () {
       });
    });
    // ======= Checkout Validation End ======= //
+
+   // =========== Jquery Validation Plugin Start =========== //
+
+
+   // ======= modalMsg function Start ======= //
+   function modalMsg() {
+      $("#modal").addClass("active-modal");
+      $(".dark-bgcolor").addClass("active-darkBg");
+
+      function closeModal() {
+         $("#modal").removeClass("active-modal");
+         $(".dark-bgcolor").removeClass("active-darkBg");
+      }
+
+      $(document).on("click", ".dark-bgcolor", () => {
+         closeModal();
+      });
+
+      $(document).on("click", "#modal .close-button", () => {
+         closeModal();
+      });
+   }
+   // ======= modalMsg function End ======= //
 });

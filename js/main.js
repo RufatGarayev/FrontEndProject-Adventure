@@ -8,32 +8,23 @@ $(document).ready(function () {
 
   // ======= Events On Scroll Start ======= //
   // === Nav Bg-Color Start === //
-  let color = "#000000";
-  let rgbaCol =
-    "rgba(" +
-    parseInt(color.slice(-6, -4), 16) +
-    "," +
-    parseInt(color.slice(-4, -2), 16) +
-    "," +
-    parseInt(color.slice(-2), 16) +
-    ",0.5)";
-
   window.onscroll = function () {
     if ($(window).scrollTop() >= 600) {
-      $("nav").css("background-color", "black");
+      $(".navbar").addClass("navbarBg-darkBlack");
     } else {
-      $("nav").css("background-color", rgbaCol);
+      $(".navbar").removeClass("navbarBg-darkBlack");
+      $(".navbar").addClass("navbarBg-lightBlack");
     }
     // === Nav Bg-Color End === //
 
     // === Header Position Start === //
     if ($(window).scrollTop() >= 33) {
-      $("header").css("top", "0px");
+      $("header").addClass("sticky");
       $(".search-area-holder").css("top", "80px");
       $(".login-box-holder").css("top", "80px");
       $(".navbar-items").css({ height: "100%", top: "0px" });
     } else {
-      $("header").css("top", "33px");
+      $("header").removeClass("sticky");
       $(".search-area-holder").css("top", "112px");
       $(".login-box-holder").css("top", "112px");
       $(".navbar-items").css({ height: "98%", top: "33px" });
@@ -94,7 +85,7 @@ $(document).ready(function () {
          )
       {
         $(".search-area-holder").removeClass("visible").siblings().children().removeClass("flaticon-close").addClass("flaticon-search-interface-symbol");
-        $(".login-box-holder").removeClass("visible").siblings().children().removeClass("flaticon-close").addClass("flaticon-user-1");
+        $(".login-box-holder").removeClass("visible").siblings().children().removeClass("flaticon-close").addClass("flaticon-user");
       }
     });
   });
@@ -104,7 +95,7 @@ $(document).ready(function () {
     if (!$(this).siblings().hasClass("visible") && !$(this).children().hasClass("flaticon-close")) {
       $(this).siblings().addClass("visible").parent().siblings().children(".holder-div").removeClass("visible");
       $(this).children().addClass("flaticon-close").removeClass("flaticon-search-interface-symbol");
-      $(this).parent().siblings().find(".icon-btn i").removeClass("flaticon-close").addClass("flaticon-user-1");
+      $(this).parent().siblings().find(".icon-btn i").removeClass("flaticon-close").addClass("flaticon-user");
     } else {
       $(this).siblings().removeClass("visible");
       $(this).children().removeClass("flaticon-close").addClass("flaticon-search-interface-symbol");
@@ -115,11 +106,11 @@ $(document).ready(function () {
   $(document).on("click", ".user-btn", function () {
     if (!$(this).siblings().hasClass("visible") && !$(this).children().hasClass("flaticon-close")) {
       $(this).siblings().addClass("visible").parent().siblings().children(".holder-div").removeClass("visible");
-      $(this).children().addClass("flaticon-close").removeClass("flaticon-user-1");
+      $(this).children().addClass("flaticon-close").removeClass("flaticon-user");
       $(this).parent().siblings().find(".icon-btn i").removeClass("flaticon-close").addClass("flaticon-search-interface-symbol");
     } else {
       $(this).siblings().removeClass("visible");
-      $(this).children().removeClass("flaticon-close").addClass("flaticon-user-1");
+      $(this).children().removeClass("flaticon-close").addClass("flaticon-user");
     }
   });
   // ======= Making visible or invisible the Search-Box and Login-Area on click and replacing icon - End ======= //

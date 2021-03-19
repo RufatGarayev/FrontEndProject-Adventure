@@ -354,6 +354,11 @@ html {
   overflow: hidden;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
 #top-header {
   background-color: black;
   border-bottom: 1px solid #6c6e70;
@@ -469,9 +474,17 @@ html {
 }
 
 header {
-  position: fixed;
   width: 100%;
   z-index: 9979;
+  position: absolute;
+}
+
+header .navbarBg-lightBlack {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .navbarBg-darkBlack {
+  background-color: black;
 }
 
 header nav {
@@ -589,7 +602,7 @@ header nav .account li .search-area-holder input[type="text"]:focus {
 
 header nav .account li .search-area-holder a {
   position: absolute;
-  top: 11px;
+  top: 15px;
   right: 15px;
 }
 
@@ -785,9 +798,6 @@ header nav .active-link hr {
   #top-header {
     padding: 0 36px 0 42px !important;
   }
-  #top-header .langs {
-    padding-top: 3px;
-  }
   #top-header .social-media {
     display: none !important;
   }
@@ -953,9 +963,6 @@ header nav .active-link hr {
   #top-header .social-media {
     display: none !important;
   }
-  #top-header .langs {
-    padding-top: 3px;
-  }
   #top-header .langs ul li {
     width: 38px !important;
     font-size: 16px !important;
@@ -1120,20 +1127,17 @@ header nav .active-link hr {
     padding: 0 14px 0 21px !important;
   }
   #top-header .phone {
-    padding-top: 5px;
+    padding-top: 4px;
   }
   #top-header .phone span {
-    font-size: 14px !important;
+    font-size: 13px !important;
   }
   #top-header .social-media {
     display: none !important;
   }
-  #top-header .langs {
-    padding-top: 3px;
-  }
   #top-header .langs ul li {
     width: 36px !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
   header .navbar {
     height: 75px;
@@ -1300,16 +1304,13 @@ header nav .active-link hr {
     padding: 0 7px 0 14px !important;
   }
   #top-header .phone {
-    padding-top: 5px;
+    padding-top: 4px;
   }
   #top-header .phone span {
     font-size: 11px !important;
   }
   #top-header .social-media {
     display: none !important;
-  }
-  #top-header .langs {
-    padding-top: 3px;
   }
   #top-header .langs ul li {
     width: 32px !important;
@@ -1558,6 +1559,7 @@ footer .footer-bottom {
 }
 
 footer .footer-bottom .copyright-holder p {
+  margin-top: 5px;
   font-size: 15px;
   font-weight: 200;
 }
@@ -2180,6 +2182,90 @@ footer .footer-bottom .social-media ul {
   }
   #intro .page-caption h1 {
     font-size: 44px;
+  }
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  border-radius: 3px;
+  z-index: 99999;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 12px 1px #968888;
+          box-shadow: 0 2px 12px 1px #968888;
+  width: 320px;
+  max-width: 80%;
+}
+
+#modal .modal-header {
+  padding: 7px 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0;
+}
+
+#modal .modal-header .close-button {
+  font-size: 14px;
+  color: #dc3545;
+}
+
+#modal .modal-header .close-button:hover {
+  text-decoration: none;
+}
+
+#modal .modal-body {
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.active-modal {
+  -webkit-transform: translate(-50%, -50%) scale(1) !important;
+          transform: translate(-50%, -50%) scale(1) !important;
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #modal {
+    width: 280px;
+  }
+  #modal .modal-body p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 374.98px) {
+  #modal {
+    width: 280px;
+  }
+  #modal .modal-body {
+    padding-top: 10px;
+  }
+  #modal .modal-body h4 {
+    font-size: 22px;
+  }
+  #modal .modal-body p {
+    font-size: 13px;
+    text-align: center;
   }
 }
 

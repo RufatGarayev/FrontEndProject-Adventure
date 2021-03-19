@@ -9,6 +9,7 @@
 @import "../scss/reused_sections/back-to-top";
 @import "../scss/reused_sections/main_tourItem_design";
 @import "../scss/reused_sections/our-advantages";
+@import "../scss/reused_sections/modal";
 
 
 
@@ -179,6 +180,7 @@
   .view-tours-text {
     justify-content: flex-end;
     i {
+      display: flex;
       &::before {
         font-size: 48px;
         color: $icon-color;
@@ -193,7 +195,6 @@
   }
 
   .view-tours-btn {
-    padding-top: 15px;
     text-align: left;
     a {
       @extend %website-button;

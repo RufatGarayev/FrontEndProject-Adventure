@@ -8,6 +8,7 @@
 @import "../scss/reused_sections/subscribe";
 @import "../scss/reused_sections/back-to-top";
 @import "../scss/reused_sections/intro-page_caption";
+@import "../scss/reused_sections/modal";
 
 
 
@@ -314,16 +315,18 @@
           margin-left: 0;
         }
       }
-
+      
       .vertical {
-        position: absolute;
-        right: 21px;
         transform: rotate(90deg);
+        position: absolute;
+        bottom: 14px;
+        right: 21px;
       }
 
       .icon-rotate {
         transform: rotate(0deg);
         transition: all 0.5s ease;
+        bottom: 25%;
       }
     }
 

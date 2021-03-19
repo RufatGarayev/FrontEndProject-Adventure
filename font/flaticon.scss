@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?6d1d28fc66b0ae410192df4c3261abb8") format("truetype"),
-url("./flaticon.woff?6d1d28fc66b0ae410192df4c3261abb8") format("woff"),
-url("./flaticon.woff2?6d1d28fc66b0ae410192df4c3261abb8") format("woff2"),
-url("./flaticon.eot?6d1d28fc66b0ae410192df4c3261abb8#iefix") format("embedded-opentype"),
-url("./flaticon.svg?6d1d28fc66b0ae410192df4c3261abb8#flaticon") format("svg");
+    src: url("./flaticon.ttf?a9c85ba09824df22fa58307fec521126") format("truetype"),
+url("./flaticon.woff?a9c85ba09824df22fa58307fec521126") format("woff"),
+url("./flaticon.woff2?a9c85ba09824df22fa58307fec521126") format("woff2"),
+url("./flaticon.eot?a9c85ba09824df22fa58307fec521126#iefix") format("embedded-opentype"),
+url("./flaticon.svg?a9c85ba09824df22fa58307fec521126#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -32,32 +32,29 @@ $flaticon-map: (
     "close": "\f109",
     "community": "\f10a",
     "compass": "\f10b",
-    "dollar": "\f10c",
-    "down-arrow": "\f10d",
-    "envelope": "\f10e",
-    "filter": "\f10f",
-    "hotel": "\f110",
-    "left-arrow": "\f111",
-    "loupe": "\f112",
-    "map": "\f113",
-    "medal": "\f114",
-    "minus-sign": "\f115",
-    "national-park": "\f116",
-    "phone-call": "\f117",
-    "pin": "\f118",
-    "pointed-star": "\f119",
-    "public-transport": "\f11a",
-    "remove": "\f11b",
-    "right-arrow-angle": "\f11c",
-    "schedule": "\f11d",
-    "search-interface-symbol": "\f11e",
-    "shopping-bag": "\f11f",
-    "steering-wheel": "\f120",
-    "street-sign": "\f121",
-    "traveller": "\f122",
-    "upload": "\f123",
-    "user-1": "\f124",
-    "user": "\f125",
+    "down-arrow": "\f10c",
+    "envelope": "\f10d",
+    "filter": "\f10e",
+    "hotel": "\f10f",
+    "left-arrow": "\f110",
+    "map": "\f111",
+    "medal": "\f112",
+    "minus-sign": "\f113",
+    "national-park": "\f114",
+    "phone-call": "\f115",
+    "pin": "\f116",
+    "pointed-star": "\f117",
+    "public-transport": "\f118",
+    "remove": "\f119",
+    "right-arrow-angle": "\f11a",
+    "schedule": "\f11b",
+    "search-interface-symbol": "\f11c",
+    "shopping-bag": "\f11d",
+    "steering-wheel": "\f11e",
+    "street-sign": "\f11f",
+    "traveller": "\f120",
+    "upload": "\f121",
+    "user": "\f122",
 );
 
 .flaticon-add-to-basket:before {
@@ -93,9 +90,6 @@ $flaticon-map: (
 .flaticon-compass:before {
     content: map-get($flaticon-map, "compass");
 }
-.flaticon-dollar:before {
-    content: map-get($flaticon-map, "dollar");
-}
 .flaticon-down-arrow:before {
     content: map-get($flaticon-map, "down-arrow");
 }
@@ -110,9 +104,6 @@ $flaticon-map: (
 }
 .flaticon-left-arrow:before {
     content: map-get($flaticon-map, "left-arrow");
-}
-.flaticon-loupe:before {
-    content: map-get($flaticon-map, "loupe");
 }
 .flaticon-map:before {
     content: map-get($flaticon-map, "map");
@@ -164,9 +155,6 @@ $flaticon-map: (
 }
 .flaticon-upload:before {
     content: map-get($flaticon-map, "upload");
-}
-.flaticon-user-1:before {
-    content: map-get($flaticon-map, "user-1");
 }
 .flaticon-user:before {
     content: map-get($flaticon-map, "user");

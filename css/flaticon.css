@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "flaticon";
-  src: url("./flaticon.ttf?6d1d28fc66b0ae410192df4c3261abb8") format("truetype"), url("./flaticon.woff?6d1d28fc66b0ae410192df4c3261abb8") format("woff"), url("./flaticon.woff2?6d1d28fc66b0ae410192df4c3261abb8") format("woff2"), url("./flaticon.eot?6d1d28fc66b0ae410192df4c3261abb8#iefix") format("embedded-opentype"), url("./flaticon.svg?6d1d28fc66b0ae410192df4c3261abb8#flaticon") format("svg");
+  src: url("./flaticon.ttf?a9c85ba09824df22fa58307fec521126") format("truetype"), url("./flaticon.woff?a9c85ba09824df22fa58307fec521126") format("woff"), url("./flaticon.woff2?a9c85ba09824df22fa58307fec521126") format("woff2"), url("./flaticon.eot?a9c85ba09824df22fa58307fec521126#iefix") format("embedded-opentype"), url("./flaticon.svg?a9c85ba09824df22fa58307fec521126#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -59,107 +59,95 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
   content: "";
 }
 
-.flaticon-dollar:before {
+.flaticon-down-arrow:before {
   content: "";
 }
 
-.flaticon-down-arrow:before {
+.flaticon-envelope:before {
   content: "";
 }
 
-.flaticon-envelope:before {
+.flaticon-filter:before {
   content: "";
 }
 
-.flaticon-filter:before {
+.flaticon-hotel:before {
   content: "";
 }
 
-.flaticon-hotel:before {
+.flaticon-left-arrow:before {
   content: "";
 }
 
-.flaticon-left-arrow:before {
+.flaticon-map:before {
   content: "";
 }
 
-.flaticon-loupe:before {
+.flaticon-medal:before {
   content: "";
 }
 
-.flaticon-map:before {
+.flaticon-minus-sign:before {
   content: "";
 }
 
-.flaticon-medal:before {
+.flaticon-national-park:before {
   content: "";
 }
 
-.flaticon-minus-sign:before {
+.flaticon-phone-call:before {
   content: "";
 }
 
-.flaticon-national-park:before {
+.flaticon-pin:before {
   content: "";
 }
 
-.flaticon-phone-call:before {
+.flaticon-pointed-star:before {
   content: "";
 }
 
-.flaticon-pin:before {
+.flaticon-public-transport:before {
   content: "";
 }
 
-.flaticon-pointed-star:before {
+.flaticon-remove:before {
   content: "";
 }
 
-.flaticon-public-transport:before {
+.flaticon-right-arrow-angle:before {
   content: "";
 }
 
-.flaticon-remove:before {
+.flaticon-schedule:before {
   content: "";
 }
 
-.flaticon-right-arrow-angle:before {
+.flaticon-search-interface-symbol:before {
   content: "";
 }
 
-.flaticon-schedule:before {
+.flaticon-shopping-bag:before {
   content: "";
 }
 
-.flaticon-search-interface-symbol:before {
+.flaticon-steering-wheel:before {
   content: "";
 }
 
-.flaticon-shopping-bag:before {
+.flaticon-street-sign:before {
   content: "";
 }
 
-.flaticon-steering-wheel:before {
+.flaticon-traveller:before {
   content: "";
 }
 
-.flaticon-street-sign:before {
+.flaticon-upload:before {
   content: "";
 }
 
-.flaticon-traveller:before {
-  content: "";
-}
-
-.flaticon-upload:before {
-  content: "";
-}
-
-.flaticon-user-1:before {
-  content: "";
-}
-
 .flaticon-user:before {
-  content: "";
+  content: "";
 }
 /*# sourceMappingURL=flaticon.css.map */

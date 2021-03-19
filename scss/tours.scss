@@ -9,6 +9,7 @@
 @import "../scss/reused_sections/back-to-top";
 @import "../scss/reused_sections/intro-page_caption";
 @import "../scss/reused_sections/main_tourItem_design";
+@import "../scss/reused_sections/modal";
 
 
 
@@ -134,6 +135,9 @@
       top: calc(64% - 30px);
       right: -43px;
       border-radius: 0 5px 5px 0;
+      &:hover{
+        text-decoration: none;
+      }
 
       i {
         line-height: 70px;
@@ -326,6 +330,9 @@
         a {
           color: rgb(58, 59, 116);
           border-radius: 4px;
+          &:focus{
+            box-shadow: none;
+          }
           &:hover {
             background-color: white;
             border: 1px solid rgb(58, 59, 116);
@@ -818,7 +825,7 @@
         height: 38px;
         right: -38px;
         i {
-          line-height: 39px;
+          line-height: 59px;
           &::before {
             font-size: 32px;
           }
