@@ -852,6 +852,10 @@ header nav .account li .login-box-holder #reset-form .reset-password p {
   color: white;
 }
 
+header nav .account li .login-box-holder #reset-form .reset-password .alert {
+  color: black;
+}
+
 header nav .account li .login-box-holder #reset-form .reset-password .bottom-links {
   padding-top: 20px !important;
 }
@@ -2232,31 +2236,79 @@ footer .footer-bottom .social-media ul {
   width: 45px;
   height: 50px;
   border-radius: 4px;
-  line-height: 45px;
   background-color: #3a3b74;
   -webkit-transform: translateY(200px);
           transform: translateY(200px);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  overflow: hidden;
   visibility: hidden;
   -webkit-transition: 0.6s all;
   transition: 0.6s all;
   z-index: 999;
-  opacity: 0.8;
-}
-
-#topBtn:hover {
-  opacity: 1;
 }
 
 #topBtn:focus {
   outline: none;
 }
 
-#topBtn i::before {
+#topBtn .up-arrow {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
+  opacity: 1;
+  visibility: visible;
+}
+
+#topBtn .up-arrow i::before {
+  color: white;
+  font-size: 15px;
+  margin-left: 0;
+}
+
+#topBtn .go-up {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  opacity: 0;
+  visibility: hidden;
+}
+
+#topBtn .go-up span {
+  position: absolute;
   color: white;
   font-size: 18px;
-  margin-left: 0;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#topBtn .go-up span:first-of-type {
+  right: 7px;
+  top: -18px;
+}
+
+#topBtn .go-up span:last-of-type {
+  right: 8px;
+  top: -2px;
+}
+
+#topBtn:hover .up-arrow {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#topBtn:hover .go-up {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
@@ -2472,7 +2524,7 @@ footer .footer-bottom .social-media ul {
 #our-advantages {
   position: relative;
   overflow: hidden;
-  padding: 66px 0 99px 0;
+  padding: 60px 0 80px 0;
   background-color: #769484;
 }
 
@@ -2486,8 +2538,8 @@ footer .footer-bottom .social-media ul {
 }
 
 #our-advantages .main-holder .holder {
-  padding: 40px 5px 0 5px;
-  height: 257px;
+  padding: 40px 10px 0 10px;
+  height: 265px;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
@@ -2534,9 +2586,15 @@ footer .footer-bottom .social-media ul {
   }
 }
 
+@media (min-width: 315px) and (max-width: 374.98px) {
+  #our-advantages .main-holder .holder {
+    padding: 32px 55px 0 55px !important;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #our-advantages {
-    padding: 80px 0 145px 0 !important;
+    padding: 50px 0 90px 0 !important;
   }
   #our-advantages .holder h4 {
     font-size: 22px !important;
@@ -2545,28 +2603,29 @@ footer .footer-bottom .social-media ul {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   #our-advantages {
-    padding: 80px 0 100px 0 !important;
+    padding: 60px 0 70px 0 !important;
   }
   #our-advantages .holder {
+    padding: 40px 40px 0 40px !important;
+    height: 245px !important;
     margin: 20px 0;
-    padding: 0 10px;
     font-size: 17px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #our-advantages {
-    padding: 120px 0 140px 0 !important;
+    padding: 60px 0 75px 0 !important;
   }
   #our-advantages .caption {
     padding-bottom: 40px;
   }
   #our-advantages .holder {
-    padding: 40px 90px 0 90px !important;
-    height: 280px !important;
+    padding: 40px 0 !important;
+    height: 270px !important;
   }
   #our-advantages .holder .icon-holder i::before {
-    font-size: 70px !important;
+    font-size: 60px !important;
   }
   #our-advantages .holder hr {
     height: 1px !important;
@@ -2576,14 +2635,11 @@ footer .footer-bottom .social-media ul {
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #our-advantages {
-    padding: 80px 0 100px 0 !important;
-  }
-  #our-advantages .caption h1 {
-    padding: 40px 0 80px 0 !important;
+    padding: 65px 0 95px 0 !important;
   }
   #our-advantages .holder {
-    padding: 40px 70px 0 70px !important;
-    height: 280px !important;
+    padding: 40px 50px 0 50px !important;
+    height: 245px !important;
     font-size: 17px;
   }
   #our-advantages .holder i::before {
@@ -2600,16 +2656,13 @@ footer .footer-bottom .social-media ul {
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #our-advantages {
-    padding: 50px 0 65px 0 !important;
+    padding: 40px 0 70px 0 !important;
   }
   #our-advantages .caption {
     height: 110px !important;
   }
-  #our-advantages .caption h1 {
-    padding: 20px 0 80px 0 !important;
-  }
   #our-advantages .holder {
-    height: 235px !important;
+    height: 215px !important;
     padding: 32px 35px 0 35px !important;
   }
   #our-advantages .holder i::before {

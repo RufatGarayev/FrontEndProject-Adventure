@@ -399,7 +399,7 @@
 
 // ======= Our Advantages Section Start ======= //
 #our-advantages {
-  padding: 20px 0 35px 0 !important;
+  padding: 20px 0 30px 0 !important;
   .main-holder {
     .holder {
       height: 190px;
@@ -419,10 +419,6 @@
           width: 436px !important;
         }
       }
-    }
-
-    #our-advantages {
-      padding: 12px 0 50px 0 !important;
     }
   }
 }
@@ -466,11 +462,13 @@
   }
 
   #our-advantages {
-    padding: 20px 0 !important;
+    padding: 20px 0 60px !important;
     .main-holder {
       .holder {
-        height: 200px;
+        height: 150px !important;
+        padding: 40px 10px 0 10px !important;
         margin: 0;
+
         h4 {
           font-size: 17px !important;
         }
@@ -540,12 +538,13 @@
   }
 
   #our-advantages {
-    padding: 12px 0 25px 0 !important;
+    padding: 25px 0 65px 0 !important;
     .main-holder {
       .holder {
         padding: 40px 0 0 !important;
-        height: 190px !important;
+        height: 155px !important;
         margin: 0;
+
         .icon-holder {
           i {
             &::before {
@@ -677,11 +676,11 @@
   }
 
   #our-advantages {
-    padding: 25px 0 37px 0 !important;
+    padding: 40px 0 70px 0 !important;
     .main-holder {
       .holder {
         padding: 40px 0 0 !important;
-        height: 180px !important;
+        height: 160px !important;
         margin: 0;
         .icon-holder {
           i {
@@ -874,11 +873,11 @@
   }
 
   #our-advantages {
-    padding: 25px 0 40px 0 !important;
+    padding: 40px 0 65px 0 !important;
     .main-holder {
       .holder {
         padding: 40px 0 0 !important;
-        height: 155px !important;
+        height: 140px !important;
         margin: 0;
         .icon-holder {
           i {

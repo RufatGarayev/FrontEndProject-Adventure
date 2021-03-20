@@ -707,6 +707,10 @@ header nav .account li .login-box-holder #reset-form .reset-password p {
   color: white;
 }
 
+header nav .account li .login-box-holder #reset-form .reset-password .alert {
+  color: black;
+}
+
 header nav .account li .login-box-holder #reset-form .reset-password .bottom-links {
   padding-top: 20px !important;
 }
@@ -2087,31 +2091,79 @@ footer .footer-bottom .social-media ul {
   width: 45px;
   height: 50px;
   border-radius: 4px;
-  line-height: 45px;
   background-color: #3a3b74;
   -webkit-transform: translateY(200px);
           transform: translateY(200px);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  overflow: hidden;
   visibility: hidden;
   -webkit-transition: 0.6s all;
   transition: 0.6s all;
   z-index: 999;
-  opacity: 0.8;
-}
-
-#topBtn:hover {
-  opacity: 1;
 }
 
 #topBtn:focus {
   outline: none;
 }
 
-#topBtn i::before {
+#topBtn .up-arrow {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
+  opacity: 1;
+  visibility: visible;
+}
+
+#topBtn .up-arrow i::before {
+  color: white;
+  font-size: 15px;
+  margin-left: 0;
+}
+
+#topBtn .go-up {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  opacity: 0;
+  visibility: hidden;
+}
+
+#topBtn .go-up span {
+  position: absolute;
   color: white;
   font-size: 18px;
-  margin-left: 0;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#topBtn .go-up span:first-of-type {
+  right: 7px;
+  top: -18px;
+}
+
+#topBtn .go-up span:last-of-type {
+  right: 8px;
+  top: -2px;
+}
+
+#topBtn:hover .up-arrow {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+#topBtn:hover .go-up {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {

@@ -225,19 +225,16 @@
     padding-left: 46px !important;
   }
   #our-achievements {
-    padding: 100px 0 100px 0 !important;
+    padding: 90px 0 80px 0 !important;
   }
   #our-achievements .content {
-    height: 320px !important;
+    height: 300px !important;
   }
   #our-achievements .content i::before {
     font-size: 55px !important;
   }
   #our-achievements .content h2 {
     font-size: 50px !important;
-  }
-  #our-achievements .content h3 {
-    font-size: 30px !important;
   }
 }
 
@@ -458,10 +455,10 @@
             order: 2;
   }
   #our-achievements {
-    padding: 125px 0 100px 0 !important;
+    padding: 80px 0 90px 0 !important;
   }
   #our-achievements .content {
-    height: 370px !important;
+    height: 298px !important;
     padding-top: 60px !important;
   }
   #our-achievements .content:hover {
@@ -470,7 +467,16 @@
     transition: 0.4s ease-in-out;
   }
   #our-achievements .content i::before {
-    font-size: 70px !important;
+    font-size: 60px !important;
+  }
+  #our-achievements .content h2 {
+    font-size: 46px !important;
+  }
+  #our-achievements .content h2 span {
+    font-size: 46px;
+  }
+  #our-achievements .content h3 {
+    font-size: 25px !important;
   }
 }
 
@@ -679,11 +685,15 @@
             order: 2;
   }
   #our-achievements {
-    padding: 125px 0 100px 0 !important;
+    padding: 100px 0 90px 0 !important;
+  }
+  #our-achievements .achievements-caption {
+    padding-bottom: 25px;
   }
   #our-achievements .content {
-    height: 330px !important;
+    height: 295px !important;
     padding-top: 50px !important;
+    margin-bottom: 10px;
   }
   #our-achievements .content:hover {
     padding-top: 20px !important;
@@ -692,12 +702,6 @@
   }
   #our-achievements .content i::before {
     font-size: 60px !important;
-  }
-  #our-achievements .content h2 {
-    font-size: 53px !important;
-  }
-  #our-achievements .content h3 {
-    font-size: 30px !important;
   }
 }
 
@@ -927,14 +931,15 @@
             order: 2;
   }
   #our-achievements {
-    padding: 90px 0 100px 0 !important;
+    padding: 80px 0 85px 0 !important;
   }
   #our-achievements .achievements-caption {
     padding-bottom: 18px !important;
   }
   #our-achievements .content {
-    height: 250px !important;
+    height: 230px !important;
     padding-top: 40px !important;
+    margin-bottom: 10px;
   }
   #our-achievements .content:hover {
     padding-top: 20px !important;

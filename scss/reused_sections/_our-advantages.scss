@@ -2,7 +2,7 @@
 #our-advantages {
   position: relative;
   overflow: hidden;
-  padding: 66px 0 99px 0;
+  padding: 60px 0 80px 0;
   background-color: rgba(118, 148, 132, 1);
 
   .caption {
@@ -19,9 +19,10 @@
 
   .main-holder {
     .holder {
-      padding: 40px 5px 0 5px;
-      height: 257px;
+      padding: 40px 10px 0 10px;
+      height: 265px;
       transition: 0.4s ease-in-out;
+
       &:hover {
         padding-top: 15px !important;
         transition: 0.4s ease-in-out !important;
@@ -63,6 +64,10 @@
           font-size: 17px !important;
         }
       }
+
+      @media (min-width: 315px) and (max-width: 374.98px) {
+        padding: 32px 55px 0 55px !important;
+      }
     }
   }
 }
@@ -72,7 +77,7 @@
 // ======= Responsive Design Start ======= //
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #our-advantages {
-    padding: 80px 0 145px 0 !important;
+    padding: 50px 0 90px 0 !important;
     .holder {
       h4 {
         font-size: 22px !important;
@@ -83,11 +88,12 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   #our-advantages {
-    padding: 80px 0 100px 0 !important;
+    padding: 60px 0 70px 0 !important;
 
     .holder {
+      padding: 40px 40px 0 40px !important;
+      height: 245px !important;
       margin: 20px 0;
-      padding: 0 10px;
       font-size: 17px;
     }
   }
@@ -95,18 +101,18 @@
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   #our-advantages {
-    padding: 120px 0 140px 0 !important;
+    padding: 60px 0 75px 0 !important;
     .caption {
       padding-bottom: 40px;
     }
 
     .holder {
-      padding: 40px 90px 0 90px !important;
-      height: 280px !important;
+      padding: 40px 0 !important;
+      height: 270px !important;
       .icon-holder {
         i {
           &::before {
-            font-size: 70px !important;
+            font-size: 60px !important;
           }
         }
       }
@@ -120,16 +126,11 @@
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #our-advantages {
-    padding: 80px 0 100px 0 !important;
-    .caption {
-      h1 {
-        padding: 40px 0 80px 0 !important;
-      }
-    }
+    padding: 65px 0 95px 0 !important;
 
     .holder {
-      padding: 40px 70px 0 70px !important;
-      height: 280px !important;
+      padding: 40px 50px 0 50px !important;
+      height: 245px !important;
       font-size: 17px;
       i {
         &::before {
@@ -150,16 +151,13 @@
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #our-advantages {
-    padding: 50px 0 65px 0 !important;
+    padding: 40px 0 70px 0 !important;
     .caption {
       height: 110px !important;
-      h1 {
-        padding: 20px 0 80px 0 !important;
-      }
     }
 
     .holder {
-      height: 235px !important;
+      height: 215px !important;
       padding: 32px 35px 0 35px !important;
       i {
         &::before {

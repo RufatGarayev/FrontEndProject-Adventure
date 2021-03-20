@@ -274,6 +274,7 @@ header {
               }
               .alert {
                 @extend %form-alert;
+                color: black;
               }
               .bottom-links {
                 padding-top: 20px !important;
