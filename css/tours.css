@@ -1224,6 +1224,9 @@ header nav .active-link hr {
     position: fixed !important;
     left: 41px !important;
   }
+  header .navbar .account li .search-area-holder a {
+    top: 18px;
+  }
   header .navbar .account li .login-box-holder {
     right: 40px !important;
     width: calc(100% - 80px) !important;
@@ -1395,6 +1398,9 @@ header nav .active-link hr {
     height: 55px !important;
     position: fixed !important;
     left: 18px !important;
+  }
+  header .navbar .account li .search-area-holder a {
+    top: 17px;
   }
   header .navbar .account li .login-box-holder {
     right: 19px !important;
@@ -1572,6 +1578,9 @@ header nav .active-link hr {
     height: 45px !important;
     position: fixed !important;
     left: 12px !important;
+  }
+  header .navbar .account li .search-area-holder a {
+    top: 13px;
   }
   header .navbar .account li .login-box-holder {
     right: 14px !important;
@@ -2780,7 +2789,7 @@ footer .footer-bottom .social-media ul {
 }
 
 #tours .sidebar-area .sidebar-filter-toggle i {
-  line-height: 70px;
+  line-height: 72px;
 }
 
 #tours .sidebar-area .sidebar-filter-toggle i::before {
@@ -2886,6 +2895,7 @@ footer .footer-bottom .social-media ul {
 }
 
 #tours .category-and-sorting .sorting .dropholder .dropdown i {
+  height: 20px;
   position: absolute;
   right: 12px;
   top: 5px;
@@ -3246,7 +3256,7 @@ footer .footer-bottom .social-media ul {
     font-size: 13px;
   }
   #tours .category-and-sorting .sorting .dropholder .dropdown i {
-    top: 0px;
+    top: 3px;
     right: 10px;
   }
   #tours .category-and-sorting .sorting .dropholder .dropdown i::before {
@@ -3258,6 +3268,12 @@ footer .footer-bottom .social-media ul {
   }
   #tours .category-and-sorting .sorting .dropholder .menu li {
     font-size: 13px;
+  }
+  #tours .tour-holder .item .tour-name i {
+    margin: 3px 7px 0 0 !important;
+  }
+  #tours .tour-holder .item .tour-name h4 {
+    font-size: 19px !important;
   }
 }
 
@@ -3515,7 +3531,7 @@ footer .footer-bottom .social-media ul {
     font-size: 13px;
   }
   #tours .category-and-sorting .sorting .dropholder .dropdown i {
-    top: 2px;
+    top: 5px;
   }
   #tours .category-and-sorting .sorting .dropholder .dropdown i::before {
     font-size: 10px;

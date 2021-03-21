@@ -17,7 +17,7 @@ $(document).ready(function () {
     }
     // === Nav Bg-Color End === //
 
-    // === Header Position Start === //
+    // === Processes that happen when Scrolling - Start === //
     if ($(window).scrollTop() >= 33) {
       $("header").addClass("sticky");
       $(".search-area-holder").css("top", "80px");
@@ -29,13 +29,13 @@ $(document).ready(function () {
       $(".login-box-holder").css("top", "112px");
       $(".navbar-items").css({ height: "98%", top: "33px" });
     }
-    // === Header Position End === //
+    // === Processes that happen when Scrolling - End === //
   };
   // ======= Events On Scroll End ======= //
 
 
-   // ======= Show or Hide navbar items when click on Hamburger btn - Start ======= //
-   $(document).on("click", ".hamburger", function () {
+  // ======= Show or Hide navbar items when click on Hamburger btn - Start ======= //
+  $(document).on("click", ".hamburger", function () {
     $(this).toggleClass("change");
     $(".navbar-items").toggleClass("active");
     $(".dark-bgcolor").toggleClass("active-darkBg");
@@ -44,16 +44,15 @@ $(document).ready(function () {
     if ($(".navbar-items").hasClass("active")) {
       $(document.body).addClass("stop-scroll");
       $(".dark-bgcolor").addClass("active-darkBg");
-    }else{
+    } else {
       $(document.body).removeClass("stop-scroll");
       $(".dark-bgcolor").removeClass("active-darkBg");
     }
 
     // processes when click outside
-    $(document).mouseup(function(e) {
-      if (!$("header").is(e.target) && $("header").has(e.target).length === 0 && 
-        !$("#top-header").is(e.target) && $("#top-header").has(e.target).length === 0)
-      {
+    $(document).mouseup(function (e) {
+      if (!$("header").is(e.target) && $("header").has(e.target).length === 0 &&
+        !$("#top-header").is(e.target) && $("#top-header").has(e.target).length === 0) {
         $(document.body).removeClass("stop-scroll");
         $(".dark-bgcolor").removeClass("active-darkBg");
         $(".navbar-items").removeClass("active");
@@ -61,7 +60,7 @@ $(document).ready(function () {
         $(".sidebar-filter-toggle").removeClass("hide-filter-btn");
       }
     });
-   });
+  });
   // ======= Show or Hide navbar items when click on Hamburger btn - End ======= //
 
 
@@ -72,25 +71,24 @@ $(document).ready(function () {
   });
   // ======= Counter-Up End ======= //
 
-  
+
   // ======= Making visible or invisible the Search-Box and Login-Area and replacing the icon when click the btn - Start ======= //
   $(document).on("click", ".icon-btn", function (e) {
     e.preventDefault();
     // hide search-box and login-area, and change icons when click outside
-    $(document).mouseup(function(e) {
+    $(document).mouseup(function (e) {
       if (
-          !$(".search-area-holder").is(e.target) && $(".search-area-holder").has(e.target).length === 0 &&
-          !$(".login-box-holder").is(e.target) && $(".login-box-holder").has(e.target).length === 0 &&
-          !$(".icon-btn").is(e.target) && $(".icon-btn").has(e.target).length === 0
-         )
-      {
+        !$(".search-area-holder").is(e.target) && $(".search-area-holder").has(e.target).length === 0 &&
+        !$(".login-box-holder").is(e.target) && $(".login-box-holder").has(e.target).length === 0 &&
+        !$(".icon-btn").is(e.target) && $(".icon-btn").has(e.target).length === 0
+      ) {
         $(".search-area-holder").removeClass("visible").siblings().children().removeClass("flaticon-close").addClass("flaticon-search-interface-symbol");
         $(".login-box-holder").removeClass("visible").siblings().children().removeClass("flaticon-close").addClass("flaticon-user");
       }
     });
   });
 
-  // showing or hiding search-box and change icons when click the btn
+  // showing or hiding search-box and changing icons when click the btn
   $(document).on("click", ".search-btn-first", function () {
     if (!$(this).siblings().hasClass("visible") && !$(this).children().hasClass("flaticon-close")) {
       $(this).siblings().addClass("visible").parent().siblings().children(".holder-div").removeClass("visible");
@@ -102,7 +100,7 @@ $(document).ready(function () {
     }
   });
 
-  // showing or hiding login-area and change icons when click the btn
+  // showing or hiding login-area and changing icons when click the btn
   $(document).on("click", ".user-btn", function () {
     if (!$(this).siblings().hasClass("visible") && !$(this).children().hasClass("flaticon-close")) {
       $(this).siblings().addClass("visible").parent().siblings().children(".holder-div").removeClass("visible");
@@ -113,10 +111,10 @@ $(document).ready(function () {
       $(this).children().removeClass("flaticon-close").addClass("flaticon-user");
     }
   });
-  // ======= Making visible or invisible the Search-Box and Login-Area on click and replacing icon - End ======= //
+  // ======= Making visible or invisible the Search-Box and Login-Area and replacing the icon when click the btn - End ======= //
 
 
-  // ======= Go to Reset Password Area and back - Start ======= //
+  // ======= Going to Reset Password Area and back - Start ======= //
   $(document).on("click", ".forgotten-password-link", function (e) {
     e.preventDefault();
     $(".reset-password").removeClass("d-none");
@@ -128,64 +126,59 @@ $(document).ready(function () {
     $(".reset-password").addClass("d-none");
     $(".login-box").removeClass("d-none");
   });
-  // ======= Go to Reset Password Area and back - End ======= //
+  // ======= Going to Reset Password Area and back - End ======= //
 
 
   // ======= Back To Top Btn - Start ======= //
-  $(window).scroll(function(){
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
-      $("#topBtn").css({"transform": "translateY(0)", "visibility": "visible"});
-    }else{
-      $("#topBtn").css({"transform": "translateY(200px)", "visibility": "hidden"});
+      $("#topBtn").css({ "transform": "translateY(0)", "visibility": "visible" });
+    } else {
+      $("#topBtn").css({ "transform": "translateY(200px)", "visibility": "hidden" });
     }
   });
 
-  $("#topBtn").click(function(){
-    $("html, body").animate({scrollTop: 0}, 100);
+  $("#topBtn").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 100);
   });
   // ======= Back To Top Btn - End ======= //
 
 
   // ======= Price Range Filter - Start ======= //
-  if($('.slider-tour-sorting').length){
-    $( function() {
-        $( ".slider-tour-sorting" ).slider({
+  if ($('.slider-tour-sorting').length) {
+    $(function () {
+      $(".slider-tour-sorting").slider({
         range: true,
         min: 50,
-        max: 100,
-        values: [ 55, 100 ],
-        slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + "  -  $" + ui.values[ 1 ] );
+        max: 98,
+        values: [55, 98],
+        slide: function (event, ui) {
+          $("#amount").val("$" + ui.values[0] + "  -  $" + ui.values[1]);
         }
-        });
-        $( "#amount" ).val( "$" + $( ".slider-tour-sorting" ).slider( "values", 0 ) +
-        "  -  $" + $( ".slider-tour-sorting" ).slider( "values", 1 ) );
-    } );
-   }
+      });
+
+      $("#amount").val("$" + $(".slider-tour-sorting").slider("values", 0) +
+        "  -  $" + $(".slider-tour-sorting").slider("values", 1));
+    });
+  }
   // ======= Price Range Filter - End ======= //
 
 
   // ======= Sorting Dropdown Start ======= //
-  $("#tours .dropdown").click(function() {
-    // toggle the dropdown menu
+  $("#tours .dropdown").click(function () {
     $("#tours .menu").toggleClass("#tours showMenu");
-    // toggle the arrow icon
     $("#tours .dropdown i").toggleClass("#tours rotate");
 
-    $("#tours .menu li").click(function() {
-      // equalize p to li
+    $("#tours .menu li").click(function () {
       $("#tours .dropdown p").html($(this).html());
-      // hide dropdown menu
       $("#tours .menu").removeClass("#tours showMenu");
-      // rotate the arrow icon
       $("#tours .dropdown i").removeClass("#tours rotate");
     });
 
-    $(document).mouseup(function(e) {
+    // processes when click outside
+    $(document).mouseup(function (e) {
       if (!$("#tours .dropdown").is(e.target) && $("#tours .dropdown").has(e.target).length === 0) {
-        // hide dropdown menu
         $("#tours .menu").removeClass("#tours showMenu");
-        // rotate the arrow icon
         $("#tours .dropdown i").removeClass("#tours rotate");
       }
     });
@@ -193,44 +186,42 @@ $(document).ready(function () {
   // ======= Sorting Dropdown End ======= //
 
 
-  // ======= Show or Hide Sidebar Filter - Start ======= //
+  // ======= Showing or Hiding Sidebar Filter - Start ======= //
   $(document).on("click", ".sidebar-filter-toggle", function (e) {
     e.preventDefault();
     $(".sidebar-area").toggleClass("show-sidebar");
 
     // processes when click outside
-    $(document).mouseup(function(e) {
-      if (!$(".sidebar-area").is(e.target) && $(".sidebar-area").has(e.target).length === 0)
-      {
+    $(document).mouseup(function (e) {
+      if (!$(".sidebar-area").is(e.target) && $(".sidebar-area").has(e.target).length === 0) {
         $(".sidebar-area").removeClass("show-sidebar");
       }
     });
   });
-  // ======= Show or Hide Sidebar Filter - End ======= //
+  // ======= Showing or Hiding Sidebar Filter - End ======= //
 
 
-
-  // ======= Show appropriate Image when click a small image - Start ======= //
+  // ======= Showing appropriate Image when click a small image - Start ======= //
   $(document).on("click", "#tour .small-img-box a", function (e) {
     e.preventDefault();
 
     $(this).parent().addClass("#tour active-img");
-    $(this).parent().parent().siblings().find(".small-img-box").removeClass("#tour active-img");   
+    $(this).parent().parent().siblings().find(".small-img-box").removeClass("#tour active-img");
     $("#tour .tour-img-box img").attr("src", $(this).attr("href"));
   });
-  // ======= Show appropriate Image when click a small image - End ======= //
+  // ======= Showing appropriate Image when click a small image - End ======= //
 
 
-  // ======= Show appropriate tab content when click a tab button - Start ======= //
+  // ======= Showing appropriate tab content when click a tab button - Start ======= //
   $(document).on("click", ".tour-tabs li a", function (e) {
     e.preventDefault();
-    
+
     $(".tour-tabs li a").removeClass("active-tabBtn");
     $(this).addClass("active-tabBtn");
     $(".tab-items .tab-content").hide();
     $($(this).data("value")).show();
   });
-  // ======= Show appropriate tab content when click a tab button - End ======= //
+  // ======= Showing appropriate tab content when click a tab button - End ======= //
 
 
   // ======= Countdown Start ======= //
@@ -276,16 +267,16 @@ $(document).ready(function () {
   countdown();
   // ======= Countdown End ======= //
 
-  
+
   // ======= Read More Start ======= //
-  $(document).on("click", ".readMore-btn", function(){
-    // show more text or hide
+  $(document).on("click", ".readMore-btn", function () {
+    // showing more text or hiding
     $(".read-more").toggleClass("show-more-text");
-    
-    // change the btn text
+
+    // changing the btn content
     if ($(".read-more").hasClass("show-more-text")) {
       $(".readMore-btn").text("Read Less...");
-    }else{
+    } else {
       $(".readMore-btn").text("Read More...");
     }
   });
@@ -293,41 +284,33 @@ $(document).ready(function () {
 
 
   // ======= Add To Cart Btn - Start ======= //
-  $(document).on("click", ".addToCartBtn", function(){
-    // taking this
+  $(document).on("click", ".addToCartBtn", function () {
     let $this = $(this);
-    // hiding this
+
     $this.addClass("d-none");
-    // showing spinner
     $this.next(".spinner").removeClass("d-none");
-    
-    setTimeout(function(){
-      // hiding spinner 0.5s later
+
+    setTimeout(function () {
       $this.next(".spinner").addClass("d-none");
-      // showing successIcon 0.5s later
       $this.siblings(".successIcon").removeClass("d-none");
     }, 500);
   });
 
-  $(document).on("click", ".addToCartBtnBig", function(){
-    // taking this
+  $(document).on("click", ".addToCartBtnBig", function () {
     let $this = $(this);
-    // showing spinner
+
     $this.find(".spinner").removeClass("d-none");
-    // for not adding d-none when click on this
     $this.removeClass("d-none");
-    
-    setTimeout(function(){
-      // hiding spinner 0.5s later
+
+    setTimeout(function () {
       $this.find(".spinner").addClass("d-none");
-      // showing success-icon 0.5s later
       $this.find(".successIcon").removeClass("d-none");
     }, 700);
 
     // if the spinner is visible, hide the success-icon
     if (!$this.find(".spinner").hasClass("d-none")) {
       $this.find(".successIcon").addClass("d-none");
-    }else{
+    } else {
       $this.find(".successIcon").removeClass("d-none");
     }
   });
@@ -335,21 +318,21 @@ $(document).ready(function () {
 
 
   // ======= Accordion - Start ======= //
-  $(document).on("click", ".accordion-btn", function(){
-      // showing or hiding the text
-      $(this).next().toggleClass("show-text");
-      // changing the icon
-      $(this).children(".vertical").toggleClass("icon-rotate");
-      // changing other buttons' icon
-      $(this).siblings(".accordion-btn").children(".vertical").removeClass("icon-rotate");
-      // hiding other text that is active
-      $(this).next().siblings(".accordion-text").removeClass("show-text");
+  $(document).on("click", ".accordion-btn", function () {
+    // showing or hiding the text
+    $(this).next().toggleClass("show-text");
+    // changing the icon
+    $(this).children(".vertical").toggleClass("icon-rotate");
+    // changing other buttons' icon
+    $(this).siblings(".accordion-btn").children(".vertical").removeClass("icon-rotate");
+    // hiding other text that is active
+    $(this).next().siblings(".accordion-text").removeClass("show-text");
   });
   // ======= Accordion - End ======= //
 
 
   // ======= Showing the bottom content when click the Radio button - Start ======= //
-  $(document).on("click", ".payment-method input", function(){
+  $(document).on("click", ".payment-method input", function () {
     $(this).next().next().addClass(".payment-method show-msg");
     $(this).next().next().siblings().removeClass(".payment-method show-msg");
   });
@@ -361,21 +344,20 @@ $(document).ready(function () {
     itemSelector: ".item-col",
     layoutMode: "fitRows"
   });
-    
-  $(document).on("click", ".category-btns li a", function(e){
+
+  $(document).on("click", ".category-btns li a", function (e) {
     e.preventDefault();
-      $(this).addClass("active-btn");
-      $(this).parent().siblings().children().removeClass("active-btn");
-  
-      let selector = $(this).attr("data-filter");
-      $(".tour-holder").isotope({
-        filter: selector
-      });
-      return false;
+    $(this).addClass("active-btn");
+    $(this).parent().siblings().children().removeClass("active-btn");
+
+    let selector = $(this).attr("data-filter");
+    $(".tour-holder").isotope({
+      filter: selector
+    });
+    return false;
   });
   // ======= Tour Filter and Background-color of Button when click on it - End ======= //
 });
-
 
 
 // ======= Type Writer Effect Start ======= //

@@ -362,6 +362,7 @@ header {
 // ======= Main Header End ======= //
 
 
+
 // ======= Responsive Design Start ======= //
 @media (min-width: 768px) and (max-width: 991.98px) {
   #top-header {
@@ -616,6 +617,10 @@ header {
             height: 60px !important;
             position: fixed !important;
             left: 41px !important;
+
+            a{
+              top: 18px;
+            }
           }
 
           .login-box-holder {
@@ -773,6 +778,10 @@ header {
             height: 55px !important;
             position: fixed !important;
             left: 18px !important;
+
+            a{
+              top: 17px;
+            }
           }
 
           .login-box-holder {
@@ -938,6 +947,10 @@ header {
             height: 45px !important;
             position: fixed !important;
             left: 12px !important;
+
+            a{
+              top: 13px;
+            }
           }
 
           .login-box-holder {

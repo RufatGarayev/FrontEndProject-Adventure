@@ -1084,6 +1084,9 @@ header nav .active-link hr {
     position: fixed !important;
     left: 41px !important;
   }
+  header .navbar .account li .search-area-holder a {
+    top: 18px;
+  }
   header .navbar .account li .login-box-holder {
     right: 40px !important;
     width: calc(100% - 80px) !important;
@@ -1255,6 +1258,9 @@ header nav .active-link hr {
     height: 55px !important;
     position: fixed !important;
     left: 18px !important;
+  }
+  header .navbar .account li .search-area-holder a {
+    top: 17px;
   }
   header .navbar .account li .login-box-holder {
     right: 19px !important;
@@ -1432,6 +1438,9 @@ header nav .active-link hr {
     height: 45px !important;
     position: fixed !important;
     left: 12px !important;
+  }
+  header .navbar .account li .search-area-holder a {
+    top: 13px;
   }
   header .navbar .account li .login-box-holder {
     right: 14px !important;
@@ -2489,6 +2498,8 @@ footer .footer-bottom .social-media ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 30px;
 }
 
@@ -2542,6 +2553,9 @@ footer .footer-bottom .social-media ul {
     margin-top: 28px;
     padding: 32px 25px 45px;
   }
+  #checkout .order-details ul li {
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 575.98px) {
@@ -2558,9 +2572,12 @@ footer .footer-bottom .social-media ul {
     margin-top: 28px;
     padding: 30px 25px 45px;
   }
+  #checkout .order-details ul li {
+    margin-top: 20px;
+  }
 }
 
-@media (min-width: 250px) and (max-width: 375.98px) {
+@media (min-width: 250px) and (max-width: 374.98px) {
   #checkout .billing-details {
     padding-right: 0;
   }
@@ -2611,6 +2628,12 @@ footer .footer-bottom .social-media ul {
   }
   #checkout .order-area .order-area-footer .checkout-btn {
     font-size: 13px;
+  }
+  #checkout .order-details {
+    padding-right: 76px;
+  }
+  #checkout .order-details ul li {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=checkout.css.map */

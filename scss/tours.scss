@@ -140,7 +140,7 @@
       }
 
       i {
-        line-height: 70px;
+        line-height: 72px;
         &::before {
           font-size: 38px;
           color: black;
@@ -222,6 +222,7 @@
           }
 
           i {
+            height: 20px;
             position: absolute;
             right: 12px;
             top: 5px;
@@ -603,7 +604,7 @@
             }
 
             i {
-              top: 0px;
+              top: 3px;
               right: 10px;
               &::before {
                 font-size: 11px;
@@ -618,6 +619,19 @@
             li {
               font-size: 13px;
             }
+          }
+        }
+      }
+    }
+
+    .tour-holder{
+      .item{
+        .tour-name{
+          i{
+            margin: 3px 7px 0 0 !important;
+          }
+          h4{
+            font-size: 19px !important;
           }
         }
       }
@@ -879,7 +893,7 @@
               font-size: 13px;
             }
             i {
-              top: 2px;
+              top: 5px;
               &::before {
                 font-size: 10px;
               }

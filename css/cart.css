@@ -1153,6 +1153,9 @@ header nav .active-link hr {
     position: fixed !important;
     left: 41px !important;
   }
+  header .navbar .account li .search-area-holder a {
+    top: 18px;
+  }
   header .navbar .account li .login-box-holder {
     right: 40px !important;
     width: calc(100% - 80px) !important;
@@ -1324,6 +1327,9 @@ header nav .active-link hr {
     height: 55px !important;
     position: fixed !important;
     left: 18px !important;
+  }
+  header .navbar .account li .search-area-holder a {
+    top: 17px;
   }
   header .navbar .account li .login-box-holder {
     right: 19px !important;
@@ -1501,6 +1507,9 @@ header nav .active-link hr {
     height: 45px !important;
     position: fixed !important;
     left: 12px !important;
+  }
+  header .navbar .account li .search-area-holder a {
+    top: 13px;
   }
   header .navbar .account li .login-box-holder {
     right: 14px !important;
@@ -2576,6 +2585,9 @@ footer .footer-bottom .social-media ul {
   #shop-cart .shop-table tbody .tbody-row .remove-tour {
     margin-top: 46px;
   }
+  #shop-cart .empty-alert a {
+    font-size: 14px !important;
+  }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
@@ -2647,6 +2659,12 @@ footer .footer-bottom .social-media ul {
   }
   #shop-cart .shop-table tbody .tbody-row .remove-tour a {
     font-size: 12px !important;
+  }
+  #shop-cart .empty-alert p {
+    font-size: 14px;
+  }
+  #shop-cart .empty-alert a {
+    font-size: 13px !important;
   }
 }
 /*# sourceMappingURL=cart.css.map */
