@@ -13,7 +13,7 @@
 
 
 // ======= Dark Bg-color Start ======= //
-.dark-bgcolor{
+.dark-bgcolor {
   @extend %dark-bg;
 }
 
@@ -28,6 +28,7 @@
   background-image: url(../img/bg-images/wood.jpg);
 }
 // ======= Intro Section End ======= //
+
 
 // ======= Our Story Section Start ======= //
 #our-story {
@@ -315,7 +316,7 @@
           margin-left: 0;
         }
       }
-      
+
       .vertical {
         transform: rotate(90deg);
         position: absolute;
@@ -370,6 +371,7 @@
 // ======= Responsive Design Start ======= //
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #our-story {
+    padding: 70px 0 125px;
     .text {
       height: 350px;
     }
@@ -395,7 +397,7 @@
       padding-bottom: 40px;
     }
     .text {
-      height: 240px;
+      height: 307px;
     }
   }
 
@@ -406,7 +408,7 @@
     }
 
     .text {
-      height: 240px;
+      height: 237px;
     }
 
     .first {
@@ -460,7 +462,7 @@
       padding-bottom: 40px;
     }
     .text {
-      height: 304px;
+      height: 378px;
       margin-bottom: 25px;
     }
   }

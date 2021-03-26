@@ -36,7 +36,7 @@ $(document).ready(function () {
 
   // ======= Show or Hide navbar items when click on Hamburger btn - Start ======= //
   $(document).on("click", ".hamburger", function () {
-    $(this).toggleClass("change");
+    $(this).find(".hamburger-btn").toggleClass("change");
     $(".navbar-items").toggleClass("active");
     $(".dark-bgcolor").toggleClass("active-darkBg");
     $(".sidebar-filter-toggle").toggleClass("hide-filter-btn");
@@ -56,7 +56,7 @@ $(document).ready(function () {
         $(document.body).removeClass("stop-scroll");
         $(".dark-bgcolor").removeClass("active-darkBg");
         $(".navbar-items").removeClass("active");
-        $(".hamburger").removeClass("change");
+        $(".hamburger").find(".hamburger-btn").removeClass("change");
         $(".sidebar-filter-toggle").removeClass("hide-filter-btn");
       }
     });
@@ -66,8 +66,8 @@ $(document).ready(function () {
 
   // ======= Counter-Up Start ======= //
   $(".counter-up").counterUp({
-    delay: 10,
-    time: 1000,
+    delay: 50,
+    time: 4000,
   });
   // ======= Counter-Up End ======= //
 
@@ -150,8 +150,8 @@ $(document).ready(function () {
       $(".slider-tour-sorting").slider({
         range: true,
         min: 50,
-        max: 98,
-        values: [55, 98],
+        max: 99,
+        values: [55, 99],
         slide: function (event, ui) {
           $("#amount").val("$" + ui.values[0] + "  -  $" + ui.values[1]);
         }

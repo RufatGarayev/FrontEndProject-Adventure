@@ -90,11 +90,11 @@ header {
   z-index: 9979;
   position: absolute;
 
-  .navbarBg-lightBlack{
+  .navbarBg-lightBlack {
     background-color: rgba(0, 0, 0, 0.5);
   }
-  
-  .navbarBg-darkBlack{
+
+  .navbarBg-darkBlack {
     background-color: black;
   }
 
@@ -350,6 +350,57 @@ header {
 
     .hamburger {
       display: none;
+      position: absolute;
+      top: 23px;
+      .hamburger-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 30px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        .middle-line {
+          width: 24px;
+          height: 2px;
+          background: #fff;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+          transition: all 0.5s ease-in-out;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+            transition: all 0.5s ease-in-out;
+          }
+          &::before {
+            transform: translateY(-8px);
+          }
+          &::after {
+            transform: translateY(8px);
+          }
+        }
+      }
+
+      .change {
+        .middle-line {
+          transform: translateX(-50px);
+          background: transparent;
+          box-shadow: none;
+          &::before {
+            transform: rotate(45deg) translate(35px, -35px);
+          }
+          &::after{
+            transform: rotate(-45deg) translate(35px, 35px);
+          }
+        }
+      }
     }
 
     .active-link {
@@ -412,6 +463,7 @@ header {
 
         .social-media {
           width: 210px;
+          margin-top: 70px;
           padding-left: 20px;
           display: flex !important;
           justify-content: center;
@@ -471,33 +523,8 @@ header {
       }
 
       .hamburger {
-        display: inline-block !important;
-        width: 35px;
-        height: 30px;
-        position: absolute;
-        top: 22px;
-        right: 44px;
-        cursor: pointer;
-        display: flex !important;
-        flex-direction: column;
-        justify-content: space-around;
-      }
-
-      .line {
-        width: 100%;
-        height: 3px;
-        background-color: white;
-        transition: all 0.5s;
-      }
-
-      .change .line-1 {
-        transform: rotateZ(-45deg) translate(-8px, 6px);
-      }
-      .change .line-2 {
-        opacity: 0;
-      }
-      .change .line-3 {
-        transform: rotateZ(45deg) translate(-8px, -6px);
+        display: block !important;
+        right: 40px !important;
       }
     }
   }
@@ -565,6 +592,7 @@ header {
 
         .social-media {
           width: 200px;
+          margin-top: 70px;
           display: flex !important;
           justify-content: center;
           ul {
@@ -618,7 +646,7 @@ header {
             position: fixed !important;
             left: 41px !important;
 
-            a{
+            a {
               top: 18px;
             }
           }
@@ -631,33 +659,8 @@ header {
       }
 
       .hamburger {
-        display: inline-block !important;
-        width: 35px;
-        height: 30px;
-        position: absolute;
-        top: 22px;
-        right: 44px;
-        cursor: pointer;
-        display: flex !important;
-        flex-direction: column;
-        justify-content: space-around;
-      }
-
-      .line {
-        width: 100%;
-        height: 3px;
-        background-color: white;
-        transition: all 0.5s;
-      }
-
-      .change .line-1 {
-        transform: rotateZ(-45deg) translate(-8px, 6px);
-      }
-      .change .line-2 {
-        opacity: 0;
-      }
-      .change .line-3 {
-        transform: rotateZ(45deg) translate(-8px, -6px);
+        display: block !important;
+        right: 39px !important;
       }
     }
   }
@@ -779,7 +782,7 @@ header {
             position: fixed !important;
             left: 18px !important;
 
-            a{
+            a {
               top: 17px;
             }
           }
@@ -798,33 +801,15 @@ header {
       }
 
       .hamburger {
-        display: inline-block !important;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 22px;
-        right: 22px;
-        cursor: pointer;
-        display: flex !important;
-        flex-direction: column;
-        justify-content: space-around;
-      }
-
-      .line {
-        width: 100%;
-        height: 3px;
-        background-color: white;
-        transition: all 0.5s;
-      }
-
-      .change .line-1 {
-        transform: rotateZ(-45deg) translate(-8px, 6px);
-      }
-      .change .line-2 {
-        opacity: 0;
-      }
-      .change .line-3 {
-        transform: rotateZ(45deg) translate(-8px, -6px);
+        display: block !important;
+        top: 21px !important;
+        right: 18px !important;
+        .middle-line{
+          width: 22px !important;
+          &::before, &::after{
+            width: 22px !important;
+          }
+        }
       }
     }
   }
@@ -948,7 +933,7 @@ header {
             position: fixed !important;
             left: 12px !important;
 
-            a{
+            a {
               top: 13px;
             }
           }
@@ -991,33 +976,15 @@ header {
       }
 
       .hamburger {
-        display: inline-block !important;
-        width: 25px;
-        height: 30px;
-        position: absolute;
-        top: 22px;
-        right: 18px;
-        cursor: pointer;
-        display: flex !important;
-        flex-direction: column;
-        justify-content: space-around;
-      }
-
-      .line {
-        width: 100%;
-        height: 2px;
-        background-color: white;
-        transition: all 0.4s;
-      }
-
-      .change .line-1 {
-        transform: rotateZ(-45deg) translate(-8px, 6px);
-      }
-      .change .line-2 {
-        opacity: 0;
-      }
-      .change .line-3 {
-        transform: rotateZ(45deg) translate(-8px, -6px);
+        display: block !important;
+        top: 23px !important;
+        right: 8px !important;
+        .middle-line{
+          width: 20px !important;
+          &::before, &::after{
+            width: 20px !important;
+          }
+        }
       }
     }
   }

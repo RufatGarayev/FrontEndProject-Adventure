@@ -825,6 +825,78 @@ header nav .account .user {
 
 header nav .hamburger {
   display: none;
+  position: absolute;
+  top: 23px;
+}
+
+header nav .hamburger .hamburger-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header nav .hamburger .hamburger-btn .middle-line {
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header nav .hamburger .hamburger-btn .middle-line::before, header nav .hamburger .hamburger-btn .middle-line::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header nav .hamburger .hamburger-btn .middle-line::before {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+header nav .hamburger .hamburger-btn .middle-line::after {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+header nav .hamburger .change .middle-line {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header nav .hamburger .change .middle-line::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+
+header nav .hamburger .change .middle-line::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
 }
 
 header nav .active-link hr {
@@ -891,6 +963,7 @@ header nav .active-link hr {
   }
   header .navbar .navbar-items .social-media {
     width: 210px;
+    margin-top: 70px;
     padding-left: 20px;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -953,40 +1026,8 @@ header nav .active-link hr {
     right: 178px !important;
   }
   header .navbar .hamburger {
-    display: inline-block !important;
-    width: 35px;
-    height: 30px;
-    position: absolute;
-    top: 22px;
-    right: 44px;
-    cursor: pointer;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  header .navbar .line {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  header .navbar .change .line-1 {
-    -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
-            transform: rotateZ(-45deg) translate(-8px, 6px);
-  }
-  header .navbar .change .line-2 {
-    opacity: 0;
-  }
-  header .navbar .change .line-3 {
-    -webkit-transform: rotateZ(45deg) translate(-8px, -6px);
-            transform: rotateZ(45deg) translate(-8px, -6px);
+    display: block !important;
+    right: 40px !important;
   }
 }
 
@@ -1057,6 +1098,7 @@ header nav .active-link hr {
   }
   header .navbar .navbar-items .social-media {
     width: 200px;
+    margin-top: 70px;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -1125,40 +1167,8 @@ header nav .active-link hr {
     width: calc(100% - 80px) !important;
   }
   header .navbar .hamburger {
-    display: inline-block !important;
-    width: 35px;
-    height: 30px;
-    position: absolute;
-    top: 22px;
-    right: 44px;
-    cursor: pointer;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  header .navbar .line {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  header .navbar .change .line-1 {
-    -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
-            transform: rotateZ(-45deg) translate(-8px, 6px);
-  }
-  header .navbar .change .line-2 {
-    opacity: 0;
-  }
-  header .navbar .change .line-3 {
-    -webkit-transform: rotateZ(45deg) translate(-8px, -6px);
-            transform: rotateZ(45deg) translate(-8px, -6px);
+    display: block !important;
+    right: 39px !important;
   }
 }
 
@@ -1304,40 +1314,15 @@ header nav .active-link hr {
     font-size: 16px !important;
   }
   header .navbar .hamburger {
-    display: inline-block !important;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 22px;
-    right: 22px;
-    cursor: pointer;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    display: block !important;
+    top: 21px !important;
+    right: 18px !important;
   }
-  header .navbar .line {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+  header .navbar .hamburger .middle-line {
+    width: 22px !important;
   }
-  header .navbar .change .line-1 {
-    -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
-            transform: rotateZ(-45deg) translate(-8px, 6px);
-  }
-  header .navbar .change .line-2 {
-    opacity: 0;
-  }
-  header .navbar .change .line-3 {
-    -webkit-transform: rotateZ(45deg) translate(-8px, -6px);
-            transform: rotateZ(45deg) translate(-8px, -6px);
+  header .navbar .hamburger .middle-line::before, header .navbar .hamburger .middle-line::after {
+    width: 22px !important;
   }
 }
 
@@ -1498,40 +1483,15 @@ header nav .active-link hr {
     padding: 7px 20px !important;
   }
   header .navbar .hamburger {
-    display: inline-block !important;
-    width: 25px;
-    height: 30px;
-    position: absolute;
-    top: 22px;
-    right: 18px;
-    cursor: pointer;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    display: block !important;
+    top: 23px !important;
+    right: 8px !important;
   }
-  header .navbar .line {
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
+  header .navbar .hamburger .middle-line {
+    width: 20px !important;
   }
-  header .navbar .change .line-1 {
-    -webkit-transform: rotateZ(-45deg) translate(-8px, 6px);
-            transform: rotateZ(-45deg) translate(-8px, 6px);
-  }
-  header .navbar .change .line-2 {
-    opacity: 0;
-  }
-  header .navbar .change .line-3 {
-    -webkit-transform: rotateZ(45deg) translate(-8px, -6px);
-            transform: rotateZ(45deg) translate(-8px, -6px);
+  header .navbar .hamburger .middle-line::before, header .navbar .hamburger .middle-line::after {
+    width: 20px !important;
   }
 }
 
@@ -1608,6 +1568,10 @@ footer .footer-bottom .copyright-holder p {
   margin-top: 5px;
   font-size: 15px;
   font-weight: 200;
+}
+
+footer .footer-bottom .copyright-holder p a {
+  color: white;
 }
 
 footer .footer-bottom .social-media {
