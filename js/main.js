@@ -339,92 +339,12 @@ $(document).ready(function () {
   // ======= Showing the bottom content when click the Radio button - End ======= //
 
 
-  // ======= Tour Filter and Background-color of Button when click on it - Start ======= //
-  $(".tour-holder").isotope({
-    itemSelector: ".item-col",
-    layoutMode: "fitRows"
+  // ======= Type Writer Effect Start ======= //
+  var typed = new Typed(".text-type", {
+    strings: ['Holiday', 'Mountain', 'Adventure'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    loop: true
   });
-
-  $(document).on("click", ".category-btns li a", function (e) {
-    e.preventDefault();
-    $(this).addClass("active-btn");
-    $(this).parent().siblings().children().removeClass("active-btn");
-
-    let selector = $(this).attr("data-filter");
-    $(".tour-holder").isotope({
-      filter: selector
-    });
-    return false;
-  });
-  // ======= Tour Filter and Background-color of Button when click on it - End ======= //
+  // ======= Type Writer Effect End ======= //
 });
-
-
-// ======= Type Writer Effect Start ======= //
-// ES6 Class
-class TypeWriter {
-  constructor(txtElement, words, wait = 1000) {
-    this.txtElement = txtElement;
-    this.words = words;
-    this.txt = "";
-    this.wordIndex = 0;
-    this.wait = parseInt(wait, 10);
-    this.type();
-    this.isDeleting = false;
-  }
-
-  type() {
-    // Current index of word
-    const current = this.wordIndex % this.words.length;
-    // Get full text of current word
-    const fullTxt = this.words[current];
-
-    // Check if deleting
-    if (this.isDeleting) {
-      // Remove char
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-      // Add char
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-
-    // Insert txt into element
-    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-
-    // Initial Type Speed
-    let typeSpeed = 100;
-
-    if (this.isDeleting) {
-      typeSpeed /= 2;
-    }
-
-    // If word is complete
-    if (!this.isDeleting && this.txt === fullTxt) {
-      // Make pause at end
-      typeSpeed = this.wait;
-      // Set delete to true
-      this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === "") {
-      this.isDeleting = false;
-      // Move to next word
-      this.wordIndex++;
-      // Pause before start typing
-      typeSpeed = 500;
-    }
-
-    setTimeout(() => this.type(), typeSpeed);
-  }
-}
-
-// Init On DOM Load
-document.addEventListener("DOMContentLoaded", init);
-
-// Init App
-function init() {
-  const txtElement = document.querySelector(".txt-type");
-  const words = JSON.parse(txtElement.getAttribute("data-words"));
-  const wait = txtElement.getAttribute("data-wait");
-  // Init TypeWriter
-  new TypeWriter(txtElement, words, wait);
-}
-// ======= Type Writer Effect End ======= //

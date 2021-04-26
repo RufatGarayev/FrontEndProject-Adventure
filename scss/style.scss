@@ -1,7 +1,6 @@
 // ======= Importing Partials and Reused Sections ======= //
 @import "../scss/partials/extends";
 @import "../scss/partials/variables";
-@import "../scss/partials/common-features";
 @import "../scss/reused_sections/header";
 @import "../scss/reused_sections/footer";
 @import "../scss/reused_sections/preloader";
@@ -10,11 +9,12 @@
 @import "../scss/reused_sections/main_tourItem_design";
 @import "../scss/reused_sections/our-advantages";
 @import "../scss/reused_sections/modal";
+@import "../scss/partials/common-features";
 
 
 
 // ======= Dark Bg-color Start ======= //
-.dark-bgcolor{
+.dark-bgcolor {
   @extend %dark-bg;
 }
 
@@ -54,17 +54,29 @@
       margin: 0 auto;
       color: white;
       text-align: center;
-      h3 {
-        font-size: 68px;
-        font-family: ludicrous;
+      .banner-title-wrapper {
         @media (min-width: 500px) and (max-width: 575.98px) {
-          font-size: 58px !important;
+          width: 100%;
+        }
+
+        h3 {
+          font-size: 62px;
+          font-family: "Caveat Brush", cursive;
+          letter-spacing: 5px;
+          font-weight: 700;
+          @media (min-width: 500px) and (max-width: 575.98px) {
+            font-size: 58px !important;
+          }
+
+          @media (min-width: 250px) and (max-width: 374.98px) {
+            font-size: 50px !important;
+          }
         }
       }
 
       h1 {
         font-weight: bold;
-        font-size: 32px;
+        font-size: 35px;
         letter-spacing: 2px;
         font-weight: bold;
         display: inline-block;
@@ -73,18 +85,6 @@
       }
       .button {
         @extend %website-button;
-      }
-    }
-
-    @media (min-width: 250px) and (max-width: 299.98px) {
-      top: 35% !important;
-      .caption {
-        h3 {
-          font-size: 54px !important;
-        }
-        h1 {
-          font-size: 18px !important;
-        }
       }
     }
   }
@@ -270,7 +270,7 @@
         }
       }
       span {
-        color: black;
+        color: white;
         font-weight: 700;
       }
     }
@@ -288,7 +288,7 @@
         text-decoration: line-through;
         margin-right: 20px;
         font-size: 35px;
-        color: black;
+        color: white;
       }
       .discount-price {
         font-family: "Times New Roman", Times, serif;
@@ -541,9 +541,10 @@
             }
 
             @media (min-width: 375px) and (max-width: 440px) {
-               i, span{
-                 font-size: 12px !important;
-               }
+              i,
+              span {
+                font-size: 12px !important;
+              }
             }
           }
         }

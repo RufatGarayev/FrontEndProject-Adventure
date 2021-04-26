@@ -13,7 +13,6 @@
     right: 0;
     bottom: 0;
     top: 0;
-    // background: rgba(13, 47, 93, 0.6);
     background: rgba(48, 59, 54, 0.6);
   }
 
@@ -85,13 +84,12 @@
     .alert {
       @extend %form-alert;
       padding-left: 88px;
-      color: black;
-      font-weight: 700;
+      color: white;
+      font-weight: 400;
     }
   }
 }
 // ======= Subscribe Section End ======= //
-
 
 
 // ======= Responsive Design Start ======= //

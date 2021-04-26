@@ -94,8 +94,8 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 }
 
 #subscribe .subscribe-title h1 {
-  font-size: 40px;
-  font-family: ludicrous;
+  font-size: 42px;
+  font-family: 'Caveat Brush', cursive;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: white;
@@ -103,13 +103,13 @@ header nav .account li .login-box-holder .same-style-input-area .bottom-links .s
 
 @media (min-width: 375px) and (max-width: 575.98px) {
   #subscribe .subscribe-title h1 {
-    font-size: 36px;
+    font-size: 38px;
   }
 }
 
 @media (min-width: 250px) and (max-width: 374.98px) {
   #subscribe .subscribe-title h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 
@@ -374,12 +374,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
-@font-face {
-  font-family: "ludicrous";
-  src: url(/other/WOFF-web-fonts/Ludicrous.woff);
-  font-weight: 100;
 }
 
 .stop-scroll {
@@ -1771,8 +1765,8 @@ footer .footer-bottom .social-media ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000000;
-  z-index: 9999;
+  background: #000;
+  z-index: 999999999;
 }
 
 .loading-text {
@@ -1790,103 +1784,80 @@ footer .footer-bottom .social-media ul {
 
 .loading-text span {
   display: inline-block;
-  position: relative;
-  overflow: hidden;
-  color: #000;
-  font-size: 30px;
-  letter-spacing: 7px;
+  margin: 0 5px;
+  color: #fff;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 20px;
 }
 
-@media (max-width: 374.98px) {
-  .loading-text span {
-    font-size: 22px;
-    letter-spacing: 5px;
+.loading-text span:nth-child(1) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
+  animation: blur-text 1.5s 0s infinite linear alternate;
+}
+
+.loading-text span:nth-child(2) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
+  animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+
+.loading-text span:nth-child(3) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
+  animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+
+.loading-text span:nth-child(4) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
+  animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+
+.loading-text span:nth-child(5) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
+  animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+
+.loading-text span:nth-child(6) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1s infinite linear alternate;
+  animation: blur-text 1.5s 1s infinite linear alternate;
+}
+
+.loading-text span:nth-child(7) {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
+  animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+@-webkit-keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
   }
-}
-
-.loading-text span:before {
-  content: attr(data-preloader);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #1ec8e7;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-  -webkit-animation-name: preload-animation;
-          animation-name: preload-animation;
-}
-
-.loading-text span:nth-child(2):before {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.loading-text span:nth-child(3):before {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.loading-text span:nth-child(4):before {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.loading-text span:nth-child(5):before {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-.loading-text span:nth-child(6):before {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.loading-text span:nth-child(7):before {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-@-webkit-keyframes preload-animation {
-  0%,
   100% {
-    -webkit-transform: rotateY(-90deg) scale(1);
-            transform: rotateY(-90deg) scale(1);
-    opacity: 0;
-  }
-  20%,
-  50% {
-    -webkit-transform: rotateY(0) scale(1);
-            transform: rotateY(0) scale(1);
-    opacity: 1;
-  }
-  75% {
-    -webkit-transform: rotateY(0) scale(1.2);
-            transform: rotateY(0) scale(1.2);
-    opacity: 0;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
   }
 }
 
-@keyframes preload-animation {
-  0%,
+@keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
   100% {
-    -webkit-transform: rotateY(-90deg) scale(1);
-            transform: rotateY(-90deg) scale(1);
-    opacity: 0;
-  }
-  20%,
-  50% {
-    -webkit-transform: rotateY(0) scale(1);
-            transform: rotateY(0) scale(1);
-    opacity: 1;
-  }
-  75% {
-    -webkit-transform: rotateY(0) scale(1.2);
-            transform: rotateY(0) scale(1.2);
-    opacity: 0;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
   }
 }
 
@@ -1982,8 +1953,8 @@ footer .footer-bottom .social-media ul {
 
 #subscribe .form-holder .alert {
   padding-left: 88px;
-  color: black;
-  font-weight: 700;
+  color: white;
+  font-weight: 400;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -2188,9 +2159,9 @@ footer .footer-bottom .social-media ul {
 #intro .page-caption h1 {
   text-align: center;
   color: white;
-  font-family: ludicrous;
+  font-family: 'Caveat Brush', cursive;
   text-transform: uppercase;
-  font-size: 65px;
+  font-size: 60px;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {

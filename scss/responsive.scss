@@ -9,12 +9,8 @@
       width: 90% !important;
       left: 5% !important;
       .caption {
-        h3 {
-          font-size: 80px !important;
-        }
-
         h1 {
-          font-size: 40px !important;
+          font-size: 33px !important;
           padding: 50px 0 80px 0 !important;
         }
 
@@ -109,7 +105,7 @@
       .caption {
         width: 80% !important;
         h3 {
-          font-size: 76px !important;
+          font-size: 66px !important;
         }
 
         h1 {
@@ -328,9 +324,9 @@
     .banner-area {
       top: 36% !important;
       .caption {
-        width: 90% !important;
+        width: 95% !important;
         h3 {
-          font-size: 65px !important;
+          font-size: 56px !important;
         }
 
         h1 {
@@ -621,12 +617,15 @@
       left: 5% !important;
       .caption {
         width: 100% !important;
-        h3 {
-          font-size: 48px !important;
+        .banner-title-wrapper{
+          width: 70%;
+          h3 {
+            font-size: 55px !important;
+          }
         }
 
         h1 {
-          font-size: 25px !important;
+          font-size: 28px !important;
           padding: 40px 0 60px 0 !important;
         }
 
@@ -898,16 +897,16 @@
 
     .banner-area {
       width: 96% !important;
-      top: 38% !important;
+      top: 35% !important;
       left: 2% !important;
       .caption {
         width: 100% !important;
-        h3 {
-          font-size: 43px !important;
+        .banner-title-wrapper {
+          width: 85%;
         }
 
         h1 {
-          font-size: 20px !important;
+          font-size: 24px !important;
           letter-spacing: 2px !important;
           padding: 30px 0 50px 0 !important;
         }

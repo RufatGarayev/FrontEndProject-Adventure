@@ -1,122 +1,153 @@
+@charset "UTF-8";
 @font-face {
-    font-family: "flaticon";
-    src: url("./flaticon.ttf?a9c85ba09824df22fa58307fec521126") format("truetype"),
-url("./flaticon.woff?a9c85ba09824df22fa58307fec521126") format("woff"),
-url("./flaticon.woff2?a9c85ba09824df22fa58307fec521126") format("woff2"),
-url("./flaticon.eot?a9c85ba09824df22fa58307fec521126#iefix") format("embedded-opentype"),
-url("./flaticon.svg?a9c85ba09824df22fa58307fec521126#flaticon") format("svg");
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?a9c85ba09824df22fa58307fec521126") format("truetype"), url("./flaticon.woff?a9c85ba09824df22fa58307fec521126") format("woff"), url("./flaticon.woff2?a9c85ba09824df22fa58307fec521126") format("woff2"), url("./flaticon.eot?a9c85ba09824df22fa58307fec521126#iefix") format("embedded-opentype"), url("./flaticon.svg?a9c85ba09824df22fa58307fec521126#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-    font-family: flaticon !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .flaticon-add-to-basket:before {
-    content: "\f101";
+  content: "";
 }
+
 .flaticon-bike:before {
-    content: "\f102";
+  content: "";
 }
+
 .flaticon-binoculars:before {
-    content: "\f103";
+  content: "";
 }
+
 .flaticon-call:before {
-    content: "\f104";
+  content: "";
 }
+
 .flaticon-camera-1:before {
-    content: "\f105";
+  content: "";
 }
+
 .flaticon-camera:before {
-    content: "\f106";
+  content: "";
 }
+
 .flaticon-camping-tent:before {
-    content: "\f107";
+  content: "";
 }
+
 .flaticon-clock:before {
-    content: "\f108";
+  content: "";
 }
+
 .flaticon-close:before {
-    content: "\f109";
+  content: "";
 }
+
 .flaticon-community:before {
-    content: "\f10a";
+  content: "";
 }
+
 .flaticon-compass:before {
-    content: "\f10b";
+  content: "";
 }
+
 .flaticon-down-arrow:before {
-    content: "\f10c";
+  content: "";
 }
+
 .flaticon-envelope:before {
-    content: "\f10d";
+  content: "";
 }
+
 .flaticon-filter:before {
-    content: "\f10e";
+  content: "";
 }
+
 .flaticon-hotel:before {
-    content: "\f10f";
+  content: "";
 }
+
 .flaticon-left-arrow:before {
-    content: "\f110";
+  content: "";
 }
+
 .flaticon-map:before {
-    content: "\f111";
+  content: "";
 }
+
 .flaticon-medal:before {
-    content: "\f112";
+  content: "";
 }
+
 .flaticon-minus-sign:before {
-    content: "\f113";
+  content: "";
 }
+
 .flaticon-national-park:before {
-    content: "\f114";
+  content: "";
 }
+
 .flaticon-phone-call:before {
-    content: "\f115";
+  content: "";
 }
+
 .flaticon-pin:before {
-    content: "\f116";
+  content: "";
 }
+
 .flaticon-pointed-star:before {
-    content: "\f117";
+  content: "";
 }
+
 .flaticon-public-transport:before {
-    content: "\f118";
+  content: "";
 }
+
 .flaticon-remove:before {
-    content: "\f119";
+  content: "";
 }
+
 .flaticon-right-arrow-angle:before {
-    content: "\f11a";
+  content: "";
 }
+
 .flaticon-schedule:before {
-    content: "\f11b";
+  content: "";
 }
+
 .flaticon-search-interface-symbol:before {
-    content: "\f11c";
+  content: "";
 }
+
 .flaticon-shopping-bag:before {
-    content: "\f11d";
+  content: "";
 }
+
 .flaticon-steering-wheel:before {
-    content: "\f11e";
+  content: "";
 }
+
 .flaticon-street-sign:before {
-    content: "\f11f";
+  content: "";
 }
+
 .flaticon-traveller:before {
-    content: "\f120";
+  content: "";
 }
+
 .flaticon-upload:before {
-    content: "\f121";
+  content: "";
 }
+
 .flaticon-user:before {
-    content: "\f122";
+  content: "";
 }
+/*# sourceMappingURL=flaticon.css.map */

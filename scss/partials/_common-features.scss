@@ -17,12 +17,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@font-face {
-  font-family: "ludicrous";
-  src: url(/other/WOFF-web-fonts/Ludicrous.woff);
-  font-weight: 100;
-}
-
 .stop-scroll {
   height: 100vh;
   overflow: hidden;
