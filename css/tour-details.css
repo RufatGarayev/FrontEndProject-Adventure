@@ -2488,6 +2488,8 @@ footer .footer-bottom .social-media ul {
 #tour .tourPics-and-basicInfo .tour-img-box img {
   height: 100%;
   width: 100%;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
   -webkit-filter: brightness(85%);
           filter: brightness(85%);
 }
@@ -2495,8 +2497,8 @@ footer .footer-bottom .social-media ul {
 #tour .tourPics-and-basicInfo .tour-img-box img:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
-  -webkit-transition: all 3s linear;
-  transition: all 3s linear;
+  -webkit-transition: all 2.5s ease;
+  transition: all 2.5s ease;
 }
 
 #tour .tourPics-and-basicInfo .small-img-box {

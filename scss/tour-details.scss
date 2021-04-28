@@ -51,10 +51,11 @@
       img {
         height: 100%;
         width: 100%;
+        transition: all 2s ease;
         filter: brightness(85%);
         &:hover {
           transform: scale(1.4);
-          transition: all 3s linear;
+          transition: all 2.5s ease;
         }
       }
     }
