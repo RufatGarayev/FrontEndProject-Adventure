@@ -1,13 +1,12 @@
+// ======= Reload ======= //
+window.addEventListener("load", () => {
+  const preload = document.querySelector(".loader");
+  preload.classList.add("loader-finish");
+});
+
 $(document).ready(function () {
-  // ======= Reload Start ======= //
-  $(window).on("load", function () {
-    $(".loading").fadeOut("slow");
-  });
-  // ======= Reload End ======= //
-
-
-  // ======= Events On Scroll Start ======= //
-  // === Nav Bg-Color Start === //
+  // ======= Events On Scroll ======= //
+  // Nav Bg-Color
   window.onscroll = function () {
     if ($(window).scrollTop() >= 600) {
       $(".navbar").addClass("navbarBg-darkBlack");
@@ -15,9 +14,8 @@ $(document).ready(function () {
       $(".navbar").removeClass("navbarBg-darkBlack");
       $(".navbar").addClass("navbarBg-lightBlack");
     }
-    // === Nav Bg-Color End === //
 
-    // === Processes that happen when Scrolling - Start === //
+    // Processes that happen when Scrolling
     if ($(window).scrollTop() >= 33) {
       $("header").addClass("sticky");
       $(".search-area-holder").css("top", "80px");
@@ -29,12 +27,9 @@ $(document).ready(function () {
       $(".login-box-holder").css("top", "112px");
       $(".navbar-items").css({ height: "98%", top: "33px" });
     }
-    // === Processes that happen when Scrolling - End === //
   };
-  // ======= Events On Scroll End ======= //
 
-
-  // ======= Show or Hide navbar items when click on Hamburger btn - Start ======= //
+  // ======= Show or Hide navbar items when click on Hamburger btn ======= //
   $(document).on("click", ".hamburger", function () {
     $(this).find(".hamburger-btn").toggleClass("change");
     $(".navbar-items").toggleClass("active");
@@ -61,18 +56,14 @@ $(document).ready(function () {
       }
     });
   });
-  // ======= Show or Hide navbar items when click on Hamburger btn - End ======= //
 
-
-  // ======= Counter-Up Start ======= //
+  // ======= Counter-Up ======= //
   $(".counter-up").counterUp({
     delay: 50,
     time: 4000,
   });
-  // ======= Counter-Up End ======= //
 
-
-  // ======= Making visible or invisible the Search-Box and Login-Area and replacing the icon when click the btn - Start ======= //
+  // ======= Making visible or invisible the Search-Box and Login-Area and replacing the icon when click the btn ======= //
   $(document).on("click", ".icon-btn", function (e) {
     e.preventDefault();
     // hide search-box and login-area, and change icons when click outside
@@ -111,10 +102,8 @@ $(document).ready(function () {
       $(this).children().removeClass("flaticon-close").addClass("flaticon-user");
     }
   });
-  // ======= Making visible or invisible the Search-Box and Login-Area and replacing the icon when click the btn - End ======= //
 
-
-  // ======= Going to Reset Password Area and back - Start ======= //
+  // ======= Going to Reset Password Area and back ======= //
   $(document).on("click", ".forgotten-password-link", function (e) {
     e.preventDefault();
     $(".reset-password").removeClass("d-none");
@@ -126,10 +115,8 @@ $(document).ready(function () {
     $(".reset-password").addClass("d-none");
     $(".login-box").removeClass("d-none");
   });
-  // ======= Going to Reset Password Area and back - End ======= //
 
-
-  // ======= Back To Top Btn - Start ======= //
+  // ======= Back To Top Btn ======= //
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
       $("#topBtn").css({ "transform": "translateY(0)", "visibility": "visible" });
@@ -141,10 +128,8 @@ $(document).ready(function () {
   $("#topBtn").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 100);
   });
-  // ======= Back To Top Btn - End ======= //
 
-
-  // ======= Price Range Filter - Start ======= //
+  // ======= Price Range Filter ======= //
   if ($('.slider-tour-sorting').length) {
     $(function () {
       $(".slider-tour-sorting").slider({
@@ -161,10 +146,8 @@ $(document).ready(function () {
         "  -  $" + $(".slider-tour-sorting").slider("values", 1));
     });
   }
-  // ======= Price Range Filter - End ======= //
 
-
-  // ======= Sorting Dropdown Start ======= //
+  // ======= Sorting Dropdown ======= //
   $("#tours .dropdown").click(function () {
     $("#tours .menu").toggleClass("#tours showMenu");
     $("#tours .dropdown i").toggleClass("#tours rotate");
@@ -183,10 +166,8 @@ $(document).ready(function () {
       }
     });
   });
-  // ======= Sorting Dropdown End ======= //
 
-
-  // ======= Showing or Hiding Sidebar Filter - Start ======= //
+  // ======= Showing or Hiding Sidebar Filter ======= //
   $(document).on("click", ".sidebar-filter-toggle", function (e) {
     e.preventDefault();
     $(".sidebar-area").toggleClass("show-sidebar");
@@ -198,10 +179,8 @@ $(document).ready(function () {
       }
     });
   });
-  // ======= Showing or Hiding Sidebar Filter - End ======= //
 
-
-  // ======= Showing appropriate Image when click a small image - Start ======= //
+  // ======= Showing appropriate Image when click a small image ======= //
   $(document).on("click", "#tour .small-img-box a", function (e) {
     e.preventDefault();
 
@@ -209,10 +188,8 @@ $(document).ready(function () {
     $(this).parent().parent().siblings().find(".small-img-box").removeClass("#tour active-img");
     $("#tour .tour-img-box img").attr("src", $(this).attr("href"));
   });
-  // ======= Showing appropriate Image when click a small image - End ======= //
 
-
-  // ======= Showing appropriate tab content when click a tab button - Start ======= //
+  // ======= Showing appropriate tab content when click a tab button ======= //
   $(document).on("click", ".tour-tabs li a", function (e) {
     e.preventDefault();
 
@@ -221,10 +198,8 @@ $(document).ready(function () {
     $(".tab-items .tab-content").hide();
     $($(this).data("value")).show();
   });
-  // ======= Showing appropriate tab content when click a tab button - End ======= //
 
-
-  // ======= Countdown Start ======= //
+  // ======= Countdown ======= //
   let countdown = () => {
     // selecting time
     let now = new Date();
@@ -263,12 +238,9 @@ $(document).ready(function () {
 
     setTimeout(countdown, 1000);
   }
-
   countdown();
-  // ======= Countdown End ======= //
 
-
-  // ======= Read More Start ======= //
+  // ======= Read More ======= //
   $(document).on("click", ".readMore-btn", function () {
     // showing more text or hiding
     $(".read-more").toggleClass("show-more-text");
@@ -280,10 +252,8 @@ $(document).ready(function () {
       $(".readMore-btn").text("Read More...");
     }
   });
-  // ======= Read More End ======= //
 
-
-  // ======= Add To Cart Btn - Start ======= //
+  // ======= Add To Cart Btn ======= //
   $(document).on("click", ".addToCartBtn", function () {
     let $this = $(this);
 
@@ -314,10 +284,8 @@ $(document).ready(function () {
       $this.find(".successIcon").removeClass("d-none");
     }
   });
-  // ======= Add To Cart Btn - End ======= //
 
-
-  // ======= Accordion - Start ======= //
+  // ======= Accordion ======= //
   $(document).on("click", ".accordion-btn", function () {
     // showing or hiding the text
     $(this).next().toggleClass("show-text");
@@ -328,23 +296,18 @@ $(document).ready(function () {
     // hiding other text that is active
     $(this).next().siblings(".accordion-text").removeClass("show-text");
   });
-  // ======= Accordion - End ======= //
 
-
-  // ======= Showing the bottom content when click the Radio button - Start ======= //
+  // ======= Showing the bottom content when click the Radio button ======= //
   $(document).on("click", ".payment-method input", function () {
     $(this).next().next().addClass(".payment-method show-msg");
     $(this).next().next().siblings().removeClass(".payment-method show-msg");
   });
-  // ======= Showing the bottom content when click the Radio button - End ======= //
 
-
-  // ======= Type Writer Effect Start ======= //
+  // ======= Type Writer Effect ======= //
   var typed = new Typed(".text-type", {
     strings: ['Holiday', 'Mountain', 'Adventure'],
     typeSpeed: 70,
     backSpeed: 70,
     loop: true
   });
-  // ======= Type Writer Effect End ======= //
 });

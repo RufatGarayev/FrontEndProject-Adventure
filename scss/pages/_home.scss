@@ -1,0 +1,1166 @@
+// ======= Intro Section ======= //
+#home-intro {
+  overflow: hidden;
+
+  .carousel-item {
+    height: 100vh;
+    img {
+      height: 100%;
+      animation: zoom 20s;
+      filter: brightness(80%);
+      object-fit: cover;
+    }
+  }
+
+  .carousel-button {
+    width: 100px;
+    @extend %carousel-control;
+  }
+
+  .banner-area {
+    position: absolute;
+    top: 36%;
+    z-index: 9;
+    width: 80%;
+    left: 10%;
+    .caption {
+      width: 90%;
+      margin: 0 auto;
+      color: white;
+      text-align: center;
+      .banner-title-wrapper {
+        h3 {
+          font-size: 62px;
+          font-family: "Caveat Brush", cursive;
+          letter-spacing: 5px;
+          font-weight: 700;
+        }
+      }
+
+      h1 {
+        font-weight: bold;
+        font-size: 35px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 0;
+        padding: 30px 0 50px 0;
+      }
+      .button {
+        @extend %website-button;
+      }
+    }
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.2, 1.2);
+    }
+  }
+}
+
+// ======= Special Offers Section ======= //
+#special-offers {
+  position: relative;
+  background: url(../img/bg-images/forest.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  padding: 90px 70px;
+  .background-overlay {
+    background: rgba(48, 59, 54, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .special-offers-caption {
+    padding-bottom: 40px;
+    h1 {
+      @extend %section-caption;
+    }
+    hr {
+      @extend %section-caption-bottom-line;
+    }
+    p {
+      @extend %paragraph;
+      color: white;
+    }
+  }
+
+  .owl-carousel {
+    .owl-dots {
+      @extend %owl-dots;
+    }
+  }
+}
+
+// ======= View Tours Section ======= //
+#view-tours {
+  overflow-x: hidden;
+  padding: 80px 0;
+  .view-tours-text {
+    justify-content: flex-end;
+    i {
+      display: flex;
+      &::before {
+        font-size: 48px;
+        color: $icon-color;
+        margin: 0 15px 0 0;
+      }
+    }
+    h4 {
+      color: rgb(37, 43, 45);
+      margin: 0;
+      font-size: 27px;
+    }
+  }
+
+  .view-tours-btn {
+    text-align: left;
+    a {
+      @extend %website-button;
+      font-size: 16px;
+      padding: 10px 30px;
+      display: inline-block;
+    }
+  }
+}
+
+// ======= Discount Section ======= //
+#discount {
+  background-image: url(../img/tours/sheki.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0 120px 0;
+  position: relative;
+  overflow-x: hidden;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(48, 59, 54, 0.5);
+  }
+
+  .discount_title {
+    h2 {
+      color: #fff !important;
+      text-transform: uppercase;
+      font-size: 27px;
+      letter-spacing: 2px;
+      &:first-of-type {
+        font-size: 34px;
+        padding-bottom: 10px;
+
+        span {
+          font-weight: 700;
+          color: white;
+        }
+      }
+      span {
+        color: white;
+        font-weight: 700;
+      }
+    }
+    h1 {
+      color: #fff;
+      font-size: 65px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .price {
+      padding-bottom: 44px;
+      .norm-price {
+        font-family: "Times New Roman", Times, serif;
+        text-decoration: line-through;
+        margin-right: 20px;
+        font-size: 35px;
+        color: white;
+      }
+      .discount-price {
+        font-family: "Times New Roman", Times, serif;
+        color: #fff;
+        font-size: 50px;
+      }
+    }
+  }
+
+  .counterdowns {
+    text-align: left;
+    .timer {
+      width: 79%;
+      .cdowns {
+        width: 125px;
+        height: 125px;
+        background: rgb(58, 59, 116);
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        border-radius: 0;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 34px;
+        border-radius: 15px;
+        font-size: 52px;
+        color: white;
+        font-weight: 600;
+        &:last-of-type {
+          margin-right: 0 !important;
+        }
+      }
+
+      .days {
+        position: relative;
+        &::before {
+          content: "Days";
+          position: absolute;
+          top: 76px;
+          left: 37px;
+          font-size: 22px;
+        }
+      }
+      .hours {
+        position: relative;
+        &::before {
+          content: "Hours";
+          position: absolute;
+          top: 76px;
+          left: 32px;
+          font-size: 22px;
+        }
+      }
+      .minutes {
+        position: relative;
+        &::before {
+          content: "Min";
+          position: absolute;
+          top: 76px;
+          left: 45px;
+          font-size: 22px;
+        }
+      }
+      .seconds {
+        position: relative;
+        &::before {
+          content: "Sec";
+          position: absolute;
+          top: 76px;
+          left: 44px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .discount_btn {
+    padding-top: 112px;
+    text-align: right;
+    a {
+      @extend %website-button;
+      font-size: 16px;
+      padding: 10px 30px;
+    }
+  }
+}
+
+// ======= Popular Tours Section ======= //
+#popular-tours {
+  overflow-x: hidden;
+  background-color: rgba(118, 148, 132, 1);
+  padding: 90px 60px;
+
+  .popular-tours-caption {
+    padding-bottom: 40px;
+    text-align: center;
+    h1 {
+      @extend %section-caption;
+    }
+    hr {
+      @extend %section-caption-bottom-line;
+    }
+    p {
+      @extend %paragraph;
+      color: white;
+    }
+  }
+
+  .owl-carousel {
+    .owl-dots {
+      @extend %owl-dots;
+    }
+
+    .item {
+      height: 445px;
+      position: relative;
+      margin: 10px;
+      &:hover {
+        img {
+          filter: brightness(70%) !important;
+          transition: linear 0.2s;
+        }
+        .content {
+          transform: translateY(-75px);
+          transition: 0.4s all;
+        }
+      }
+
+      .price-info {
+        @extend %price-box;
+        h5 {
+          font-size: 30px;
+        }
+        span {
+          font-size: 14px;
+        }
+      }
+
+      .img-box {
+        height: 400px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: linear 0.2s;
+          filter: brightness(80%);
+        }
+      }
+
+      .content {
+        width: 100%;
+        background-color: white;
+        height: 150px;
+        transform: translateY(0px);
+        transition: 0.4s all;
+
+        .content-header {
+          padding: 15px 20px 8px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center !important;
+          i {
+            font-size: 15px;
+            margin-right: 7px;
+            color: rgb(98, 107, 114);
+          }
+
+          .tour-name {
+            h4 {
+              font-size: 18px;
+              font-family: $item-caption-font-family;
+              letter-spacing: 1px;
+            }
+          }
+
+          .tour-date {
+            span {
+              font-size: 13px;
+              color: rgb(98, 107, 114);
+            }
+          }
+        }
+
+        .content-links {
+          height: 92px;
+          padding: 16px 20px 35px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          a {
+            position: relative;
+            @extend %add-to-cart-icon;
+            @extend %top-info-box;
+            .top-info-box {
+              left: 26%;
+              box-shadow: -4px 4px 14px 4px rgba(75, 74, 74, 0.2);
+              &::after {
+                left: calc(57% - 8px);
+              }
+            }
+            &:hover .top-info-box {
+              bottom: calc(93% + 5px);
+            }
+
+            &:first-of-type {
+              @extend %website-button;
+              padding: 9px 18px !important;
+              font-size: 13px;
+              font-weight: 500;
+            }
+          }
+
+          .spinner {
+            @extend %spinner;
+          }
+
+          .successIcon {
+            @extend %successIcon;
+          }
+
+          @keyframes rotate {
+            0% {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ======= Cooming Soon Section ======= //
+#coming-soon {
+  padding-top: 100px;
+  overflow-x: hidden;
+
+  .coming-soon-caption {
+    padding-bottom: 50px;
+    text-align: center;
+    h1 {
+      @extend %section-caption;
+      color: rgb(58, 59, 116);
+    }
+    hr {
+      @extend %section-caption-bottom-line;
+      background-color: rgb(58, 59, 116);
+    }
+    p {
+      @extend %paragraph;
+    }
+  }
+
+  .content {
+    height: 450px;
+    background-color: rgb(58, 59, 116);
+    display: flex;
+    padding: 0 90px;
+    align-items: center;
+    text-align: left;
+    color: white;
+
+    .content-name {
+      i {
+        &::before {
+          font-size: 40px;
+          color: rgb(245, 192, 94);
+          margin: 0 15px 0 0;
+        }
+      }
+
+      h3 {
+        padding-top: 12px;
+        font-size: 32px;
+      }
+    }
+
+    .content-text {
+      p {
+        padding-left: 55px;
+        font-size: $paragraph-size;
+        font-weight: $paragraph-weight;
+      }
+    }
+  }
+
+  .third .content {
+    background-color: white;
+    .content-name {
+      h3 {
+        color: rgb(58, 59, 116);
+      }
+    }
+    .content-text {
+      p {
+        color: black;
+      }
+    }
+  }
+
+  .img-box {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+  }
+
+  .first-pic {
+    background-image: url(../img/coming-soon/coming-soon1.jpg);
+    filter: brightness(90%);
+  }
+
+  .second-pic {
+    background-image: url(../img/coming-soon/coming-soon2.jpg);
+    filter: brightness(90%);
+  }
+}
+
+// ======= Achievements Section ======= //
+#our-achievements {
+  background-color: rgba(118, 148, 132, 1);
+  padding: 90px 0 95px;
+
+  .achievements-caption {
+    width: 100%;
+    text-align: center;
+    h1 {
+      @extend %section-caption;
+    }
+    hr {
+      @extend %section-caption-bottom-line;
+    }
+  }
+
+  .content {
+    padding-top: 50px;
+    transition: 0.3s ease;
+    &:hover {
+      transform: translateY(-30px);
+      transition: 0.3s ease;
+    }
+    i {
+      color: $icon-color;
+      &::before {
+        margin: 0;
+        font-size: $big-icon-size;
+      }
+    }
+
+    h2 {
+      padding: 25px 0 10px 0;
+      font-size: 50px;
+      font-weight: 500;
+      color: white;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 28px;
+      font-family: $item-caption-font-family;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+
+// ======= Responsive Design ======= //
+@media screen and (max-width: 1199.98px) {
+  #home-intro {
+    .banner-area {
+      top: 35%;
+      width: 90%;
+      left: 5%;
+      .caption {
+        h1 {
+          font-size: 33px;
+          padding: 50px 0 80px 0;
+        }
+      }
+    }
+  }
+
+  #discount {
+    padding: 120px 0 140px 0;
+    .discount_title {
+      h1 {
+        font-size: 54px;
+      }
+    }
+
+    .counterdowns {
+      .counter {
+        .timer {
+          width: 96%;
+          .cdowns {
+            font-size: 44px;
+            width: 100px;
+            height: 100px;
+            margin-right: 15px;
+            border-radius: 16px;
+            &:last-of-type {
+              margin-right: 0;
+            }
+
+            &::before {
+              top: 60px;
+              font-size: 19px;
+            }
+          }
+          .days {
+            &::before {
+              left: 28px;
+            }
+          }
+          .hours {
+            &::before {
+              left: 24px;
+            }
+          }
+          .minutes {
+            &::before {
+              left: 35px;
+            }
+          }
+          .seconds {
+            &::before {
+              left: 34px;
+            }
+          }
+        }
+      }
+    }
+
+    .discount_btn {
+      text-align: left;
+      padding-top: 86px;
+      a {
+        padding: 10px 30px;
+      }
+    }
+  }
+
+  #popular-tours {
+    padding: 90px 30px;
+
+    .item {
+      .content {
+        .content-header {
+          .tour-name {
+            i {
+              font-size: 14px;
+            }
+            h4 {
+              font-size: 15px !important;
+              letter-spacing: 0.3px;
+            }
+          }
+          .tour-date {
+            i {
+              font-size: 12px;
+              margin-right: 3px;
+            }
+            span {
+              font-size: 11px !important;
+            }
+          }
+        }
+        .content-links {
+          height: 81px;
+          padding: 16px 15px 25px 15px;
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  #home-intro {
+    .carousel-control {
+      opacity: 0;
+    }
+  }
+
+  #view-tours {
+    padding: 60px 0;
+    .view-tours-text {
+      h4 {
+        font-size: 25px;
+      }
+    }
+
+    .view-tours-btn {
+      text-align: center;
+      a {
+        font-size: 15px;
+        line-height: 30px;
+        padding: 8px 28px;
+      }
+    }
+  }
+
+  #popular-tours {
+    .content {
+      transform: translateY(-75px) !important;
+    }
+  }
+
+  #coming-soon {
+    .content {
+      padding: 0 30px;
+      .content-name {
+        i {
+          &::before {
+            font-size: 30px;
+            margin: 0 15px 0 0;
+          }
+        }
+
+        h3 {
+          font-size: 26px;
+          padding-top: 10px;
+        }
+      }
+
+      .content-text {
+        p {
+          padding-left: 46px;
+        }
+      }
+    }
+  }
+
+  #our-achievements {
+    padding: 90px 0 100px;
+    .content {
+      i {
+        &::before {
+          font-size: 55px;
+        }
+      }
+
+      h2 {
+        font-size: 40px !important;
+      }
+
+      h3 {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  #home-intro {
+    .carousel-control {
+      opacity: 0;
+    }
+
+    .banner-area {
+      top: 29%;
+      .caption {
+        width: 66%;
+      }
+    }
+  }
+
+  #special-offers,
+  #popular-tours {
+    padding: 80px 30px;
+  }
+
+  #view-tours {
+    padding: 50px 0 60px;
+    .view-tours-text {
+      padding-bottom: 20px;
+      justify-content: center;
+      h4 {
+        font-size: 22px;
+      }
+
+      i {
+        &::before {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  #discount {
+    .discount_title {
+      text-align: center;
+      h2 {
+        font-size: 18px;
+        &:first-of-type {
+          font-size: 28px;
+        }
+      }
+      h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+      .price {
+        .norm-price {
+          font-size: 30px;
+        }
+        .discount-price {
+          font-size: 40px;
+        }
+      }
+    }
+
+    .counterdowns {
+      .counter {
+        .timer {
+          width: 100%;
+          .autob {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .cdowns {
+              border-radius: 15px;
+              margin-bottom: 34px;
+              &::before {
+                top: 62px;
+                font-size: 19px;
+              }
+            }
+            .days {
+              &::before {
+                left: 30px;
+              }
+            }
+            .hours {
+              &::before {
+                left: 24px;
+              }
+            }
+            .minutes {
+              &::before {
+                left: 35px;
+              }
+            }
+            .seconds {
+              &::before {
+                left: 34px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .discount_btn {
+      text-align: center;
+      padding-top: 72px;
+    }
+  }
+
+  #coming-soon {
+    .content {
+      height: 320px;
+      padding: 0 30px;
+    }
+
+    .img-box {
+      height: 320px;
+    }
+
+    .third {
+      order: 1;
+    }
+
+    .fourth {
+      order: 2;
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  #home-intro {
+    .banner-area {
+      .caption {
+        width: 100%;
+        .banner-title-wrapper {
+          width: 58%;
+          h3 {
+            font-size: 47px;
+          }
+        }
+
+        h1 {
+          font-size: 23px;
+        }
+
+        .button {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  #special-offers,
+  #popular-tours {
+    padding: 80px 10px;
+  }
+
+  #discount {
+    .discount_title {
+      h2 {
+        font-size: 18px;
+        &:first-of-type {
+          font-size: 32px;
+        }
+      }
+      h1 {
+        font-size: 35px;
+      }
+      .price {
+        .norm-price {
+          font-size: 26px;
+          margin-right: 9px !important;
+        }
+        .discount-price {
+          font-size: 36px;
+        }
+      }
+    }
+
+    .counterdowns {
+      .counter {
+        .timer {
+          .autob {
+            .cdowns {
+              width: 70px;
+              height: 72px;
+              margin-right: 13px;
+              border-radius: 13px;
+              font-size: 32px;
+              &:last-of-type {
+                margin-right: 0 !important;
+              }
+
+              &::before {
+                top: 43px;
+                font-size: 14px;
+              }
+            }
+
+            .days {
+              &::before {
+                left: 19px;
+              }
+            }
+            .hours {
+              &::before {
+                left: 16px;
+              }
+            }
+            .minutes {
+              &::before {
+                left: 24px;
+              }
+            }
+            .seconds {
+              &::before {
+                left: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  #home-intro {
+    .banner-area {
+      width: 96%;
+      left: 2%;
+      .caption {
+        .banner-title-wrapper {
+          width: 85% !important;
+        }
+      }
+    }
+  }
+
+  #view-tours {
+    .view-tours-text {
+      h4 {
+        font-size: 16px;
+      }
+
+      i {
+        &::before {
+          font-size: 30px;
+          margin: 0 5px 0 0 !important;
+        }
+      }
+    }
+
+    .view-tours-btn {
+      a {
+        font-size: 14px;
+        line-height: 30px;
+        padding: 5px 26px;
+      }
+    }
+  }
+
+  #discount {
+    .discount_title {
+      h2 {
+        font-size: 15px;
+        &:first-of-type {
+          font-size: 23px;
+        }
+      }
+      h1 {
+        font-size: 23px;
+      }
+      .price {
+        .norm-price {
+          font-size: 18px;
+        }
+        .discount-price {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .counterdowns {
+      .counter {
+        .timer {
+          .autob {
+            .cdowns {
+              width: 46px;
+              height: 50px;
+              margin-right: 10px;
+              border-radius: 5px;
+              font-size: 22px;
+
+              &::before {
+                top: 30px;
+                font-size: 11px;
+              }
+            }
+
+            .days {
+              &::before {
+                left: 10px;
+              }
+            }
+            .hours {
+              &::before {
+                left: 8px;
+              }
+            }
+            .minutes {
+              &::before {
+                left: 14px;
+              }
+            }
+            .seconds {
+              &::before {
+                left: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #popular-tours {
+    padding: 70px 5px 70px;
+
+    .owl-carousel {
+      .item {
+        .img-box {
+          height: 408px !important;
+        }
+        .content {
+          height: 110px;
+
+          .content-header {
+            padding: 9px 15px 10px 15px !important;
+
+            .tour-name {
+              i {
+                font-size: 13px;
+                margin-right: 3px;
+              }
+              h4 {
+                font-size: 14px !important;
+              }
+            }
+            .tour-date {
+              i {
+                font-size: 12px;
+              }
+            }
+          }
+
+          .content-links {
+            height: 75px;
+            a {
+              &:first-child {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #coming-soon {
+    .content {
+      height: 260px;
+      .content-name {
+        i {
+          &::before {
+            font-size: 28px;
+          }
+        }
+
+        h3 {
+          font-size: 21px;
+          padding-top: 10px;
+        }
+      }
+
+      .content-text {
+        p {
+          font-size: 12px;
+          padding-left: 46px;
+        }
+      }
+    }
+
+    .img-box {
+      height: 260px;
+    }
+  }
+
+  #our-achievements {
+    .achievements-caption {
+      padding-bottom: 18px;
+    }
+
+    .content {
+      height: 230px;
+      margin-bottom: 10px;
+
+      i {
+        &::before {
+          font-size: 50px;
+        }
+      }
+
+      h2 {
+        padding: 12px 0;
+        font-size: 35px !important;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+}

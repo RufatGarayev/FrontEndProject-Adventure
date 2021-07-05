@@ -1,0 +1,18 @@
+// ======= Terms-of-use content ======= //
+#terms-of-use-content {
+  padding: 40px 0;
+  *{
+    list-style: disc;
+  }
+
+  .text {
+    @extend %paragraph;
+    ul {
+      padding-left: 30px;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+}

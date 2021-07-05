@@ -1,0 +1,798 @@
+// ======= Tour Section ======= //
+#tour {
+  padding: 70px 0 80px;
+  background-color: $light-background;
+
+  .tourPics-and-basicInfo {
+    padding-bottom: 50px;
+    border-bottom: $light-line;
+
+    img {
+      object-fit: cover;
+    }
+
+    .tour-img-box {
+      margin: 0 5px 20px;
+      height: 350px;
+      overflow: hidden;
+      img {
+        height: 100%;
+        width: 100%;
+        transition: all 2s ease;
+        filter: brightness(85%);
+        &:hover {
+          transform: scale(1.4);
+          transition: all 2.5s ease;
+        }
+      }
+    }
+
+    .small-img-box {
+      transition: 0.4s linear;
+      border: 2px solid rgb(237, 237, 237);
+      height: 80px;
+      margin: 5px;
+      padding: 2px;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      &:hover {
+        border: 2px solid rgb(58, 59, 116);
+      }
+    }
+
+    .active-img {
+      border: 2px solid rgb(58, 59, 116);
+    }
+
+    .tour-info {
+      padding: 4px 0 0 40px;
+      .top-part {
+        width: 225px;
+        justify-content: space-between;
+        align-items: center;
+        .caption {
+          h2 {
+            margin-bottom: 0;
+            font-weight: 700;
+            font-size: 27px;
+          }
+        }
+        .rating {
+          align-items: center;
+          span {
+            font-size: 23px;
+            font-weight: 700;
+            height: 35px;
+            display: flex;
+            align-items: center;
+          }
+          i {
+            color: rgb(58, 59, 116);
+            font-size: 17px;
+            margin: 0 0 2px 3px;
+          }
+        }
+      }
+
+      .location {
+        padding: 20px 0 7px;
+        h6 {
+          color: rgb(98, 107, 114);
+          margin: 0;
+        }
+      }
+
+      .basic-info {
+        height: 65px;
+        width: 460px;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+          &::before {
+            font-size: 26px;
+            margin: 0 10px 0 0;
+          }
+        }
+
+        h6 {
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        .price {
+          h5 {
+            font-size: 25px;
+            font-family: "Times New Roman", Times, serif;
+            span {
+              font-size: 18px;
+              font-weight: 500;
+              font-family: "Nunito", sans-serif;
+            }
+            margin-bottom: 0;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .text-part {
+        padding: 0;
+        text-align: justify;
+        @extend %paragraph;
+      }
+    }
+
+    .addToCart {
+      padding: 20px 40px;
+      .addToCartBtnBig {
+        @extend %website-button;
+        text-transform: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        font-size: 14px;
+        height: 36px;
+        width: 134px;
+        padding: 0 12px;
+        &:focus {
+          outline: none;
+        }
+
+        .spinner {
+          @extend %spinner;
+          width: 16px;
+          height: 16px;
+        }
+
+        .successIcon {
+          @extend %successIcon;
+          color: white;
+          font-size: 14px;
+        }
+
+        @keyframes rotate {
+          0% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+
+  .descAndReviews-wrapper {
+    padding: 50px 0 0;
+    .tour-tabs {
+      padding-right: 40px;
+      li {
+        height: 47px;
+        line-height: 45px;
+        border-bottom: $light-line;
+        a {
+          font-size: 17px;
+          color: #64736b;
+          transition: 0.3s linear;
+          font-weight: 700;
+          &:hover {
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+        .active-tabBtn {
+          color: black;
+        }
+      }
+    }
+
+    .tab-items {
+      padding-top: 8px;
+      h4,
+      h6 {
+        font-weight: 700;
+      }
+      p {
+        @extend %paragraph;
+        padding-top: 0 !important;
+      }
+
+      .description {
+        .read-more {
+          display: none;
+        }
+
+        .show-more-text {
+          display: block;
+          animation: fadeEffect 0.7s;
+        }
+
+        .readMoreBtn-wrapper {
+          margin-top: 25px;
+          a {
+            display: inline-block;
+            padding: 8px 30px;
+            font-size: 15px;
+            font-weight: 200;
+            color: white;
+            background-color: rgb(58, 59, 116);
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .reviews {
+        p {
+          margin-bottom: 25px;
+        }
+
+        .media-holder {
+          margin: 40px 0 70px;
+          .media {
+            border-radius: 4px;
+            padding: 24px;
+            border: 1px solid #dbc5c5;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            .img-and-rating {
+              margin-right: 23px;
+              height: 90px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+              .media-img {
+                width: 70px;
+                height: 70px;
+                img {
+                  height: 100%;
+                  width: 100%;
+                  object-fit: cover;
+                }
+              }
+              .media-rating {
+                width: 60px;
+                i {
+                  font-size: 9px;
+                  color: rgb(58, 59, 116);
+                }
+              }
+            }
+            .media-body {
+              padding-left: 20px;
+              border-left: 1px solid #dbc5c5;
+              p {
+                margin-bottom: 0;
+                text-align: justify;
+                @extend %paragraph;
+              }
+              .top {
+                padding-bottom: 10px;
+                justify-content: space-between;
+                align-items: center;
+                h6 {
+                  margin: 0;
+                }
+                .date {
+                  font-size: 11px;
+                  color: #aaaaaa;
+                }
+              }
+            }
+          }
+        }
+
+        .rating-caption {
+          margin-bottom: 6px;
+        }
+
+        .rating {
+          width: 110px;
+          margin-bottom: 25px;
+          align-items: center;
+          a {
+            font-size: 15px;
+            color: black;
+          }
+        }
+
+        #review-form {
+          .input-area {
+            @extend %input;
+            height: 80px;
+
+            .review-area {
+              @extend %msg-area;
+            }
+
+            i {
+              top: 42px;
+            }
+          }
+
+          .review-area-holder {
+            height: 155px;
+            margin-bottom: 35px;
+          }
+
+          .error {
+            font-size: 15px;
+            color: red;
+          }
+
+          .bottom-links {
+            padding-top: 35px;
+
+            .review-btn {
+              @extend %website-button;
+              text-transform: none;
+              padding: 8px 36px;
+              cursor: pointer;
+              &:hover {
+                color: white !important;
+              }
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+
+      .tab-content {
+        animation: fadeEffect 0.7s;
+      }
+
+      .tab-content:not(:first-of-type) {
+        display: none;
+      }
+    }
+  }
+
+  @keyframes fadeEffect {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+// ======= Our Advantages Section ======= //
+.tourDetails-ourAdvantages {
+  padding: 20px 0 30px 0 !important;
+  .main-holder {
+    .holder {
+      height: 190px !important;
+    }
+  }
+}
+
+// ======= Responsive Design ======= //
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #tour {
+    .basic-info {
+      width: 425px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  #tour {
+    .tourPics-and-basicInfo {
+      .tour-img-box {
+        height: 420px;
+      }
+
+      .small-img-box {
+        height: 105px;
+      }
+
+      .tour-info {
+        padding: 50px 20px 0 10px;
+      }
+
+      .addToCart {
+        padding: 20px 0 0 10px;
+      }
+    }
+
+    .descAndReviews-wrapper {
+      .tab-items {
+        #review-form {
+          .bottom-links {
+            padding-top: 10px;
+          }
+          .review-area-holder {
+            margin-bottom: 35px;
+          }
+          .name-area,
+          .email-area {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .tourDetails-ourAdvantages {
+    padding: 20px 0 60px !important;
+    .main-holder {
+      .holder {
+        height: 150px !important;
+        padding: 40px 10px 0 10px !important;
+        margin: 0;
+
+        h4 {
+          font-size: 17px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  #tour {
+    padding: 60px 0 70px;
+
+    .tourPics-and-basicInfo {
+      padding-bottom: 30px !important;
+      .tour-img-box {
+        height: 325px;
+      }
+
+      .small-img-box {
+        height: 80px;
+      }
+
+      .tour-info {
+        padding: 40px 20px 0 10px;
+        .top-part {
+          width: 215px;
+        }
+      }
+
+      .addToCart {
+        padding: 20px 12px;
+      }
+    }
+
+    .descAndReviews-wrapper {
+      .tour-tabs {
+        padding-right: 0;
+      }
+
+      .tab-items {
+        padding-top: 30px;
+        .reviews {
+          p,
+          .rating {
+            margin-bottom: 27px;
+          }
+
+          #review-form {
+            .bottom-links {
+              padding-top: 10px;
+            }
+            .review-area-holder {
+              margin-bottom: 39px;
+            }
+            .name-area,
+            .email-area {
+              margin-bottom: 30px;
+              input {
+                height: 45px;
+              }
+              i {
+                top: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tourDetails-ourAdvantages {
+    padding: 25px 0 65px 0 !important;
+
+    .main-holder {
+      .holder {
+        padding: 40px 0 0 !important;
+        height: 155px !important;
+        margin: 0;
+
+        .icon-holder {
+          i {
+            &::before {
+              font-size: 60px !important;
+            }
+          }
+        }
+
+        h4 {
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  #tour {
+    padding: 50px 0 60px;
+
+    .tourPics-and-basicInfo {
+      padding-bottom: 40px !important;
+
+      .tour-img-box {
+        margin: 0 3px 20px;
+      }
+
+      .small-img-box {
+        margin: 3px;
+      }
+
+      .tour-info {
+        padding: 40px 3px 0;
+
+        .top-part {
+          padding: 0;
+          .caption {
+            h2 {
+              font-size: 26px;
+            }
+          }
+        }
+
+        .basic-info {
+          height: 172px;
+          width: 156px;
+          padding: 16px 0 26px;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .price {
+            i {
+              &::before {
+                font-size: 27px;
+              }
+            }
+
+            h5 {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+
+      .addToCart {
+        padding: 20px 3px;
+      }
+    }
+
+    .descAndReviews-wrapper {
+      .tab-items {
+        .description {
+          .readMoreBtn-wrapper {
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .reviews {
+          .media-holder {
+            .media {
+              .media-body {
+                .top {
+                  flex-direction: column;
+                  align-items: self-start;
+                  padding-bottom: 4px;
+                  h6 {
+                    margin-bottom: 10px;
+                  }
+                }
+
+                p {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tourDetails-ourAdvantages {
+    padding: 40px 0 70px 0 !important;
+
+    .main-holder {
+      .holder {
+        height: 160px !important;
+        min-height: auto !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  #tour {
+    .tourPics-and-basicInfo {
+      .tour-img-box {
+        height: 250px;
+        margin: 0 1px 20px;
+      }
+
+      .small-img-box {
+        height: 54px;
+        margin: 1px;
+      }
+
+      .tour-info {
+        padding: 20px 0 0;
+        .top-part {
+          width: 180px;
+          height: 55px;
+
+          .caption {
+            h2 {
+              font-size: 22px;
+            }
+          }
+
+          .rating {
+            span {
+              font-size: 21px !important;
+              i {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .location {
+          padding: 6px 0 7px;
+          h6 {
+            font-size: 13px;
+          }
+        }
+
+        .basic-info {
+          height: 150px;
+          width: 156px;
+          padding: 15px 0 15px;
+
+          i {
+            &::before {
+              font-size: 22px;
+            }
+          }
+
+          h6 {
+            font-size: 16px;
+          }
+
+          .price {
+            h5 {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+
+      .addToCart {
+        padding: 20px 0px;
+        .addToCartBtnBig {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .descAndReviews-wrapper {
+      .tour-tabs {
+        li {
+          a {
+            font-size: 15px !important;
+          }
+        }
+      }
+
+      .tab-items {
+        h4 {
+          font-size: 20px;
+        }
+        h6 {
+          font-size: 15px;
+        }
+
+        .description {
+          .readMoreBtn-wrapper {
+            a {
+              font-size: 13px;
+              padding: 7px 26px;
+            }
+          }
+        }
+
+        .reviews {
+          .media-holder {
+            .media {
+              padding: 14px !important;
+              .img-and-rating {
+                margin-right: 15px;
+              }
+              .media-body {
+                padding-left: 15px;
+
+                .top {
+                  flex-direction: column;
+                  align-items: self-start;
+                  padding-bottom: 4px;
+                  h6 {
+                    margin-bottom: 12px;
+                  }
+                  .date {
+                    font-size: 10px;
+                  }
+                }
+
+                p {
+                  margin-bottom: 0 !important;
+                  text-align: left;
+                }
+              }
+            }
+          }
+
+          p,
+          .rating {
+            margin-bottom: 27px !important;
+          }
+
+          .rating {
+            a {
+              font-size: 14px;
+            }
+          }
+
+          #review-form {
+            i {
+              top: 39px;
+              right: 15px;
+              font-size: 16px;
+            }
+
+            .error {
+              font-size: 14px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tourDetails-ourAdvantages {
+    padding: 40px 0 65px 0 !important;
+    .main-holder {
+      .holder {
+        height: 146px !important;
+        .icon-holder {
+          i {
+            &::before {
+              font-size: 50px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

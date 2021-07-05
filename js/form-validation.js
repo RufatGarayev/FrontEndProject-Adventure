@@ -1,11 +1,10 @@
 $(document).ready(function () {
-   // ======= Login Validation Start ======= //
+   // ======= Login Validation ======= //
    $(function () {
       // hiding alerts
       $(".login-email-alert").hide();
       $(".login-pass-alert").hide();
 
-      // errors = false
       let login_error_email = false;
       let login_error_password = false;
 
@@ -16,7 +15,6 @@ $(document).ready(function () {
       $(".login-pass").keyup(function () {
          check_login_password();
       });
-
 
       // email
       function check_login_email() {
@@ -75,16 +73,13 @@ $(document).ready(function () {
          }
       }
 
-
       // login form - submit event
       $("#login").submit(function (e) {
          e.preventDefault();
 
-         // errors = false
          login_error_email = false;
          login_error_password = false;
 
-         // called functions
          check_login_email();
          check_login_password();
 
@@ -97,10 +92,8 @@ $(document).ready(function () {
          }
       });
    });
-   // ======= Login Validation End ======= //
 
-
-   // ======= Reset Password Start ======= //
+   // ======= Reset Password ======= //
    $(function () {
       // hiding alerts
       $(".reset-email-alert").hide();
@@ -112,7 +105,6 @@ $(document).ready(function () {
       $(".email-for-reset-pass").keyup(function () {
          check_reset_email();
       });
-
 
       // email
       function check_reset_email() {
@@ -143,13 +135,10 @@ $(document).ready(function () {
          }
       }
 
-
       // reset - submit event
       $("#reset-form").submit(function (e) {
          e.preventDefault();
-
          error_reset_email = false;
-
          check_reset_email();
 
          if (error_reset_email === false) {
@@ -161,10 +150,8 @@ $(document).ready(function () {
          }
       });
    });
-   // ======= Reset Password End ======= //
 
-
-   // ======= Subscribe Email Validation Start ======= //
+   // ======= Subscribe Email Validation ======= //
    $(function () {
       // hiding alerts
       $(".subs-email-alert").hide();
@@ -176,7 +163,6 @@ $(document).ready(function () {
       $(".subscribe-email").keyup(function () {
          check_subscribe_email();
       });
-
 
       // email
       function check_subscribe_email() {
@@ -204,7 +190,6 @@ $(document).ready(function () {
          }
       }
 
-
       // subscribe - submit event
       $("#subscribe-form").submit(function (e) {
          e.preventDefault();
@@ -222,10 +207,8 @@ $(document).ready(function () {
          }
       });
    });
-   // ======= Subscribe Email Validation End ======= //
 
-
-   // ======= Sign-Up Validation Start ======= //
+   // ======= Sign-Up Validation ======= //
    $(function () {
       // hiding alerts
       $(".username-alert").hide();
@@ -234,7 +217,6 @@ $(document).ready(function () {
       $(".repeat-pass-alert").hide();
       $(".checkbox-alert").hide();
 
-      // errors = false
       let error_username = false;
       let error_email = false;
       let error_password = false;
@@ -259,7 +241,6 @@ $(document).ready(function () {
       $("#terms-checkbox").click(function () {
          click_checkbox();
       });
-
 
       // username   
       function check_username() {
@@ -400,14 +381,12 @@ $(document).ready(function () {
       $("#sign-up").submit(function (e) {
          e.preventDefault();
 
-         // errors = false
          error_username = false;
          error_email = false;
          error_password = false;
          error_repeat_pass = false;
          error_checkbox = false;
 
-         // called functions
          check_username();
          check_email();
          check_password();
@@ -425,10 +404,8 @@ $(document).ready(function () {
          }
       });
    });
-   // ======= Sign-Up Validation End ======= //
 
-
-   // ======= Send Message Validation Start ======= //
+   // ======= Send Message Validation ======= //
    $(function () {
       // hiding the alerts
       $(".name-alert").hide();
@@ -436,7 +413,6 @@ $(document).ready(function () {
       $(".subject-alert").hide();
       $(".msg-alert").hide();
 
-      // errors = false
       let msg_error_name = false;
       let msg_error_email = false;
       let msg_error_subject = false;
@@ -455,7 +431,6 @@ $(document).ready(function () {
       $(".msg-area").keyup(function () {
          check_message();
       });
-
 
       // name
       function check_msg_name() {
@@ -574,19 +549,17 @@ $(document).ready(function () {
       $("#send-msg").submit(function (e) {
          e.preventDefault();
 
-         // errors = false
          msg_error_name = false;
          msg_error_email = false;
          msg_error_subject = false;
          msg_error_message = false;
 
-         // called functions
          check_msg_name();
          check_msg_email();
          check_msg_subject();
          check_message();
 
-         if (msg_error_name === false && msg_error_email === false && 
+         if (msg_error_name === false && msg_error_email === false &&
             msg_error_subject === false && msg_error_message === false) {
             modalMsg();
             $("#modal p").text("Message was sent Successfully.");
@@ -596,12 +569,28 @@ $(document).ready(function () {
          }
       });
    });
-   // ======= Send Message Validation End ======= //
 
+   // ======= modalMsg function ======= //
+   function modalMsg() {
+      $("#modal").addClass("active-modal");
+      $(".dark-bgcolor").addClass("active-darkBg");
 
-   // =========== Jquery Validation Plugin Start =========== //
+      function closeModal() {
+         $("#modal").removeClass("active-modal");
+         $(".dark-bgcolor").removeClass("active-darkBg");
+      }
 
-   // ======= Review(Tour Details) Validation Start ======= //
+      $(document).on("click", ".dark-bgcolor", () => {
+         closeModal();
+      });
+
+      $(document).on("click", "#modal .close-button", () => {
+         closeModal();
+      });
+   }
+
+   // =========== JQUERY VALIDATION =========== //
+   // ======= Review(Tour Details) Validation ======= //
    $(function () {
       // the processes that take place in the submission
       $.validator.setDefaults({
@@ -643,10 +632,8 @@ $(document).ready(function () {
          }
       });
    });
-   // ======= Review(Tour Details) Validation End ======= //
 
-
-   // ======= Checkout Validation Start ======= //
+   // ======= Checkout Validation ======= //
    $(function () {
       // checking if the number true or not
       $.validator.addMethod('checkout-phone', function (value, element) {
@@ -708,28 +695,4 @@ $(document).ready(function () {
          }
       });
    });
-   // ======= Checkout Validation End ======= //
-
-   // =========== Jquery Validation Plugin Start =========== //
-
-
-   // ======= modalMsg function Start ======= //
-   function modalMsg() {
-      $("#modal").addClass("active-modal");
-      $(".dark-bgcolor").addClass("active-darkBg");
-
-      function closeModal() {
-         $("#modal").removeClass("active-modal");
-         $(".dark-bgcolor").removeClass("active-darkBg");
-      }
-
-      $(document).on("click", ".dark-bgcolor", () => {
-         closeModal();
-      });
-
-      $(document).on("click", "#modal .close-button", () => {
-         closeModal();
-      });
-   }
-   // ======= modalMsg function End ======= //
 });

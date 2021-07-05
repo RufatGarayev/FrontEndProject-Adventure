@@ -1,0 +1,235 @@
+// ======= Get In Touch ======= //
+#get-in-touch {
+  padding: 70px 0 60px;
+  background-color: $light-background;
+
+  .get-in-touch-caption {
+    padding-bottom: 50px;
+    h1 {
+      @extend %section-caption;
+      color: black;
+    }
+    hr {
+      @extend %section-caption-bottom-line;
+      background-color: black;
+    }
+
+    p {
+      @extend %paragraph;
+    }
+  }
+
+  .holder {
+    height: 300px;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .address,
+    .email,
+    .phone {
+      h4 {
+        font-weight: 700;
+      }
+      position: relative;
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        position: absolute;
+        top: -2px;
+        left: -25px;
+        color: black;
+        font-weight: 900;
+        font-size: 20px;
+      }
+    }
+
+    .address {
+      &::before {
+        content: "\f3c5";
+      }
+    }
+
+    .email {
+      &::before {
+        content: "\f0e0";
+        left: -29px;
+      }
+    }
+
+    .phone {
+      &::before {
+        content: "\f879";
+        left: -27px;
+      }
+    }
+  }
+
+  .message {
+    .same-style-input-area {
+      width: 100%;
+      .input-area {
+        @extend %input;
+
+        .msg-area {
+          @extend %msg-area;
+        }
+      }
+
+      .msg-area-holder {
+        height: 126px;
+      }
+
+      .bottom-links {
+        padding-top: 20px;
+
+        .sign-up-btn {
+          @extend %website-button;
+          padding: 8px 36px;
+          text-transform: none;
+          cursor: pointer;
+          &:hover {
+            color: white !important;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .alert {
+        @extend %form-alert;
+      }
+    }
+  }
+}
+
+// ======= Map Section ======= //
+#map-area {
+  height: 100%;
+  padding: 0 50px 30px;
+  height: 580px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(237, 237, 237);
+  iframe {
+    border: 30px solid #fff !important;
+    box-shadow: 0 0 7px 0 #cecbcb;
+    width: 100%;
+    height: 480px;
+  }
+}
+
+// ======= Responsive Design ======= //
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #map-area {
+    padding: 0 30px 30px;
+    height: 530px;
+    iframe {
+      height: 430px;
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  #get-in-touch {
+    .get-in-touch-caption {
+      padding: 0 50px 50px;
+    }
+    .holder {
+      margin-bottom: 50px;
+    }
+  }
+
+  #map-area {
+    padding: 0 30px 50px;
+    height: 550px;
+    iframe {
+      border: 20px solid #fff !important;
+      height: 450px;
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  #get-in-touch {
+    .get-in-touch-caption {
+      padding: 0 35px 50px;
+    }
+    .holder {
+      height: 270px;
+    }
+  }
+
+  #map-area {
+    padding: 0 15px 50px;
+    iframe {
+      border: 15px solid white !important;
+    }
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  #get-in-touch {
+    .get-in-touch-caption {
+      padding: 0 12px 50px;
+    }
+
+    .holder {
+      height: 260px;
+      margin-bottom: 50px;
+      h4 {
+        font-size: 17px;
+      }
+      .address,
+      .email,
+      .phone {
+        &::before {
+          top: -4px;
+          left: -19px;
+          font-size: 17px;
+        }
+      }
+
+      .email {
+        &::before {
+          left: -23px;
+        }
+      }
+
+      .phone {
+        &::before {
+          left: -22px;
+        }
+      }
+    }
+    .message {
+      .input-area {
+        .msg-area {
+          font-size: 13px;
+          padding: 10px 15px !important;
+        }
+      }
+
+      .msg-area-holder {
+        height: 102px !important;
+      }
+
+      .bottom-links {
+        button {
+          padding: 7px 26px !important;
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
+  #map-area {
+    padding: 0 12px 40px;
+    height: 500px;
+    iframe {
+      border: 10px solid white !important;
+      height: 400px;
+    }
+  }
+}

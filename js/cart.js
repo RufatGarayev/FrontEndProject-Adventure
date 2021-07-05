@@ -1,4 +1,3 @@
-// =======  Cart - Start  ======= //
 // taking "addToCart" btn
 let addToCart = document.querySelectorAll(".addToCartBtn");
 
@@ -9,15 +8,12 @@ addToCart.forEach((btn) => {
   });
 });
 
-
 // getting tour count
 function getTourCount() {
-    let cart = JSON.parse(localStorage.getItem("__cart"));
-    document.querySelector(".tour-count").innerText = cart.length;
+  let cart = JSON.parse(localStorage.getItem("__cart"));
+  document.querySelector(".tour-count").innerText = cart.length;
 }
-  
 getTourCount();
-
 
 // showing alert when cart is empty
 function showAlert() {
@@ -37,18 +33,16 @@ function showAlert() {
     cartTotals.classList.add("d-none");
   }
 }
-
 showAlert();
 
-
 function renderCart(tours) {
-    // taking the elements
-    let $cart = document.querySelector(".tourContainer-inCart");
-    let $total = document.querySelector(".cart-total-price");
-    
-    // adding a tour to the cart
-    $cart.innerHTML = tours.map((tour) =>     
-        `<tr class="tbody-row">
+  // taking the elements
+  let $cart = document.querySelector(".tourContainer-inCart");
+  let $total = document.querySelector(".cart-total-price");
+
+  // adding a tour to the cart
+  $cart.innerHTML = tours.map((tour) =>
+    `<tr class="tbody-row">
             <!-- tour-name -->
             <td class="tour-name">${tour.name}</td>
             <!-- tour-price -->
@@ -71,12 +65,10 @@ function renderCart(tours) {
             </td>
         </tr>`).join("");
 
-
-    getTourCount();
-    showAlert();
-    $total.innerHTML = "$" + cartLS.total();
+  getTourCount();
+  showAlert();
+  $total.innerHTML = "$" + cartLS.total();
 }
 
 renderCart(cartLS.list());
 cartLS.onChange(renderCart);
-// =======  Cart - End  ======= //

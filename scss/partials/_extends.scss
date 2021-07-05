@@ -114,7 +114,7 @@
 // section-caption properties
 %section-caption {
   font-size: 42px;
-  font-family: 'Caveat Brush', cursive;
+  font-family: "Caveat Brush", cursive;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: white;
@@ -523,10 +523,6 @@
   input[type="checkbox"]:checked + label:after {
     font-weight: bold;
   }
-
-  // input[type="checkbox"]:focus + label::before {
-  //   outline: rgb(59, 153, 252) auto 5px;
-  // }
 }
 
 // increase or decrease the quantity

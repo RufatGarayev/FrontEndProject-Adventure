@@ -1,0 +1,605 @@
+// ======= Tours Section ======= //
+#tours {
+  overflow: hidden;
+  padding: 50px 20px 50px;
+  background-color: rgb(237, 237, 237);
+
+  .sidebar-area {
+    height: 715px;
+    padding: 20px 40px 0;
+    background-color: white;
+    .filters {
+      h5 {
+        padding-bottom: 15px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .price-filter {
+        min-height: 180px;
+        padding-top: 30px;
+        border-bottom: $light-line;
+
+        .slider-tour-sorting {
+          background-color: rgb(237, 237, 237);
+          height: 3px;
+          border: none;
+          span {
+            transition: none;
+            border: 4px solid rgb(58, 59, 116);
+            background: white;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            top: -8px;
+            cursor: pointer;
+            &:focus {
+              outline: none;
+            }
+          }
+          .ui-slider-range {
+            height: 3px;
+            background: rgb(58, 59, 116);
+            transition: none;
+          }
+          width: 84%;
+        }
+
+        .tour-range-detail {
+          padding-top: 30px;
+
+          input[type="text"] {
+            width: 100%;
+            font-size: 17px;
+            border: none;
+            font-family: "Times New Roman", Times, serif;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+
+      .province {
+        min-height: 225px;
+        padding-top: 40px;
+        border-bottom: $light-line;
+
+        form {
+          label {
+            margin-bottom: 12px;
+          }
+        }
+
+        @extend %checkbox;
+      }
+
+      .rating-filter {
+        min-height: 244px;
+        padding-top: 40px;
+
+        label {
+          i {
+            font-size: 13px;
+            color: rgb(118, 148, 132);
+            margin-right: 1px;
+          }
+          span {
+            font-size: 15px;
+          }
+        }
+
+        @extend %checkbox;
+      }
+    }
+
+    .sidebar-filter-toggle {
+      display: none;
+      box-shadow: 0px 0px 4px 0px #817979;
+      background-color: white;
+      width: 44px;
+      height: 44px;
+      position: absolute;
+      top: calc(64% - 30px);
+      right: -43px;
+      border-radius: 0 5px 5px 0;
+      &:hover {
+        text-decoration: none;
+      }
+
+      i {
+        line-height: 72px;
+        &::before {
+          font-size: 38px;
+          color: black;
+          margin: 0;
+          text-align: center;
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+
+  .category-and-sorting {
+    height: 60px;
+    background-color: white;
+    margin: 0px 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .category-btns {
+      display: flex;
+      justify-content: space-between;
+      width: 370px;
+      height: 44px;
+      padding-top: 10px;
+      margin-bottom: 0;
+      li {
+        a {
+          cursor: pointer;
+          padding: 4px 16px;
+          border: none;
+          border-radius: 3px;
+          background-color: rgb(237, 237, 237);
+          color: black;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        .active-btn {
+          color: white;
+          background-color: rgb(58, 59, 116);
+        }
+      }
+    }
+
+    .sorting {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .dropholder {
+        display: flex;
+        height: 34px;
+        padding: 0 0 0 14px;
+        color: rgb(58, 59, 116);
+        position: relative;
+        h5 {
+          font-size: 16px;
+          color: black;
+          line-height: 32px;
+        }
+
+        .dropdown {
+          cursor: pointer;
+          border-radius: 3px;
+          background: rgb(58, 59, 116);
+          margin-left: 20px;
+          width: 162px;
+          padding: 0 0 0 14px;
+          height: 100%;
+          position: relative;
+          p {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 32px;
+            color: white;
+          }
+
+          i {
+            height: 20px;
+            position: absolute;
+            right: 12px;
+            top: 5px;
+            transition: 0.4s all;
+            &::before {
+              color: white;
+              font-size: 13px;
+              margin-left: 0;
+            }
+          }
+        }
+
+        .menu {
+          position: absolute;
+          right: 0;
+          top: 35px;
+          width: 161px;
+          cursor: pointer;
+          transition: all 0.6s;
+          transform-style: preserve-3d;
+          transform: rotatey(180deg) rotateX(5deg) translatey(100px);
+          backface-visibility: hidden;
+          opacity: 0;
+          background: rgb(118, 148, 132);
+          border: 1px solid rgb(118, 148, 132);
+          border-radius: 3px;
+          z-index: 99;
+          overflow: hidden;
+          padding: 1px;
+
+          li {
+            font-size: 14px;
+            padding: 9px;
+            border-bottom: 1px solid #fff;
+            color: #e8f8ff;
+            transition: all 0.3s;
+            list-style: none;
+            &:hover {
+              background: rgb(58, 59, 116);
+              padding-left: 20px;
+            }
+
+            &:last-child {
+              border: none;
+            }
+          }
+        }
+
+        .showMenu {
+          opacity: 1;
+          transform: rotateX(0deg) translatey(0px);
+        }
+        .rotate {
+          transform: rotateZ(-180deg);
+        }
+      }
+    }
+  }
+
+  .tour-holder {
+    .item {
+      &:hover {
+        box-shadow: 0 1px 10px 3px #cbc7c7;
+        transition: 0.2s linear !important;
+      }
+
+      .discount-price {
+        background-color: rgba(255, 0, 0, 0.5);
+        h5 {
+          font-size: 16px;
+          text-decoration: line-through;
+          margin-bottom: 0;
+
+          @media (min-width: 250px) and (max-width: 374.98px) {
+            font-size: 18px !important;
+          }
+        }
+        h3 {
+          font-family: "Times New Roman", Times, serif;
+          margin-bottom: 5px;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  nav {
+    background-color: transparent !important;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+
+    .pagination {
+      width: 80px;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        &:focus {
+          outline: 0 !important;
+        }
+        a {
+          color: rgb(58, 59, 116);
+          border-radius: 4px;
+          &:focus {
+            box-shadow: none;
+          }
+          &:hover {
+            background-color: white;
+            border: 1px solid rgb(58, 59, 116);
+          }
+        }
+        .active {
+          border: 1px solid rgb(58, 59, 116);
+          color: white;
+          background-color: rgb(58, 59, 116) !important;
+        }
+      }
+    }
+  }
+}
+
+// ======= Responsive Design ======= //
+@media screen and (max-width: 1199.98px) {
+  #tours {
+    .sidebar-area {
+      padding: 20px 25px 0;
+    }
+
+    .category-and-sorting {
+      .category-btns {
+        width: 350px;
+        li {
+          font-size: 15px;
+        }
+      }
+
+      .sorting {
+        .dropholder {
+          h5 {
+            font-size: 15px !important;
+          }
+          .dropdown {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  #tours {
+    padding: 50px 30px 50px;
+    .sidebar-area {
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 0;
+      height: 100%;
+      position: fixed;
+      z-index: 9999;
+      top: 0px;
+      left: 0;
+      width: 0;
+      color: white;
+      transition: 0.4s cubic-bezier(1, 0, 0, 1);
+
+      .filters {
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        overflow-y: scroll;
+        opacity: 0;
+        h5 {
+          font-size: 20px;
+        }
+
+        .price-filter {
+          height: 200px;
+
+          .tour-range-detail {
+            input[type="text"] {
+              font-size: 20px;
+              background-color: transparent;
+              color: white;
+            }
+          }
+        }
+        .province {
+          min-height: 255px;
+          padding-top: 50px;
+
+          label {
+            font-size: 18px;
+            font-weight: 200;
+            &::before {
+              border-color: white !important;
+            }
+          }
+        }
+        .rating-filter {
+          padding-top: 50px;
+          label {
+            &::before {
+              border-color: white !important;
+            }
+          }
+        }
+      }
+      .sidebar-filter-toggle {
+        display: block;
+      }
+
+      .hide-filter-btn {
+        transform: translateX(-60px);
+        transition: 0.4s linear;
+      }
+    }
+
+    .show-sidebar {
+      width: 320px;
+      padding: 40px 30px 0;
+      .filters {
+        padding: 0 3px 30px;
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition: 0.5s cubic-bezier(1, 0, 0, 1) !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  #tours {
+    padding: 50px 0px 50px;
+
+    .category-and-sorting {
+      padding: 0 10px;
+      margin: 0px 10px 15px;
+      height: 48px;
+      .category-btns {
+        width: 280px;
+        li {
+          font-size: 13px;
+          a {
+            padding: 3px 12px;
+          }
+        }
+      }
+
+      .sorting {
+        .dropholder {
+          padding: 0;
+          height: 28px;
+
+          h5 {
+            font-size: 13px !important;
+            line-height: 28px;
+          }
+          .dropdown {
+            margin-left: 7px;
+            width: 135px;
+            padding: 0 0 0 10px;
+
+            p {
+              line-height: 28px;
+              font-size: 13px;
+            }
+
+            i {
+              top: 3px;
+              right: 10px;
+              &::before {
+                font-size: 11px;
+              }
+            }
+          }
+
+          .menu {
+            top: 29px;
+            width: 135px;
+
+            li {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+
+    .tour-holder {
+      .item {
+        .tour-name {
+          i {
+            margin: 3px 7px 0 0 !important;
+          }
+          h4 {
+            font-size: 19px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  #tours {
+    padding: 50px 0 50px;
+
+    .category-and-sorting {
+      height: 110px;
+      align-items: normal;
+      padding: 16px 20px;
+      .category-btns {
+        height: 44px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+        li {
+          font-size: 15px;
+          margin-right: 10px;
+        }
+      }
+
+      .sorting {
+        justify-content: flex-start !important;
+        .dropholder {
+          height: 32px;
+          h5 {
+            font-size: 15px !important;
+          }
+          .dropdown {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  #tours {
+    padding: 50px 0px 50px;
+    .sidebar-area {
+      .filters {
+        h5 {
+          font-size: 17px;
+        }
+
+        .price-filter {
+          .tour-range-detail {
+            input[type="text"] {
+              font-size: 18px;
+            }
+          }
+        }
+        .province {
+          label {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .show-sidebar {
+      width: calc(100vw - 48px);
+    }
+
+    .category-and-sorting {
+      height: 140px;
+      padding: 12px 10px 10px;
+
+      .category-btns {
+        height: 75px !important;
+        li {
+          font-size: 13px;
+        }
+      }
+
+      .sorting {
+        .dropholder {
+          padding: 0;
+          h5 {
+            font-size: 12px !important;
+          }
+          .dropdown {
+            width: 130px;
+            margin-left: 20px;
+            p {
+              font-size: 13px;
+              line-height: 31px;
+            }
+            i {
+              top: 5px;
+              &::before {
+                font-size: 10px;
+              }
+            }
+          }
+
+          .menu {
+            width: 130px;
+            top: 33px;
+            li {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

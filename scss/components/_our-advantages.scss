@@ -1,0 +1,155 @@
+// ======= Our Advantages Section ======= //
+#our-advantages {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0 80px 0;
+  background-color: rgba(118, 148, 132, 1);
+
+  .caption {
+    height: 115px;
+    h1 {
+      @extend %section-caption;
+      text-align: center;
+      padding: 30px 0 0 !important;
+    }
+    hr {
+      @extend %section-caption-bottom-line;
+    }
+  }
+
+  .main-holder {
+    .holder {
+      padding: 40px 10px 0 10px;
+      height: 265px;
+      transition: 0.4s ease;
+      &:hover {
+        transform: translateY(-30px);
+        transition: 0.4s ease;
+      }
+
+      .icon-holder {
+        i {
+          color: $icon-color;
+          &::before {
+            font-size: $big-icon-size;
+            margin-left: 0;
+          }
+        }
+      }
+
+      h4 {
+        font-size: $item-caption-size;
+        font-family: $item-caption-font-family;
+        padding-top: 20px;
+        font-weight: 400;
+        color: white;
+      }
+
+      hr {
+        height: 0.5px !important;
+        display: inline-block;
+        width: 26px;
+        margin: 10px 0 0 0;
+        background-color: white;
+      }
+
+      p {
+        position: relative;
+        padding-top: 22px;
+        @extend %paragraph;
+      }
+
+      @media (min-width: 250px) and (max-width: 315px) {
+        h4 {
+          font-size: 17px !important;
+        }
+      }
+
+      @media (min-width: 315px) and (max-width: 374.98px) {
+        padding: 32px 55px 0 55px !important;
+      }
+    }
+  }
+}
+
+// ======= Responsive Design ======= //
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #our-advantages {
+    padding: 50px 0 90px 0;
+    .holder {
+      h4 {
+        font-size: 22px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #our-advantages {
+    padding: 60px 0 70px 0;
+    .main-holder {
+      .holder {
+        padding: 40px 40px 0 40px;
+        height: 245px;
+        margin: 20px 0;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #our-advantages {
+    padding: 60px 0 75px 0;
+
+    .main-holder {
+      .holder {
+        padding: 40px 0;
+        height: 270px;
+        .icon-holder {
+          i {
+            &::before {
+              font-size: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  #our-advantages {
+    padding: 65px 0 95px 0;
+
+    .main-holder {
+      .holder {
+        padding: 40px 110px 0;
+        min-height: 270px;
+        height: 100%;
+        font-size: 17px;
+        i {
+          &::before {
+            font-size: 60px;
+          }
+        }
+
+        hr {
+          width: 25px !important;
+        }
+        p {
+          padding-top: 15px !important;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #our-advantages {
+    .holder {
+      padding: 40px 40px 0 !important;
+    }
+  }
+}

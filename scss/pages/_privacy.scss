@@ -1,0 +1,19 @@
+// ======= Privacy content ======= //
+#privacy-content {
+  *{
+    list-style: disc;
+  }
+  
+  padding: 40px 0;
+
+  .text {
+    @extend %paragraph;
+    ul {
+      padding-left: 30px;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+}

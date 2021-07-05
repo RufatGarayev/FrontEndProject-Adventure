@@ -1,0 +1,71 @@
+// ======= Modal ======= //
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 3px;
+  z-index: 99999;
+  background-color: white;
+  box-shadow: 0 2px 12px 1px #968888;
+  width: 320px;
+  max-width: 80%;
+
+  .modal-header {
+    padding: 7px 15px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 0;
+
+    .close-button {
+      font-size: 14px;
+      color: #dc3545;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .modal-body {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.active-modal {
+  transform: translate(-50%, -50%) scale(1) !important;
+}
+
+// ======= Responsive Design ======= //
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #modal {
+    width: 280px;
+
+    .modal-body {
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  #modal {
+    width: 280px;
+
+    .modal-body {
+        padding-top: 10px;
+      h4{
+          font-size: 22px;
+      }
+      p {
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+  }
+}

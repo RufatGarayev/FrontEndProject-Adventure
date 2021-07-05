@@ -1,0 +1,59 @@
+// All
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  font-family: "Nunito", sans-serif;
+}
+
+// Body
+body {
+  overflow-x: hidden;
+}
+
+// Html
+html {
+  scroll-behavior: smooth;
+}
+
+// Stop scroll
+.stop-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+// Loader
+.loader {
+  background: url("../img//loader/loader.gif") no-repeat center;
+  background-color: #000000;
+  background-size: 30rem;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+}
+
+.loader-finish{
+  opacity: 0;
+  pointer-events: none;
+}
+
+// Dark Bg-color
+.dark-bgcolor {
+  @extend %dark-bg;
+}
+
+.active-darkBg {
+  opacity: 1;
+  pointer-events: all;
+}
+
+// Intro
+#intro {
+  background-image: url(../img/bg-images/wood.jpg);
+}

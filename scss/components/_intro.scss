@@ -1,0 +1,65 @@
+// ======= Intro Section ======= //
+#intro {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 500px;
+
+  .page-caption {
+    height: 500px;
+    padding-top: 40px;
+    h1 {
+      text-align: center;
+      color: white;
+      font-family: "Caveat Brush", cursive;
+      text-transform: uppercase;
+      font-size: 60px;
+    }
+  }
+}
+
+// ======= Responsive Design ======= //
+@media screen and (max-width: 991.98px) {
+  #intro {
+    height: 100%;
+    .page-caption {
+      height: 620px;
+      h1 {
+        font-size: 55px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  #intro {
+    .page-caption {
+      height: 500px;
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  #intro {
+    .page-caption {
+      height: 460px;
+      padding-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  #intro {
+    .page-caption {
+      height: 370px;
+      padding-top: 50px;
+      h1 {
+        font-size: 44px;
+      }
+    }
+  }
+}

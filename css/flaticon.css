@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?a9c85ba09824df22fa58307fec521126") format("truetype"), url("./flaticon.woff?a9c85ba09824df22fa58307fec521126") format("woff"), url("./flaticon.woff2?a9c85ba09824df22fa58307fec521126") format("woff2"), url("./flaticon.eot?a9c85ba09824df22fa58307fec521126#iefix") format("embedded-opentype"), url("./flaticon.svg?a9c85ba09824df22fa58307fec521126#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-add-to-basket:before {
+  content: "";
+}
+
+.flaticon-bike:before {
+  content: "";
+}
+
+.flaticon-binoculars:before {
+  content: "";
+}
+
+.flaticon-call:before {
+  content: "";
+}
+
+.flaticon-camera-1:before {
+  content: "";
+}
+
+.flaticon-camera:before {
+  content: "";
+}
+
+.flaticon-camping-tent:before {
+  content: "";
+}
+
+.flaticon-clock:before {
+  content: "";
+}
+
+.flaticon-close:before {
+  content: "";
+}
+
+.flaticon-community:before {
+  content: "";
+}
+
+.flaticon-compass:before {
+  content: "";
+}
+
+.flaticon-down-arrow:before {
+  content: "";
+}
+
+.flaticon-envelope:before {
+  content: "";
+}
+
+.flaticon-filter:before {
+  content: "";
+}
+
+.flaticon-hotel:before {
+  content: "";
+}
+
+.flaticon-left-arrow:before {
+  content: "";
+}
+
+.flaticon-map:before {
+  content: "";
+}
+
+.flaticon-medal:before {
+  content: "";
+}
+
+.flaticon-minus-sign:before {
+  content: "";
+}
+
+.flaticon-national-park:before {
+  content: "";
+}
+
+.flaticon-phone-call:before {
+  content: "";
+}
+
+.flaticon-pin:before {
+  content: "";
+}
+
+.flaticon-pointed-star:before {
+  content: "";
+}
+
+.flaticon-public-transport:before {
+  content: "";
+}
+
+.flaticon-remove:before {
+  content: "";
+}
+
+.flaticon-right-arrow-angle:before {
+  content: "";
+}
+
+.flaticon-schedule:before {
+  content: "";
+}
+
+.flaticon-search-interface-symbol:before {
+  content: "";
+}
+
+.flaticon-shopping-bag:before {
+  content: "";
+}
+
+.flaticon-steering-wheel:before {
+  content: "";
+}
+
+.flaticon-street-sign:before {
+  content: "";
+}
+
+.flaticon-traveller:before {
+  content: "";
+}
+
+.flaticon-upload:before {
+  content: "";
+}
+
+.flaticon-user:before {
+  content: "";
+}
+/*# sourceMappingURL=flaticon.css.map */

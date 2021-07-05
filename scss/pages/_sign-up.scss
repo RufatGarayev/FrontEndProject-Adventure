@@ -1,0 +1,131 @@
+// ======= Sign Up Section ======= //
+#sign-up-section {
+  padding: 70px 0;
+  background-color: $light-background;
+
+  .sign-up-holder {
+    background: rgb(92, 117, 94);
+    box-shadow: 0 2px 10px 3px rgba(66, 63, 63, 0.2);
+    border-radius: 5px;
+    padding: 40px 40px 45px;
+
+    .caption-area {
+      padding-bottom: 15px;
+      h3 {
+        color: white;
+        font-weight: 600;
+      }
+    }
+
+    .same-style-input-area {
+      width: 100%;
+      .input-area {
+        @extend %input;
+      }
+
+      .terms {
+        padding-top: 20px;
+
+        @extend %checkbox;
+        label {
+          font-weight: 300;
+          margin-bottom: 0 !important;
+          color: white;
+        }
+        input[type="checkbox"] + label:before {
+          border: 1px solid white;
+        }
+
+        a {
+          color: rgb(85, 26, 139);
+          &:hover {
+            color: rgb(84, 76, 141);
+            text-decoration: none;
+          }
+        }
+      }
+      .bottom-links {
+        padding-top: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .sign-up-btn {
+          @extend %website-button;
+          padding: 10px 35px;
+          cursor: pointer;
+          &:hover {
+            color: white !important;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .alert {
+        @extend %form-alert;
+        color: black;
+      }
+    }
+  }
+}
+
+// ======= Responsive Design ======= //
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #sign-up-section {
+    padding: 70px 155px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 420px) {
+  #sign-up-section {
+    .sign-up-holder {
+      padding: 50px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  #sign-up-section {
+    .sign-up-holder {
+      padding: 50px 15px;
+
+      .caption-area {
+        padding-bottom: 20px;
+        h3 {
+          font-size: 20px !important;
+        }
+      }
+
+      .same-style-input-area {
+        input {
+          height: 40px !important;
+        }
+
+        .terms {
+          input[type="checkbox"] + label:before {
+            font: 12px/1em sans-serif;
+            height: 13px;
+            width: 13px;
+          }
+
+          label {
+            font-size: 13px;
+          }
+        }
+
+        .bottom-links {
+          button {
+            padding: 8px 28px !important;
+            font-size: 14px;
+          }
+        }
+
+        .alert {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+}

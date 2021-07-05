@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- animate on scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- jquery ui -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <!-- bootstrap -->
@@ -21,8 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
     <!-- flaticon.css -->
     <link rel="stylesheet" href="other/flaticon/flaticon.css">
-    <!-- tours.css -->
-    <link rel="stylesheet" href="css/tours.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="img/logo/favicon.png">
     <!-- page-title -->
@@ -30,48 +28,6 @@
 </head>
 
 <body>
-    <!-- ======= Loader Start ======= -->
-    <div class="loading">
-        <div class="loading-text">
-            <span class="loading-text-words" data-preloader="L">L</span>
-            <span class="loading-text-words" data-preloader="O">O</span>
-            <span class="loading-text-words" data-preloader="A">A</span>
-            <span class="loading-text-words" data-preloader="D">D</span>
-            <span class="loading-text-words" data-preloader="I">I</span>
-            <span class="loading-text-words" data-preloader="N">N</span>
-            <span class="loading-text-words" data-preloader="G">G</span>
-        </div>
-    </div>
-    <!-- ======= Loader End ======= -->
-
-    <!-- ======= Modal Start ======= -->
-    <div id="modal">
-        <div class="modal-header">
-          <a href="javascript:void()" class="close-button">✖</a>
-        </div>
-        <div class="modal-body">
-            <h4>Thank You!</h4>
-            <p>Login Successful.</p>
-        </div>
-    </div>
-    <!-- ======= Modal End ======= -->
-
-    <!-- ======= Back To Top Start ======= -->
-    <button id="topBtn">
-        <div class="up-arrow">
-            <i class="flaticon-upload"></i>
-        </div>
-        <div class="go-up">
-            <span>GO</span>
-            <span>UP</span>
-        </div>
-    </button>
-    <!-- ======= Back To Top End ======= -->
-
-    <!-- ======= Dark Bg-Color Start ======= -->
-    <div class="dark-bgcolor"></div>
-    <!-- ======= Dark Bg-Color End ======= -->
-
     <!-- ======= Top Header Start ======= -->
     <section id="top-header">
         <div class="container-fluid">
@@ -226,7 +182,6 @@
     </header>
     <!-- ======= Main Header End ======= -->
 
-
     <!-- ======= Main Part Start ======= -->
     <main>
         <!-- ======= Intro Section Start ======= -->
@@ -242,7 +197,6 @@
             </div>
         </section>
         <!-- ======= Intro Section End ======= -->
-
 
         <!-- ======= Tours Section Start ======= -->
         <section id="tours">
@@ -373,8 +327,7 @@
                             <div class="row no-gutters">
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col special">
                                     <!-- single-tour -->
-                                    <div class="item tourItem main-tourItem-design" data-aos="fade-up"
-                                        data-aos-duration="1000">
+                                    <div class="item tourItem main-tourItem-design">
                                         <!-- price -->
                                         <div class="price-info">
                                             <h5>$79</h5> <br>
@@ -404,7 +357,8 @@
                                             <!-- link-and-btn -->
                                             <div class="slide-links d-flex">
                                                 <a href="tour-details.html">Learn More</a>
-                                                <a href="#" class="addToCartBtn" onClick="cartLS.add({id: 1, name: 'Gabala Tour', price: 79})">
+                                                <a href="#" class="addToCartBtn"
+                                                    onClick="cartLS.add({id: 1, name: 'Gabala Tour', price: 79})">
                                                     <i class="flaticon-add-to-basket"></i>
                                                     <em class="top-info-box">Add To Cart</em>
                                                 </a>
@@ -416,8 +370,7 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col popular">
                                     <!-- single-tour -->
-                                    <div class="item tourItem main-tourItem-design" data-aos="fade-up"
-                                        data-aos-duration="1000">
+                                    <div class="item tourItem main-tourItem-design">
                                         <!-- price -->
                                         <div class="price-info">
                                             <h5>$87</h5> <br>
@@ -447,7 +400,8 @@
                                             <!-- link-and-btn -->
                                             <div class="slide-links d-flex">
                                                 <a href="tour-details.html">Learn More</a>
-                                                <a href="#" class="addToCartBtn" onClick="cartLS.add({id: 2, name: 'Goygol Tour', price: 87})">
+                                                <a href="#" class="addToCartBtn"
+                                                    onClick="cartLS.add({id: 2, name: 'Goygol Tour', price: 87})">
                                                     <i class="flaticon-add-to-basket"></i>
                                                     <em class="top-info-box">Add To Cart</em>
                                                 </a>
@@ -459,8 +413,7 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col special">
                                     <!-- single-tour -->
-                                    <div class="item tourItem main-tourItem-design" data-aos="fade-up"
-                                        data-aos-duration="1000">
+                                    <div class="item tourItem main-tourItem-design">
                                         <!-- price -->
                                         <div class="price-info">
                                             <h5>$85</h5> <br>
@@ -503,8 +456,7 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col discount">
                                     <!-- single-tour -->
-                                    <div class="item tourItem main-tourItem-design" data-aos="fade-up"
-                                        data-aos-duration="1000">
+                                    <div class="item tourItem main-tourItem-design">
                                         <!-- price -->
                                         <div class="price-info discount-price">
                                             <h5>$79</h5> <br>
@@ -535,7 +487,8 @@
                                             <!-- link-and-btn -->
                                             <div class="slide-links d-flex">
                                                 <a href="#">Learn More</a>
-                                                <a href="#" class="addToCartBtn" onClick="cartLS.add({id: 4, name: 'Sheki Tour', price: 55})">
+                                                <a href="#" class="addToCartBtn"
+                                                    onClick="cartLS.add({id: 4, name: 'Sheki Tour', price: 55})">
                                                     <i class="flaticon-add-to-basket"></i>
                                                     <em class="top-info-box">Add To Cart</em>
                                                 </a>
@@ -547,8 +500,7 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col special">
                                     <!-- single-tour -->
-                                    <div class="item tourItem main-tourItem-design" data-aos="fade-up"
-                                        data-aos-duration="1000">
+                                    <div class="item tourItem main-tourItem-design">
                                         <!-- price -->
                                         <div class="price-info">
                                             <h5>$72</h5> <br>
@@ -591,8 +543,7 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col popular">
                                     <!-- single-tour -->
-                                    <div class="item tourItem main-tourItem-design" data-aos="fade-up"
-                                        data-aos-duration="1000">
+                                    <div class="item tourItem main-tourItem-design">
                                         <!-- price -->
                                         <div class="price-info">
                                             <h5>$97</h5> <br>
@@ -635,8 +586,7 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col popular">
                                     <!-- single-tour -->
-                                    <div class="item tourItem main-tourItem-design" data-aos="fade-up"
-                                        data-aos-duration="1000">
+                                    <div class="item tourItem main-tourItem-design">
                                         <!-- price -->
                                         <div class="price-info">
                                             <h5>$99</h5> <br>
@@ -679,8 +629,7 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col special">
                                     <!-- single-tour -->
-                                    <div class="item tourItem main-tourItem-design" data-aos="fade-up"
-                                        data-aos-duration="1000">
+                                    <div class="item tourItem main-tourItem-design">
                                         <!-- price -->
                                         <div class="price-info">
                                             <h5>$79</h5> <br>
@@ -723,8 +672,7 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 item-col popular">
                                     <!-- single-tour -->
-                                    <div class="item tourItem main-tourItem-design" data-aos="fade-up"
-                                        data-aos-duration="1000">
+                                    <div class="item tourItem main-tourItem-design">
                                         <!-- price -->
                                         <div class="price-info">
                                             <h5>$79</h5> <br>
@@ -786,7 +734,6 @@
         </section>
         <!-- ======= Tours Section End ======= -->
 
-
         <!-- ======= Subscribe Section Start ======= -->
         <section id="subscribe">
             <div class="container">
@@ -825,7 +772,6 @@
     </main>
     <!-- ======= Main Part End ======= -->
 
-
     <!-- ======= Footer Start ======= -->
     <footer>
         <div class="container-fluid">
@@ -837,7 +783,8 @@
                         <div class="about-us">
                             <h4>About Us</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt
                                 ut labore et dolore magna. Nullam a nibh in dolor blandit tincidunt et vel ipsum.
                             </p>
                         </div>
@@ -906,14 +853,38 @@
     </footer>
     <!-- ======= Footer End ======= -->
 
+    <!-- ======= Loader Start ======= -->
+    <div class="loader"></div>
+    <!-- ======= Loader End ======= -->
 
-    <!-- animate on scroll -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true
-        });
-    </script>
+    <!-- ======= Modal Start ======= -->
+    <div id="modal">
+        <div class="modal-header">
+            <a href="javascript:void()" class="close-button">✖</a>
+        </div>
+        <div class="modal-body">
+            <h4>Thank You!</h4>
+            <p>Login Successful.</p>
+        </div>
+    </div>
+    <!-- ======= Modal End ======= -->
+
+    <!-- ======= Back To Top Start ======= -->
+    <button id="topBtn">
+        <div class="up-arrow">
+            <i class="flaticon-upload"></i>
+        </div>
+        <div class="go-up">
+            <span>GO</span>
+            <span>UP</span>
+        </div>
+    </button>
+    <!-- ======= Back To Top End ======= -->
+
+    <!-- ======= Dark Bg-Color Start ======= -->
+    <div class="dark-bgcolor"></div>
+    <!-- ======= Dark Bg-Color End ======= -->
+
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/b7e00c266a.js" crossorigin="anonymous"></script>
     <!-- bootstrap -->
