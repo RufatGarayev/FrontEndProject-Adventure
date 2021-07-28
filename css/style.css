@@ -3,7 +3,7 @@ header nav .navbar-items .links li hr, header nav .account li hr {
   bottom: 7px;
   left: 0;
   margin: 0;
-  height: 0.5px;
+  height: 0.01rem;
   width: 0px;
   background-color: white !important;
 }
@@ -737,10 +737,6 @@ html {
   width: 25px;
   height: 25px;
   line-height: 26px;
-}
-
-#top-header .top-header-items .langs {
-  height: 100%;
 }
 
 #top-header .top-header-items .langs ul {
